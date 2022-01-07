@@ -1,0 +1,38 @@
+.segundo-h3{
+    color:#0d6efd;
+}
+.terceiro-h3{
+    color:#07fff0;
+}
+
+
+#profissionaisautonomosestaoemcrescimento {
+    background-color: #ececec;
+    color: #050922;
+    padding: 90px 0 90px 12px;
+}
+
+#profissionaisautonomosestaoemcrescimento img{
+    width: 90%; 
+}
+
+#capa-profissionaisautonomosestaoemcrescimento{
+    background-color: #050922;
+    color: #ffffff;
+    padding: 108px 0 102px 0;;  
+}
+
+#capa-profissionaisautonomosestaoemcrescimento img{
+    width: 100%; 
+}
+
+.btn-capa-profissionaisautonomosestaoemcrescimento{
+    margin: 3% 3% 6% 0;
+    color: #ffffff;
+    border-radius: 50px;  
+}
+
+#artigosrelacionados14{
+    padding: 60px 0 60px 0;
+    
+}

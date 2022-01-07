@@ -1,0 +1,38 @@
+.segundo-h3{
+    color:#0d6efd;
+}
+.terceiro-h3{
+    color:#07fff0;
+}
+
+
+#simplesnacional {
+    background-color: #ececec;
+    color: #050922;
+    padding: 90px 0 90px 12px;
+}
+
+#simplesnacional img{
+    width: 90%; 
+}
+
+#capa-simplesnacional{
+    background-color: #050922;
+    color: #ffffff;
+    padding: 108px 0 102px 0;;  
+}
+
+#capa-simplesnacional img{
+    width: 100%; 
+}
+
+.btn-capa-simplesnacional{
+    margin: 3% 3% 6% 0;
+    color: #ffffff;
+    border-radius: 50px;   
+}
+
+#artigosrelacionados5{
+    padding: 60px 0 60px 0;
+    
+}

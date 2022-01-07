@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.3;
+    font-family: Effra,sans-serif, Arial, sans-serif;    
+}
+
+.segundo-h1{
+    color:#0d6efd;
+}
+
+p{
+    color: #323338;
+    font-family: Effra,sans-serif;    
+}
+
+#home{
+    background-color: #ffffff;
+    color: #050922;
+    padding: 90px 0 90px 12px;   
+}
+
+
+#home img{
+    width: 100%; 
+}
+
+
+.destaque-h4{
+    text-align: right;
+}
+
+
+.btn-banner{
+    margin: 9% 3% 6% 0;
+    color: #ffffff;  
+}
+
