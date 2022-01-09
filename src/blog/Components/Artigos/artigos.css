@@ -49,3 +49,16 @@ h1, h2, h3, h4, h5, h6, h7{
     color: #ffffff;
     border-radius: 50px;   
 }
+
+
+
+
+#todosartigos{
+    margin-top: 60px;
+
+}
+
+#todosartigos img{
+    width: 100%; 
+    margin: 3px 0 6px 0;
+}

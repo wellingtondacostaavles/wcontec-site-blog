@@ -21,7 +21,7 @@ function Transicaodooperacionalparaoempreendedorismo(){
                 <div className="container">
                     <div className="row"> 
                         <h3>Mas como fazer essa transição?</h3>
-                        <p>Mais que normal é quando vamos começar um negócio, damos início pelo o que fazemos de melhor, e na maioria das vezes quando resolvemos empreender procuramos fazer algum tipo de ação qua desempenhamos bem, e quando resolvemos oferecer esse serviço, abrindo um CNPJ ou trabalhando como freelancer, é normal focar e investir no que realmente sabemos fazer, e naquele momento o que dominamos é colocar a mão na massa e executar o trabalho.</p>
+                        <p>Mais que normal é quando vamos começar um negócio, damos início pelo o que fazemos de melhor, e na maioria das vezes quando resolvemos empreender procuramos fazer algum tipo de ação que desempenhamos bem, e quando resolvemos oferecer esse serviço, abrindo um CNPJ ou trabalhando como freelancer, é normal focar e investir no que realmente sabemos fazer, e naquele momento o que dominamos é colocar a mão na massa e executar o trabalho.</p>
                      </div>
                     
 

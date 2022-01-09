@@ -5,7 +5,7 @@ import Parceiros from '../Components/Parceiros/parceiros';
 import Categorias from '../Components/Categorias/categorias';
 import Recomendados from '../Components/Recomendados/recomendados';
 import Inicio from '../Components/Inicio/inicio';
-import Artigos from '../Components/Artigos/artigos';
+import Todosartigos from '../Components/Artigos/todosartigos';
 import './home.css';
 
 
@@ -13,7 +13,7 @@ function Home(){
     return <div>
       <Navbar/> 
       <Inicio/>
-      <Artigos/>  
+      <Todosartigos/>  
       <Categorias/>
       <Recomendados/>
       <Parceiros/>

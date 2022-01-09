@@ -152,3 +152,10 @@ p{
     width: 15%; 
 }
 
+.formtext p{
+    color: #ececec;
+    font-family: Effra,sans-serif; 
+    font-size: 9px;
+    text-align: center;
+}
+
