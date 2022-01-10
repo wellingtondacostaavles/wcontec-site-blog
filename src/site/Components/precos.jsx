@@ -102,7 +102,7 @@ function Precos(){
                     <td className="bi"><img src="Images/check.png" /></td>
                 </tr>
                 <tr>
-                    <th scope="row" className="text-start">Obrigações acessorias</th>
+                    <th scope="row" className="text-start">Obrigações acessórias</th>
                     <td className="bi"><img src="Images/check.png" /></td>
                     <td className="bi"><img src="Images/check.png" /></td>
                     <td className="bi"><img src="Images/check.png" /></td>

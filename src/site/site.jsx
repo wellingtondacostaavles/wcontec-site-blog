@@ -2,7 +2,7 @@ import React from 'react';
 import Menu from './Components/menu';
 import Inicio from './Components/inicio';
 import Beneficios from './Components/beneficios';
-import Apresentacao from './Components/apresentacao';
+import Testemunho from './Components/testemunho';
 import Abrirempresagratis from './Components/abrirempresagratis';
 import Ultimosartigosblog from './Components/ultimosartigosblog';
 import Precos from './Components/precos';
@@ -14,7 +14,7 @@ function Site(){
       <Menu/>
       <Inicio/>
       <Beneficios/>
-      <Apresentacao/>
+      <Testemunho/>
       <Abrirempresagratis/>
       <Ultimosartigosblog/>      
       <Precos/>

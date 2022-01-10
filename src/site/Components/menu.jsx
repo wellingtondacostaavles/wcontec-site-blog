@@ -22,7 +22,7 @@ function Menu(){
               <a className="nav-link" aria-current="page" href="#beneficios">Benefícios</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#apresentacao">Apresentação</a>
+              <a className="nav-link" aria-current="page" href="#testemunho">Clientes</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#abrir-empresa-gratis">Abrir Empresa Grátis</a>

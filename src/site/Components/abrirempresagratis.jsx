@@ -36,8 +36,8 @@ function Abrirempresagratis(){
                         <div className="col-lg-6">
                             <img src="Images/Cadastro.png"/>
                         </div>
-                        <div className="col-lg-6">  
-                            <h6>PASSO 1</h6>
+                        <div className="col-lg-6 formtext">  
+                            <h2>Passo 1</h2>
                             <h5>Contrate um de nossos planos anual de acesso a plataforma, em seguida nos envie algumas informações que iremos te solicitar, vamos preparar toda documentação, colher sua assinatura e te enviar as taxas governamentais. </h5>
                         </div>                            
                     </div>       
@@ -48,8 +48,8 @@ function Abrirempresagratis(){
                         <div className="col-lg-6">
                             <img src="Images/PagueasTaxas.png" />
                         </div>
-                        <div className="col-lg-6">  
-                            <h6>PASSO 2</h6>
+                        <div className="col-lg-6 formtext">  
+                            <h2>Passo 2</h2>
                             <h5>Realize o pagamento das taxas e impostos governamentais, e caso você não tenha optado por abertura de empresa na forma Premium, nossa equipe de contadores oferecerá todas as orientações necessárias para protocolar os documentos nos órgãos competentes.</h5>
                         </div>                            
                     </div>       
@@ -60,8 +60,8 @@ function Abrirempresagratis(){
                         <div className="col-lg-6">
                             <img src="Images/Pronto.png" />
                         </div>
-                        <div className="col-lg-6">  
-                            <h6>PRONTO!</h6>
+                        <div className="col-lg-6 formtext">  
+                            <h2>Pronto!</h2>
                             <h5>Com sua empresa aberta e já enquadrada no Simples Nacional, é só aguardar a aprovação dos órgãos públicos para comerçar a funcionar, emitir nota fiscal e faturar!.</h5>
                         </div>                            
                     </div>     

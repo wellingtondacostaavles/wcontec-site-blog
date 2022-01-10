@@ -6,7 +6,7 @@ function Ultimosartigosblog(){
             <div className="row text-center">
                 <div className="titulo">
                 <h1>Últimos artigos do nosso blog</h1> 
-                <p>Fique por dentro do mundo contábil, gestão empresárial e finanças. </p>          
+                <p>Fique por dentro do mundo contábil, gestão empresarial e finanças. </p>          
                 </div>
             </div> 
         </div>  
