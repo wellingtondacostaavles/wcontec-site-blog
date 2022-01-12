@@ -53,7 +53,7 @@ function Naosepodeculparcargatributaria(){
                 <h3>O efeito dos impostos no Caixa e nos Resultados</h3>
                 <p>A carga tributária brasileira se não é a maior, está entre as maiores do mundo, e isso com certeza é um fator que gera dificuldades as empresas, além das complicações de interpretações tributarias, com a variedade de impostos e formas de tributações: IPI, PIS, COFINS, IRPJ, CSLL, Simples, ICMS, ISS, Substituição Tributária, e ai por diante...</p>
                 <p>Lucro Real, Presumido, Simples, EPP, ...</p>
-                <p>Enfim, a carga tributária é alta, mas cabe aos gestores interpretar a melhor das alternativas e classificar a empresa nesse perfil.</p>
+                <p>Enfim, a carga tributária é alta, mas cabe aos gestores interpretar a melhor das alternativas e “classNameificar” a empresa nesse perfil.</p>
                 <p>Os impostos devem fazer parte da formação do preço de venda, devem de forma correta participar da precificação de produtos e serviços.</p>
                 <h3>A informalidade uma cultura que deve ser exterminada aos poucos</h3>
                 <p>As vendas sem documentação diminuíram muitos nos últimos anos, diante do mecanismo do Fisco Federal, Estadual e Municipal, com os Speds (ECD, ECF, Nota Fiscal Eletrônica, Bloco K, entre outros), ocorre que ainda assim empresas continuam a “driblar” o fisco, entretanto, essa situação tende a “quase desaparecer”.</p>
