@@ -82,7 +82,7 @@ function Abrirempresa(){
                 <p>Com o NIRE em mãos, chega a hora de registrar a empresa como contribuinte, ou seja, de obter o CNPJ. O registro do CNPJ é feito exclusivamente pela internet, no site da Receita Federal por meio do download de um programa específico, o Documento Básico de Entrada.</p>
                 <p>Você preenche a solicitação e os documentos necessários, que são informados no site, devem ser enviados por Sedex ou pessoalmente para a Secretaria da Receita Federal, e a resposta é dada também pela Internet.</p>
                 <h3>Escolha de atividades</h3>
-                <p>Ao fazer o cadastro no CNPJ, é preciso escolher a atividade que a empresa irá exercer. Essa classificação será utilizada não apenas na tributação, mas também na fiscalização das atividades da empresa. O ideal é que você tenha uma atividade principal e, no máximo, 14 secundárias.</p>
+                <p>Ao fazer o cadastro no CNPJ, é preciso escolher a atividade que a empresa irá exercer. Essa classNameificação será utilizada não apenas na tributação, mas também na fiscalização das atividades da empresa. O ideal é que você tenha uma atividade principal e, no máximo, 14 secundárias.</p>
                 <p>Lembre-se que nem todas as empresas podem optar pelo Simples, principalmente as prestadoras de serviços que exigem habilitação profissional. Portanto, antes de fazer sua inscrição no CNPJ, consulte os tipos de empresa que não se enquadram no Simples.</p>    
                 <h3>inscrição e Registro</h3> 
                 <p>Para as empresas que trabalham com a produção de bens e/ou com venda de mercadorias é necessário o registro na Secretaria Estadual da Fazenda, a chamada Inscrição Estadual.</p> 

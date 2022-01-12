@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 
 /* Paginas */
 import Site from './site/site.jsx';
+import Descadastrese from './descadastrese/descadastrese.jsx';
 import Home from './blog/Home/home.jsx';
 import Naosepodeculparcargatributaria from './blog/Artigo/naosepodeculparcargatributaria.jsx';
 import Mei from './blog/Artigo2/mei.jsx';
@@ -30,6 +31,7 @@ import Senadoaprovatributacaomenorparacaminhoneiros from './blog/Artigo20/senado
 function Blog(){
     return <BrowserRouter>
     <Route exact path='/' component={Site} />    
+    <Route exact path='/descadastrese' component={Descadastrese} />
     <Route exact path='/blog' component={Home} />
     <Route exact path='/blog/naosepodeculparcargatributaria' component={Naosepodeculparcargatributaria} />
     <Route exact path='/blog/mei' component={Mei} />  

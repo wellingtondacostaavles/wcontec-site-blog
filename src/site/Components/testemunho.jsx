@@ -31,7 +31,7 @@ function Testemunho(){
                     </div>  
 
                     <div className="carousel-item" data-bs-interval="15000">
-                        <h2>Bom, minha experiência com a wcontec está sendo excelente, além poder controlar minhas entradas e saídas de caixa, posso cadastrar uma conta da minha empresa e desta forma a ferramenta já gera o boleto e envia para nossos clientes a cobrança das mensalidades de forma automática.</h2>
+                        <h2>Estou gostando de trabalhar com a wcontec, além de poder controlar minhas entradas e saídas de caixa, posso cadastrar uma conta bancária da minha empresa e desta forma a ferramenta já gera o boleto e envia para nossos clientes a cobrança das mensalidades de forma automática.</h2>
                         <img src="Images/Testemunhos/emmersonfreitas.png"/>
                         <em>Emmerson Freitas - Pernambuco</em>
                     </div>                  
