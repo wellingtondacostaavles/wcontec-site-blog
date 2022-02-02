@@ -27,7 +27,7 @@ function Testemunho(){
                     <div className="carousel-item" data-bs-interval="15000">
                         <h2>Pediram-me para comentar o que estou achando da plataforma de gestão financeira com assessoria contábil, e uma coisa que estou gostando bastante dentre muitas é a parte de gerenciamento de e-mails, tudo feito de forma automática, e enviar as cobranças para meus clientes nunca foi tão fácil.</h2>
                         <img src="Images/Testemunhos/fabianaolimpio.png"/>
-                        <em>Fabiana Olimpio - Rio de Janeiro</em>
+                        <em>Fabiana Olimpio - Pernambuco</em>
                     </div>  
 
                     <div className="carousel-item" data-bs-interval="15000">
