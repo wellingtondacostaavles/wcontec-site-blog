@@ -64,7 +64,7 @@ function Descadastrese(){
                             />
                             <div>
                             <button className="btn btn-success btn-lg btn-descadrastre-se" type="submit">Enviar</button>
-                            <a href="/" className="btn btn-outline-primary btn-lg btn-descadrastre-se" type="submit">Área do Cliente</a>
+                            <a href="/" className="btn btn-outline-primary btn-lg btn-descadrastre-se">Área do Cliente</a>
                             </div>
                             </form>  
                           </div> 
