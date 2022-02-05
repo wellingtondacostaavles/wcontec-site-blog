@@ -9,7 +9,9 @@ function Descadastramento(){
       
     <div className="container">                
             <div className="row">
-              <center><img src="/Images/Descadrastre-se/descadastramento.png" alt="..."/></center>  
+              <div className="col-lg-12">
+                <center><img src="/Images/Descadrastre-se/descadastramento.png" alt="..."/></center>  
+              </div>
             </div>
             <div className="row text-center">
               <h1>Descadastramento realizado com sucesso</h1> 
@@ -17,7 +19,7 @@ function Descadastramento(){
               <p>A partir de agora você não receberá mais mensagens de noticias e informações por e-mail, mas caso faça o uso da plataforma de gestão financeira e assessoria contábil online continuará recebendo e-mails deste serviço normalmente.</p>
             </div>
             <div className="container">
-              <center><a href="/" className="btn btn-outline-primary btn-lg btn-descadastramento" type="submit">Área do Cliente</a></center>                            
+              <center><a href="/" className="btn btn-outline-primary btn-lg btn-descadastramento">Área do Cliente</a></center>                            
             </div>            
           </div>
     </section>            
