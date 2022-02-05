@@ -4,6 +4,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 /* Paginas */
 import Site from './site/site.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
+import Descadastramento from './descadastrese/descadastramento-realizado-com-sucesso.jsx';
 import Home from './blog/Home/home.jsx';
 import Naosepodeculparcargatributaria from './blog/Artigo/naosepodeculparcargatributaria.jsx';
 import Mei from './blog/Artigo2/mei.jsx';
@@ -32,6 +33,7 @@ function Blog(){
     return <BrowserRouter>
     <Route exact path='/' component={Site} />    
     <Route exact path='/descadastrese' component={Descadastrese} />
+    <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
     <Route exact path='/blog' component={Home} />
     <Route exact path='/blog/naosepodeculparcargatributaria' component={Naosepodeculparcargatributaria} />
     <Route exact path='/blog/mei' component={Mei} />  
