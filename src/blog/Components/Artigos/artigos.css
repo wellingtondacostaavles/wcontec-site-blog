@@ -55,10 +55,14 @@ h1, h2, h3, h4, h5, h6, h7{
 
 #todosartigos{
     margin-top: 60px;
-
+    
 }
 
 #todosartigos img{
     width: 100%; 
     margin: 3px 0 6px 0;
+}
+
+.btn-artigos{
+    border-radius: 50px;   
 }
