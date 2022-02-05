@@ -10,7 +10,7 @@ function Descadastrese(){
     <div className="container">                
             <div className="row">
                 <div className="col-lg-6">
-                    <center><img src="/Images/Descadrastre-se/boneco-deprimido.jpg" alt="..."/></center>  
+                    <center><img src="/Images/Descadrastre-se/boneco-deprimido.png" alt="..."/></center>  
                 </div>  
                             
                     
