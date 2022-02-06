@@ -19,7 +19,7 @@ function Ultimosartigosblog(){
                             <div className="card-body">
                                 <h4 className="card-title">Especialistas dão dicas para quem pretende mudar de carreira</h4>
                                 <p className="card-text">Se a intenção é mudar de carreira, para que façamos isso com mais segurança, será necessário seguir algumas dicas dadas por especialistas.</p>
-                                <a href="/blog/dicasparaquemdesejamudardecarreira" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/blog/dicas-para-quem-deseja-mudar-de-carreira" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  
                     </div>
@@ -31,7 +31,7 @@ function Ultimosartigosblog(){
                         <div className="card-body">
                             <h4 className="card-title">Senado aprova tributação menor para caminhoneiros</h4>
                             <p className="card-text">O Senado aprovou um projeto de lei que muda a tributação de caminhoneiros autônomos inscritos como microempreendedores individuais.</p>
-                            <a href="/blog/senadoaprovatributacaomenorparacaminhoneiros" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog/senado-aprova-tributacao-menor-para-caminhoneiros" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  
@@ -42,7 +42,7 @@ function Ultimosartigosblog(){
                         <div className="card-body">
                             <h4 className="card-title">Como aproveitar o contrato de experiência com o empregado?</h4>
                             <p className="card-text">Todas as contratações de empregados são feitas com um período de experiência para que o empregador possa avaliar se as aptidões do novo contratado.</p>
-                            <a href="/blog/comoaproveitaraomaximoocontratodeexperienciadetrabalhocomoempregado" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog/como-aproveitar-ao-maximo-o-contrato-de-experiencia-de-trabalho-com-o-empregado" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  
