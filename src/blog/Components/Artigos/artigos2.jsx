@@ -21,7 +21,7 @@ function Artigos2(){
                         <div className="card-body">
                             <h4 className="card-title">Pesquisa aponta que 71% dos brasileiros preferem compras online</h4>
                             <p className="card-text">Uma pesquisa realizada pela ConQuist Consultoria mostrou que a pandemia mudou a maneira como os consumidores fazem compras ou contratam um serviços.</p>
-                            <a href="/blog/brasileirospreferemcomprasonline" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog/brasileiros-preferem-compras-online" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  
@@ -33,7 +33,7 @@ function Artigos2(){
                         <div className="card-body">
                             <h4 className="card-title">Como aproveitar o contrato de experiência com o empregado?</h4>
                             <p className="card-text">Todas as contratações de empregados são feitas com um período de experiência para que o empregador possa avaliar se as aptidões do novo contratado.</p>
-                            <a href="/blog/comoaproveitaraomaximoocontratodeexperienciadetrabalhocomoempregado" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog/como-aproveitar-ao-maximo-o-contrato-de-experiencia-de-trabalho-com-o-empregado" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  
@@ -48,7 +48,7 @@ function Artigos2(){
                         <div className="card-body">
                             <h4 className="card-title">Normas para emissão e entrega do Comprovante de Rendimentos 2022</h4>
                             <p className="card-text">Foram estabelecidas normas sobre o comprovante de rendimentos pagos e de imposto sobre a renda retido na fonte a vigorar a partir de 01.01.2022.</p>
-                            <a href="/blog/normasparaemissaoeentregadocomprovantederendimentos" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog/normas-para-emissao-e-entrega-do-comprovante-de-rendimentos" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  
@@ -60,7 +60,7 @@ function Artigos2(){
                         <div className="card-body">
                             <h4 className="card-title">Profissionais autônomos estão em crescimento</h4>
                             <p className="card-text">O trabalho por conta própria, conhecidos como profissionais autônomos, atingiu o número recorde de 24,8 milhões de pessoas no segundo trimestre de 2021.</p>
-                            <a href="/blog/profissionaisautonomosestaoemcrescimento" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog/profissionais-autonomos-estao-em-crescimento" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  
@@ -75,7 +75,7 @@ function Artigos2(){
                         <div className="card-body">
                             <h4 className="card-title">Dicas para planejar o ano novo da sua empresa e estruturar seu negócio.</h4>
                             <p className="card-text">É importante montar ações para cada pilar do seu negócio: finanças, marketing, vendas, pessoas e estratégias. Confira algumas dicas.</p>
-                            <a href="/blog/dicasparaplanejaroanonovodasuaempresa" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog/dicas-para-planejar-o-ano-novo-da-sua-empresa" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  
@@ -87,7 +87,7 @@ function Artigos2(){
                         <div className="card-body">
                             <h4 className="card-title">INSS - será que a aposentadoria muda para quem troca de sexo?</h4>
                             <p className="card-text">A idade é um requisito importante a ser analisado pelo sistema previdenciário. Atualmente, a regra geral é de 65 anos para homens e 62 anos para mulheres. Mas...</p>
-                            <a href="/blog/inssentendacomoeaaposentadoriadequemmudadesexo" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog/inss-entenda-como-e-a-aposentadoria-de-quem-muda-de-sexo" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  

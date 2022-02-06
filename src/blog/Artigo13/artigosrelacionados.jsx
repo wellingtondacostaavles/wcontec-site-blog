@@ -20,7 +20,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">Como fazer a transição do operacional para o empreendedorismo?</h4>
                                 <p className="card-text">Somos focados totalmente no operacional e não conseguimos crescer porque a dificuldade de empreender no segmento que atuamos acaba nos barrando.</p>
-                                <a href="/blog/transicaodooperacionalparaoempreendedorismo#transicaodooperacionalparaoempreendedorismo" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  
                     </div>  

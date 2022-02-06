@@ -22,7 +22,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">Sebrae oferece cursos gratuitos para empreendedores refugiados no Brasil</h4>
                                 <p className="card-text">O Sebrae fechou uma parceria com a ACNUR, agência da ONU para refugiados, visando o desenvolvimento de ações de capacitação para refugiados empreendedores...</p>
-                                <a href="/blog/sebraeoferececapacitacao" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/blog/sebrae-oferece-capacitacao" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  
                     </div>  

@@ -21,7 +21,7 @@ function Artigosrelacionados(){
                         <div className="card-body">
                             <h4 className="card-title">Simples Nacional</h4>
                             <p className="card-text">O Simples Nacional é um regime tributário exclusivo para micro e pequenas empresas, criado em 2007  ele e consegue unir vários tributos em um só.</p>
-                            <a href="/blog/simplesnacional" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog/simples-nacional" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  

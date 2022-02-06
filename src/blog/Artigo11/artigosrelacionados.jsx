@@ -20,7 +20,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">xxxxxxxxxxxxxx</h4>
                                 <p className="card-text">Também conhecido como "firma individual", e diferente de MEI é ideal para quem quer exercer em nome próprio uma atividade empresarial, sem a necessidade de um sócio.</p>
-                                <a href="/blog/empresarioindividual" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  
                     </div> 
@@ -45,7 +45,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">xxxxxxxxxxxxxxxxxx</h4>
                                 <p className="card-text">Onde não é preciso ter sócios, não há exigência de valor mínimo para o Capital Social, e o patrimônio do empreendedor não se mistura com o da empresa.</p>
-                                <a href="/blog/sociedadelimitadaunipessoal" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  
                     </div>   
@@ -56,7 +56,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">xxxxxxxxxxxxxxxxxx</h4>
                                 <p className="card-text">Apesar de parecer iguais, existem algumas diferenças que devemos ter cuidado na hora de escolher o melhor formato de empresa.</p>
-                                <a href="/blog/diferencasmeieirelisluei" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  
                      </div>   
