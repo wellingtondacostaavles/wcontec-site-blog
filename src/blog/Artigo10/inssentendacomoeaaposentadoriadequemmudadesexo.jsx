@@ -19,7 +19,7 @@ function Inssentendacomoeaaposentadoriadequemmudadesexo(){
     <section id="inssentendacomoeaaposentadoriadequemmudadesexo">
 
             <div className="container">
-                <div className="row"> 
+                    <div className="row"> 
                     <h3>Advogado Rômulo Saraiva</h3>
                     <p>De acordo como explica ao forum contábeis o advogado Rômulo Saraiva, especialista em Previdência Social, há diferença etária para quem passa a se identificar com o gênero feminino há a possibilidade de gerar o direito de se aposentar três anos mais cedo. O contrário já reflete o ônus de esperar mais tempo.</p>
                     <p>Rômulo ressalta, embora o Supremo Tribunal Federal, na ação direta de inconstitucionalidade nº 4.275, tenha decidido na que a autoidentificação das pessoas é um direito fundamental da personalidade em reconhecer a identidade de gênero, a Justiça ainda não se posicionou em caráter nacional sobre como fica a questão previdenciária, tendo em vista que além do requisito etário a carência, a expectativa de vida e o método de cálculo podem repercutir no valor financeiro a depender do gênero da pessoa.</p>

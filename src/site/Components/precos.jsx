@@ -21,7 +21,7 @@ function Precos(){
                             <p>Para micro empreendedor individual (MEI) a partir de</p>
                             <h2>R$ 69,90<small className="text-muted"> /mês</small></h2>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
-                            <a href="https://wcontec.osayk.com.br/#/cadastro" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
+                            <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ function Precos(){
                             <p>Serviços e/ou comercio (MEI, ME, EPP) a partir de</p>
                             <h2>R$ 319,80<small className="text-muted"> /mês</small></h2>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
-                            <a href="https://wcontec.osayk.com.br/#/cadastro" className="btn btn-lg btn-primary btn-artigos">Assinar Agora</a>
+                            <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-primary btn-artigos">Assinar Agora</a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ function Precos(){
                             <p>Serviços e/ou comercio (MEI, ME, EPP) a partir de</p>
                             <h2>R$ 606,00<small className="text-muted"> /mês</small></h2>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
-                            <a href="https://wcontec.osayk.com.br/#/cadastro" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
+                            <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
                         </div>
                     </div>
                 </div>
