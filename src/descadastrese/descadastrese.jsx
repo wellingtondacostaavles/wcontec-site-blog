@@ -55,7 +55,7 @@ function Descadastrese(){
                             className="form"
                           >
                             <label for="email">Digite seu e-mail</label>
-                            <input type="email" name="email" id="email" required />
+                            <input className="form-control" type="email" name="email" id="email" required />
                             <input type="hidden" name="_captcha" value="false" />
                             <input
                               type="hidden"

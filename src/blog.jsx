@@ -6,6 +6,7 @@ import Site from './site/site.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
 import Descadastramento from './descadastrese/descadastramento.jsx';
 import Calculadorametroscubicos from './calculadoras/calculadorametroscubicos.jsx';
+import Calculadoras from './calculadoras/calculadoras.jsx';
 import Home from './blog/Home/home.jsx';
 import Naosepodeculparcargatributaria from './blog/Artigo/naosepodeculparcargatributaria.jsx';
 import Mei from './blog/Artigo2/mei.jsx';
@@ -35,6 +36,7 @@ function Blog(){
     <Route exact path='/' component={Site} />    
     <Route exact path='/descadastrese' component={Descadastrese} />
     <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
+    <Route exact path='/calculadoras' component={Calculadoras} />
     <Route exact path='/calculadora-metros-cubicos' component={Calculadorametroscubicos} />
     <Route exact path='/blog' component={Home} />
     <Route exact path='/blog/nao-se-pode-culpar-a-cargatributaria' component={Naosepodeculparcargatributaria} />

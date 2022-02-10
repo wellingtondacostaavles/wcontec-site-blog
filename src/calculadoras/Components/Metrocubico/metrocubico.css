@@ -1,0 +1,57 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  font-family: Effra, sans-serif, Arial, sans-serif;
+}
+
+.segundo-h1 {
+  color: #0d6efd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: #323338;
+  font-family: Effra, sans-serif;
+}
+.segundo-p {
+  color: red;
+  font-size: 12px;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: #050922;
+  font-family: Effra, sans-serif;
+  color: #ffffff;
+}
+
+/* BANNER */
+
+#metroscubicos {
+  background-color: #ececec;
+  color: #050922;
+  padding: 108px 0 90px 12px;
+  text-align: center;
+}
+
+form {
+  font-family: Effra, sans-serif;
+  text-align: left;
+  margin: 15px 0 15px 0;
+  padding: 0 27% 0 27%;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
