@@ -20,44 +20,55 @@ function Metrocubico(){
     useEffect (() =>{setResultado(calcular())},[nro1, nro2, nro3, operacao]);
   
   
-      return <div>
-          
+      return <div>          
         
         <section id="metroscubicos">    
   
-         
-        <div className="container">
-            <div className="row">
-                <div className="calculadora">
-                  <h1>Calculadora de Metro Cúbico</h1>
-                  <h3>Calcule quantos m³ de material você irá precisar para sua obra</h3>
-                  <p>Preencha os campos abaixo e saiba aproximadamente a quantidade necessária. (Atenção: verifique se a unidade de medida está correta).</p>              
-              </div>
-            </div>         
+         <div className="row">
+             <div className="titulo">
+                <h1>Calculadora de Metro Cúbico</h1>
+                <h3>Calcule quantos m³ de material você irá precisar para sua obra</h3>
+                <p>Preencha os campos abaixo e saiba aproximadamente a quantidade necessária. (Atenção: verifique se a unidade de medida está correta).</p>              
+            </div>
+        </div>         
   
-            <form>
-                <div>
-                  <label>Largura (em metros)</label>
-                  <input className="form-control" type="number" value={nro1} onChange={(e) => setNro1(e.target.value)} />
-                </div>
+        <div className="row"> 
+              <div className="col-sm-4"></div>
+              <div className="col-sm-4">
+                  <div>
+                    <label>Largura (em metros)</label>
+                    <div className="input-group mb-3">
+                        <span className="input-group-text">MT</span>
+                        <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={nro1} onChange={(e) => setNro1(e.target.value)} />
+                  </div>
+                </div>           
                 <div>
                   <label>Comprimento (em metros)</label>
-                  <input className="form-control" type="number" value={nro2} onChange={(e) => setNro2(e.target.value)} />
-                </div>
-                <div>
+                  <div className="input-group mb-3">
+                      <span className="input-group-text">MT</span>  
+                      <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={nro2} onChange={(e) => setNro2(e.target.value)} />
+                  </div>
+                </div>            
+                <div>          
                   <label>Espessura (em centímetros)</label>
-                  <input className="form-control" type="number" value={nro3} onChange={(e) => setNro3(e.target.value)} />
+                  <div className="input-group mb-3">
+                    <span className="input-group-text">CM</span>
+                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={nro3} onChange={(e) => setNro3(e.target.value)} />
+                  </div>
                 </div>
-              </form>
+              </div>
+              <div className="col-sm-4"></div> 
+          </div>          
+              
               
             <div className="container">
-              <div className="row">
+              <div className="row text-center">
                 <h3>Você irá precisar de aproximadamente:</h3>
                 <h1>{resultado} m³</h1>
                 <p><span className="segundo-p">ATENÇÃO: O volume estimado na calculadora deve ser confirmado com o engenheiro responsável pela obra.</span></p>
               </div>
             </div>  
-        </div>
+        
         </section>       
       </div> 
     }

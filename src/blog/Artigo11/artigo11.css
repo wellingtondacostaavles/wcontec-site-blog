@@ -1,38 +1,36 @@
-.segundo-h3{
-    color:#0d6efd;
+.segundo-h3 {
+  color: #0d6efd;
 }
-.terceiro-h3{
-    color:#07fff0;
+.terceiro-h3 {
+  color: #07fff0;
 }
-
 
 #horaextrapassoapassodecomocalcular {
-    background-color: #ececec;
-    color: #050922;
-    padding: 90px 0 90px 12px;
+  background-color: #ececec;
+  color: #050922;
+  padding: 90px 0 90px 12px;
 }
 
-#horaextrapassoapassodecomocalcular img{
-    width: 90%; 
+#horaextrapassoapassodecomocalcular img {
+  width: 90%;
 }
 
-#capa-horaextrapassoapassodecomocalcular{
-    background-color: #050922;
-    color: #ffffff;
-    padding: 108px 0 102px 0;;  
+#capa-horaextrapassoapassodecomocalcular {
+  background-color: #050922;
+  color: #ffffff;
+  padding: 108px 0 102px 0;
 }
 
-#capa-horaextrapassoapassodecomocalcular img{
-    width: 100%; 
+#capa-horaextrapassoapassodecomocalcular img {
+  width: 100%;
 }
 
-.btn-capa-horaextrapassoapassodecomocalcular{
-    margin: 3% 3% 6% 0;
-    color: #ffffff;
-    border-radius: 50px;  
+.btn-capa-horaextrapassoapassodecomocalcular {
+  margin: 6% 3% 6% 0;
+  color: #ffffff;
+  border-radius: 50px;
 }
 
-#artigosrelacionados11{
-    padding: 60px 0 60px 0;
-    
+#artigosrelacionados11 {
+  padding: 60px 0 60px 0;
 }

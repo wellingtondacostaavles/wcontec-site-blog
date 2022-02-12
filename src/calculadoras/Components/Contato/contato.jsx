@@ -15,7 +15,7 @@ function Footer(){
       <div className="container">        
             <div className="row">
               <div className="col-lg-12">
-              <a href="https://www.wcontec.com.br/" target="_blank"><img src="/Images/Logo-WCONTEC.P.png" /></a>
+              <a href="/"><img src="/Images/Logo-WCONTEC.P.png" /></a>
              </div>
                      
             <div>   
@@ -26,7 +26,7 @@ function Footer(){
                       <li className="list-inline-item"><a href="https://www.youtube.com/channel/UCAS5k1jRgeZqXSnd8W4Jfcg" target="_blank"><i className="fa fa-youtube fa-2x"></i></a></li>
                       <li className="list-inline-item"><a href="https://twitter.com/w_contec" target="_blank"><i className="fa fa-twitter fa-2x"></i></a></li>
                       <li className="list-inline-item"><a href="https://chat.whatsapp.com/Co4DkBgkhrr6XSDiRL3CBP" target="_blank"><i className="fa fa-whatsapp fa-2x"></i></a></li>
-                      <li className="list-inline-item"><a href="https://www.wcontec.com.br/blog" target="_blank"><i className="fa fa-blog fa-2x"></i></a></li>
+                      <li className="list-inline-item"><a href="https://www.wcontec.com.br/blog"><i className="fa fa-blog fa-2x"></i></a></li>
                   </ul>
               </div>
             </div>

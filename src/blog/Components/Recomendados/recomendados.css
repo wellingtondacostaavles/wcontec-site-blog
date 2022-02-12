@@ -1,16 +1,13 @@
-#recomendados{
-    background-color: #ececec;
-    color: #050922;
-    padding: 90px 0 90px 12px;   
+#recomendados {
+  background-color: #ececec;
+  color: #050922;
+  padding: 90px 0 90px 12px;
 }
 
-
-#recomendados img{
-    width: 100%; 
+#recomendados img {
+  width: 100%;
 }
 
-
-.recomendados-tgs{
-    padding: 40px;
-    
+.recomendados-tgs {
+  padding: 40px;
 }

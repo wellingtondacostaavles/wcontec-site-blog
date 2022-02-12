@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import './navbar.css';
 
-
-function Menu(){
+function Navbar(){
     return <nav className="navbar fixed-top navbar-expand-md navbar-dark">
 
     <div className="container">
             
-        <a className="navbar-brand" href="https://www.wcontec.com.br/" target="_blank">
-          <img src="Images/logo-wcontec.png" alt="" height="54" />
+        <a className="navbar-brand" href="#">
+          <img src="/Images/logo-wcontec-calculator.png" alt="" height="54" />
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,12 +18,14 @@ function Menu(){
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#calculadorametroscubicos">Calculadora de metro cúbico</a>
-            </li>
-                      
+              <a className="nav-link" aria-current="page" href="#">Início</a>
+            </li> 
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#escolha-uma-calculadora">Calculadoras</a>
+            </li>              
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>
-            </li>
+            </li>         
           </ul>
         </div>    
       
@@ -31,4 +33,4 @@ function Menu(){
   </nav>;
   }
 
-export default Menu;
+export default Navbar;

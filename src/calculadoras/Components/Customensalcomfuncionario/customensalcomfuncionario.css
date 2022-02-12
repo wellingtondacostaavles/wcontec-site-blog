@@ -23,13 +23,20 @@ p {
 
 /* BANNER */
 
-#metroscubicos {
+#custo-mensal-com-funcionario {
   background-color: #ececec;
-  padding: 3% 21% 9% 21%;
+  padding: 9% 21% 9% 21%;
   color: #323338;
 }
 
 .titulo {
-  text-align: center;
-  padding: 0 0 1% 0;
+  padding: 0 3% 1% 3%;
+}
+
+#custo-mensal-com-funcionario .width70 {
+  width: 70%;
+}
+
+#custo-mensal-com-funcionario .width30 {
+  width: 30%;
 }

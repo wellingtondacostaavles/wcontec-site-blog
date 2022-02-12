@@ -1,50 +1,48 @@
-.segundo-h3{
-    color:#0d6efd;
+.segundo-h3 {
+  color: #0d6efd;
 }
-.terceiro-h3{
-    color:#07fff0;
+.terceiro-h3 {
+  color: #07fff0;
 }
-
 
 #normasparaemissaoeentregadocomprovantederendimentos {
-    background-color: #ececec;
-    color: #050922;
-    padding: 90px 0 90px 12px;
+  background-color: #ececec;
+  color: #050922;
+  padding: 90px 0 90px 12px;
 }
 
-#normasparaemissaoeentregadocomprovantederendimentos img{
-    width: 90%; 
+#normasparaemissaoeentregadocomprovantederendimentos img {
+  width: 90%;
 }
 
-#capa-normasparaemissaoeentregadocomprovantederendimentos{
-    background-color: #050922;
-    color: #ffffff;
-    padding: 108px 0 102px 0;;  
+#capa-normasparaemissaoeentregadocomprovantederendimentos {
+  background-color: #050922;
+  color: #ffffff;
+  padding: 108px 0 102px 0;
 }
 
-#capa-normasparaemissaoeentregadocomprovantederendimentos img{
-    width: 100%; 
+#capa-normasparaemissaoeentregadocomprovantederendimentos img {
+  width: 100%;
 }
 
-.btn-capa-normasparaemissaoeentregadocomprovantederendimentos{
-    margin: 3% 3% 6% 0;
-    color: #ffffff;
-    border-radius: 50px;  
+.btn-capa-normasparaemissaoeentregadocomprovantederendimentos {
+  margin: 6% 3% 6% 0;
+  color: #ffffff;
+  border-radius: 50px;
 }
 
-#artigosrelacionados16{
-    padding: 60px 0 60px 0;
-    
+#artigosrelacionados16 {
+  padding: 60px 0 60px 0;
 }
 
 .segundo-a:link {
-    color:#ffffff;
-    background-color: transparent;
-    text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .segundo-a:hover {
-    color:#07fff0;
-    background-color: transparent;
-    text-decoration: none;
+  color: #07fff0;
+  background-color: transparent;
+  text-decoration: none;
 }

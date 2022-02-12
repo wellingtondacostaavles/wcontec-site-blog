@@ -55,7 +55,7 @@ function Precos(){
                 </div>
             </div>
 
-            <h3 className="display-6 text-center mb-4">Compare Planos</h3>
+            <h3 className="display-6 text-center mb-4">Compare planos</h3>
 
             <div className="table-responsive">
             <table className="table text-center">
