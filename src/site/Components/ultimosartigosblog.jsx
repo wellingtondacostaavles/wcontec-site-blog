@@ -15,11 +15,11 @@ function Ultimosartigosblog(){
             <div className="row">
                 <div className="col-lg-4">
                         <div className="card card-artigos">
-                            <center><img src="/Images/Dicasmudardcarreira/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                            <center><img src="/Images/Consultasaosistemavaloresareceberbcb/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
-                                <h4 className="card-title">Especialistas dão dicas para quem pretende mudar de carreira</h4>
-                                <p className="card-text">Se a intenção é mudar de carreira, para que façamos isso com mais segurança, será necessário seguir algumas dicas dadas por especialistas.</p>
-                                <a href="/blog/dicas-para-quem-deseja-mudar-de-carreira" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <h4 className="card-title">Já estão disponíveis as consultas ao Sistema Valores a Receber</h4>
+                                <p className="card-text">Consulte e saiba se você tem valor a receber ou não, caso tenha, ficará por dentro da data e o período para consultar e solicitar o resgate do saldo existente.</p>
+                                <a href="/blog/consulta-ao-sistema-valores-a-receber-bcb" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  
                     </div>

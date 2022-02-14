@@ -1,0 +1,78 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  font-family: Effra, sans-serif, Arial, sans-serif;
+}
+
+.segundo-h3 {
+  color: #0d6efd;
+}
+.terceiro-h3 {
+  color: #07fff0;
+}
+
+#consulta-ao-sistema-valores-a-receber-bcb {
+  background-color: #ececec;
+  color: #050922;
+  padding: 90px 0 90px 12px;
+}
+
+#consulta-ao-sistema-valores-a-receber-bcb img {
+  width: 90%;
+}
+
+#capa-consulta-ao-sistema-valores-a-receber-bcb {
+  background-color: #050922;
+  color: #ffffff;
+  padding: 108px 0 102px 0;
+}
+
+.table-responsive {
+  padding: 3% 15% 8% 15%;
+}
+
+.alin {
+  text-align: left;
+}
+
+#capa-consulta-ao-sistema-valores-a-receber-bcb img {
+  width: 100%;
+}
+
+.btn-capa-consulta-ao-sistema-valores-a-receber-bcb {
+  margin: 6% 3% 6% 0;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+#artigosrelacionados21 {
+  padding: 60px 0 60px 0;
+}
+
+#consulta-ao-sistema-valores-a-receber-bcb .width40 {
+  width: 40%;
+}
+
+#consulta-ao-sistema-valores-a-receber-bcb .width30 {
+  width: 30%;
+}
+
+#card-svr {
+  padding-bottom: 6%;
+  background-color: #ececec;
+  color: #323338;
+}
+
+.btn-card-svr {
+  border-radius: 50px;
+  margin-top: 3%;
+}
+
+.label {
+  font-size: 15px;
+  color: #323338;
+}

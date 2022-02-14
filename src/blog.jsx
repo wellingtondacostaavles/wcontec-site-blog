@@ -28,7 +28,7 @@ import Comoaproveitaraomaximoocontratodeexperienciadetrabalhocomoempregado from 
 import Transicaodooperacionalparaoempreendedorismo from './blog/Artigo18/transicaodooperacionalparaoempreendedorismo.jsx';
 import Brasileirospreferemcomprasonline from './blog/Artigo19/brasileirospreferemcomprasonline.jsx';
 import Senadoaprovatributacaomenorparacaminhoneiros from './blog/Artigo20/senadoaprovatributacaomenorparacaminhoneiros.jsx';
-
+import Consultasaosistemavaloresareceberbcb from './blog/Artigo21/consultasaosistemavaloresareceberbcb.jsx';
 
 
 function Blog(){
@@ -59,6 +59,7 @@ function Blog(){
     <Route exact path='/blog/transicao-do-operacional-para-o-empreendedorismo' component={Transicaodooperacionalparaoempreendedorismo} />
     <Route exact path='/blog/brasileiros-preferem-compras-online' component={Brasileirospreferemcomprasonline} />
     <Route exact path='/blog/senado-aprova-tributacao-menor-para-caminhoneiros' component={Senadoaprovatributacaomenorparacaminhoneiros} />
+    <Route exact path='/blog/consulta-ao-sistema-valores-a-receber-bcb' component={Consultasaosistemavaloresareceberbcb} />
 
 
     </BrowserRouter>;
