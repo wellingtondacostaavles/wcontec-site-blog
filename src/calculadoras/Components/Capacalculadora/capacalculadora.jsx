@@ -9,7 +9,7 @@ function Capacalculadora(){
             <div className="row">
 
                 <div className="col-lg-6">
-                    <img src="/Images/Mei/capaprincipal.png" />
+                    <img src="/Images/Calculadora/capaprincipal.png" />
                 </div>
                 
                 <div className="col-lg-6">

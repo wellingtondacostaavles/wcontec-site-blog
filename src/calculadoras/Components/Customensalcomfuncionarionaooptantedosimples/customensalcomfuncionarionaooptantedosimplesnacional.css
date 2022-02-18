@@ -23,7 +23,7 @@ p {
 
 /* BANNER */
 
-#custo-mensal-com-funcionario {
+#custo-mensal-com-funcionario-nao-optante-do-simples-nacional {
   background-color: #ececec;
   padding: 9% 21% 9% 21%;
   color: #323338;
@@ -33,10 +33,10 @@ p {
   padding: 0 3% 1% 3%;
 }
 
-#custo-mensal-com-funcionario .width80 {
+#custo-mensal-com-funcionario-nao-optante-do-simples-nacional .width80 {
   width: 80%;
 }
 
-#custo-mensal-com-funcionario .width20 {
+#custo-mensal-com-funcionario-nao-optante-do-simples-nacional .width20 {
   width: 20%;
 }

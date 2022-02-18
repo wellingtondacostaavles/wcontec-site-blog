@@ -3,9 +3,9 @@ import React, {useState, useEffect} from 'react';
 
 
 
-import './customensalcomfuncionario.css';
+import './customensalcomfuncionarionaooptantedosimplesnacional.css';
 
-function Customensalcomfuncionario(){    
+function Customensalcomfuncionarionaooptantedosimplesnacional(){    
 
     const [nro1, setNro1] = useState(0);
     const [nro2, setNro2] = useState(0);
@@ -18,7 +18,7 @@ function Customensalcomfuncionario(){
     const [operacao1, setOperacao1] = useState('Somar');
 
     const [resultado2, setResultado2] = useState(0);
-    const [operacao2, setOperacao2] = useState('Somar');
+    const [operacao2, setOperacao2] = useState('Multiplicar');
 
     const [resultado3, setResultado3] = useState(0);
     const [operacao3, setOperacao3] = useState('Somar');
@@ -42,10 +42,13 @@ function Customensalcomfuncionario(){
     const [operacao9, setOperacao9] = useState('Somar');
 
     const [resultado10, setResultado10] = useState(0);
-    const [operacao10, setOperacao10] = useState('Multiplicar');
+    const [operacao10, setOperacao10] = useState('Somar');
 
     const [resultado11, setResultado11] = useState(0);
-    const [operacao11, setOperacao11] = useState('Somar');
+    const [operacao11, setOperacao11] = useState('Multiplicar');
+
+    const [resultado12, setResultado12] = useState(0);
+    const [operacao12, setOperacao12] = useState('Somar');
 
    
   
@@ -55,53 +58,58 @@ function Customensalcomfuncionario(){
     }
 
     const calcular2 = () =>{  
-        if (operacao2=="Somar")
-        return (parseFloat(nro1)/ 12);
+        if (operacao2=="Multiplicar")
+        return (parseFloat(nro1) * 0.2);
     }
 
     const calcular3 = () =>{  
         if (operacao3=="Somar")
-        return parseFloat(nro1) / 36;
+        return (parseFloat(nro1) / 12);
     }
 
     const calcular4 = () =>{  
         if (operacao4=="Somar")
-        return parseFloat(nro1) / 12;
+        return parseFloat(nro1) / 36;
     }
 
     const calcular5 = () =>{  
         if (operacao5=="Somar")
-        return parseFloat(nro1) / 150;
+        return parseFloat(nro1) / 12;
     }
 
     const calcular6 = () =>{  
         if (operacao6=="Somar")
-        return parseFloat(nro1) / 454.5;
+        return parseFloat(nro1) / 150;
     }
 
     const calcular7 = () =>{  
         if (operacao7=="Somar")
-        return parseFloat(nro1) / 150;
+        return parseFloat(nro1) / 454.5;
     }
 
     const calcular8 = () =>{  
         if (operacao8=="Somar")
-        return parseFloat(nro1) / 12;
-    }
-  
-    const calcular9 = () =>{  
-        if (operacao9=="Somar")
         return parseFloat(nro1) / 150;
     }
 
+    const calcular9 = () =>{  
+        if (operacao9=="Somar")
+        return parseFloat(nro1) / 12;
+    }
+  
     const calcular10 = () =>{  
-        if (operacao10=="Multiplicar")
-        return parseFloat(nro1) * 2 / 100;
+        if (operacao10=="Somar")
+        return parseFloat(nro1) / 150;
     }
 
     const calcular11 = () =>{  
-        if (operacao11=="Somar")
-        return (parseFloat(nro1) + parseFloat(nro2) + parseFloat(nro3) + parseFloat(nro4) + parseFloat(nro5) + parseFloat(resultado1) + parseFloat(resultado2) + parseFloat(resultado3) + parseFloat(resultado4) + parseFloat(resultado5) + parseFloat(resultado6) + parseFloat(resultado7) + parseFloat(resultado8) + parseFloat(resultado9) + parseFloat(resultado10));
+        if (operacao11=="Multiplicar")
+        return parseFloat(nro1) * 2 / 100;
+    }
+
+    const calcular12 = () =>{  
+        if (operacao12=="Somar")
+        return (parseFloat(nro1) + parseFloat(nro2) + parseFloat(nro3) + parseFloat(nro4) + parseFloat(nro5) + parseFloat(resultado1) + parseFloat(resultado2) + parseFloat(resultado3) + parseFloat(resultado4) + parseFloat(resultado5) + parseFloat(resultado6) + parseFloat(resultado7) + parseFloat(resultado8) + parseFloat(resultado9) + parseFloat(resultado10) + parseFloat(resultado11));
     }
 
     useEffect (() =>{setResultado1(calcular())},[nro1, operacao1]);
@@ -114,17 +122,18 @@ function Customensalcomfuncionario(){
     useEffect (() =>{setResultado8(calcular8())},[nro1, operacao8]);
     useEffect (() =>{setResultado9(calcular9())},[nro1, operacao9]);
     useEffect (() =>{setResultado10(calcular10())},[nro1, operacao10]);
-    useEffect (() =>{setResultado11(calcular11())},[nro1, nro2, nro3, nro4, nro5, resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8, resultado9, resultado10, operacao11]);
+    useEffect (() =>{setResultado11(calcular11())},[nro1, operacao11]);
+    useEffect (() =>{setResultado12(calcular12())},[nro1, nro2, nro3, nro4, nro5, resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8, resultado9, resultado10, operacao12]);
       
         
         return <div>         
         
-        <section id="custo-mensal-com-funcionario">  
+        <section id="custo-mensal-com-funcionario-nao-optante-do-simples-nacional">  
 
         <div className="row text-center">
                 <div className="titulo">
                     <h1>Custo mensal com funcionário</h1>
-                    <p>Funcionário de empresa optante do Simples Nacional</p>
+                    <p>Funcionário de empresa não optante do Simples Nacional</p>
                 </div>
             </div>
 
@@ -183,40 +192,44 @@ function Customensalcomfuncionario(){
                     <td className="bi">{[resultado1].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                 </tr>
                 <tr>
-                    <th scope="row" className="text-start">FÉRIAS 1/12</th>
+                    <th scope="row" className="text-start">INSS</th>
                     <td className="bi">{[resultado2].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                </tr>
+                <tr>
+                    <th scope="row" className="text-start">FÉRIAS 1/12</th>
+                    <td className="bi">{[resultado3].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                 </tr>                   
                 <tr>
                     <th scope="row" className="text-start">1/3 FÉRIAS 1/12</th>
-                    <td className="bi">{[resultado3].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>                 
+                    <td className="bi">{[resultado4].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>                 
                 </tr>                               
                 <tr>
                     <th scope="row" className="text-start">13º SALÁRIO 1/12</th>
-                    <td className="bi">{[resultado4].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                    <td className="bi">{[resultado5].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                 </tr> 
                 <tr>
                     <th scope="row" className="text-start">FGTS FÉRIAS 1/12</th>
-                    <td className="bi">{[resultado5].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                    <td className="bi">{[resultado6].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                 </tr>                
                 <tr>
                     <th scope="row" className="text-start">FGTS 1/3 FÉRIAS 1/12</th>
-                    <td className="bi">{[resultado6].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                    <td className="bi">{[resultado7].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                 </tr>
                 <tr>
                     <th scope="row" className="text-start">FGTS 13º SALÁRIO 1/12</th>
-                    <td className="bi">{[resultado7].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                    <td className="bi">{[resultado8].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                 </tr>           
                 <tr>
                     <th scope="row" className="text-start">AVISO PRÉVIO 1/12 (provisão)</th>
-                    <td className="bi">{[resultado8].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                </tr>
-                <tr>
-                    <th scope="row" className="text-start">FGTS AVISO PRÉVIO 1/12  (provisão)</th>
                     <td className="bi">{[resultado9].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                 </tr>
                 <tr>
-                    <th scope="row" className="text-start">MULTA FGTS 1/12  (provisão)</th>
+                    <th scope="row" className="text-start">FGTS AVISO PRÉVIO 1/12  (provisão)</th>
                     <td className="bi">{[resultado10].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                </tr>
+                <tr>
+                    <th scope="row" className="text-start">MULTA FGTS 1/12  (provisão)</th>
+                    <td className="bi">{[resultado11].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                 </tr>                                                
             </tbody> 
             </table>
@@ -225,7 +238,7 @@ function Customensalcomfuncionario(){
             <div className="container">
             <div className="row text-center">
               <h3>O custo total mensal com um funcionário será de aproximadamente:</h3>
-              <h1>{[resultado11].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
+              <h1>{[resultado12].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
               <p><span className="segundo-p">ATENÇÃO: O valor estimado na calculadora deve ser confirmado com o contador responsável pela empresa.</span></p>
             </div>
         </div>          
@@ -233,4 +246,4 @@ function Customensalcomfuncionario(){
       </div> 
     }
   
-  export default Customensalcomfuncionario;
+  export default Customensalcomfuncionarionaooptantedosimplesnacional;

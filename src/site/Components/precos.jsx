@@ -55,112 +55,114 @@ function Precos(){
                 </div>
             </div>
 
-            <h3 className="display-6 text-center mb-4">Compare planos</h3>
+            <div className="row tabela">    
+                <h3 className="display-6 text-center mb-4">Compare planos</h3>
 
-            <div className="table-responsive">
-            <table className="table text-center table">
-                <thead>
-                <tr>
-                    <th className="width34"></th>
-                    <th className="width22">Básico</th>
-                    <th className="width22">Avançado</th>
-                    <th className="width22">Premium</th>
-                </tr>
-                </thead>
-            <tbody>
-                <tr>
-                    <th scope="row" className="text-start">Abertura da empresa grátis</th>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                </tr> 
-                <tr>
-                    <th scope="row" className="text-start">Acesso a platafoma</th>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                </tr>
-                <tr>
-                    <th scope="row" className="text-start">Contador exclusivo</th>
-                    <td className="bi"></td>
-                    <td className="bi"></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                </tr>
-            </tbody>           
+                <div className="table-primary">
+                <table className="table text-center ">
+                    <thead>
+                    <tr>
+                        <th className="width34"></th>
+                        <th className="width22">Básico</th>
+                        <th className="width22">Avançado</th>
+                        <th className="width22">Premium</th>
+                    </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" className="text-start">Abertura da empresa grátis</th>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" className="text-start">Acesso a platafoma</th>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Contador exclusivo</th>
+                        <td className="bi"></td>
+                        <td className="bi"></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                    </tr>
+                </tbody>           
 
-            <tbody>    
-                <tr>
-                    <th scope="row" className="text-start">Cálculo e emissão de guia de impostos</th>
-                    <td className="bi"></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                </tr>
-                <tr>
-                    <th scope="row" className="text-start">DRE, Balanço Patrimonial e Balancete</th>
-                    <td className="bi"></td>
-                    <td className="bi"></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                </tr>
-                <tr>
-                    <th scope="row" className="text-start">Obrigações acessórias</th>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                </tr>                                
-            </tbody>
+                <tbody>    
+                    <tr>
+                        <th scope="row" className="text-start">Cálculo e emissão de guia de impostos</th>
+                        <td className="bi"></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">DRE, Balanço Patrimonial e Balancete</th>
+                        <td className="bi"></td>
+                        <td className="bi"></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Obrigações acessórias</th>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                    </tr>                                
+                </tbody>
 
-            <tbody>    
-                <tr>
-                    <th scope="row" className="text-start">Pró-labore dos sócios</th>
-                    <td className="bi"></td>
-                    <td className="bi"></td>
-                    <td className="bi"><h6>até 5 sócios grátis</h6></td>
-                </tr>
-                <tr>
-                    <th scope="row" className="text-start">Folha de pagamento</th>
-                    <td className="bi"></td>
-                    <td className="bi"></td>
-                    <td className="bi"><h6>até 3 funcionários grátis</h6></td>
-                </tr>                               
-            </tbody>
+                <tbody>    
+                    <tr>
+                        <th scope="row" className="text-start">Pró-labore dos sócios</th>
+                        <td className="bi"></td>
+                        <td className="bi"></td>
+                        <td className="bi"><h6>até 5 sócios grátis</h6></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Folha de pagamento</th>
+                        <td className="bi"></td>
+                        <td className="bi"></td>
+                        <td className="bi"><h6>até 3 funcionários grátis</h6></td>
+                    </tr>                               
+                </tbody>
 
-            <tbody>
-                <tr>
-                    <th scope="row" className="text-start">Perícia Contábil</th>
-                    <td className="bi"></td>
-                    <td className="bi"><h6>Cobrado à parte</h6></td>
-                    <td className="bi"><h6>Cobrado à parte</h6></td>
-                </tr> 
-                <tr>
-                    <th scope="row" className="text-start">Planejamento Tributário</th>
-                    <td className="bi"></td>
-                    <td className="bi"><h6>Cobrado à parte</h6></td>
-                    <td className="bi"><h6>Cobrado à parte</h6></td>
-                </tr>                
-            </tbody>
+                <tbody>
+                    <tr>
+                        <th scope="row" className="text-start">Perícia Contábil</th>
+                        <td className="bi"></td>
+                        <td className="bi"><h6>Cobrado à parte</h6></td>
+                        <td className="bi"><h6>Cobrado à parte</h6></td>
+                    </tr> 
+                    <tr>
+                        <th scope="row" className="text-start">Planejamento Tributário</th>
+                        <td className="bi"></td>
+                        <td className="bi"><h6>Cobrado à parte</h6></td>
+                        <td className="bi"><h6>Cobrado à parte</h6></td>
+                    </tr>                
+                </tbody>
 
-            <tbody>    
-                <tr>
-                    <th scope="row" className="text-start">Emissor de NFS-e ilimitado</th>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                </tr>
-                <tr>
-                    <th scope="row" className="text-start">Emissor de NF-e</th>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                    <td className="bi"><img src="Images/check.png" /></td>
-                </tr>
-                <tr>
-                    <th scope="row" className="text-start">Certificado Digital</th>
-                    <td className="bi"><h6>Cobrado à parte</h6></td>
-                    <td className="bi"><h6>Cobrado à parte</h6></td>
-                    <td className="bi"><h6>Cobrado à parte</h6></td>
-                </tr>                                 
-            </tbody> 
-            </table>
-            </div>     
+                <tbody>    
+                    <tr>
+                        <th scope="row" className="text-start">Emissor de NFS-e ilimitado</th>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Emissor de NF-e</th>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Certificado Digital</th>
+                        <td className="bi"><h6>Cobrado à parte</h6></td>
+                        <td className="bi"><h6>Cobrado à parte</h6></td>
+                        <td className="bi"><h6>Cobrado à parte</h6></td>
+                    </tr>                                 
+                </tbody> 
+                </table>
+                </div> 
+            </div>    
         </div>
     </section>;
   }
