@@ -239,7 +239,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
             <div className="row text-center">
               <h3>O custo total mensal com um funcionário será de aproximadamente:</h3>
               <h1>{[resultado12].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
-              <p><span className="segundo-p">ATENÇÃO: O valor estimado na calculadora deve ser confirmado com o contador responsável pela empresa.</span></p>
+              <p><span className="segundo-p">ATENÇÃO: O valor estimado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
             </div>
         </div>          
         </section>       

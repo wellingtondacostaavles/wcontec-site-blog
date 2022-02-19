@@ -65,7 +65,7 @@ function Metrocubico(){
               <div className="row text-center">
                 <h3>Você irá precisar de aproximadamente:</h3>
                 <h1>{resultado} m³</h1>
-                <p><span className="segundo-p">ATENÇÃO: O volume estimado na calculadora deve ser confirmado com o engenheiro responsável pela obra.</span></p>
+                <p><span className="segundo-p">ATENÇÃO: O volume estimado na calculadora deverá ser confirmado com o engenheiro responsável pela obra.</span></p>
               </div>
             </div>  
         

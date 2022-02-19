@@ -58,7 +58,7 @@ function Precos(){
             <div className="row tabela">    
                 <h3 className="display-6 text-center mb-4">Compare planos</h3>
 
-                <div className="table-primary">
+                <div className="table-responsive">
                 <table className="table text-center ">
                     <thead>
                     <tr>
@@ -91,13 +91,13 @@ function Precos(){
 
                 <tbody>    
                     <tr>
-                        <th scope="row" className="text-start">Cálculo e emissão de guia de impostos</th>
+                        <th scope="row" className="text-start">Cálculo de impostos</th>
                         <td className="bi"></td>
                         <td className="bi"><img src="Images/check.png" /></td>
                         <td className="bi"><img src="Images/check.png" /></td>
                     </tr>
                     <tr>
-                        <th scope="row" className="text-start">DRE, Balanço Patrimonial e Balancete</th>
+                        <th scope="row" className="text-start">DRE, Balanço e Balancete</th>
                         <td className="bi"></td>
                         <td className="bi"></td>
                         <td className="bi"><img src="Images/check.png" /></td>
@@ -115,13 +115,13 @@ function Precos(){
                         <th scope="row" className="text-start">Pró-labore dos sócios</th>
                         <td className="bi"></td>
                         <td className="bi"></td>
-                        <td className="bi"><h6>até 5 sócios grátis</h6></td>
+                        <td className="bi"><h6>até 5 sócios</h6></td>
                     </tr>
                     <tr>
                         <th scope="row" className="text-start">Folha de pagamento</th>
                         <td className="bi"></td>
                         <td className="bi"></td>
-                        <td className="bi"><h6>até 3 funcionários grátis</h6></td>
+                        <td className="bi"><h6>até 3 funcionários</h6></td>
                     </tr>                               
                 </tbody>
 
