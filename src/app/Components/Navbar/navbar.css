@@ -1,6 +1,14 @@
-/* NAVBAR */
+.navbar .logout {
+  cursor: pointer;
+}
 
-.navbar{
-    background-color: #050922;    
-    color: #ffffff; 
+.navbar {
+  background-color: #050922;
+  font-family: Effra, sans-serif;
+  color: #ffffff;
+}
+
+.btn-banner {
+  margin: 9% 3% 6% 0;
+  color: #ffffff;
 }

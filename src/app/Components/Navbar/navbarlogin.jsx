@@ -1,17 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import './navbar.css';
-import {AuthContext} from '../../Context/auth';
 
 function Navbar(){
-
-    const {setLogado} = useContext(AuthContext);
-
-    function Logout(){
-      setLogado(false);
-      localStorage.removeItem("logado");
-    }
-
     return <nav className="navbar fixed-top navbar-expand-md navbar-dark">
 
     <div className="container">
@@ -28,16 +19,10 @@ function Navbar(){
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#">Início</a>
-            </li> 
-            <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#escolha-uma-calculadora">Calculadoras</a>
-            </li>              
+            </li>             
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>
-            </li>
-            <li className="nav-item">
-            <a href="/app" onClick={Logout} className="nav-link logout" aria-current="page" >Sair</a>
-            </li>
+            </li>         
           </ul>
         </div>    
       

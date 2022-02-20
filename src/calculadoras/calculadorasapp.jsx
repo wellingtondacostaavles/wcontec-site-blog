@@ -1,4 +1,4 @@
-import Navbar from './Components/Navbar/navbar'
+import Navbar from '../app/Components/Navbar/navbar';
 import Capacalculadora from './Components/Capacalculadora/capacalculadora';
 import Escolhaumacalculadora from './Components/Escolhaumacalculadora/escolhaumacalculadora';
 import Calculostrabalhistas from './Components/Escolhaumacalculadora/calculostrabalhistas';
@@ -12,7 +12,7 @@ import Metrocubico from '../calculadoras/Components/Metrocubico/metrocubico';
 import Parceiros from '../blog/Components/Parceiros/parceiros';
 import Footer from '../calculadoras/Components/Contato/contato';
 
-function Calculadoras(){
+function Calculadorasapp(){
   
   return <div>
       <Navbar/> 
@@ -31,4 +31,4 @@ function Calculadoras(){
     </div> 
   }
 
-export default Calculadoras;
+export default Calculadorasapp;

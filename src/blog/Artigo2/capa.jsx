@@ -9,7 +9,7 @@ function Capa(){
             <div className="row">
 
                 <div className="col-lg-6">
-                    <img src="/Images/Mei/capaprincipal.png" />
+                    <img src="/Images/Mei/capaprincipal.png" alt="mei" />
                 </div>
                 
                 <div className="col-lg-6">
