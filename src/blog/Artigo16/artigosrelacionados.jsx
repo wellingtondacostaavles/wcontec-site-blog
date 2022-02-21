@@ -31,7 +31,7 @@ function Artigosrelacionados(){
                         <div className="card-body">
                             <h4 className="card-title">Microeemprendedor Individual (MEI)</h4>
                             <p className="card-text">Apesar de só poder faturar até R$ 81.000,00 por ano, o MEI tem diversas facilidades como abertura de conta bancária, pedido de empréstimos e emissão de notas fiscais.</p>
-                            <a href="/blog/mei" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-mei" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>

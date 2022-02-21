@@ -239,7 +239,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
             <div className="row text-center">
               <h3>O custo total mensal com um funcionário será de aproximadamente:</h3>
               <h1>{[resultado12].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
-              <p><span className="segundo-p">ATENÇÃO: O valor estimado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
+              <p><span className="segundo-p">No valor correspondente a parte encontrada para o INSS não estão sendo incluídos o RAT porque seu cálculo se dá com base na atividade da empresa, e o FAP que é um cálculo feito pelo INSS de acordo com o último ano da empresa, em relação a riscos.. Ressaltamos que o valor estimado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
             </div>
         </div>          
         </section>       

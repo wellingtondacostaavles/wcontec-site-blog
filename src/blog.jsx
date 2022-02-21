@@ -57,27 +57,27 @@ function Blog(){
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
       <Route exact path='/blog' component={Home} />
-      <Route exact path='/blog/nao-se-pode-culpar-a-cargatributaria' component={Naosepodeculparcargatributaria} />
-      <Route exact path='/blog/mei' component={Mei} />  
-      <Route exact path='/blog/autonomo' component={Autonomo} />     
-      <Route exact path='/blog/abrir-empresa' component={Abrirempresa} />
-      <Route exact path='/blog/simples-nacional' component={Simplesnacional} />
-      <Route exact path='/blog/sociedade-limitada-unipessoal' component={Sociedadelimitadaunipessoal} />
-      <Route exact path='/blog/empresario-individual' component={Empresarioindividual} />
-      <Route exact path='/blog/diferencas-mei-eireli-slu-ei' component={Diferencasmeieirelisluei} />
-      <Route exact path='/blog/eireli' component={Eireli} />
-      <Route exact path='/blog/inss-entenda-como-e-a-aposentadoria-de-quem-muda-de-sexo' component={Inssentendacomoeaaposentadoriadequemmudadesexo} />
-      <Route exact path='/blog/hora-extra-passo-a-passo-de-como-calcular' component={Horaextrapassoapassodecomocalcular} />
-      <Route exact path='/blog/dicas-para-planejar-o-ano-novo-da-sua-empresa' component={Dicasparaplanejaroanonovodasuaempresa} />
-      <Route exact path='/blog/sebrae-oferece-capacitacao' component={Sebraeoferececapacitacao} />
-      <Route exact path='/blog/profissionais-autonomos-estao-em-crescimento' component={Profissionaisautonomosestaoemcrescimento} />
-      <Route exact path='/blog/dicas-para-quem-deseja-mudar-de-carreira' component={Dicasparaquemdesejamudardecarreira} />
-      <Route exact path='/blog/normas-para-emissao-e-entrega-do-comprovante-de-rendimentos' component={Normasparaemissaoeentregadocomprovantederendimentos} />
-      <Route exact path='/blog/como-aproveitar-ao-maximo-o-contrato-de-experiencia-de-trabalho-com-o-empregado' component={Comoaproveitaraomaximoocontratodeexperienciadetrabalhocomoempregado} />
-      <Route exact path='/blog/transicao-do-operacional-para-o-empreendedorismo' component={Transicaodooperacionalparaoempreendedorismo} />
-      <Route exact path='/blog/brasileiros-preferem-compras-online' component={Brasileirospreferemcomprasonline} />
-      <Route exact path='/blog/senado-aprova-tributacao-menor-para-caminhoneiros' component={Senadoaprovatributacaomenorparacaminhoneiros} />
-      <Route exact path='/blog/consulta-ao-sistema-valores-a-receber-bcb' component={Consultasaosistemavaloresareceberbcb} />
+      <Route exact path='/blog-nao-se-pode-culpar-a-cargatributaria' component={Naosepodeculparcargatributaria} />
+      <Route exact path='/blog-mei' component={Mei} />  
+      <Route exact path='/blog-autonomo' component={Autonomo} />     
+      <Route exact path='/blog-abrir-empresa' component={Abrirempresa} />
+      <Route exact path='/blog-simples-nacional' component={Simplesnacional} />
+      <Route exact path='/blog-sociedade-limitada-unipessoal' component={Sociedadelimitadaunipessoal} />
+      <Route exact path='/blog-empresario-individual' component={Empresarioindividual} />
+      <Route exact path='/blog-diferencas-mei-eireli-slu-ei' component={Diferencasmeieirelisluei} />
+      <Route exact path='/blog-eireli' component={Eireli} />
+      <Route exact path='/blog-inss-entenda-como-e-a-aposentadoria-de-quem-muda-de-sexo' component={Inssentendacomoeaaposentadoriadequemmudadesexo} />
+      <Route exact path='/blog-hora-extra-passo-a-passo-de-como-calcular' component={Horaextrapassoapassodecomocalcular} />
+      <Route exact path='/blog-dicas-para-planejar-o-ano-novo-da-sua-empresa' component={Dicasparaplanejaroanonovodasuaempresa} />
+      <Route exact path='/blog-sebrae-oferece-capacitacao' component={Sebraeoferececapacitacao} />
+      <Route exact path='/blog-profissionais-autonomos-estao-em-crescimento' component={Profissionaisautonomosestaoemcrescimento} />
+      <Route exact path='/blog-dicas-para-quem-deseja-mudar-de-carreira' component={Dicasparaquemdesejamudardecarreira} />
+      <Route exact path='/blog-normas-para-emissao-e-entrega-do-comprovante-de-rendimentos' component={Normasparaemissaoeentregadocomprovantederendimentos} />
+      <Route exact path='/blog-como-aproveitar-ao-maximo-o-contrato-de-experiencia-de-trabalho-com-o-empregado' component={Comoaproveitaraomaximoocontratodeexperienciadetrabalhocomoempregado} />
+      <Route exact path='/blog-transicao-do-operacional-para-o-empreendedorismo' component={Transicaodooperacionalparaoempreendedorismo} />
+      <Route exact path='/blog-brasileiros-preferem-compras-online' component={Brasileirospreferemcomprasonline} />
+      <Route exact path='/blog-senado-aprova-tributacao-menor-para-caminhoneiros' component={Senadoaprovatributacaomenorparacaminhoneiros} />
+      <Route exact path='/blog-consulta-ao-sistema-valores-a-receber-bcb' component={Consultasaosistemavaloresareceberbcb} />
     </Switch>
 
     </BrowserRouter>;

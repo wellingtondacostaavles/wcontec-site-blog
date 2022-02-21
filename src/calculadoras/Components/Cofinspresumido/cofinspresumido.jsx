@@ -107,7 +107,7 @@ function Cofinspresumido(){
               <h3>A COFINS a recolher mensal será de:</h3>
               <h1>{[resultado3].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
               <p>Códido do Tributo 2172</p>
-              <p><span className="segundo-p">ATENÇÃO: O valor estimado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
+              <p><span className="segundo-p">Sobre a base de cálculo foi aplicado 3% e subtraído as deduções. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
             </div>
         </div>          
         </section>       
