@@ -1,0 +1,42 @@
+.segundo-h3 {
+  color: #0d6efd;
+}
+.terceiro-h3 {
+  color: #07fff0;
+}
+
+.quarto-h3 {
+  color: #7fff00;
+}
+
+#resetsenha {
+  background-color: #ececec;
+  color: #050922;
+  padding: 99px 0 102px 0;
+}
+
+#resetsenha img {
+  width: 100%;
+}
+
+.btn-resetsenha {
+  margin: 3% 3% 6% 0;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+#capa-resetsenha {
+  background-color: #050922;
+  color: #ffffff;
+  padding: 108px 0 102px 0;
+}
+
+#capa-resetsenha img {
+  width: 100%;
+}
+
+.btn-capa-resetsenha {
+  margin: 0 3% 6% 0;
+  color: #ffffff;
+  border-radius: 50px;
+}

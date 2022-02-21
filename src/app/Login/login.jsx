@@ -3,6 +3,7 @@ import {Link, Redirect}  from 'react-router-dom';
 import './login.css';
 import {AuthContext} from '../Context/auth';
 import Navbar from '../Components/Navbar/navbarlogin';
+import Capalogin from './capalogin';
 import Parceiros from '../../blog/Components/Parceiros/parceiros';
 import Footer from '../../calculadoras/Components/Contato/contato';
 
@@ -39,9 +40,14 @@ function Login(){
       setSenha(event.target.value);
     }
 
-    return <div className="d-flex align-items-center text-center form-container">    
+    return <div>
+      <Navbar/>
+      <Capalogin/>
+    
+    <section id="login">
+    
+    <div className="d-flex align-items-center text-center form-container">    
       <form className="form-signin">
-        <img className="mb-4" src="/Images/LogoTipo-WCONTEC_NomeEscuro.png" alt="" />
         <h1 className="h3 mb-3 fw-normal">Login</h1>
 
         <div className="form-floating">
@@ -54,18 +60,22 @@ function Login(){
           <label htmlFor="floatingPassword">Senha</label>
         </div>
         
-        <button onClick={LoginUsuario} className="w-100 btn btn-lg btn-primary" type="button">Acessar</button>
+        <button onClick={LoginUsuario} className="w-100 btn btn-lg btn-primary btn-login" type="button">Acessar</button>
 
         {sucesso === 'N' ? <div className="alert alert-danger mt-2" role="alert">E-mail ou senha inválida.</div> : null}
         {sucesso === 'S' ? <Redirect to='/app/calculadoras' /> : null}
 
         <div className="login-links mt-5">
-          <Link to="/app/resetsenha" className="mx-3">Esqueci minha senha</Link>
-          <Link to="/app/novaconta" className="mx-3">Criar uma conta</Link>
+          <Link to="/app/recuperar-senha" className="mx-3">Esqueci minha senha</Link>
+          <Link to="/app/criar-conta" className="mx-3">Criar uma conta</Link>
         </div>
 
-        <p className="mt-5 mb-3 text-muted">&copy; Wcontec</p>
+        <p className="mt-5 mb-3 text-muted">&copy; Desenvolvido por Wcontec</p>
       </form>
+    </div>
+    </section>
+    <Parceiros/>
+    <Footer/>
     </div>
   }
 

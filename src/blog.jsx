@@ -50,8 +50,8 @@ function Blog(){
     <Switch>
       <Route exact path='/' component={Site} /> 
       <Route exact path='/app' component={Login} />   
-      <Route exact path='/app/novaconta' component={NovaConta} />
-      <Route exact path='/app/resetsenha' component={ResetSenha} /> 
+      <Route exact path='/app/criar-conta' component={NovaConta} />
+      <Route exact path='/app/recuperar-senha' component={ResetSenha} /> 
       <SecureRoute exact path='/app/calculadoras' component={Calculadorasapp} />
       <Route exact path='/calculadoras' component={Calculadoras} />
       <Route exact path='/descadastrese' component={Descadastrese} />

@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 import {Link, Redirect}  from 'react-router-dom';
-import './novaconta.css';
-
+import './novaconta.css'
+import Navbar from '../Components/Navbar/navbarlogin';
+import Parceiros from '../../blog/Components/Parceiros/parceiros';
+import Footer from '../../calculadoras/Components/Contato/contato';
+import Capanovaconta from './capanovaconta';
 import firebase from '../Config/firebase';
 import 'firebase/auth';
 
@@ -39,9 +42,14 @@ function NovaConta(){
     })
   }
 
-    return <div className="d-flex align-items-center text-center form-container">
+    return <div>
+    <Navbar/>
+    <Capanovaconta/>    
+    
+    <section id="novaconta">
+      
+      <div className="d-flex align-items-center text-center form-container">
       <form className="form-signin">
-        <img className="mb-4" src="/Images/LogoTipo-WCONTEC_NomeEscuro.png" alt="" />
         <h1 className="h3 mb-3 fw-normal">Criar Conta</h1>
 
         <div className="form-floating">
@@ -54,7 +62,7 @@ function NovaConta(){
           <label for="floatingPassword">Senha</label>
         </div>
         
-        <button onClick={cadastrarUsuario} className="w-100 btn btn-lg btn-primary" type="button">Criar conta</button>
+        <button onClick={cadastrarUsuario} className="w-100 btn btn-lg btn-primary btn-novaconta" type="button">Criar conta</button>
 
         {mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null}
         {sucesso === 'S' ? <Redirect to='/app/calculadoras' /> : null}
@@ -63,8 +71,12 @@ function NovaConta(){
           <Link to="/app" className="mx-3">Já tenho uma conta.</Link>
         </div>
 
-        <p className="mt-5 mb-3 text-muted">&copy; Wcontec</p>
+        <p className="mt-5 mb-3 text-muted">&copy; Desenvolvido por Wcontec</p>
       </form>
+      </div>
+      </section>
+      <Parceiros/>
+      <Footer/>
     </div>
   }
 
