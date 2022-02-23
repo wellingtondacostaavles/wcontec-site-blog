@@ -7,6 +7,8 @@ import Customensalcomfuncionarionaooptantedosimplesnacional from './Components/C
 import Tributos from './Components/Escolhaumacalculadora/tributos';
 import Pispresumido from './Components/Pispresumido/pispresumido';
 import Cofinspresumido from './Components/Cofinspresumido/cofinspresumido';
+import Pislucroreal from './Components/Pislucroreal/pislucroreal';
+import Cofinsreal from './Components/Cofinsreal/cofinsreal';
 import Construcaocivil from './Components/Escolhaumacalculadora/construcaocivil';
 import Metrocubico from '../calculadoras/Components/Metrocubico/metrocubico';
 import Parceiros from '../blog/Components/Parceiros/parceiros';
@@ -24,6 +26,8 @@ function Calculadoras(){
       <Tributos/>
       <Pispresumido/>
       <Cofinspresumido/>
+      <Pislucroreal/>
+      <Cofinsreal/>
       <Construcaocivil/>
       <Metrocubico/>       
       <Parceiros/>   

@@ -29,10 +29,10 @@ function Tributos(){
         <div className="container">                              
             <div className="row">
             <   div className="col-lg-4 tributos-tgs">
-                    <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                                    
+                    <center><a href="#pis-lucro-real"><img src="/Images/tegs-calculadoras/Tag-pis-real.png"/></a></center>                                                    
                 </div>
                 <div className="col-lg-4 tributos-tgs">
-                    <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>
+                    <center><a href="#cofins-lucro-real"><img src="/Images/tegs-calculadoras/Tag-cofins-real.png"/></a></center>
                 </div>
                 <div className="col-lg-4 tributos-tgs">
                     <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                                      

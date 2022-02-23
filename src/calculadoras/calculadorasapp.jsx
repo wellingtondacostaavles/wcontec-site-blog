@@ -7,12 +7,14 @@ import Customensalcomfuncionarionaooptantedosimplesnacional from './Components/C
 import Tributos from './Components/Escolhaumacalculadora/tributos';
 import Pispresumido from './Components/Pispresumido/pispresumido';
 import Cofinspresumido from './Components/Cofinspresumido/cofinspresumido';
+import Pislucroreal from './Components/Pislucroreal/pislucroreal';
+import Cofinsreal from './Components/Cofinsreal/cofinsreal';
 import Construcaocivil from './Components/Escolhaumacalculadora/construcaocivil';
 import Metrocubico from '../calculadoras/Components/Metrocubico/metrocubico';
 import Parceiros from '../blog/Components/Parceiros/parceiros';
 import Footer from '../calculadoras/Components/Contato/contato';
 
-function Calculadorasapp(){
+function Calculadoras(){
   
   return <div>
       <Navbar/> 
@@ -24,6 +26,8 @@ function Calculadorasapp(){
       <Tributos/>
       <Pispresumido/>
       <Cofinspresumido/>
+      <Pislucroreal/>
+      <Cofinsreal/>
       <Construcaocivil/>
       <Metrocubico/>       
       <Parceiros/>   
@@ -31,4 +35,4 @@ function Calculadorasapp(){
     </div> 
   }
 
-export default Calculadorasapp;
+export default Calculadoras;
