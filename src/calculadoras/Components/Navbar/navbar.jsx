@@ -22,6 +22,9 @@ function Navbar(){
             </li> 
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#escolha-uma-calculadora">Calculadoras</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/blog" aria-current="page" >Blog</a>
             </li>              
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>

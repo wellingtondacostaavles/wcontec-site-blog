@@ -58,7 +58,7 @@ function Pispresumido(){
         <div className="row text-center">
                 <div className="titulo">
                     <h1>PIS presumido</h1>
-                    <p>Calcule o valor do pis mensal a pagar com base no lucro presumido</p>
+                    <p>Calcule o valor do PIS mensal a pagar com base no lucro presumido</p>
                 </div>
             </div>
 

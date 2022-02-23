@@ -19,6 +19,9 @@ function Navbar(){
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#">Início</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/blog" aria-current="page" >Blog</a>
             </li>             
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>
