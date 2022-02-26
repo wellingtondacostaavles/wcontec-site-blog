@@ -5,10 +5,14 @@ import Calculostrabalhistas from './Components/Escolhaumacalculadora/calculostra
 import Customensalcomfuncionario from '../calculadoras/Components/Customensalcomfuncionario/customensalcomfuncionario';
 import Customensalcomfuncionarionaooptantedosimplesnacional from './Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional';
 import Tributos from './Components/Escolhaumacalculadora/tributos';
+import Pis from './Components/Escolhaumacalculadora/pis';
+import Cofins from './Components/Escolhaumacalculadora/cofins';
 import Pispresumido from './Components/Pispresumido/pispresumido';
 import Cofinspresumido from './Components/Cofinspresumido/cofinspresumido';
 import Pislucroreal from './Components/Pislucroreal/pislucroreal';
 import Cofinsreal from './Components/Cofinsreal/cofinsreal';
+import Piscorretora from './Components/Piscorretora/piscorretora';
+import Cofinscorretora from './Components/Cofinscorretora/cofinscorretora';
 import Construcaocivil from './Components/Escolhaumacalculadora/construcaocivil';
 import Metrocubico from '../calculadoras/Components/Metrocubico/metrocubico';
 import Parceiros from '../blog/Components/Parceiros/parceiros';
@@ -24,10 +28,14 @@ function Calculadoras(){
       <Customensalcomfuncionario/>
       <Customensalcomfuncionarionaooptantedosimplesnacional/>
       <Tributos/>
+      <Pis/>
+      <Cofins/>
       <Pispresumido/>
       <Cofinspresumido/>
       <Pislucroreal/>
       <Cofinsreal/>
+      <Piscorretora/>
+      <Cofinscorretora/>
       <Construcaocivil/>
       <Metrocubico/>       
       <Parceiros/>   

@@ -5,19 +5,20 @@ import {Link} from 'react-router-dom';
 import './metrocubico.css';
 
 function Metrocubico(){
-    const [nro1, setNro1] = useState(0);
-    const [nro2, setNro2] = useState(0);
-    const [nro3, setNro3] = useState(0);
+    const [Largura, setNro1] = useState(0);
+    const [Comprimento, setNro2] = useState(0);
+    const [Espessura, setNro3] = useState(0);
+    
     const [resultado, setResultado] = useState(0);
     const [operacao, setOperacao] = useState('Multiplicar');
   
     const calcular = () =>{
   
       if(operacao=="Multiplicar")
-      return parseFloat(nro1) * parseFloat(nro2) * parseFloat(nro3) / 100;
+      return parseFloat(Largura) * parseFloat(Comprimento) * parseFloat(Espessura) / 100;
     }
   
-    useEffect (() =>{setResultado(calcular())},[nro1, nro2, nro3, operacao]);
+    useEffect (() =>{setResultado(calcular())},[Largura, Comprimento, Espessura, operacao]);
   
   
       return <div>          
@@ -39,21 +40,21 @@ function Metrocubico(){
                     <label>Largura (em metros)</label>
                     <div className="input-group mb-3">
                         <span className="input-group-text">MT</span>
-                        <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={nro1} onChange={(e) => setNro1(e.target.value)} />
+                        <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Largura} onChange={(e) => setNro1(e.target.value)} />
                   </div>
                 </div>           
                 <div>
                   <label>Comprimento (em metros)</label>
                   <div className="input-group mb-3">
                       <span className="input-group-text">MT</span>  
-                      <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={nro2} onChange={(e) => setNro2(e.target.value)} />
+                      <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Comprimento} onChange={(e) => setNro2(e.target.value)} />
                   </div>
                 </div>            
                 <div>          
                   <label>Espessura (em centímetros)</label>
                   <div className="input-group mb-3">
                     <span className="input-group-text">CM</span>
-                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={nro3} onChange={(e) => setNro3(e.target.value)} />
+                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Espessura} onChange={(e) => setNro3(e.target.value)} />
                   </div>
                 </div>
               </div>
