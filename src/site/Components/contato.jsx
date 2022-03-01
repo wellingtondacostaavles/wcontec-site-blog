@@ -5,13 +5,7 @@ function Footer(){
 
     return <section id="contato">    
         
-        <div className="row text-center">
-                <div className="titulo">
-                    <h6>Parceiros</h6>
-               </div>
-            </div>
-
-      <div className="container">        
+        <div className="container">        
             <div className="row">
                   <div className="col-lg-12">
                     <img src="/Images/Logo-WCONTEC.P.png"/>

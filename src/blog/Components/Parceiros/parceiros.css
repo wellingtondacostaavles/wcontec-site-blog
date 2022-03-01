@@ -1,4 +1,15 @@
-#parceiros{
-    background-color: #050922;
-    padding: 2px 0 3px 0;
+#parceiros {
+  background-color: #050922;
+  padding: 2px 0 3px 0;
+}
+
+#parceiros img {
+  width: 100%;
+}
+
+.coluna1 {
+  margin-top: 6%;
+}
+.coluna2 {
+  margin-top: 3%;
 }

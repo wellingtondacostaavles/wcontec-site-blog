@@ -141,10 +141,28 @@ p {
   padding: 2px 0 3px 0;
 }
 
+#parceiros img {
+  width: 100%;
+}
+
+.coluna1 {
+  margin-top: 6%;
+}
+.coluna2 {
+  margin-top: 3%;
+}
+
+.formtext h6 {
+  color: #8d8d97;
+  font-family: Effra, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 1%;
+}
+
 /* FOOTER */
 
 #contato {
-  padding: 0 1% 1%;
   text-align: center;
   color: #ffffff;
   background-color: #050922;
