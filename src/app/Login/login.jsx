@@ -4,7 +4,8 @@ import './login.css';
 import {AuthContext} from '../Context/auth';
 import Navbar from '../Components/Navbar/navbarlogin';
 import Capalogin from './capalogin';
-import Parceiros from '../../blog/Components/Parceiros/parceiros';
+import Ultimosartigosblog from '../../site/Components/ultimosartigosblog';
+import Parceiros from '../../site/Components/parceiros';
 import Footer from '../../calculadoras/Components/Contato/contato';
 
 import firebase from '../Config/firebase';
@@ -74,6 +75,7 @@ function Login(){
       </form>
     </div>
     </section>
+    <Ultimosartigosblog/>
     <Parceiros/>
     <Footer/>
     </div>

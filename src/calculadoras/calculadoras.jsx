@@ -15,7 +15,8 @@ import Piscorretora from './Components/Piscorretora/piscorretora';
 import Cofinscorretora from './Components/Cofinscorretora/cofinscorretora';
 import Construcaocivil from './Components/Escolhaumacalculadora/construcaocivil';
 import Metrocubico from '../calculadoras/Components/Metrocubico/metrocubico';
-import Parceiros from '../blog/Components/Parceiros/parceiros';
+import Ultimosartigosblog from '../site/Components/ultimosartigosblog';
+import Parceiros from '../site/Components/parceiros';
 import Footer from '../calculadoras/Components/Contato/contato';
 
 function Calculadoras(){
@@ -37,7 +38,8 @@ function Calculadoras(){
       <Piscorretora/>
       <Cofinscorretora/>
       <Construcaocivil/>
-      <Metrocubico/>       
+      <Metrocubico/>  
+      <Ultimosartigosblog/>     
       <Parceiros/>   
       <Footer/>      
     </div> 

@@ -8,10 +8,10 @@ function Parceiros(){
             <div class="col"></div>
             <div class="col"></div>
             <div class="col">
-                <a href="https://api.whatsapp.com/send?phone=5581997780156" target="_blank"><img src="Images/Parceiros/Diniz-contabilidade.png"/></a>
+                <a href="https://api.whatsapp.com/send?phone=5581997780156" target="_blank"><img src="/Images/Parceiros/Diniz-contabilidade.png"/></a>
             </div>
             <div class="col">
-                <a href="https://mpago.li/1Ts8gW7" target="_blank"><img src="Images/Parceiros/Mercado-pago.png"/></a>
+                <a href="https://mpago.li/1Ts8gW7" target="_blank"><img src="/Images/Parceiros/Mercado-pago.png"/></a>
             </div>
             <div class="col"></div>
             <div class="col"></div>
@@ -21,16 +21,16 @@ function Parceiros(){
             <div class="col"></div>
             <div class="col"></div>
             <div class="col">
-                <a href="https://api.whatsapp.com/send?phone=5581996584830" target="_blank"><img src="Images/Parceiros/Certificado.digital.png"/></a>
+                <a href="https://api.whatsapp.com/send?phone=5581996584830" target="_blank"><img src="/Images/Parceiros/Certificado.digital.png"/></a>
             </div>
             <div class="col">
-                <a href="https://api.whatsapp.com/send?phone=5581998753986" target="_blank"><img src="Images/Parceiros/OGS.png"/></a>
+                <a href="https://api.whatsapp.com/send?phone=5581998753986" target="_blank"><img src="/Images/Parceiros/OGS.png"/></a>
             </div>
             <div class="col">
-                <a href="https://jhmateriaisparaconstrucao.com/" target="_blank"><img src="Images/Parceiros/JH.png"/></a>
+                <a href="https://jhmateriaisparaconstrucao.com/" target="_blank"><img src="/Images/Parceiros/JH.png"/></a>
             </div>
             <div class="col">
-                <a href="https://api.whatsapp.com/send?phone=5581996584830" target="_blank"><img src="Images/Parceiros/Torne-se-parceiro.png"/></a>
+                <a href="https://api.whatsapp.com/send?phone=5581996584830" target="_blank"><img src="/Images/Parceiros/Torne-se-parceiro.png"/></a>
             </div>
             <div class="col"></div>
             <div class="col"></div>

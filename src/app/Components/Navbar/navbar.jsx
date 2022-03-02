@@ -33,7 +33,7 @@ function Navbar(){
               <a className="nav-link" aria-current="page" href="#escolha-uma-calculadora">Calculadoras</a>
             </li>                                          
             <li className="nav-item">
-              <a className="nav-link" href="/blog" aria-current="page" >Blog</a>
+              <a className="nav-link" aria-current="page" href="#ultimosartigosblog">Blog</a>
             </li>                              
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>

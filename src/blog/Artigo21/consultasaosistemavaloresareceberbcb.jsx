@@ -6,7 +6,7 @@ import Cardareadocliente from '../Components/Cardareadoclente/cardareadocliente'
 import Categorias from '../Components/Categorias/categorias';
 import Recomendados from '../Components/Recomendados/recomendados';
 import Artigosrelacionados from '../Artigo20/artigosrelacionados';
-import Parceiros from '../Components/Parceiros/parceiros';
+import Parceiros from '../../site/Components/parceiros';
 import Footer from '../Components/Contato/contato';
 import './artigo21.css';
 import Cardsvr from './cardsvr';
