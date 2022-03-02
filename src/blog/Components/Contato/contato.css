@@ -1,18 +1,16 @@
-
-#contato{
-    padding: 0 1% 1%;
-    text-align: center;
-    color: #ffffff;
-    background-color: #050922;   
+#contato {
+  text-align: center;
+  color: #ffffff;
+  background-color: #050922;
 }
 
-#contato img{
-    width: 15%; 
+#contato img {
+  width: 15%;
 }
 
-.formtext p{
-    color: #8d8d97;
-    font-family: Effra,sans-serif; 
-    font-size: 9px;
-    text-align: center;
+.formtext p {
+  color: #8d8d97;
+  font-family: Effra, sans-serif;
+  font-size: 9px;
+  text-align: center;
 }

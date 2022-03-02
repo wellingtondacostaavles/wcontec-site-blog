@@ -39,8 +39,8 @@ function Parceiros(){
                 <div className="titulo formtext">
                     <h6>Parceiros</h6>
                </div>
-        </div>  
-    </div>    
+        </div>
+    </div>  
     </section>;
   }
 
