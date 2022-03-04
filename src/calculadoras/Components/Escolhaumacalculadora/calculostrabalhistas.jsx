@@ -14,13 +14,13 @@ function Calculostrabalhistas(){
                    
         <div className="container">                              
                 <div className="row">
-                    <div className="col-lg-4 calculos-trabalhistas-tgs">
+                    <div className="col-lg-4 tgs">
                         <center><a href="#custo-mensal-com-funcionario"><img src="/Images/tegs-calculadoras/Tag-custo-com-funcionário-optante-simples.png"/></a></center>                                   
                     </div>
-                    <div className="col-lg-4 calculos-trabalhistas-tgs">
+                    <div className="col-lg-4 tgs">
                          <center><a href="#custo-mensal-com-funcionario-nao-optante-do-simples-nacional"><img src="/Images/tegs-calculadoras/Tag-custo-com-funcionário-nao-optante-simples.png"/></a></center>   
                     </div>             
-                    <div className="col-lg-4 calculos-trabalhistas-tgs">
+                    <div className="col-lg-4 tgs">
                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                    
                     </div>
                 </div>             

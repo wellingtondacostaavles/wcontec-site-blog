@@ -2,7 +2,20 @@ import react from "react";
 
 function Parceiros(){
     return <section id="parceiros">      
-     <div className="container">        
+     <div className="parceiros">
+     
+     <div className="container">
+            
+        <div className="row">
+             <div className="col-lg-12">
+                <a href="#" target="_blank"><img src=""/></a>
+            </div>
+            </div>     
+        </div>
+    </div>   
+        
+    <div className="parceiros-logos">  
+        <div className="container">
         <div className="row coluna1">
             <div class="col"></div>
             <div class="col"></div>
@@ -11,7 +24,7 @@ function Parceiros(){
                 <a href="https://api.whatsapp.com/send?phone=5581997780156" target="_blank"><img src="/Images/Parceiros/Diniz-contabilidade.png"/></a>
             </div>
             <div class="col">
-                <a href="https://mpago.li/1Ts8gW7" target="_blank"><img src="/Images/Parceiros/Mercado-pago.png"/></a>
+                <a href="#" target="_blank"><img src="/Images/Parceiros/Vargas.png"/></a>
             </div>
             <div class="col"></div>
             <div class="col"></div>
@@ -38,7 +51,8 @@ function Parceiros(){
         <div className="row">
                 <div className="titulo formtext">
                     <h6>Parceiros</h6>
-               </div>
+               </div>             
+        </div>
         </div>
     </div>  
     </section>;

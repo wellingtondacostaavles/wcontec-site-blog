@@ -4,6 +4,8 @@ import Escolhaumacalculadora from './Components/Escolhaumacalculadora/escolhauma
 import Calculostrabalhistas from './Components/Escolhaumacalculadora/calculostrabalhistas';
 import Customensalcomfuncionario from '../calculadoras/Components/Customensalcomfuncionario/customensalcomfuncionario';
 import Customensalcomfuncionarionaooptantedosimplesnacional from './Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional';
+import DeclaracaoIRPF from './Components/Escolhaumacalculadora/declaracaoIRPF';
+import Distribuicaolucromei from './Components/Distribuicaolucromei/distribuicaolucromei';
 import Tributos from './Components/Escolhaumacalculadora/tributos';
 import Pis from './Components/Escolhaumacalculadora/pis';
 import Cofins from './Components/Escolhaumacalculadora/cofins';
@@ -28,6 +30,8 @@ function Calculadoras(){
       <Calculostrabalhistas/>
       <Customensalcomfuncionario/>
       <Customensalcomfuncionarionaooptantedosimplesnacional/>
+      <DeclaracaoIRPF/>
+      <Distribuicaolucromei/>
       <Tributos/>
       <Pis/>
       <Cofins/>
@@ -39,7 +43,7 @@ function Calculadoras(){
       <Cofinscorretora/>
       <Construcaocivil/>
       <Metrocubico/>  
-      <Ultimosartigosblog/>     
+      <Ultimosartigosblog/>
       <Parceiros/>   
       <Footer/>      
     </div> 

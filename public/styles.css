@@ -136,12 +136,18 @@ p {
   height: 18px;
 }
 
-#parceiros {
-  padding: 2% 0 1% 0;
-}
-
 #parceiros img {
   width: 100%;
+}
+
+.parceiros {
+  background-color: #050922;
+  color: #ffffff;
+  padding: 0 24% 0 24%;
+}
+
+.parceiros-logos {
+  padding: 0 13% 0 12%;
 }
 
 .coluna1 {
@@ -168,7 +174,7 @@ p {
 }
 
 #contato img {
-  width: 15%;
+  width: 12%;
 }
 
 .formtext p {
