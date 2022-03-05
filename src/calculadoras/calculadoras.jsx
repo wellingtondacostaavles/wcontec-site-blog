@@ -6,6 +6,7 @@ import Customensalcomfuncionario from '../calculadoras/Components/Customensalcom
 import Customensalcomfuncionarionaooptantedosimplesnacional from './Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional';
 import DeclaracaoIRPF from './Components/Escolhaumacalculadora/declaracaoIRPF';
 import Distribuicaolucromei from './Components/Distribuicaolucromei/distribuicaolucromei';
+import Distribuicaolucrosociosn from './Components/Distribuicaolucrosociosn/distribuicaolucrosociosn';
 import Tributos from './Components/Escolhaumacalculadora/tributos';
 import Pis from './Components/Escolhaumacalculadora/pis';
 import Cofins from './Components/Escolhaumacalculadora/cofins';
@@ -32,6 +33,7 @@ function Calculadoras(){
       <Customensalcomfuncionarionaooptantedosimplesnacional/>
       <DeclaracaoIRPF/>
       <Distribuicaolucromei/>
+      <Distribuicaolucrosociosn/>
       <Tributos/>
       <Pis/>
       <Cofins/>

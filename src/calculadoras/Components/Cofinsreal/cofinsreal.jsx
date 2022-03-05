@@ -278,7 +278,7 @@ function Cofinsreal(){
             <br></br>
             <div className="container">
             <div className="row text-center">
-              <h3>A COFINS apurado no lucro real será de:</h3>
+              <h3>A COFINS apurada no lucro real será de:</h3>
               <h1>{[ResultadoFinaldoTributo].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
               <p>Códido do Tributo 5856</p>
               <p><span className="segundo-p">ATENÇÃO: Veja quais são as Receitas não tributáveis e Operações com direito a crédito na Lei Nº 10.833/2003. A COFINS encontrada na calculadora se negativo poderá ser utilizado como crédito no proximo mês, confirme com seu contador o valor encontrado.</span></p>            
