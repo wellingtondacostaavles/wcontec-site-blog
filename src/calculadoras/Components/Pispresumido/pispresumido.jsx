@@ -114,7 +114,7 @@ function Pispresumido(){
             <div className="container">
                 <div className="row text-center">
                 <h3>O PIS a recolher mensal será de:</h3>
-                <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
+                {ReceitaServicos && ReceitaVendas ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>: ''} 
                 <p>Códido do Tributo 8109</p>
                 <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
                 </div>

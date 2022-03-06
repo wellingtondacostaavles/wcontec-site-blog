@@ -14,6 +14,8 @@ import Pispresumido from './Components/Pispresumido/pispresumido';
 import Cofinspresumido from './Components/Cofinspresumido/cofinspresumido';
 import Pislucroreal from './Components/Pislucroreal/pislucroreal';
 import Cofinsreal from './Components/Cofinsreal/cofinsreal';
+import Irtrimestral from './Components/IRPJTrimestral/irtrimestral';
+import Cslltrimestral from './Components/CSLLTrimestral/cslltrimestral';
 import Piscorretora from './Components/Piscorretora/piscorretora';
 import Cofinscorretora from './Components/Cofinscorretora/cofinscorretora';
 import Construcaocivil from './Components/Escolhaumacalculadora/construcaocivil';
@@ -41,6 +43,8 @@ function Calculadoras(){
       <Cofinspresumido/>
       <Pislucroreal/>
       <Cofinsreal/>
+      <Irtrimestral/>
+      <Cslltrimestral/>
       <Piscorretora/>
       <Cofinscorretora/>
       <Construcaocivil/>

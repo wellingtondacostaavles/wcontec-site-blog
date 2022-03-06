@@ -8,7 +8,7 @@ function Parceiros(){
             
         <div className="row">
              <div className="col-lg-12">
-                <a href="#" target="_blank"><img src="/Images/Parceiros/Vargas-banner.png"/></a>
+                <a href="#" target="_blank"><img src=""/></a>
             </div>
             </div>     
         </div>

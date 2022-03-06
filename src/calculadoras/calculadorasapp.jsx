@@ -6,6 +6,7 @@ import Customensalcomfuncionario from '../calculadoras/Components/Customensalcom
 import Customensalcomfuncionarionaooptantedosimplesnacional from './Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional';
 import DeclaracaoIRPF from './Components/Escolhaumacalculadora/declaracaoIRPF';
 import Distribuicaolucromei from './Components/Distribuicaolucromei/distribuicaolucromei';
+import Distribuicaolucrosociosn from './Components/Distribuicaolucrosociosn/distribuicaolucrosociosn';
 import Tributos from './Components/Escolhaumacalculadora/tributos';
 import Pis from './Components/Escolhaumacalculadora/pis';
 import Cofins from './Components/Escolhaumacalculadora/cofins';
@@ -13,6 +14,8 @@ import Pispresumido from './Components/Pispresumido/pispresumido';
 import Cofinspresumido from './Components/Cofinspresumido/cofinspresumido';
 import Pislucroreal from './Components/Pislucroreal/pislucroreal';
 import Cofinsreal from './Components/Cofinsreal/cofinsreal';
+import Irtrimestral from './Components/IRPJTrimestral/irtrimestral';
+import Cslltrimestral from './Components/CSLLTrimestral/cslltrimestral';
 import Piscorretora from './Components/Piscorretora/piscorretora';
 import Cofinscorretora from './Components/Cofinscorretora/cofinscorretora';
 import Construcaocivil from './Components/Escolhaumacalculadora/construcaocivil';
@@ -32,6 +35,7 @@ function Calculadoras(){
       <Customensalcomfuncionarionaooptantedosimplesnacional/>
       <DeclaracaoIRPF/>
       <Distribuicaolucromei/>
+      <Distribuicaolucrosociosn/>
       <Tributos/>
       <Pis/>
       <Cofins/>
@@ -39,6 +43,8 @@ function Calculadoras(){
       <Cofinspresumido/>
       <Pislucroreal/>
       <Cofinsreal/>
+      <Irtrimestral/>
+      <Cslltrimestral/>
       <Piscorretora/>
       <Cofinscorretora/>
       <Construcaocivil/>
