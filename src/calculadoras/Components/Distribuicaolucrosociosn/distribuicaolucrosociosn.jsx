@@ -61,7 +61,7 @@ function Distribuicaolucrosociosn(){
             <div className="row text-center">
                 <div className="titulo">
                     <h1>Lucro anual do sócio Simples Nacional</h1>
-                    <p>Calcule o valor do lucro tributável do sócio de empresa do simples Nacional a ser informada na DIRPF</p>
+                    <p>Calcule o valor do lucro Isento do sócio de empresa do simples Nacional a ser informada na DIRPF</p>
                 </div>
             </div>
 
@@ -102,7 +102,7 @@ function Distribuicaolucrosociosn(){
             
             <div className="container">
                 <div className="row text-center">
-                <h3>O lucro tributável a ser informado na declaração será de:</h3>
+                <h3>O lucro isento a ser informado na declaração será de:</h3>
                 <h1>{[LucroaSerDistribuido].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
                 <p><span className="segundo-p">*IRPJ pagos no Simples Nacional (corresponde ao total pago no ano, podendo ser consultado nos extratos mensais de apuração do imposto).</span></p>
                 <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser analisado e confirmado por seu contador responsável.</span></p>
