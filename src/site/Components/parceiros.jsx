@@ -1,18 +1,8 @@
 import react from "react";
 
 function Parceiros(){
-    return <section id="parceiros">      
-     <div className="parceiros">
-     
-     <div className="container">
-            
-        <div className="row">
-             <div className="col-lg-12">
-                <a href="https://bit.ly/3pOcj5d" target="_blank"><img src="/Images/Parceiros/Vargas-banner.png"/></a>
-            </div>
-            </div>     
-        </div>
-    </div>   
+    return <section id="parceiros">     
+
         
     <div className="parceiros-logos">  
         <div className="container">
@@ -49,12 +39,21 @@ function Parceiros(){
             <div class="col"></div>
         </div>
         <div className="row">
-                <div className="titulo formtext">
-                    <h6>Parceiros</h6>
-               </div>             
-        </div>
+                <br></br>             
+        </div>        
         </div>
     </div>  
+    <div className="parceiros">
+     
+     <div className="container">
+            
+        <div className="row">
+             <div className="col-lg-12">
+                <a href="https://bit.ly/3pOcj5d" target="_blank"><img src="/Images/Parceiros/Vargas-banner.png"/></a>
+            </div>
+            </div>     
+        </div>
+    </div>   
     </section>;
   }
 

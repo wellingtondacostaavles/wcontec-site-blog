@@ -5,12 +5,14 @@ function Footer(){
 
     return <section id="contato">    
         
-        <div className="container">        
+          <div className="container">        
             <div className="row">
-                  <div className="col-lg-12">
+                <div className="col-lg-4"></div>
+                  <div className="col-lg-4">
                     <img src="/Images/Logo-WCONTEC.P.png"/>
                   </div>
-              <div>   
+                  <div className="col-lg-4"></div>
+                <div>   
                   <ul className="list-unstyled list-inline social text-center">
                       <li className="list-inline-item"><a href="https://t.me/+bLsp1DsfZOo2M2Ix" target="_blank"><i className="fa fa-telegram fa-2x"></i></a></li>
                       <li className="list-inline-item"><a href="https://instagram.com/wcontec?r=nametag" target="_blank"><i className="fa fa-instagram fa-2x"></i></a></li>
