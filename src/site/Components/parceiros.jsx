@@ -24,7 +24,7 @@ function Parceiros(){
                 <a href="https://api.whatsapp.com/send?phone=5581997780156" target="_blank"><img src="/Images/Parceiros/Diniz-contabilidade.png"/></a>
             </div>
             <div class="col">
-                <a href="#" target="_blank"><img src="/Images/Parceiros/Vargas.png"/></a>
+                <a href="https://go.hotmart.com/H67767543F?ap=305a" target="_blank"><img src="/Images/Parceiros/Vargas.png"/></a>
             </div>
             <div class="col"></div>
             <div class="col"></div>

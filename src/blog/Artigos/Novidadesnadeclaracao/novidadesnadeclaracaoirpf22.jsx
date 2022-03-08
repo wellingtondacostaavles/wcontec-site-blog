@@ -23,7 +23,7 @@ function Novidadesnadeclaracaoirpf22(){
                     </div>                    
 
                     <div className="row">
-                        <p>Atenção para as mudanças, foi dada a largada, hoje dia 07-03-2022 começa o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2022. Segundo a Receita Federal, a expectativa é que seja recebidas um número próximo ao registrado em 2021, quando superou os 34 milhões documentos.</p>
+                        <p>Foi dada a largada, ontem dia 07-03-2022 começou o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2022. Segundo a Receita Federal, a expectativa é que seja recebidas um número próximo ao registrado em 2021, quando superou os 34 milhões documentos.</p>
                         <p>Uma mudança, que na verdade voltou a ser como era antes, é que o prazo de entrega da declaração será até 29 de abril. Mesmo com um tempo mais curto, tendo em vista que só se pôde baixar o programa da declaração no dia 07, não no fim de fevereiro por causa da operação padrão dos auditores fiscais da Receita Federal, o programa gerador da declaração no entanto, terá novidades tecnológicas.</p>
                     </div>  
                 </div>       
