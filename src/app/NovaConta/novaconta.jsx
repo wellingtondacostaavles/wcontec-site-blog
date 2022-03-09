@@ -3,7 +3,7 @@ import {Link, Redirect}  from 'react-router-dom';
 import './novaconta.css'
 import Navbar from '../Components/Navbar/navbarlogin';
 import Parceiros from '../../site/Components/parceiros';
-import Footer from '../../calculadoras/Components/Contato/contato';
+import Footer from '../../site/Components/contato';
 import Capanovaconta from './capanovaconta';
 import firebase from '../Config/firebase';
 import 'firebase/auth';

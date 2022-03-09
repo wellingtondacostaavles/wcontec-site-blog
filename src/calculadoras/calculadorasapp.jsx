@@ -22,7 +22,7 @@ import Construcaocivil from './Components/Escolhaumacalculadora/construcaocivil'
 import Metrocubico from '../calculadoras/Components/Metrocubico/metrocubico';
 import Ultimosartigosblog from '../site/Components/ultimosartigosblog';
 import Parceiros from '../site/Components/parceiros';
-import Footer from '../calculadoras/Components/Contato/contato';
+import Footer from '../site/Components/contato';
 
 function Calculadoras(){
   

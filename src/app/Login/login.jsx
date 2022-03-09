@@ -6,7 +6,7 @@ import Navbar from '../Components/Navbar/navbarlogin';
 import Capalogin from './capalogin';
 import Ultimosartigosblog from '../../site/Components/ultimosartigosblog';
 import Parceiros from '../../site/Components/parceiros';
-import Footer from '../../calculadoras/Components/Contato/contato';
+import Footer from '../../site/Components/contato';
 
 import firebase from '../Config/firebase';
 import 'firebase/auth';

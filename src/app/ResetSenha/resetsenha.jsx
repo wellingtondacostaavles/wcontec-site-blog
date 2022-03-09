@@ -7,7 +7,7 @@ import 'firebase/auth';
 import Navbar from '../Components/Navbar/navbarlogin';
 import Caparesetsenha from './caparesetsenha';
 import Parceiros from '../../site/Components/parceiros';
-import Footer from '../../calculadoras/Components/Contato/contato';
+import Footer from '../../site/Components/contato';
 
 function ResetSenha(){
 

@@ -7,7 +7,7 @@ import Categorias from '../Components/Categorias/categorias';
 import Recomendados from '../Components/Recomendados/recomendados';
 import Artigosrelacionados from '../Artigo20/artigosrelacionados';
 import Parceiros from '../../site/Components/parceiros';
-import Footer from '../Components/Contato/contato';
+import Footer from '../../site/Components/contato';
 import './artigo21.css';
 import Cardsvr from './cardsvr';
 

@@ -53,7 +53,7 @@ function Irtrimestral(){
 
     const calcular4 = () =>{  
         if (operacaoBaseCalculo=="Somar")
-        return (+ parseFloat(Presucao32) + parseFloat(Presucao8) + parseFloat(ReceitaFinanceira));
+        return (parseFloat(Presucao32) + parseFloat(Presucao8) + parseFloat(ReceitaFinanceira));
     }
 
     const calcular5 = () =>{  

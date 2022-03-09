@@ -45,7 +45,7 @@ function Cslltrimestral(){
 
     const calcular4 = () =>{  
         if (operacaoBaseCalculo=="Somar")
-        return (+ parseFloat(Presucao32) + parseFloat(Presucao12) + parseFloat(ReceitaFinanceira));
+        return (parseFloat(Presucao32) + parseFloat(Presucao12) + parseFloat(ReceitaFinanceira));
     }
 
     const calcular5 = () =>{  
