@@ -29,13 +29,13 @@ function DeclaracaoIRPF(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><a href="#deducoes-legais"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                   
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                   
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>   
+                         <center><a href="#desconto-simplificado"><img src="/Images/tegs-calculadoras/Tag-IRPF-desconto-simplificado.png"/></a></center>   
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                    
+                        <center><a href="#deducoes-legais"><img src="/Images/tegs-calculadoras/Tag-IRPF-deducoes-legais.png"/></a></center>                                    
                     </div>
                 </div>             
             </div>     

@@ -22,10 +22,23 @@ function Irtrimestral(){
     const [BaseCalculo, setResultado4] = useState(0);
     const [operacaoBaseCalculo, setOperacao4] = useState('Somar');
 
-    let BasedoadicionalIR = BaseCalculo;
+    const BasedoadicionalIR = BaseCalculo
 
-    let adicionalIR = BasedoadicionalIR >= 60000 ? [((parseFloat(BaseCalculo)) - 60000) * 0.10] : 0;    
-  
+    const comAdicional = ((parseFloat(BaseCalculo)) - 60000) * 0.10
+    const semAdicional = 0
+        
+        
+    const ValorAdicionalIR = AdicionalIR(BasedoadicionalIR)
+
+        function AdicionalIR(BasedoadicionalIR){
+            if (BasedoadicionalIR >= 60000) {
+                return comAdicional
+            } else {    
+            return semAdicional
+            }
+        }        
+    
+    
     const [ImpostoDevido, setResultado5] = useState(0);
     const [operacaoImpostoDevido, setOperacao5] = useState('Somar');
 
@@ -35,6 +48,20 @@ function Irtrimestral(){
     const [IRPJaRecolher, setResultado7] = useState(0);
     const [operacaoIRPJaRecolher, setOperacao7] = useState('Subtrair');
     
+    const ResultadoValorIR = IRPJaRecolher
+    
+    const situacao1 = 'O IRPJ trimestral a recolher será de:'
+    const situacao2 = ''
+
+    const SituacaoIR = ResultadoIR(ResultadoValorIR)
+
+        function ResultadoIR(ResultadoValorIR){
+            if (ResultadoValorIR > 0){
+                return situacao1
+            } else {
+            return situacao2
+            }
+        } 
     
     const calcular = () =>{  
         if (operacaoTotalReceitas=="Somar")
@@ -63,7 +90,7 @@ function Irtrimestral(){
 
     const calcular6 = () =>{  
         if (operacaoImpostoDevidoMisAdicional=="Somar")
-        return (parseFloat(ImpostoDevido) + parseFloat(adicionalIR));
+        return (parseFloat(ImpostoDevido) + parseFloat(ValorAdicionalIR));
     }
 
     const calcular7 = () =>{  
@@ -78,7 +105,7 @@ function Irtrimestral(){
     useEffect (() =>{setResultado3(calcular3())},[ReceitaVendas, DevolucaoVenda, operacaoPresucao8]);
     useEffect (() =>{setResultado4(calcular4())},[Presucao32, Presucao8, ReceitaFinanceira, operacaoBaseCalculo]);
     useEffect (() =>{setResultado5(calcular5())},[BaseCalculo, operacaoBaseCalculo]);
-    useEffect (() =>{setResultado6(calcular6())},[ImpostoDevido, adicionalIR, operacaoImpostoDevidoMisAdicional]);
+    useEffect (() =>{setResultado6(calcular6())},[ImpostoDevido, ValorAdicionalIR, operacaoImpostoDevidoMisAdicional]);
     useEffect (() =>{setResultado7(calcular7())},[ImpostoDevidoMisAdicional, IRRFAntecipacoes, operacaoIRPJaRecolher]);
         
         return <div>         
@@ -136,7 +163,7 @@ function Irtrimestral(){
             <br></br>            
             <div className="container">
                 <div className="row text-center">
-                <h3>O IRPJ trimestral a recolher será de:</h3>
+                <h3>{SituacaoIR}</h3>
                 <h1>{[IRPJaRecolher].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> 
                 <p>Códido do Tributo 2089</p>
                 <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>

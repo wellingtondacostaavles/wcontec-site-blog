@@ -23,6 +23,21 @@ function Pispresumido(){
     const [TributoFinal, setResultado4] = useState(0);
     const [operacaoTributoFinal, setOperacao4] = useState('Subtrair');
 
+    const ResultadoPIS = TributoFinal
+    
+    const situacao1 = 'O PIS a recolher mensal será de::'
+    const situacao2 = ''
+
+    const SituacaoPIS = ResultadodaCOFINS(ResultadoPIS)
+
+        function ResultadodaCOFINS(ResultadoPIS){
+            if (ResultadoPIS > 0){
+                return situacao1
+            } else {
+            return situacao2
+            }
+        }   
+
    
   
     const calcular = () =>{  
@@ -101,7 +116,7 @@ function Pispresumido(){
                         </div>                     
                     </div>
                     <div>
-                        <label>Retenções Feitas - Anteçipações</label>                
+                        <label>PIS retido na fonte</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro6(e.target.value)}/>
@@ -113,8 +128,8 @@ function Pispresumido(){
             <br></br>            
             <div className="container">
                 <div className="row text-center">
-                <h3>O PIS a recolher mensal será de:</h3>
-                {ReceitaServicos && ReceitaVendas ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>: ''} 
+                <h3>{SituacaoPIS}</h3>
+                <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> 
                 <p>Códido do Tributo 8109</p>
                 <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
                 </div>

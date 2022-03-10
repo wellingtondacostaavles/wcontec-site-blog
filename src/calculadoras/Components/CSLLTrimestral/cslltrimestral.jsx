@@ -27,6 +27,21 @@ function Cslltrimestral(){
   
     const [CSLLaRecolher, setResultado6] = useState(0);
     const [operacaoCSLLaRecolher, setOperacao6] = useState('Subtrair');
+
+    const ResultadoValorCSLL = CSLLaRecolher
+    
+    const situacao1 = 'O CSLL trimestral a recolher será de:'
+    const situacao2 = ''
+
+    const SituacaoCSLL = ResultadoIR(ResultadoValorCSLL)
+
+        function ResultadoIR(ResultadoValorCSLL){
+            if (ResultadoValorCSLL > 0){
+                return situacao1
+            } else {
+            return situacao2
+            }
+        } 
   
     const calcular = () =>{  
         if (operacaoTotalReceitas=="Somar")
@@ -108,7 +123,7 @@ function Cslltrimestral(){
                         </div>                     
                     </div>
                     <div>
-                        <label>IRRF - Anteçipações</label>                
+                        <label>CSLL retida na fonte</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={CSLLRFAntecipacoes} onChange={(e) => setNro5(e.target.value)}/>
@@ -120,7 +135,7 @@ function Cslltrimestral(){
             <br></br>            
             <div className="container">
                 <div className="row text-center">
-                <h3>A CSLL trimestral a recolher será de:</h3>
+                <h3>{SituacaoCSLL}</h3>
                 <h1>{[CSLLaRecolher].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> 
                 <p>Códido do Tributo 2372</p>
                 <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>

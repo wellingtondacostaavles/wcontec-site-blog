@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from 'react';
 
-import './deducoeslegais.css';
+import './descontosimplificado.css';
 
-function Deducoeslegais(){    
+function Descontosimplificado(){    
 
     const [RendimentosTributaveis, setNro1] = useState(0);
-    const [DeducoesLegais, setNro2] = useState(0);
-    const [IRRF, setNro3] = useState(0);
+    const [IRRF, setNro2] = useState(0);
     
     const [BaseCalculo, setResultado1] = useState(0);
     const [operacaoBaseCalculo, setOperacao1] = useState('Subtrair');  
@@ -40,8 +39,8 @@ function Deducoeslegais(){
             
     const PagarouRestituir = ResultdoIR
 
-    const situacao1 = 'O IR a restituir com base em Deduções Legais será de:'
-    const situacao2 = 'O IR a pagar com base em Deduções Legais será de'
+    const situacao1 = 'O IR a restituir com base em Desconto Simplificado será de:'
+    const situacao2 = 'O IR a pagar com base em Desconto Simplificado será de:'
     const situacao3 = ''
         
         
@@ -59,7 +58,7 @@ function Deducoeslegais(){
                 
     const calcular1 = () =>{  
         if (operacaoBaseCalculo=="Subtrair")
-        return (parseFloat(RendimentosTributaveis) - parseFloat(DeducoesLegais));
+        return ((parseFloat(RendimentosTributaveis)) - (parseFloat(RendimentosTributaveis) * 0.20));
     }
 
     const calcular2 = () =>{  
@@ -67,18 +66,18 @@ function Deducoeslegais(){
         return (parseFloat(ValorIR) - parseFloat(IRRF));
     }    
     
-    useEffect (() =>{setResultado1(calcular1())},[RendimentosTributaveis, DeducoesLegais, operacaoBaseCalculo]);
+    useEffect (() =>{setResultado1(calcular1())},[RendimentosTributaveis, operacaoBaseCalculo]);
     useEffect (() =>{setResultado2(calcular2())},[ValorIR, IRRF, operacaoResultdoIR]);
     
         
         return <div>         
         
-        <section id="deducoes-legais">  
+        <section id="desconto-simplificado">  
 
         <div className="row text-center">
                 <div className="titulo">
-                    <h1>IRPF Deduções legais</h1>
-                    <p>Simule o valor do Imposto de Renda com base na declaração na forma de Deduções Legais</p>
+                    <h1>IRPF Desconto Simplificado</h1>
+                    <p>Simule o valor do Imposto de Renda com base na declaração na forma de Desconto Simplificado</p>
                 </div>
             </div>
 
@@ -93,17 +92,10 @@ function Deducoeslegais(){
                         </div>                     
                     </div>
                     <div>
-                        <label>Deduções Legais</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DeducoesLegais} onChange={(e) => setNro2(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
                         <label>IRRF</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro3(e.target.value)}/>
+                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro2(e.target.value)}/>
                         </div>                     
                       </div> 
                 </div>
@@ -121,4 +113,4 @@ function Deducoeslegais(){
       </div> 
     }
   
-  export default Deducoeslegais;
+  export default Descontosimplificado;

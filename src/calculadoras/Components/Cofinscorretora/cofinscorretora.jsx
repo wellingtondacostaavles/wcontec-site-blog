@@ -23,6 +23,20 @@ function Cofinscorretora(){
     const [TributoFinal, setResultado5] = useState(0);
     const [operacaoTributoFinal, setOperacao5] = useState('Subtrair');
 
+    const ResultadoCOFINS = TributoFinal
+    
+    const situacao1 = 'A COFINS a recolher mensal será de::'
+    const situacao2 = ''
+
+    const SituacaoCOFINS = ResultadodaCOFINS(ResultadoCOFINS)
+
+        function ResultadodaCOFINS(ResultadoCOFINS){
+            if (ResultadoCOFINS > 0){
+                return situacao1
+            } else {
+            return situacao2
+            }
+        } 
    
   
     const calcular = () =>{  
@@ -86,7 +100,7 @@ function Cofinscorretora(){
                         </div>                     
                     </div>
                     <div>
-                        <label>Retenções Feitas - Anteçipações</label>                
+                        <label>COFINS retida na fonte</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro3(e.target.value)}/>
@@ -98,7 +112,7 @@ function Cofinscorretora(){
             <br></br>            
             <div className="container">
                 <div className="row text-center">
-                <h3>A COFINS a recolher mensal será de:</h3>
+                <h3>{SituacaoCOFINS}</h3>
                 <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
                 <p>Códido do Tributo 7987</p>
                 <p><span className="segundo-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>

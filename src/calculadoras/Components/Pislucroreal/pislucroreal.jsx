@@ -76,6 +76,21 @@ function Pislucroreal(){
     const [ResultadoFinaldoTributo, setResultado15] = useState(0);
     const [operacaoResultadoFinaldoTributo, setOperacao15] = useState('Subtrair');
 
+    const ResultadoPIS = ResultadoFinaldoTributo
+    
+    const situacao1 = 'O PIS a recolher mensal será de::'
+    const situacao2 = ''
+
+    const SituacaoPIS = ResultadodaCOFINS(ResultadoPIS)
+
+        function ResultadodaCOFINS(ResultadoPIS){
+            if (ResultadoPIS > 0){
+                return situacao1
+            } else {
+            return situacao2
+            }
+        }
+
     
   
     //Total das Receitas tributáveis
@@ -266,7 +281,7 @@ function Pislucroreal(){
                         </div>                     
                     </div>
                     <div>
-                        <label>Retenções Feitas - Anteçipações</label>                
+                        <label>PIS retido na fonte</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetençõesFeitasAnteçipacoes} onChange={(e) => setNro13(e.target.value)}/>
@@ -278,7 +293,7 @@ function Pislucroreal(){
             <br></br>
             <div className="container">
             <div className="row text-center">
-              <h3>O PIS apurado no lucro real será de:</h3>
+              <h3>{SituacaoPIS}</h3>
               <h1>{[ResultadoFinaldoTributo].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
               <p>Códido do Tributo 6912</p>
               <p><span className="segundo-p">ATENÇÃO: Veja quais são as Receitas não tributáveis e Operações com direito a crédito na Lei Nº 10.833/2003. O PIS encontrado na calculadora se negativo poderá ser utilizado como crédito no proximo mês, confirme com seu contador o valor encontrado.</span></p>            
