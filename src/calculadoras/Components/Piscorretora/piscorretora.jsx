@@ -4,9 +4,9 @@ import './piscorretora.css';
 
 function Piscorretora(){    
 
-    const [ReceitaFinanceiras, setNro1] = useState(0);
-    const [PremiosdeSeguros, setNro2] = useState(0);
-    const [RetencoesAntecipacoes, setNro3] = useState(0);
+    const [ReceitaFinanceiras, setNro1] = useState();
+    const [PremiosdeSeguros, setNro2] = useState();
+    const [RetencoesAntecipacoes, setNro3] = useState();
     
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
@@ -112,9 +112,9 @@ function Piscorretora(){
             <div className="container">
                 <div className="row text-center">
                 <h3>{SituacaoPIS}</h3>
-                <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
-                <p>Códido do Tributo 4574</p>
-                <p><span className="segundo-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
+                {SituacaoPIS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
+                {SituacaoPIS ? <p>Códido do Tributo 4574</p> :''}
+                {SituacaoPIS ? <p><span className="segundo-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
             </div>          
         </section>       

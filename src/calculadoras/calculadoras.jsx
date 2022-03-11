@@ -11,15 +11,15 @@ import Descontosimplificado from './Components/Descontosimplificado/descontosimp
 import Deducoeslegais from './Components/Deducoeslegais/deducoeslegais';
 import Tributos from './Components/Escolhaumacalculadora/tributos';
 import Pis from './Components/Escolhaumacalculadora/pis';
-import Cofins from './Components/Escolhaumacalculadora/cofins';
 import Pispresumido from './Components/Pispresumido/pispresumido';
-import Cofinspresumido from './Components/Cofinspresumido/cofinspresumido';
 import Pislucroreal from './Components/Pislucroreal/pislucroreal';
+import Piscorretora from './Components/Piscorretora/piscorretora';
+import Cofins from './Components/Escolhaumacalculadora/cofins';
+import Cofinspresumido from './Components/Cofinspresumido/cofinspresumido';
 import Cofinsreal from './Components/Cofinsreal/cofinsreal';
+import Cofinscorretora from './Components/Cofinscorretora/cofinscorretora';
 import Irtrimestral from './Components/IRPJTrimestral/irtrimestral';
 import Cslltrimestral from './Components/CSLLTrimestral/cslltrimestral';
-import Piscorretora from './Components/Piscorretora/piscorretora';
-import Cofinscorretora from './Components/Cofinscorretora/cofinscorretora';
 import Construcaocivil from './Components/Escolhaumacalculadora/construcaocivil';
 import Metrocubico from '../calculadoras/Components/Metrocubico/metrocubico';
 import Ultimosartigosblog from '../site/Components/ultimosartigosblog';
@@ -42,15 +42,15 @@ function Calculadoras(){
       <Deducoeslegais/>
       <Tributos/>
       <Pis/>
-      <Cofins/>
       <Pispresumido/>
-      <Cofinspresumido/>
       <Pislucroreal/>
+      <Piscorretora/>
+      <Cofins/>
+      <Cofinspresumido/>
       <Cofinsreal/>
+      <Cofinscorretora/>
       <Irtrimestral/>
       <Cslltrimestral/>
-      <Piscorretora/>
-      <Cofinscorretora/>
       <Construcaocivil/>
       <Metrocubico/>  
       <Ultimosartigosblog/>

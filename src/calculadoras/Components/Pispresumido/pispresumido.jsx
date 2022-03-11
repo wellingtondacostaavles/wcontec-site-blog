@@ -4,12 +4,12 @@ import './pispresumido.css';
 
 function Pispresumido(){    
 
-    const [ReceitaServicos, setNro1] = useState(0);
-    const [ReceitaVendas, setNro2] = useState(0);
-    const [DevolucaoVenda, setNro3] = useState(0);
-    const [ICMSsobreVendas, setNro4] = useState(0);
-    const [IPIsobreVendas, setNro5] = useState(0);
-    const [RetencoesAntecipacoes, setNro6] = useState(0);
+    const [ReceitaServicos, setNro1] = useState();
+    const [ReceitaVendas, setNro2] = useState();
+    const [DevolucaoVenda, setNro3] = useState();
+    const [ICMSsobreVendas, setNro4] = useState();
+    const [IPIsobreVendas, setNro5] = useState();
+    const [RetencoesAntecipacoes, setNro6] = useState();
 
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
@@ -129,9 +129,9 @@ function Pispresumido(){
             <div className="container">
                 <div className="row text-center">
                 <h3>{SituacaoPIS}</h3>
-                <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> 
-                <p>Códido do Tributo 8109</p>
-                <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
+                {SituacaoPIS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> : ''}
+                {SituacaoPIS ? <p>Códido do Tributo 8109</p> : ''}
+                {SituacaoPIS ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> : ''}
                 </div>
             </div>          
         </section>       

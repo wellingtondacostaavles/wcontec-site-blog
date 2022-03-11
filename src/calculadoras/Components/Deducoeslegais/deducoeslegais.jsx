@@ -4,9 +4,9 @@ import './deducoeslegais.css';
 
 function Deducoeslegais(){    
 
-    const [RendimentosTributaveis, setNro1] = useState(0);
-    const [DeducoesLegais, setNro2] = useState(0);
-    const [IRRF, setNro3] = useState(0);
+    const [RendimentosTributaveis, setNro1] = useState();
+    const [DeducoesLegais, setNro2] = useState();
+    const [IRRF, setNro3] = useState();
     
     const [BaseCalculo, setResultado1] = useState(0);
     const [operacaoBaseCalculo, setOperacao1] = useState('Subtrair');  
@@ -113,8 +113,8 @@ function Deducoeslegais(){
             <div className="container">
                 <div className="row text-center">
                 <h3>{SituacaoIR}</h3>
-                 <h1>{[ResultdoIR].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
-                <p><span className="segundo-p">Atenção: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração, ou contrate um profissional para te ajudar.</span></p>
+                {SituacaoIR ? <h1>{[ResultdoIR].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> : ''}
+                {SituacaoIR ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração, ou contrate um profissional para te ajudar.</span></p> :''}
                 </div>
             </div>          
         </section>       

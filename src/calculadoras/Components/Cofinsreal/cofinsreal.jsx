@@ -4,24 +4,24 @@ import './cofinsreal.css';
 
 function Cofinsreal(){   
     
-    const [ReceitaServicos, setNro1] = useState(0);
-    const [ReceitaVendas, setNro2] = useState(0);
-    const [ReceitasFinanceiras, setNro3] = useState(0);
-    const [ReceitasAlugueis, setNro4] = useState(0);
-    const [DevolucoesdeCompras, setNro5] = useState(0);
-    const [DemaisReceitasOperacionais, setNro6] = useState(0);      
+    const [ReceitaServicos, setNro1] = useState();
+    const [ReceitaVendas, setNro2] = useState();
+    const [ReceitasFinanceiras, setNro3] = useState();
+    const [ReceitasAlugueis, setNro4] = useState();
+    const [DevolucoesdeCompras, setNro5] = useState();
+    const [DemaisReceitasOperacionais, setNro6] = useState();      
 
-    const [ReceitasNaoTributaveis, setNro7] = useState(0);
+    const [ReceitasNaoTributaveis, setNro7] = useState();
     
-    const [OperacoescomDiretoaCredito, setNro8] = useState(0);
+    const [OperacoescomDiretoaCredito, setNro8] = useState();
     
-    const [ICMSsobrevendas, setNro9] = useState(0);
+    const [ICMSsobrevendas, setNro9] = useState();
     
-    const [IPIsobrevendas, setNro10] = useState(0);
+    const [IPIsobrevendas, setNro10] = useState();
 
-    const [PISpagonaimportacao, setNro11] = useState(0);
-    const [SaldoCredordemesanterior, setNro12] = useState(0);
-    const [RetençõesFeitasAnteçipacoes, setNro13] = useState(0); 
+    const [PISpagonaimportacao, setNro11] = useState();
+    const [SaldoCredordemesanterior, setNro12] = useState();
+    const [RetençõesFeitasAnteçipacoes, setNro13] = useState(); 
     
     //Total das Receitas tributáveis
     const [TotaldasReceitasTributaveis, setResultado1] = useState(0);
@@ -78,16 +78,19 @@ function Cofinsreal(){
 
     const ResultadoCOFINS = ResultadoFinaldoTributo
     
-    const situacao1 = 'A COFINS a recolher mensal será de::'
-    const situacao2 = ''
+    const situacao1 = 'Saldo credor da COFINS disponível para o mês seguinte:'
+    const situacao2 = 'A COFINS a recolher mensal será de:'
+    const situacao3 = ''
 
     const SituacaoCOFINS = ResultadodaCOFINS(ResultadoCOFINS)
 
         function ResultadodaCOFINS(ResultadoCOFINS){
-            if (ResultadoCOFINS > 0){
+            if (ResultadoCOFINS < 0){
                 return situacao1
-            } else {
-            return situacao2
+            } else if (ResultadoCOFINS > 0.004250000000183718){
+                return situacao2
+            } else {    
+            return situacao3
             }
         }  
 
@@ -294,9 +297,10 @@ function Cofinsreal(){
             <div className="container">
             <div className="row text-center">
               <h3>{SituacaoCOFINS}</h3>
-              <h1>{[ResultadoFinaldoTributo].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
-              <p>Códido do Tributo 5856</p>
-              <p><span className="segundo-p">ATENÇÃO: Veja quais são as Receitas não tributáveis e Operações com direito a crédito na Lei Nº 10.833/2003. A COFINS encontrada na calculadora se negativo poderá ser utilizado como crédito no proximo mês, confirme com seu contador o valor encontrado.</span></p>            
+              {SituacaoCOFINS ? <h1>{[ResultadoFinaldoTributo].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
+              {SituacaoCOFINS ? <p>Códido do Tributo 5856</p> :''}
+              <p><span className="segundo-p">ATENÇÃO: Veja quais são as Receitas não tributáveis e Operações com direito a crédito na Lei Nº 10.833/2003.</span></p>
+              {SituacaoCOFINS ? <p><span className="segundo-p">O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}            
             </div>
         </div>          
         </section>       

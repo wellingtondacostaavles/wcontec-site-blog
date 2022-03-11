@@ -4,11 +4,11 @@ import './cslltrimestral.css';
 
 function Cslltrimestral(){    
 
-    const [ReceitaServicos, setNro1] = useState(0);
-    const [ReceitaVendas, setNro2] = useState(0);
-    const [DevolucaoVenda, setNro3] = useState(0);
-    const [ReceitaFinanceira, setNro4] = useState(0);
-    const [CSLLRFAntecipacoes, setNro5] = useState(0);
+    const [ReceitaServicos, setNro1] = useState();
+    const [ReceitaVendas, setNro2] = useState();
+    const [DevolucaoVenda, setNro3] = useState();
+    const [ReceitaFinanceira, setNro4] = useState();
+    const [CSLLRFAntecipacoes, setNro5] = useState();
 
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
@@ -136,9 +136,9 @@ function Cslltrimestral(){
             <div className="container">
                 <div className="row text-center">
                 <h3>{SituacaoCSLL}</h3>
-                <h1>{[CSLLaRecolher].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> 
-                <p>Códido do Tributo 2372</p>
-                <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
+                {SituacaoCSLL ? <h1>{[CSLLaRecolher].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
+                {SituacaoCSLL ? <p>Códido do Tributo 2372</p> :''}
+                {SituacaoCSLL ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
             </div>          
         </section>       

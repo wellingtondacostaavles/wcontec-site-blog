@@ -4,9 +4,9 @@ import './cofinscorretora.css';
 
 function Cofinscorretora(){    
 
-    const [ReceitaFinanceiras, setNro1] = useState(0);
-    const [PremiosdeSeguros, setNro2] = useState(0);
-    const [RetencoesAntecipacoes, setNro3] = useState(0);
+    const [ReceitaFinanceiras, setNro1] = useState();
+    const [PremiosdeSeguros, setNro2] = useState();
+    const [RetencoesAntecipacoes, setNro3] = useState();
     
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
@@ -113,9 +113,9 @@ function Cofinscorretora(){
             <div className="container">
                 <div className="row text-center">
                 <h3>{SituacaoCOFINS}</h3>
-                <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
-                <p>Códido do Tributo 7987</p>
-                <p><span className="segundo-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
+                {SituacaoCOFINS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
+                {SituacaoCOFINS ? <p>Códido do Tributo 7987</p> :''}
+                {SituacaoCOFINS ? <p><span className="segundo-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
             </div>          
         </section>       
