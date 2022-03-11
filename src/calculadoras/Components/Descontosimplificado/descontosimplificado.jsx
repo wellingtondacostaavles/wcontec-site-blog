@@ -5,7 +5,7 @@ import './descontosimplificado.css';
 function Descontosimplificado(){    
 
     const [RendimentosTributaveis, setNro1] = useState();
-    const [IRRF, setNro2] = useState(0);
+    const [IRRF, setNro2] = useState();
     
     const [BaseCalculo, setResultado1] = useState(0);
     const [operacaoBaseCalculo, setOperacao1] = useState('Subtrair');  
@@ -54,7 +54,23 @@ function Descontosimplificado(){
             } else {    
             return situacao3
             }
-        }        
+        }
+        
+        const Desobrigatoriedade = BaseCalculo
+
+        const situacao10 = 'Desobrigado'
+        const situacao20 = ''
+            
+            
+        const SituacaoDesobrigatoriedade = MostrarDesobrigatoriedade(Desobrigatoriedade)
+    
+            function MostrarDesobrigatoriedade(Desobrigatoriedade){
+                if (Desobrigatoriedade <= 22847.76){
+                    return situacao10                
+                } else {    
+                return situacao20
+                }
+            }      
                 
     const calcular1 = () =>{  
         if (operacaoBaseCalculo=="Subtrair")
@@ -104,9 +120,10 @@ function Descontosimplificado(){
             <br></br>            
             <div className="container">
                 <div className="row text-center">
+                {SituacaoDesobrigatoriedade ? <p><span className="segundo-p">Atenção: De acordo com seus rendimentos você está desobrigado a apresentar a DIRPF.</span></p> :''}
                 <h3>{SituacaoIR}</h3>
                 {SituacaoIR ? <h1>{[ResultdoIR].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> : ''}
-                {SituacaoIR ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração, ou contrate um profissional para te ajudar.</span></p> : ''}
+                {SituacaoIR ? <p><span className="segundo-p">Observação: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração caso seja obrigado, ou contrate um profissional para te ajudar.</span></p> : ''}
                 </div>
             </div>          
         </section>       

@@ -4,11 +4,11 @@ import './distribuicaolucromei.css';
 
 function Distribuicaolucromei(){    
 
-    const [ReceitaServicos, setNro1] = useState(0);
-    const [ReceitaVendas, setNro2] = useState(0);
-    const [TransportedeCargas, setNro3] = useState(0);
-    const [TransportedePassageiros, setNro4] = useState(0);
-    const [Impostosetaxas, setNro5] = useState(0);
+    const [ReceitaServicos, setNro1] = useState();
+    const [ReceitaVendas, setNro2] = useState();
+    const [TransportedeCargas, setNro3] = useState();
+    const [TransportedePassageiros, setNro4] = useState();
+    const [Impostosetaxas, setNro5] = useState();
     const [DespesasdoMEI, setNro6] = useState(0);
     
     const [Presucao32, setResultado1] = useState(0);
@@ -32,8 +32,67 @@ function Distribuicaolucromei(){
     const [LucroTributavel, setResultado7] = useState(0);
     const [operacaoLucroTributavel, setOperacao7] = useState('Subtrair');
 
-  
-    const calcular = () =>{  
+    const SituacaodaParcelaIsenta = LucroIsento
+    
+    const comParcelaIsenta = 'Parcela do Faturamento ISENTA na DIRPF'
+    const semParcelaIsenta = ''
+
+    const MostrarSituacaoParcelaIsenta = SituacaoParcelaIsenta(SituacaodaParcelaIsenta)
+
+        function SituacaoParcelaIsenta(SituacaodaParcelaIsenta){
+            if (SituacaodaParcelaIsenta > 0){
+                return comParcelaIsenta
+            } else {
+            return semParcelaIsenta
+            }
+        }
+    
+    const SituacaodoLucroTributavel = LucroTributavel
+
+    const comParcelaTributavel = 'Parcela tributável do Microempreendedor Individual será de:'
+    const semParcelaTributavel = ''
+
+    const MostrarSituacaoParcelaTributavel = SituacaoParcelaTributavel(SituacaodoLucroTributavel)
+
+        function SituacaoParcelaTributavel(SituacaodoLucroTributavel){
+            if (SituacaodoLucroTributavel > 0) {
+                return comParcelaTributavel
+            } else {
+            return semParcelaTributavel
+            }
+        }
+
+    const SituacaoObrigatoriedadedaDIRPF = LucroTributavel
+
+    const naoobrigada = 'Com base no valor encontrato o MEI encontra-se obrigado a apresentar a DIRPF'
+    const obrigada = ''
+
+    const MostrarSituacaoObrigatoriedadedaDIRPF = SituacaodaObrigatoriedadedaDIRPF(SituacaoObrigatoriedadedaDIRPF)
+
+        function SituacaodaObrigatoriedadedaDIRPF(SituacaoObrigatoriedadedaDIRPF){
+            if (SituacaoObrigatoriedadedaDIRPF >= 28559.70) {
+                return naoobrigada
+            } else {
+            return obrigada
+            }
+        }    
+
+    const SituacaoNaoObrigatoriedadedaDIRPF = LucroTributavel
+
+    const naotaobrigada = 'Com base no valor encontrato o MEI não está obrigado a apresentar a DIRPF'
+    const taobrigada = ''
+
+    const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
+
+        function SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF){
+            if (SituacaoNaoObrigatoriedadedaDIRPF <= 28559.70) {
+                return naotaobrigada
+            } else {
+            return taobrigada
+            }
+        }      
+
+        const calcular = () =>{  
         if (operacaoPresucao32=="Somar")
         return (parseFloat(ReceitaServicos) * 0.32);
     }
@@ -128,9 +187,9 @@ function Distribuicaolucromei(){
                         </div>                     
                     </div>
                     </div>                    
-                <div className="col-sm-4"></div>  
+                    <div className="col-sm-4"></div>  
 
-                <div className="table-responsive">
+        {MostrarSituacaoParcelaIsenta ? <div className="table-responsive">
             <table className="table">
                 <tr>
                     <th className="width80"></th>
@@ -143,14 +202,15 @@ function Distribuicaolucromei(){
                 </tr>                                                                
             </tbody> 
             </table>
-        </div>
+        </div> :''}
             </div><div className="container">
                 <div className="row text-center">
-                <h3>A parcela tributável a ser informada na DIRPF será de:</h3>
-                <h1>{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
+                <h3>{MostrarSituacaoParcelaTributavel}</h3>
+                {MostrarSituacaoParcelaTributavel ? <h1>{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
+                <p><span className="segundo-p">{MostrarSituacaoObrigatoriedadedaDIRPF}</span></p>
+                <p><span className="segundo-p">{MostrarSituacaoNaoObrigatoriedadedaDIRPF}</span></p>
                 <p><span className="segundo-p">*DESPESAS DO MEI (Água, Luz, Telefone, compra de Mercadoria, Aluguel do Espaço).</span></p>
-                <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser analisado e confirmado por seu contador responsável.</span></p>
-                <p><span className="segundo-p">Saiba o que é um</span><a href="/blog-mei" target="_blank" className="segundo-p"> Microempreendedor Individual,</a> <span className="segundo-p">e conheça seus benefícios.</span></p>
+                {MostrarSituacaoParcelaTributavel ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser analisado e confirmado por seu contador responsável.</span></p> :''}
                 </div>
             </div>          
         </section>       

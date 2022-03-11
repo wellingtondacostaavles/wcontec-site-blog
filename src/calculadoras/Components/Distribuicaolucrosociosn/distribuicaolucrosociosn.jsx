@@ -4,10 +4,10 @@ import './distribuicaolucrosociosn.css';
 
 function Distribuicaolucrosociosn(){    
 
-    const [ReceitaServicos, setNro1] = useState(0);
-    const [ReceitaVendas, setNro2] = useState(0);
-    const [ReceitaFinanceira, setNro3] = useState(0);
-    const [IRPJpagosnoSimplesNacional, setNro4] = useState(0);
+    const [ReceitaServicos, setNro1] = useState();
+    const [ReceitaVendas, setNro2] = useState();
+    const [ReceitaFinanceira, setNro3] = useState();
+    const [IRPJpagosnoSimplesNacional, setNro4] = useState();
     
     const [Presucao32, setResultado1] = useState(0);
     const [operacaoPresucao32, setOperacao1] = useState('Somar');
@@ -23,8 +23,21 @@ function Distribuicaolucrosociosn(){
 
     const [ReceitaBrua, setResultado5] = useState(0);
     const [operacaoReceitaBrua, setOperacao5] = useState('Somar');
-
     
+    const ResultadoLucroaSerDistribuido = LucroaSerDistribuido
+    
+    const situacao1 = 'O lucro isento a ser informado na declaração será de:'
+    const situacao2 = ''
+
+    const SituacaoLucroaSerDistribuido = LucroaDistribuido(ResultadoLucroaSerDistribuido)
+
+        function LucroaDistribuido(ResultadoLucroaSerDistribuido){
+            if (ResultadoLucroaSerDistribuido > 0){
+                return situacao1
+            } else {
+            return situacao2
+            }
+        }
   
     const calcular = () =>{  
         if (operacaoPresucao32=="Somar")
@@ -102,11 +115,11 @@ function Distribuicaolucrosociosn(){
             
             <div className="container">
                 <div className="row text-center">
-                <h3>O lucro isento a ser informado na declaração será de:</h3>
-                <h1>{[LucroaSerDistribuido].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
+                <h3>{SituacaoLucroaSerDistribuido}</h3>
+                {SituacaoLucroaSerDistribuido ? <h1>{[LucroaSerDistribuido].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
                 <p><span className="segundo-p">*IRPJ pagos no Simples Nacional (corresponde ao total pago no ano, podendo ser consultado nos extratos mensais de apuração do imposto).</span></p>
-                <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser analisado e confirmado por seu contador responsável.</span></p>
-                <p><span className="segundo-p">Conheça o regime tributário</span><a href="/blog-simples-nacional" target="_blank" className="segundo-p"> Simples Nacional,</a> <span className="segundo-p">exclusivo para micro e pequenas empresas.</span></p>
+                {SituacaoLucroaSerDistribuido ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser analisado e confirmado por seu contador responsável.</span></p> :''}
+                <p><span className="segundo-p"></span></p>
                 </div>
             </div>          
         </section>       

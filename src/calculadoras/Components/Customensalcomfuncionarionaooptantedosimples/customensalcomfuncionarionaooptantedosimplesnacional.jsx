@@ -7,11 +7,11 @@ import './customensalcomfuncionarionaooptantedosimplesnacional.css';
 
 function Customensalcomfuncionarionaooptantedosimplesnacional(){    
 
-    const [nro1, setNro1] = useState(0);
-    const [nro2, setNro2] = useState(0);
-    const [nro3, setNro3] = useState(0);
-    const [nro4, setNro4] = useState(0);
-    const [nro5, setNro5] = useState(0);
+    const [nro1, setNro1] = useState();
+    const [nro2, setNro2] = useState();
+    const [nro3, setNro3] = useState();
+    const [nro4, setNro4] = useState();
+    const [nro5, setNro5] = useState();
 
 
     const [resultado1, setResultado1] = useState(0);
@@ -50,7 +50,21 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
     const [resultado12, setResultado12] = useState(0);
     const [operacao12, setOperacao12] = useState('Somar');
 
-   
+    const ResultadoCustoMensalFuncionario = resultado12
+    
+    const situacao1 = 'O custo total mensal com um funcionário será de aproximadamente:'
+    const situacao2 = ''
+
+    const SituacaoResultadoCustoMensalFuncionario = ResultadodoCustoMensalFuncionario(ResultadoCustoMensalFuncionario)
+
+        function ResultadodoCustoMensalFuncionario(ResultadoCustoMensalFuncionario){
+            if (ResultadoCustoMensalFuncionario > 0){
+                return situacao1
+            } else {
+            return situacao2
+            }
+        }   
+     
   
     const calcular = () =>{  
         if (operacao1=="Somar")
@@ -180,7 +194,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
             </div>         
         
         
-        <div className="table-responsive">
+            {SituacaoResultadoCustoMensalFuncionario ? <div className="table-responsive">
             <table className="table">
                 <tr>
                     <th className="width80"></th>
@@ -233,13 +247,13 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                 </tr>                                                
             </tbody> 
             </table>
-        </div>
+        </div> :''}
 
             <div className="container">
             <div className="row text-center">
-              <h3>O custo total mensal com um funcionário será de aproximadamente:</h3>
-              <h1>{[resultado12].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
-              <p><span className="segundo-p">ATENÇÃO: No valor correspondente a parte encontrada para o INSS não estão sendo incluídos o RAT porque seu cálculo se dá com base na atividade da empresa, e o FAP que é um cálculo feito pelo INSS de acordo com o último ano da empresa, em relação a riscos.. Ressaltamos que o valor estimado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p>
+            <h3>{SituacaoResultadoCustoMensalFuncionario}</h3>
+            {SituacaoResultadoCustoMensalFuncionario ? <h1>{[resultado12].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
+            {SituacaoResultadoCustoMensalFuncionario ? <p><span className="segundo-p">ATENÇÃO: O valor estimado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
             </div>
         </div>          
         </section>       

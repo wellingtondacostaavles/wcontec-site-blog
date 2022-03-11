@@ -151,7 +151,7 @@ function Irtrimestral(){
                         </div>                     
                     </div>
                     <div>
-                        <label>IRRF - Anteçipações</label>                
+                        <label>IRRF</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRFAntecipacoes} onChange={(e) => setNro5(e.target.value)}/>

@@ -5,12 +5,27 @@ import {Link} from 'react-router-dom';
 import './metrocubico.css';
 
 function Metrocubico(){
-    const [Largura, setNro1] = useState(0);
-    const [Comprimento, setNro2] = useState(0);
-    const [Espessura, setNro3] = useState(0);
+    const [Largura, setNro1] = useState();
+    const [Comprimento, setNro2] = useState();
+    const [Espessura, setNro3] = useState();
     
     const [resultado, setResultado] = useState(0);
     const [operacao, setOperacao] = useState('Multiplicar');
+
+    const ResultadoMetroCubico = resultado
+    
+    const situacao1 = 'Você irá precisar de aproximadamente:'
+    const situacao2 = ''
+
+    const SituacaoResultadoMetroCubico = ResultadodoMetroCubico(ResultadoMetroCubico)
+
+        function ResultadodoMetroCubico(ResultadoMetroCubico){
+            if (ResultadoMetroCubico > 0){
+                return situacao1
+            } else {
+            return situacao2
+            }
+        }   
   
     const calcular = () =>{
   
@@ -64,9 +79,9 @@ function Metrocubico(){
               
             <div className="container">
               <div className="row text-center">
-                <h3>Você irá precisar de aproximadamente:</h3>
-                <h1>{resultado} m³</h1>
-                <p><span className="segundo-p">ATENÇÃO: O volume estimado na calculadora deverá ser confirmado com o engenheiro responsável pela obra.</span></p>
+                <h3>{SituacaoResultadoMetroCubico}</h3>
+                {SituacaoResultadoMetroCubico ? <h1>{resultado} m³</h1> :''}
+                {SituacaoResultadoMetroCubico ? <p><span className="segundo-p">ATENÇÃO: O volume estimado na calculadora deverá ser confirmado com o engenheiro responsável pela obra.</span></p> :''}
               </div>
             </div>  
         

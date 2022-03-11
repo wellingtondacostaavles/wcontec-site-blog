@@ -25,7 +25,7 @@ function Pispresumido(){
 
     const ResultadoPIS = TributoFinal
     
-    const situacao1 = 'O PIS a recolher mensal será de::'
+    const situacao1 = 'O PIS a recolher mensal será de:'
     const situacao2 = ''
 
     const SituacaoPIS = ResultadodaCOFINS(ResultadoPIS)

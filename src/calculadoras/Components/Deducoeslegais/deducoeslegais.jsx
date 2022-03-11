@@ -41,7 +41,7 @@ function Deducoeslegais(){
     const PagarouRestituir = ResultdoIR
 
     const situacao1 = 'O IR a restituir com base em Deduções Legais será de:'
-    const situacao2 = 'O IR a pagar com base em Deduções Legais será de'
+    const situacao2 = 'O IR a pagar com base em Deduções Legais será de:'
     const situacao3 = ''
         
         
@@ -55,9 +55,25 @@ function Deducoeslegais(){
             } else {    
             return situacao3
             }
-        }        
-                
-    const calcular1 = () =>{  
+        }
+        
+    const Desobrigatoriedade = BaseCalculo
+
+    const situacao10 = 'Desobrigado'
+    const situacao20 = ''
+        
+        
+    const SituacaoDesobrigatoriedade = MostrarDesobrigatoriedade(Desobrigatoriedade)
+
+        function MostrarDesobrigatoriedade(Desobrigatoriedade){
+            if (Desobrigatoriedade <= 22847.76){
+                return situacao10                
+            } else {    
+            return situacao20
+            }
+        }
+
+        const calcular1 = () =>{  
         if (operacaoBaseCalculo=="Subtrair")
         return (parseFloat(RendimentosTributaveis) - parseFloat(DeducoesLegais));
     }
@@ -112,9 +128,10 @@ function Deducoeslegais(){
             <br></br>            
             <div className="container">
                 <div className="row text-center">
+                {SituacaoDesobrigatoriedade ? <p><span className="segundo-p">Atenção: De acordo com seus rendimentos sua DIRPF está dando Isenta do imposto.</span></p> :''}
                 <h3>{SituacaoIR}</h3>
                 {SituacaoIR ? <h1>{[ResultdoIR].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> : ''}
-                {SituacaoIR ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração, ou contrate um profissional para te ajudar.</span></p> :''}
+                {SituacaoIR ? <p><span className="segundo-p">Observação: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração caso seja obrigado, ou contrate um profissional para te ajudar.</span></p> : ''}
                 </div>
             </div>          
         </section>       
