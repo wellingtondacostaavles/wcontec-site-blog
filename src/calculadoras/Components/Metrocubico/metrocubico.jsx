@@ -81,7 +81,7 @@ function Metrocubico(){
               <div className="row text-center">
                 <h3>{SituacaoResultadoMetroCubico}</h3>
                 {SituacaoResultadoMetroCubico ? <h1>{resultado} m³</h1> :''}
-                {SituacaoResultadoMetroCubico ? <p><span className="segundo-p">ATENÇÃO: O volume estimado na calculadora deverá ser confirmado com o engenheiro responsável pela obra.</span></p> :''}
+                {SituacaoResultadoMetroCubico ? <p><span className="terceiro-p">Atenção: O volume estimado na calculadora deverá ser confirmado com o engenheiro responsável pela obra.</span></p> :''}
               </div>
             </div>  
         

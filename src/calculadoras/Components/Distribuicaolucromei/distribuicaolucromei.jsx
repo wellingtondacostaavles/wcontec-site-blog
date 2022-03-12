@@ -9,7 +9,7 @@ function Distribuicaolucromei(){
     const [TransportedeCargas, setNro3] = useState();
     const [TransportedePassageiros, setNro4] = useState();
     const [Impostosetaxas, setNro5] = useState();
-    const [DespesasdoMEI, setNro6] = useState(0);
+    const [DespesasdoMEI, setNro6] = useState();
     
     const [Presucao32, setResultado1] = useState(0);
     const [operacaoPresucao32, setOperacao1] = useState('Somar');
@@ -62,24 +62,9 @@ function Distribuicaolucromei(){
             }
         }
 
-    const SituacaoObrigatoriedadedaDIRPF = LucroTributavel
-
-    const naoobrigada = 'Com base no valor encontrato o MEI encontra-se obrigado a apresentar a DIRPF'
-    const obrigada = ''
-
-    const MostrarSituacaoObrigatoriedadedaDIRPF = SituacaodaObrigatoriedadedaDIRPF(SituacaoObrigatoriedadedaDIRPF)
-
-        function SituacaodaObrigatoriedadedaDIRPF(SituacaoObrigatoriedadedaDIRPF){
-            if (SituacaoObrigatoriedadedaDIRPF >= 28559.70) {
-                return naoobrigada
-            } else {
-            return obrigada
-            }
-        }    
-
     const SituacaoNaoObrigatoriedadedaDIRPF = LucroTributavel
 
-    const naotaobrigada = 'Com base no valor encontrato o MEI não está obrigado a apresentar a DIRPF'
+    const naotaobrigada = 'Atenção: Com base no valor da parcela tributável encontrata, o MEI não está obrigado a apresentar a DIRPF'
     const taobrigada = ''
 
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
@@ -207,10 +192,8 @@ function Distribuicaolucromei(){
                 <div className="row text-center">
                 <h3>{MostrarSituacaoParcelaTributavel}</h3>
                 {MostrarSituacaoParcelaTributavel ? <h1>{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
-                <p><span className="segundo-p">{MostrarSituacaoObrigatoriedadedaDIRPF}</span></p>
-                <p><span className="segundo-p">{MostrarSituacaoNaoObrigatoriedadedaDIRPF}</span></p>
-                <p><span className="segundo-p">*DESPESAS DO MEI (Água, Luz, Telefone, compra de Mercadoria, Aluguel do Espaço).</span></p>
-                {MostrarSituacaoParcelaTributavel ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser analisado e confirmado por seu contador responsável.</span></p> :''}
+                <p><span className="terceiro-p">{MostrarSituacaoNaoObrigatoriedadedaDIRPF}</span></p>
+                <p><span className="segundo-p">*Despesas do MEI (Água, Luz, Telefone, compra de Mercadoria, Aluguel do Espaço).</span></p>
                 </div>
             </div>          
         </section>       

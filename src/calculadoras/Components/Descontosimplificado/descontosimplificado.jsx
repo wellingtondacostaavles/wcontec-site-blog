@@ -120,10 +120,10 @@ function Descontosimplificado(){
             <br></br>            
             <div className="container">
                 <div className="row text-center">
-                {SituacaoDesobrigatoriedade ? <p><span className="segundo-p">Atenção: De acordo com seus rendimentos você está desobrigado a apresentar a DIRPF.</span></p> :''}
                 <h3>{SituacaoIR}</h3>
                 {SituacaoIR ? <h1>{[ResultdoIR].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> : ''}
-                {SituacaoIR ? <p><span className="segundo-p">Observação: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração caso seja obrigado, ou contrate um profissional para te ajudar.</span></p> : ''}
+                {SituacaoDesobrigatoriedade ? <p><span className="terceiro-p">Atenção: De acordo com os rendimentos informados, o contribuinte está desobrigado a apresentar a DIRPF.</span></p> :''}
+                {SituacaoIR ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração, ou contrate um profissional para te ajudar.</span></p> : ''}
                 </div>
             </div>          
         </section>       

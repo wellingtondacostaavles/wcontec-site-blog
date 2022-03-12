@@ -25,7 +25,7 @@ function Cofinspresumido(){
 
     const ResultadoCOFINS = TributoFinal
     
-    const situacao1 = 'A COFINS a recolher mensal será de::'
+    const situacao1 = 'A COFINS a recolher mensal será de:'
     const situacao2 = ''
 
     const SituacaoCOFINS = ResultadodaCOFINS(ResultadoCOFINS)
@@ -129,7 +129,7 @@ function Cofinspresumido(){
                 <h3>{SituacaoCOFINS}</h3>
                 {SituacaoCOFINS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
                 {SituacaoCOFINS ? <p>Códido do Tributo 2172</p> :''}
-                {SituacaoCOFINS ? <p><span className="segundo-p">ATENÇÃO: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
+                {SituacaoCOFINS ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
             </div>          
         </section>       

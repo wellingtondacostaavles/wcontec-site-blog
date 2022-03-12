@@ -241,7 +241,7 @@ function Cofinsreal(){
                         </div>                     
                     </div>
                     <div>
-                        <label>Receitas não tributáveis</label>                
+                        <label>Receitas não tributáveis*</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasNaoTributaveis} onChange={(e) => setNro7(e.target.value)}/>
@@ -249,7 +249,7 @@ function Cofinsreal(){
                     </div>                    
                     
                     <div>
-                        <label>Operações com direito a crédito</label>                
+                        <label>Operações com direito a crédito*</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={OperacoescomDiretoaCredito} onChange={(e) => setNro8(e.target.value)}/>
@@ -299,8 +299,8 @@ function Cofinsreal(){
               <h3>{SituacaoCOFINS}</h3>
               {SituacaoCOFINS ? <h1>{[ResultadoFinaldoTributo].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
               {SituacaoCOFINS ? <p>Códido do Tributo 5856</p> :''}
-              <p><span className="segundo-p">ATENÇÃO: Veja quais são as Receitas não tributáveis e Operações com direito a crédito na Lei Nº 10.833/2003.</span></p>
-              {SituacaoCOFINS ? <p><span className="segundo-p">O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}            
+              <p><span className="segundo-p">Veja quais são as *Receitas não tributáveis e *Operações com direito a crédito na Lei Nº 10.833/2003.</span></p>
+              {SituacaoCOFINS ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}            
             </div>
         </div>          
         </section>       

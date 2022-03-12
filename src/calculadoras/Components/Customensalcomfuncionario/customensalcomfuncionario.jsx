@@ -49,7 +49,7 @@ function Customensalcomfuncionario(){
 
     const ResultadoCustoMensalFuncionario = resultado11
     
-    const situacao1 = 'O custo total mensal com um funcionário será de aproximadamente:'
+    const situacao1 = 'O custo total mensal com um funcionário será de:'
     const situacao2 = ''
 
     const SituacaoResultadoCustoMensalFuncionario = ResultadodoCustoMensalFuncionario(ResultadoCustoMensalFuncionario)
@@ -240,7 +240,7 @@ function Customensalcomfuncionario(){
             <div className="row text-center">
               <h3>{SituacaoResultadoCustoMensalFuncionario}</h3>
               {SituacaoResultadoCustoMensalFuncionario ? <h1>{[resultado11].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
-              {SituacaoResultadoCustoMensalFuncionario ? <p><span className="segundo-p">ATENÇÃO: O valor estimado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
+              {SituacaoResultadoCustoMensalFuncionario ? <p><span className="terceiro-p">Atenção: O valor encontrato na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
             </div>
         </div>          
         </section>       

@@ -131,7 +131,7 @@ function Pispresumido(){
                 <h3>{SituacaoPIS}</h3>
                 {SituacaoPIS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> : ''}
                 {SituacaoPIS ? <p>Códido do Tributo 8109</p> : ''}
-                {SituacaoPIS ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> : ''}
+                {SituacaoPIS ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> : ''}
                 </div>
             </div>          
         </section>       

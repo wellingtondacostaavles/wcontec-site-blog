@@ -166,7 +166,7 @@ function Irtrimestral(){
                 <h3>{SituacaoIR}</h3>
                 {SituacaoIR ? <h1>{[IRPJaRecolher].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
                 {SituacaoIR ? <p>Códido do Tributo 2089</p> :''}
-                {SituacaoIR ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
+                {SituacaoIR ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
             </div>          
         </section>       

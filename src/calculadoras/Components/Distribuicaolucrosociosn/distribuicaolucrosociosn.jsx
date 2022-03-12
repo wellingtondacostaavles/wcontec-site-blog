@@ -118,8 +118,6 @@ function Distribuicaolucrosociosn(){
                 <h3>{SituacaoLucroaSerDistribuido}</h3>
                 {SituacaoLucroaSerDistribuido ? <h1>{[LucroaSerDistribuido].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
                 <p><span className="segundo-p">*IRPJ pagos no Simples Nacional (corresponde ao total pago no ano, podendo ser consultado nos extratos mensais de apuração do imposto).</span></p>
-                {SituacaoLucroaSerDistribuido ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser analisado e confirmado por seu contador responsável.</span></p> :''}
-                <p><span className="segundo-p"></span></p>
                 </div>
             </div>          
         </section>       

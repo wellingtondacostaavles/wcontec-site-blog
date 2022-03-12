@@ -138,7 +138,7 @@ function Cslltrimestral(){
                 <h3>{SituacaoCSLL}</h3>
                 {SituacaoCSLL ? <h1>{[CSLLaRecolher].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
                 {SituacaoCSLL ? <p>Códido do Tributo 2372</p> :''}
-                {SituacaoCSLL ? <p><span className="segundo-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
+                {SituacaoCSLL ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
             </div>          
         </section>       

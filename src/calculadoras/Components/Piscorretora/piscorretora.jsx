@@ -25,7 +25,7 @@ function Piscorretora(){
 
     const ResultadoPIS = TributoFinal
     
-    const situacao1 = 'O PIS a recolher mensal será de::'
+    const situacao1 = 'O PIS a recolher mensal será de:'
     const situacao2 = ''
 
     const SituacaoPIS = ResultadodaCOFINS(ResultadoPIS)
@@ -114,7 +114,7 @@ function Piscorretora(){
                 <h3>{SituacaoPIS}</h3>
                 {SituacaoPIS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
                 {SituacaoPIS ? <p>Códido do Tributo 4574</p> :''}
-                {SituacaoPIS ? <p><span className="segundo-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
+                {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
             </div>          
         </section>       
