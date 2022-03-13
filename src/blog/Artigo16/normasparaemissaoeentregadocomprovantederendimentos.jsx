@@ -48,6 +48,7 @@ function Normasparaemissaoeentregadocomprovantederendimentos(){
 
            
     </section>
+    <Artigosrelacionados/>
     <Artigos/>    
     <Cardareadocliente/>
     <Categorias/>

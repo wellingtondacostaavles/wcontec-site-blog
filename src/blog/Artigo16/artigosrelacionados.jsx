@@ -15,53 +15,28 @@ function Artigosrelacionados(){
          <div className="container">                
             <div className="row">              
                 <div className="col-lg-6">
-                        <div className="card card-artigos">
-                            <center><img src="/Images/Autonomo/ultimosartigos.png" className="card-img-top" alt="..."/></center>
-                            <div className="card-body">
-                                <h4 className="card-title">Autônomo</h4>
-                                <p className="card-text">O profissional que trabalha por conta própria e desempenha uma atividade remunerada sem vínculo empregatício, sua remuneração se dá por um contrato de prestação de serviços.</p>
-                                <a href="/" className="btn btn-primary btn-artigos">Ler Post</a>
-                            </div>
+                            <div className="card card-artigos">
+                                <center><img src="/Images/DIRPF22/Documentosnecessarios/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                                <div className="card-body">
+                                    <h4 className="card-title">Documentos necessários para a DIRPF 2022</h4>
+                                    <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
+                                    <a href="/blog-documentosnecessarios-irpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
+                                </div>
+                            </div>  
                         </div>  
-                    </div>  
-                
-                    <div className="col-lg-6">
-                    <div className="card card-artigos">
-                        <center><img src="/Images/Mei/ultimosartigos.png" className="card-img-top" alt="..."/></center>
-                        <div className="card-body">
-                            <h4 className="card-title">Microeemprendedor Individual (MEI)</h4>
-                            <p className="card-text">Apesar de só poder faturar até R$ 81.000,00 por ano, o MEI tem diversas facilidades como abertura de conta bancária, pedido de empréstimos e emissão de notas fiscais.</p>
-                            <a href="/blog-mei" className="btn btn-primary btn-artigos">Ler Post</a>
-                        </div>
-                    </div>  
+            <div className="col-lg-6">
+            <div className="card card-artigos">
+                <center><img src="/Images/Novidadesnadeclaracaoirpf22/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                <div className="card-body">
+                    <h4 className="card-title">Confira as novidades na declaração do Imposto de Renda 2022</h4>
+                    <p className="card-text">São várias mudanças, e a que chama mais atenção será o recebimento da restituição ou o pagamento do imposto por meio de Pix.</p>
+                    <a href="/blog-novidades-na-declaracao-irpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
                 </div>
-            </div>       
-
-                
-            <div className="row">      
-                <div className="col-lg-6">
-                        <div className="card card-artigos">
-                            <center><img src="/Images/slu/ultimosartigos.png" className="card-img-top" alt="..."/></center>
-                            <div className="card-body">
-                                <h4 className="card-title">xxxxxxxxxxxxxxxxxx</h4>
-                                <p className="card-text">Onde não é preciso ter sócios, não há exigência de valor mínimo para o Capital Social, e o patrimônio do empreendedor não se mistura com o da empresa.</p>
-                                <a href="/" className="btn btn-primary btn-artigos">Ler Post</a>
-                            </div>
-                        </div>  
-                    </div>   
-                                       
-                <div className="col-lg-6">
-                    <div className="card card-artigos">
-                        <center><img src="/Images/Diferecasform/ultimosartigos.png" className="card-img-top" alt="..."/></center>
-                            <div className="card-body">
-                                <h4 className="card-title">xxxxxxxxxxxxxxxxxx</h4>
-                                <p className="card-text">Apesar de parecer iguais, existem algumas diferenças que devemos ter cuidado na hora de escolher o melhor formato de empresa.</p>
-                                <a href="/" className="btn btn-primary btn-artigos">Ler Post</a>
-                            </div>
-                        </div>  
-                     </div>   
-                 </div> 
-            </div>          
+            </div>  
+        </div>        
+                        
+            </div>    
+        </div>          
        </section>;
   }
 

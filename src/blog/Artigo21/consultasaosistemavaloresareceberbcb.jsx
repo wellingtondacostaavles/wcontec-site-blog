@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/navbar';
 import Capa from '../Artigo21/capa';
-import Artigos2 from '../Components/Artigos/artigos2';
+import Artigos from '../Components/Artigos/artigos';
 import Cardareadocliente from '../Components/Cardareadoclente/cardareadocliente';
 import Categorias from '../Components/Categorias/categorias';
 import Recomendados from '../Components/Recomendados/recomendados';
@@ -101,7 +101,7 @@ function Consultasaosistemavaloresareceberbcb(){
            
     </section>
     <Cardsvr/>
-    <Artigos2/>    
+    <Artigos/>    
     <Cardareadocliente/>
     <Categorias/>
     <Recomendados/>

@@ -44,11 +44,11 @@ function Artigos2(){
             <div className="row">
                 <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/Normasparaemissao/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/Consultasaosistemavaloresareceberbcb/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Normas para emissão e entrega do Comprovante de Rendimentos 2022</h4>
-                            <p className="card-text">Foram estabelecidas normas sobre o comprovante de rendimentos pagos e de imposto sobre a renda retido na fonte a vigorar a partir de 01.01.2022.</p>
-                            <a href="/blog-normas-para-emissao-e-entrega-do-comprovante-de-rendimentos" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <h4>Já estão disponíveis as consultas ao Sistema Valores a Receber</h4>
+                            <p>Através desta consulta você saberá se tem valor a receber ou não, caso tenha, ficará por dentro da data e o período para consultar e solicitar o resgate do saldo existente.</p>
+                            <a href="/blog-consulta-ao-sistema-valores-a-receber-bcb" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  

@@ -1,12 +1,13 @@
 import React from 'react';
-import Navbar from '../../Components/Navbar/navbar';
+import Navbar from '../../../Components/Navbar/navbar';
 import Capa from './capa';
-import Artigos2 from '../../Components/Artigos/artigos2';
-import Categorias from '../../Components/Categorias/categorias';
-import Recomendados from '../../Components/Recomendados/recomendados';
-import Cardareadocliente from '../../Components/Cardareadoclente/cardareadocliente';
-import Parceiros from '../../../site/Components/parceiros';
-import Footer from '../../../site/Components/contato';
+import Artigosrelacionados from './artigosrelacionados';
+import Artigos2 from '../../../Components/Artigos/artigos2';
+import Categorias from '../../../Components/Categorias/categorias';
+import Recomendados from '../../../Components/Recomendados/recomendados';
+import Cardareadocliente from '../../../Components/Cardareadoclente/cardareadocliente';
+import Parceiros from '../../../../site/Components/parceiros';
+import Footer from '../../../../site/Components/contato';
 import './novidadesnadeclaracaoirpf22.css';
 
 function Novidadesnadeclaracaoirpf22(){
@@ -72,6 +73,7 @@ function Novidadesnadeclaracaoirpf22(){
                 </div>              
                         
     </section>
+    <Artigosrelacionados/>
     <Artigos2/>    
     <Cardareadocliente/>
     <Categorias/>

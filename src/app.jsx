@@ -32,7 +32,8 @@ import Transicaodooperacionalparaoempreendedorismo from './blog/Artigo18/transic
 import Brasileirospreferemcomprasonline from './blog/Artigo19/brasileirospreferemcomprasonline.jsx';
 import Senadoaprovatributacaomenorparacaminhoneiros from './blog/Artigo20/senadoaprovatributacaomenorparacaminhoneiros.jsx';
 import Consultasaosistemavaloresareceberbcb from './blog/Artigo21/consultasaosistemavaloresareceberbcb.jsx';
-import Novidadesnadeclaracaoirpf22 from './blog/Artigos/Novidadesnadeclaracao/novidadesnadeclaracaoirpf22.jsx';
+import Novidadesnadeclaracaoirpf22 from './blog/Artigos/DIRPF22/Novidadesnadeclaracao/novidadesnadeclaracaoirpf22.jsx';
+import Documentosnecessarios from './blog/Artigos/DIRPF22/Documentosnecessarios/documentosnecessarios.jsx';
 import Calculadorasapp from './calculadoras/calculadorasapp.jsx';
 
 
@@ -80,6 +81,7 @@ function App(){
       <Route exact path='/blog-senado-aprova-tributacao-menor-para-caminhoneiros' component={Senadoaprovatributacaomenorparacaminhoneiros} />
       <Route exact path='/blog-consulta-ao-sistema-valores-a-receber-bcb' component={Consultasaosistemavaloresareceberbcb} />
       <Route exact path='/blog-novidades-na-declaracao-irpf-22' component={Novidadesnadeclaracaoirpf22} />
+      <Route exact path='/blog-documentosnecessarios-irpf-22' component={Documentosnecessarios} />
     </Switch>
 
     </BrowserRouter>;
