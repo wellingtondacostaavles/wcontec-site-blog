@@ -34,6 +34,7 @@ import Senadoaprovatributacaomenorparacaminhoneiros from './blog/Artigo20/senado
 import Consultasaosistemavaloresareceberbcb from './blog/Artigo21/consultasaosistemavaloresareceberbcb.jsx';
 import Novidadesnadeclaracaoirpf22 from './blog/Artigos/DIRPF22/Novidadesnadeclaracao/novidadesnadeclaracaoirpf22.jsx';
 import Documentosnecessarios from './blog/Artigos/DIRPF22/Documentosnecessarios/documentosnecessarios.jsx';
+import Deducoeslegaisdescontosimplificado from './blog/Artigos/DIRPF22/Deducoeslegais/deducoeslegais.jsx';
 import Calculadorasapp from './calculadoras/calculadorasapp.jsx';
 
 
@@ -82,6 +83,7 @@ function App(){
       <Route exact path='/blog-consulta-ao-sistema-valores-a-receber-bcb' component={Consultasaosistemavaloresareceberbcb} />
       <Route exact path='/blog-novidades-na-declaracao-irpf-22' component={Novidadesnadeclaracaoirpf22} />
       <Route exact path='/blog-documentosnecessarios-irpf-22' component={Documentosnecessarios} />
+      <Route exact path='/blog-deducoes-legais-desconto-simplificado-irpf-22' component={Deducoeslegaisdescontosimplificado} />
     </Switch>
 
     </BrowserRouter>;
