@@ -109,7 +109,7 @@ function Deducoeslegais(){
                         </div>                     
                     </div>
                     <div>
-                        <label>Deduções Legais</label>                
+                        <label>Deduções Legais*</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DeducoesLegais} onChange={(e) => setNro2(e.target.value)}/>
@@ -131,6 +131,7 @@ function Deducoeslegais(){
                 {SituacaoDesobrigatoriedade ? <p><span className="terceiro-p">Atenção: De acordo com seus rendimentos a DIRPF está dando Isenta do imposto.</span></p> :''}
                 <h3>{SituacaoIR}</h3>
                 {SituacaoIR ? <h1>{[ResultdoIR].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> : ''}
+                <p><span className="segundo-p">*Veja quais são as<a href="#" className="terceiro-a"> Deduçoes Legais</a></span></p>
                 {SituacaoIR ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração caso seja obrigado, ou contrate um profissional para te ajudar.</span></p> : ''}
                 </div>
             </div>          

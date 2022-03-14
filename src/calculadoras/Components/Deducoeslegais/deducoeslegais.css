@@ -26,6 +26,18 @@ p {
   font-size: 12px;
 }
 
+.terceiro-a:link {
+  color: #0d6efd;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.terceiro-a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /* BANNER */
 
 #deducoes-legais {
