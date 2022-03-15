@@ -34,7 +34,7 @@ import Senadoaprovatributacaomenorparacaminhoneiros from './blog/Artigo20/senado
 import Consultasaosistemavaloresareceberbcb from './blog/Artigo21/consultasaosistemavaloresareceberbcb.jsx';
 import Novidadesnadeclaracaoirpf22 from './blog/Artigos/DIRPF22/Novidadesnadeclaracao/novidadesnadeclaracaoirpf22.jsx';
 import Documentosnecessarios from './blog/Artigos/DIRPF22/Documentosnecessarios/documentosnecessarios.jsx';
-import Deducoeslegaisdescontosimplificado from './blog/Artigos/DIRPF22/Deducoeslegais/deducoeslegais.jsx';
+import Deducoeslegaisdescontosimplificado from './blog/Artigos/DIRPF22/Deducoeslegaisdescontosimplificado/deducoeslegais-descontosimplificado.jsx';
 import Calculadorasapp from './calculadoras/calculadorasapp.jsx';
 
 

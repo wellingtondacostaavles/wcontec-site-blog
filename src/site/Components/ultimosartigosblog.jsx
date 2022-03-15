@@ -9,10 +9,21 @@ function Ultimosartigosblog(){
                 <p>Fique por dentro do mundo contábil, gestão empresarial e finanças. </p>          
                 </div>
             </div> 
-        </div>  
+        </div>        
 
         <div className="container">                
             <div className="row">
+            <div className="col-lg-4">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/DIRPF22/Deducoeslegaisoudescontosimplificado/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Deduções legais ou desconto simplificado, qual escolher?</h4>
+                            <p className="card-text">Vai depender do total de despesas dedutíveis que você tem em relação à renda. Daí você pode avaliar se é mais vantajoso optar por deduções legais ou desconto simplificado.</p>
+                            <a href="/blog-deducoes-legais-desconto-simplificado-irpf-22#" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
+
             <div className="col-lg-4">
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/Documentosnecessarios/ultimosartigos.png" className="card-img-top" alt="..."/></center>
@@ -33,19 +44,8 @@ function Ultimosartigosblog(){
                             <a href="/blog-novidades-na-declaracao-irpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
-                </div>
-
-                <div className="col-lg-4">
-                        <div className="card card-artigos">
-                            <center><img src="/Images/Consultasaosistemavaloresareceberbcb/ultimosartigos.png" className="card-img-top" alt="..."/></center>
-                            <div className="card-body">
-                                <h4 className="card-title">Já estão disponíveis as consultas ao Sistema Valores a Receber</h4>
-                                <p className="card-text">Consulte e saiba se você tem valor a receber ou não, caso tenha, ficará por dentro da data e o período para consultar e solicitar o resgate do saldo existente.</p>
-                                <a href="/blog-consulta-ao-sistema-valores-a-receber-bcb" className="btn btn-primary btn-artigos">Ler Post</a>
-                            </div>
-                        </div>  
-                    </div>                              
-                </div>  
+                </div>                            
+            </div>  
         </div>               
     </section>;}
 

@@ -58,7 +58,7 @@ function Artigos2(){
                     <div className="card card-artigos">
                         <center><img src="/Images/Profissionaisautonomosestaoemcrescimento/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Profissionais autônomos estão em crescimento</h4>
+                            <h4 className="card-title">Profissionais autônomos estão em crescimento no Brasil</h4>
                             <p className="card-text">O trabalho por conta própria, conhecidos como profissionais autônomos, atingiu o número recorde de 24,8 milhões de pessoas no segundo trimestre de 2021.</p>
                             <a href="/blog-profissionais-autonomos-estao-em-crescimento" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
