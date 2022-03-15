@@ -74,7 +74,7 @@ function Artigos2(){
                         <center><img src="/Images/Dicasparaoanonovo/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Dicas para planejar o ano novo da sua empresa e estruturar seu negócio.</h4>
-                            <p className="card-text">É importante montar ações para cada pilar do seu negócio: finanças, marketing, vendas, pessoas e estratégias. Confira algumas dicas.</p>
+                            <p className="card-text">Com o final do ano se aproximando, é importante montar ações para cada pilar do seu negócio: finanças, marketing, vendas, pessoas e estratégias. Confira algumas dicas.</p>
                             <a href="/blog-dicas-para-planejar-o-ano-novo-da-sua-empresa" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  

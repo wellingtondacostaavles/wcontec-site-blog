@@ -47,7 +47,7 @@ function Artigos(){
                         <center><img src="/Images/Dicasmudardcarreira/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Especialistas dão dicas para quem pretende mudar de carreira</h4>
-                            <p className="card-text">Se a intenção é mudar de carreira, para que façamos isso com mais segurança, será necessário seguir algumas dicas dadas por especialistas.</p>
+                            <p className="card-text">Se a intenção é mudar de carreira, para que façamos isso com mais segurança, será necessário seguir algumas dicas e critérios apresentadas por especialistas.</p>
                             <a href="/blog-dicas-para-quem-deseja-mudar-de-carreira" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
@@ -73,7 +73,7 @@ function Artigos(){
                     <div className="card card-artigos">
                         <center><img src="/Images/Horaextra/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Hora extra: passo a passo de como calcular</h4>
+                            <h4 className="card-title">Veja um passo a passo de como calcular a hora extra</h4>
                             <p className="card-text">Os brasileiros estão entre os dez que mais fazem horas extras no mundo. O país está na sétima posição, com cerca de 18 horas trabalhadas a mais por mês....</p>
                             <a href="/blog-hora-extra-passo-a-passo-de-como-calcular" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
