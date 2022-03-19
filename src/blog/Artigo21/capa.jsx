@@ -7,11 +7,9 @@ function Capa(){
           
         <div className="container">
             <div className="row">
-
                 <div className="col-lg-6">
                     <img src="/Images/Consultasaosistemavaloresareceberbcb/capaprincipal.png" />
-                </div>
-                
+                </div>                
                 <div className="col-lg-6">
                     <h3>Já estão disponíveis as<span className="terceiro-h3">  consultas ao Sistema Valores a Receber</span></h3>                
                     <h6>Através desta consulta você saberá se tem valor a receber ou não, caso tenha, ficará por dentro da data e o período para consultar e solicitar o resgate do saldo existente.</h6>

@@ -35,6 +35,7 @@ import Consultasaosistemavaloresareceberbcb from './blog/Artigo21/consultasaosis
 import Novidadesnadeclaracaoirpf22 from './blog/Artigos/DIRPF22/Novidadesnadeclaracao/novidadesnadeclaracaoirpf22.jsx';
 import Documentosnecessarios from './blog/Artigos/DIRPF22/Documentosnecessarios/documentosnecessarios.jsx';
 import Deducoeslegaisdescontosimplificado from './blog/Artigos/DIRPF22/Deducoeslegaisdescontosimplificado/deducoeslegais-descontosimplificado.jsx';
+import Microempreendedor from './blog/Artigos/Microempreendedor/microempreendedor.jsx';
 import Calculadorasapp from './calculadoras/calculadorasapp.jsx';
 
 
@@ -84,6 +85,7 @@ function App(){
       <Route exact path='/blog-novidades-na-declaracao-irpf-22' component={Novidadesnadeclaracaoirpf22} />
       <Route exact path='/blog-documentosnecessarios-irpf-22' component={Documentosnecessarios} />
       <Route exact path='/blog-deducoes-legais-desconto-simplificado-irpf-22' component={Deducoeslegaisdescontosimplificado} />
+      <Route exact path='/blog-microempreendedor-e-trabalhador-informal-tem-direito-a-receber' component={Microempreendedor} />
     </Switch>
 
     </BrowserRouter>;

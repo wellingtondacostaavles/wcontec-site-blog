@@ -15,6 +15,16 @@ function Ultimosartigosblog(){
             <div className="row">
             <div className="col-lg-4">
                     <div className="card card-artigos">
+                        <center><img src="/Images/Microempreendedor/Mircroempreendedorestemareceber/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Microempreendedor e Pessoa física com direito a crédito</h4>
+                            <p className="card-text">Até R$ 1 mil para pessoa física e R$ 3 mil para Microempreendedor Individual. Juros de 1,95% para MEI e 1,99% PF ao mês, divididas em até 24 parcelas.</p>
+                            <a href="/blog-microempreendedor-e-trabalhador-informal-tem-direito-a-receber" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
+            <div className="col-lg-4">
+                    <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/Deducoeslegaisoudescontosimplificado/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Deduções legais ou desconto simplificado, qual escolher?</h4>
@@ -33,18 +43,8 @@ function Ultimosartigosblog(){
                             <a href="/blog-documentosnecessarios-irpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
-                </div>
-                
-                <div className="col-lg-4">
-                    <div className="card card-artigos">
-                        <center><img src="/Images/Novidadesnadeclaracaoirpf22/ultimosartigos.png" className="card-img-top" alt="..."/></center>
-                        <div className="card-body">
-                            <h4 className="card-title">IR - Confira as novidades na declração de 2022</h4>
-                            <p className="card-text">São várias mudanças, e a que chama mais atenção será o recebimento da restituição ou o pagamento do imposto por meio de Pix, basta a cheve ser o CPF.</p>
-                            <a href="/blog-novidades-na-declaracao-irpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
-                        </div>
-                    </div>  
-                </div>                            
+                </div>              
+                                           
             </div>  
         </div>               
     </section>;}

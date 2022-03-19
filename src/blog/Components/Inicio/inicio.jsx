@@ -8,7 +8,78 @@ function Inicio(){
                 <div className="row">          
                     <div id="carouselExampleInterval" className="carousel carousel-dark  slide" data-bs-ride="carousel">            
                             <div className="carousel-inner">
-                                 <div className="carousel-item active" data-bs-interval="3000">
+                                        <div className="carousel-item active" data-bs-interval="3000">
+                                            <div className="row">   
+                                            <div className="col-lg-6">
+                                        <img src="/Images/Microempreendedor/Mircroempreendedorestemareceber/capaprincipal.png" />
+                                    </div>
+                                        <div className="col-lg-6">
+                                            <h3><span className="terceiro-h3">Microempreendedores individuais</span> e<span className="terceiro-h3"> Trabalhadores Informais</span> terão direito a um Microcrédito Digital</h3>                
+                                            <h6>O crédito corresponderá de até R$ 1 mil para pessoa física e até R$ 3 mil para Microempreendedor Individual. Com juros de 1,95% ao mês, e a pessoa física ainda poderá dividir em até 24 parcelas. O crédito para o MEI terá juros de 1,99% ao mês, também com quitação em até 24 parcelas.</h6>
+                                            <a href="/blog-microempreendedor-e-trabalhador-informal-tem-direito-a-receber#microempreendedor" className="btn btn-success btn-lg btn-capa-microempreendedor">Continue lendo</a>
+                                            <a href="/" className="btn btn-outline-primary btn-lg btn-capa-microempreendedor">Área do Cliente</a>
+                                        </div>
+                                    </div>    
+                                </div> 
+
+                                <div className="carousel-item" data-bs-interval="3000">
+                                    <div className="row">   
+                                    <div className="col-lg-6">
+                                            <img src="/Images/DIRPF22/Deducoeslegaisoudescontosimplificado/capaprincipal.png" />
+                                        </div>
+                                        
+                                        <div className="col-lg-6">
+                                            <h3><span className="terceiro-h3">Deduções legais</span> ou<span className="terceiro-h3"> desconto simplificado</span> saiba fazer a escolha certa</h3>                
+                                            <h6>Tudo depende do total de despesas dedutíveis que você tem em relação à renda. Com base nessas informações você pode avaliar se é mais vantajoso optar por deduções legais ou desconto simplificado, ou seja, verificar qual pode reduzir o imposto devido ou garantir a restituição.</h6>
+                                            <a href="/blog-deducoes-legais-desconto-simplificado-irpf-22#deducoes-legais-desonto-simplificado" className="btn btn-success btn-lg btn-capa-deducoes-legais-desonto-simplificado">Continue lendo</a>
+                                            <a href="/" className="btn btn-outline-primary btn-lg btn-capa-deducoes-legais-desonto-simplificado">Área do Cliente</a>
+                                        </div> 
+                                    </div>    
+                                </div>  
+
+                                <div className="carousel-item" data-bs-interval="3000">
+                                    <div className="row">   
+                                        <div className="col-lg-6">
+                                            <img src="/Images/DIRPF22/Documentosnecessarios/capaprincipal.png" />
+                                        </div>                
+                                        <div className="col-lg-6">
+                                            <h3>Veja quais são os<span className="terceiro-h3"> documentos</span> necessários para a <span className="terceiro-h3">DIRPF 2022</span></h3>                
+                                            <h6>Quanto antes você juntar os documentos, mais tempo terá para correr atrás de alguma informação que faltou, e também deverá guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</h6>
+                                            <a href="/blog-documentosnecessarios-irpf-22#documentos-necessarios" className="btn btn-success btn-lg btn-capa-documentos-necessarios">Continue lendo</a>
+                                            <a href="/" className="btn btn-outline-primary btn-lg btn-capa-documentos-necessarios">Área do Cliente</a>
+                                        </div> 
+                                    </div>    
+                                </div>   
+
+                                <div className="carousel-item" data-bs-interval="3000">
+                                    <div className="row">   
+                                        <div className="col-lg-6">
+                                            <img src="/Images/Novidadesnadeclaracaoirpf22/capaprincipal.png" />
+                                        </div>                
+                                        <div className="col-lg-6">
+                                            <h3>Novidades na<span className="terceiro-h3"> declaração do Imposto de Renda</span> em 2022</h3>                
+                                            <h6>Atenção para o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2022 que começou na última segunda-feira, são várias mudanças, e a que chama mais atenção será o recebimento da restituição ou o pagamento do imposto por meio de Pix.</h6>
+                                            <a href="/blog-novidades-na-declaracao-irpf-22#novidades-na-declaracao-irpf-22" className="btn btn-success btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Continue lendo</a>
+                                            <a href="/" className="btn btn-outline-primary btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Área do Cliente</a>
+                                        </div> 
+                                    </div>    
+                                </div>   
+
+                                <div className="carousel-item" data-bs-interval="3000">
+                                    <div className="row">   
+                                        <div className="col-lg-6">
+                                            <img src="/Images/Consultasaosistemavaloresareceberbcb/capaprincipal.png" />
+                                        </div>                
+                                        <div className="col-lg-6">
+                                            <h3>Já estão disponíveis as<span className="terceiro-h3">  consultas ao Sistema Valores a Receber</span></h3>                
+                                            <h6>Através desta consulta você saberá se tem valor a receber ou não, caso tenha, ficará por dentro da data e o período para consultar e solicitar o resgate do saldo existente.</h6>
+                                            <a href="/blog-consulta-ao-sistema-valores-a-receber-bcb#consulta-ao-sistema-valores-a-receber-bcb" className="btn btn-success btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Continue lendo</a>
+                                            <a href="/" className="btn btn-outline-primary btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Área do Cliente</a>
+                                        </div>
+                                    </div>    
+                                </div>   
+
+                                <div className="carousel-item" data-bs-interval="3000">
                                     <div className="row">   
                                         <div className="col-lg-6">
                                             <img src="/Images/Mei/capaprincipal.png" />
@@ -22,7 +93,7 @@ function Inicio(){
                                             <a href="/" className="btn btn-outline-primary btn-lg btn-inicio-blog">Area do Cliente</a>
                                         </div> 
                                     </div>    
-                                </div>    
+                                </div> 
 
                                 <div className="carousel-item" data-bs-interval="3000">
                                         <div className="row">   

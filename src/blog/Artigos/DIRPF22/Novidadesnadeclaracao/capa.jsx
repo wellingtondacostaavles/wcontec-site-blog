@@ -7,11 +7,9 @@ function Capa(){
           
         <div className="container">
             <div className="row">
-
                 <div className="col-lg-6">
                     <img src="/Images/Novidadesnadeclaracaoirpf22/capaprincipal.png" />
-                </div>
-                
+                </div>                
                 <div className="col-lg-6">
                     <h3>Novidades na<span className="terceiro-h3"> declaração do Imposto de Renda</span> em 2022</h3>                
                     <h6>Atenção para o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2022 que começou na última segunda-feira, são várias mudanças, e a que chama mais atenção será o recebimento da restituição ou o pagamento do imposto por meio de Pix.</h6>

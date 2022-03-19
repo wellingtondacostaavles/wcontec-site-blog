@@ -7,11 +7,9 @@ function Capa(){
           
         <div className="container">
             <div className="row">
-
                 <div className="col-lg-6">
                     <img src="/Images/DIRPF22/Documentosnecessarios/capaprincipal.png" />
-                </div>
-                
+                </div>                
                 <div className="col-lg-6">
                     <h3>Veja quais são os<span className="terceiro-h3"> documentos</span> necessários para a <span className="terceiro-h3">DIRPF 2022</span></h3>                
                     <h6>Quanto antes você juntar os documentos, mais tempo terá para correr atrás de alguma informação que faltou, e também deverá guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</h6>
