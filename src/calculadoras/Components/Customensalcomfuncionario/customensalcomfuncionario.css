@@ -30,8 +30,17 @@ p {
 
 #custo-mensal-com-funcionario {
   background-color: #ececec;
-  padding: 9% 21% 9% 21%;
+  padding: 9% 3% 15% 3%;
   color: #323338;
+}
+
+.inputs-custo-mensal-com-funcionario {
+  margin: 0 15% 0 15%;
+  padding: 1% 0 1% 0;
+}
+
+.table-custo-mensal-com-funcionario {
+  padding: 1% 30% 3% 30%;
 }
 
 .titulo {

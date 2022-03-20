@@ -98,34 +98,46 @@ function Deducoeslegais(){
                 </div>
             </div>
 
-            <div className="row">
-                <div className="col-sm-4"></div>
-                <div className="col-sm-4">    
+            <div className="container">
+                <div className="row inputs-deducoes-legais">
+                    <div className="col-sm-3">
                     <div>
-                        <label>Rendimentos Tributáveis</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
-                        </div>                     
+                            <label>Ano-calendário</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
+                            </div>                     
+                        </div>
                     </div>
-                    <div>
-                        <label>Deduções Legais</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DeducoesLegais} onChange={(e) => setNro2(e.target.value)}/>
-                        </div>                     
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Rendimento Tributável</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
+                            </div>                     
+                        </div>
                     </div>
-                    <div>
-                        <label>IRRF</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro3(e.target.value)}/>
-                        </div>                     
-                      </div> 
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Deduções Legais</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DeducoesLegais} onChange={(e) => setNro2(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>IRRF</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro3(e.target.value)}/>
+                            </div>                     
+                        </div> 
+                    </div>   
                 </div>
-                <div className="col-sm-4"></div>    
-            </div>
-            <br></br>            
+            </div>            
             <div className="container">
                 <div className="row text-center">
                 {SituacaoDesobrigatoriedade ? <p><span className="terceiro-p">Atenção: De acordo com seus rendimentos a DIRPF está dando Isenta do imposto.</span></p> :''}

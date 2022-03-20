@@ -10,6 +10,7 @@ function Pispresumido(){
     const [ICMSsobreVendas, setNro4] = useState();
     const [IPIsobreVendas, setNro5] = useState();
     const [RetencoesAntecipacoes, setNro6] = useState();
+    const [Competencia, setNro7] = useState();
 
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
@@ -76,56 +77,75 @@ function Pispresumido(){
                     <p>Calcule o valor do PIS mensal a pagar com base no lucro presumido</p>
                 </div>
             </div>
-
-            <div className="row">
-                <div className="col-sm-4"></div>
-                <div className="col-sm-4">    
-                    <div>
-                        <label>Receita de serviços</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
-                        </div>                     
+            
+            <div className="container">    
+                <div className="row inputs-pis-lucro-presumido"> 
+                    <div className="col-sm-3">
+                        <div>
+                            <label>Competência</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={Competencia} onChange={(e) => setNro7(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>   
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Receita de serviços</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>    
+                    <div className="col-sm-3">
+                        <div>
+                            <label>Receita de vendas</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                            </div>                     
+                        </div>
                     </div>
-                    <div>
-                        <label>Receita de vendas</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
-                        </div>                     
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Devolução de venda</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucaoVenda} onChange={(e) => setNro3(e.target.value)}/>
+                            </div>                     
+                        </div>  
                     </div>
-                    <div>
-                        <label>Devolução de venda</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucaoVenda} onChange={(e) => setNro3(e.target.value)}/>
-                        </div>                     
-                      </div>  
-                    <div>
-                        <label>ICMS sobre vendas</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ICMSsobreVendas} onChange={(e) => setNro4(e.target.value)}/>
-                        </div>                     
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>ICMS sobre vendas</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ICMSsobreVendas} onChange={(e) => setNro4(e.target.value)}/>
+                            </div>                     
+                        </div>
                     </div>
-                    <div>
-                        <label>IPI sobre vendas</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IPIsobreVendas} onChange={(e) => setNro5(e.target.value)}/>
-                        </div>                     
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>IPI sobre vendas</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IPIsobreVendas} onChange={(e) => setNro5(e.target.value)}/>
+                            </div>                     
+                        </div>
+                   </div>
+                   <div className="col-sm-3">     
+                        <div>
+                            <label>PIS retido na fonte</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro6(e.target.value)}/>
+                            </div>                     
+                        </div>                    
                     </div>
-                    <div>
-                        <label>PIS retido na fonte</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro6(e.target.value)}/>
-                        </div>                     
-                    </div>                    
                 </div>
-                <div className="col-sm-4"></div>    
-            </div>
-            <br></br>            
+            </div>    
+                        
             <div className="container">
                 <div className="row text-center">
                 <h3>{SituacaoPIS}</h3>

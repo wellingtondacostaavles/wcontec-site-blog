@@ -194,106 +194,137 @@ function Cofinsreal(){
                     <p>Calcule o valor da COFINS mensal a pagar com base no lucro presumido</p>
                 </div>
             </div>
-
-            <div className="row">
-                <div className="col-sm-4"></div>
-                <div className="col-sm-4">    
+            
+            <div className="container">
+                <div className="row inputs-cofins-lucro-real">
+                    <div className="col-sm-3">
                     <div>
-                        <label>Receita de serviços</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>Receita de vendas</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>Receitas Financeiras</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasFinanceiras} onChange={(e) => setNro3(e.target.value)}/>
-                        </div>                     
-                    </div>  
-                    <div>
-                        <label>Receitas de Aluguéis</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasAlugueis} onChange={(e) => setNro4(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>Devoluções de compras</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucoesdeCompras} onChange={(e) => setNro5(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>Demais Receitas Operacionais</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DemaisReceitasOperacionais} onChange={(e) => setNro6(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>Receitas não tributáveis*</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasNaoTributaveis} onChange={(e) => setNro7(e.target.value)}/>
-                        </div>                     
-                    </div>                    
-                    
-                    <div>
-                        <label>Operações com direito a crédito*</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={OperacoescomDiretoaCredito} onChange={(e) => setNro8(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>ICMS sobre vendas</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ICMSsobrevendas} onChange={(e) => setNro9(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>IPI sobre vendas</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IPIsobrevendas} onChange={(e) => setNro10(e.target.value)}/>
+                            <label>Competência</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                            </div>                     
                         </div>
-                    </div>    
-                    <div>
-                        <label>COFINS paga na importação</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PISpagonaimportacao} onChange={(e) => setNro11(e.target.value)}/>
-                        </div>                     
                     </div>
-                    <div>
-                        <label>Saldo Credor de mês anterior</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={SaldoCredordemesanterior} onChange={(e) => setNro12(e.target.value)}/>
-                        </div>                     
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Receita de serviços</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                            </div>                     
+                        </div>
                     </div>
-                    <div>
-                        <label>COFINS retida na fonte</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetençõesFeitasAnteçipacoes} onChange={(e) => setNro13(e.target.value)}/>
-                        </div>                     
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Receita de vendas</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                            </div>                     
+                        </div>
                     </div>
-                </div>
-                <div className="col-sm-4"></div>    
-            </div> 
-            <br></br>
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Receitas Financeiras</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasFinanceiras} onChange={(e) => setNro3(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">      
+                        <div>
+                            <label>Receitas de Aluguéis</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasAlugueis} onChange={(e) => setNro4(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Devol. de compras</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucoesdeCompras} onChange={(e) => setNro5(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Demais Receitas</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DemaisReceitasOperacionais} onChange={(e) => setNro6(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">
+                        <div>
+                            <label>Rec. não tributáveis*</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasNaoTributaveis} onChange={(e) => setNro7(e.target.value)}/>
+                            </div>                     
+                        </div>  
+                    </div>
+                    <div className="col-sm-3">                     
+                        <div>
+                            <label>Operações de crédito*</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={OperacoescomDiretoaCredito} onChange={(e) => setNro8(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>ICMS sobre vendas</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ICMSsobrevendas} onChange={(e) => setNro9(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>IPI sobre vendas</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IPIsobrevendas} onChange={(e) => setNro10(e.target.value)}/>
+                            </div>
+                        </div> 
+                    </div>
+                    <div className="col-sm-3">       
+                        <div>
+                            <label>COFINS pg importação</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PISpagonaimportacao} onChange={(e) => setNro11(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Saldo Credor anterior</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={SaldoCredordemesanterior} onChange={(e) => setNro12(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>COFINS retida na fonte</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetençõesFeitasAnteçipacoes} onChange={(e) => setNro13(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                </div> 
+            </div>
             <div className="container">
             <div className="row text-center">
               <h3>{SituacaoCOFINS}</h3>

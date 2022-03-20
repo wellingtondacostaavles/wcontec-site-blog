@@ -8,6 +8,7 @@ function Metrocubico(){
     const [Largura, setNro1] = useState();
     const [Comprimento, setNro2] = useState();
     const [Espessura, setNro3] = useState();
+    const [Material, setNro4] = useState();
     
     const [resultado, setResultado] = useState(0);
     const [operacao, setOperacao] = useState('Multiplicar');
@@ -48,36 +49,48 @@ function Metrocubico(){
             </div>
         </div>         
   
-        <div className="row"> 
-              <div className="col-sm-4"></div>
-              <div className="col-sm-4">
+        <div className="container">
+          <div className="row inputs-metroscubicos"> 
+                <div className="col-sm-3">
                   <div>
-                    <label>Largura (em metros)</label>
-                    <div className="input-group mb-3">
-                        <span className="input-group-text">MT</span>
-                        <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Largura} onChange={(e) => setNro1(e.target.value)} />
-                  </div>
-                </div>           
-                <div>
-                  <label>Comprimento (em metros)</label>
-                  <div className="input-group mb-3">
-                      <span className="input-group-text">MT</span>  
-                      <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Comprimento} onChange={(e) => setNro2(e.target.value)} />
-                  </div>
-                </div>            
-                <div>          
-                  <label>Espessura (em centímetros)</label>
-                  <div className="input-group mb-3">
-                    <span className="input-group-text">CM</span>
-                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Espessura} onChange={(e) => setNro3(e.target.value)} />
+                      <label>Material</label>
+                      <div className="input-group mb-3">
+                          <span className="input-group-text">MT</span>
+                          <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Material} onChange={(e) => setNro4(e.target.value)} />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-sm-4"></div> 
-          </div>          
+                <div className="col-sm-3">
+                    <div>
+                      <label>Largura</label>
+                      <div className="input-group mb-3">
+                          <span className="input-group-text">MT</span>
+                          <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Largura} onChange={(e) => setNro1(e.target.value)} />
+                    </div>
+                  </div>  
+                </div>
+                <div className="col-sm-3">           
+                  <div>
+                    <label>Comprimento</label>
+                    <div className="input-group mb-3">
+                        <span className="input-group-text">MT</span>  
+                        <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Comprimento} onChange={(e) => setNro2(e.target.value)} />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-3">              
+                  <div>          
+                    <label>Espessura</label>
+                    <div className="input-group mb-3">
+                      <span className="input-group-text">CM</span>
+                      <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Espessura} onChange={(e) => setNro3(e.target.value)} />
+                    </div>
+                  </div>
+                </div>
+              </div>          
+          </div>    
               
-              
-            <div className="container">
+          <div className="container">
               <div className="row text-center">
                 <h3>{SituacaoResultadoMetroCubico}</h3>
                 {SituacaoResultadoMetroCubico ? <h1>{resultado} m³</h1> :''}

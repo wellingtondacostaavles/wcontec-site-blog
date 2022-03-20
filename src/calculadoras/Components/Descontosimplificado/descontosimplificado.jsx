@@ -97,27 +97,37 @@ function Descontosimplificado(){
                 </div>
             </div>
 
-            <div className="row">
-                <div className="col-sm-4"></div>
-                <div className="col-sm-4">    
-                    <div>
-                        <label>Rendimentos Tributáveis</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
-                        </div>                     
+            <div className="container">
+                <div className="row inputs-desconto-simplificado">
+                    <div className="col-sm-3">
+                        <div>
+                            <label>Ano-calendário</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
+                            </div>                     
+                        </div>
                     </div>
-                    <div>
-                        <label>IRRF</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro2(e.target.value)}/>
-                        </div>                     
-                      </div> 
+                    <div className="col-sm-3">    
+                        <div>
+                            <label>Rendimento Tributável</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">
+                        <div>
+                            <label>IRRF</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text">R$</span>
+                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro2(e.target.value)}/>
+                            </div>                     
+                        </div> 
+                    </div>                    
                 </div>
-                <div className="col-sm-4"></div>    
-            </div>
-            <br></br>            
+            </div>      
             <div className="container">
                 <div className="row text-center">
                 <h3>{SituacaoIR}</h3>

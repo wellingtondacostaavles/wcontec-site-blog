@@ -34,8 +34,17 @@ p {
 
 #distribuicao-lucro-socio-sn {
   background-color: #ececec;
-  padding: 9% 21% 9% 21%;
+  padding: 9% 3% 15% 3%;
   color: #323338;
+}
+
+.inputs-distribuicao-lucro-socio-sn {
+  margin: 0 15% 0 15%;
+  padding: 1% 0 3% 0;
+}
+
+.table-distribuicao-lucro-socio-sn {
+  padding: 3% 30% 0 30%;
 }
 
 .titulo {

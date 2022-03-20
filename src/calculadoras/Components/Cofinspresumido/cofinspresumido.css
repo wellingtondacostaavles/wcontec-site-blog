@@ -29,8 +29,16 @@ p {
 
 #cofins-lucro-presumido {
   background-color: #ececec;
-  padding: 9% 21% 9% 21%;
+  padding: 9% 3% 15% 3%;
   color: #323338;
+}
+.inputs-cofins-lucro-presumido {
+  margin: 0 15% 0 15%;
+  padding: 1% 0 1% 0;
+}
+
+.table {
+  padding: 3% 30% 0 30%;
 }
 
 .titulo {

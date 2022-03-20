@@ -144,57 +144,75 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
         
         <section id="custo-mensal-com-funcionario-nao-optante-do-simples-nacional">  
 
-        <div className="row text-center">
-                <div className="titulo">
-                    <h1>Custo mensal com funcionário</h1>
-                    <p>Funcionário de empresa não optante do Simples Nacional</p>
-                </div>
-            </div>
-
-            <div className="row">
-                <div className="col-sm-4"></div>
-                <div className="col-sm-4">    
-                    <div>
-                        <label>Salário Base</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={nro1} onChange={(e) => setNro1(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>Auxilio Refeição</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro2} onChange={(e) => setNro2(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>Auxilio Alimentação</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro3} onChange={(e) => setNro3(e.target.value)}/>
-                        </div>                     
-                      </div>  
-                    <div>
-                        <label>Plano de Saúde</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro4} onChange={(e) => setNro4(e.target.value)}/>
-                        </div>                     
-                    </div>
-                    <div>
-                        <label>Outros Benefícios</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro5} onChange={(e) => setNro5(e.target.value)}/>
-                        </div>                     
+        <div className="container">   
+            
+            <div className="row text-center">
+                    <div className="titulo">
+                        <h1>Custo mensal com funcionário</h1>
+                        <p>Funcionário de empresa não optante do Simples Nacional</p>
                     </div>
                 </div>
-                <div className="col-sm-4"></div>    
-            </div>         
-        
-        
-            {SituacaoResultadoCustoMensalFuncionario ? <div className="table-responsive">
+                
+                <div className="container">    
+                    <div className="row inputs-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">
+                        <div className="col-sm-3">    
+                            <div>
+                                <label>Nome do Funcionário</label>                
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">R$</span>
+                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={nro1} onChange={(e) => setNro1(e.target.value)}/>
+                                </div>                     
+                            </div>
+                        </div>
+                        <div className="col-sm-3">
+                            <div>
+                                <label>Salário Base</label>                
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">R$</span>
+                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={nro1} onChange={(e) => setNro1(e.target.value)}/>
+                                </div>                     
+                            </div>
+                        </div>
+                        <div className="col-sm-3">  
+                            <div>
+                                <label>Auxilio Refeição</label>                
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">R$</span>
+                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro2} onChange={(e) => setNro2(e.target.value)}/>
+                                </div>                     
+                            </div>
+                            </div>
+                        <div className="col-sm-3">
+                            <div>
+                                <label>Auxilio Alimentação</label>                
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">R$</span>
+                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro3} onChange={(e) => setNro3(e.target.value)}/>
+                                </div>                     
+                            </div>  
+                            </div>
+                        <div className="col-sm-3">
+                            <div>
+                                <label>Plano de Saúde</label>                
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">R$</span>
+                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro4} onChange={(e) => setNro4(e.target.value)}/>
+                                </div>                     
+                            </div>
+                            </div>
+                        <div className="col-sm-3">
+                            <div>
+                                <label>Outros Benefícios</label>                
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">R$</span>
+                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro5} onChange={(e) => setNro5(e.target.value)}/>
+                                </div>                     
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+        </div>
+            {SituacaoResultadoCustoMensalFuncionario ? <div className="table-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">
             <table className="table">
                 <tr>
                     <th className="width80"></th>
