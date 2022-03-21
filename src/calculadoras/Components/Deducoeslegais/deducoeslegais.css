@@ -37,6 +37,8 @@ p {
 .inputs-deducoes-legais {
   margin: 0 15% 0 15%;
   padding: 1% 0 1% 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .table-deducoes-legais {

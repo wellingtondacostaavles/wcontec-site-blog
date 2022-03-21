@@ -8,7 +8,6 @@ function Metrocubico(){
     const [Largura, setNro1] = useState();
     const [Comprimento, setNro2] = useState();
     const [Espessura, setNro3] = useState();
-    const [Material, setNro4] = useState();
     
     const [resultado, setResultado] = useState(0);
     const [operacao, setOperacao] = useState('Multiplicar');
@@ -54,10 +53,15 @@ function Metrocubico(){
                 <div className="col-sm-3">
                   <div>
                       <label>Material</label>
-                      <div className="input-group mb-3">
-                          <span className="input-group-text">MT</span>
-                          <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)" value={Material} onChange={(e) => setNro4(e.target.value)} />
-                    </div>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>---</option>
+                        <option value="Areia">Areia</option>
+                        <option value="Saibro">Saibro</option>
+                        <option value="Pó de Pedra">Pó de Pedra</option>
+                        <option value="Cascalhinho">Cascalhinho</option>
+                        <option value="Brita">Brita</option>
+                        <option value="Concreto">Concreto</option>
+                      </select>
                   </div>
                 </div>
                 <div className="col-sm-3">

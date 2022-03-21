@@ -80,15 +80,6 @@ function Distribuicaolucrosociosn(){
 
             <div className="container">
                 <div className="row inputs-distribuicao-lucro-socio-sn">
-                    <div className="col-sm-3">
-                    <div>
-                        <label>Ano-calendário</label>                
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">R$</span>
-                            <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
-                        </div>                     
-                        </div>
-                    </div>
                     <div className="col-sm-3">    
                         <div>
                             <label>Receita de serviços</label>                

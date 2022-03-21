@@ -84,15 +84,6 @@ function Cofinscorretora(){
 
             <div className="container">
                 <div className="row inputs-cofins-corretora">
-                    <div className="col-sm-3">
-                        <div>
-                            <label>Competência</label>                
-                            <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaFinanceiras} onChange={(e) => setNro1(e.target.value)}/>
-                            </div>                     
-                        </div>
-                    </div>
                     <div className="col-sm-3">    
                         <div>
                             <label>Receita Financeiras</label>                
