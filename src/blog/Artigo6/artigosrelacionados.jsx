@@ -53,8 +53,8 @@ function Artigosrelacionados(){
                     <div className="card card-artigos">
                         <center><img src="/Images/Diferecasform/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Diferenças entre SLU, EI, MEI e EIRELI</h4>
-                            <p className="card-text">Apesar de parecer iguais, existem algumas diferenças que devemos ter cuidado na hora de escolher o melhor formato de empresa.</p>
+                            <h4 className="card-title">Principais diferenças entre SLU, EI, MEI e EIRELI</h4>
+                            <p className="card-text">Apesar de parecer iguais, existem diferenças que devemos ter cuidado na hora de escolher o melhor formato de empresa.</p>
                             <a href="/blog-diferencas-mei-eireli-slu-ei" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  

@@ -44,7 +44,7 @@ function Artigosrelacionados(){
                         <center><img src="/Images/Eireli/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Empresa Individual de Responsabilidade Limitada (EIRELI)</h4>
-                            <p className="card-text">Aqui o empresário tem a liberdade de escolher o modelo de tributação que melhor adapte a atividade e porte da empresa.</p>
+                            <p className="card-text">O empresário pode escolher a forma de tributação que melhor adapte a atividade da empresa.</p>
                             <a href="/blog-eireli" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
@@ -52,10 +52,10 @@ function Artigosrelacionados(){
                                        
                 <div className="col-lg-6">
                         <div className="card card-artigos">
-                            <center><img src="/Images/slu/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                            <center><img src="/Images/Slu/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
-                                <h4 className="card-title">Sociedade Limitada Unipessoal (SLU)</h4>
-                                <p className="card-text">Onde não é preciso ter sócios, não há exigência de valor mínimo para o Capital Social, e o patrimônio do empreendedor não se mistura com o da empresa.</p>
+                                <h4 className="card-title">Entenda o que é Sociedade Limitada Unipessoal (SLU)</h4>
+                                <p className="card-text">Onde não é preciso ter sócios e o patrimônio do empreendedor não se mistura com o da empresa.</p>
                                 <a href="/blog-sociedade-limitada-unipessoal" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  

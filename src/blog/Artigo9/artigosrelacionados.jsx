@@ -44,7 +44,7 @@ function Artigosrelacionados(){
                             <center><img src="/Images/Slu/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
                                 <h4 className="card-title">Sociedade Limitada Unipessoal (SLU)</h4>
-                                <p className="card-text">Onde não é preciso ter sócios, não há exigência de valor mínimo para o Capital Social, e o patrimônio do empreendedor não se mistura com o da empresa.</p>
+                                <p className="card-text">Não precisa de sócios, não há exigência de valor mínimo para o Capital Social, e o patrimônio do empresário não se mistura com o da empresa.</p>
                                 <a href="/blog-sociedade-limitada-unipessoal" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  
