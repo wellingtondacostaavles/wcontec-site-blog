@@ -36,7 +36,23 @@ function Descontosimplificado(){
                     return faixa5
                 }
             } 
+
+    const Descontosimplificado = RendimentosTributaveis   
+
+    const desconto = (Descontosimplificado * 0.20)
+    const limitededesconto = 16754.34
+    
+    const ValordoDescontoSimplificado = ValorDescontoSimplificado(Descontosimplificado)
+    
+        function ValorDescontoSimplificado(Descontosimplificado){            
+                if (Descontosimplificado <= 83771.69) {
+                    return desconto
+                } else { 
+                    return limitededesconto
+                }
+            }
             
+
     const PagarouRestituir = ResultdoIR
 
     const situacao1 = 'O IR a restituir com base em Desconto Simplificado será de:'
@@ -74,7 +90,7 @@ function Descontosimplificado(){
                 
     const calcular1 = () =>{  
         if (operacaoBaseCalculo=="Subtrair")
-        return ((parseFloat(RendimentosTributaveis)) - (parseFloat(RendimentosTributaveis) * 0.20));
+        return ((parseFloat(RendimentosTributaveis)) - (ValordoDescontoSimplificado));
     }
 
     const calcular2 = () =>{  
