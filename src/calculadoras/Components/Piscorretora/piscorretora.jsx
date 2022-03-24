@@ -1,4 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 
 import './piscorretora.css';
 
@@ -7,7 +10,8 @@ function Piscorretora(){
     const [ReceitaFinanceiras, setNro1] = useState();
     const [PremiosdeSeguros, setNro2] = useState();
     const [RetencoesAntecipacoes, setNro3] = useState();
-    const [competencia, setNro4] = useState();
+    
+    const [SelectedDate, setSelectedDate] = useState();
     
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
@@ -24,6 +28,29 @@ function Piscorretora(){
     const [TributoFinal, setResultado5] = useState(0);
     const [operacaoTributoFinal, setOperacao5] = useState('Subtrair');
 
+    const dateFormatAux = (date) => {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear(); 
+
+            if (month.length < 2)
+                month = '0' + month;
+            if (day.length < 2)
+                day = '0' + day;    
+
+        return [year, month, day].join('-');    
+    }
+    
+    const dateFormat = (date) => {
+        console.log(new Date(date));
+        let formatYearMonthDay = dateFormatAux(date);
+        console.log(formatYearMonthDay);
+    }
+
+    dateFormat(SelectedDate);
+    
+    
     const ResultadoPIS = TributoFinal
     
     const situacao1 = 'O PIS a recolher mensal será de:'
@@ -83,6 +110,18 @@ function Piscorretora(){
             </div>
             <div className="container">
                 <div className="row inputs-pis-corretora">
+                <div className="col-sm-3">    
+                        <div>
+                            <label>Data</label>                
+                            <div className="input-group mb-3">
+                            <DatePicker className="form-control" 
+                                selected={SelectedDate} 
+                                onChange={date => setSelectedDate(date)}
+                                dateFormat="dd/MM/yyyy" 
+                            />    
+                            </div>                     
+                        </div>
+                    </div>
                     <div className="col-sm-3">    
                         <div>
                             <label>Receita Financeiras</label>                
