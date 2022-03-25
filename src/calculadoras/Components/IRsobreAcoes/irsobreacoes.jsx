@@ -36,8 +36,6 @@ function Irsobreacoes(){
 
     dateFormat(SelectedDate);
 
-    let timeInOneDay = 1000 * 60 * 60 * 24 
-    
     const [PrecoTotal, setPrecoTotal] = useState(0);
     const [operacaoPrecoTotal, setOperacao1] = useState('Multiplicar');
 
