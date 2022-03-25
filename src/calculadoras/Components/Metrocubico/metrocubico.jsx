@@ -53,6 +53,7 @@ function Metrocubico(){
                 <div className="col-sm-3">
                   <div>
                       <label>Material</label>
+                      <div className="input-group mb-3">
                       <select class="form-select" aria-label="Default select example">
                         <option selected>---</option>
                         <option value="Areia">Areia</option>
@@ -62,6 +63,7 @@ function Metrocubico(){
                         <option value="Brita">Brita</option>
                         <option value="Concreto">Concreto</option>
                       </select>
+                      </div>
                   </div>
                 </div>
                 <div className="col-sm-3">

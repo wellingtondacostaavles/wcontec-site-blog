@@ -21,7 +21,7 @@ function DeclaracaoIRPF(){
                          <center><a href="#distribuicao-lucro-socio-sn"><img src="/Images/tegs-calculadoras/Tag-lucro-do-Socio-Empresa-Simples-Nacional.png"/></a></center>   
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                    
+                        <center><a href="#ir-sobre-acoes"><img src="/Images/tegs-calculadoras/Tag-IR-sobre-acoes.png"/></a></center>                                    
                     </div>
                 </div>             
             </div>

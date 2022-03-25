@@ -114,7 +114,7 @@ function Piscorretora(){
                         <div>
                             <label>Data</label>                
                             <div className="input-group mb-3">
-                            <DatePicker className="form-control" 
+                            <DatePicker className="form-control text-center" 
                                 selected={SelectedDate} 
                                 onChange={date => setSelectedDate(date)}
                                 dateFormat="dd/MM/yyyy" 

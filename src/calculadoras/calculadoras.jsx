@@ -7,6 +7,7 @@ import Customensalcomfuncionarionaooptantedosimplesnacional from './Components/C
 import DeclaracaoIRPF from './Components/Escolhaumacalculadora/declaracaoIRPF';
 import Distribuicaolucromei from './Components/Distribuicaolucromei/distribuicaolucromei';
 import Distribuicaolucrosociosn from './Components/Distribuicaolucrosociosn/distribuicaolucrosociosn';
+import Irsobreacoes from './Components/IRsobreAcoes/irsobreacoes';
 import Descontosimplificado from './Components/Descontosimplificado/descontosimplificado';
 import Deducoeslegais from './Components/Deducoeslegais/deducoeslegais';
 import Tributos from './Components/Escolhaumacalculadora/tributos';
@@ -38,6 +39,7 @@ function Calculadoras(){
       <DeclaracaoIRPF/>
       <Distribuicaolucromei/>
       <Distribuicaolucrosociosn/>
+      <Irsobreacoes/>
       <Descontosimplificado/>
       <Deducoeslegais/>
       <Tributos/>
