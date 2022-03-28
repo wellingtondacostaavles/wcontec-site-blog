@@ -138,7 +138,7 @@ function Irsobreacoes(){
                 <h3></h3>
                 <h1>{[PrecoTotal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1>
                 <p></p>
-                <p><span className="terceiro-p">Atenção: Cacluladora em desensolvimento</span></p>
+                <p><span className="terceiro-p">Atenção: Cacluladora em desenvolvimento</span></p>
                 </div>
             </div>          
         </section>       
