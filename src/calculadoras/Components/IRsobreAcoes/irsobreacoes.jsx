@@ -12,6 +12,8 @@ function Irsobreacoes(){
     const [CustoTotal, setNro3] = useState();
     
     const [SelectedDate, setSelectedDate] = useState();
+    const [CodigoAcao, setCodigoAcao] = useState();
+    const [ComprarouVender, setComprarouVender] = useState();
     
     
     const dateFormatAux = (date) => {
@@ -29,22 +31,64 @@ function Irsobreacoes(){
     }
     
     const dateFormat = (date) => {
-        console.log(new Date(date));
+        new Date(date);
         let formatYearMonthDay = dateFormatAux(date);
         console.log(formatYearMonthDay);
     }
 
     dateFormat(SelectedDate);
 
+    //Rascunho
+
+    const PrecoTotal2 = ComprarouVender
+
+    const PrecoTotalCompra = ((parseFloat(Quantidade) * (parseFloat(Preco)) + parseFloat(CustoTotal)));
+    const PrecototalVenda = ((parseFloat(Quantidade) * (parseFloat(Preco)) + parseFloat(CustoTotal)));    
+    
+    const PrecoTotalCompraouVenda = PrecoTotaldeCompraouVenda(PrecoTotal2)
+
+        function PrecoTotaldeCompraouVenda(PrecoTotal2){
+            if (PrecoTotal2 == 'Compra') {
+                return PrecoTotalCompra
+            } else {    
+            return PrecototalVenda
+            }
+        }             
+
+    const [PrecoMedio, setPrecoMedio] = useState(0);
+    const [operacaoPrecoMedio, setOperacaoPrecoMedio] = useState('Dividir');
+
+    const [GanhoPerda, setGanhoPerda] = useState(0);
+    const [operacaoGanhoPerda, setOperacaoGanhoPerda] = useState('Subtrair');
+    
+    const calcularPrecoMedio = () =>{  
+        if (operacaoPrecoMedio=="Dividir")
+        return ((parseFloat(PrecoTotalCompraouVenda) / (parseFloat(Quantidade))));
+    }
+
+    const calcularGanhoPerda = () =>{  
+        if (operacaoGanhoPerda=="Subtrair")
+        return (parseFloat(PrecoTotalCompraouVenda) - ((parseFloat(Quantidade)) * parseFloat(PrecoMedio)));
+    }
+
+    useEffect (() =>{setPrecoMedio(calcularPrecoMedio())},[PrecoTotalCompraouVenda, Quantidade, operacaoPrecoMedio]);
+    useEffect (() =>{setGanhoPerda(calcularGanhoPerda())},[PrecoTotalCompraouVenda, Quantidade, PrecoMedio, operacaoGanhoPerda]);
+
+    console.log(PrecoTotalCompraouVenda, PrecoMedio, GanhoPerda);
+        
+    //fim de racunho
+   
+
     const [PrecoTotal, setPrecoTotal] = useState(0);
     const [operacaoPrecoTotal, setOperacao1] = useState('Multiplicar');
 
-    const calcular = () =>{  
+    
+    const calcularPrecoTotal = () =>{  
         if (operacaoPrecoTotal=="Multiplicar")
         return ((parseFloat(Quantidade) * (parseFloat(Preco)) + parseFloat(CustoTotal)));
-    }
-
-    useEffect (() =>{setPrecoTotal(calcular())},[Quantidade, Preco, CustoTotal, operacaoPrecoTotal]);
+    }  
+      
+    useEffect (() =>{setPrecoTotal(calcularPrecoTotal())},[Quantidade, Preco, CustoTotal, operacaoPrecoTotal]);
     
     
         return <div>         
@@ -72,13 +116,13 @@ function Irsobreacoes(){
                   <div>
                       <label>Código da Ação</label>
                         <div className="input-group mb-3">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>---</option>
-                            <option value="Areia">PETR4</option>
-                            <option value="Saibro">B3SA3</option>
-                            <option value="Pó de Pedra">BIDI11</option>
-                            <option value="Cascalhinho">BPAN4</option>
-                            <option value="Brita">BBSE3</option>
+                            <select name="CodigoAcao" value={CodigoAcao} onChange={value => setCodigoAcao(value.target.value)} class="form-select" aria-label="Default select example">
+                            <option value="">--</option>
+                            <option value="PETR4">PETR4</option>
+                            <option value="B3SA3">B3SA3</option>
+                            <option value="BIDI11">BIDI11</option>
+                            <option value="BPAN4">BPAN4</option>
+                            <option value="BBSE3">BBSE3</option>
                         </select>
                       </div>
                   </div>
@@ -87,8 +131,8 @@ function Irsobreacoes(){
                     <div>
                         <label>C/V</label>
                         <div className="input-group mb-3">
-                            <select class="form-select" aria-label="Default select example">
-                            <option selected>---</option>
+                            <select name="ComprarouVender" value={ComprarouVender} onChange={value => setComprarouVender(value.target.value)} class="form-select" aria-label="Default select example">
+                            <option value="">--</option>
                             <option value="Compra">Compra</option>
                             <option value="Venda">Venda</option>
                             </select>
@@ -99,7 +143,7 @@ function Irsobreacoes(){
                     <div>
                         <label>Quantidade</label>                
                         <div className="input-group mb-3">
-                            <span className="input-group-text">Qt</span>
+                            <span className="input-group-text">QT</span>
                             <input className="form-control" type="number" value={Quantidade} onChange={(e) => setNro1(e.target.value)}/>
                         </div>                     
                     </div>

@@ -39,7 +39,6 @@ function Calculadoras(){
       <DeclaracaoIRPF/>
       <Distribuicaolucromei/>
       <Distribuicaolucrosociosn/>
-      <Irsobreacoes/>
       <Descontosimplificado/>
       <Deducoeslegais/>
       <Tributos/>

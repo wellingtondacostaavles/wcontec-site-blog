@@ -97,8 +97,6 @@ function Irtrimestral(){
         if (operacaoIRPJaRecolher=="Subtrair")
         return (parseFloat(ImpostoDevidoMisAdicional) - parseFloat(IRRFAntecipacoes));
     }
-
-
     
     useEffect (() =>{setResultado1(calcular())},[ReceitaServicos, ReceitaVendas, ReceitaFinanceira, operacaoTotalReceitas]);
     useEffect (() =>{setResultado2(calcular2())},[ReceitaServicos, operacaoPresucao32]);

@@ -9,6 +9,7 @@ function Metrocubico(){
     const [Comprimento, setNro2] = useState();
     const [Espessura, setNro3] = useState();
     
+    const [Material, setMaterial] = useState(0);
     const [resultado, setResultado] = useState(0);
     const [operacao, setOperacao] = useState('Multiplicar');
 
@@ -54,8 +55,8 @@ function Metrocubico(){
                   <div>
                       <label>Material</label>
                       <div className="input-group mb-3">
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected>---</option>
+                        <select name="Material" value={Material} onChange={texto => setMaterial(texto.target.value)} class="form-select" aria-label="Default select example">
+                        <option value="">--</option>
                         <option value="Areia">Areia</option>
                         <option value="Saibro">Saibro</option>
                         <option value="Pó de Pedra">Pó de Pedra</option>

@@ -24,7 +24,7 @@ function Parceiros(){
             <div class="col"></div>
             <div class="col"></div>
             <div class="col">
-                <a href="https://api.whatsapp.com/send?phone=5581996584830" target="_blank"><img src="/Images/Parceiros/Certificado.digital.png"/></a>
+                <a href="/parceiro-certificacao-digital" target="_blank"><img src="/Images/Parceiros/Certificado.digital.png"/></a>
             </div>
             <div class="col">
                 <a href="https://api.whatsapp.com/send?phone=5581998753986" target="_blank"><img src="/Images/Parceiros/OGS.png"/></a>
