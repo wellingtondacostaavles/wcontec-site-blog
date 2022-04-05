@@ -21,7 +21,7 @@ function Navbar(){
               <a className="nav-link" aria-current="page" href="#">Início</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#ultimosartigosblog">Blog</a>
+              <a className="nav-link" aria-current="page" href="/blog">Blog</a>
             </li>             
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>

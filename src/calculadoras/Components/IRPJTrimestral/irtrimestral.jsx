@@ -120,47 +120,47 @@ function Irtrimestral(){
             <div className="container">
                 <div className="row inputs-ir-trimestral">
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Receita de serviços</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaServicos-ir-trimestral">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaServicos-ir-trimestral" id="ReceitaServicos-ir-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Receita de vendas</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaVendas-ir-trimestral">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaVendas-ir-trimestral" id="ReceitaVendas-ir-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Devolução de venda</label>                
+                        <div className="mb-3">
+                            <label for="DevolucaoVenda-ir-trimestral">Devolução de venda</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucaoVenda} onChange={(e) => setNro3(e.target.value)}/>
+                                <input className="form-control" type="number" name="DevolucaoVenda-ir-trimestral" id="DevolucaoVenda-ir-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucaoVenda} onChange={(e) => setNro3(e.target.value)}/>
                             </div>                     
                         </div> 
                     </div>
                     <div className="col-sm-3">     
-                        <div>
-                            <label>Receita Financeira</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaFinanceira-ir-trimestral">Receita Financeira</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaFinanceira} onChange={(e) => setNro4(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaFinanceira-ir-trimestral" id="ReceitaFinanceira-ir-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaFinanceira} onChange={(e) => setNro4(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>IRRF</label>                
+                        <div className="mb-3">
+                            <label for="IRRFAntecipacoes-ir-trimestral">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRFAntecipacoes} onChange={(e) => setNro5(e.target.value)}/>
+                                <input className="form-control" type="number" name="IRRFAntecipacoes-ir-trimestral" id="IRRFAntecipacoes-ir-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRFAntecipacoes} onChange={(e) => setNro5(e.target.value)}/>
                             </div>                     
                         </div>                    
                     </div>

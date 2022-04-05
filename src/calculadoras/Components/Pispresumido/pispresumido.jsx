@@ -81,56 +81,56 @@ function Pispresumido(){
             <div className="container">    
                 <div className="row inputs-pis-lucro-presumido"> 
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Receita de serviços</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaServicos-pis-lucro-presumido">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaServicos-pis-lucro-presumido" id="ReceitaServicos-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>    
                     <div className="col-sm-3">
-                        <div>
-                            <label>Receita de vendas</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaVendas-pis-lucro-presumido">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaVendas-pis-lucro-presumido" id="ReceitaVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Devolução de venda</label>                
+                        <div className="mb-3">
+                            <label for="DevolucaoVenda-pis-lucro-presumido">Devolução de venda</label>
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucaoVenda} onChange={(e) => setNro3(e.target.value)}/>
+                                <input className="form-control" type="number" name="DevolucaoVenda-pis-lucro-presumido" id="DevolucaoVenda-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucaoVenda} onChange={(e) => setNro3(e.target.value)}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>ICMS sobre vendas</label>                
+                        <div className="mb-3">
+                            <label for="ICMSsobreVendas-pis-lucro-presumido">ICMS sobre vendas</label>
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ICMSsobreVendas} onChange={(e) => setNro4(e.target.value)}/>
+                                <input className="form-control" type="number" name="ICMSsobreVendas-pis-lucro-presumido" id="ICMSsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ICMSsobreVendas} onChange={(e) => setNro4(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
+                        <div className="mb-3">
                             <label>IPI sobre vendas</label>                
-                            <div className="input-group mb-3">
+                            <div for="IPIsobreVendas-pis-lucro-presumido" className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IPIsobreVendas} onChange={(e) => setNro5(e.target.value)}/>
+                                <input className="form-control" type="number" name="IPIsobreVendas-pis-lucro-presumido" id="IPIsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IPIsobreVendas} onChange={(e) => setNro5(e.target.value)}/>
                             </div>                     
                         </div>
                    </div>
                    <div className="col-sm-3">     
-                        <div>
-                            <label>PIS retido na fonte</label>                
+                        <div className="mb-3">
+                            <label for="RetencoesAntecipacoes-pis-lucro-presumido">PIS retido na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro6(e.target.value)}/>
+                                <input className="form-control" type="number" name="RetencoesAntecipacoes-pis-lucro-presumido" id="RetencoesAntecipacoes-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro6(e.target.value)}/>
                             </div>                     
                         </div>                    
                     </div>

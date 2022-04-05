@@ -128,56 +128,56 @@ function Distribuicaolucromei(){
             <div className="container">
                 <div className="row inputs-distribuicao-lucro-mei">
                     <div className="col-sm-3">
-                    <div>
-                        <label>Receita de serviços</label>                
+                    <div className="mb-3">
+                        <label for="ReceitaServicos-distribuicao-lucro-mei">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaServicos" id="ReceitaServicos" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">   
-                        <div>
-                            <label>Receita de vendas</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaVendas-distribuicao-lucro-mei">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaVendas-distribuicao-lucro-mei" id="ReceitaVendas-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
-                        <div>
-                            <label>R. Transp de Cargas</label>                
+                        <div className="mb-3">
+                            <label for="TransportedeCargas-distribuicao-lucro-mei">R. Transp de Cargas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={TransportedeCargas} onChange={(e) => setNro3(e.target.value)}/>
+                                <input className="form-control" type="number" name="TransportedeCargas-distribuicao-lucro-mei" id="TransportedeCargas-distribuicao-lucro-mei"  aria-label="Amount (to the nearest dollar)"  step="0.01" value={TransportedeCargas} onChange={(e) => setNro3(e.target.value)}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
-                        <div>
-                            <label>Transp. de Passageiros</label>                
+                        <div className="mb-3">
+                            <label for="TransportedePassageiros-distribuicao-lucro-mei">Transp. de Passageiros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={TransportedePassageiros} onChange={(e) => setNro4(e.target.value)}/>
+                                <input className="form-control" type="number" name="TransportedePassageiros-distribuicao-lucro-mei" id="TransportedePassageiros-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  step="0.01" value={TransportedePassageiros} onChange={(e) => setNro4(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
-                        <div>
-                            <label>Impostos e taxas pagas</label>                
+                        <div className="mb-3">
+                            <label for="Impostosetaxas-distribuicao-lucro-mei">Impostos e taxas pagas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={Impostosetaxas} onChange={(e) => setNro5(e.target.value)}/>
+                                <input className="form-control" type="number" name="Impostosetaxas-distribuicao-lucro-mei" id="Impostosetaxas-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  step="0.01" value={Impostosetaxas} onChange={(e) => setNro5(e.target.value)}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">                
-                        <div>
-                            <label>Despesas do MEI*</label>                
+                        <div className="mb-3">
+                            <label for="DespesasdoMEI-distribuicao-lucro-mei">Despesas do MEI*</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DespesasdoMEI} onChange={(e) => setNro6(e.target.value)}/>
+                                <input className="form-control" type="number" name="DespesasdoMEI-distribuicao-lucro-mei" id="DespesasdoMEI-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DespesasdoMEI} onChange={(e) => setNro6(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>

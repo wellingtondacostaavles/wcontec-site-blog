@@ -116,20 +116,20 @@ function Descontosimplificado(){
             <div className="container">
                 <div className="row inputs-desconto-simplificado">
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Rendimento Tributável</label>                
+                        <div className="mb-3">
+                            <label for="RendimentosTributaveis-desconto-simplificado">Rendimento Tributável</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
+                                <input className="form-control" type="number" name="RendimentosTributaveis-desconto-simplificado" id="RendimentosTributaveis-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
-                        <div>
-                            <label>IRRF</label>                
+                        <div className="mb-3">
+                            <label for="IRRF-desconto-simplificado">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro2(e.target.value)}/>
+                                <input className="form-control" type="number" name="IRRF-desconto-simplificado" id="IRRF-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro2(e.target.value)}/>
                             </div>                     
                         </div> 
                     </div>                    

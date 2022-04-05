@@ -36,9 +36,7 @@ p {
 .inputs-pis-corretora {
   margin: 0 15% 0 15%;
   padding: 1% 0 3% 0;
-  justify-content: center;
-  align-items: center;
-}
+  }
 
 .table-pis-corretora {
   padding: 3% 30% 0 30%;

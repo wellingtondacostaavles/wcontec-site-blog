@@ -85,29 +85,29 @@ function Cofinscorretora(){
             <div className="container">
                 <div className="row inputs-cofins-corretora">
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Receita Financeiras</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaFinanceiras-cofins-corretora">Receita Financeiras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaFinanceiras} onChange={(e) => setNro1(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaFinanceiras-cofins-corretora" id="ReceitaFinanceiras-cofins-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaFinanceiras} onChange={(e) => setNro1(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Prêmios de Seguros</label>                
+                        <div className="mb-3">
+                            <label for="PremiosdeSeguros-cofins-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PremiosdeSeguros} onChange={(e) => setNro2(e.target.value)}/>
+                                <input className="form-control" type="number" name="PremiosdeSeguros-cofins-corretora" id="PremiosdeSeguros-cofins-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PremiosdeSeguros} onChange={(e) => setNro2(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>COFINS retida na fonte</label>                
+                        <div className="mb-3"> 
+                            <label for="RetencoesAntecipacoes-cofins-corretora">COFINS retida na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro3(e.target.value)}/>
+                                <input className="form-control" type="number" name="RetencoesAntecipacoes-cofins-corretora" id="RetencoesAntecipacoes-cofins-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro3(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>

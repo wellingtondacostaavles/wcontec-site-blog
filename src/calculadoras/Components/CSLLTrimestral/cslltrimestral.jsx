@@ -94,47 +94,47 @@ function Cslltrimestral(){
             <div className="container">
                 <div className="row inputs-csll-trimestral">
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Receita de serviços</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaServicos-csll-trimestral">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaServicos-csll-trimestral" id="ReceitaServicos-csll-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Receita de vendas</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaVendas-csll-trimestral">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaVendas-csll-trimestral" id="ReceitaVendas-csll-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Devolução de venda</label>                
+                        <div className="mb-3">
+                            <label for="DevolucaoVenda-csll-trimestral">Devolução de venda</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucaoVenda} onChange={(e) => setNro3(e.target.value)}/>
+                                <input className="form-control" type="number" name="DevolucaoVenda-csll-trimestral" id="DevolucaoVenda-csll-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucaoVenda} onChange={(e) => setNro3(e.target.value)}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Receita Financeira</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaFinanceira-csll-trimestral">Receita Financeira</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaFinanceira} onChange={(e) => setNro4(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaFinanceira-csll-trimestral" id="ReceitaFinanceira-csll-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaFinanceira} onChange={(e) => setNro4(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>CSLL retida na fonte</label>                
+                        <div className="mb-3">
+                            <label for="CSLLRFAntecipacoes-csll-trimestral">CSLL retida na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={CSLLRFAntecipacoes} onChange={(e) => setNro5(e.target.value)}/>
+                                <input className="form-control" type="number" name="CSLLRFAntecipacoes-csll-trimestral" id="CSLLRFAntecipacoes-csll-trimestral" aria-label="Amount (to the nearest dollar)"  step="0.01" value={CSLLRFAntecipacoes} onChange={(e) => setNro5(e.target.value)}/>
                             </div>                     
                         </div>                    
                     </div>

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import DatePicker from "react-datepicker";
+import DatePicker from 'react-datepicker';
+
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -8,7 +9,7 @@ import './piscorretora.css';
 function Piscorretora(){    
 
     const [ReceitaFinanceiras, setNro1] = useState();
-    const [PremiosdeSeguros, setNro2] = useState();
+    const [PremiosdeSeguros, setNro2] = useState(null);
     const [RetencoesAntecipacoes, setNro3] = useState();
     
     const [SelectedDate, setSelectedDate] = useState();
@@ -26,8 +27,9 @@ function Piscorretora(){
     const [operacaoTotaldosTributosSobreReceitas, setOperacao4] = useState('Somar');
 
     const [TributoFinal, setResultado5] = useState(0);
-    const [operacaoTributoFinal, setOperacao5] = useState('Subtrair');
+    const [operacaoTributoFinal, setOperacao5] = useState('Subtrair');     
 
+    
     const dateFormatAux = (date) => {
         var d = new Date(date),
             month = '' + (d.getMonth() + 1),
@@ -43,7 +45,7 @@ function Piscorretora(){
     }
     
     const dateFormat = (date) => {
-        console.log(new Date(date));
+        new Date(date);
         let formatYearMonthDay = dateFormatAux(date);
         console.log(formatYearMonthDay);
     }
@@ -96,12 +98,11 @@ function Piscorretora(){
     useEffect (() =>{setResultado3(calcular3())},[PremiosdeSeguros, operacaoTributoPremiosdeSeguros]);
     useEffect (() =>{setResultado4(calcular4())},[TributoReceitaFinanceiras, TributoPremiosdeSeguros, operacaoTotaldosTributosSobreReceitas]);
     useEffect (() =>{setResultado5(calcular5())},[TotaldosTributosSobreReceitas, RetencoesAntecipacoes, operacaoTributoFinal]);
-      
-        
-        return <div>         
+
+   return <div>         
         
         <section id="pis-corretora">  
-
+        
         <div className="row text-center">
                 <div className="titulo">
                     <h1>PIS corretora</h1>
@@ -111,10 +112,12 @@ function Piscorretora(){
             <div className="container">
                 <div className="row inputs-pis-corretora">
                 <div className="col-sm-3">    
-                        <div>
-                            <label>Data</label>                
+                        <div className="mb-3">
+                            <label for="SelectedDate-pis-corretora">Data</label>                
                             <div className="input-group mb-3">
                             <DatePicker className="form-control text-center" 
+                                name="SelectedDate-piscorretora"
+                                id="SelectedDate-piscorretora"
                                 selected={SelectedDate} 
                                 onChange={date => setSelectedDate(date)}
                                 dateFormat="dd/MM/yyyy" 
@@ -123,34 +126,35 @@ function Piscorretora(){
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Receita Financeiras</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaFinanceiras-pis-corretora">Receita Financeiras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaFinanceiras} onChange={(e) => setNro1(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaFinanceiras-pis-corretora" id="ReceitaFinanceiras-pis-corretora"  aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaFinanceiras} onChange={(e) => setNro1(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Prêmios de Seguros</label>                
+                        <div className="mb-3">
+                            <label for="PremiosdeSeguros-pis-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PremiosdeSeguros} onChange={(e) => setNro2(e.target.value)}/>
+                                <input className="form-control" type="number" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PremiosdeSeguros} onChange={(e) => setNro2(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>PIS retido na fonte</label>                
-                            <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro3(e.target.value)}/>
+                        <div className="mb-3">
+                            <label for="RetencoesAntecipacoes-pis-corretora">PIS retido na fonte</label>                
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">R$</span>
+                                    <input className="form-control" type="number" name="RetencoesAntecipacoes-pis-corretora" id="RetencoesAntecipacoes-pis-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro3(e.target.value)}/>
+                                </div>
                             </div>                     
                         </div>
                     </div>
-                </div>
-            </div>    
+                </div> 
+                   
             <div className="container">
                 <div className="row text-center">
                 <h3>{SituacaoPIS}</h3>

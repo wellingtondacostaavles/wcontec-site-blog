@@ -101,29 +101,29 @@ function Deducoeslegais(){
             <div className="container">
                 <div className="row inputs-deducoes-legais">
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Rendimento Tributável</label>                
+                        <div className="mb-3">
+                            <label for="RendimentosTributaveis-deducoes-legais">Rendimento Tributável</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
+                                <input className="form-control" type="number" name="RendimentosTributaveis-deducoes-legais" id="RendimentosTributaveis-deducoes-legais" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Deduções Legais</label>                
+                        <div className="mb-3"> 
+                            <label for="DeducoesLegais-deducoes-legais">Deduções Legais</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DeducoesLegais} onChange={(e) => setNro2(e.target.value)}/>
+                                <input className="form-control" type="number" name="DeducoesLegais-deducoes-legais" id="DeducoesLegais-deducoes-legais" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DeducoesLegais} onChange={(e) => setNro2(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">    
-                        <div>
-                            <label>IRRF</label>                
+                        <div className="mb-3">
+                            <label for="IRRF-deducoes-legais">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro3(e.target.value)}/>
+                                <input className="form-control" type="number" name="IRRF-deducoes-legais" id="IRRF-deducoes-legais" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro3(e.target.value)}/>
                             </div>                     
                         </div> 
                     </div>   

@@ -156,47 +156,47 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                 <div className="container">    
                     <div className="row inputs-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">
                         <div className="col-sm-3">
-                            <div>
-                                <label>Salário Base</label>                
+                            <div className="mb-3">
+                                <label for="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Salário Base</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={nro1} onChange={(e) => setNro1(e.target.value)}/>
+                                    <input className="form-control" type="number" name="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={nro1} onChange={(e) => setNro1(e.target.value)}/>
                                 </div>                     
                             </div>
                         </div>
                         <div className="col-sm-3">  
-                            <div>
-                                <label>Auxilio Refeição</label>                
+                            <div className="mb-3">
+                                <label for="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Auxilio Refeição</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro2} onChange={(e) => setNro2(e.target.value)}/>
+                                    <input className="form-control" type="number" name="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro2} onChange={(e) => setNro2(e.target.value)}/>
                                 </div>                     
                             </div>
                             </div>
                         <div className="col-sm-3">
-                            <div>
-                                <label>Auxilio Alimentação</label>                
+                            <div className="mb-3">
+                                <label for="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Auxilio Alimentação</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro3} onChange={(e) => setNro3(e.target.value)}/>
+                                    <input className="form-control" type="number" name="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro3} onChange={(e) => setNro3(e.target.value)}/>
                                 </div>                     
                             </div>  
                             </div>
                         <div className="col-sm-3">
-                            <div>
-                                <label>Plano de Saúde</label>                
+                            <div className="mb-3">
+                                <label for="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Plano de Saúde</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro4} onChange={(e) => setNro4(e.target.value)}/>
+                                    <input className="form-control" type="number" name="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro4} onChange={(e) => setNro4(e.target.value)}/>
                                 </div>                     
                             </div>
                             </div>
                         <div className="col-sm-3">
-                            <div>
-                                <label>Outros Benefícios</label>                
+                            <div className="mb-3">
+                                <label for="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Outros Benefícios</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro5} onChange={(e) => setNro5(e.target.value)}/>
+                                    <input className="form-control" type="number" name="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro5} onChange={(e) => setNro5(e.target.value)}/>
                                 </div>                     
                             </div>
                         </div>

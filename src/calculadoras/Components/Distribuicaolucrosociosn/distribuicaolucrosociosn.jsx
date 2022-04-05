@@ -81,38 +81,38 @@ function Distribuicaolucrosociosn(){
             <div className="container">
                 <div className="row inputs-distribuicao-lucro-socio-sn">
                     <div className="col-sm-3">    
-                        <div>
-                            <label>Receita de serviços</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaServicos-distribuicao-lucro-socio-sn">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaServicos-distribuicao-lucro-socio-sn" id="ReceitaServicos-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
-                        <div>
-                            <label>Receita de vendas</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaVendas-distribuicao-lucro-socio-sn">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaVendas-distribuicao-lucro-socio-sn" id="ReceitaVendas-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
-                        <div>
-                            <label>Receita Financeira</label>                
+                        <div className="mb-3">
+                            <label for="ReceitaFinanceira-distribuicao-lucro-socio-sn">Receita Financeira</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaFinanceira} onChange={(e) => setNro3(e.target.value)}/>
+                                <input className="form-control" type="number" name="ReceitaFinanceira-distribuicao-lucro-socio-sn" id="ReceitaFinanceira-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaFinanceira} onChange={(e) => setNro3(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>  
                     <div className="col-sm-3">
-                        <div>
-                            <label>IRPJ pagos no SN*</label>                
+                        <div className="mb-3">
+                            <label for="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn">IRPJ pagos no SN*</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRPJpagosnoSimplesNacional} onChange={(e) => setNro4(e.target.value)}/>
+                                <input className="form-control" type="number" name="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn" id="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRPJpagosnoSimplesNacional} onChange={(e) => setNro4(e.target.value)}/>
                             </div>                     
                         </div>
                     </div>                    
