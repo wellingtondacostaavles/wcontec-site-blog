@@ -1,17 +1,55 @@
 import React, {useState, useEffect} from 'react';
+import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 
 import './pispresumido.css';
 
 function Pispresumido(){    
 
-    const [ReceitaServicos, setNro1] = useState();
-    const [ReceitaVendas, setNro2] = useState();
-    const [DevolucaoVenda, setNro3] = useState();
-    const [ICMSsobreVendas, setNro4] = useState();
-    const [IPIsobreVendas, setNro5] = useState();
-    const [RetencoesAntecipacoes, setNro6] = useState();
-    const [Competencia, setNro7] = useState();
+    const currencyConfig = {
+        locale: "pt-BR",
+        formats: {
+          number: {
+            BRL: {
+              currency: "BRL",
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            },
+          },
+        },
+      };
 
+    const handleChange = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro1(value);        
+    };
+    const handleChange2 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro2(value);        
+    };
+    const handleChange3 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro3(value);        
+    };
+    const handleChange4 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro4(value);        
+    };
+    const handleChange5 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro5(value);        
+    };
+    const handleChange6 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro6(value);        
+    };
+
+    const [ReceitaServicos, setNro1] = useState(0);
+    const [ReceitaVendas, setNro2] = useState(0);
+    const [DevolucaoVenda, setNro3] = useState(0);
+    const [ICMSsobreVendas, setNro4] = useState(0);
+    const [IPIsobreVendas, setNro5] = useState(0);
+    const [RetencoesAntecipacoes, setNro6] = useState(0);
+    
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
 
@@ -85,7 +123,7 @@ function Pispresumido(){
                             <label for="ReceitaServicos-pis-lucro-presumido">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitaServicos-pis-lucro-presumido" id="ReceitaServicos-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaServicos-pis-lucro-presumido" id="ReceitaServicos-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)" onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>    
@@ -94,7 +132,7 @@ function Pispresumido(){
                             <label for="ReceitaVendas-pis-lucro-presumido">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitaVendas-pis-lucro-presumido" id="ReceitaVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaVendas-pis-lucro-presumido" id="ReceitaVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -103,7 +141,7 @@ function Pispresumido(){
                             <label for="DevolucaoVenda-pis-lucro-presumido">Devolução de venda</label>
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="DevolucaoVenda-pis-lucro-presumido" id="DevolucaoVenda-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucaoVenda} onChange={(e) => setNro3(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DevolucaoVenda-pis-lucro-presumido" id="DevolucaoVenda-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
                             </div>                     
                         </div>  
                     </div>
@@ -112,7 +150,7 @@ function Pispresumido(){
                             <label for="ICMSsobreVendas-pis-lucro-presumido">ICMS sobre vendas</label>
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ICMSsobreVendas-pis-lucro-presumido" id="ICMSsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ICMSsobreVendas} onChange={(e) => setNro4(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ICMSsobreVendas-pis-lucro-presumido" id="ICMSsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
                             </div>                     
                         </div>
                     </div>
@@ -121,7 +159,7 @@ function Pispresumido(){
                             <label>IPI sobre vendas</label>                
                             <div for="IPIsobreVendas-pis-lucro-presumido" className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="IPIsobreVendas-pis-lucro-presumido" id="IPIsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IPIsobreVendas} onChange={(e) => setNro5(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IPIsobreVendas-pis-lucro-presumido" id="IPIsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
                             </div>                     
                         </div>
                    </div>
@@ -130,7 +168,7 @@ function Pispresumido(){
                             <label for="RetencoesAntecipacoes-pis-lucro-presumido">PIS retido na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="RetencoesAntecipacoes-pis-lucro-presumido" id="RetencoesAntecipacoes-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro6(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="RetencoesAntecipacoes-pis-lucro-presumido" id="RetencoesAntecipacoes-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange6}/>
                             </div>                     
                         </div>                    
                     </div>

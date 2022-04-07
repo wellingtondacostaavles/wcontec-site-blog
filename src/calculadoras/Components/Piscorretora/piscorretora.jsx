@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import DatePicker from 'react-datepicker';
-
+import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -8,9 +8,48 @@ import './piscorretora.css';
 
 function Piscorretora(){    
 
-    const [ReceitaFinanceiras, setNro1] = useState();
-    const [PremiosdeSeguros, setNro2] = useState(null);
-    const [RetencoesAntecipacoes, setNro3] = useState();
+      
+    const currencyConfig = {
+        locale: "pt-BR",
+        formats: {
+          number: {
+            BRL: {
+              currency: "BRL",
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            },
+          },
+        },
+      };
+
+    const handleChange = (event, value, maskedValue) => {
+        event.preventDefault();
+    
+        console.log(value); // value without mask (ex: 1234.56)
+        console.log(maskedValue); // masked value (ex: R$1234,56)
+
+        setNro1(value);        
+    };
+    const handleChange2 = (event, value, maskedValue) => {
+        event.preventDefault();
+    
+        console.log(value); // value without mask (ex: 1234.56)
+        console.log(maskedValue); // masked value (ex: R$1234,56)
+
+        setNro2(value);        
+    };
+    const handleChange3 = (event, value, maskedValue) => {
+        event.preventDefault();
+    
+        console.log(value); // value without mask (ex: 1234.56)
+        console.log(maskedValue); // masked value (ex: R$1234,56)
+
+        setNro3(value);        
+    };
+
+    const [ReceitaFinanceiras, setNro1] = useState(0);
+    const [PremiosdeSeguros, setNro2] = useState(0);
+    const [RetencoesAntecipacoes, setNro3] = useState(0);
     
     const [SelectedDate, setSelectedDate] = useState();
     
@@ -130,7 +169,7 @@ function Piscorretora(){
                             <label for="ReceitaFinanceiras-pis-corretora">Receita Financeiras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitaFinanceiras-pis-corretora" id="ReceitaFinanceiras-pis-corretora"  aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaFinanceiras} onChange={(e) => setNro1(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaFinanceiras-pis-corretora" id="ReceitaFinanceiras-pis-corretora"  aria-label="Amount (to the nearest dollar)"  onChange={handleChange} /> 
                             </div>                     
                         </div>
                     </div>
@@ -139,7 +178,7 @@ function Piscorretora(){
                             <label for="PremiosdeSeguros-pis-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PremiosdeSeguros} onChange={(e) => setNro2(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -148,12 +187,12 @@ function Piscorretora(){
                             <label for="RetencoesAntecipacoes-pis-corretora">PIS retido na fonte</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" name="RetencoesAntecipacoes-pis-corretora" id="RetencoesAntecipacoes-pis-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro3(e.target.value)}/>
+                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" type="text" name="RetencoesAntecipacoes-pis-corretora" id="RetencoesAntecipacoes-pis-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange3}/>
                                 </div>
                             </div>                     
                         </div>
                     </div>
-                </div> 
+                </div>
                    
             <div className="container">
                 <div className="row text-center">
