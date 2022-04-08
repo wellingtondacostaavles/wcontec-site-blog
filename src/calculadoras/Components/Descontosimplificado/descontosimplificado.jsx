@@ -1,11 +1,34 @@
 import React, {useState, useEffect} from 'react';
+import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 
 import './descontosimplificado.css';
 
-function Descontosimplificado(){    
+function Descontosimplificado(){
+    
+    const currencyConfig = {
+        locale: "pt-BR",
+        formats: {
+          number: {
+            BRL: {
+              currency: "BRL",
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            },
+          },
+        },
+      };
 
-    const [RendimentosTributaveis, setNro1] = useState();
-    const [IRRF, setNro2] = useState();
+    const handleChange = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro1(value);        
+    };
+    const handleChange2 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro2(value);        
+    };
+    
+    const [RendimentosTributaveis, setNro1] = useState(0);
+    const [IRRF, setNro2] = useState(0);
     
     const [BaseCalculo, setResultado1] = useState(0);
     const [operacaoBaseCalculo, setOperacao1] = useState('Subtrair');  
@@ -120,7 +143,7 @@ function Descontosimplificado(){
                             <label for="RendimentosTributaveis-desconto-simplificado">Rendimento Tributável</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="RendimentosTributaveis-desconto-simplificado" id="RendimentosTributaveis-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="RendimentosTributaveis-desconto-simplificado" id="RendimentosTributaveis-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -129,7 +152,7 @@ function Descontosimplificado(){
                             <label for="IRRF-desconto-simplificado">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="IRRF-desconto-simplificado" id="IRRF-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro2(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IRRF-desconto-simplificado" id="IRRF-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
                             </div>                     
                         </div> 
                     </div>                    

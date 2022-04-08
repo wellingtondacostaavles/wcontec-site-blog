@@ -1,27 +1,94 @@
 import React, {useState, useEffect} from 'react';
+import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 
 import './cofinsreal.css';
 
 function Cofinsreal(){   
     
-    const [ReceitaServicos, setNro1] = useState();
-    const [ReceitaVendas, setNro2] = useState();
-    const [ReceitasFinanceiras, setNro3] = useState();
-    const [ReceitasAlugueis, setNro4] = useState();
-    const [DevolucoesdeCompras, setNro5] = useState();
-    const [DemaisReceitasOperacionais, setNro6] = useState();      
+    const currencyConfig = {
+        locale: "pt-BR",
+        formats: {
+          number: {
+            BRL: {
+              currency: "BRL",
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            },
+          },
+        },
+      };
 
-    const [ReceitasNaoTributaveis, setNro7] = useState();
+    const handleChange = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro1(value);        
+    };
+    const handleChange2 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro2(value);        
+    };
+    const handleChange3 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro3(value);        
+    };
+    const handleChange4 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro4(value);        
+    };
+    const handleChange5 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro5(value);        
+    };
+    const handleChange6 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro6(value);        
+    };
+    const handleChange7 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro7(value);        
+    };
+    const handleChange8 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro8(value);        
+    };
+    const handleChange9 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro9(value);        
+    };
+    const handleChange10 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro10(value);        
+    };
+    const handleChange11 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro11(value);        
+    };
+    const handleChange12 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro12(value);        
+    };
+    const handleChange13 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro13(value);        
+    };
     
-    const [OperacoescomDiretoaCredito, setNro8] = useState();
-    
-    const [ICMSsobrevendas, setNro9] = useState();
-    
-    const [IPIsobrevendas, setNro10] = useState();
+    const [ReceitaServicos, setNro1] = useState(0);
+    const [ReceitaVendas, setNro2] = useState(0);
+    const [ReceitasFinanceiras, setNro3] = useState(0);
+    const [ReceitasAlugueis, setNro4] = useState(0);
+    const [DevolucoesdeCompras, setNro5] = useState(0);
+    const [DemaisReceitasOperacionais, setNro6] = useState(0);      
 
-    const [PISpagonaimportacao, setNro11] = useState();
-    const [SaldoCredordemesanterior, setNro12] = useState();
-    const [RetençõesFeitasAnteçipacoes, setNro13] = useState(); 
+    const [ReceitasNaoTributaveis, setNro7] = useState(0);
+    
+    const [OperacoescomDiretoaCredito, setNro8] = useState(0);
+    
+    const [ICMSsobrevendas, setNro9] = useState(0);
+    
+    const [IPIsobrevendas, setNro10] = useState(0);
+
+    const [PISpagonaimportacao, setNro11] = useState(0);
+    const [SaldoCredordemesanterior, setNro12] = useState(0);
+    const [RetençõesFeitasAnteçipacoes, setNro13] = useState(0); 
     
     //Total das Receitas tributáveis
     const [TotaldasReceitasTributaveis, setResultado1] = useState(0);
@@ -202,7 +269,7 @@ function Cofinsreal(){
                             <label for="ReceitaServicos-cofins-lucro-real">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitaServicos-cofins-lucro-real" id="ReceitaServicos-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaServicos-cofins-lucro-real" id="ReceitaServicos-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -211,7 +278,7 @@ function Cofinsreal(){
                             <label for="ReceitaVendas-cofins-lucro-real">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitaVendas-cofins-lucro-real" id="ReceitaVendas-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaVendas-cofins-lucro-real" id="ReceitaVendas-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -220,7 +287,7 @@ function Cofinsreal(){
                             <label for="ReceitasFinanceiras-cofins-lucro-real">Receitas Financeiras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitasFinanceiras-cofins-lucro-real" id="ReceitasFinanceiras-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasFinanceiras} onChange={(e) => setNro3(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitasFinanceiras-cofins-lucro-real" id="ReceitasFinanceiras-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange3}/>
                             </div>                     
                         </div>
                     </div>
@@ -229,7 +296,7 @@ function Cofinsreal(){
                             <label for="ReceitasAlugueis-cofins-lucro-real">Receitas de Aluguéis</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitasAlugueis-cofins-lucro-real" id="ReceitasAlugueis-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasAlugueis} onChange={(e) => setNro4(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitasAlugueis-cofins-lucro-real" id="ReceitasAlugueis-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange4}/>
                             </div>                     
                         </div>
                     </div>
@@ -238,7 +305,7 @@ function Cofinsreal(){
                             <label for="DevolucoesdeCompras-cofins-lucro-real">Devol. de compras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="DevolucoesdeCompras-cofins-lucro-real" id="DevolucoesdeCompras-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DevolucoesdeCompras} onChange={(e) => setNro5(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DevolucoesdeCompras-cofins-lucro-real" id="DevolucoesdeCompras-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange5}/>
                             </div>                     
                         </div>
                     </div>
@@ -247,7 +314,7 @@ function Cofinsreal(){
                             <label for="DemaisReceitasOperacionais-cofins-lucro-real">Demais Receitas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="DemaisReceitasOperacionais-cofins-lucro-real" id="DemaisReceitasOperacionais-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DemaisReceitasOperacionais} onChange={(e) => setNro6(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DemaisReceitasOperacionais-cofins-lucro-real" id="DemaisReceitasOperacionais-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange6}/>
                             </div>
                         </div>
                     </div>
@@ -256,7 +323,7 @@ function Cofinsreal(){
                             <label for="ReceitasNaoTributaveis-cofins-lucro-real">Rec. não tributáveis*</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitasNaoTributaveis-cofins-lucro-real" id="ReceitasNaoTributaveis-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitasNaoTributaveis} onChange={(e) => setNro7(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitasNaoTributaveis-cofins-lucro-real" id="ReceitasNaoTributaveis-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange7}/>
                             </div>                     
                         </div>  
                     </div>
@@ -265,7 +332,7 @@ function Cofinsreal(){
                             <label for="OperacoescomDiretoaCredito-cofins-lucro-real">Operações de crédito*</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="OperacoescomDiretoaCredito-cofins-lucro-real" id="OperacoescomDiretoaCredito-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={OperacoescomDiretoaCredito} onChange={(e) => setNro8(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="OperacoescomDiretoaCredito-cofins-lucro-real" id="OperacoescomDiretoaCredito-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange8}/>
                             </div>                     
                         </div>
                     </div>
@@ -274,7 +341,7 @@ function Cofinsreal(){
                             <label for="ICMSsobrevendas-cofins-lucro-real">ICMS sobre vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ICMSsobrevendas-cofins-lucro-real" id="ICMSsobrevendas-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ICMSsobrevendas} onChange={(e) => setNro9(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ICMSsobrevendas-cofins-lucro-real" id="ICMSsobrevendas-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange9}/>
                             </div>                     
                         </div>
                     </div>
@@ -283,7 +350,7 @@ function Cofinsreal(){
                             <label for="IPIsobrevendas-cofins-lucro-real">IPI sobre vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="IPIsobrevendas-cofins-lucro-real" id="IPIsobrevendas-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IPIsobrevendas} onChange={(e) => setNro10(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IPIsobrevendas-cofins-lucro-real" id="IPIsobrevendas-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange10}/>
                             </div>
                         </div> 
                     </div>
@@ -292,7 +359,7 @@ function Cofinsreal(){
                             <label for="PISpagonaimportacao-cofins-lucro-real">COFINS pg importação</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="PISpagonaimportacao-cofins-lucro-real" id="PISpagonaimportacao-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PISpagonaimportacao} onChange={(e) => setNro11(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="PISpagonaimportacao-cofins-lucro-real" id="PISpagonaimportacao-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange11}/>
                             </div>                     
                         </div>
                     </div>
@@ -301,7 +368,7 @@ function Cofinsreal(){
                             <label for="SaldoCredordemesanterior-cofins-lucro-real">Saldo Credor anterior</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="SaldoCredordemesanterior-cofins-lucro-real" id="SaldoCredordemesanterior-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={SaldoCredordemesanterior} onChange={(e) => setNro12(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="SaldoCredordemesanterior-cofins-lucro-real" id="SaldoCredordemesanterior-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange12}/>
                             </div>                     
                         </div>
                     </div>
@@ -310,7 +377,7 @@ function Cofinsreal(){
                             <label for="RetençõesFeitasAnteçipacoes-cofins-lucro-real">COFINS retida na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="RetençõesFeitasAnteçipacoes-cofins-lucro-real" id="RetençõesFeitasAnteçipacoes-cofins-lucro-real" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetençõesFeitasAnteçipacoes} onChange={(e) => setNro13(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="RetençõesFeitasAnteçipacoes-cofins-lucro-real" id="RetençõesFeitasAnteçipacoes-cofins-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange13}/>
                             </div>                     
                         </div>
                     </div>

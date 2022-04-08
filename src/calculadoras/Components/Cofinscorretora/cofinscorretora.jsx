@@ -1,12 +1,39 @@
 import React, {useState, useEffect} from 'react';
+import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 
 import './cofinscorretora.css';
 
 function Cofinscorretora(){    
 
-    const [ReceitaFinanceiras, setNro1] = useState();
-    const [PremiosdeSeguros, setNro2] = useState();
-    const [RetencoesAntecipacoes, setNro3] = useState();
+    const currencyConfig = {
+        locale: "pt-BR",
+        formats: {
+          number: {
+            BRL: {
+              currency: "BRL",
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            },
+          },
+        },
+      };
+
+    const handleChange = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro1(value);        
+    };
+    const handleChange2 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro2(value);        
+    };
+    const handleChange3 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro3(value);        
+    };
+    
+    const [ReceitaFinanceiras, setNro1] = useState(0);
+    const [PremiosdeSeguros, setNro2] = useState(0);
+    const [RetencoesAntecipacoes, setNro3] = useState(0);
     
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
@@ -89,7 +116,7 @@ function Cofinscorretora(){
                             <label for="ReceitaFinanceiras-cofins-corretora">Receita Financeiras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitaFinanceiras-cofins-corretora" id="ReceitaFinanceiras-cofins-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaFinanceiras} onChange={(e) => setNro1(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaFinanceiras-cofins-corretora" id="ReceitaFinanceiras-cofins-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -98,7 +125,7 @@ function Cofinscorretora(){
                             <label for="PremiosdeSeguros-cofins-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="PremiosdeSeguros-cofins-corretora" id="PremiosdeSeguros-cofins-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PremiosdeSeguros} onChange={(e) => setNro2(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="PremiosdeSeguros-cofins-corretora" id="PremiosdeSeguros-cofins-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -107,7 +134,7 @@ function Cofinscorretora(){
                             <label for="RetencoesAntecipacoes-cofins-corretora">COFINS retida na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="RetencoesAntecipacoes-cofins-corretora" id="RetencoesAntecipacoes-cofins-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RetencoesAntecipacoes} onChange={(e) => setNro3(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="RetencoesAntecipacoes-cofins-corretora" id="RetencoesAntecipacoes-cofins-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange3}/>
                             </div>                     
                         </div>
                     </div>

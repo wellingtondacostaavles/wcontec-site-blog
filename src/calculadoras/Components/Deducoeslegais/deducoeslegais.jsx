@@ -1,12 +1,39 @@
 import React, {useState, useEffect} from 'react';
+import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 
 import './deducoeslegais.css';
 
 function Deducoeslegais(){    
 
-    const [RendimentosTributaveis, setNro1] = useState();
-    const [DeducoesLegais, setNro2] = useState();
-    const [IRRF, setNro3] = useState();
+    const currencyConfig = {
+        locale: "pt-BR",
+        formats: {
+          number: {
+            BRL: {
+              currency: "BRL",
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            },
+          },
+        },
+      };
+
+    const handleChange = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro1(value);        
+    };
+    const handleChange2 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro2(value);        
+    };
+    const handleChange3 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro3(value);        
+    };
+
+    const [RendimentosTributaveis, setNro1] = useState(0);
+    const [DeducoesLegais, setNro2] = useState(0);
+    const [IRRF, setNro3] = useState(0);
     
     const [BaseCalculo, setResultado1] = useState(0);
     const [operacaoBaseCalculo, setOperacao1] = useState('Subtrair');  
@@ -105,7 +132,7 @@ function Deducoeslegais(){
                             <label for="RendimentosTributaveis-deducoes-legais">Rendimento Tributável</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="RendimentosTributaveis-deducoes-legais" id="RendimentosTributaveis-deducoes-legais" aria-label="Amount (to the nearest dollar)"  step="0.01" value={RendimentosTributaveis} onChange={(e) => setNro1(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="RendimentosTributaveis-deducoes-legais" id="RendimentosTributaveis-deducoes-legais" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -114,7 +141,7 @@ function Deducoeslegais(){
                             <label for="DeducoesLegais-deducoes-legais">Deduções Legais</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="DeducoesLegais-deducoes-legais" id="DeducoesLegais-deducoes-legais" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DeducoesLegais} onChange={(e) => setNro2(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DeducoesLegais-deducoes-legais" id="DeducoesLegais-deducoes-legais" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -123,7 +150,7 @@ function Deducoeslegais(){
                             <label for="IRRF-deducoes-legais">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="IRRF-deducoes-legais" id="IRRF-deducoes-legais" aria-label="Amount (to the nearest dollar)"  step="0.01" value={IRRF} onChange={(e) => setNro3(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IRRF-deducoes-legais" id="IRRF-deducoes-legais" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
                             </div>                     
                         </div> 
                     </div>   

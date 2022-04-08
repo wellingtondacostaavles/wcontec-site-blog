@@ -1,15 +1,54 @@
 import React, {useState, useEffect} from 'react';
+import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 
 import './distribuicaolucromei.css';
 
-function Distribuicaolucromei(){    
+function Distribuicaolucromei(){  
+    
+    const currencyConfig = {
+        locale: "pt-BR",
+        formats: {
+          number: {
+            BRL: {
+              currency: "BRL",
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            },
+          },
+        },
+      };
 
-    const [ReceitaServicos, setNro1] = useState();
-    const [ReceitaVendas, setNro2] = useState();
-    const [TransportedeCargas, setNro3] = useState();
-    const [TransportedePassageiros, setNro4] = useState();
-    const [Impostosetaxas, setNro5] = useState();
-    const [DespesasdoMEI, setNro6] = useState();
+    const handleChange = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro1(value);        
+    };
+    const handleChange2 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro2(value);        
+    };
+    const handleChange3 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro3(value);        
+    };
+    const handleChange4 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro4(value);        
+    };
+    const handleChange5 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro5(value);        
+    };
+    const handleChange6 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro6(value);        
+    };
+
+    const [ReceitaServicos, setNro1] = useState(0);
+    const [ReceitaVendas, setNro2] = useState(0);
+    const [TransportedeCargas, setNro3] = useState(0);
+    const [TransportedePassageiros, setNro4] = useState(0);
+    const [Impostosetaxas, setNro5] = useState(0);
+    const [DespesasdoMEI, setNro6] = useState(0);
     
     const [Presucao32, setResultado1] = useState(0);
     const [operacaoPresucao32, setOperacao1] = useState('Somar');
@@ -132,7 +171,7 @@ function Distribuicaolucromei(){
                         <label for="ReceitaServicos-distribuicao-lucro-mei">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitaServicos" id="ReceitaServicos" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={ReceitaServicos} onChange={(e) => setNro1(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaServicos" id="ReceitaServicos" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -141,7 +180,7 @@ function Distribuicaolucromei(){
                             <label for="ReceitaVendas-distribuicao-lucro-mei">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="ReceitaVendas-distribuicao-lucro-mei" id="ReceitaVendas-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  step="0.01" value={ReceitaVendas} onChange={(e) => setNro2(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaVendas-distribuicao-lucro-mei" id="ReceitaVendas-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -150,7 +189,7 @@ function Distribuicaolucromei(){
                             <label for="TransportedeCargas-distribuicao-lucro-mei">R. Transp de Cargas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="TransportedeCargas-distribuicao-lucro-mei" id="TransportedeCargas-distribuicao-lucro-mei"  aria-label="Amount (to the nearest dollar)"  step="0.01" value={TransportedeCargas} onChange={(e) => setNro3(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="TransportedeCargas-distribuicao-lucro-mei" id="TransportedeCargas-distribuicao-lucro-mei"  aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
                             </div>                     
                         </div>  
                     </div>
@@ -159,7 +198,7 @@ function Distribuicaolucromei(){
                             <label for="TransportedePassageiros-distribuicao-lucro-mei">Transp. de Passageiros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="TransportedePassageiros-distribuicao-lucro-mei" id="TransportedePassageiros-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  step="0.01" value={TransportedePassageiros} onChange={(e) => setNro4(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="TransportedePassageiros-distribuicao-lucro-mei" id="TransportedePassageiros-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
                             </div>                     
                         </div>
                     </div>
@@ -168,7 +207,7 @@ function Distribuicaolucromei(){
                             <label for="Impostosetaxas-distribuicao-lucro-mei">Impostos e taxas pagas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="Impostosetaxas-distribuicao-lucro-mei" id="Impostosetaxas-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  step="0.01" value={Impostosetaxas} onChange={(e) => setNro5(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="Impostosetaxas-distribuicao-lucro-mei" id="Impostosetaxas-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
                             </div>                     
                         </div>  
                     </div>
@@ -177,7 +216,7 @@ function Distribuicaolucromei(){
                             <label for="DespesasdoMEI-distribuicao-lucro-mei">Despesas do MEI*</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <input className="form-control" type="number" name="DespesasdoMEI-distribuicao-lucro-mei" id="DespesasdoMEI-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  step="0.01" value={DespesasdoMEI} onChange={(e) => setNro6(e.target.value)}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DespesasdoMEI-distribuicao-lucro-mei" id="DespesasdoMEI-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  onChange={handleChange6}/>
                             </div>                     
                         </div>
                     </div>

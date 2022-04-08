@@ -1,17 +1,49 @@
 import React, {useState, useEffect} from 'react';
-
-
-
+import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 
 import './customensalcomfuncionarionaooptantedosimplesnacional.css';
 
 function Customensalcomfuncionarionaooptantedosimplesnacional(){    
 
-    const [nro1, setNro1] = useState();
-    const [nro2, setNro2] = useState();
-    const [nro3, setNro3] = useState();
-    const [nro4, setNro4] = useState();
-    const [nro5, setNro5] = useState();
+    const currencyConfig = {
+        locale: "pt-BR",
+        formats: {
+          number: {
+            BRL: {
+              currency: "BRL",
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            },
+          },
+        },
+      };
+
+    const handleChange = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro1(value);        
+    };
+    const handleChange2 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro2(value);        
+    };
+    const handleChange3 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro3(value);        
+    };
+    const handleChange4 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro4(value);        
+    };
+    const handleChange5 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro5(value);        
+    };
+    
+    const [nro1, setNro1] = useState(0);
+    const [nro2, setNro2] = useState(0);
+    const [nro3, setNro3] = useState(0);
+    const [nro4, setNro4] = useState(0);
+    const [nro5, setNro5] = useState(0);
 
 
     const [resultado1, setResultado1] = useState(0);
@@ -160,7 +192,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                                 <label for="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Salário Base</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" name="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" nin="0.00" value={nro1} onChange={(e) => setNro1(e.target.value)}/>
+                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
                                 </div>                     
                             </div>
                         </div>
@@ -169,7 +201,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                                 <label for="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Auxilio Refeição</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" name="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro2} onChange={(e) => setNro2(e.target.value)}/>
+                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
                                 </div>                     
                             </div>
                             </div>
@@ -178,7 +210,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                                 <label for="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Auxilio Alimentação</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" name="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro3} onChange={(e) => setNro3(e.target.value)}/>
+                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
                                 </div>                     
                             </div>  
                             </div>
@@ -187,7 +219,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                                 <label for="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Plano de Saúde</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" name="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro4} onChange={(e) => setNro4(e.target.value)}/>
+                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
                                 </div>                     
                             </div>
                             </div>
@@ -196,7 +228,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                                 <label for="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Outros Benefícios</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
-                                    <input className="form-control" type="number" name="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  step="0.01" value={nro5} onChange={(e) => setNro5(e.target.value)}/>
+                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
                                 </div>                     
                             </div>
                         </div>
