@@ -31,7 +31,7 @@ function Menu(){
               <a className="nav-link" aria-current="page" href="#planos-e-precos">Planos e Preços</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/blog">Blog</a>
+              <a className="nav-link" aria-current="page" href="#ultimosartigosblog">Blog</a>
             </li>           
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>

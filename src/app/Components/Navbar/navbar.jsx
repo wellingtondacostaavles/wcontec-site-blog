@@ -27,16 +27,16 @@ function Navbar(){
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">Início</a>
+              <a className="nav-link" aria-current="page" href="/app/calculadoras">Início</a>
             </li> 
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#escolha-uma-calculadora">Calculadoras</a>
+              <a className="nav-link" aria-current="page" href="/app/calculadoras#escolha-uma-calculadora">Escolha uma Calculadoras</a>
             </li>                                          
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="/blog">Blog</a>
             </li>                              
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#contato">Contato</a>
+              <a className="nav-link" aria-current="page" href="/app/calculadoras#contato">Contato</a>
             </li>
             <li className="nav-item">
               <a href="/app" onClick={Logout} className="nav-link logout" aria-current="page" >Sair</a>

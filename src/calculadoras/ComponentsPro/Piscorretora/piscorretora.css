@@ -32,12 +32,15 @@ p {
   padding: 9% 3% 15% 3%;
   color: #323338;
 }
+#pis-corretora-home {
+  background-color: #ececec;
+  padding: 9% 3% 15% 3%;
+  color: #323338;
+}
 
 .inputs-pis-corretora {
   margin: 0 15% 0 15%;
   padding: 1% 0 3% 0;
-  justify-content: center;
-  align-items: center;
   }
 
 .table-pis-corretora {
@@ -54,4 +57,17 @@ p {
 
 #pis-corretora .width20 {
   width: 20%;
+}
+
+.icone-acao{
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.red{
+  color: rgb(194, 74, 74);
+}
+
+.col-acao{
+  width: 81px;
 }

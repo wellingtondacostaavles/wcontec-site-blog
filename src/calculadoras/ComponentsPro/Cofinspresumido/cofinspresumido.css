@@ -27,20 +27,17 @@ p {
 
 /* BANNER */
 
-#pis-corretora {
+#cofins-lucro-presumido {
   background-color: #ececec;
   padding: 9% 3% 15% 3%;
   color: #323338;
 }
-
-.inputs-pis-corretora {
+.inputs-cofins-lucro-presumido {
   margin: 0 15% 0 15%;
-  padding: 1% 0 3% 0;
-  justify-content: center;
-  align-items: center;
-  }
+  padding: 1% 0 1% 0;
+}
 
-.table-pis-corretora {
+.table {
   padding: 3% 30% 0 30%;
 }
 
@@ -48,10 +45,10 @@ p {
   padding: 0 3% 1% 3%;
 }
 
-#pis-corretora .width80 {
+#cofins-lucro-presumido .width80 {
   width: 80%;
 }
 
-#pis-corretora .width20 {
+#cofins-lucro-presumido .width20 {
   width: 20%;
 }

@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react';
+import Navbar from '../../../app/Components/Navbar/navbar';
+import DatePicker from 'react-datepicker';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 
+import "react-datepicker/dist/react-datepicker.css";
 
 import './piscorretora.css';
+
 
 function Piscorretora(){    
 
@@ -49,6 +53,8 @@ function Piscorretora(){
     const [PremiosdeSeguros, setNro2] = useState(0);
     const [RetencoesAntecipacoes, setNro3] = useState(0);
     
+    const [SelectedDate, setSelectedDate] = useState('');
+    
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
 
@@ -64,6 +70,30 @@ function Piscorretora(){
     const [TributoFinal, setResultado5] = useState(0);
     const [operacaoTributoFinal, setOperacao5] = useState('Subtrair');     
 
+    
+    const dateFormatAux = (date) => {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear(); 
+
+            if (month.length < 2)
+                month = '0' + month;
+            if (day.length < 2)
+                day = '0' + day;    
+
+        return [year, month, day].join('-');    
+    }
+    
+    const dateFormat = (date) => {
+        new Date(date);
+        let formatYearMonthDay = dateFormatAux(date);
+        console.log(formatYearMonthDay);
+    }
+
+    dateFormat(SelectedDate);
+    
+    
     const ResultadoPIS = TributoFinal
     
     const situacao1 = 'O PIS a recolher mensal será de:'
@@ -111,8 +141,9 @@ function Piscorretora(){
     useEffect (() =>{setResultado5(calcular5())},[TotaldosTributosSobreReceitas, RetencoesAntecipacoes, operacaoTributoFinal]);
 
    return <div>         
-        
-        <section id="pis-corretora">  
+        <Navbar/>
+        <section id="pis-corretora"> 
+         
         
         <div className="row text-center">
                 <div className="titulo">
@@ -122,6 +153,20 @@ function Piscorretora(){
             </div>
             <div className="container">
                 <div className="row inputs-pis-corretora">
+                <div className="col-sm-3">    
+                        <div className="mb-3">
+                            <label for="SelectedDate-pis-corretora">Data</label>                
+                            <div className="input-group mb-3">
+                            <DatePicker className="form-control text-center" 
+                                name="SelectedDate-piscorretora"
+                                id="SelectedDate-piscorretora"
+                                selected={SelectedDate} 
+                                onChange={date => setSelectedDate(date)}
+                                dateFormat="dd/MM/yyyy" 
+                            />    
+                            </div>                     
+                        </div>
+                    </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
                             <label for="ReceitaFinanceiras-pis-corretora">Receita Financeiras</label>                
@@ -159,8 +204,8 @@ function Piscorretora(){
                 {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
             </div>
-         </section>       
-      </div> 
+        </section>
+        </div> 
     }
   
   export default Piscorretora;

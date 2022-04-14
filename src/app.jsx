@@ -7,6 +7,8 @@ import Site from './site/site.jsx';
 import Login from './app/Login/login.jsx';
 import NovaConta from './app/NovaConta/novaconta.jsx';
 import ResetSenha from './app/ResetSenha/resetsenha.jsx';
+import Calculadorasapp from './calculadoras/calculadorasapp.jsx';
+import Piscorretora from './calculadoras/ComponentsPro/Piscorretora/piscorretora.jsx';
 import Calculadoras from './calculadoras/calculadoras.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
 import Descadastramento from './descadastrese/descadastramento.jsx';
@@ -37,7 +39,6 @@ import Novidadesnadeclaracaoirpf22 from './blog/Artigos/DIRPF22/Novidadesnadecla
 import Documentosnecessarios from './blog/Artigos/DIRPF22/Documentosnecessarios/documentosnecessarios.jsx';
 import Deducoeslegaisdescontosimplificado from './blog/Artigos/DIRPF22/Deducoeslegaisdescontosimplificado/deducoeslegais-descontosimplificado.jsx';
 import Microempreendedor from './blog/Artigos/Microempreendedor/microempreendedor.jsx';
-import Calculadorasapp from './calculadoras/calculadorasapp.jsx';
 
 
 function App(){
@@ -58,6 +59,7 @@ function App(){
       <Route exact path='/app/criar-conta' component={NovaConta} />
       <Route exact path='/app/recuperar-senha' component={ResetSenha} /> 
       <SecureRoute exact path='/app/calculadoras' component={Calculadorasapp} />
+      <SecureRoute exact path='/app/pis-corretora' component={Piscorretora} />
       <Route exact path='/calculadoras' component={Calculadoras} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />

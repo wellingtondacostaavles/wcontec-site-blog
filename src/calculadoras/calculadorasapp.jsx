@@ -1,27 +1,27 @@
 import Navbar from '../app/Components/Navbar/navbar';
-import Capacalculadora from './Components/Capacalculadora/capacalculadora';
-import Escolhaumacalculadora from './Components/Escolhaumacalculadora/escolhaumacalculadora';
-import Calculostrabalhistas from './Components/Escolhaumacalculadora/calculostrabalhistas';
-import Customensalcomfuncionario from '../calculadoras/Components/Customensalcomfuncionario/customensalcomfuncionario';
+import Capacalculadora from './ComponentsPro/Capacalculadora/capacalculadora';
+import Escolhaumacalculadora from './ComponentsPro/Escolhaumacalculadora/escolhaumacalculadora';
+import Calculostrabalhistas from './ComponentsPro/Escolhaumacalculadora/calculostrabalhistas';
+import Customensalcomfuncionario from '../calculadoras/ComponentsPro/Customensalcomfuncionario/customensalcomfuncionario';
 import Customensalcomfuncionarionaooptantedosimplesnacional from './Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional';
-import DeclaracaoIRPF from './Components/Escolhaumacalculadora/declaracaoIRPF';
-import Distribuicaolucromei from './Components/Distribuicaolucromei/distribuicaolucromei';
-import Distribuicaolucrosociosn from './Components/Distribuicaolucrosociosn/distribuicaolucrosociosn';
-import Descontosimplificado from './Components/Descontosimplificado/descontosimplificado';
-import Deducoeslegais from './Components/Deducoeslegais/deducoeslegais';
-import Tributos from './Components/Escolhaumacalculadora/tributos';
-import Pis from './Components/Escolhaumacalculadora/pis';
-import Pispresumido from './Components/Pispresumido/pispresumido';
-import Pislucroreal from './Components/Pislucroreal/pislucroreal';
-import Piscorretora from './Components/Piscorretora/piscorretora';
-import Cofins from './Components/Escolhaumacalculadora/cofins';
-import Cofinspresumido from './Components/Cofinspresumido/cofinspresumido';
-import Cofinsreal from './Components/Cofinsreal/cofinsreal';
-import Cofinscorretora from './Components/Cofinscorretora/cofinscorretora';
-import Irtrimestral from './Components/IRPJTrimestral/irtrimestral';
-import Cslltrimestral from './Components/CSLLTrimestral/cslltrimestral';
-import Construcaocivil from './Components/Escolhaumacalculadora/construcaocivil';
-import Metrocubico from '../calculadoras/Components/Metrocubico/metrocubico';
+import DeclaracaoIRPF from './ComponentsPro/Escolhaumacalculadora/declaracaoIRPF';
+import Distribuicaolucromei from './ComponentsPro/Distribuicaolucromei/distribuicaolucromei';
+import Distribuicaolucrosociosn from './ComponentsPro/Distribuicaolucrosociosn/distribuicaolucrosociosn';
+import Descontosimplificado from './ComponentsPro/Descontosimplificado/descontosimplificado';
+import Deducoeslegais from './ComponentsPro/Deducoeslegais/deducoeslegais';
+import Tributos from './ComponentsPro/Escolhaumacalculadora/tributos';
+import Pis from './ComponentsPro/Escolhaumacalculadora/pis';
+import Pispresumido from './ComponentsPro/Pispresumido/pispresumido';
+import Pislucroreal from './ComponentsPro/Pislucroreal/pislucroreal';
+import Piscorretorahome from './ComponentsPro/Piscorretora/piscorretorahome';
+import Cofins from './ComponentsPro/Escolhaumacalculadora/cofins';
+import Cofinspresumido from './ComponentsPro/Cofinspresumido/cofinspresumido';
+import Cofinsreal from './ComponentsPro/Cofinsreal/cofinsreal';
+import Cofinscorretora from './ComponentsPro/Cofinscorretora/cofinscorretora';
+import Irtrimestral from './ComponentsPro/IRPJTrimestral/irtrimestral';
+import Cslltrimestral from './ComponentsPro/CSLLTrimestral/cslltrimestral';
+import Construcaocivil from './ComponentsPro/Escolhaumacalculadora/construcaocivil';
+import Metrocubico from '../calculadoras/ComponentsPro/Metrocubico/metrocubico';
 import Ultimosartigosblog from '../site/Components/ultimosartigosblog';
 import Parceiros from '../site/Components/parceiros';
 import Footer from '../site/Components/contato';
@@ -44,7 +44,7 @@ function Calculadoras(){
       <Pis/>
       <Pispresumido/>
       <Pislucroreal/>
-      <Piscorretora/>
+      <Piscorretorahome/>
       <Cofins/>
       <Cofinspresumido/>
       <Cofinsreal/>
