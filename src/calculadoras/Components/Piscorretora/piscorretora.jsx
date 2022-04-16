@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
+import {Link, Redirect}  from 'react-router-dom';
+
 
 
 import './piscorretora.css';
@@ -48,6 +50,8 @@ function Piscorretora(){
     const [ReceitaFinanceiras, setNro1] = useState(0);
     const [PremiosdeSeguros, setNro2] = useState(0);
     const [RetencoesAntecipacoes, setNro3] = useState(0);
+    const [mensagem, setMensagem] = useState('');
+    const [sucesso, setSucesso] = useState('N');
     
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
@@ -124,7 +128,7 @@ function Piscorretora(){
                 <div className="row inputs-pis-corretora">
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="ReceitaFinanceiras-pis-corretora">Receita Financeiras</label>                
+                            <label htmlFor="ReceitaFinanceiras-pis-corretora">Receita Financeiras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaFinanceiras-pis-corretora" id="ReceitaFinanceiras-pis-corretora"  aria-label="Amount (to the nearest dollar)"  onChange={handleChange} /> 
@@ -133,7 +137,7 @@ function Piscorretora(){
                     </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="PremiosdeSeguros-pis-corretora">Prêmios de Seguros</label>                
+                            <label htmlFor="PremiosdeSeguros-pis-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" onChange={handleChange2}/>
@@ -142,7 +146,7 @@ function Piscorretora(){
                     </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="RetencoesAntecipacoes-pis-corretora">PIS retido na fonte</label>                
+                            <label htmlFor="RetencoesAntecipacoes-pis-corretora">PIS retido na fonte</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
                                     <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" type="text" name="RetencoesAntecipacoes-pis-corretora" id="RetencoesAntecipacoes-pis-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange3}/>
@@ -157,7 +161,14 @@ function Piscorretora(){
                 {SituacaoPIS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
                 {SituacaoPIS ? <p>Códido do Tributo 4574</p> :''}
                 {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
-                </div>
+                    <div>
+                        <button type="submit" className="btn btn-success btn-pis-corretora">Salvar</button>
+                        <button type="submit" className="btn btn-outline-primary btn-pis-corretora">Cancelar</button>
+                    </div>
+                    {mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null}
+                    {sucesso === 'S' ? <Redirect to='/app' /> : null}
+                  </div>
+                <div></div>
             </div>
          </section>       
       </div> 

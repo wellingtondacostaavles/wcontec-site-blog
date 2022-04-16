@@ -9,7 +9,7 @@ function TabelaPisCorretora(props){
         alert('Excluir usuário ' + id);
     }
 
-    return <table className="table table-hover table-bordered"><thead>
+    return <table className="table table-responsive table-hover table-bordered"><thead>
     <tr className="table-secondary">
       <th scope="col">id</th>
       <th scope="col">Período</th>
@@ -32,8 +32,8 @@ function TabelaPisCorretora(props){
           <td>{piscorretora.PISretidonafonte}</td>
           <td>{piscorretora.PISaPagar}</td>
           <td>
-              <Link to='#'><i class="fas fa-edit icone-acao"></i></Link>
-              <Link to='#' onClick={() => deleteUser(piscorretora.id)}><i class="far fa-trash-alt icone-acao red"></i></Link>
+              <Link to='#'><i className="fas fa-edit icone-acao"></i></Link>
+              <Link to='#' onClick={() => deleteUser(piscorretora.id)}><i className="far fa-trash-alt icone-acao red"></i></Link>
           </td>
         </tr>
         })

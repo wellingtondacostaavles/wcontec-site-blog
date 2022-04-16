@@ -23,27 +23,27 @@ function Descadastrese(){
                     <div className="wrapper">
                         <div className="form-group">
                             <input className="radio" name="theradio" id="radio1" type="radio" checked></input>
-                            <label for="radio1">Apenas não quero mais receber</label>
+                            <label htmlFor="radio1">Apenas não quero mais receber</label>
                         </div>
                         <div className="form-group">
                             <input className="radio" name="theradio" id="radio2" type="radio" checked></input>
-                            <label for="radio2">Conteúdo irrelevante para mim</label>
+                            <label htmlFor="radio2">Conteúdo irrelevante para mim</label>
                         </div>
                         <div className="form-group">
                             <input className="radio" name="theradio" id="radio3" type="radio" checked></input>
-                            <label for="radio3">Está me perturbando</label>
+                            <label htmlFor="radio3">Está me perturbando</label>
                         </div>
                         <div className="form-group">
                             <input className="radio" name="theradio" id="radio4" type="radio" checked></input>
-                            <label for="radio4">Eu não autorizei o envio dos e-mails</label>
+                            <label htmlFor="radio4">Eu não autorizei o envio dos e-mails</label>
                         </div>
                         <div className="form-group">
                             <input className="radio" name="theradio" id="radio5" type="radio" checked></input>
-                            <label for="radio5">Frequência de e-mail é muito alta</label>
+                            <label htmlFor="radio5">Frequência de e-mail é muito alta</label>
                         </div>
                         <div className="form-group">
                             <input className="radio" name="theradio" id="radio6" type="radio" checked></input>
-                            <label for="radio6">Outros</label>
+                            <label htmlFor="radio6">Outros</label>
                         </div>                         
                       </div>
 
@@ -54,7 +54,7 @@ function Descadastrese(){
                             method="POST"
                             className="form"
                           >
-                            <label for="email">Digite seu e-mail</label>
+                            <label htmlFor="email">Digite seu e-mail</label>
                             <input className="form-control" type="email" name="email" id="email" required />
                             <input type="hidden" name="_captcha" value="false" />
                             <input

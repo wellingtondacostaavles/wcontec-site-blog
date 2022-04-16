@@ -19,7 +19,7 @@ function Cardsvr(){
                                     method="POST"
                                     className="form"                          
                           >
-                                    <label className="label" for="email">Digite seu e-mail</label>
+                                    <label className="label" htmlFor="email">Digite seu e-mail</label>
                                     <input className="form-control" type="email" name="email" id="email" required />
                                     <input type="hidden" name="_captcha" value="false" />
                                     <input

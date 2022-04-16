@@ -140,7 +140,7 @@ function Descontosimplificado(){
                 <div className="row inputs-desconto-simplificado">
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="RendimentosTributaveis-desconto-simplificado">Rendimento Tributável</label>                
+                            <label htmlFor="RendimentosTributaveis-desconto-simplificado">Rendimento Tributável</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="RendimentosTributaveis-desconto-simplificado" id="RendimentosTributaveis-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
@@ -149,7 +149,7 @@ function Descontosimplificado(){
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label for="IRRF-desconto-simplificado">IRRF</label>                
+                            <label htmlFor="IRRF-desconto-simplificado">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IRRF-desconto-simplificado" id="IRRF-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>

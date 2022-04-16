@@ -168,7 +168,7 @@ function Distribuicaolucromei(){
                 <div className="row inputs-distribuicao-lucro-mei">
                     <div className="col-sm-3">
                     <div className="mb-3">
-                        <label for="ReceitaServicos-distribuicao-lucro-mei">Receita de serviços</label>                
+                        <label htmlFor="ReceitaServicos-distribuicao-lucro-mei">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaServicos" id="ReceitaServicos" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
@@ -177,7 +177,7 @@ function Distribuicaolucromei(){
                     </div>
                     <div className="col-sm-3">   
                         <div className="mb-3">
-                            <label for="ReceitaVendas-distribuicao-lucro-mei">Receita de vendas</label>                
+                            <label htmlFor="ReceitaVendas-distribuicao-lucro-mei">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaVendas-distribuicao-lucro-mei" id="ReceitaVendas-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
@@ -186,7 +186,7 @@ function Distribuicaolucromei(){
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label for="TransportedeCargas-distribuicao-lucro-mei">R. Transp de Cargas</label>                
+                            <label htmlFor="TransportedeCargas-distribuicao-lucro-mei">R. Transp de Cargas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="TransportedeCargas-distribuicao-lucro-mei" id="TransportedeCargas-distribuicao-lucro-mei"  aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
@@ -195,7 +195,7 @@ function Distribuicaolucromei(){
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label for="TransportedePassageiros-distribuicao-lucro-mei">Transp. de Passageiros</label>                
+                            <label htmlFor="TransportedePassageiros-distribuicao-lucro-mei">Transp. de Passageiros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="TransportedePassageiros-distribuicao-lucro-mei" id="TransportedePassageiros-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
@@ -204,7 +204,7 @@ function Distribuicaolucromei(){
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label for="Impostosetaxas-distribuicao-lucro-mei">Impostos e taxas pagas</label>                
+                            <label htmlFor="Impostosetaxas-distribuicao-lucro-mei">Impostos e taxas pagas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="Impostosetaxas-distribuicao-lucro-mei" id="Impostosetaxas-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
@@ -213,7 +213,7 @@ function Distribuicaolucromei(){
                     </div>
                     <div className="col-sm-3">                
                         <div className="mb-3">
-                            <label for="DespesasdoMEI-distribuicao-lucro-mei">Despesas do MEI*</label>                
+                            <label htmlFor="DespesasdoMEI-distribuicao-lucro-mei">Despesas do MEI*</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DespesasdoMEI-distribuicao-lucro-mei" id="DespesasdoMEI-distribuicao-lucro-mei" aria-label="Amount (to the nearest dollar)"  onChange={handleChange6}/>

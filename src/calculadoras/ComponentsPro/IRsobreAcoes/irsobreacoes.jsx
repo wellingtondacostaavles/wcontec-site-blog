@@ -105,7 +105,7 @@ function Irsobreacoes(){
                 <div className="row inputs-ir-sobre-acoes">
                     <div className="col-sm-3">  
                         <div className="mb-3">  
-                            <label for="SelectedDate-ir-sobre-acoes">Data</label>                
+                            <label htmlFor="SelectedDate-ir-sobre-acoes">Data</label>                
                             <div className="input-group mb-3">
                                 <DatePicker className="form-control text-center"
                                 name="SelectedDate-ir-sobre-acoes"
@@ -118,9 +118,9 @@ function Irsobreacoes(){
                     </div>    
                 <div className="col-sm-3">
                   <div className="mb-3">
-                      <label for="CodigoAcao-ir-sobre-acoes">Código da Ação</label>
+                      <label htmlFor="CodigoAcao-ir-sobre-acoes">Código da Ação</label>
                         <div className="input-group mb-3">
-                            <select name="CodigoAcao-ir-sobre-acoes" id="CodigoAcao-ir-sobre-acoes" value={CodigoAcao} onChange={value => setCodigoAcao(value.target.value)} class="form-select" aria-label="Default select example">
+                            <select name="CodigoAcao-ir-sobre-acoes" id="CodigoAcao-ir-sobre-acoes" value={CodigoAcao} onChange={value => setCodigoAcao(value.target.value)} className="form-select" aria-label="Default select example">
                             <option value="">--</option>
                             <option value="PETR4">PETR4</option>
                             <option value="B3SA3">B3SA3</option>
@@ -133,9 +133,9 @@ function Irsobreacoes(){
                 </div>
                 <div className="col-sm-3">
                     <div className="mb-3">
-                        <label for="ComprarouVender-ir-sobre-acoes">C/V</label>
+                        <label htmlFor="ComprarouVender-ir-sobre-acoes">C/V</label>
                         <div className="input-group mb-3">
-                            <select name="ComprarouVender-ir-sobre-acoes" id="ComprarouVender-ir-sobre-acoes" value={ComprarouVender} onChange={value => setComprarouVender(value.target.value)} class="form-select" aria-label="Default select example">
+                            <select name="ComprarouVender-ir-sobre-acoes" id="ComprarouVender-ir-sobre-acoes" value={ComprarouVender} onChange={value => setComprarouVender(value.target.value)} className="form-select" aria-label="Default select example">
                             <option value="">--</option>
                             <option value="Compra">Compra</option>
                             <option value="Venda">Venda</option>
@@ -145,7 +145,7 @@ function Irsobreacoes(){
                 </div>
                 <div className="col-sm-3">    
                     <div className="mb-3">
-                        <label for="Quantidade-ir-sobre-acoes">Quantidade</label>                
+                        <label htmlFor="Quantidade-ir-sobre-acoes">Quantidade</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">QT</span>
                             <input className="form-control" type="number" name="Quantidade-ir-sobre-acoes" id="Quantidade-ir-sobre-acoes" value={Quantidade} onChange={(e) => setNro1(e.target.value)}/>
@@ -154,7 +154,7 @@ function Irsobreacoes(){
                 </div>
                 <div className="col-sm-3">    
                     <div className="mb-3">
-                        <label for="Preco-ir-sobre-acoes">Preço</label>                
+                        <label htmlFor="Preco-ir-sobre-acoes">Preço</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" name="Preco-ir-sobre-acoes" id="Preco-ir-sobre-acoes" aria-label="Amount (to the nearest dollar)"  step="0.01" value={Preco} onChange={(e) => setNro2(e.target.value)}/>
@@ -163,7 +163,7 @@ function Irsobreacoes(){
                 </div>
                 <div className="col-sm-3">    
                     <div className="mb-3">
-                        <label for="CustoTotal-ir-sobre-acoes">Custo Total</label>                
+                        <label htmlFor="CustoTotal-ir-sobre-acoes">Custo Total</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" name="CustoTotal-ir-sobre-acoes" id="CustoTotal-ir-sobre-acoes" aria-label="Amount (to the nearest dollar)"  step="0.01" value={CustoTotal} onChange={(e) => setNro3(e.target.value)}/>
@@ -172,7 +172,7 @@ function Irsobreacoes(){
                 </div>
                 <div className="col-sm-3">    
                     <div className="mb-3">
-                        <label for="PrecoTotal-ir-sobre-acoes">Preço Total</label>
+                        <label htmlFor="PrecoTotal-ir-sobre-acoes">Preço Total</label>
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <input className="form-control" type="number" name="PrecoTotal-ir-sobre-acoes" id="PrecoTotal-ir-sobre-acoes" aria-label="Amount (to the nearest dollar)"  step="0.01" value={PrecoTotal}/>

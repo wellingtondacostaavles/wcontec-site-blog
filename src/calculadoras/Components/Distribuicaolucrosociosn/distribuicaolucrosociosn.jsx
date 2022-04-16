@@ -113,7 +113,7 @@ function Distribuicaolucrosociosn(){
                 <div className="row inputs-distribuicao-lucro-socio-sn">
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="ReceitaServicos-distribuicao-lucro-socio-sn">Receita de serviços</label>                
+                            <label htmlFor="ReceitaServicos-distribuicao-lucro-socio-sn">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaServicos-distribuicao-lucro-socio-sn" id="ReceitaServicos-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
@@ -122,7 +122,7 @@ function Distribuicaolucrosociosn(){
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label for="ReceitaVendas-distribuicao-lucro-socio-sn">Receita de vendas</label>                
+                            <label htmlFor="ReceitaVendas-distribuicao-lucro-socio-sn">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaVendas-distribuicao-lucro-socio-sn" id="ReceitaVendas-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
@@ -131,7 +131,7 @@ function Distribuicaolucrosociosn(){
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label for="ReceitaFinanceira-distribuicao-lucro-socio-sn">Receita Financeira</label>                
+                            <label htmlFor="ReceitaFinanceira-distribuicao-lucro-socio-sn">Receita Financeira</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaFinanceira-distribuicao-lucro-socio-sn" id="ReceitaFinanceira-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
@@ -140,7 +140,7 @@ function Distribuicaolucrosociosn(){
                     </div>  
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label for="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn">IRPJ pagos no SN*</label>                
+                            <label htmlFor="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn">IRPJ pagos no SN*</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn" id="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>

@@ -189,7 +189,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                     <div className="row inputs-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">
                         <div className="col-sm-3">
                             <div className="mb-3">
-                                <label for="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Salário Base</label>                
+                                <label htmlFor="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Salário Base</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
                                     <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro1-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
@@ -198,7 +198,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                         </div>
                         <div className="col-sm-3">  
                             <div className="mb-3">
-                                <label for="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Auxilio Refeição</label>                
+                                <label htmlFor="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Auxilio Refeição</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
                                     <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro2-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
@@ -207,7 +207,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                             </div>
                         <div className="col-sm-3">
                             <div className="mb-3">
-                                <label for="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Auxilio Alimentação</label>                
+                                <label htmlFor="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Auxilio Alimentação</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
                                     <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro3-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
@@ -216,7 +216,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                             </div>
                         <div className="col-sm-3">
                             <div className="mb-3">
-                                <label for="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Plano de Saúde</label>                
+                                <label htmlFor="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Plano de Saúde</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
                                     <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro4-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
@@ -225,7 +225,7 @@ function Customensalcomfuncionarionaooptantedosimplesnacional(){
                             </div>
                         <div className="col-sm-3">
                             <div className="mb-3">
-                                <label for="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Outros Benefícios</label>                
+                                <label htmlFor="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional">Outros Benefícios</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
                                     <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" id="nro5-custo-mensal-com-funcionario-nao-optante-do-simples-nacional" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>

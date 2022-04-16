@@ -178,7 +178,7 @@ function Customensalcomfuncionario(){
             <div className="row inputs-custo-mensal-com-funcionario">
                 <div className="col-sm-3">    
                     <div className="mb-3">
-                        <label for="nro1-custo-mensal-com-funcionario">Salário Base</label>                
+                        <label htmlFor="nro1-custo-mensal-com-funcionario">Salário Base</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro1-custo-mensal-com-funcionario" id="nro1-custo-mensal-com-funcionario" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
@@ -188,7 +188,7 @@ function Customensalcomfuncionario(){
                     
                 <div className="col-sm-3">
                 <div className="mb-3">
-                        <label for="nro2-custo-mensal-com-funcionario">Auxilio Refeição</label>                
+                        <label htmlFor="nro2-custo-mensal-com-funcionario">Auxilio Refeição</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro2-custo-mensal-com-funcionario" id="nro2-custo-mensal-com-funcionario" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
@@ -197,7 +197,7 @@ function Customensalcomfuncionario(){
                 </div>
                 <div className="col-sm-3">
                     <div className="mb-3">
-                        <label for="nro3-custo-mensal-com-funcionario">Auxilio Alimentação</label>                
+                        <label htmlFor="nro3-custo-mensal-com-funcionario">Auxilio Alimentação</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro3-custo-mensal-com-funcionario" id="nro3-custo-mensal-com-funcionario" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
@@ -206,7 +206,7 @@ function Customensalcomfuncionario(){
                       </div> 
                 <div className="col-sm-3"> 
                     <div className="mb-3">
-                        <label for="nro4-custo-mensal-com-funcionario">Plano de Saúde</label>                
+                        <label htmlFor="nro4-custo-mensal-com-funcionario">Plano de Saúde</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro4-custo-mensal-com-funcionario" id="nro4-custo-mensal-com-funcionario" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
@@ -215,7 +215,7 @@ function Customensalcomfuncionario(){
                     </div>
                     <div className="col-sm-3">
                     <div className="mb-3">
-                        <label for="nro5-custo-mensal-com-funcionario">Outros Benefícios</label>                
+                        <label htmlFor="nro5-custo-mensal-com-funcionario">Outros Benefícios</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text">R$</span>
                             <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="nro5-custo-mensal-com-funcionario" id="nro5-custo-mensal-com-funcionario" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>

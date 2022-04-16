@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import Navbar from '../../../app/Components/Navbar/navbar';
 import DatePicker from 'react-datepicker';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
+import {Link, Redirect}  from 'react-router-dom';
+import firebase from 'firebase';
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -52,9 +54,28 @@ function Piscorretora(){
     const [ReceitaFinanceiras, setNro1] = useState(0);
     const [PremiosdeSeguros, setNro2] = useState(0);
     const [RetencoesAntecipacoes, setNro3] = useState(0);
-    
+    const [mensagem, setMensagem] = useState('');
+    const [sucesso, setSucesso] = useState('N');
     const [SelectedDate, setSelectedDate] = useState('');
-    
+    const db = firebase.firestore();
+
+    function CadastrarPiscorretora(){
+
+      db.collection('piscorretora').add({
+            Periodo: SelectedDate,
+            ReceitaFinanceiras: ReceitaFinanceiras,
+            PremiosdeSeguros: PremiosdeSeguros,
+            PISretidonafonte: RetencoesAntecipacoes,
+            PISaPagar: TributoFinal
+          }).then(() => {
+            setMensagem('');
+            setSucesso('S');
+            }).catch((erro) =>{
+            setMensagem(erro);
+            setSucesso('N'); 
+          })
+        }
+        
     const [TotalReceitas, setResultado1] = useState(0);
     const [operacaoTotalReceitas, setOperacao1] = useState('Somar');
 
@@ -155,7 +176,7 @@ function Piscorretora(){
                 <div className="row inputs-pis-corretora">
                 <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="SelectedDate-pis-corretora">Data</label>                
+                            <label htmlFor="SelectedDate-pis-corretora">Data</label>                
                             <div className="input-group mb-3">
                             <DatePicker className="form-control text-center" 
                                 name="SelectedDate-piscorretora"
@@ -169,7 +190,7 @@ function Piscorretora(){
                     </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="ReceitaFinanceiras-pis-corretora">Receita Financeiras</label>                
+                            <label htmlFor="ReceitaFinanceiras-pis-corretora">Receita Financeiras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaFinanceiras-pis-corretora" id="ReceitaFinanceiras-pis-corretora"  aria-label="Amount (to the nearest dollar)"  onChange={handleChange} /> 
@@ -178,7 +199,7 @@ function Piscorretora(){
                     </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="PremiosdeSeguros-pis-corretora">Prêmios de Seguros</label>                
+                            <label htmlFor="PremiosdeSeguros-pis-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" onChange={handleChange2}/>
@@ -187,7 +208,7 @@ function Piscorretora(){
                     </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="RetencoesAntecipacoes-pis-corretora">PIS retido na fonte</label>                
+                            <label htmlFor="RetencoesAntecipacoes-pis-corretora">PIS retido na fonte</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text">R$</span>
                                     <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" type="text" name="RetencoesAntecipacoes-pis-corretora" id="RetencoesAntecipacoes-pis-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange3}/>
@@ -198,13 +219,19 @@ function Piscorretora(){
                 </div>                      
             <div className="container">
                 <div className="row text-center">
-                <h3>{SituacaoPIS}</h3>
-                {SituacaoPIS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
-                {SituacaoPIS ? <p>Códido do Tributo 4574</p> :''}
-                {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
+                    <h3>{SituacaoPIS}</h3>
+                    {SituacaoPIS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
+                    {SituacaoPIS ? <p>Códido do Tributo 4574</p> :''}
+                    {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
+                        <div>
+                            <button onClick={CadastrarPiscorretora} type="button" className="btn btn-success btn-pis-corretora">Salvar</button>
+                            <Link to="/app/pis-corretora-home" className="btn btn-outline-primary btn-pis-corretora">Cancelar</Link>
+                        </div>
+                        {mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null}
+                        {sucesso === 'S' ? <Redirect to='/app/pis-corretora-home'/> : null}    
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </div> 
     }
   

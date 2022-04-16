@@ -8,6 +8,7 @@ import Login from './app/Login/login.jsx';
 import NovaConta from './app/NovaConta/novaconta.jsx';
 import ResetSenha from './app/ResetSenha/resetsenha.jsx';
 import Calculadorasapp from './calculadoras/calculadorasapp.jsx';
+import Piscorretorahome from './calculadoras/ComponentsPro/Piscorretora/piscorretorahome.jsx';
 import Piscorretora from './calculadoras/ComponentsPro/Piscorretora/piscorretora.jsx';
 import Calculadoras from './calculadoras/calculadoras.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
@@ -60,6 +61,7 @@ function App(){
       <Route exact path='/app/recuperar-senha' component={ResetSenha} /> 
       <SecureRoute exact path='/app/calculadoras' component={Calculadorasapp} />
       <SecureRoute exact path='/app/pis-corretora' component={Piscorretora} />
+      <SecureRoute exact path='/app/pis-corretora-home' component={Piscorretorahome} />
       <Route exact path='/calculadoras' component={Calculadoras} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />

@@ -130,7 +130,7 @@ function Cslltrimestral(){
                 <div className="row inputs-csll-trimestral">
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="ReceitaServicos-csll-trimestral">Receita de serviços</label>                
+                            <label htmlFor="ReceitaServicos-csll-trimestral">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaServicos-csll-trimestral" id="ReceitaServicos-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
@@ -139,7 +139,7 @@ function Cslltrimestral(){
                     </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="ReceitaVendas-csll-trimestral">Receita de vendas</label>                
+                            <label htmlFor="ReceitaVendas-csll-trimestral">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaVendas-csll-trimestral" id="ReceitaVendas-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
@@ -148,7 +148,7 @@ function Cslltrimestral(){
                     </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="DevolucaoVenda-csll-trimestral">Devolução de venda</label>                
+                            <label htmlFor="DevolucaoVenda-csll-trimestral">Devolução de venda</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DevolucaoVenda-csll-trimestral" id="DevolucaoVenda-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
@@ -157,7 +157,7 @@ function Cslltrimestral(){
                     </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="ReceitaFinanceira-csll-trimestral">Receita Financeira</label>                
+                            <label htmlFor="ReceitaFinanceira-csll-trimestral">Receita Financeira</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaFinanceira-csll-trimestral" id="ReceitaFinanceira-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
@@ -166,7 +166,7 @@ function Cslltrimestral(){
                     </div>
                     <div className="col-sm-3">    
                         <div className="mb-3">
-                            <label for="CSLLRFAntecipacoes-csll-trimestral">CSLL retida na fonte</label>                
+                            <label htmlFor="CSLLRFAntecipacoes-csll-trimestral">CSLL retida na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="CSLLRFAntecipacoes-csll-trimestral" id="CSLLRFAntecipacoes-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>

@@ -13,7 +13,6 @@ import Tributos from './ComponentsPro/Escolhaumacalculadora/tributos';
 import Pis from './ComponentsPro/Escolhaumacalculadora/pis';
 import Pispresumido from './ComponentsPro/Pispresumido/pispresumido';
 import Pislucroreal from './ComponentsPro/Pislucroreal/pislucroreal';
-import Piscorretorahome from './ComponentsPro/Piscorretora/piscorretorahome';
 import Cofins from './ComponentsPro/Escolhaumacalculadora/cofins';
 import Cofinspresumido from './ComponentsPro/Cofinspresumido/cofinspresumido';
 import Cofinsreal from './ComponentsPro/Cofinsreal/cofinsreal';
@@ -44,7 +43,6 @@ function Calculadoras(){
       <Pis/>
       <Pispresumido/>
       <Pislucroreal/>
-      <Piscorretorahome/>
       <Cofins/>
       <Cofinspresumido/>
       <Cofinsreal/>

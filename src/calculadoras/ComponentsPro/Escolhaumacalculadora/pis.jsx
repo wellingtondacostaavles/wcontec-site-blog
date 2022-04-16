@@ -21,7 +21,7 @@ function Pis(){
                          <center><a href="#pis-lucro-real"><img src="/Images/tegs-calculadoras/Tag-pis-real.png"/></a></center>   
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#pis-corretora-home"><img src="/Images/tegs-calculadoras/Tag-pis-corretoras.png"/></a></center>                                    
+                        <center><Link to="/app/pis-corretora-home"><img src="/Images/tegs-calculadoras/Tag-pis-corretoras.png"/></Link></center>                                    
                     </div>
                 </div>             
             </div> 
