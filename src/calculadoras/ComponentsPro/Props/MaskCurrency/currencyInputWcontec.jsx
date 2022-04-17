@@ -143,7 +143,13 @@ const CurrencyInputWcontec = ({
   };
 
   const handleKeyUp = event => onKeyPress(event, event.key, event.keyCode);
-  
+
+  useEffect(() => {
+    const currentValue = value || defaultValue || 0;
+    const [, maskedValue] = calculateValues(currentValue);
+
+    setMaskedValue(maskedValue);
+  }, [currency, value, defaultValue, config]);
 
   return (
     <InputComponent

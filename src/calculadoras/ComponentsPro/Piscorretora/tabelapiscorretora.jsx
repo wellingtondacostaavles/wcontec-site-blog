@@ -5,10 +5,6 @@ import './piscorretora.css';
 
 function TabelaPisCorretora(props){
 
-    function deleteUser(id){
-        alert('Excluir usuário ' + id);
-    }
-
     return <table className="table table-responsive table-hover table-bordered"><thead>
     <tr className="table-secondary">
       <th scope="col">id</th>
@@ -32,8 +28,8 @@ function TabelaPisCorretora(props){
           <td>{piscorretora.PISretidonafonte}</td>
           <td>{piscorretora.PISaPagar}</td>
           <td>
-              <Link to='#'><i className="fas fa-edit icone-acao"></i></Link>
-              <Link to='#' onClick={() => deleteUser(piscorretora.id)}><i className="far fa-trash-alt icone-acao red"></i></Link>
+              <Link to={'/app/editar-pis-corretora/' + piscorretora.id}><i className="fas fa-edit icone-acao"></i></Link>
+              <Link to='#' onClick={() => props.clickDelete(piscorretora.id)}><i className="far fa-trash-alt icone-acao red"></i></Link>
           </td>
         </tr>
         })

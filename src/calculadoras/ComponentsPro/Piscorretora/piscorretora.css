@@ -33,6 +33,11 @@ p {
   color: #323338;
 }
 
+#titulo-pis-corretora{
+  background-color: #ececec;
+  color: #323338;
+}
+
 #pis-corretora .alert {
   padding: 0 21% 0 21%;
 

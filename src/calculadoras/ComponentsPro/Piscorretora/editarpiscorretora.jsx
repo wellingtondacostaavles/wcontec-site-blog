@@ -4,13 +4,14 @@ import DatePicker from 'react-datepicker';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import {Link, Redirect}  from 'react-router-dom';
 import firebase from 'firebase';
+import 'firebase/firestore';
 
 import "react-datepicker/dist/react-datepicker.css";
 
 import './piscorretora.css';
 
 
-function Piscorretora(){    
+function EditarPiscorretora(props){    
 
       
     const currencyConfig = {
@@ -59,9 +60,19 @@ function Piscorretora(){
     const [SelectedDate, setSelectedDate] = useState('');
     const db = firebase.firestore();
 
-    function CadastrarPiscorretora(){
+    useEffect(() => {
+        firebase.firestore().collection('piscorretora').doc(props.match.params.id).get().then((resultado) => {
+            setSelectedDate(resultado.data().Periodo);
+            setNro1(resultado.data().ReceitaFinanceiras);
+            setNro2(resultado.data().PremiosdeSeguros);
+            setNro3(resultado.data().PISretidonafonte);
+            setResultado5(resultado.data().PISaPagar);
+        })
+    }, [])
 
-      db.collection('piscorretora').add({
+    function AlterarPiscorretora(){
+
+      db.collection('piscorretora').doc(props.match.params.id).update({
             Periodo: SelectedDate,
             ReceitaFinanceiras: ReceitaFinanceiras,
             PremiosdeSeguros: PremiosdeSeguros,
@@ -169,11 +180,19 @@ function Piscorretora(){
         <div className="row text-center">
                 <div className="titulo">
                     <h1>PIS corretora</h1>
-                    <p>Calcule o valor do PIS mensal a pagar para Corretoras de títulos e valores mobiliários</p>
+                    <p>Edite o valor do PIS mensal a pagar para Corretoras de títulos e valores mobiliários</p>
                 </div>
             </div>
             <div className="container">
-                <div className="row inputs-pis-corretora">
+                <div className="row inputs-pis-corretora"> 
+                <div className="col-sm-3">    
+                        <div className="mb-3">
+                            <label htmlFor="codigo-pis-corretora">Código</label>                
+                            <div className="input-group mb-3">
+                                <input className="form-control" value={props.match.params.id} name="codigo-pis-corretora" id="codigo-pis-corretora"  aria-label="Amount (to the nearest dollar)" disabled /> 
+                            </div>                     
+                        </div>
+                    </div>        
                 <div className="col-sm-3">    
                         <div className="mb-3">
                             <label htmlFor="SelectedDate-pis-corretora">Data</label>                
@@ -202,7 +221,7 @@ function Piscorretora(){
                             <label htmlFor="PremiosdeSeguros-pis-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)"  value={PremiosdeSeguros} onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)" value={PremiosdeSeguros} onChange={handleChange2} />
                             </div>                     
                         </div>
                     </div>
@@ -224,7 +243,7 @@ function Piscorretora(){
                     {SituacaoPIS ? <p>Códido do Tributo 4574</p> :''}
                     {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                         <div>
-                            <button onClick={CadastrarPiscorretora} type="button" className="btn btn-success btn-pis-corretora">Salvar</button>
+                            <button onClick={AlterarPiscorretora} type="button" className="btn btn-success btn-pis-corretora">Salvar</button>
                             <Link to="/app/pis-corretora-home" className="btn btn-outline-primary btn-pis-corretora">Cancelar</Link>
                         </div>
                         {mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null}
@@ -235,4 +254,4 @@ function Piscorretora(){
         </div> 
     }
   
-  export default Piscorretora;
+  export default EditarPiscorretora;

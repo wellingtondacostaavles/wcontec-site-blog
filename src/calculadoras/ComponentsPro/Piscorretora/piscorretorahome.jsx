@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import TabelaPisCorretora from './tabelapiscorretora';
 import Navbar from '../../../app/Components/Navbar/navbar';
 import {Link} from 'react-router-dom';
+import SweetAlert from 'react-bootstrap-sweetalert';
 
 import firebase from 'firebase';
 import 'firebase/firestore';
@@ -14,6 +15,22 @@ function Piscorretorahome(){
   const [piscorretora, setPiscorretora] = useState([]);
   const [busca, setBusca] = useState('');
   const [texto, setTexto] = useState('');
+  const [excluido, setExcluido] = useState('');
+  const [confirmacao, setConfirmacao] = useState(false); 
+  const [confirmacaoId, setConfirmacaoId] = useState(''); 
+
+
+      function deletepiscorretorapro(id){
+          firebase.firestore().collection('piscorretora').doc(id).delete().then(() => {
+            setExcluido(id);
+            setConfirmacao(false);
+          })
+      }
+
+      function confirmDeletepiscorretorapro(id){
+        setConfirmacaoId(id);
+        setConfirmacao(true);
+      }
     
       useEffect(function(){
       
@@ -36,7 +53,7 @@ function Piscorretorahome(){
           })
           setPiscorretora(listpiscorretora);
       })
-    }, [busca]);
+    }, [busca, excluido]);
    
   return <div>  
     <Navbar/>       
@@ -61,7 +78,25 @@ function Piscorretorahome(){
           </div>
       </div>
       <div className="row">
-        <TabelaPisCorretora arrayPiscorretora={piscorretora} />
+        <TabelaPisCorretora arrayPiscorretora={piscorretora} clickDelete={confirmDeletepiscorretorapro} />
+
+      {
+        confirmacao ? <SweetAlert
+                        custom
+                        showCancel
+                        showCloseButton
+                        confirmBtnText="Sim"
+                        confirmBtnBsStyle="danger"
+                        cancelBtnText="Não"
+                        cancelBtnBsStyle="light"
+                        customIcon="https://www.wcontec.com.br/Images/Logo-WCONTEC-cont-escuro.png" 
+                        title="Exclusão"
+                        onConfirm={() => deletepiscorretorapro(confirmacaoId)}
+                        onCancel={() => setConfirmacao(false)}
+                        reverseButtons={true}
+                      >
+                        Deseja excluir o valor do Pis corretora selecionado?
+                      </SweetAlert> : null }
       </div>
   </section>       
 </div>  
