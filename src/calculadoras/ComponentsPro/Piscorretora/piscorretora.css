@@ -94,3 +94,8 @@ p {
 .col-acao{
   width: 81px;
 }
+
+.btn-alerta {
+  border-radius: 50px;
+  min-width: 81px;
+}

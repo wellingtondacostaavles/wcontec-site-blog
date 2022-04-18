@@ -68,7 +68,7 @@ function EditarPiscorretora(props){
             setNro3(resultado.data().PISretidonafonte);
             setResultado5(resultado.data().PISaPagar);
         })
-    }, [])
+    }, [props.match.params.id])
 
     function AlterarPiscorretora(){
 
@@ -236,18 +236,18 @@ function EditarPiscorretora(props){
                         </div>
                     </div>
                 </div>                      
-            <div className="container">
-                <div className="row text-center">
-                    <h3>{SituacaoPIS}</h3>
-                    {SituacaoPIS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
-                    {SituacaoPIS ? <p>Códido do Tributo 4574</p> :''}
-                    {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
+                <div className="container">
+                    <div className="row text-center">
+                        <h3>{SituacaoPIS}</h3>
+                        {SituacaoPIS ? <h1>{[TributoFinal].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
+                        {SituacaoPIS ? <p>Códido do Tributo 4574</p> :''}
                         <div>
                             <button onClick={AlterarPiscorretora} type="button" className="btn btn-success btn-pis-corretora">Salvar</button>
                             <Link to="/app/pis-corretora-home" className="btn btn-outline-primary btn-pis-corretora">Cancelar</Link>
                         </div>
                         {mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null}
-                        {sucesso === 'S' ? <Redirect to='/app/pis-corretora-home'/> : null}    
+                        {sucesso === 'S' ? <Redirect to='/app/pis-corretora-home'/> : null}
+                        {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                     </div>
                 </div>
             </section>

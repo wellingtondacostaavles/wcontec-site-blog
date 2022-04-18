@@ -81,15 +81,18 @@ function Piscorretorahome(){
         <TabelaPisCorretora arrayPiscorretora={piscorretora} clickDelete={confirmDeletepiscorretorapro} />
 
       {
-        confirmacao ? <SweetAlert
+        confirmacao ? <SweetAlert 
                         custom
                         showCancel
                         showCloseButton
                         confirmBtnText="Sim"
                         confirmBtnBsStyle="danger"
+                        confirmBtnCssClass="btn-alerta"
+                        btnSize="50px"
                         cancelBtnText="Não"
                         cancelBtnBsStyle="light"
-                        customIcon="https://www.wcontec.com.br/Images/Logo-WCONTEC-cont-escuro.png" 
+                        cancelBtnCssClass="btn-alerta"
+                        customIcon="https://www.wcontec.com.br/Images/apple-icon.png" 
                         title="Exclusão"
                         onConfirm={() => deletepiscorretorapro(confirmacaoId)}
                         onCancel={() => setConfirmacao(false)}
