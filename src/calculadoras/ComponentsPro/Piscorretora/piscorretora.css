@@ -59,6 +59,7 @@ p {
 .btn-pis-corretora-home {
   border-radius: 50px;
   min-width: 100px;
+  margin-right: 12px;
 }
 
 .inputs-pis-corretora {

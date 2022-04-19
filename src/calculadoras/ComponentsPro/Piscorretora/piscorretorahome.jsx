@@ -3,6 +3,7 @@ import TabelaPisCorretora from './tabelapiscorretora';
 import Navbar from '../../../app/Components/Navbar/navbar';
 import {Link} from 'react-router-dom';
 import SweetAlert from 'react-bootstrap-sweetalert';
+import PiscorretoraPDF from './piscorretorapdf';
 
 import firebase from 'firebase';
 import 'firebase/firestore';
@@ -69,6 +70,8 @@ function Piscorretorahome(){
       <div className="row">
         <div className="col-6">
           <Link to='/app/pis-corretora' className="btn btn-success btn-pis-corretora-home" type="button"><i className="fas fa-plus"></i> Pis Corretora</Link>
+          <button onClick={(e) => PiscorretoraPDF(piscorretora)} className="btn btn-danger btn-pis-corretora-home" type="button" id="button-addon2"><i className="far fa-file-pdf"></i> Gerar PDF</button>
+          
         </div>
         <div className="col-6">
             <div className="input-group mb-3">
