@@ -37,6 +37,10 @@ p {
   padding: 1% 0 1% 0;
 }
 
+.inputs {
+  border-radius: 50px;
+}
+
 .table {
   padding: 3% 30% 0 30%;
 }

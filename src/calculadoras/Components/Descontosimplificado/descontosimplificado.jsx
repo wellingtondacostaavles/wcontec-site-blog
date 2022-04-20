@@ -142,8 +142,8 @@ function Descontosimplificado(){
                         <div className="mb-3">
                             <label htmlFor="RendimentosTributaveis-desconto-simplificado">Rendimento Tributável</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="RendimentosTributaveis-desconto-simplificado" id="RendimentosTributaveis-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RendimentosTributaveis-desconto-simplificado" id="RendimentosTributaveis-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -151,8 +151,8 @@ function Descontosimplificado(){
                         <div className="mb-3">
                             <label htmlFor="IRRF-desconto-simplificado">IRRF</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IRRF-desconto-simplificado" id="IRRF-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IRRF-desconto-simplificado" id="IRRF-desconto-simplificado" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
                             </div>                     
                         </div> 
                     </div>                    

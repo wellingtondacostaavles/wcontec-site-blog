@@ -40,6 +40,10 @@ p {
   align-items: center;
 }
 
+.inputs {
+  border-radius: 50px;
+}
+
 .table-cofins-corretora {
   padding: 3% 30% 0 30%;
 }

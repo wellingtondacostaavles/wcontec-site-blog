@@ -131,8 +131,8 @@ function Deducoeslegais(){
                         <div className="mb-3">
                             <label htmlFor="RendimentosTributaveis-deducoes-legais">Rendimento Tributável</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="RendimentosTributaveis-deducoes-legais" id="RendimentosTributaveis-deducoes-legais" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RendimentosTributaveis-deducoes-legais" id="RendimentosTributaveis-deducoes-legais" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -140,8 +140,8 @@ function Deducoeslegais(){
                         <div className="mb-3"> 
                             <label htmlFor="DeducoesLegais-deducoes-legais">Deduções Legais</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DeducoesLegais-deducoes-legais" id="DeducoesLegais-deducoes-legais" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DeducoesLegais-deducoes-legais" id="DeducoesLegais-deducoes-legais" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -149,8 +149,8 @@ function Deducoeslegais(){
                         <div className="mb-3">
                             <label htmlFor="IRRF-deducoes-legais">IRRF</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IRRF-deducoes-legais" id="IRRF-deducoes-legais" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IRRF-deducoes-legais" id="IRRF-deducoes-legais" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
                             </div>                     
                         </div> 
                     </div>   

@@ -71,12 +71,11 @@ function Piscorretorahome(){
         <div className="col-6">
           <Link to='/app/pis-corretora' className="btn btn-success btn-pis-corretora-home" type="button"><i className="fas fa-plus"></i> Pis Corretora</Link>
           <button onClick={(e) => PiscorretoraPDF(piscorretora)} className="btn btn-danger btn-pis-corretora-home" type="button" id="button-addon2"><i className="far fa-file-pdf"></i> Gerar PDF</button>
-          
         </div>
         <div className="col-6">
             <div className="input-group mb-3">
-              <input onChange={(e) => setTexto(e.target.value)} type="text" className="form-control" placeholder="Pesquisar por período" aria-describedby="button-addon2" />
-              <button onClick={(e) => setBusca(texto)} className="btn btn-primary btn-pis-corretora-home" type="button" id="button-addon2"><i className="fas fa-search"></i> Pesquisar</button>
+              <input onChange={(e) => setTexto(e.target.value)} type="text" className="form-control input-busca" placeholder="Pesquisar por período" aria-describedby="button-addon2"/>
+              <button onClick={(e) => setBusca(texto)} className="btn btn-primary btn-pis-corretora-home-pesquisar" type="button" id="button-addon2"><i className="fas fa-search"></i> Pesquisar</button>
             </div>
           </div>
       </div>

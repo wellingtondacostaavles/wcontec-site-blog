@@ -29,7 +29,12 @@ p {
 
 #pis-corretora {
   background-color: #ececec;
-  padding: 9% 3% 18% 3%;
+  padding: 9% 3% 15% 3%;
+  color: #323338;
+}
+
+#titulo-pis-corretora{
+  background-color: #ececec;
   color: #323338;
 }
 
@@ -38,10 +43,34 @@ p {
 
 }
 
+
+#pis-corretora-home {
+  background-color: #ececec;
+  padding: 9% 3% 15% 3%;
+  color: #323338;
+}
+
 .btn-pis-corretora {
-  margin: 9px 12px 24px 12px;
+  margin: 9px 9px 24px 0;
   border-radius: 50px;
   min-width: 100px;
+}
+
+.btn-pis-corretora-home {
+  border-radius: 50px;
+  min-width: 150px;
+  margin: 0 9px 3px 0;
+}
+
+.btn-pis-corretora-home-pesquisar {
+  border-radius: 50px;
+  min-width: 90px;
+  margin: 0 9px 3px 0;
+}
+
+.input-busca{
+  border-radius: 50px;
+  margin: 0 0 3px 0;
 }
 
 .inputs-pis-corretora {
@@ -49,10 +78,14 @@ p {
   padding: 1% 0 1% 0;
   justify-content: center;
   align-items: center;
-  }
+}
+
+.inputs {
+  border-radius: 50px;
+}
 
 .table-pis-corretora {
-  padding: 3% 30% 0 30%;
+  padding: 3% 3% 0 30%;
 }
 
 .titulo {
@@ -65,4 +98,22 @@ p {
 
 #pis-corretora .width20 {
   width: 20%;
+}
+
+.icone-acao{
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.red{
+  color: rgb(194, 74, 74);
+}
+
+.col-acao{
+  width: 81px;
+}
+
+.btn-alerta {
+  border-radius: 50px;
+  min-width: 81px;
 }

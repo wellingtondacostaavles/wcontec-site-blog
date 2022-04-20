@@ -41,6 +41,10 @@ p {
   align-items: center;
 }
 
+.inputs {
+  border-radius: 50px;
+}
+
 .table-desconto-simplificado {
   padding: 1% 30% 3% 30%;
 }

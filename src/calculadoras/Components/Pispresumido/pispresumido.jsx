@@ -122,8 +122,8 @@ function Pispresumido(){
                         <div className="mb-3">
                             <label htmlFor="ReceitaServicos-pis-lucro-presumido">Receita de serviços</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaServicos-pis-lucro-presumido" id="ReceitaServicos-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)" onChange={handleChange}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-pis-lucro-presumido" id="ReceitaServicos-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)" onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>    
@@ -131,8 +131,8 @@ function Pispresumido(){
                         <div className="mb-3">
                             <label htmlFor="ReceitaVendas-pis-lucro-presumido">Receita de vendas</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaVendas-pis-lucro-presumido" id="ReceitaVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-pis-lucro-presumido" id="ReceitaVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -140,8 +140,8 @@ function Pispresumido(){
                         <div className="mb-3">
                             <label htmlFor="DevolucaoVenda-pis-lucro-presumido">Devolução de venda</label>
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DevolucaoVenda-pis-lucro-presumido" id="DevolucaoVenda-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DevolucaoVenda-pis-lucro-presumido" id="DevolucaoVenda-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
                             </div>                     
                         </div>  
                     </div>
@@ -149,8 +149,8 @@ function Pispresumido(){
                         <div className="mb-3">
                             <label htmlFor="ICMSsobreVendas-pis-lucro-presumido">ICMS sobre vendas</label>
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ICMSsobreVendas-pis-lucro-presumido" id="ICMSsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ICMSsobreVendas-pis-lucro-presumido" id="ICMSsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
                             </div>                     
                         </div>
                     </div>
@@ -158,8 +158,8 @@ function Pispresumido(){
                         <div className="mb-3">
                             <label>IPI sobre vendas</label>                
                             <div htmlFor="IPIsobreVendas-pis-lucro-presumido" className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IPIsobreVendas-pis-lucro-presumido" id="IPIsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IPIsobreVendas-pis-lucro-presumido" id="IPIsobreVendas-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
                             </div>                     
                         </div>
                    </div>
@@ -167,8 +167,8 @@ function Pispresumido(){
                         <div className="mb-3">
                             <label htmlFor="RetencoesAntecipacoes-pis-lucro-presumido">PIS retido na fonte</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="RetencoesAntecipacoes-pis-lucro-presumido" id="RetencoesAntecipacoes-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange6}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RetencoesAntecipacoes-pis-lucro-presumido" id="RetencoesAntecipacoes-pis-lucro-presumido" aria-label="Amount (to the nearest dollar)"  onChange={handleChange6}/>
                             </div>                     
                         </div>                    
                     </div>

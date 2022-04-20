@@ -43,6 +43,10 @@ p {
   padding: 1% 0 3% 0;
 }
 
+.inputs {
+  border-radius: 50px;
+}
+
 .table-distribuicao-lucro-socio-sn {
   padding: 3% 30% 0 30%;
 }

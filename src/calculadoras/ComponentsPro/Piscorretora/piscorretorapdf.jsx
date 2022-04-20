@@ -17,10 +17,10 @@ function PiscorretoraPDF(piscorretoras){
         return [
             {text: piscorretora.id, fontSize: 9, margin: [0, 2, 0, 2]},
             {text: piscorretora.Periodo, fontSize: 9, margin: [0, 2, 0, 2]},
-            {text: piscorretora.ReceitaFinanceiras, fontSize: 9, margin: [0, 2, 0, 2]},
-            {text: piscorretora.PremiosdeSeguros, fontSize: 9, margin: [0, 2, 0, 2]},
-            {text: piscorretora.PISretidonafonte, fontSize: 9, margin: [0, 2, 0, 2]},
-            {text: piscorretora.PISaPagar, fontSize: 9, margin: [0, 2, 0, 2]},
+            {text: piscorretora.ReceitaFinanceiras.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'}), fontSize: 9, margin: [0, 2, 0, 2]},
+            {text: piscorretora.PremiosdeSeguros.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'}), fontSize: 9, margin: [0, 2, 0, 2]},
+            {text: piscorretora.PISretidonafonte.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'}), fontSize: 9, margin: [0, 2, 0, 2]},
+            {text: piscorretora.PISaPagar.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'}), fontSize: 9, margin: [0, 2, 0, 2]},
         ]
     })
     

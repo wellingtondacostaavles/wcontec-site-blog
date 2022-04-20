@@ -24,10 +24,10 @@ function TabelaPisCorretora(props){
           return <tr key={piscorretora.id}>
           <th scope="row">{piscorretora.id}</th>
           <td>{piscorretora.Periodo}</td>
-          <td>{piscorretora.ReceitaFinanceiras}</td>
-          <td>{piscorretora.PremiosdeSeguros}</td>
-          <td>{piscorretora.PISretidonafonte}</td>
-          <td>{piscorretora.PISaPagar}</td>
+          <td>{piscorretora.ReceitaFinanceiras.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+          <td>{piscorretora.PremiosdeSeguros.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+          <td>{piscorretora.PISretidonafonte.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+          <td>{piscorretora.PISaPagar.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
           <td>
               <Link to={'/app/editar-pis-corretora/' + piscorretora.id}><i className="fas fa-edit icone-acao"></i></Link>
               <Link to='#' onClick={() => props.clickDelete(piscorretora.id)}><i className="far fa-trash-alt icone-acao red"></i></Link>

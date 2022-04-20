@@ -178,7 +178,7 @@ function Piscorretora(){
                         <div className="mb-3">
                             <label htmlFor="SelectedDate-pis-corretora">Data</label>                
                             <div className="input-group mb-3">
-                            <DatePicker className="form-control text-center" 
+                            <DatePicker className="form-control inputs text-center" 
                                 name="SelectedDate-piscorretora"
                                 id="SelectedDate-piscorretora"
                                 selected={SelectedDate} 
@@ -192,8 +192,8 @@ function Piscorretora(){
                         <div className="mb-3">
                             <label htmlFor="ReceitaFinanceiras-pis-corretora">Receita Financeiras</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaFinanceiras-pis-corretora" id="ReceitaFinanceiras-pis-corretora"  aria-label="Amount (to the nearest dollar)" value={ReceitaFinanceiras} onChange={handleChange} /> 
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaFinanceiras-pis-corretora" id="ReceitaFinanceiras-pis-corretora"  aria-label="Amount (to the nearest dollar)" value={ReceitaFinanceiras} onChange={handleChange} /> 
                             </div>                     
                         </div>
                     </div>
@@ -201,8 +201,8 @@ function Piscorretora(){
                         <div className="mb-3">
                             <label htmlFor="PremiosdeSeguros-pis-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)"  value={PremiosdeSeguros} onChange={handleChange2}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)"  value={PremiosdeSeguros} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -210,8 +210,8 @@ function Piscorretora(){
                         <div className="mb-3">
                             <label htmlFor="RetencoesAntecipacoes-pis-corretora">PIS retido na fonte</label>                
                                 <div className="input-group mb-3">
-                                    <span className="input-group-text">R$</span>
-                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" type="text" name="RetencoesAntecipacoes-pis-corretora" id="RetencoesAntecipacoes-pis-corretora" aria-label="Amount (to the nearest dollar)" value={RetencoesAntecipacoes} onChange={handleChange3}/>
+                                    <span className="input-group-text inputs">R$</span>
+                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" type="text" name="RetencoesAntecipacoes-pis-corretora" id="RetencoesAntecipacoes-pis-corretora" aria-label="Amount (to the nearest dollar)" value={RetencoesAntecipacoes} onChange={handleChange3}/>
                                 </div>
                             </div>                     
                         </div>
