@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
+import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
 import './cofinspresumido.css';
 
@@ -106,7 +107,7 @@ function Cofinspresumido(){
         return <div>      
         
         <section id="cofins-lucro-presumido">  
-
+        <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>COFINS presumido</h1>
@@ -121,7 +122,7 @@ function Cofinspresumido(){
                             <label htmlFor="ReceitaServicos-cofins-lucro-presumido">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-cofins-lucro-presumido" id="ReceitaServicos-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" onChange={handleChange}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-cofins-lucro-presumido" id="ReceitaServicos-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" value={ReceitaServicos} onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -130,7 +131,7 @@ function Cofinspresumido(){
                             <label htmlFor="ReceitaVendas-cofins-lucro-presumido">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-cofins-lucro-presumido" id="ReceitaVendas-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-cofins-lucro-presumido" id="ReceitaVendas-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" value={ReceitaVendas} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -139,7 +140,7 @@ function Cofinspresumido(){
                             <label htmlFor="DevolucaoVenda-cofins-lucro-presumido">Devolução de venda</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DevolucaoVenda-cofins-lucro-presumido" id="DevolucaoVenda-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" onChange={handleChange3}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DevolucaoVenda-cofins-lucro-presumido" id="DevolucaoVenda-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" value={DevolucaoVenda} onChange={handleChange3}/>
                             </div>                     
                         </div>
                     </div>
@@ -148,7 +149,7 @@ function Cofinspresumido(){
                             <label htmlFor="ICMSsobreVendas-cofins-lucro-presumido">ICMS sobre vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ICMSsobreVendas-cofins-lucro-presumido" id="ICMSsobreVendas-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" onChange={handleChange4}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ICMSsobreVendas-cofins-lucro-presumido" id="ICMSsobreVendas-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" value={ICMSsobreVendas} onChange={handleChange4}/>
                             </div>                     
                         </div>
                     </div>
@@ -157,7 +158,7 @@ function Cofinspresumido(){
                             <label htmlFor="IPIsobreVendas-cofins-lucro-presumido">IPI sobre vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IPIsobreVendas-cofins-lucro-presumido" id="IPIsobreVendas-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" onChange={handleChange5}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IPIsobreVendas-cofins-lucro-presumido" id="IPIsobreVendas-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" value={IPIsobreVendas} onChange={handleChange5}/>
                             </div>                     
                         </div>
                     </div>
@@ -166,7 +167,7 @@ function Cofinspresumido(){
                             <label htmlFor="RetencoesAntecipacoes-cofins-lucro-presumido">COFINS retida na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RetencoesAntecipacoes-cofins-lucro-presumido" id="RetencoesAntecipacoes-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" onChange={handleChange6}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RetencoesAntecipacoes-cofins-lucro-presumido" id="RetencoesAntecipacoes-cofins-lucro-presumido" aria-label="Amount (to the nearest dollar)" value={RetencoesAntecipacoes} onChange={handleChange6}/>
                             </div>                     
                         </div>                    
                     </div>

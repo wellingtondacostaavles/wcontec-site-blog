@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
+import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
 import './irtrimestral.css';
 
@@ -144,7 +145,7 @@ function Irtrimestral(){
         return <div>         
         
         <section id="ir-trimestral">  
-
+        <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>IRPJ Presumido Trimestral</h1>

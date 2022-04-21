@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
+import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
 import './cslltrimestral.css';
 
@@ -118,7 +119,7 @@ function Cslltrimestral(){
         return <div>         
         
         <section id="csll-trimestral">  
-
+        <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>CSLL Presumido Trimestral</h1>

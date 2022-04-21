@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
+import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
 import './pislucroreal.css';
 
@@ -254,7 +255,7 @@ function Pislucroreal(){
         return <div>         
         
         <section id="pis-lucro-real">  
-
+        <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>PIS lucro real</h1>
@@ -269,7 +270,7 @@ function Pislucroreal(){
                         <label htmlFor="ReceitaServicos-pis-lucro-real">Receita de serviços</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-pis-lucro-real" id="ReceitaServicos-pis-lucro-real" aria-label="Amount (to the nearest dollar)" onChange={handleChange} />
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-pis-lucro-real" id="ReceitaServicos-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={ReceitaServicos} onChange={handleChange} />
                         </div>                     
                     </div>
                 </div>
@@ -278,7 +279,7 @@ function Pislucroreal(){
                         <label htmlFor="ReceitaVendas-pis-lucro-real">Receita de vendas</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-pis-lucro-real" id="ReceitaVendas-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-pis-lucro-real" id="ReceitaVendas-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={ReceitaVendas} onChange={handleChange2}/>
                         </div>                     
                     </div>
                 </div>
@@ -287,7 +288,7 @@ function Pislucroreal(){
                         <label htmlFor="ReceitasFinanceiras-pis-lucro-real">Receitas Financeiras</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitasFinanceiras-pis-lucro-real" id="ReceitasFinanceiras-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitasFinanceiras-pis-lucro-real" id="ReceitasFinanceiras-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={ReceitasFinanceiras} onChange={handleChange3}/>
                         </div>                     
                     </div> 
                 </div>
@@ -296,7 +297,7 @@ function Pislucroreal(){
                         <label htmlFor="ReceitasAlugueis-pis-lucro-real">Receitas de Aluguéis</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitasAlugueis-pis-lucro-real" id="ReceitasAlugueis-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitasAlugueis-pis-lucro-real" id="ReceitasAlugueis-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={ReceitasAlugueis} onChange={handleChange4}/>
                         </div>                     
                     </div>
                 </div>
@@ -305,7 +306,7 @@ function Pislucroreal(){
                         <label htmlFor="DevolucoesdeCompras-pis-lucro-real">Devol. de compras</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DevolucoesdeCompras-pis-lucro-real" id="DevolucoesdeCompras-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DevolucoesdeCompras-pis-lucro-real" id="DevolucoesdeCompras-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={DevolucoesdeCompras} onChange={handleChange5}/>
                         </div>                     
                     </div>
                 </div>
@@ -314,7 +315,7 @@ function Pislucroreal(){
                         <label htmlFor="DemaisReceitasOperacionais-pis-lucro-real">Demais Receitas</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DemaisReceitasOperacionais-pis-lucro-real" id="DemaisReceitasOperacionais-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange6}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DemaisReceitasOperacionais-pis-lucro-real" id="DemaisReceitasOperacionais-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={DemaisReceitasOperacionais} onChange={handleChange6}/>
                         </div>                     
                     </div>
                 </div>
@@ -323,7 +324,7 @@ function Pislucroreal(){
                         <label htmlFor="ReceitasNaoTributaveis-pis-lucro-real">Rec. não tributáveis*</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitasNaoTributaveis-pis-lucro-real" id="ReceitasNaoTributaveis-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange7}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitasNaoTributaveis-pis-lucro-real" id="ReceitasNaoTributaveis-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={ReceitasNaoTributaveis} onChange={handleChange7}/>
                         </div>                     
                     </div>                    
                 </div>
@@ -332,7 +333,7 @@ function Pislucroreal(){
                         <label htmlFor="OperacoescomDiretoaCredito-pis-lucro-real">Operações de crédito*</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="OperacoescomDiretoaCredito-pis-lucro-real" id="OperacoescomDiretoaCredito-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange8}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="OperacoescomDiretoaCredito-pis-lucro-real" id="OperacoescomDiretoaCredito-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={OperacoescomDiretoaCredito} onChange={handleChange8}/>
                         </div>                     
                     </div>
                 </div>
@@ -341,7 +342,7 @@ function Pislucroreal(){
                         <label htmlFor="ICMSsobrevendas-pis-lucro-real">ICMS sobre vendas</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ICMSsobrevendas-pis-lucro-real" id="ICMSsobrevendas-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange9}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ICMSsobrevendas-pis-lucro-real" id="ICMSsobrevendas-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={ICMSsobrevendas} onChange={handleChange9}/>
                         </div>                     
                     </div>
                 </div>
@@ -350,7 +351,7 @@ function Pislucroreal(){
                         <label htmlFor="IPIsobrevendas-pis-lucro-real">IPI sobre vendas</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IPIsobrevendas-pis-lucro-real" id="IPIsobrevendas-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange10}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IPIsobrevendas-pis-lucro-real" id="IPIsobrevendas-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={IPIsobrevendas} onChange={handleChange10}/>
                         </div>
                     </div> 
                 </div>
@@ -359,7 +360,7 @@ function Pislucroreal(){
                         <label htmlFor="PISpagonaimportacao-pis-lucro-real">PIS pg na importação</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="PISpagonaimportacao-pis-lucro-real" id="PISpagonaimportacao-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange11}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="PISpagonaimportacao-pis-lucro-real" id="PISpagonaimportacao-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={PISpagonaimportacao} onChange={handleChange11}/>
                         </div>                     
                     </div>
                 </div>
@@ -368,7 +369,7 @@ function Pislucroreal(){
                         <label htmlFor="SaldoCredordemesanterior-pis-lucro-real">Saldo Credor anterior</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="SaldoCredordemesanterior-pis-lucro-real" id="SaldoCredordemesanterior-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange12}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="SaldoCredordemesanterior-pis-lucro-real" id="SaldoCredordemesanterior-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={SaldoCredordemesanterior} onChange={handleChange12}/>
                         </div>                     
                     </div>
                 </div>
@@ -377,7 +378,7 @@ function Pislucroreal(){
                         <label htmlFor="RetençõesFeitasAnteçipacoes-pis-lucro-real">PIS retido na fonte</label>                
                         <div className="input-group mb-3">
                             <span className="input-group-text inputs">R$</span>
-                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RetençõesFeitasAnteçipacoes-pis-lucro-real" id="RetençõesFeitasAnteçipacoes-pis-lucro-real" aria-label="Amount (to the nearest dollar)"  onChange={handleChange13}/>
+                            <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RetençõesFeitasAnteçipacoes-pis-lucro-real" id="RetençõesFeitasAnteçipacoes-pis-lucro-real" aria-label="Amount (to the nearest dollar)" value={RetençõesFeitasAnteçipacoes} onChange={handleChange13}/>
                         </div>                     
                     </div>
                 </div>

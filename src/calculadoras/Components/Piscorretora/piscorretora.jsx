@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
+import NavbarCalculadora from '../Navbar/navbarcalculadora';
 import {Link, Redirect}  from 'react-router-dom';
 
 
@@ -113,9 +114,8 @@ function Piscorretora(){
     useEffect (() =>{setResultado5(calcular5())},[TotaldosTributosSobreReceitas, RetencoesAntecipacoes, operacaoTributoFinal]);
 
    return <div>         
-        
         <section id="pis-corretora">  
-        
+        <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>PIS corretora</h1>
@@ -138,7 +138,7 @@ function Piscorretora(){
                             <label htmlFor="PremiosdeSeguros-pis-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)"  step="0.01" onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="PremiosdeSeguros-pis-corretora" id="PremiosdeSeguros-pis-corretora" aria-label="Amount (to the nearest dollar)" value={PremiosdeSeguros} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -147,7 +147,7 @@ function Piscorretora(){
                             <label htmlFor="RetencoesAntecipacoes-pis-corretora">PIS retido na fonte</label>                
                                 <div className="input-group mb-3">
                                     <span className="input-group-text inputs">R$</span>
-                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" type="text" name="RetencoesAntecipacoes-pis-corretora" id="RetencoesAntecipacoes-pis-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange3}/>
+                                    <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RetencoesAntecipacoes-pis-corretora" id="RetencoesAntecipacoes-pis-corretora" aria-label="Amount (to the nearest dollar)" value={RetencoesAntecipacoes} onChange={handleChange3}/>
                                 </div>
                             </div>                     
                         </div>

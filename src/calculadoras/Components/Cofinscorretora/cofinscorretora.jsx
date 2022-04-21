@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
+import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
 import './cofinscorretora.css';
 
@@ -101,7 +102,7 @@ function Cofinscorretora(){
         return <div>         
         
         <section id="cofins-corretora">  
-
+        <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>COFINS corretora</h1>

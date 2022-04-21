@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
+import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
 import './distribuicaolucrosociosn.css';
 
@@ -101,7 +102,7 @@ function Distribuicaolucrosociosn(){
         return <div>         
         
         <section id="distribuicao-lucro-socio-sn">  
-
+        <NavbarCalculadora/>
             <div className="row text-center">
                 <div className="titulo">
                     <h1>Lucro anual do sócio Simples Nacional</h1>
@@ -116,7 +117,7 @@ function Distribuicaolucrosociosn(){
                             <label htmlFor="ReceitaServicos-distribuicao-lucro-socio-sn">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-distribuicao-lucro-socio-sn" id="ReceitaServicos-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-distribuicao-lucro-socio-sn" id="ReceitaServicos-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)" value={ReceitaServicos} onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -125,7 +126,7 @@ function Distribuicaolucrosociosn(){
                             <label htmlFor="ReceitaVendas-distribuicao-lucro-socio-sn">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-distribuicao-lucro-socio-sn" id="ReceitaVendas-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-distribuicao-lucro-socio-sn" id="ReceitaVendas-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)" value={ReceitaVendas} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -134,7 +135,7 @@ function Distribuicaolucrosociosn(){
                             <label htmlFor="ReceitaFinanceira-distribuicao-lucro-socio-sn">Receita Financeira</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaFinanceira-distribuicao-lucro-socio-sn" id="ReceitaFinanceira-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaFinanceira-distribuicao-lucro-socio-sn" id="ReceitaFinanceira-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)" value={ReceitaFinanceira} onChange={handleChange3}/>
                             </div>                     
                         </div>
                     </div>  
@@ -143,7 +144,7 @@ function Distribuicaolucrosociosn(){
                             <label htmlFor="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn">IRPJ pagos no SN*</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn" id="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn" id="IRPJpagosnoSimplesNacional-distribuicao-lucro-socio-sn" aria-label="Amount (to the nearest dollar)" value={IRPJpagosnoSimplesNacional} onChange={handleChange4}/>
                             </div>                     
                         </div>
                     </div>                    

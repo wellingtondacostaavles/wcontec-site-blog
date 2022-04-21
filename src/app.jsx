@@ -9,9 +9,23 @@ import NovaConta from './app/NovaConta/novaconta.jsx';
 import ResetSenha from './app/ResetSenha/resetsenha.jsx';
 import Calculadorasapp from './calculadoras/calculadorasapp.jsx';
 import Piscorretorahome from './calculadoras/ComponentsPro/Piscorretora/piscorretorahome.jsx';
-import Piscorretora from './calculadoras/ComponentsPro/Piscorretora/piscorretora.jsx';
+import PiscorretoraPro from './calculadoras/ComponentsPro/Piscorretora/piscorretora.jsx';
 import EditarPiscorretora from './calculadoras/ComponentsPro/Piscorretora/editarpiscorretora.jsx';
 import Calculadoras from './calculadoras/calculadoras.jsx';
+import Customensalcomfuncionario from './calculadoras/Components/Customensalcomfuncionario/customensalcomfuncionario.jsx';
+import Customensalcomfuncionarionaooptantedosimplesnacional from './calculadoras/Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional.jsx';
+import Distribuicaolucromei from './calculadoras/Components/Distribuicaolucromei/distribuicaolucromei.jsx';
+import Distribuicaolucrosociosn from './calculadoras/Components/Distribuicaolucrosociosn/distribuicaolucrosociosn.jsx';
+import Descontosimplificado from './calculadoras/Components/Descontosimplificado/descontosimplificado.jsx';
+import Deducoeslegais from './calculadoras/Components/Deducoeslegais/deducoeslegais.jsx';
+import Pispresumido from './calculadoras/Components/Pispresumido/pispresumido.jsx';
+import Pislucroreal from './calculadoras/Components/Pislucroreal/pislucroreal.jsx';
+import Piscorretora from './calculadoras/Components/Piscorretora/piscorretora.jsx';
+import Cofinsreal from './calculadoras/Components/Cofinsreal/cofinsreal.jsx';
+import Cofinscorretora from './calculadoras/Components/Cofinscorretora/cofinscorretora.jsx';
+import Irtrimestral from './calculadoras/Components/IRPJTrimestral/irtrimestral.jsx';
+import Cslltrimestral from './calculadoras/Components/CSLLTrimestral/cslltrimestral.jsx';
+import Metrocubico from './calculadoras/Components/Metrocubico/metrocubico.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
 import Descadastramento from './descadastrese/descadastramento.jsx';
 import Certificacaodigital from './parceiros/certificacaodigital.jsx';
@@ -41,6 +55,7 @@ import Novidadesnadeclaracaoirpf22 from './blog/Artigos/DIRPF22/Novidadesnadecla
 import Documentosnecessarios from './blog/Artigos/DIRPF22/Documentosnecessarios/documentosnecessarios.jsx';
 import Deducoeslegaisdescontosimplificado from './blog/Artigos/DIRPF22/Deducoeslegaisdescontosimplificado/deducoeslegais-descontosimplificado.jsx';
 import Microempreendedor from './blog/Artigos/Microempreendedor/microempreendedor.jsx';
+import Cofinspresumido from './calculadoras/Components/Cofinspresumido/cofinspresumido.jsx';
 
 
 function App(){
@@ -62,9 +77,24 @@ function App(){
       <Route exact path='/app/recuperar-senha' component={ResetSenha} /> 
       <SecureRoute exact path='/app/calculadoras' component={Calculadorasapp} />
       <SecureRoute exact path='/app/pis-corretora-home' component={Piscorretorahome} />
-      <SecureRoute exact path='/app/pis-corretora' component={Piscorretora} />
+      <SecureRoute exact path='/app/pis-corretora' component={PiscorretoraPro} />
       <SecureRoute exact path='/app/editar-pis-corretora/:id' component={EditarPiscorretora} />
       <Route exact path='/calculadoras' component={Calculadoras} />
+      <Route exact path='/custo-mensal-com-funcionario-optante-simples-nacional' component={Customensalcomfuncionario} />
+      <Route exact path='/custo-mensal-com-funcionario-nao-optante-simples-nacional' component={Customensalcomfuncionarionaooptantedosimplesnacional} />
+      <Route exact path='/distribuicao-lucro-mei' component={Distribuicaolucromei} />
+      <Route exact path='/distribuicao-lucro-socio-simples-nacional' component={Distribuicaolucrosociosn} />
+      <Route exact path='/desconto-simplificado' component={Descontosimplificado} />
+      <Route exact path='/deducoes-legais' component={Deducoeslegais} />
+      <Route exact path='/pis-presumido' component={Pispresumido} />
+      <Route exact path='/pis-lucro-real' component={Pislucroreal} />
+      <Route exact path='/pis-corretora' component={Piscorretora} />
+      <Route exact path='/cofins-presumido' component={Cofinspresumido} />
+      <Route exact path='/cofins-lucro-real' component={Cofinsreal} />
+      <Route exact path='/cofins-corretora' component={Cofinscorretora} />
+      <Route exact path='/irpj-lucro-presumido' component={Irtrimestral} />
+      <Route exact path='/csll-lucro-presumido' component={Cslltrimestral} />
+      <Route exact path='/metro-cubico' component={Metrocubico} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
       <Route exact path='/parceiro-certificacao-digital' component={Certificacaodigital} />

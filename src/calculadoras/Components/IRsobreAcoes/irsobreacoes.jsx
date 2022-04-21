@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import DatePicker from "react-datepicker";
+import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -94,7 +95,7 @@ function Irsobreacoes(){
         return <div>         
         
         <section id="ir-sobre-acoes">  
-
+        <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>IR Sobre Ações</h1>

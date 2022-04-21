@@ -29,10 +29,10 @@ function Tributos(){
         <div className="container">                              
             <div className="row">
             <   div className="col-lg-4 tgs">
-                    <center><a href="#ir-trimestral"><img src="/Images/tegs-calculadoras/Tag-irpj-presumido.png"/></a></center>                                                    
+                    <center><Link to="/irpj-lucro-presumido"><img src="/Images/tegs-calculadoras/Tag-irpj-presumido.png"/></Link></center>
                 </div>
                 <div className="col-lg-4 tgs">
-                    <center><a href="#csll-trimestral"><img src="/Images/tegs-calculadoras/Tag-csll-presumido.png"/></a></center>
+                    <center><Link to="/csll-lucro-presumido"><img src="/Images/tegs-calculadoras/Tag-csll-presumido.png"/></Link></center>
                 </div>
                 <div className="col-lg-4 tgs">
                     <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                                      

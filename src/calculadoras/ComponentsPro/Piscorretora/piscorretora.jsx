@@ -10,7 +10,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import './piscorretora.css';
 
 
-function Piscorretora(){    
+function PiscorretoraPro(){    
 
       
     const currencyConfig = {
@@ -235,4 +235,4 @@ function Piscorretora(){
         </div> 
     }
   
-  export default Piscorretora;
+  export default PiscorretoraPro;

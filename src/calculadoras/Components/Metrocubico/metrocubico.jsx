@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
 
 import './metrocubico.css';
@@ -40,7 +41,7 @@ function Metrocubico(){
       return <div>          
         
         <section id="metroscubicos">    
-  
+        <NavbarCalculadora/>
          <div className="row">
              <div className="titulo">
                 <h1>Calculadora de Metro Cúbico</h1>
