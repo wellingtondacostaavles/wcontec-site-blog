@@ -117,7 +117,7 @@ function Cofinscorretora(){
                             <label htmlFor="ReceitaFinanceiras-cofins-corretora">Receita Financeiras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaFinanceiras-cofins-corretora" id="ReceitaFinanceiras-cofins-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaFinanceiras-cofins-corretora" id="ReceitaFinanceiras-cofins-corretora" aria-label="Amount (to the nearest dollar)" value={ReceitaFinanceiras} onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -126,7 +126,7 @@ function Cofinscorretora(){
                             <label htmlFor="PremiosdeSeguros-cofins-corretora">Prêmios de Seguros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="PremiosdeSeguros-cofins-corretora" id="PremiosdeSeguros-cofins-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="PremiosdeSeguros-cofins-corretora" id="PremiosdeSeguros-cofins-corretora" aria-label="Amount (to the nearest dollar)" value={PremiosdeSeguros} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -135,7 +135,7 @@ function Cofinscorretora(){
                             <label htmlFor="RetencoesAntecipacoes-cofins-corretora">COFINS retida na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RetencoesAntecipacoes-cofins-corretora" id="RetencoesAntecipacoes-cofins-corretora" aria-label="Amount (to the nearest dollar)" onChange={handleChange3}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="RetencoesAntecipacoes-cofins-corretora" id="RetencoesAntecipacoes-cofins-corretora" aria-label="Amount (to the nearest dollar)" value={RetencoesAntecipacoes} onChange={handleChange3}/>
                             </div>                     
                         </div>
                     </div>

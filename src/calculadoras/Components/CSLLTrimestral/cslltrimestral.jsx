@@ -134,7 +134,7 @@ function Cslltrimestral(){
                             <label htmlFor="ReceitaServicos-csll-trimestral">Receita de serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-csll-trimestral" id="ReceitaServicos-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-csll-trimestral" id="ReceitaServicos-csll-trimestral" aria-label="Amount (to the nearest dollar)" value={ReceitaServicos} onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -143,7 +143,7 @@ function Cslltrimestral(){
                             <label htmlFor="ReceitaVendas-csll-trimestral">Receita de vendas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-csll-trimestral" id="ReceitaVendas-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-csll-trimestral" id="ReceitaVendas-csll-trimestral" aria-label="Amount (to the nearest dollar)" value={ReceitaVendas} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -152,7 +152,7 @@ function Cslltrimestral(){
                             <label htmlFor="DevolucaoVenda-csll-trimestral">Devolução de venda</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DevolucaoVenda-csll-trimestral" id="DevolucaoVenda-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DevolucaoVenda-csll-trimestral" id="DevolucaoVenda-csll-trimestral" aria-label="Amount (to the nearest dollar)" value={DevolucaoVenda} onChange={handleChange3}/>
                             </div>                     
                         </div>  
                     </div>
@@ -161,7 +161,7 @@ function Cslltrimestral(){
                             <label htmlFor="ReceitaFinanceira-csll-trimestral">Receita Financeira</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaFinanceira-csll-trimestral" id="ReceitaFinanceira-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaFinanceira-csll-trimestral" id="ReceitaFinanceira-csll-trimestral" aria-label="Amount (to the nearest dollar)" value={ReceitaFinanceira} onChange={handleChange4}/>
                             </div>                     
                         </div>
                     </div>
@@ -170,7 +170,7 @@ function Cslltrimestral(){
                             <label htmlFor="CSLLRFAntecipacoes-csll-trimestral">CSLL retida na fonte</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="CSLLRFAntecipacoes-csll-trimestral" id="CSLLRFAntecipacoes-csll-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="CSLLRFAntecipacoes-csll-trimestral" id="CSLLRFAntecipacoes-csll-trimestral" aria-label="Amount (to the nearest dollar)" value={CSLLRFAntecipacoes} onChange={handleChange5}/>
                             </div>                     
                         </div>                    
                     </div>
