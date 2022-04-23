@@ -1,9 +1,9 @@
-import Navbar from '../app/Components/Navbar/navbar';
+import NavbarApp from '../app/Components/Navbar/navbar';
 import Capacalculadora from './ComponentsPro/Capacalculadora/capacalculadora';
 import Escolhaumacalculadora from './ComponentsPro/Escolhaumacalculadora/escolhaumacalculadora';
 import Calculostrabalhistas from './ComponentsPro/Escolhaumacalculadora/calculostrabalhistas';
 import Customensalcomfuncionario from '../calculadoras/ComponentsPro/Customensalcomfuncionario/customensalcomfuncionario';
-import Customensalcomfuncionarionaooptantedosimplesnacional from './Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional';
+import CustomensalcomfuncionarionaooptantedosimplesnacionalPro from './ComponentsPro/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional';
 import DeclaracaoIRPF from './ComponentsPro/Escolhaumacalculadora/declaracaoIRPF';
 import Distribuicaolucromei from './ComponentsPro/Distribuicaolucromei/distribuicaolucromei';
 import Distribuicaolucrosociosn from './ComponentsPro/Distribuicaolucrosociosn/distribuicaolucrosociosn';
@@ -25,36 +25,22 @@ import Ultimosartigosblog from '../site/Components/ultimosartigosblog';
 import Parceiros from '../site/Components/parceiros';
 import Footer from '../site/Components/contato';
 
-function Calculadoras(){
+function Calculadorasapp(){
   
   return <div>
-      <Navbar/> 
+      <NavbarApp/>
       <Capacalculadora/>
       <Escolhaumacalculadora/>
       <Calculostrabalhistas/>
-      <Customensalcomfuncionario/>
-      <Customensalcomfuncionarionaooptantedosimplesnacional/>
       <DeclaracaoIRPF/>
-      <Distribuicaolucromei/>
-      <Distribuicaolucrosociosn/>
-      <Descontosimplificado/>
-      <Deducoeslegais/>
       <Tributos/>
       <Pis/>
-      <Pispresumido/>
-      <Pislucroreal/>
       <Cofins/>
-      <Cofinspresumido/>
-      <Cofinsreal/>
-      <Cofinscorretora/>
-      <Irtrimestral/>
-      <Cslltrimestral/>
       <Construcaocivil/>
-      <Metrocubico/>  
       <Ultimosartigosblog/>
       <Parceiros/>   
       <Footer/>      
     </div> 
   }
 
-export default Calculadoras;
+export default Calculadorasapp;

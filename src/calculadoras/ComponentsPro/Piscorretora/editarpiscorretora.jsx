@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Navbar from '../../../app/Components/Navbar/navbar';
+import NavbarApp from '../../../app/Components/Navbar/navbar';
 import DatePicker from 'react-datepicker';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import {Link, Redirect}  from 'react-router-dom';
@@ -173,7 +173,7 @@ function EditarPiscorretora(props){
     useEffect (() =>{setResultado5(calcular5())},[TotaldosTributosSobreReceitas, RetencoesAntecipacoes, operacaoTributoFinal]);
 
    return <div>         
-        <Navbar/>
+        <NavbarApp/>
         <section id="pis-corretora"> 
          
         
@@ -243,10 +243,10 @@ function EditarPiscorretora(props){
                         {SituacaoPIS ? <p>Códido do Tributo 4574</p> :''}
                         <div>
                             <button onClick={AlterarPiscorretora} type="button" className="btn btn-success btn-pis-corretora">Salvar</button>
-                            <Link to="/app/pis-corretora-home" className="btn btn-outline-primary btn-pis-corretora">Cancelar</Link>
+                            <Link to="/app/calculadoras-pro-pis-corretora-home" className="btn btn-outline-primary btn-pis-corretora">Cancelar</Link>
                         </div>
                         {mensagem.length > 0 ? <div className="alert alert-danger mt-2" role="alert">{mensagem}</div> : null}
-                        {sucesso === 'S' ? <Redirect to='/app/pis-corretora-home'/> : null}
+                        {sucesso === 'S' ? <Redirect to='/app/calculadoras-pro-pis-corretora-home'/> : null}
                         {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                     </div>
                 </div>

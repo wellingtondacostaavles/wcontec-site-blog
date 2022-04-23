@@ -75,26 +75,26 @@ function App(){
       <Route exact path='/app' component={Login} />   
       <Route exact path='/app/criar-conta' component={NovaConta} />
       <Route exact path='/app/recuperar-senha' component={ResetSenha} /> 
-      <SecureRoute exact path='/app/calculadoras' component={Calculadorasapp} />
-      <SecureRoute exact path='/app/pis-corretora-home' component={Piscorretorahome} />
-      <SecureRoute exact path='/app/pis-corretora' component={PiscorretoraPro} />
-      <SecureRoute exact path='/app/editar-pis-corretora/:id' component={EditarPiscorretora} />
+      <SecureRoute exact path='/app/calculadoras-pro' component={Calculadorasapp} />
+      <SecureRoute exact path='/app/calculadoras-pro-pis-corretora-home' component={Piscorretorahome} />
+      <SecureRoute exact path='/app/calculadoras-pro-pis-corretora' component={PiscorretoraPro} />
+      <SecureRoute exact path='/app/calculadoras-pro-editar-pis-corretora/:id' component={EditarPiscorretora} />
       <Route exact path='/calculadoras' component={Calculadoras} />
-      <Route exact path='/custo-mensal-com-funcionario-optante-simples-nacional' component={Customensalcomfuncionario} />
-      <Route exact path='/custo-mensal-com-funcionario-nao-optante-simples-nacional' component={Customensalcomfuncionarionaooptantedosimplesnacional} />
-      <Route exact path='/distribuicao-lucro-mei' component={Distribuicaolucromei} />
-      <Route exact path='/distribuicao-lucro-socio-simples-nacional' component={Distribuicaolucrosociosn} />
-      <Route exact path='/desconto-simplificado' component={Descontosimplificado} />
-      <Route exact path='/deducoes-legais' component={Deducoeslegais} />
-      <Route exact path='/pis-presumido' component={Pispresumido} />
-      <Route exact path='/pis-lucro-real' component={Pislucroreal} />
-      <Route exact path='/pis-corretora' component={Piscorretora} />
-      <Route exact path='/cofins-presumido' component={Cofinspresumido} />
-      <Route exact path='/cofins-lucro-real' component={Cofinsreal} />
-      <Route exact path='/cofins-corretora' component={Cofinscorretora} />
-      <Route exact path='/irpj-lucro-presumido' component={Irtrimestral} />
-      <Route exact path='/csll-lucro-presumido' component={Cslltrimestral} />
-      <Route exact path='/metro-cubico' component={Metrocubico} />
+      <Route exact path='/calculadoras-custo-mensal-com-funcionario-optante-simples-nacional' component={Customensalcomfuncionario} />
+      <Route exact path='/calculadoras-custo-mensal-com-funcionario-nao-optante-simples-nacional' component={Customensalcomfuncionarionaooptantedosimplesnacional} />
+      <Route exact path='/calculadoras-distribuicao-lucro-mei' component={Distribuicaolucromei} />
+      <Route exact path='/calculadoras-distribuicao-lucro-socio-simples-nacional' component={Distribuicaolucrosociosn} />
+      <Route exact path='/calculadoras-desconto-simplificado' component={Descontosimplificado} />
+      <Route exact path='/calculadoras-deducoes-legais' component={Deducoeslegais} />
+      <Route exact path='/calculadoras-pis-presumido' component={Pispresumido} />
+      <Route exact path='/calculadoras-pis-lucro-real' component={Pislucroreal} />
+      <Route exact path='/calculadoras-pis-corretora' component={Piscorretora} />
+      <Route exact path='/calculadoras-cofins-presumido' component={Cofinspresumido} />
+      <Route exact path='/calculadoras-cofins-lucro-real' component={Cofinsreal} />
+      <Route exact path='/calculadoras-cofins-corretora' component={Cofinscorretora} />
+      <Route exact path='/calculadoras-irpj-lucro-presumido' component={Irtrimestral} />
+      <Route exact path='/calculadoras-csll-lucro-presumido' component={Cslltrimestral} />
+      <Route exact path='/calculadoras-metro-cubico' component={Metrocubico} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
       <Route exact path='/parceiro-certificacao-digital' component={Certificacaodigital} />

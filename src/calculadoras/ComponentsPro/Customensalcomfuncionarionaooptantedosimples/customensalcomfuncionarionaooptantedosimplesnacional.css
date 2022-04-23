@@ -39,6 +39,10 @@ p {
   padding: 1% 0 1% 0;
 }
 
+.inputs {
+  border-radius: 50px;
+}
+
 .table-custo-mensal-com-funcionario-nao-optante-do-simples-nacional {
   padding: 1% 30% 3% 30%;
 }

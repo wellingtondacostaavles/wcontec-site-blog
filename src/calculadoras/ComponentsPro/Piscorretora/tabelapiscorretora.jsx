@@ -29,7 +29,7 @@ function TabelaPisCorretora(props){
           <td>{piscorretora.PISretidonafonte.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
           <td>{piscorretora.PISaPagar.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
           <td>
-              <Link to={'/app/editar-pis-corretora/' + piscorretora.id}><i className="fas fa-edit icone-acao"></i></Link>
+              <Link to={'/app/calculadoras-pro-editar-pis-corretora/' + piscorretora.id}><i className="fas fa-edit icone-acao"></i></Link>
               <Link to='#' onClick={() => props.clickDelete(piscorretora.id)}><i className="far fa-trash-alt icone-acao red"></i></Link>
           </td>
         </tr>

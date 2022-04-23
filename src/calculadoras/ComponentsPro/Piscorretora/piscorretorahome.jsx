@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import TabelaPisCorretora from './tabelapiscorretora';
 import Navbar from '../../../app/Components/Navbar/navbar';
+import NavbarApp from '../../../app/Components/Navbar/navbar';
 import {Link} from 'react-router-dom';
 import SweetAlert from 'react-bootstrap-sweetalert';
 import PiscorretoraPDF from './piscorretorapdf';
@@ -57,7 +58,7 @@ function Piscorretorahome(){
     }, [busca, excluido]);
    
   return <div>  
-    <Navbar/>       
+    <NavbarApp/>       
         
   <section id="pis-corretora-home">  
   
@@ -69,7 +70,7 @@ function Piscorretorahome(){
       </div>
       <div className="row">
         <div className="col-6">
-          <Link to='/app/pis-corretora' className="btn btn-success btn-pis-corretora-home" type="button"><i className="fas fa-plus"></i> Pis Corretora</Link>
+          <Link to='/app/calculadoras-pro-pis-corretora' className="btn btn-success btn-pis-corretora-home" type="button"><i className="fas fa-plus"></i> Pis Corretora</Link>
           <button onClick={(e) => PiscorretoraPDF(piscorretora)} className="btn btn-danger btn-pis-corretora-home" type="button" id="button-addon2"><i className="far fa-file-pdf"></i> Gerar PDF</button>
         </div>
         <div className="col-6">

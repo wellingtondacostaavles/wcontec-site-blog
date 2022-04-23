@@ -158,8 +158,8 @@ function Irtrimestral(){
                         <div className="mb-3">
                             <label htmlFor="ReceitaServicos-ir-trimestral">Receita de serviços</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaServicos-ir-trimestral" id="ReceitaServicos-ir-trimestral" aria-label="Amount (to the nearest dollar)" onChange={handleChange}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaServicos-ir-trimestral" id="ReceitaServicos-ir-trimestral" aria-label="Amount (to the nearest dollar)" onChange={handleChange}/>
                             </div>                     
                         </div>
                     </div>
@@ -167,8 +167,8 @@ function Irtrimestral(){
                         <div className="mb-3">
                             <label htmlFor="ReceitaVendas-ir-trimestral">Receita de vendas</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaVendas-ir-trimestral" id="ReceitaVendas-ir-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaVendas-ir-trimestral" id="ReceitaVendas-ir-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
@@ -176,8 +176,8 @@ function Irtrimestral(){
                         <div className="mb-3">
                             <label htmlFor="DevolucaoVenda-ir-trimestral">Devolução de venda</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="DevolucaoVenda-ir-trimestral" id="DevolucaoVenda-ir-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DevolucaoVenda-ir-trimestral" id="DevolucaoVenda-ir-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange3}/>
                             </div>                     
                         </div> 
                     </div>
@@ -185,8 +185,8 @@ function Irtrimestral(){
                         <div className="mb-3">
                             <label htmlFor="ReceitaFinanceira-ir-trimestral">Receita Financeira</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="ReceitaFinanceira-ir-trimestral" id="ReceitaFinanceira-ir-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitaFinanceira-ir-trimestral" id="ReceitaFinanceira-ir-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange4}/>
                             </div>                     
                         </div>
                     </div>
@@ -194,8 +194,8 @@ function Irtrimestral(){
                         <div className="mb-3">
                             <label htmlFor="IRRFAntecipacoes-ir-trimestral">IRRF</label>                
                             <div className="input-group mb-3">
-                                <span className="input-group-text">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control" name="IRRFAntecipacoes-ir-trimestral" id="IRRFAntecipacoes-ir-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="IRRFAntecipacoes-ir-trimestral" id="IRRFAntecipacoes-ir-trimestral" aria-label="Amount (to the nearest dollar)"  onChange={handleChange5}/>
                             </div>                     
                         </div>                    
                     </div>

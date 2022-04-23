@@ -15,10 +15,10 @@ function DeclaracaoIRPF(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/distribuicao-lucro-mei"><img src="/Images/tegs-calculadoras/Tag-lucro-do-MEI-a-ser-distribuido-na-DIRPF.png"/></Link></center>
+                        <center><Link to="/calculadoras-distribuicao-lucro-mei"><img src="/Images/tegs-calculadoras/Tag-lucro-do-MEI-a-ser-distribuido-na-DIRPF.png"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><Link to="/distribuicao-lucro-socio-simples-nacional"><img src="/Images/tegs-calculadoras/Tag-lucro-do-Socio-Empresa-Simples-Nacional.png"/></Link></center>
+                         <center><Link to="/calculadoras-distribuicao-lucro-socio-simples-nacional"><img src="/Images/tegs-calculadoras/Tag-lucro-do-Socio-Empresa-Simples-Nacional.png"/></Link></center>
                     </div>             
                     <div className="col-lg-4 tgs">
                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                    
@@ -32,10 +32,10 @@ function DeclaracaoIRPF(){
                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                   
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><Link to="/desconto-simplificado"><img src="/Images/tegs-calculadoras/Tag-IRPF-desconto-simplificado.png"/></Link></center>
+                         <center><Link to="/calculadoras-desconto-simplificado"><img src="/Images/tegs-calculadoras/Tag-IRPF-desconto-simplificado.png"/></Link></center>
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/deducoes-legais"><img src="/Images/tegs-calculadoras/Tag-IRPF-deducoes-legais.png"/></Link></center>
+                        <center><Link to="/calculadoras-deducoes-legais"><img src="/Images/tegs-calculadoras/Tag-IRPF-deducoes-legais.png"/></Link></center>
                     </div>
                 </div>             
             </div>     

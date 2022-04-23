@@ -55,7 +55,7 @@ function Metrocubico(){
                   <div className="mb-3">
                       <label htmlFor="Material-metroscubicos">Material</label>
                       <div className="input-group mb-3">
-                        <select name="Material-metroscubicos" id="Material-metroscubicos" value={Material} onChange={texto => setMaterial(texto.target.value)} className="form-select" aria-label="Default select example">
+                        <select name="Material-metroscubicos" id="Material-metroscubicos" value={Material} onChange={texto => setMaterial(texto.target.value)} className="form-select inputs" aria-label="Default select example">
                         <option value="">--</option>
                         <option value="Areia">Areia</option>
                         <option value="Saibro">Saibro</option>
@@ -71,8 +71,8 @@ function Metrocubico(){
                     <div className="mb-3">
                       <label htmlFor="Largura-metroscubicos">Largura</label>
                       <div className="input-group mb-3">
-                          <span className="input-group-text">MT</span>
-                          <input className="form-control" type="number" name="Largura-metroscubicos" id="Largura-metroscubicos" aria-label="Amount (to the nearest dollar)" value={Largura} onChange={(e) => setNro1(e.target.value)} />
+                          <span className="input-group-text inputs">MT</span>
+                          <input className="form-control inputs" type="number" name="Largura-metroscubicos" id="Largura-metroscubicos" aria-label="Amount (to the nearest dollar)" value={Largura} onChange={(e) => setNro1(e.target.value)} />
                     </div>
                   </div>  
                 </div>
@@ -80,8 +80,8 @@ function Metrocubico(){
                   <div className="mb-3">
                     <label htmlFor="Comprimento-metroscubicos">Comprimento</label>
                     <div className="input-group mb-3">
-                        <span className="input-group-text">MT</span>  
-                        <input className="form-control" type="number" name="Comprimento-metroscubicos" id="Comprimento-metroscubicos" aria-label="Amount (to the nearest dollar)" value={Comprimento} onChange={(e) => setNro2(e.target.value)} />
+                        <span className="input-group-text inputs">MT</span>  
+                        <input className="form-control inputs" type="number" name="Comprimento-metroscubicos" id="Comprimento-metroscubicos" aria-label="Amount (to the nearest dollar)" value={Comprimento} onChange={(e) => setNro2(e.target.value)} />
                     </div>
                   </div>
                 </div>
@@ -89,8 +89,8 @@ function Metrocubico(){
                   <div className="mb-3">          
                     <label htmlFor="Espessura-metroscubicos">Espessura</label>
                     <div className="input-group mb-3">
-                      <span className="input-group-text">CM</span>
-                      <input className="form-control" type="number" name="Espessura-metroscubicos" id="Espessura-metroscubicos" aria-label="Amount (to the nearest dollar)" value={Espessura} onChange={(e) => setNro3(e.target.value)} />
+                      <span className="input-group-text inputs">CM</span>
+                      <input className="form-control inputs" type="number" name="Espessura-metroscubicos" id="Espessura-metroscubicos" aria-label="Amount (to the nearest dollar)" value={Espessura} onChange={(e) => setNro3(e.target.value)} />
                     </div>
                   </div>
                 </div>
