@@ -17,6 +17,10 @@ p {
   font-family: Effra, sans-serif;
 }
 
+body {
+  background-color: #ececec;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -145,6 +149,10 @@ p {
   color: #ffffff;
   padding: 0 24% 0 24%;
 }
+
+#parceiros {
+  background-color: #ffffff;
+  }
 
 .parceiros-logos {
   padding: 0 13% 0 12%;

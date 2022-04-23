@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import TabelaPisCorretora from './tabelapiscorretora';
-import Navbar from '../../../app/Components/Navbar/navbar';
 import NavbarApp from '../../../app/Components/Navbar/navbar';
 import {Link} from 'react-router-dom';
 import SweetAlert from 'react-bootstrap-sweetalert';
@@ -9,8 +8,8 @@ import PiscorretoraPDF from './piscorretorapdf';
 import firebase from 'firebase';
 import 'firebase/firestore';
 
+import './piscorretorapro.css';
 
-import './piscorretora.css';
 
 function Piscorretorahome(){
 

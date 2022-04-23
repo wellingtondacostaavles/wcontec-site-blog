@@ -7,7 +7,7 @@ import firebase from 'firebase';
 
 import "react-datepicker/dist/react-datepicker.css";
 
-import './piscorretora.css';
+import './piscorretorapro.css';
 
 
 function PiscorretoraPro(){    
@@ -163,7 +163,7 @@ function PiscorretoraPro(){
 
    return <div>         
         <NavbarApp/>
-        <section id="pis-corretora"> 
+        <section id="pis-corretora-pro"> 
          
         
         <div className="row text-center">

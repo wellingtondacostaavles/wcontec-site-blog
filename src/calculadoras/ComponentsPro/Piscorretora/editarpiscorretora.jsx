@@ -8,7 +8,7 @@ import 'firebase/firestore';
 
 import "react-datepicker/dist/react-datepicker.css";
 
-import './piscorretora.css';
+import './piscorretorapro.css';
 
 
 function EditarPiscorretora(props){    
@@ -174,7 +174,7 @@ function EditarPiscorretora(props){
 
    return <div>         
         <NavbarApp/>
-        <section id="pis-corretora"> 
+        <section id="editar-pis-corretora"> 
          
         
         <div className="row text-center">
