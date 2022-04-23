@@ -96,15 +96,6 @@ body {
   padding-top: 3%;
 }
 
-#ultimosartigosblog {
-  background-color: #ffffff;
-  color: #323338;
-  padding: 8% 3% 8% 3%;
-}
-
-#ultimosartigosblog img {
-  width: 100%;
-}
 
 /* PRECOS */
 
@@ -114,7 +105,7 @@ body {
 
 #planos-e-precos {
   background-color: #ffffff;
-  padding: 3% 15% 8% 15%;
+  padding: 3% 15% 0 15%;
   color: #323338;
 }
 
@@ -140,6 +131,30 @@ body {
   height: 18px;
 }
 
+#ultimosartigosblog {
+  background-color: #ffffff;
+  color: #323338;
+  padding: 8% 3% 6% 3%;
+}
+
+#ultimosartigosblog img {
+  width: 100%;
+}
+
+#card-calculadoras {
+  background-color: #ffffff;
+}
+
+.btn-card-calculadoras {
+  border-radius: 50px;
+  margin-top: 6%;
+}
+
+#card-calculadoras img{
+  width: 81%;
+}
+
+
 #parceiros img {
   width: 100%;
 }
@@ -147,15 +162,17 @@ body {
 .parceiros {
   background-color: #050922;
   color: #ffffff;
-  padding: 0 24% 0 24%;
+  padding: 0 21% 0 21%;
 }
 
 #parceiros {
   background-color: #ffffff;
+  padding-top: 5%;
   }
 
 .parceiros-logos {
   padding: 0 13% 0 12%;
+  background-color: #ffffff;
 }
 
 .coluna1 {
@@ -195,3 +212,5 @@ body {
 .btn-card-cliente {
   border-radius: 50px;
 }
+
+

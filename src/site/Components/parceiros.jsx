@@ -1,10 +1,8 @@
 import react from "react";
 
 function Parceiros(){
-    return <section id="parceiros">     
-
-        
-    <div className="parceiros-logos">  
+    return <section id="parceiros">   
+        <div className="parceiros-logos">  
         <div className="container">
         <div className="row coluna1">
             <div className="col"></div>

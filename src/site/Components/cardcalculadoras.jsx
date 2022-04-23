@@ -6,13 +6,16 @@ function Cardcalculadoras(){
     return <section id="card-calculadoras">      
          
         <div className="container">
-            <div className="card text-center">
-                <div className="card-body">
-                    <h3 className="card-title">Acesse as Calculadoras</h3>
-                    <p className="card-text">A Wcontec disponibiliza aos seus parceiros um serviço gratuito que se propõe a auxiliar em cálculos diversos.</p>
-                    <a href="/calculadoras" className="btn btn-primary btn-card-calculadoras">Calculadoras</a>
+            <div className="row">    
+                <div className="col-lg-6">
+                    <img src="Images/calculando.jpg" />
                 </div>
-            </div> 
+                <div className="col-lg-6 formtext">  
+                    <h2>Acesse as Calculadoras</h2>
+                    <h5>A Wcontec disponibiliza aos seus parceiros um serviço gratuito que se propõe a auxiliar em cálculos diversos.</h5>
+                    <a href="/calculadoras" className="btn btn-primary btn-card-calculadoras">Calculadoras</a>
+                </div>                            
+            </div>
         </div>  
     </section>;
   }
