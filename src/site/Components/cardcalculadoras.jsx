@@ -13,7 +13,7 @@ function Cardcalculadoras(){
                 <div className="col-lg-6 formtext">  
                     <h2>Acesse as Calculadoras</h2>
                     <h5>A Wcontec disponibiliza aos seus parceiros um serviço gratuito que se propõe a auxiliar em cálculos diversos.</h5>
-                    <a href="/calculadoras" className="btn btn-primary btn-card-calculadoras">Calculadoras</a>
+                    <a href="https://bit.ly/3vaLhbt" className="btn btn-success btn-lg btn-card-calculadoras">Calculadoras</a>
                 </div>                            
             </div>
         </div>  

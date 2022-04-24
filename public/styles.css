@@ -147,7 +147,8 @@ body {
 
 .btn-card-calculadoras {
   border-radius: 50px;
-  margin-top: 6%;
+  margin: 6% 3% 6% 0;
+  
 }
 
 #card-calculadoras img{
