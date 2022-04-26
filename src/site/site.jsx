@@ -19,6 +19,7 @@ function Site(){
       <Abrirempresagratis/>
       <Precos/>
       <Ultimosartigosblog/>
+      <Cardcalculadoras/>
       <Parceiros/>
       <Contato/>
     </div>;

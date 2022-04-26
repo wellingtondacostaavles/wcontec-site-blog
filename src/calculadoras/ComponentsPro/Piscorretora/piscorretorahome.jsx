@@ -15,7 +15,6 @@ function Piscorretorahome(){
 
   const [piscorretora, setPiscorretora] = useState([]);
   const [busca, setBusca] = useState('');
-  const [texto, setTexto] = useState('');
   const [excluido, setExcluido] = useState('');
   const [confirmacao, setConfirmacao] = useState(false); 
   const [confirmacaoId, setConfirmacaoId] = useState(''); 
@@ -68,16 +67,16 @@ function Piscorretorahome(){
           </div>
       </div>
       <div className="row">
-        <div className="col-6">
+        <div className="col-7">
           <Link to='/app/calculadoras-pro-pis-corretora' className="btn btn-success btn-pis-corretora-home" type="button"><i className="fas fa-plus"></i> Pis Corretora</Link>
           <button onClick={(e) => PiscorretoraPDF(piscorretora)} className="btn btn-danger btn-pis-corretora-home" type="button" id="button-addon2"><i className="far fa-file-pdf"></i> Gerar PDF</button>
         </div>
-        <div className="col-6">
+        <div className="col-5">
             <div className="input-group mb-3">
-              <input onChange={(e) => setTexto(e.target.value)} type="text" className="form-control input-busca" placeholder="Pesquisar por período" aria-describedby="button-addon2"/>
-              <button onClick={(e) => setBusca(texto)} className="btn btn-primary btn-pis-corretora-home-pesquisar" type="button" id="button-addon2"><i className="fas fa-search"></i> Pesquisar</button>
+              <input onChange={(e) => setBusca(e.target.value)} type="text" className="form-control input-busca" placeholder="Pesquisar por período" aria-describedby="button-addon2"/>
+              <span className="input-group-text input-busca"><i className="fas fa-search"></i></span>
             </div>
-          </div>
+        </div>
       </div>
       <div className="row">
         <TabelaPisCorretora arrayPiscorretora={piscorretora} clickDelete={confirmDeletepiscorretorapro} />

@@ -19,7 +19,7 @@ function Precos(){
                         </div>    
                         <div className="card-body">
                             <p>Para micro empreendedor individual (MEI) a partir de</p>
-                            <h2>R$ 69,90<small className="text-muted"> /mês</small></h2>
+                            <h2>R$ 39,90<small className="text-muted"> /mês</small></h2>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
                         </div>
@@ -32,8 +32,8 @@ function Precos(){
                             <h4>AVANÇADO</h4>
                         </div>
                         <div className="card-body">
-                            <p>Serviços e/ou comercio (MEI, ME, EPP) a partir de</p>
-                            <h2>R$ 319,80<small className="text-muted"> /mês</small></h2>
+                            <p>Serviços e/ou comercio (ME e EPP) a partir de</p>
+                            <h2>R$ 196,80<small className="text-muted"> /mês</small></h2>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-primary btn-artigos">Assinar Agora</a>
                         </div>
@@ -46,8 +46,8 @@ function Precos(){
                             <h4>PREMIUM</h4>
                         </div>
                         <div className="card-body">
-                            <p>Serviços e/ou comercio (MEI, ME, EPP) a partir de</p>
-                            <h2>R$ 606,00<small className="text-muted"> /mês</small></h2>
+                            <p>Serviços e/ou comercio (ME e EPP) a partir de</p>
+                            <h2>R$ 319,80<small className="text-muted"> /mês</small></h2>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
                         </div>

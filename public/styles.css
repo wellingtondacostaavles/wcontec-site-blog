@@ -143,16 +143,26 @@ body {
 
 #card-calculadoras {
   background-color: #ffffff;
+  color: #323338;
+}
+
+.card-calculadoras {
+  border-radius: 50px;
+  margin: 6% 3% 6% 0;  
+}
+
+#card-calculadoras img{
+  width: 81%;
+}
+
+.boneco-card-calculadoras {
+  padding-top: 3%;
 }
 
 .btn-card-calculadoras {
   border-radius: 50px;
   margin: 6% 3% 6% 0;
   
-}
-
-#card-calculadoras img{
-  width: 81%;
 }
 
 

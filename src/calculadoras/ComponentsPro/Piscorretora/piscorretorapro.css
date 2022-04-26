@@ -78,6 +78,11 @@ p {
   margin: 0 0 3px 0;
 }
 
+.fa-search{
+  color: #0d6efd;
+  background-color: #ececec;
+}
+
 .inputs-pis-corretora {
   margin: 0 15% 0 15%;
   padding: 1% 0 1% 0;

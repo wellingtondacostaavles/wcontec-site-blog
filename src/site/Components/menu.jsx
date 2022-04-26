@@ -6,7 +6,7 @@ function Menu(){
     <div className="container">
             
         <a className="navbar-brand" href="/#">
-          <img src="Images/logo-wcontec.png" alt="" height="54" />
+          <img src="Images/logo-plataforma-cont-oline.png" alt="" height="54" />
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
