@@ -17,7 +17,7 @@ function Ultimosartigosblog(){
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/Obrigatoriedade/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Saiba se você está ogrigado a apresentar a DIRPF 2022</h4>
+                            <h4 className="card-title">Saiba se você está obrigado a apresentar DIRPF 2022</h4>
                             <p className="card-text">Entramos no último mês do prazo de entrega da Declaração do Imposto de Renda, mas muita gente ainda não sabe se está obrigado a prestar contas com o leão!</p>
                             <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
