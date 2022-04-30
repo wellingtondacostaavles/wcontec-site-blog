@@ -21,9 +21,6 @@ function NavbarCalculadora(){
               <Link to="/calculadoras" className="nav-link" aria-current="page">Início</Link>
             </li> 
             <li className="nav-item">
-              <Link to="/app/calculadoras-pro" className="nav-link" aria-current="page">Calculadoras Pro</Link>
-            </li>
-            <li className="nav-item">
               <Link to="/blog" className="nav-link" aria-current="page">Blog</Link>
             </li>              
             <li className="nav-item">

@@ -15,6 +15,16 @@ function Ultimosartigosblog(){
             <div className="row">
             <div className="col-lg-4">
                     <div className="card card-artigos">
+                        <center><img src="/Images/DIRPF22/Obrigatoriedade/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Saiba se você está ogrigado a apresentar a DIRPF 2022</h4>
+                            <p className="card-text">Entramos no último mês do prazo de entrega da Declaração do Imposto de Renda, mas muita gente ainda não sabe se está obrigado a prestar contas com o leão!</p>
+                            <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
+            <div className="col-lg-4">
+                    <div className="card card-artigos">
                         <center><img src="/Images/Microempreendedor/Mircroempreendedorestemareceber/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Microempreendedor e Pessoa física com direito a crédito</h4>
@@ -32,19 +42,7 @@ function Ultimosartigosblog(){
                             <a href="/blog-deducoes-legais-desconto-simplificado-irpf-22#" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
-                </div>
-
-            <div className="col-lg-4">
-                    <div className="card card-artigos">
-                        <center><img src="/Images/DIRPF22/Documentosnecessarios/ultimosartigos.png" className="card-img-top" alt="..."/></center>
-                        <div className="card-body">
-                            <h4 className="card-title">Documentos necessários para a DIRPF 2022</h4>
-                            <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
-                            <a href="/blog-documentosnecessarios-irpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
-                        </div>
-                    </div>  
-                </div>              
-                                           
+                </div>                         
             </div>  
         </div>               
     </section>;}

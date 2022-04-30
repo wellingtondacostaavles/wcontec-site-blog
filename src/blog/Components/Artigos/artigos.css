@@ -17,10 +17,12 @@ h1, h2, h3, h4, h5, h6, h7{
 
 
 #artigos{
-
-    margin-top: 50px;
+    background-color: #ffffff;
 }
 
+.titulo {
+   margin-top: 30px;
+}
 
 #artigos img{
     width: 100%; 
@@ -33,8 +35,7 @@ h1, h2, h3, h4, h5, h6, h7{
 }
 
 #artigos2{
-
-    margin-top: 60px;
+    background-color: #ffffff;
 }
 
 

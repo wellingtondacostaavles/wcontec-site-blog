@@ -21,9 +21,6 @@ function Navbar(){
               <a className="nav-link" aria-current="page" href="#">Início</a>
             </li> 
             <li className="nav-item">
-              <Link to="/app/calculadoras-pro" className="nav-link" aria-current="page">Calculadoras Pro</Link>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" aria-current="page" href="/blog">Blog</a>
             </li>              
             <li className="nav-item">

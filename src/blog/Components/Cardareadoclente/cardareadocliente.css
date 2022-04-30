@@ -5,8 +5,8 @@ h1, h2, h3, h4, h5, h6{
 
 
 #card-areadocliente{
-    margin: 3% 0 3% 0;
-
+    padding: 30px 0 30px 0;
+    background-color: #ffffff;
 }
 
 .btn-card-cliente{
