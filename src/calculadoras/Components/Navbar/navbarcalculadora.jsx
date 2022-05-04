@@ -7,7 +7,7 @@ function NavbarCalculadora(){
 
     <div className="container">
             
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand-expand-lg" href="#">
           <img src="/Images/logo-wcontec-calculator.png" alt="" height="54" />
         </a>
 

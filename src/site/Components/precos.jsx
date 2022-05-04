@@ -19,7 +19,7 @@ function Precos(){
                         </div>    
                         <div className="card-body">
                             <p>Para micro empreendedor individual (MEI) a partir de</p>
-                            <h2>R$ 39,90<small className="text-muted"> /mês</small></h2>
+                            <p>R$ <span className="h2-preco">39</span>,90<small className="text-muted"> /mês</small></p>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
                         </div>
@@ -33,7 +33,7 @@ function Precos(){
                         </div>
                         <div className="card-body">
                             <p>Serviços e/ou comercio (ME e EPP) a partir de</p>
-                            <h2>R$ 196,80<small className="text-muted"> /mês</small></h2>
+                            <p>R$ <span className="h2-preco">196</span>,80<small className="text-muted"> /mês</small></p>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-primary btn-artigos">Assinar Agora</a>
                         </div>
@@ -47,7 +47,7 @@ function Precos(){
                         </div>
                         <div className="card-body">
                             <p>Serviços e/ou comercio (ME e EPP) a partir de</p>
-                            <h2>R$ 319,80<small className="text-muted"> /mês</small></h2>
+                            <p>R$ <span className="h2-preco">319</span>,80<small className="text-muted"> /mês</small></p>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
                         </div>

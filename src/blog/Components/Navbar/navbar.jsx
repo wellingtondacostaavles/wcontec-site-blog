@@ -7,7 +7,7 @@ function Navbar(){
 
     <div className="container">
             
-        <a className="navbar-brand" href="/blog">
+        <a className="navbar-brand-expand-lg" href="/blog">
           <img src="/Images/logo-wcontec-blog.png" alt="" height="54" />
         </a>
 

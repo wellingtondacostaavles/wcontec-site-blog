@@ -109,6 +109,13 @@ body {
   color: #323338;
 }
 
+.h2-preco {
+  font-size: 45px;
+  font-family: Effra, sans-serif, Arial, sans-serif;
+  font-weight: 300;
+  color: #050922;
+}
+
 .tabela {
   padding-top: 3%;
 }
