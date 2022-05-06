@@ -101,7 +101,7 @@ function Deducoeslegais(){
             }
         }
 
-        const calcular1 = () =>{  
+    const calcular1 = () =>{  
         if (operacaoBaseCalculo=="Subtrair")
         return (parseFloat(RendimentosTributaveis) - parseFloat(DeducoesLegais));
     }
