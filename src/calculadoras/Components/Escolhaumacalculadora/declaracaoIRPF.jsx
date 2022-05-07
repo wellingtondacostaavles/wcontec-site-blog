@@ -29,13 +29,13 @@ function DeclaracaoIRPF(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-irpf-mei-transporte-passageiro"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-mei.png"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-autonomo-transporte-cargas"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-autonomo.png"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><Link to="/calculadoras-desconto-simplificado"><img src="/Images/tegs-calculadoras/Tag-IRPF-desconto-simplificado.png"/></Link></center>
+                         <center><Link to="/calculadoras-irpf-mei-transporte-passageiro"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-mei.png"/></Link></center>
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-deducoes-legais"><img src="/Images/tegs-calculadoras/Tag-IRPF-deducoes-legais.png"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-mei-transporte-cargas"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-mei.png"/></Link></center>
                     </div>
                 </div>             
             </div>     

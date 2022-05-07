@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
-import './irpfsobremeitransportepassageiro.css';
+import './irpfsobremeitransportecargas.css';
 
-function IRPFsobreMeiTransportePassageiro(){  
+function IRPFsobreMeiTransporteCargas(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -40,17 +40,17 @@ function IRPFsobreMeiTransportePassageiro(){
         setNro5(value);        
     };
     
-    const [TransportedePassageiros, setNro1] = useState(0);
+    const [TransportedeCargas, setNro1] = useState(0);
     const [Extras, setNro2] = useState(0);
     const [Promocoes, setNro3] = useState(0);  
     const [DeducoesLegais, setNro4] = useState(0);
     const [IRRF, setNro5] = useState(0);
     
-    const [DeducaoQuarentaPorCento, setResultado1] = useState(0);
-    const [operacaoDeducaoQuarentaPorCento, setOperacao1] = useState('Somar');
+    const [DeducaoNoventaPorCento, setResultado1] = useState(0);
+    const [operacaoDeducaoNoventaPorCento, setOperacao1] = useState('Somar');
 
-    const [Presucao16, setResultado2] = useState(0);
-    const [operacaoPresucao16, setOperacao2] = useState('Somar');
+    const [Presucao8, setResultado2] = useState(0);
+    const [operacaoPresucao8, setOperacao2] = useState('Somar');
 
     const [LucroIsentoMei, setResultado3] = useState(0);
     const [operacaoLucroIsentoMei, setOperacao3] = useState('Somar');
@@ -206,24 +206,24 @@ function IRPFsobreMeiTransportePassageiro(){
         }
     
     const calcular1 = () =>{  
-        if (operacaoDeducaoQuarentaPorCento=="Somar")
-        return (parseFloat(TransportedePassageiros) * 0.40);
+        if (operacaoDeducaoNoventaPorCento=="Somar")
+        return (parseFloat(TransportedeCargas) * 0.90);
     }
     const calcular2 = () =>{  
-        if (operacaoPresucao16=="Somar")
-        return (parseFloat(TransportedePassageiros) * 0.16);
+        if (operacaoPresucao8=="Somar")
+        return (parseFloat(TransportedeCargas) * 0.08);
     }
     const calcular3 = () =>{  
         if (operacaoLucroIsentoMei=="Somar")
-        return (parseFloat(Presucao16));
+        return (parseFloat(Presucao8));
     }
     const calcular4 = () =>{  
         if (operacaoReceitaBrua=="Somar")
-        return (parseFloat(TransportedePassageiros) + parseFloat(Extras) + parseFloat(Promocoes));
+        return (parseFloat(TransportedeCargas) + parseFloat(Extras) + parseFloat(Promocoes));
     }
     const calcular5 = () =>{  
         if (operacaoLucroTributavel=="Subtrair")
-        return (parseFloat(ReceitaBrua) - parseFloat(DeducaoQuarentaPorCento) - parseFloat(LucroIsentoMei));
+        return (parseFloat(ReceitaBrua) - parseFloat(DeducaoNoventaPorCento) - parseFloat(LucroIsentoMei));
     }
     //Desconto Simplificado
     const calcular6 = () =>{  
@@ -244,11 +244,11 @@ function IRPFsobreMeiTransportePassageiro(){
         return (parseFloat(ValorIRDeducoesLegais) - parseFloat(IRRF));
     } 
 
-    useEffect (() =>{setResultado1(calcular1())},[TransportedePassageiros, operacaoDeducaoQuarentaPorCento]);
-    useEffect (() =>{setResultado2(calcular2())},[TransportedePassageiros, operacaoPresucao16]);
-    useEffect (() =>{setResultado3(calcular3())},[Presucao16, operacaoLucroIsentoMei]);
-    useEffect (() =>{setResultado4(calcular4())},[TransportedePassageiros, Extras, Promocoes, operacaoReceitaBrua]);
-    useEffect (() =>{setResultado5(calcular5())},[ReceitaBrua, DeducaoQuarentaPorCento, LucroIsentoMei, operacaoLucroTributavel]);
+    useEffect (() =>{setResultado1(calcular1())},[TransportedeCargas, operacaoDeducaoNoventaPorCento]);
+    useEffect (() =>{setResultado2(calcular2())},[TransportedeCargas, operacaoPresucao8]);
+    useEffect (() =>{setResultado3(calcular3())},[Presucao8, operacaoLucroIsentoMei]);
+    useEffect (() =>{setResultado4(calcular4())},[TransportedeCargas, Extras, Promocoes, operacaoReceitaBrua]);
+    useEffect (() =>{setResultado5(calcular5())},[ReceitaBrua, DeducaoNoventaPorCento, LucroIsentoMei, operacaoLucroTributavel]);
     //Desconto Simplificado
     useEffect (() =>{setResultado6(calcular6())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
     useEffect (() =>{setResultado7(calcular7())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
@@ -259,61 +259,61 @@ function IRPFsobreMeiTransportePassageiro(){
         
         return <div>         
         
-        <section id="irpf-sobre-mei-transporte-passageiro">  
+        <section id="irpf-sobre-mei-transporte-cargas">  
         <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
-                    <h3>Motorista de transporte de passageiros</h3>
+                    <h3>Motorista de transporte de cargas</h3>
                     <h4>Microempreendedor Individual</h4>
-                    <p>Calcule o valor do imposto de renda pessoa física se você é um microempreendedor individual que transporta passageiros</p>
+                    <p>Calcule o valor do imposto de renda pessoa física se você é um microempreendedor individual que transporta cargas</p>
                 </div>
             </div>
             <div className="container">
-                <div className="row inputs-irpf-sobre-mei-transporte-passageiro">
+                <div className="row inputs-irpf-sobre-mei-transporte-cargas">
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="TransportedePassageiros-irpf-sobre-mei-transporte-passageiro">Transp. de Passageiros</label>                
+                            <label htmlFor="TransportedeCargas-irpf-sobre-mei-transporte-cargas">Transp. de Cargas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="TransportedePassageiros-irpf-sobre-mei-transporte-passageiro" id="TransportedePassageiros-irpf-sobre-mei-transporte-passageiro-" aria-label="Amount (to the nearest dollar)" value={TransportedePassageiros} onChange={handleChange1}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="TransportedeCargas-irpf-sobre-mei-transporte-cargas" id="TransportedePassageiros-irpf-sobre-mei-transporte-passageiro-" aria-label="Amount (to the nearest dollar)" value={TransportedeCargas} onChange={handleChange1}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Extras-irpf-sobre-mei-transporte-passageiro">Extras</label>                
+                            <label htmlFor="Extras-irpf-sobre-mei-transporte-cargas">Extras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Extras-irpf-sobre-mei-transporte-passageiro" id="Extras-irpf-sobre-mei-transporte-passageiro-" aria-label="Amount (to the nearest dollar)" value={Extras} onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Extras-irpf-sobre-mei-transporte-cargas" id="Extras-irpf-sobre-mei-transporte-cargas" aria-label="Amount (to the nearest dollar)" value={Extras} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Promocoes-irpf-sobre-mei-transporte-passageiro">Promoções</label>                
+                            <label htmlFor="Promocoes-irpf-sobre-mei-transporte-cargas">Promoções</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Promocoes-irpf-sobre-mei-transporte-passageiro" id="Promocoes-irpf-sobre-mei-transporte-passageiro" aria-label="Amount (to the nearest dollar)" value={Promocoes} onChange={handleChange3}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Promocoes-irpf-sobre-mei-transporte-cargas" id="Promocoes-irpf-sobre-mei-transporte-cargas" aria-label="Amount (to the nearest dollar)" value={Promocoes} onChange={handleChange3}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Deducoeslegais-irpf-sobre-mei-transporte-passageiro">*Deduções Legais</label>                
+                            <label htmlFor="Deducoeslegais-irpf-sobre-mei-transporte-cargas">*Deduções Legais</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-mei-transporte-passageiro" id="Deducoeslegais-irpf-sobre-mei-transporte-passageiro" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-mei-transporte-cargas" id="Deducoeslegais-irpf-sobre-mei-transporte-cargas" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="irrf-irpf-sobre-mei-transporte-passageiro">IRRF</label>                
+                            <label htmlFor="irrf-irpf-sobre-mei-transporte-cargas">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-mei-transporte-passageiro" id="irrf-irpf-sobre-mei-transporte-passageiro" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-mei-transporte-cargas" id="irrf-irpf-sobre-mei-transporte-cargas" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
                             </div>                     
                         </div>  
                     </div>
@@ -328,7 +328,7 @@ function IRPFsobreMeiTransportePassageiro(){
                 <div className="row">
                     <div className="col-lg-4"></div>
                     <div className="col-lg-4">
-                    {MostrarCalculos ? <div className="table-irpf-sobre-mei-transporte-passageiro">
+                    {MostrarCalculos ? <div className="table-irpf-sobre-mei-transporte-cargas">
                     <table className="table table table-responsive table-bordered">
                         <tr>
                             <th className="width80"></th>
@@ -337,13 +337,13 @@ function IRPFsobreMeiTransportePassageiro(){
                     <tbody>
                         <tr className="">
                             <th scope="row" className="tabela-p">
-                                <p>Dedução de 40% - <a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/51525535/do1-2018-11-23-decreto-n-9-580-de-22-de-novembro-de-2018-51525026" target="_blank" className="tabela-a">Decreto Federal nº 9.580/2018, art. 39, inciso II.</a></p>
+                                <p>Dedução de 90% - <a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/51525535/do1-2018-11-23-decreto-n-9-580-de-22-de-novembro-de-2018-51525026" target="_blank" className="tabela-a">Decreto Federal nº 9.580/2018, art. 39, inciso I.</a></p>
                             </th>
-                            <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                            <td className="bi">{[DeducaoNoventaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                         </tr> 
                         <tr>
                             <th scope="row" className="tabela-p">
-                                <p>Dedução de 16% - <a href="http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="_blank" className="tabela-a">Art. 14, § 1º da LC 123/2006</a>, <a href="http://www.planalto.gov.br/ccivil_03/leis/l9249.htm" target="_blank" className="tabela-a">Art. 15, § 1º, Inciso II, letra a, da Lei 9.249/95.</a></p>
+                                <p>Dedução de 8% - <a href="http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="_blank" className="tabela-a">Art. 14, § 1º da LC 123/2006</a>, <a href="http://www.planalto.gov.br/ccivil_03/leis/l9249.htm" target="_blank" className="tabela-a">Art. 15, § 1º, Inciso II, letra a, da Lei 9.249/95.</a></p>
                             </th>
                             <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                         </tr>                
@@ -364,7 +364,7 @@ function IRPFsobreMeiTransportePassageiro(){
                 <div className="row text-center">                 
                     <div className="col-lg-6">
                             <h3>Desconto Simplificado</h3> 
-                            <div className="table-irpf-sobre-mei-transporte-passageiro-declaracoes">
+                            <div className="table-irpf-sobre-mei-transporte-cargas-declaracoes">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -380,9 +380,9 @@ function IRPFsobreMeiTransportePassageiro(){
                                 <tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 24 - Rendimentos bruto, até o máximo de 40%, da prestação de serviços decorrente do transporte de passageiros"</p>
+                                        <p>"Ficha 23 - Rendimentos bruto, até o máximo de 90%, da prestação de serviços decorrente do transporte de cargas"</p>
                                     </th>
-                                    <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                                    <td className="bi">{[DeducaoNoventaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" className="tabela-p">
@@ -427,7 +427,7 @@ function IRPFsobreMeiTransportePassageiro(){
                         </div>
                    <div className="col-lg-6">
                             <h3>Deduções Legais</h3> 
-                            <div className="table-irpf-sobre-mei-transporte-passageiro-declaracoes">
+                            <div className="table-irpf-sobre-mei-transporte-cargas-declaracoes">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -443,9 +443,9 @@ function IRPFsobreMeiTransportePassageiro(){
                                 <tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 24 - Rendimentos bruto, até o máximo de 40%, da prestação de serviços decorrente do transporte de passageiros"</p>
+                                        <p>"Ficha 23 - Rendimentos bruto, até o máximo de 90%, da prestação de serviços decorrente do transporte de cargas</p>
                                     </th>
-                                    <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                                    <td className="bi">{[DeducaoNoventaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" className="tabela-p">
@@ -498,4 +498,4 @@ function IRPFsobreMeiTransportePassageiro(){
       </div> 
     }
   
-  export default IRPFsobreMeiTransportePassageiro;
+  export default IRPFsobreMeiTransporteCargas;

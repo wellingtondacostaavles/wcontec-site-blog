@@ -52,22 +52,13 @@ function IRPFsobreAutonomoTrasportePassageiro(){
     const [TransportedePassageirosAposDeducao, setResultado2] = useState(0);
     const [operacaoTransportedePassageirosAposDeducao, setOperacao2] = useState('Subtrair');
   
-    const [BaseCalculoAntesdaPresuncao, setResultado3] = useState(0);
-    const [operacaoBaseCalculoBaseCalculoAntesdaPresuncao, setOperacao3] = useState('Somar');
-    
-    const [Presucao16, setResultado4] = useState(0);
-    const [operacaoPresucao16, setOperacao4] = useState('Somar');
+    const [ReceitaBrua, setResultado3] = useState(0);
+    const [operacaoReceitaBrua, setOperacao3] = useState('Somar');
 
-    const [LucroIsentoMei, setResultado5] = useState(0);
-    const [operacaoLucroIsentoMei, setOperacao5] = useState('Somar');
+    const [LucroTributavel, setResultado4] = useState(0);
+    const [operacaoLucroTributavel, setOperacao4] = useState('Subtrair');
 
-    const [ReceitaBrua, setResultado6] = useState(0);
-    const [operacaoReceitaBrua, setOperacao6] = useState('Somar');
-
-    const [LucroTributavel, setResultado7] = useState(0);
-    const [operacaoLucroTributavel, setOperacao7] = useState('Subtrair');
-
-    const SituacaodosCalculos = LucroIsentoMei
+    const SituacaodosCalculos = DeducaoQuarentaPorCento
     
     const comCalculo = 'Parcela do Faturamento ISENTA na DIRPF'
     const semCalculo = ''
@@ -98,11 +89,11 @@ function IRPFsobreAutonomoTrasportePassageiro(){
         }
 
     //Desconto Simplificado
-    const [BaseCalculoDescontoSimplificado, setResultado8] = useState(0);
-    const [operacaoBaseCalculoDescontoSimplificado, setOperacao8] = useState('Subtrair'); 
+    const [BaseCalculoDescontoSimplificado, setResultado5] = useState(0);
+    const [operacaoBaseCalculoDescontoSimplificado, setOperacao5] = useState('Subtrair'); 
     
-    const [ResultdoIRDescontoSimplificado, setResultado9] = useState(0); 
-    const [operacaoResultdoIRDescontoSimplificado, setOperacao9] = useState('Subtrair');
+    const [ResultdoIRDescontoSimplificado, setResultado6] = useState(0); 
+    const [operacaoResultdoIRDescontoSimplificado, setOperacao6] = useState('Subtrair');
 
     const BaseCalculoFaixaDescontoSimplificado = BaseCalculoDescontoSimplificado   
 
@@ -162,11 +153,11 @@ function IRPFsobreAutonomoTrasportePassageiro(){
         }  
     
     //Deduções Legais
-    const [BaseCalculoDeducoesLegais, setResultado10] = useState(0);
-    const [operacaoBaseCalculoDeducoesLegais, setOperacao10] = useState('Subtrair');
+    const [BaseCalculoDeducoesLegais, setResultado7] = useState(0);
+    const [operacaoBaseCalculoDeducoesLegais, setOperacao7] = useState('Subtrair');
 
-    const [ResultdoIRDeducoesLegais, setResultado11] = useState(0); 
-    const [operacaoResultdoIRDeducoesLegais, setOperacao11] = useState('Subtrair');
+    const [ResultdoIRDeducoesLegais, setResultado8] = useState(0); 
+    const [operacaoResultdoIRDeducoesLegais, setOperacao8] = useState('Subtrair');
     
     const BaseCalculoFaixaDeducoesLegais = BaseCalculoDeducoesLegais   
 
@@ -220,57 +211,42 @@ function IRPFsobreAutonomoTrasportePassageiro(){
         return (parseFloat(TransportedePassageiros) - parseFloat(DeducaoQuarentaPorCento));
     }
     const calcular3 = () =>{  
-        if (operacaoBaseCalculoBaseCalculoAntesdaPresuncao=="Somar")
-        return (parseFloat(TransportedePassageirosAposDeducao) + parseFloat(Extras) + parseFloat(Promocoes));
-    }
-    const calcular4 = () =>{  
-        if (operacaoPresucao16=="Somar")
-        return (parseFloat(BaseCalculoAntesdaPresuncao) * 0.16);
-    }
-    const calcular5 = () =>{  
-        if (operacaoLucroIsentoMei=="Somar")
-        return (parseFloat(Presucao16));
-    }
-    const calcular6 = () =>{  
         if (operacaoReceitaBrua=="Somar")
         return (parseFloat(TransportedePassageiros) + parseFloat(Extras) + parseFloat(Promocoes));
     }
-    const calcular7 = () =>{  
+    const calcular4 = () =>{  
         if (operacaoLucroTributavel=="Subtrair")
-        return (parseFloat(ReceitaBrua) - parseFloat(DeducaoQuarentaPorCento) - parseFloat(LucroIsentoMei));
+        return (parseFloat(ReceitaBrua) - parseFloat(DeducaoQuarentaPorCento));
     }
     //Desconto Simplificado
-    const calcular8 = () =>{  
+    const calcular5 = () =>{  
         if (operacaoBaseCalculoDescontoSimplificado=="Subtrair")
         return ((parseFloat(LucroTributavel)) - (ValordoDescontoSimplificado));
     }
-    const calcular9 = () =>{  
+    const calcular6 = () =>{  
         if (operacaoResultdoIRDescontoSimplificado=="Subtrair")
         return (parseFloat(ValorIRDescontoSimplificado) - parseFloat(IRRF));
     }
     //Deduções Legais
-    const calcular10 = () =>{  
+    const calcular7 = () =>{  
         if (operacaoBaseCalculoDeducoesLegais=="Subtrair")
         return (parseFloat(LucroTributavel) - parseFloat(DeducoesLegais));
     }
-    const calcular11 = () =>{  
+    const calcular8 = () =>{  
         if (operacaoResultdoIRDeducoesLegais=="Subtrair")
         return (parseFloat(ValorIRDeducoesLegais) - parseFloat(IRRF));
     } 
 
     useEffect (() =>{setResultado1(calcular1())},[TransportedePassageiros, operacaoDeducaoQuarentaPorCento]);
     useEffect (() =>{setResultado2(calcular2())},[TransportedePassageiros, DeducaoQuarentaPorCento, operacaoTransportedePassageirosAposDeducao]);
-    useEffect (() =>{setResultado3(calcular3())},[TransportedePassageirosAposDeducao, Extras, Promocoes, operacaoBaseCalculoBaseCalculoAntesdaPresuncao]);
-    useEffect (() =>{setResultado4(calcular4())},[BaseCalculoAntesdaPresuncao, operacaoPresucao16]);
-    useEffect (() =>{setResultado5(calcular5())},[Presucao16, operacaoLucroIsentoMei]);
-    useEffect (() =>{setResultado6(calcular6())},[TransportedePassageiros, Extras, Promocoes, operacaoReceitaBrua]);
-    useEffect (() =>{setResultado7(calcular7())},[ReceitaBrua, DeducaoQuarentaPorCento, LucroIsentoMei, operacaoLucroTributavel]);
+    useEffect (() =>{setResultado3(calcular3())},[TransportedePassageiros, Extras, Promocoes, operacaoReceitaBrua]);
+    useEffect (() =>{setResultado4(calcular4())},[ReceitaBrua, DeducaoQuarentaPorCento, operacaoLucroTributavel]);
     //Desconto Simplificado
-    useEffect (() =>{setResultado8(calcular8())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
-    useEffect (() =>{setResultado9(calcular9())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
+    useEffect (() =>{setResultado5(calcular5())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
+    useEffect (() =>{setResultado6(calcular6())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
     //Deduções Legais
-    useEffect (() =>{setResultado10(calcular10())},[LucroTributavel, DeducoesLegais, operacaoBaseCalculoDeducoesLegais]);
-    useEffect (() =>{setResultado11(calcular11())},[ValorIRDeducoesLegais, IRRF, operacaoResultdoIRDeducoesLegais]);
+    useEffect (() =>{setResultado7(calcular7())},[LucroTributavel, DeducoesLegais, operacaoBaseCalculoDeducoesLegais]);
+    useEffect (() =>{setResultado8(calcular8())},[ValorIRDeducoesLegais, IRRF, operacaoResultdoIRDeducoesLegais]);
       
         
         return <div>         
@@ -281,7 +257,7 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                 <div className="titulo">
                     <h1>DIRPF</h1>
                     <h3>Motorista de transporte de passageiros</h3>
-                    <h4>(Trabalhador Autônomo)</h4>
+                    <h4>Trabalhador Autônomo</h4>
                     <p>Calcule o valor do imposto de renda pessoa física se você é um trabalhador autonômo que transporta passageiros</p>
                 </div>
             </div>
@@ -357,12 +333,6 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                             </th>
                             <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                         </tr> 
-                        <tr>
-                            <th scope="row" className="tabela-p">
-                                <p>Dedução de 16% - <a href="http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="_blank" className="tabela-a">Art. 14, § 1º da LC 123/2006</a>, <a href="http://www.planalto.gov.br/ccivil_03/leis/l9249.htm" target="_blank" className="tabela-a">Art. 15, § 1º, Inciso II, letra a, da Lei 9.249/95.</a></p>
-                            </th>
-                            <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                        </tr>                
                         </tbody> 
                     </table>
                 </div> :''}       
@@ -374,7 +344,7 @@ function IRPFsobreAutonomoTrasportePassageiro(){
             <div className="container">
                 <div className="row text-center">
                     <div className="titulo-declaraco">
-                        <h1>Como ficará na declaração</h1>
+                        <h1>Como ficaria na declaração</h1>
                     </div>
                 </div>              
                 <div className="row text-center">                 
@@ -399,13 +369,6 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                                         <p>"Ficha 24 - Rendimentos bruto, até o máximo de 40%, da prestação de serviços decorrente do transporte de passageiros"</p>
                                     </th>
                                     <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" className="tabela-p">
-                                        <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro labore, alugéis e serviços prestados"</p>
-                                        </th>
-                                    <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
                                 {SituacaoIRDescontoSimplificado ?<tr>
                                     <th scope="row" className="tabela-p">
@@ -462,13 +425,6 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                                         <p>"Ficha 24 - Rendimentos bruto, até o máximo de 40%, da prestação de serviços decorrente do transporte de passageiros"</p>
                                     </th>
                                     <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" className="tabela-p">
-                                        <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro labore, alugéis e serviços prestados"</p>
-                                        </th>
-                                    <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
                                 {SituacaoIRDeducoesLegais ?<tr>
                                     <th scope="row" className="tabela-p">
