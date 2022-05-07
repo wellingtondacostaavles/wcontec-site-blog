@@ -36,21 +36,21 @@ p {
 
 /* BANNER */
 
-#irpf-sobre-mei-transporte-passageiro {
+#irpf-sobre-autonomo-trasporte-passageiro {
   padding: 6% 6% 13% 6%;
   color: #323338;
 }
 
-.inputs-irpf-sobre-mei-transporte-passageiro {
+.inputs-irpf-sobre-autonomo-trasporte-passageiro {
   margin: 0 15% 0 15%;
   padding: 1% 0 1% 0;
 }
 
-.table-irpf-sobre-mei-transporte-passageiro {
+.table-irpf-sobre-autonomo-trasporte-passageiro {
 
 }
 
-.table-irpf-sobre-mei-transporte-passageiro-declaracoes {
+.table-irpf-sobre-autonomo-trasporte-passageiro-declaracoes {
 
 }
 
@@ -65,10 +65,10 @@ p {
   padding: 3% 0 3% 0;
 }
 
-#irpf-sobre-mei-transporte-passageiro .width80 {
+#irpf-sobre-autonomo-trasporte-passageiro .width80 {
   width: 80%;
 }
 
-#irpf-sobre-mei-transporte-passageiro .width20 {
+#irpf-sobre-autonomo-trasporte-passageiro .width20 {
   width: 20%;
 }

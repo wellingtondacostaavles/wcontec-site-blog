@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
-import './irpfsobremeitransportepassageiro.css';
+import './irpfsobreautonomotrasportepassageiro.css';
 
-function IRPFsobreMeiTransportePassageiro(){  
+function IRPFsobreAutonomoTrasportePassageiro(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -275,61 +275,61 @@ function IRPFsobreMeiTransportePassageiro(){
         
         return <div>         
         
-        <section id="irpf-sobre-mei-transporte-passageiro">  
+        <section id="irpf-sobre-autonomo-trasporte-passageiro">  
         <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
                     <h3>Motorista de transporte de passageiros</h3>
-                    <h4>(Microempreendedor Individual)</h4>
-                    <p>Calcule o valor do imposto de renda pessoa física se você é um microempreendedor individual que transporta passageiros</p>
+                    <h4>(Trabalhador Autônomo)</h4>
+                    <p>Calcule o valor do imposto de renda pessoa física se você é um trabalhador autonômo que transporta passageiros</p>
                 </div>
             </div>
             <div className="container">
-                <div className="row inputs-irpf-sobre-mei-transporte-passageiro">
+                <div className="row inputs-irpf-sobre-autonomo-trasporte-passageiro">
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="TransportedePassageiros-irpf-sobre-mei-transporte-passageiro">Transp. de Passageiros</label>                
+                            <label htmlFor="TransportedePassageiros-irpf-sobre-autonomo-trasporte-passageiro">Transp. de Passageiros</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="TransportedePassageiros-irpf-sobre-mei-transporte-passageiro" id="TransportedePassageiros-irpf-sobre-mei-transporte-passageiro-" aria-label="Amount (to the nearest dollar)" value={TransportedePassageiros} onChange={handleChange1}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="TransportedePassageiros-irpf-sobre-autonomo-trasporte-passageiro" id="TransportedePassageiros-irpf-sobre-autonomo-trasporte-passageiro" aria-label="Amount (to the nearest dollar)" value={TransportedePassageiros} onChange={handleChange1}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Extras-irpf-sobre-mei-transporte-passageiro">Extras</label>                
+                            <label htmlFor="Extras-irpf-sobre-autonomo-trasporte-passageiro">Extras</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Extras-irpf-sobre-mei-transporte-passageiro" id="Extras-irpf-sobre-mei-transporte-passageiro-" aria-label="Amount (to the nearest dollar)" value={Extras} onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Extras-irpf-sobre-autonomo-trasporte-passageiro" id="Extras-irpf-sobre-autonomo-trasporte-passageiro" aria-label="Amount (to the nearest dollar)" value={Extras} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Promocoes-irpf-sobre-mei-transporte-passageiro">Promoções</label>                
+                            <label htmlFor="Promocoes-irpf-sobre-autonomo-trasporte-passageiro">Promoções</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Promocoes-irpf-sobre-mei-transporte-passageiro" id="Promocoes-irpf-sobre-mei-transporte-passageiro" aria-label="Amount (to the nearest dollar)" value={Promocoes} onChange={handleChange3}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Promocoes-irpf-sobre-autonomo-trasporte-passageiro" id="Promocoes-irpf-sobre-autonomo-trasporte-passageiro" aria-label="Amount (to the nearest dollar)" value={Promocoes} onChange={handleChange3}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Deducoeslegais-irpf-sobre-mei-transporte-passageiro">*Deduções Legais</label>                
+                            <label htmlFor="Deducoeslegais-irpf-sobre-autonomo-trasporte-passageiro">*Deduções Legais</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-mei-transporte-passageiro" id="Deducoeslegais-irpf-sobre-mei-transporte-passageiro" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-autonomo-trasporte-passageiro" id="Deducoeslegais-irpf-sobre-autonomo-trasporte-passageiro" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="irrf-irpf-sobre-mei-transporte-passageiro">IRRF</label>                
+                            <label htmlFor="irrf-irpf-sobre-autonomo-trasporte-passageiro">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-mei-transporte-passageiro" id="irrf-irpf-sobre-mei-transporte-passageiro" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-autonomo-trasporte-passageiro" id="irrf-irpf-sobre-mei-transporte-passageiro" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
                             </div>                     
                         </div>  
                     </div>
@@ -344,7 +344,7 @@ function IRPFsobreMeiTransportePassageiro(){
                 <div className="row">
                     <div className="col-lg-4"></div>
                     <div className="col-lg-4">
-                    {MostrarCalculos ? <div className="table-irpf-sobre-mei-transporte-passageiro">
+                    {MostrarCalculos ? <div className="table-irpf-sobre-autonomo-trasporte-passageiro">
                     <table className="table table table-responsive table-bordered">
                         <tr>
                             <th className="width80"></th>
@@ -380,7 +380,7 @@ function IRPFsobreMeiTransportePassageiro(){
                 <div className="row text-center">                 
                     <div className="col-lg-6">
                             <h3>Desconto Simplificado</h3> 
-                            <div className="table-irpf-sobre-mei-transporte-passageiro-declaracoes">
+                            <div className="table-irpf-sobre-autonomo-trasporte-passageiro-declaracoes">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -443,7 +443,7 @@ function IRPFsobreMeiTransportePassageiro(){
                         </div>
                    <div className="col-lg-6">
                             <h3>Deduções Legais</h3> 
-                            <div className="table-irpf-sobre-mei-transporte-passageiro-declaracoes">
+                            <div className="table-irpf-sobre-autonomo-trasporte-passageiro-declaracoes">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -514,4 +514,4 @@ function IRPFsobreMeiTransportePassageiro(){
       </div> 
     }
   
-  export default IRPFsobreMeiTransportePassageiro;
+  export default IRPFsobreAutonomoTrasportePassageiro;
