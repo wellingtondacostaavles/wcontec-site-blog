@@ -13,7 +13,7 @@ function Cardcalculadoras(){
                 </div>
             <div className="row boneco-card-calculadoras">    
                 <div className="col-lg-6">
-                    <img src="Images/calculando.jpg" />
+                    <img src="Images/calculando.png" />
                 </div>
                 <div className="col-lg-6">  
                     <h5>A Wcontec disponibiliza aos seus parceiros um serviço gratuito que se propõe a auxiliar em cálculos diversos.</h5>

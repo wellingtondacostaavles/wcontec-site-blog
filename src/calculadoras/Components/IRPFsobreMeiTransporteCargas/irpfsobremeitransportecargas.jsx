@@ -264,7 +264,7 @@ function IRPFsobreMeiTransporteCargas(){
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
-                    <h3>Motorista de transporte de cargas</h3>
+                    <h2>Motorista de transporte de cargas</h2>
                     <h4>Microempreendedor Individual</h4>
                     <p>Calcule o valor do imposto de renda pessoa física se você é um microempreendedor individual que transporta cargas</p>
                 </div>

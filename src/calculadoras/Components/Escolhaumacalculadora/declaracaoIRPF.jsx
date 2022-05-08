@@ -15,7 +15,7 @@ function DeclaracaoIRPF(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-distribuicao-lucro-mei"><img src="/Images/tegs-calculadoras/Tag-lucro-do-MEI-a-ser-distribuido-na-DIRPF.png"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-mei-comercio"><img src="/Images/tegs-calculadoras/Tag-comerciante-mei.png"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
                          <center><Link to="/calculadoras-distribuicao-lucro-socio-simples-nacional"><img src="/Images/tegs-calculadoras/Tag-lucro-do-Socio-Empresa-Simples-Nacional.png"/></Link></center>
