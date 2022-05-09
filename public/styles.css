@@ -85,7 +85,7 @@ body {
 #abrir-empresa-gratis {
   background-color: #ffffff;
   color: #323338;
-  padding: 8% 3% 21% 3%;
+  padding: 6% 3% 21% 3%;
 }
 
 #abrir-empresa-gratis img {
@@ -141,7 +141,7 @@ body {
 #ultimosartigosblog {
   background-color: #ffffff;
   color: #323338;
-  padding: 8% 3% 6% 3%;
+  padding: 6% 3% 6% 3%;
 }
 
 #ultimosartigosblog img {
@@ -151,6 +151,7 @@ body {
 #card-calculadoras {
   background-color: #ffffff;
   color: #323338;
+  padding: 6% 3% 6% 3%;
 }
 
 .card-calculadoras {

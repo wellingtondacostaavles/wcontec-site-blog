@@ -25,6 +25,9 @@ function Navbar(){
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#recomendados">Recomendados</a>
+            </li>
+            <li className="nav-item">
+              <Link to="/calculadoras" className="nav-link" aria-current="page">Calculadoras</Link>
             </li>   
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>

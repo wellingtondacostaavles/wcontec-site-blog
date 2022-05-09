@@ -16,7 +16,7 @@ function Cardcalculadoras(){
                     <img src="Images/calculando.png" />
                 </div>
                 <div className="col-lg-6">  
-                    <h5>A Wcontec disponibiliza aos seus parceiros um serviço gratuito que se propõe a auxiliar em cálculos diversos.</h5>
+                    <h5>A wcontec disponibiliza aos seus parceiros um serviço gratuito que se propõe a auxiliar em cálculos diversos. Por exemplo, calculos trabalhistas, tributos, declaração de imposto de renda pessoa física e muito mais.</h5>
                     <a href="https://bit.ly/3vaLhbt" className="btn btn-success btn-lg btn-card-calculadoras">Acesse as calculadoras</a>
                 </div>                            
             </div>

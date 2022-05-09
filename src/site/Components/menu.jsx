@@ -32,7 +32,10 @@ function Menu(){
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#ultimosartigosblog">Blog</a>
-            </li>           
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#card-calculadoras">Calculadoras</a>
+            </li>            
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>
             </li>

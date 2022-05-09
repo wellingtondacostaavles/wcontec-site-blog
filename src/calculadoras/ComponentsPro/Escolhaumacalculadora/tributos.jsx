@@ -15,13 +15,13 @@ function Tributos(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><a href="#pis"><img src="/Images/tegs-calculadoras/Tag-pis.png"/></a></center>                                   
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-pis.png"/></a></center>                                   
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><a href="#cofins"><img src="/Images/tegs-calculadoras/Tag-cofins.png"/></a></center>   
+                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-cofins.png"/></a></center>   
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                    
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-IRPF-desconto-simplificado.png"/></a></center>                                    
                     </div>
                 </div>             
             </div> 
@@ -29,13 +29,13 @@ function Tributos(){
         <div className="container">                              
             <div className="row">
             <   div className="col-lg-4 tgs">
-                    <center><a href="#ir-trimestral"><img src="/Images/tegs-calculadoras/Tag-irpj-presumido.png"/></a></center>                                                    
+                    <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-irpj-presumido.png"/></a></center>                                                    
                 </div>
                 <div className="col-lg-4 tgs">
-                    <center><a href="#csll-trimestral"><img src="/Images/tegs-calculadoras/Tag-csll-presumido.png"/></a></center>
+                    <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-csll-presumido.png"/></a></center>
                 </div>
                 <div className="col-lg-4 tgs">
-                    <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                                      
+                    <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-IRPF-deducoes-legais.png"/></a></center>                                                      
                 </div>
             </div>             
         </div> 

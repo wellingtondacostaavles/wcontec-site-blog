@@ -21,7 +21,7 @@ function Tributos(){
                          <center><a href="#cofins"><img src="/Images/tegs-calculadoras/Tag-cofins.png"/></a></center>   
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                    
+                        <center><Link to="/calculadoras-desconto-simplificado"><img src="/Images/tegs-calculadoras/Tag-IRPF-desconto-simplificado.png"/></Link></center>
                     </div>
                 </div>             
             </div> 
@@ -35,7 +35,7 @@ function Tributos(){
                     <center><Link to="/calculadoras-csll-lucro-presumido"><img src="/Images/tegs-calculadoras/Tag-csll-presumido.png"/></Link></center>
                 </div>
                 <div className="col-lg-4 tgs">
-                    <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                                      
+                    <center><Link to="/calculadoras-deducoes-legais"><img src="/Images/tegs-calculadoras/Tag-IRPF-deducoes-legais.png"/></Link></center>
                 </div>
             </div>             
         </div> 

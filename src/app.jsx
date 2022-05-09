@@ -14,7 +14,6 @@ import EditarPiscorretora from './calculadoras/ComponentsPro/Piscorretora/editar
 import Calculadoras from './calculadoras/calculadoras.jsx';
 import Customensalcomfuncionario from './calculadoras/Components/Customensalcomfuncionario/customensalcomfuncionario.jsx';
 import Customensalcomfuncionarionaooptantedosimplesnacional from './calculadoras/Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional.jsx';
-import Distribuicaolucromei from './calculadoras/Components/Distribuicaolucromei/distribuicaolucromei.jsx';
 import IRPFsobreMeiComercio from './calculadoras/Components/IRPFsobreMeiComercio/irpfsobremeicomercio.jsx';
 import IRPFsobreAutonomoTrasportePassageiro from './calculadoras/Components/IRPFsobreAutonomoTrasportePassageiro/irpfsobreautonomotrasportepassageiro.jsx';
 import IRPFsobreAutonomoTrasporteCargas from './calculadoras/Components/IRPFsobreAutonomoTrasporteCargas/irpfsobreautonomotrasportecargas.jsx';
@@ -88,7 +87,6 @@ function App(){
       <Route exact path='/calculadoras' component={Calculadoras} />
       <Route exact path='/calculadoras-custo-mensal-com-funcionario-optante-simples-nacional' component={Customensalcomfuncionario} />
       <Route exact path='/calculadoras-custo-mensal-com-funcionario-nao-optante-simples-nacional' component={Customensalcomfuncionarionaooptantedosimplesnacional} />
-      <Route exact path='/calculadoras-distribuicao-lucro-mei' component={Distribuicaolucromei} />
       <Route exact path='/calculadoras-irpf-mei-comercio' component={IRPFsobreMeiComercio} />
       <Route exact path='/calculadoras-irpf-autonomo-transporte-passageiro' component={IRPFsobreAutonomoTrasportePassageiro} />
       <Route exact path='/calculadoras-irpf-autonomo-transporte-cargas' component={IRPFsobreAutonomoTrasporteCargas} />
