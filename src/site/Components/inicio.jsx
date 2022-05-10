@@ -10,8 +10,8 @@ function Inicio(){
                 </div>
                 
                 <div className="col-lg-6">
-                    <h3> Descomplicamos a Gestão Contábil e Financeira da sua empresa <span className="segundo-h3">controle seu negócio em uma plataforma intuitiva.</span></h3>                  
-                    <h6>A wcontec disponibiliza uma plataforma de gestão financeira e assessoria contábil online, que ajuda você empreendedor manter a saúde da sua empresa em dia. Emita notas fiscais, guias de impostos, tenha total controle do fluxo caixa, contas a pagar e a receber, gere boletos para seus clientes, relatórios e muitos mais de forma simples, segura e eficaz.</h6>
+                    <h3>Descomplicamos a Gestão Contábil e Financeira da sua empresa <span className="segundo-h3">controle seu negócio em uma plataforma intuitiva.</span></h3>                  
+                    <h6>A wcontec disponibiliza uma plataforma de gestão financeira e assessoria contábil online, que ajuda manter a saúde da sua empresa em dia. Emita notas fiscais, guias de impostos, boletos, relatórios, controle o fluxo caixa, contas a pagar e receber e muito mais de forma simples, segura e eficaz.</h6>
                     <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-success btn-lg btn-banner">Teste Grátis</a>
                     <a href="https://wcontec.osayk.com.br/#/login" target="_blank" className="btn btn-outline-primary btn-lg btn-banner">Acesse a Plataforma</a>
                 </div>               
