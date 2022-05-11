@@ -10,10 +10,10 @@ function Abrirempresagratis(){
                 </div>                
                 <div className="row">                
                     <div className="col-lg-6">
-                        <p>Sabemos que para abrir seu negócio necessita da ajuda de um contador, então cadastre-se na Wcontec e opte por abrir sua empresa de forma gratuita.</p>
-                        <p>Assim, com ajuda da tecnologia elaboramos a consulta prévia junto aos órgãos competentes, preparamos o ato de constituição e damos entrada na emissão do CNPJ junto a Receita Federal.</p>
-                        <p>Por fim registramos sua empresa no sistema simplificado de tributação, Simples Nacional, aquele com a menor carga tributária do Brasil.</p>
-                        <p>Percebeu como é fácil abrir seu negócio com a Wcontec? Você tem a sua empresa aberta e pronta para começar a emitir notas fiscais e faturar em poucos dias.</p> 
+                        <h5>Sabemos que para abrir seu negócio necessita da ajuda de um contador, então cadastre-se na Wcontec e opte por abrir sua empresa de forma gratuita.</h5>
+                        <h5>Assim, com ajuda da tecnologia elaboramos a consulta prévia junto aos órgãos competentes, preparamos o ato de constituição e damos entrada na emissão do CNPJ junto a Receita Federal.</h5>
+                        <h5>Por fim registramos sua empresa no sistema simplificado de tributação, Simples Nacional, aquele com a menor carga tributária do Brasil.</h5>
+                        <h5>Percebeu como é fácil abrir seu negócio com a Wcontec? Você tem a sua empresa aberta e pronta para começar a emitir notas fiscais e faturar em poucos dias.</h5> 
                     </div>
                     <div className="col-lg-6">
                         <img src="Images/AbrirEmpresa.png" />
