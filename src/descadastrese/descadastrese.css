@@ -15,6 +15,7 @@ h6 {
 
 #descadastrese {
   padding: 30px 0 102px 0;
+  background-color: #ffffff;
 }
 
 #descadastrese img {
@@ -24,6 +25,7 @@ h6 {
 #descadastramento {
   padding: 3px 0 3px 0;
   text-align: center;
+  background-color: #ffffff;
 }
 
 #descadastramento img {
@@ -102,4 +104,8 @@ h6 {
 .form label {
   line-height: 1;
   margin-bottom: 0.5rem;
+}
+
+.inputs {
+  border-radius: 50px;
 }
