@@ -40,9 +40,9 @@ function IRPFsobreSocioMedico(){
         setNro5(value);        
     };
     
-    const [TransportedePassageiros, setNro1] = useState(0);
-    const [Extras, setNro2] = useState(0);
-    const [Promocoes, setNro3] = useState(0);  
+    const [Prolabore, setNro1] = useState(0);
+    const [Plantoesmedicos, setNro2] = useState(0);
+    const [Bolsaresidencia, setNro3] = useState(0);  
     const [DeducoesLegais, setNro4] = useState(0);
     const [IRRF, setNro5] = useState(0);
     
@@ -204,15 +204,15 @@ function IRPFsobreSocioMedico(){
     
     const calcular1 = () =>{  
         if (operacaoDeducaoQuarentaPorCento=="Somar")
-        return (parseFloat(TransportedePassageiros) * 0.40);
+        return (parseFloat(Prolabore) * 0.40);
     }
     const calcular2 = () =>{  
         if (operacaoTransportedePassageirosAposDeducao=="Subtrair")
-        return (parseFloat(TransportedePassageiros) - parseFloat(DeducaoQuarentaPorCento));
+        return (parseFloat(Prolabore) - parseFloat(DeducaoQuarentaPorCento));
     }
     const calcular3 = () =>{  
         if (operacaoReceitaBrua=="Somar")
-        return (parseFloat(TransportedePassageiros) + parseFloat(Extras) + parseFloat(Promocoes));
+        return (parseFloat(Prolabore) + parseFloat(Plantoesmedicos) + parseFloat(Bolsaresidencia));
     }
     const calcular4 = () =>{  
         if (operacaoLucroTributavel=="Subtrair")
@@ -237,9 +237,9 @@ function IRPFsobreSocioMedico(){
         return (parseFloat(ValorIRDeducoesLegais) - parseFloat(IRRF));
     } 
 
-    useEffect (() =>{setResultado1(calcular1())},[TransportedePassageiros, operacaoDeducaoQuarentaPorCento]);
-    useEffect (() =>{setResultado2(calcular2())},[TransportedePassageiros, DeducaoQuarentaPorCento, operacaoTransportedePassageirosAposDeducao]);
-    useEffect (() =>{setResultado3(calcular3())},[TransportedePassageiros, Extras, Promocoes, operacaoReceitaBrua]);
+    useEffect (() =>{setResultado1(calcular1())},[Prolabore, operacaoDeducaoQuarentaPorCento]);
+    useEffect (() =>{setResultado2(calcular2())},[Prolabore, DeducaoQuarentaPorCento, operacaoTransportedePassageirosAposDeducao]);
+    useEffect (() =>{setResultado3(calcular3())},[Prolabore, Plantoesmedicos, Bolsaresidencia, operacaoReceitaBrua]);
     useEffect (() =>{setResultado4(calcular4())},[ReceitaBrua, DeducaoQuarentaPorCento, operacaoLucroTributavel]);
     //Desconto Simplificado
     useEffect (() =>{setResultado5(calcular5())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
@@ -266,28 +266,28 @@ function IRPFsobreSocioMedico(){
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="TransportedePassageiros-irpf-sobre-socio-medico">Transp. de Passageiros</label>                
+                            <label htmlFor="pro-labore-irpf-sobre-socio-medico">Pró-labore</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="TransportedePassageiros-irpf-sobre-socio-medico" id="TransportedePassageiros-irpf-sobre-socio-medico" aria-label="Amount (to the nearest dollar)" value={TransportedePassageiros} onChange={handleChange1}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="pro-labore-irpf-sobre-socio-medico" id="pro-labore-irpf-sobre-socio-medico" aria-label="Amount (to the nearest dollar)" value={Prolabore} onChange={handleChange1}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Extras-irpf-sobre-socio-medico">Extras</label>                
+                            <label htmlFor="plantoes-medicos-irpf-sobre-socio-medico">Plantões médicos</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Extras-irpf-sobre-socio-medico" id="Extras-irpf-sobre-socio-medico" aria-label="Amount (to the nearest dollar)" value={Extras} onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="plantoes-medicos-irpf-sobre-socio-medico" id="plantoes-medicos-irpf-sobre-socio-medico" aria-label="Amount (to the nearest dollar)" value={Plantoesmedicos} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Promocoes-irpf-sobre-socio-medico">Promoções</label>                
+                            <label htmlFor="Bolsa-residencia-irpf-sobre-socio-medico">Bolsa residência</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Promocoes-irpf-sobre-socio-medico" id="Promocoes-irpf-sobre-socio-medico" aria-label="Amount (to the nearest dollar)" value={Promocoes} onChange={handleChange3}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Bolsa-residencia-irpf-sobre-socio-medico" id="Bolsa-residencia-irpf-sobre-socio-medico" aria-label="Amount (to the nearest dollar)" value={Bolsaresidencia} onChange={handleChange3}/>
                             </div>                     
                         </div>  
                     </div>
