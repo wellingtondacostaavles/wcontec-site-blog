@@ -61,6 +61,7 @@ import Documentosnecessarios from './blog/Artigos/DIRPF22/Documentosnecessarios/
 import Deducoeslegaisdescontosimplificado from './blog/Artigos/DIRPF22/Deducoeslegaisdescontosimplificado/deducoeslegais-descontosimplificado.jsx';
 import Microempreendedor from './blog/Artigos/Microempreendedor/microempreendedor.jsx';
 import Obrigatoriedade from './blog/Artigos/DIRPF22/Obrigatoriedade/obrigatoriedade.jsx';
+import Obrigatoriedadedeemitirnotafiscal from './blog/Artigos/Notasfiscais/obrigatoriedadedeemitirnotafiscal.jsx';
 import Cofinspresumido from './calculadoras/Components/Cofinspresumido/cofinspresumido.jsx';
 
 
@@ -136,6 +137,7 @@ function App(){
       <Route exact path='/blog-deducoes-legais-desconto-simplificado-irpf-22' component={Deducoeslegaisdescontosimplificado} />
       <Route exact path='/blog-microempreendedor-e-trabalhador-informal-tem-direito-a-receber' component={Microempreendedor} />
       <Route exact path='/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf-22' component={Obrigatoriedade} />
+      <Route exact path='/blog-obrigatoriedade-de-emitir-nota-fiscal' component={Obrigatoriedadedeemitirnotafiscal} />
     </Switch>
 
     </BrowserRouter>;

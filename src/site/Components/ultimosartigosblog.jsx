@@ -15,6 +15,16 @@ function Ultimosartigosblog(){
             <div className="row">
             <div className="col-lg-4">
                     <div className="card card-artigos">
+                        <center><img src="/Images/Notasfiscais/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Emitir Nota Fiscal eletrônica, saiba quem tem essa obrigação.</h4>
+                            <p className="card-text">Todo empreendedor deve emitir a nota fiscal. A obrigação vale para os ME, EPP e para os MEIs, salvo se estes venderem ou prestarem serviços para pessoa física.</p>
+                            <a href="/blog-obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
+            <div className="col-lg-4">
+                    <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/Obrigatoriedade/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Saiba se você está obrigado a apresentar DIRPF 2022</h4>
@@ -33,16 +43,6 @@ function Ultimosartigosblog(){
                         </div>
                     </div>  
                 </div>
-            <div className="col-lg-4">
-                    <div className="card card-artigos">
-                        <center><img src="/Images/DIRPF22/Deducoeslegaisoudescontosimplificado/ultimosartigos.png" className="card-img-top" alt="..."/></center>
-                        <div className="card-body">
-                            <h4 className="card-title">Deduções legais ou desconto simplificado, qual escolher?</h4>
-                            <p className="card-text">Vai depender do total de despesas dedutíveis que você tem em relação à renda. Você pode avaliar se é melhor optar por deduções legais ou desconto simplificado.</p>
-                            <a href="/blog-deducoes-legais-desconto-simplificado-irpf-22#" className="btn btn-primary btn-artigos">Ler Post</a>
-                        </div>
-                    </div>  
-                </div>                         
             </div>  
         </div>               
     </section>;}
