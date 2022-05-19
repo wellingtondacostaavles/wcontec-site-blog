@@ -23,7 +23,7 @@ function Certificacaodigital(){
                         <div className="card-body">
                             <h5>Otimize seu imposto de renda com a Declaração Pré-Preenchida</h5>
                             <p><small className="text-muted">A partir de</small></p>
-                            <h2>R$ 140,00</h2>
+                            <p>R$ <span className="h2-preco">140</span>,00<small className="text-muted"></small></p>
                             <p><small className="text-muted">Emitido e armazenado no computador, smartphone ou tablet. Validade de 1 ano.</small></p>
                             <a href="https://api.whatsapp.com/send/?phone=5581996584830&text&app_absent=0" target="_blank" className="btn btn-lg btn-outline-success btn-artigos">Compre agora</a>
                         </div>
@@ -38,7 +38,7 @@ function Certificacaodigital(){
                         <div className="card-body">
                             <h5>Concentre suas assinaturas em um único local de armazenamento</h5>
                             <p><small className="text-muted">A partir de</small></p>
-                            <h2>R$ 190,00</h2>
+                            <p>R$ <span className="h2-preco">190</span>,00<small className="text-muted"></small></p>
                             <p><small className="text-muted">Emitido e armazenado no computador, smartphone ou tablet. Validade de 1 ano.</small></p>
                             <a href="https://api.whatsapp.com/send/?phone=5581996584830&text&app_absent=0" target="_blank" className="btn btn-lg btn-success btn-artigos">Compre agora</a>
                         </div>
@@ -53,7 +53,7 @@ function Certificacaodigital(){
                         <div className="card-body">
                             <h5>Menos burocracia em processos que exigem assinatura digital</h5>
                             <p><small className="text-muted">A partir de</small></p>
-                            <h2>R$ 256,00</h2>
+                            <p>R$ <span className="h2-preco">256</span>,00<small className="text-muted"></small></p>
                             <p><small className="text-muted">Emitido e armazenado em mídia de Cartão ou Token. Validade de 1 a 3 anos.</small></p>
                             <a href="https://api.whatsapp.com/send/?phone=5581996584830&text&app_absent=0" target="_blank" className="btn btn-lg btn-outline-success btn-artigos">Compre agora</a>
                         </div>
