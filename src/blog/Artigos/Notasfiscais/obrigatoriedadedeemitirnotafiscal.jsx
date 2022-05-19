@@ -47,12 +47,12 @@ function Obrigatoriedadedeemitirnotafiscal(){
             <div className="container">
                 <div className="row"> 
                  <p>O sistema emissor se comunica com o site da Sefaz de cada Estado e a prefeitura correspondente no momento da emissão da NF-e ou NFS-e.</p>
-                 <p>O MEI, mesmo que dispensado de emitir nota fiscal para consumidor pessoa física, é obrigado à emissão quando o destinatário da mercadoria ou serviço for uma empresa. Veja os tipos de <a href="#" target="_blank" className="tabela-a">tipos de notas permitidas para o microempreendedor individual.</a></p>
+                 <p>O MEI, mesmo que dispensado de emitir nota fiscal para consumidor pessoa física, é obrigado à emissão quando o destinatário da mercadoria ou serviço for uma empresa. Veja os tipos de <a href="/blog-tipos-de-notas-permitidas-para-o-mei#tipos-de-notas-permitidas-para-o-mei" target="_blank" className="tabela-a">notas permitidas para o microempreendedor individual.</a></p>
                 </div>
             </div>   
 
             <div className="container">
-                    <div className="row"><p>Vale lembrar que os recursos poderão ser utilizados para o aumento do capital de giro, aquisição de insumos e investimentos em equipamentos e utensílios que favoreçam o aumento da produção.</p>
+                    <div className="row">
                         <p></p>
                         <p>Fonte de informações: Sebrae</p>
                     </div>

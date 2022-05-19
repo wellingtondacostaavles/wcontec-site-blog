@@ -1,0 +1,38 @@
+.segundo-h3 {
+    color: #0d6efd;
+  }
+  .terceiro-h3 {
+    color: #07fff0;
+  }
+  
+  #tipos-de-notas-permitidas-para-o-mei {
+    background-color: #ececec;
+    color: #050922;
+    padding: 90px 0 90px 12px;
+  }
+  
+  #tipos-de-notas-permitidas-para-o-mei img {
+    width: 90%;
+  }
+  
+  #capa-tipos-de-notas-permitidas-para-o-mei {
+    background-color: #050922;
+    color: #ffffff;
+    padding: 108px 0 102px 0;
+  }
+  
+  #capa-tipos-de-notas-permitidas-para-o-mei img {
+    width: 100%;
+  }
+  
+  .btn-capa-tipos-de-notas-permitidas-para-o-mei {
+    margin: 6% 3% 6% 0;
+    color: #ffffff;
+    border-radius: 50px;
+  }
+  
+  #artigosrelacionados-tipos-de-notas-permitidas-para-o-mei {
+    padding: 60px 0 0 0;
+    background-color: #ffffff;
+  }
+  

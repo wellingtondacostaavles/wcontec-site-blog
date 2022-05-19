@@ -17,7 +17,7 @@ function Ultimosartigosblog(){
                     <div className="card card-artigos">
                         <center><img src="/Images/Notasfiscais/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Emitir Nota Fiscal eletrônica, saiba quem tem essa obrigação.</h4>
+                            <h4 className="card-title">Emitir Nota Fiscal, saiba quem tem essa obrigação.</h4>
                             <p className="card-text">Todo empreendedor deve emitir a nota fiscal. A obrigação vale para os ME, EPP e para os MEIs, salvo se estes venderem ou prestarem serviços para pessoa física.</p>
                             <a href="/blog-obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
