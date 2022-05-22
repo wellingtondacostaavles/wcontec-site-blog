@@ -4,55 +4,55 @@ function Parceiros(){
     return <section id="parceiros">   
         <div className="parceiros-logos">  
         <div className="container">
-        <div className="row coluna1">
-            <div className="col"></div>
-            <div className="col"></div>
-            <div className="col">
-               <a href="https://imperio-dos-descartaveis.kyte.site/" target="_blank"><img src="/Images/Parceiros/ImperioDescartaveis.png"/></a>
+            <div className="row coluna1">
+                <div className="col"></div>
+                <div className="col"></div>
+                <div className="col">
+                <a href="https://imperio-dos-descartaveis.kyte.site/" target="_blank"><img src="/Images/Parceiros/ImperioDescartaveis.png"/></a>
+                </div>
+                <div className="col">
+                    <a href="https://api.whatsapp.com/send?phone=5581997780156" target="_blank"><img src="/Images/Parceiros/Diniz-contabilidade.png"/></a>
+                </div>
+                <div className="col">
+                    <a href="https://go.hotmart.com/H67767543F?ap=305a" target="_blank"><img src="/Images/Parceiros/Vargas.png"/></a>
+                </div>
+                <div className="col">
+                    <a href="https://api.whatsapp.com/send?phone=5581998753986" target="_blank"><img src="/Images/Parceiros/OGS.png"/></a>
+                </div>
+                <div className="col"></div>
+                <div className="col"></div>
             </div>
-            <div className="col">
-                <a href="https://api.whatsapp.com/send?phone=5581997780156" target="_blank"><img src="/Images/Parceiros/Diniz-contabilidade.png"/></a>
+            <div className="row coluna2">
+                <div className="col"></div>
+                <div className="col">
+                    <a href="https://aws.amazon.com/pt/" target="_blank"><img src="/Images/Parceiros/AWS.png"/></a>
+                </div>
+                <div className="col">
+                    <a href="/parceiro-certificacao-digital" target="_blank"><img src="/Images/Parceiros/Certificado.digital.png"/></a>
+                </div>
+                <div className="col">
+                    <a href="https://osayk.com.br/" target="_blank"><img src="/Images/Parceiros/Osayk.png"/></a>
+                </div>
+                <div className="col">
+                    <a href="https://jhmateriaisparaconstrucao.com/" target="_blank"><img src="/Images/Parceiros/JH.png"/></a>
+                </div>
+                <div className="col">
+                    <a href="https://github.com/" target="_blank"><img src="/Images/Parceiros/GitHub.png"/></a>
+                </div>
+                <div className="col">
+                    <a href="#" target="_blank"><img src="/Images/Parceiros/Torne-se-parceiro.png"/></a>
+                </div>
+                <div className="col"></div>
             </div>
-            <div className="col">
-                <a href="https://go.hotmart.com/H67767543F?ap=305a" target="_blank"><img src="/Images/Parceiros/Vargas.png"/></a>
-            </div>
-            <div className="col">
-                <a href="https://api.whatsapp.com/send?phone=5581998753986" target="_blank"><img src="/Images/Parceiros/OGS.png"/></a>
-            </div>
-            <div className="col"></div>
-            <div className="col"></div>
         </div>
-        <div className="row coluna2">
-            <div className="col"></div>
-            <div className="col">
-                <a href="https://aws.amazon.com/pt/" target="_blank"><img src="/Images/Parceiros/AWS.png"/></a>
-            </div>
-            <div className="col">
-                <a href="/parceiro-certificacao-digital" target="_blank"><img src="/Images/Parceiros/Certificado.digital.png"/></a>
-            </div>
-            <div className="col">
-                <a href="https://osayk.com.br/" target="_blank"><img src="/Images/Parceiros/Osayk.png"/></a>
-            </div>
-            <div className="col">
-                <a href="https://jhmateriaisparaconstrucao.com/" target="_blank"><img src="/Images/Parceiros/JH.png"/></a>
-            </div>
-            <div className="col">
-                <a href="https://github.com/" target="_blank"><img src="/Images/Parceiros/GitHub.png"/></a>
-            </div>
-            <div className="col">
-                <a href="#" target="_blank"><img src="/Images/Parceiros/Torne-se-parceiro.png"/></a>
-            </div>
-            <div className="col"></div>
-        </div>
+    </div>    
+    <div className="container-fluid">
         <div className="row">
-                <br></br>             
-        </div>        
+                <p className="position-parceiros-p">Parceiros</p>             
         </div>
-    </div>  
-    <div className="parceiros">
-     
+    </div>
+    <div className="parceiros"> 
      <div className="container">
-            
         <div className="row">
              <div className="col-lg-12">
                 <a href="https://bit.ly/3pOcj5d" target="_blank"><img src="/Images/Parceiros/Vargas-banner.png"/></a>

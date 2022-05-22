@@ -187,10 +187,17 @@ body {
 #parceiros {
   background-color: #ffffff;
   padding-top: 5%;
-  }
+}
+.position-parceiros-p {
+  position: absolute;
+  color: #8d8d97;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+}
+
 
 .parceiros-logos {
-  padding: 0 13% 0 12%;
+  padding: 0 13% 1% 12%;
   background-color: #ffffff;
 }
 
