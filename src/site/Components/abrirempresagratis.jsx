@@ -11,9 +11,9 @@ function Abrirempresagratis(){
                 <div className="row">                
                     <div className="col-lg-6">
                         <h5>Sabemos que para abrir seu negócio necessita da ajuda de um contador, então cadastre-se na Wcontec e opte por abrir sua empresa de forma gratuita.</h5>
-                        <h5>Assim, com ajuda da tecnologia elaboramos a consulta prévia junto aos órgãos competentes, preparamos o ato de constituição e damos entrada na emissão do CNPJ junto a Receita Federal.</h5>
-                        <h5>Por fim registramos sua empresa no sistema simplificado de tributação, Simples Nacional, aquele com a menor carga tributária do Brasil.</h5>
-                        <h5>Percebeu como é fácil abrir seu negócio com a Wcontec? Você tem a sua empresa aberta e pronta para começar a emitir notas fiscais e faturar em poucos dias.</h5> 
+                        <h5>Nessa modalidade você adere ao plano de contabilidade mensal equivalente ao da sua empresa quando aberta. Fazemos uma análise para definir o melhor modelo empresarial, elaboramos a consulta prévia junto aos órgãos competentes, preparamos o ato de constituição, damos entrada na emissão do CNPJ junto à Receita Federal, e por fim entregamos junto com as taxas governamentais a documentação pronta com as instruções do que fazer.</h5>
+                        <h5>Se preferir ainda registramos sua empresa no sistema simplificado de tributação, Simples Nacional, aquele com a menor carga tributária do Brasil.   </h5>
+                        <h5>Percebeu como é fácil abrir seu negócio com a Wcontec? Você tem a sua empresa aberta e pronta para começar a faturar e emitir notas fiscais em poucos dias.</h5> 
                     </div>
                     <div className="col-lg-6">
                         <img src="Images/AbrirEmpresa.png" />
@@ -34,7 +34,7 @@ function Abrirempresagratis(){
                                     </div>
                                     <div className="col-lg-6 formtext">  
                                         <h2>Passo 1</h2>
-                                        <h5>Contrate um de nossos planos anual de acesso a plataforma, em seguida nos envie algumas informações que iremos te solicitar, vamos preparar toda documentação, colher sua assinatura e te enviar as taxas governamentais. </h5>
+                                        <h5>Cadastre-se e opte por abrir sua empresa de forma gratuita, em seguida nos envie alguns documentos que iremos te solicitar, vamos preparar toda documentação, colher sua assinatura e te enviar as taxas governamentais.</h5>
                                     </div>                            
                                 </div>       
                             </div>    
@@ -45,7 +45,7 @@ function Abrirempresagratis(){
                                     </div>
                                     <div className="col-lg-6 formtext">  
                                         <h2>Passo 2</h2>
-                                        <h5>Realize o pagamento das taxas e impostos governamentais, e caso você não tenha optado por abertura de empresa na forma Premium, nossa equipe de contadores oferecerá todas as orientações necessárias para protocolar os documentos nos órgãos competentes.</h5>
+                                        <h5>Realize o pagamento das taxas e impostos governamentais, e caso você não tenha optado por abertura de empresa na forma Exclusiva, nossa equipe de contadores oferecerá todas as orientações necessárias para protocolar os documentos nos órgãos competentes.</h5>
                                     </div>                            
                                 </div>       
                             </div>  

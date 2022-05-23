@@ -19,7 +19,7 @@ function Beneficios(){
                 <div className="col-lg-4 feature-box">
                     <i className="icon fas fa-desktop fa-5x"></i>
                     <h3>Painel intuitivo</h3>
-                    <p>Controle suas entradas e saídas de dinheiro e gere relatórios, fluxo de caixa, demonstrativos e muito mais de forma simples e fácil.</p>
+                    <p>Controle suas entradas e saídas, emita nota fiscal, gere relatórios, fluxo de caixa, demonstrativos e muito mais de forma simples.</p>
                 </div>                                         
             </div>
         </div>
