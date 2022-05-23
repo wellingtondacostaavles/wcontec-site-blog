@@ -13,8 +13,7 @@ import './artigo4.css';
 function Abrirempresa(){
     return <div>
       <Navbar/>
-      <Capa/>
-          
+      <Capa/>         
       
     <section id="abrirempresa">
 
@@ -126,9 +125,15 @@ function Abrirempresa(){
                 <p>Uma vez que o aparato fiscal esteja pronto e registrado, sua empresa pode começar a operar legalmente.</p>
                 <br></br>
                 <p>Fonte de informações: SEBRAE</p>
-            </div>                
-        </div>          
-           
+            </div>
+            <div className="row text-center">    
+                <div className="col-lg-4"></div>
+                <div className="col-lg-4">  
+                    <a href="/#abrir-empresa-gratis" className="btn btn-outline-primary btn-lg btn-capa-abrirempresa-link">Abrir empresa grátis</a>
+                </div>
+                <div className="col-lg-4"></div>                            
+            </div>        
+        </div>           
     </section>
     <Artigosrelacionados/>
     <Artigos/>    
