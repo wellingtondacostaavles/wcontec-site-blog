@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
-import './irpfsobremeicomercio.css';
+import './irpfsobremeiservico.css';
 
-function IRPFsobreMeiComercio(){  
+function IRPFsobreMeiServico(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -36,7 +36,7 @@ function IRPFsobreMeiComercio(){
         setNro5(value);        
     };
     
-    const [ReceitadeVendas, setNro1] = useState(0);
+    const [ReceitadeSevicos, setNro1] = useState(0);
     const [DespesasdoMEI, setNro2] = useState(0);
     const [DeducoesLegais, setNro4] = useState(0);
     const [IRRF, setNro5] = useState(0);
@@ -196,7 +196,7 @@ function IRPFsobreMeiComercio(){
     
     const calcular2 = () =>{  
         if (operacaoPresucao8=="Somar")
-        return (parseFloat(ReceitadeVendas) * 0.08);
+        return (parseFloat(ReceitadeSevicos) * 0.32);
     }
     const calcular3 = () =>{  
         if (operacaoLucroIsentoMei=="Somar")
@@ -204,7 +204,7 @@ function IRPFsobreMeiComercio(){
     }
     const calcular5 = () =>{  
         if (operacaoLucroTributavel=="Subtrair")
-        return (parseFloat(ReceitadeVendas) - parseFloat(DespesasdoMEI) - parseFloat(LucroIsentoMei));
+        return (parseFloat(ReceitadeSevicos) - parseFloat(DespesasdoMEI) - parseFloat(LucroIsentoMei));
     }
     //Desconto Simplificado
     const calcular6 = () =>{  
@@ -225,9 +225,9 @@ function IRPFsobreMeiComercio(){
         return (parseFloat(ValorIRDeducoesLegais) - parseFloat(IRRF));
     } 
 
-    useEffect (() =>{setResultado2(calcular2())},[ReceitadeVendas, operacaoPresucao8]);
+    useEffect (() =>{setResultado2(calcular2())},[ReceitadeSevicos, operacaoPresucao8]);
     useEffect (() =>{setResultado3(calcular3())},[Presucao8, operacaoLucroIsentoMei]);
-    useEffect (() =>{setResultado5(calcular5())},[ReceitadeVendas, DespesasdoMEI, LucroIsentoMei, operacaoLucroTributavel]);
+    useEffect (() =>{setResultado5(calcular5())},[ReceitadeSevicos, DespesasdoMEI, LucroIsentoMei, operacaoLucroTributavel]);
     //Desconto Simplificado
     useEffect (() =>{setResultado6(calcular6())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
     useEffect (() =>{setResultado7(calcular7())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
@@ -238,52 +238,52 @@ function IRPFsobreMeiComercio(){
         
         return <div>         
         
-        <section id="irpf-sobre-mei-comercio">  
+        <section id="irpf-sobre-mei-servico">  
         <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
-                    <h2>Comerciante</h2>
+                    <h2>Prestador de Serviços</h2>
                     <h4>Microempreendedor Individual</h4>
-                    <p>Calcule o valor do imposto de renda pessoa física se você é um microempreendedor individual comerciante em geral.</p>
+                    <p>Calcule o valor do imposto de renda pessoa física se você é um microempreendedor individual prestador de serviços em geral.</p>
                 </div>
             </div>
             <div className="container">
-                <div className="row inputs-irpf-sobre-mei-comercio">
+                <div className="row inputs-irpf-sobre-mei-servico">
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="ReceitadeVendas-irpf-sobre-mei-comercio">*Receita de Vendas</label>                
+                            <label htmlFor="ReceitadeServicos-irpf-sobre-mei-servico">*Receita de Serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitadeVendas-irpf-sobre-mei-comercio" id="ReceitadeVendas-irpf-sobre-mei-comercio" aria-label="Amount (to the nearest dollar)" value={ReceitadeVendas} onChange={handleChange1}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitadeServiços-irpf-sobre-mei-servico" id="ReceitadeServiços-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={ReceitadeSevicos} onChange={handleChange1}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="DespesasdoMEI-irpf-sobre-mei-comercio">*Despesas do MEI</label>                
+                            <label htmlFor="DespesasdoMEI-irpf-sobre-mei-servico">*Despesas do MEI</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DespesasdoMEI-irpf-sobre-mei-comercio" id="DespesasdoMEI-irpf-sobre-mei-comercio" aria-label="Amount (to the nearest dollar)" value={DespesasdoMEI} onChange={handleChange2}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DespesasdoMEI-irpf-sobre-mei-servico" id="DespesasdoMEI-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={DespesasdoMEI} onChange={handleChange2}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Deducoeslegais-irpf-sobre-mei-comercio">*Deduções Legais</label>                
+                            <label htmlFor="Deducoeslegais-irpf-sobre-mei-servico">*Deduções Legais</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-mei-comercio" id="Deducoeslegais-irpf-sobre-mei-comercio" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-mei-servico" id="Deducoeslegais-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="irrf-irpf-sobre-mei-comercio">IRRF</label>                
+                            <label htmlFor="irrf-irpf-sobre-mei-servico">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-mei-comercio" id="irrf-irpf-sobre-mei-comercio" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-mei-servico" id="irrf-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
                             </div>                     
                         </div>  
                     </div>
@@ -300,7 +300,7 @@ function IRPFsobreMeiComercio(){
                 <div className="row">
                     <div className="col-lg-4"></div>
                     <div className="col-lg-4">
-                    {MostrarCalculos ? <div className="table-irpf-sobre-mei-comercio">
+                    {MostrarCalculos ? <div className="table-irpf-sobre-mei-servico">
                     <table className="table table table-responsive table-bordered">
                         <tr>
                             <th className="width80"></th>
@@ -309,7 +309,7 @@ function IRPFsobreMeiComercio(){
                     <tbody>
                         <tr>
                             <th scope="row" className="tabela-p">
-                                <p>Dedução de 8% - <a href="http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="_blank" className="tabela-a">Art. 14, § 1º da LC 123/2006</a>, <a href="http://www.planalto.gov.br/ccivil_03/leis/l9249.htm" target="_blank" className="tabela-a">Art. 15 da Lei 9.249/95.</a></p>
+                                <p>Dedução de 32% - <a href="http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="_blank" className="tabela-a">Art. 14, § 1º da LC 123/2006</a>, <a href="http://www.planalto.gov.br/ccivil_03/leis/l9249.htm" target="_blank" className="tabela-a">Art. 15, § 1º, lebra b, III, da Lei 9.249/95.</a></p>
                             </th>
                             <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                         </tr>                
@@ -330,7 +330,7 @@ function IRPFsobreMeiComercio(){
                 <div className="row text-center">                 
                     <div className="col-lg-6">
                             <h3>Desconto Simplificado</h3> 
-                            <div className="table-irpf-sobre-mei-comercio-declaracoes">
+                            <div className="table-irpf-sobre-mei-servico">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -346,7 +346,7 @@ function IRPFsobreMeiComercio(){
                                 <tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro-labore, alugéis e serviços prestados"</p>
+                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro-labore e alugéis."</p>
                                         </th>
                                     <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
@@ -386,7 +386,7 @@ function IRPFsobreMeiComercio(){
                         </div>
                    <div className="col-lg-6">
                             <h3>Deduções Legais</h3> 
-                            <div className="table-irpf-sobre-mei-comercio">
+                            <div className="table-irpf-sobre-mei-servico">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -402,7 +402,7 @@ function IRPFsobreMeiComercio(){
                                 <tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro-labore, alugéis e serviços prestados"</p>
+                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro-labore e alugéis."</p>
                                         </th>
                                     <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
@@ -450,4 +450,4 @@ function IRPFsobreMeiComercio(){
       </div> 
     }
   
-  export default IRPFsobreMeiComercio;
+  export default IRPFsobreMeiServico;

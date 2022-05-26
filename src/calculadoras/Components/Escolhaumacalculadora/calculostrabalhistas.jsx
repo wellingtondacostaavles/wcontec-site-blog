@@ -21,7 +21,7 @@ function Calculostrabalhistas(){
                          <center><Link to="/calculadoras-custo-mensal-com-funcionario-nao-optante-simples-nacional"><img src="/Images/tegs-calculadoras/Tag-custo-com-funcionário-nao-optante-simples.png"/></Link></center>
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>                                    
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></a></center>                                    
                     </div>
                 </div>             
             </div> 
