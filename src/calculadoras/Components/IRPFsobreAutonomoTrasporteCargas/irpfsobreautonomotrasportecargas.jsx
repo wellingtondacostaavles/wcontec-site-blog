@@ -58,6 +58,21 @@ function IRPFsobreAutonomoTrasporteCargas(){
     const [LucroTributavel, setResultado4] = useState(0);
     const [operacaoLucroTributavel, setOperacao4] = useState('Subtrair');
 
+    const MostarTabelasCalculos = ReceitaBrua
+    
+    const comTabela = 'Mostrando Tabelas de Calculos'
+    const semTabela = ''
+
+    const MostrarTabelas = Tabelas(MostarTabelasCalculos)
+
+        function Tabelas(MostarTabelasCalculos){
+            if (MostarTabelasCalculos > 0.009){
+                return comTabela
+            } else {
+            return semTabela
+            }
+        }
+    
     const SituacaodosCalculos = DeducaoNoventaPorCento
     
     const comCalculo = 'Parcela do Faturamento ISENTA na DIRPF'
@@ -66,7 +81,7 @@ function IRPFsobreAutonomoTrasporteCargas(){
     const MostrarCalculos = Calculos(SituacaodosCalculos)
 
         function Calculos(SituacaodosCalculos){
-            if (SituacaodosCalculos > 0){
+            if (SituacaodosCalculos > 0.009){
                 return comCalculo
             } else {
             return semCalculo
@@ -340,7 +355,7 @@ function IRPFsobreAutonomoTrasporteCargas(){
                     <div className="col-lg-4"></div>                         
             </div>  
         </div> 
-        {MostrarCalculos ? <div>
+        {MostrarTabelas ? <div>
             <div className="container">
                 <div className="row text-center">
                     <div className="titulo-declaraco">
@@ -363,13 +378,13 @@ function IRPFsobreAutonomoTrasporteCargas(){
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
-                                <tr>
+                                {MostrarCalculos ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Rendimentos Isentos e Não Tributáveis.</p>
                                         <p>"Ficha 23 - Rendimentos bruto, até o máximo de 90%, da prestação de serviços decorrente do transporte de cargas"</p>
                                     </th>
                                     <td className="bi">{[DeducaoNoventaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>
+                                </tr>: ''}
                                 {SituacaoIRDescontoSimplificado ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Desconto Simplificado</p>
@@ -419,13 +434,13 @@ function IRPFsobreAutonomoTrasporteCargas(){
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
-                                <tr>
+                                {MostrarCalculos ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Rendimentos Isentos e Não Tributáveis.</p>
                                         <p>"Ficha 23 - Rendimentos bruto, até o máximo de 90%, da prestação de serviços decorrente do transporte de cargas"</p>
                                     </th>
                                     <td className="bi">{[DeducaoNoventaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>
+                                </tr>: ''}
                                 {SituacaoIRDeducoesLegais ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Deduções Legais</p>

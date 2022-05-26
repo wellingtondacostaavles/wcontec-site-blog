@@ -46,19 +46,31 @@ function IRPFsobreSocioMedico(){
     const [DeducoesLegais, setNro4] = useState(0);
     const [IRRF, setNro5] = useState(0);
     
-    const [DeducaoQuarentaPorCento, setResultado1] = useState(0);
-    const [operacaoDeducaoQuarentaPorCento, setOperacao1] = useState('Somar');
+    const [LucroIsento, setResultado1] = useState(0);
+    const [operacaoLucroIsento, setOperacao1] = useState('Somar');
 
-    const [TransportedePassageirosAposDeducao, setResultado2] = useState(0);
-    const [operacaoTransportedePassageirosAposDeducao, setOperacao2] = useState('Subtrair');
-  
     const [ReceitaBrua, setResultado3] = useState(0);
     const [operacaoReceitaBrua, setOperacao3] = useState('Somar');
 
     const [LucroTributavel, setResultado4] = useState(0);
     const [operacaoLucroTributavel, setOperacao4] = useState('Subtrair');
 
-    const SituacaodosCalculos = DeducaoQuarentaPorCento
+    const MostarTabelasCalculos = ReceitaBrua
+    
+    const comTabela = 'Mostrando Tabelas de Calculos'
+    const semTabela = ''
+
+    const MostrarTabelas = Tabelas(MostarTabelasCalculos)
+
+        function Tabelas(MostarTabelasCalculos){
+            if (MostarTabelasCalculos > 0.009){
+                return comTabela
+            } else {
+            return semTabela
+            }
+        }     
+    
+    const SituacaodosCalculos = LucroIsento
     
     const comCalculo = 'Parcela do Faturamento ISENTA na DIRPF'
     const semCalculo = ''
@@ -66,7 +78,7 @@ function IRPFsobreSocioMedico(){
     const MostrarCalculos = Calculos(SituacaodosCalculos)
 
         function Calculos(SituacaodosCalculos){
-            if (SituacaodosCalculos > 0){
+            if (SituacaodosCalculos > 0.009){
                 return comCalculo
             } else {
             return semCalculo
@@ -203,12 +215,8 @@ function IRPFsobreSocioMedico(){
         }
     
     const calcular1 = () =>{  
-        if (operacaoDeducaoQuarentaPorCento=="Somar")
-        return (parseFloat(Prolabore) * 0.40);
-    }
-    const calcular2 = () =>{  
-        if (operacaoTransportedePassageirosAposDeducao=="Subtrair")
-        return (parseFloat(Prolabore) - parseFloat(DeducaoQuarentaPorCento));
+        if (operacaoLucroIsento=="Somar")
+        return (parseFloat(Bolsaresidencia));
     }
     const calcular3 = () =>{  
         if (operacaoReceitaBrua=="Somar")
@@ -216,7 +224,7 @@ function IRPFsobreSocioMedico(){
     }
     const calcular4 = () =>{  
         if (operacaoLucroTributavel=="Subtrair")
-        return (parseFloat(ReceitaBrua) - parseFloat(DeducaoQuarentaPorCento));
+        return (parseFloat(ReceitaBrua) - parseFloat(LucroIsento));
     }
     //Desconto Simplificado
     const calcular5 = () =>{  
@@ -237,10 +245,9 @@ function IRPFsobreSocioMedico(){
         return (parseFloat(ValorIRDeducoesLegais) - parseFloat(IRRF));
     } 
 
-    useEffect (() =>{setResultado1(calcular1())},[Prolabore, operacaoDeducaoQuarentaPorCento]);
-    useEffect (() =>{setResultado2(calcular2())},[Prolabore, DeducaoQuarentaPorCento, operacaoTransportedePassageirosAposDeducao]);
+    useEffect (() =>{setResultado1(calcular1())},[Bolsaresidencia, operacaoLucroIsento]);
     useEffect (() =>{setResultado3(calcular3())},[Prolabore, Plantoesmedicos, Bolsaresidencia, operacaoReceitaBrua]);
-    useEffect (() =>{setResultado4(calcular4())},[ReceitaBrua, DeducaoQuarentaPorCento, operacaoLucroTributavel]);
+    useEffect (() =>{setResultado4(calcular4())},[ReceitaBrua, LucroIsento, operacaoLucroTributavel]);
     //Desconto Simplificado
     useEffect (() =>{setResultado5(calcular5())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
     useEffect (() =>{setResultado6(calcular6())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
@@ -329,9 +336,9 @@ function IRPFsobreSocioMedico(){
                     <tbody>
                         <tr className="">
                             <th scope="row" className="tabela-p">
-                                <p>Dedução de 40% - <a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/51525535/do1-2018-11-23-decreto-n-9-580-de-22-de-novembro-de-2018-51525026" target="_blank" className="tabela-a">Decreto Federal nº 9.580/2018, art. 39, inciso II.</a></p>
+                                <p>Bolsa residência médica é não-tributáveil do imposto de renda de acordo com a - <a href="https://www.jusbrasil.com.br/topicos/26869385/paragrafo-1-artigo-26-da-lei-n-9250-de-26-de-dezembro-de-1995" target="_blank" className="tabela-a">Lei n. 9.250, de 26 de dezembro de 1995.</a></p>
                             </th>
-                            <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                            <td className="bi">{[LucroIsento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                         </tr> 
                         </tbody> 
                     </table>
@@ -340,7 +347,7 @@ function IRPFsobreSocioMedico(){
                     <div className="col-lg-4"></div>                         
             </div>  
         </div> 
-        {MostrarCalculos ? <div>
+        {MostrarTabelas ? <div>
             <div className="container">
                 <div className="row text-center">
                     <div className="titulo-declaraco">
@@ -363,13 +370,13 @@ function IRPFsobreSocioMedico(){
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
-                                <tr>
+                                {MostrarCalculos ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 24 - Rendimentos bruto, até o máximo de 40%, da prestação de serviços decorrente do transporte de passageiros"</p>
+                                        <p>"Ficha 02 - Bolsas de estudo e de pesquisa caracterizadas como doação, quando recebidas exclusivamente para proceder a estudos ou pesquisas, recebidas por médico-residente e por servidor da rede pública de educação profissional, científica e tecnológica que participe das atividades do Pronatec."</p>
                                     </th>
-                                    <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>
+                                    <td className="bi">{[LucroIsento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                                </tr>: ''}
                                 {SituacaoIRDescontoSimplificado ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Desconto Simplificado</p>
@@ -419,13 +426,13 @@ function IRPFsobreSocioMedico(){
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
-                                <tr>
+                                {MostrarCalculos ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 24 - Rendimentos bruto, até o máximo de 40%, da prestação de serviços decorrente do transporte de passageiros"</p>
+                                        <p>"Ficha 02 - Bolsas de estudo e de pesquisa caracterizadas como doação, quando recebidas exclusivamente para proceder a estudos ou pesquisas, recebidas por médico-residente e por servidor da rede pública de educação profissional, científica e tecnológica que participe das atividades do Pronatec."</p>
                                     </th>
-                                    <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>
+                                    <td className="bi">{[LucroIsento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                                </tr>: ''}
                                 {SituacaoIRDeducoesLegais ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Deduções Legais</p>

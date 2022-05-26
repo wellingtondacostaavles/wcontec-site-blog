@@ -58,7 +58,7 @@ function IRPFsobreMeiComercio(){
     const MostrarCalculos = Calculos(SituacaodosCalculos)
 
         function Calculos(SituacaodosCalculos){
-            if (SituacaodosCalculos > 0){
+            if (SituacaodosCalculos > 0.009){
                 return comCalculo
             } else {
             return semCalculo
