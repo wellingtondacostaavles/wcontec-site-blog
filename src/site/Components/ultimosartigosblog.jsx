@@ -17,7 +17,7 @@ function Ultimosartigosblog(){
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/RestituicaoIR/ultimosartigos.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Saiu o primeiro lote de restituição do Imposto de Renda 2022</h4>
+                            <h4 className="card-title">Consulte o primeiro lote de restituição do IR 2022</h4>
                             <p className="card-text">Veja se o seu nome está na lista do primeiro lote de restituição, caso não esteja, logo teremos as liberações dos próximos, avisaremos assim que forem liberados.</p>
                             <a href="/blog-restituicao-ir" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
