@@ -27,7 +27,7 @@ function RestituicaoIR(){
                                                             
                     <div className="col-lg-6">
                     <p>Clique no botão abaixo e saiba se o seu nome está nesse primeiro lote de restituições do Imposto de Renda 2022</p>
-                    <a href="http://solucoes.receita.fazenda.gov.br/servicos/consrest/atual.app/paginas/mobile/restituicaoMobi.asp" className="btn btn-primary btn-lg btn-restituicao-IR">Consultar na Receita Federal</a>
+                    <a href="http://solucoes.receita.fazenda.gov.br/servicos/consrest/atual.app/paginas/mobile/restituicaoMobi.asp" className="btn btn-primary btn-lg btn-restituicao-IR" target="_blank">Consultar na Receita Federal</a>
                     <p>Ou se preferir faça a consulta pelo telefone 146. Abaixo as datas estipuladas para cada lote:</p>
                     <p><li className="sbAccessibliltyFontSize">1º lote: 31 de maio de 2022</li></p>
                     <p><li className="sbAccessibliltyFontSize">2º lote: em 30 de junho de 2022</li></p>
