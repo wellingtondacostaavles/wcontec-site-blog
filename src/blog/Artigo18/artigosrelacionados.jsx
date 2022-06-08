@@ -18,7 +18,7 @@ function Artigosrelacionados(){
                 
                     <div className="col-lg-6">
                         <div className="card card-artigos">
-                            <center><img src="/Images/Sebraeoferececapacitacao/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                            <center><img src="/Images/Sebraeoferececapacitacao/capaprincipal.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
                                 <h4 className="card-title">Sebrae oferece cursos gratuitos para empreendedores refugiados no Brasil</h4>
                                 <p className="card-text">O Sebrae fechou uma parceria com a ACNUR, agência da ONU para refugiados, visando o desenvolvimento de ações de capacitação para refugiados empreendedores...</p>
@@ -29,7 +29,7 @@ function Artigosrelacionados(){
 
                     <div className="col-lg-6">
                         <div className="card card-artigos">
-                            <center><img src="/Images/Autonomo/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                            <center><img src="/Images/Autonomo/capaprincipal.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
                                 <h4 className="card-title">Vantagens e Desvantagens de ser um profissional autônomo</h4>
                                 <p className="card-text">O profissional que trabalha por conta própria e desempenha uma atividade remunerada sem vínculo empregatício, sua remuneração se dá por um contrato de prestação de serviços.</p>

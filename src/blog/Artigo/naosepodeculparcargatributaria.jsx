@@ -42,7 +42,7 @@ function Naosepodeculparcargatributaria(){
                     <p>Não cabe amadorismo somado a boa vontade!</p>   
                 </div>                
                 <div className="col-lg-6">
-                    <center><img src="/Images/naosepodeculpar-destaque.png" /></center>
+                    <center><img src="/Images/Naosepodeculparcargatributaria/capasecundaria.png" /></center>
                 </div>
             </div>
         </div>

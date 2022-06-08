@@ -16,7 +16,7 @@ function Artigosrelacionados(){
             <div className="row">   
                     <div className="col-lg-6">
                             <div className="card card-artigos">
-                                <center><img src="/Images/DIRPF22/Documentosnecessarios/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                                <center><img src="/Images/DIRPF22/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
                                 <div className="card-body">
                                     <h4 className="card-title">Veja quais são os documentos necessários para a DIRPF 2022</h4>
                                     <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
@@ -26,7 +26,7 @@ function Artigosrelacionados(){
                         </div>           
                     <div className="col-lg-6">
                         <div className="card card-artigos">
-                            <center><img src="/Images/Novidadesnadeclaracaoirpf22/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                            <center><img src="/Images/Novidadesnadeclaracaoirpf22/capaprincipal.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
                                 <h4 className="card-title">Confira as novidades na declaração do Imposto de Renda 2022</h4>
                                 <p className="card-text">São várias mudanças interessantes, entre elas, a que chama mais atenção será o recebimento da restituição ou o pagamento do imposto por meio de Pix.</p>

@@ -17,7 +17,7 @@ function Artigosrelacionados(){
                 
             <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/Profissionaisautonomosestaoemcrescimento/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/Profissionaisautonomosestaoemcrescimento/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div class="card-body">
                             <h4 className="card-title">Profissionais autônomos estão em crescimento</h4>
                             <p className="card-text">O trabalho por conta própria, conhecidos como profissionais autônomos, atingiu o número recorde de 24,8 milhões de pessoas no segundo trimestre de 2021.</p>
@@ -28,7 +28,7 @@ function Artigosrelacionados(){
                 
                 <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/Abrirempresa/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/Abrirempresa/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div class="card-body">
                             <h4 className="card-title">Descomplicando o processo de abertura de empresa</h4>
                             <p className="card-text">Saiba o que é preciso fazer para abrir sua microempresa, comerçando com o registro na Junta Comercial do estado ou no Cartório de Registro de Pessoa Jurídica.</p>

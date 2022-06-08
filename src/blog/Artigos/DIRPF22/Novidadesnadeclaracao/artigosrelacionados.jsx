@@ -16,7 +16,7 @@ function Artigosrelacionados(){
             <div className="row">              
                 <div className="col-lg-6">
                         <div className="card card-artigos">
-                            <center><img src="/Images/DIRPF22/Documentosnecessarios/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                            <center><img src="/Images/DIRPF22/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
                                 <h4 className="card-title">Documentos necessários para a DIRPF 2022</h4>
                                 <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
@@ -27,7 +27,7 @@ function Artigosrelacionados(){
                 
                     <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/Normasparaemissao/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/Normasparaemissao/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Normas para emissão e entrega do Comprovante de Rendimentos 2022</h4>
                             <p className="card-text">Foram estabelecidas normas sobre o comprovante de rendimentos pagos e de imposto sobre a renda retido na fonte a vigorar a partir de 01.01.2022.</p>

@@ -16,7 +16,7 @@ function Artigosrelacionados(){
             <div className="row">                 
                 <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/Mei/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/Mei/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Microeemprendedor Individual (MEI)</h4>
                             <p className="card-text">Apesar de só poder faturar até R$ 81.000,00 por ano, o MEI tem diversas facilidades como abertura de conta bancária, pedido de empréstimos e emissão de notas fiscais.</p>
@@ -26,7 +26,7 @@ function Artigosrelacionados(){
                 </div>
                 <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/Autonomo/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/Autonomo/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Autônomo</h4>
                             <p className="card-text">O profissional que trabalha por conta própria e desempenha uma atividade remunerada sem vínculo empregatício, sua remuneração se dá por um contrato de prestação de serviços.</p>
