@@ -65,6 +65,7 @@ import Obrigatoriedade from './blog/Artigos/DIRPF22/Obrigatoriedade/obrigatoried
 import Obrigatoriedadedeemitirnotafiscal from './blog/Artigos/Notasfiscais/obrigatoriedadedeemitirnotafiscal.jsx';
 import Tiposdenotaspermitidasparaomei from './blog/Artigos/Microempreendedor/Tiposdenotaspermitidasparaomei/tiposdenotaspermitidasparaomei.jsx';
 import RestituicaoIR from './blog/Artigos/DIRPF22/RestituicaoIR/restituicaoIR.jsx';
+import Certidoesnegativas from './blog/Artigos/Certidoesnegativas/certidoesnegativas.jsx';
 import Cofinspresumido from './calculadoras/Components/Cofinspresumido/cofinspresumido.jsx';
 
 
@@ -144,6 +145,7 @@ function App(){
       <Route exact path='/blog-obrigatoriedade-de-emitir-nota-fiscal' component={Obrigatoriedadedeemitirnotafiscal} />
       <Route exact path='/blog-tipos-de-notas-permitidas-para-o-mei' component={Tiposdenotaspermitidasparaomei} />
       <Route exact path='/blog-restituicao-ir' component={RestituicaoIR} />
+      <Route exact path='/blog-certidoes-negativas' component={Certidoesnegativas} />
     </Switch>
 
     </BrowserRouter>;
