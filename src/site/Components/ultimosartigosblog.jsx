@@ -15,7 +15,7 @@ function Ultimosartigosblog(){
             <div className="row">
             <div className="col-lg-4">
                     <div className="card card-artigos">
-                        <center><img src="/Images/DIRPF22/RestituicaoIR/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Consulte o primeiro lote de restituição do IR 2022</h4>
                             <p className="card-text">Veja se o seu nome está na lista do primeiro lote de restituição, caso não esteja, logo teremos as liberações dos próximos, avisaremos assim que forem liberados.</p>
@@ -25,7 +25,7 @@ function Ultimosartigosblog(){
                 </div>
             <div className="col-lg-4">
                     <div className="card card-artigos">
-                        <center><img src="/Images/Notasfiscais/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/Notasfiscais/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Emitir Nota Fiscal, saiba quem tem essa obrigação.</h4>
                             <p className="card-text">Todo empreendedor deve emitir a nota fiscal. A obrigação vale para os ME, EPP e para os MEIs, salvo se estes venderem ou prestarem serviços para pessoa física.</p>
@@ -35,7 +35,7 @@ function Ultimosartigosblog(){
                 </div>
             <div className="col-lg-4">
                     <div className="card card-artigos">
-                        <center><img src="/Images/DIRPF22/Obrigatoriedade/ultimosartigos.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/DIRPF22/Obrigatoriedade/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Saiba se você está obrigado a apresentar DIRPF 2022</h4>
                             <p className="card-text">Entramos no último mês do prazo de entrega da Declaração do Imposto de Renda, mas muita gente ainda não sabe se está obrigado a prestar contas com o leão!</p>
