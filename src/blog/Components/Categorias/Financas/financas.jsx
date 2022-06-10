@@ -4,21 +4,18 @@ import './financas.css';
 function Financas(){
     return <section id="financas">      
          <div className="container">                
-            <div className="row text-center">
-                <h1>Gestão Financeira</h1>   
-            </div>
             <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Saiu o primeiro lote de restituição do Imposto de Renda 2022</h4>
-                            <p className="card-text">Veja se o seu nome está na lista do primeiro lote de restituição, mas não se preocupe, caso não esteja nesse, logo teremos as liberações dos próximos.</p>
+                            <p className="card-text">Veja se o seu nome está na lista do primeiro lote de restituição, mas não se preocupe, caso não esteja nesse, logo teremos as liberações dos próximos. Veja o calendário.</p>
                             <a href="/blog-restituicao-ir" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>
-            <div className="col-lg-4">
+            <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/Consultasaosistemavaloresareceberbcb/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
@@ -28,7 +25,9 @@ function Financas(){
                         </div>
                     </div>  
                 </div>
-            <div className="col-lg-4">
+            </div>
+            <div className="row">    
+            <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/Deducoeslegaisoudescontosimplificado/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
@@ -38,9 +37,7 @@ function Financas(){
                         </div>
                     </div>  
                 </div>            
-            </div>
-            <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/Novidadesnadeclaracaoirpf22/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
@@ -50,17 +47,19 @@ function Financas(){
                         </div>
                     </div>  
                 </div>
-            <div className="col-lg-4">
+            </div>
+            <div className="row">    
+            <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Documentos necessários para a DIRPF 2022</h4>
+                            <h4 className="card-title">Documentos necessários para a Declaração do IR 2022</h4>
                             <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
                             <a href="/blog-documentosnecessarios-irpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>
-            <div className="col-lg-4">
+            <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/Normasparaemissao/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">

@@ -4,21 +4,18 @@ import './tributacao.css';
 function Tributacao(){
     return <section id="tributacao">      
          <div className="container">                
-            <div className="row text-center">
-                <h1>Tributação</h1>   
-            </div>
             <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/Senadoaprovatributacaomenorparacaminhoneiros/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Caminhoneiros com uma tributação menor</h4>
+                            <h4 className="card-title">Menor tributação para Caminhoneiros</h4>
                             <p className="card-text">O Senado aprovou um projeto de lei que muda a tributação de caminhoneiros autônomos inscritos como microempreendedores individuais.</p>
                             <a href="/blog-senado-aprova-tributacao-menor-para-caminhoneiros" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>
-            <div className="col-lg-4">
+            <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/Naosepodeculparcargatributaria/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
@@ -28,7 +25,9 @@ function Tributacao(){
                         </div>
                     </div>  
                 </div>
-            <div className="col-lg-4">
+            </div>
+            <div className="row">    
+            <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/Simplesnacional/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
@@ -37,6 +36,16 @@ function Tributacao(){
                             <a href="/blog-simples-nacional" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
+                </div>
+                <div className="col-lg-6">
+                <div className="card card-artigos">
+                        <center><img src="/Images/Horaextra/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Aprenda a como calcular a hora extra</h4>
+                            <p className="card-text">Os brasileiros estão entre os dez que mais fazem horas extras no mundo. O país está na sétima posição, com cerca de 18 horas trabalhadas a mais por mês....</p>
+                            <a href="/blog-hora-extra-passo-a-passo-de-como-calcular" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>                      
                 </div>            
             </div>  
         </div>
