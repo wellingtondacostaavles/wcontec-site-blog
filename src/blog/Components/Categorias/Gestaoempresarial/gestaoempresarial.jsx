@@ -19,7 +19,7 @@ function Gestaoempresarial(){
                     <div className="card card-artigos">
                             <center><img src="/Images/Notasfiscais/capaprincipal.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
-                                <h4 className="card-title">Emitir Nota Fiscal, veja quem tem essa obrigação?</h4>
+                                <h4 className="card-title">Emitir Nota Fiscal eletrônica, veja quem tem essa obrigação</h4>
                                 <p className="card-text">Todo empreendedor deve emitir a nota fiscal. A obrigação vale para o microempreendedor (ME), empresas de pequeno porte (EPPs) e para os microempreendedores individuais (MEIs).</p>
                                 <a href="/blog-obrigatoriedade-de-emitir-nota-fiscal#obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
@@ -53,7 +53,7 @@ function Gestaoempresarial(){
                         <div className="card card-artigos">
                             <center><img src="/Images/Microempreendedor/Notasparaomei/capaprincipal.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
-                                <h4 className="card-title">Nota fiscal para Microempreendedor Individual</h4>
+                                <h4 className="card-title">Emissão de nota fiscal para Microempreendedor Individual</h4>
                                 <p className="card-text">O MEI está dispensado de emitir nota fiscal para pessoa física, contudo, quando a operação for realizado para uma empresa, será necessário emitir a nota fical.</p>
                                 <a href="/blog-tipos-de-notas-permitidas-para-o-mei" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>

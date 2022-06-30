@@ -10,7 +10,7 @@ function Tecnologiadainformacao(){
                         <center><img src="/Images/Brasileirospreferemcomprasonline/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">71% dos brasileiros optar comprar online</h4>
-                            <p className="card-text">Uma pesquisa realizada pela ConQuist Consultoria mostrou que a pandemia mudou a maneira como os consumidores fazem compras ou contratam um serviço, e a preferência pela internet vem ganhado força entre os brasileiros.</p>
+                            <p className="card-text">Uma pesquisa realizada pela ConQuist mostrou que a pandemia mudou a maneira como os consumidores fazem compras ou contratam um serviço, e a preferência pela internet vem ganhado força.</p>
                             <a href="/blog-brasileiros-preferem-compras-online" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  

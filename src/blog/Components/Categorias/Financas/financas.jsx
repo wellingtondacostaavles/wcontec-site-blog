@@ -53,7 +53,7 @@ function Financas(){
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Documentos necessários para a Declaração do IR 2022</h4>
+                            <h4 className="card-title">Documentos necessários para a Declaração do Imposto de Renda 2022</h4>
                             <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
                             <a href="/blog-documentosnecessarios-irpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
