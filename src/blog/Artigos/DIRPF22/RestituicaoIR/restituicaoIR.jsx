@@ -19,14 +19,14 @@ function RestituicaoIR(){
                                    
                 <div className="container">
                     <div className="row"> 
-                        <h3>Restituição do primeiro lote do Imposto de Renda 2022</h3>
+                        <h3>Restituição do segundo lote do Imposto de Renda 2022</h3>
                     </div>                    
 
                     <div className="row">
-                    <p>A Receita Federal começou a pagar aos contribuintes que fizeram a declaração do Imposto de Renda 2022, e o mesmo ficará disponível durante um ano para que eles possam fazer sua retirada, se não fizerem durante esse prazo terá que ser feito mediante solicitação de formulário eletrônico.</p>
+                    <p>A Receita Federal está pagando o imposto de renda aos contribuintes que fizeram a declaração do Imposto de Renda 2022, e o mesmo ficará disponível durante um ano para que eles possam fazer sua retirada, se não fizerem durante esse prazo terá que ser feito mediante solicitação de formulário eletrônico.</p>
                                                             
                     <div className="col-lg-6">
-                    <p>Clique no botão abaixo e saiba se o seu nome está nesse primeiro lote de restituições do Imposto de Renda 2022</p>
+                    <p>Clique no botão abaixo e saiba se o seu nome está no segundo lote de restituições do Imposto de Renda 2022</p>
                     <a href="http://solucoes.receita.fazenda.gov.br/servicos/consrest/atual.app/paginas/mobile/restituicaoMobi.asp" className="btn btn-primary btn-restituicao-IR" target="_blank">Consultar na Receita Federal</a>
                     <p>Ou se preferir faça a consulta pelo telefone 146. Abaixo as datas estipuladas para cada lote:</p>
                     <p><li className="sbAccessibliltyFontSize">1º lote: 31 de maio de 2022</li></p>
