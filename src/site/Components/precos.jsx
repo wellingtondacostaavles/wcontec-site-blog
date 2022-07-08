@@ -18,7 +18,7 @@ function Precos(){
                             <h4>BÁSICO</h4>
                         </div>    
                         <div className="card-body">
-                            <p>Para micro empreendedor individual (MEI) a partir de</p>
+                            <p>Indicado para os microempreendedores</p>
                             <p>R$ <span className="h2-preco">39</span>,90<small className="text-muted"> /mês</small></p>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
@@ -32,8 +32,8 @@ function Precos(){
                             <h4>AVANÇADO</h4>
                         </div>
                         <div className="card-body">
-                            <p>Serviços e/ou comercio (ME e EPP) a partir de</p>
-                            <p>R$ <span className="h2-preco">196</span>,80<small className="text-muted"> /mês</small></p>
+                            <p>Indicado para empresas sem funcionários</p>
+                            <p>R$ <span className="h2-preco">99</span>,90<small className="text-muted"> /mês</small></p>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-primary btn-artigos">Assinar Agora</a>
                         </div>
@@ -46,8 +46,8 @@ function Precos(){
                             <h4>PREMIUM</h4>
                         </div>
                         <div className="card-body">
-                            <p>Serviços e/ou comercio (ME e EPP) a partir de</p>
-                            <p>R$ <span className="h2-preco">319</span>,80<small className="text-muted"> /mês</small></p>
+                            <p>Indicado para empresas de pequeno porte</p>
+                            <p>R$ <span className="h2-preco">159</span>,90<small className="text-muted"> /mês</small></p>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
                         </div>
