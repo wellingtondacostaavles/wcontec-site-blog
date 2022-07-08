@@ -5,7 +5,31 @@ function Inicio(){
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <img src="Images/Notbook-lacamentos.png" />
+                    <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">    
+                                <img src="Images/Notbook.png" className="d-block w-100" alt="..."/>
+                            </div> 
+                            <div className="carousel-item">    
+                                <img src="Images/Notbook-inicio.png" className="d-block w-100" alt="..."/>
+                            </div> 
+                            <div className="carousel-item">    
+                                <img src="Images/Notbook-lacamentos.png" className="d-block w-100" alt="..."/>
+                            </div> 
+                            <div className="carousel-item">    
+                                <img src="Images/Notbook-lacamentos-mais.png" className="d-block w-100" alt="..."/>
+                            </div>
+                            <div className="carousel-item ">    
+                                <img src="Images/Notbook-estoque.png" className="d-block w-100" alt="..."/>
+                            </div>
+                            <div className="carousel-item ">    
+                                <img src="Images/Notbook-drive.png" className="d-block w-100" alt="..."/>
+                            </div>
+                            <div className="carousel-item ">    
+                                <img src="Images/Notbook-nfs.png" className="d-block w-100" alt="..."/>
+                            </div>
+                        </div>
+                    </div>
                 </div>                
                 <div className="col-lg-6">
                     <h3>Descomplicamos a Gestão Contábil e Financeira da sua empresa <span className="segundo-h3">controle seu negócio em uma plataforma intuitiva.</span></h3>                  
@@ -15,7 +39,7 @@ function Inicio(){
                 </div>                
             </div>    
         </div>
-    </section>;
+     </section>;
   }
 
 export default Inicio;
