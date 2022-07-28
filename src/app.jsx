@@ -66,6 +66,7 @@ import Obrigatoriedadedeemitirnotafiscal from './blog/Artigos/Notasfiscais/obrig
 import Tiposdenotaspermitidasparaomei from './blog/Artigos/Microempreendedor/Tiposdenotaspermitidasparaomei/tiposdenotaspermitidasparaomei.jsx';
 import RestituicaoIR from './blog/Artigos/DIRPF22/RestituicaoIR/restituicaoIR.jsx';
 import Certidoesnegativas from './blog/Artigos/Certidoesnegativas/certidoesnegativas.jsx';
+import Pronampe2022 from './blog/Artigos/Pronampe2022/pronampe2022.jsx';
 import Cofinspresumido from './calculadoras/Components/Cofinspresumido/cofinspresumido.jsx';
 
 
@@ -146,6 +147,7 @@ function App(){
       <Route exact path='/blog-tipos-de-notas-permitidas-para-o-mei' component={Tiposdenotaspermitidasparaomei} />
       <Route exact path='/blog-restituicao-ir' component={RestituicaoIR} />
       <Route exact path='/blog-certidoes-negativas' component={Certidoesnegativas} />
+      <Route exact path='/blog-pronampe-2022-saiba-como-ter-acesso-ao-benefício-e-veja-as-taxas' component={Pronampe2022} />
     </Switch>
 
     </BrowserRouter>;

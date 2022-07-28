@@ -7,7 +7,20 @@ function Inicio(){
        <div className="container">                                 
                 <div id="carouselExampleInterval" className="carousel carousel-dark  slide" data-bs-ride="carousel">            
                     <div className="carousel-inner">
-                        <div className="carousel-item active" data-bs-interval="3000">
+                    <div className="carousel-item active" data-bs-interval="3000">
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <img src="/Images/Pronampe2022/capaprincipal.png" />
+                                </div>                
+                                <div className="col-lg-6">
+                                    <h3><span className="terceiro-h3">Pronampe 2022</span><span className="terceiro-h3"></span> saiba como ter acesso ao benefício e veja as taxas</h3>                
+                                    <h6>Conheça a linha de crédito do Programa Nacional de Apoio às Microempresas e Empresas de Pequeno Porte para auxiliar no desenvolvimento e fortalecimento do seu negócio e saiba como solicitar.</h6>
+                                    <a href="/blog-pronampe-2022-saiba-como-ter-acesso-ao-benefício-e-veja-as-taxas#pronampe-2022" className="btn btn-success btn-lg btn-capa-pronampe-2022">Continue lendo</a>
+                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-pronampe-2022">Área do Cliente</a>
+                                </div>               
+                            </div>    
+                        </div>
+                        <div className="carousel-item" data-bs-interval="3000">
                             <div className="row">
                                 <div className="col-lg-6">
                                     <img src="/Images/Certidoesnegativas/capaprincipal.png" />
