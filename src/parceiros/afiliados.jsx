@@ -70,9 +70,8 @@ function Afiliados(){
                     <h4>A partir de R$ 39,90</h4>
                     <p></p>
                     <h1>PIX de até R$ 500,00 por cada indicação</h1>
-                    <h1>(50% da assinatura)</h1>
                     <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-success btn-lg btn-afiliados">Cadastre-se</a>
-                    <p>Regra: Após seu cadastro clique em solicitações e informe sua indicação, após ele realizar a assinatura você recebe a grana!</p>
+                    <h5>Regra: Feito o cadastro clique em solicitações e informe sua indicação, após ele realizar a assinatura você recebe 50% do primeiro boleto pago no momento da contratação!</h5>
                 </div>
             </div>
         </div>    
