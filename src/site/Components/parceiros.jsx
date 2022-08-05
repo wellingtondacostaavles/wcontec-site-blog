@@ -40,7 +40,7 @@ function Parceiros(){
                     <a href="https://github.com/" target="_blank"><img src="/Images/Parceiros/GitHub.png"/></a>
                 </div>
                 <div className="col">
-                    <a href="#" target="_blank"><img src="/Images/Parceiros/Torne-se-parceiro.png"/></a>
+                    <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank"><img src="/Images/Parceiros/Torne-se-parceiro.png"/></a>
                 </div>
                 <div className="col"></div>
             </div>
