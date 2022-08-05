@@ -6,7 +6,7 @@ function Cardcalculadoras(){
     return <section id="card-calculadoras">      
          
         <div className="container">
-        <div className="row text-center"> 
+            <div className="row text-center"> 
                     <div className="titulo">
                         <h1>Calculadoras</h1>                   
                     </div>    
@@ -20,6 +20,13 @@ function Cardcalculadoras(){
                     <a href="https://bit.ly/3vaLhbt" className="btn btn-success btn-lg btn-card-calculadoras">Acesse as calculadoras</a>
                 </div>                            
             </div>
+            <div className="row">
+                <div className="feature-box">
+                    <i className="icon fas fa-money-bill-wave fa-5x"></i>
+                    <h2>Ganhe dinheiro com a Wcontec</h2>
+                    <a href="https://bit.ly/parceiro-afiliado-wcontec" target="_blank" className="btn btn-outline-primary btn-lg btn-card-afiliado">Saiba mais</a>                    
+                </div>
+            </div>    
         </div>  
     </section>;
   }

@@ -11,14 +11,14 @@ function Afiliados(){
         <div className="container">                
             <div className="row text-center">
                 <div className="titulo">
-                    <h1>Programa Afiliado Parceiro</h1>
+                    <h1>Programa parceiro afiliado</h1>
                     <h4>Vagas limitadas</h4>
                     <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-success btn-lg btn-afiliados">Cadastre-se</a>
                     </div>
             </div>
 
             <div className="row">
-                    <h4>Torne-se afiliado parceiro da Wcontec e ganhe dinheiro!</h4>
+                    <h4>Torne-se parceiro afiliado da Wcontec e ganhe dinheiro!</h4>
                     <h5>É só conheçer um amigo empreendedor precisando de uma plataforma 100% online para:</h5>             
             </div>
             <div className="container">

@@ -173,6 +173,10 @@ body {
   
 }
 
+.btn-card-afiliado {
+  border-radius: 50px;
+  margin: 1% 0 3% 0;
+}
 
 #parceiros img {
   width: 100%;
