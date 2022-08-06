@@ -25,7 +25,7 @@ function Cardcalculadoras(){
                 <div className="col-lg-8 feature-box">
                     <i className="icon fas fa-money-bill-wave fa-5x"></i>
                     <h3>Ganhe dinheiro com a Wcontec</h3>
-                    <p>Torne-se parceiro afiliado, indique nossa plataforma de gesão financeira com contabilide online e receba um PIX de até R$ 500,00 por cada indicação.</p>
+                    <p>Torne-se parceiro afiliado, indique nossa plataforma de gestão financeira com contabilidade online e receba um PIX de até R$ 500,00 por cada indicação.</p>
                     <a href="https://bit.ly/parceiro-afiliado-wcontec" target="_blank" className="btn btn-outline-primary btn-lg btn-card-afiliado">Saiba mais</a>                    
                 </div>
                 <div className="col-lg-2"></div>
