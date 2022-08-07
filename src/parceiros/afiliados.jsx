@@ -25,7 +25,7 @@ function Afiliados(){
             <div className="row">
                 <div className="col-lg-4 feature-box">
                     <i className="icon fas fa-building fa-5x"></i>
-                    <h3>Constituir ou alterar uma empresa</h3>                    
+                    <h3>Abrir empresa ou realizar alteração de constituição </h3>                    
                 </div>
 
                 <div className="col-lg-4 feature-box">
@@ -71,6 +71,7 @@ function Afiliados(){
                     <p></p>
                     <h1>PIX de até R$ 500,00 por cada indicação</h1>
                     <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-success btn-lg btn-afiliados">Cadastre-se</a>
+                    <a href="/" className="btn btn-outline-primary btn-lg btn-afiliados">Área do Cliente</a>
                     <h5>Regra: Feito o cadastro clique em solicitações e informe sua indicação, após ele realizar a assinatura você recebe 50% do primeiro boleto pago no momento da contratação!</h5>
                 </div>
             </div>
