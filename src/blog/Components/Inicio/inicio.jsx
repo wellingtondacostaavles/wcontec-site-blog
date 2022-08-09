@@ -10,6 +10,19 @@ function Inicio(){
                     <div className="carousel-item active" data-bs-interval="3000">
                             <div className="row">
                                 <div className="col-lg-6">
+                                    <img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" />
+                                </div>                
+                                <div className="col-lg-6">
+                                    <h3>Saiu o terceiro lote de restituição do<span className="terceiro-h3"> Imposto de Renda 2022</span></h3>                
+                                    <h6>Saiba como consultar se o seu nome está na lista do terceiro lote de restituição, mas não se preocupe, caso não esteja neste, logo teremos as liberações dos próximos, e nós nos comprometemos a avisá-los assim que forem liberados.</h6>
+                                    <a href="/blog-restituicao-ir#restituicao-IR" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</a>
+                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-restituicao-IR">Área do Cliente</a>
+                                </div>               
+                            </div>    
+                        </div>    
+                    <div className="carousel-item" data-bs-interval="3000">
+                            <div className="row">
+                                <div className="col-lg-6">
                                     <img src="/Images/Pronampe2022/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
@@ -30,19 +43,6 @@ function Inicio(){
                                     <h6>Saiba como tirar as certidões que são exigidas para o financiamento de recursos via bancos públicos (Caixa Econômica Federal, Banco do Brasil, e etc.), em ações judiciais, e licitações.</h6>
                                     <a href="/blog-certidoes-negativas#certidoes-negativas" className="btn btn-success btn-lg btn-capa-certidoes-negativas">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-certidoes-negativas">Área do Cliente</a>
-                                </div>               
-                            </div>    
-                        </div>
-                        <div className="carousel-item" data-bs-interval="3000">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" />
-                                </div>                
-                                <div className="col-lg-6">
-                                    <h3>Saiu o segundo lote de restituição do<span className="terceiro-h3"> Imposto de Renda 2022</span></h3>                
-                                    <h6>Saiba como consultar se o seu nome está na lista do segundo lote de restituição, mas não se preocupe, caso não esteja nesse, logo teremos as liberações dos próximos, e nós nos comprometemos a avisá-los assim que forem liberados.</h6>
-                                    <a href="/blog-restituicao-ir#restituicao-IR" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</a>
-                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-restituicao-IR">Área do Cliente</a>
                                 </div>               
                             </div>    
                         </div>
