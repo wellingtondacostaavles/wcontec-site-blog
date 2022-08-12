@@ -31,7 +31,7 @@ function Artigos(){
                         <div className="card-body">
                             <h4 className="card-title">Emitir Nota Fiscal, quem tem essa obrigação?</h4>
                             <p className="card-text">Todo empreendedor deve emitir a nota fiscal ao fazer qualquer operação negocial. A obrigação vale para o microempreendedor (ME), empresas de pequeno porte (EPPs) e para os microempreendedores individuais (MEIs).</p>
-                            <a href="/blog-obrigatoriedade-de-emitir-nota-fiscal#obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <Link to="/blog/como-emitir-nota-fiscal" className="btn btn-primary btn-artigos">Ler Post</Link>
                         </div>
                     </div>  
                 </div>  

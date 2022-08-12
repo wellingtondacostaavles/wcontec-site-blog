@@ -172,11 +172,10 @@ function Inicio(){
                                     <img src="/Images/Abrirempresa/capaprincipal.png" />
                                 </div>                                    
                                 <div className="col-lg-6">
-                                    <h3>Como abrir uma empresa?</h3>   
-                                    <h3><span className="terceiro-h3">Veja como fazer o registro da sua microempresa.</span></h3>               
-                                    <h6>Antes de tudo é preciso se informar. Faça uma pesquisa antecipada sobre a existência de empresas constituídas com nomes empresariais idênticos ou semelhantes ao nome pesquisado.</h6>
-                                    <h6>Essa é uma etapa obrigatória, que deve ser preenchida no site da junta comercial...</h6>
-                                    <a href="/blog-abrir-empresa#abrirempresa" className="btn btn-success btn-lg btn-inicio-blog">Continue lendo</a>
+                                    <h3>Saiba como <span className="terceiro-h3">abrir uma empresa</span></h3>               
+                                    <h6>Antes de abrir uma empresa é preciso se informar. Faça uma pesquisa antecipada sobre a existência de empresas constituídas com nomes empresariais idênticos ou semelhantes ao nome pesquisado.</h6>
+                                    <h6>Essa é uma etapa obrigatória para quem pretende abrir uma empresa, que deve ser preenchida no site da junta comercial...</h6>
+                                    <Link to="/blog/abrir-uma-empresa#abrirempresa" className="btn btn-success btn-lg btn-inicio-blog">Continue lendo</Link>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-inicio-blog">Área do Cliente</a>
                                 </div>   
                             </div>    

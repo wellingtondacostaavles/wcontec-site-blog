@@ -122,7 +122,7 @@ function App(){
       <Route exact path='/blog-nao-se-pode-culpar-a-cargatributaria' component={Naosepodeculparcargatributaria} />
       <Route exact path='/blog-mei' component={Mei} />  
       <Route exact path='/blog-autonomo' component={Autonomo} />     
-      <Route exact path='/blog-abrir-empresa' component={Abrirempresa} />
+      <Route exact path='/blog/abrir-uma-empresa' component={Abrirempresa} />
       <Route exact path='/blog-simples-nacional' component={Simplesnacional} />
       <Route exact path='/blog-sociedade-limitada-unipessoal' component={Sociedadelimitadaunipessoal} />
       <Route exact path='/blog-empresario-individual' component={Empresarioindividual} />
