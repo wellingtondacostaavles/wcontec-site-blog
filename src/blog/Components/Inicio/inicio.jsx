@@ -15,7 +15,7 @@ function Inicio(){
                                 <div className="col-lg-6">
                                     <h3>Saiu o terceiro lote de restituição do<span className="terceiro-h3"> Imposto de Renda 2022</span></h3>                
                                     <h6>Saiba como consultar se o seu nome está na lista do terceiro lote de restituição, mas não se preocupe, caso não esteja neste, logo teremos as liberações dos próximos, e nós nos comprometemos a avisá-los assim que forem liberados.</h6>
-                                    <a href="/blog-restituicao-ir#restituicao-IR" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</a>
+                                    <Link to="/blog/restituicao-ir#restituicao-IR" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</Link>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-restituicao-IR">Área do Cliente</a>
                                 </div>               
                             </div>    
@@ -52,9 +52,9 @@ function Inicio(){
                                     <img src="/Images/Notasfiscais/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
-                                    <h3>Emitir <span className="terceiro-h3">Nota Fiscal,</span><span className="terceiro-h3"></span> quem tem essa obrigação?</h3>                
-                                    <h6>Todo empreendedor deve emitir a nota fiscal ao fazer qualquer operação negocial. A obrigação vale para o microempreendedor (ME), empresas de pequeno porte (EPPs) e para os microempreendedores individuais (MEIs), salvo quando estes venderem ou prestarem serviços para pessoa física.</h6>
-                                    <a href="/blog-obrigatoriedade-de-emitir-nota-fiscal#obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-success btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Continue lendo</a>
+                                    <h3>Veja se você está obrigado e como <span className="terceiro-h3">emitir nota fiscal</span><span className="terceiro-h3"></span> eletrônica</h3>
+                                    <h6>Se você é empreendedor saiba como emitir nota fiscal ao fazer qualquer operação negocial. A obrigação vale para o microempreendedor (ME), empresas de pequeno porte (EPPs) e para os microempreendedores individuais (MEIs), salvo quando estes venderem ou prestarem serviços para pessoa física.</h6>
+                                    <Link to="/blog/como-emitir-nota-fiscal#obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-success btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Continue lendo</Link>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Área do Cliente</a>
                                 </div>               
                             </div>    

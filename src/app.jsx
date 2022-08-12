@@ -145,9 +145,9 @@ function App(){
       <Route exact path='/blog-deducoes-legais-desconto-simplificado-irpf-22' component={Deducoeslegaisdescontosimplificado} />
       <Route exact path='/blog-microempreendedor-e-trabalhador-informal-tem-direito-a-receber' component={Microempreendedor} />
       <Route exact path='/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf-22' component={Obrigatoriedade} />
-      <Route exact path='/blog-obrigatoriedade-de-emitir-nota-fiscal' component={Obrigatoriedadedeemitirnotafiscal} />
+      <Route exact path='/blog/como-emitir-nota-fiscal' component={Obrigatoriedadedeemitirnotafiscal} />
       <Route exact path='/blog-tipos-de-notas-permitidas-para-o-mei' component={Tiposdenotaspermitidasparaomei} />
-      <Route exact path='/blog-restituicao-ir' component={RestituicaoIR} />
+      <Route exact path='/blog/restituicao-ir' component={RestituicaoIR} />
       <Route exact path='/blog-certidoes-negativas' component={Certidoesnegativas} />
       <Route exact path='/blog-pronampe-2022-saiba-como-ter-acesso-ao-benefício-e-veja-as-taxas' component={Pronampe2022} />
     </Switch>
