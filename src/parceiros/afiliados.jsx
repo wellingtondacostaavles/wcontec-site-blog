@@ -72,7 +72,7 @@ function Afiliados(){
                     <h1>PIX de até R$ 500,00 por cada indicação</h1>
                     <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-success btn-lg btn-afiliados">Cadastre-se</a>
                     <a href="/" className="btn btn-outline-primary btn-lg btn-afiliados">Área do Cliente</a>
-                    <h5>Regra: Feito o cadastro clique em solicitações e informe sua indicação, após ele realizar a assinatura você recebe 50% do primeiro boleto pago no momento da contratação!</h5>
+                    <h5>Regra: Ao se tornar um parceiro afiliado, após o cadastro clique na cartinha no canto direito superior da tela e informe sua indicação, assim que ele realizar a assinatura você recebe 50% do primeiro boleto pago no momento da contratação!</h5>
                 </div>
             </div>
         </div>    

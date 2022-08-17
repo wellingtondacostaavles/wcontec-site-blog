@@ -5,11 +5,25 @@ h4,
 h5,
 h6 {
   line-height: 1.3;
-  font-family: Effra, sans-serif, Arial, sans-serif;
+  font-family: Effra, sans-serif, Arial, sans-serif, Alliance1;
 }
 
 .segundo-h1 {
   color: #0d6efd;
+}
+
+.chamado-h2 {
+  font-size: 36px;
+}
+.chamado2-h2 {
+  font-size: 39px;
+  color: #0d6efd;
+}
+.chamado3-h4 {
+  color: #8e909b;
+}
+.chamado4-h2 {
+  color: #050922;
 }
 
 p {
@@ -45,6 +59,7 @@ body {
   margin: 6% 3% 6% 0;
   color: #ffffff;
   border-radius: 50px;
+  min-width: 150px
 }
 
 /* FEATURES */

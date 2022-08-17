@@ -14,7 +14,7 @@ function Capa(){
                 
                 <div className="col-lg-6">
                     <h3><span className="terceiro-h3">Deduções legais</span> ou<span className="terceiro-h3"> desconto simplificado</span> saiba fazer a escolha certa</h3>                
-                    <h6>Tudo depende do total de despesas dedutíveis que você tem em relação à renda. Com base nessas informações você pode avaliar se é mais vantajoso optar por deduções legais ou desconto simplificado, ou seja, verificar qual pode reduzir o imposto devido ou garantir a restituição.</h6>
+                    <h6 className="segundo-h6">Tudo depende do total de despesas dedutíveis que você tem em relação à renda. Com base nessas informações você pode avaliar se é mais vantajoso optar por deduções legais ou desconto simplificado, ou seja, verificar qual pode reduzir o imposto devido ou garantir a restituição.</h6>
                     <a href="#deducoes-legais-desonto-simplificado" className="btn btn-success btn-lg btn-capa-deducoes-legais-desonto-simplificado">Continue lendo</a>
                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-deducoes-legais-desonto-simplificado">Área do Cliente</a>
                 </div>               

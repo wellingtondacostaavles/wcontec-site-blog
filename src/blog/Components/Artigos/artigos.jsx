@@ -53,9 +53,9 @@ function Artigos(){
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Saiu o primeiro lote de restituição do Imposto de Renda 2022</h4>
-                            <p className="card-text">Saiba como consultar se o seu nome está na lista do primeiro lote de restituição, mas não se preocupe, caso não esteja nesse, logo teremos as liberações dos próximos, e nós nos comprometemos a avisá-los assim que forem liberados.</p>
-                            <a href="/blog-restituicao-ir" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <h4 className="card-title">Saiu o terceiro lote de restituição do Imposto de Renda 2022</h4>
+                            <p className="card-text">Saiba como consultar se o seu nome está na lista de restituição, mas não se preocupe, caso não esteja nesse, logo teremos as liberações dos próximos, e nós nos comprometemos a avisá-los assim que forem liberados.</p>
+                            <a href="/blog/restituicao-ir" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  

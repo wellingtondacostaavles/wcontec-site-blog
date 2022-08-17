@@ -14,7 +14,7 @@ function Capa(){
                 
                 <div className="col-lg-6">
                     <h3>Senado aprova<span className="terceiro-h3"> tributação menor para caminhoneiros</span></h3>                
-                    <h6>O Senado aprovou um projeto de lei que muda a tributação de caminhoneiros autônomos inscritos como microempreendedores individuais, agora eles poderão faturar até R$ 251,6 mil anuais e pagar 12% para a previdência social sobre o salário mínimo.</h6>
+                    <h6 className="segundo-h6">O Senado aprovou um projeto de lei que muda a tributação de caminhoneiros autônomos inscritos como microempreendedores individuais, agora eles poderão faturar até R$ 251,6 mil anuais e pagar 12% para a previdência social sobre o salário mínimo.</h6>
                     <a href="#senadoaprovatributacaomenorparacaminhoneiros" className="btn btn-success btn-lg btn-capa-senadoaprovatributacaomenorparacaminhoneiros">Continue lendo</a>
                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-senadoaprovatributacaomenorparacaminhoneiros">Área do Cliente</a>
                 </div>               

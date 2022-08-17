@@ -7,7 +7,7 @@ function Inicio(){
                 <div className="col-lg-6">
                     <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div className="carousel-inner">
-                            <div className="carousel-item active">    
+                            <div className="carousel-item active" data-bs-interval="9999">    
                                 <img src="Images/Notbook.png" className="d-block w-100" alt="..."/>
                             </div> 
                             <div className="carousel-item">    
@@ -32,11 +32,32 @@ function Inicio(){
                     </div>
                 </div>                
                 <div className="col-lg-6">
-                    <h3>Descomplicamos a Gestão Contábil e Financeira da sua empresa <span className="segundo-h3">controle seu negócio em uma plataforma intuitiva.</span></h3>                  
-                    <h6>A Wcontec disponibiliza uma plataforma de gestão financeira e assessoria contábil online, que ajuda manter a saúde da sua empresa em dia. Emita notas fiscais, guias de impostos, automatize suas cobranças, gere relatórios, controle o fluxo caixa, contas a pagar e receber e muito mais de forma simples, segura e eficaz.</h6>
+                    <h2 className="chamado-h2">Vamos gerenciar a saúde</h2>
+                    <h2 className="chamado-h2"> financeira da sua empresa daqui,</h2>   
+                    <div id="carouselExampleControls" className="carousel carousel-dark  slide" data-bs-ride="carousel">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active" data-bs-interval="3000">    
+                                <h2 className="chamado2-h2">automaticamente</h2>
+                            </div> 
+                            <div className="carousel-item" data-bs-interval="1500">    
+                                <h2 className="chamado2-h2">instantaneamente</h2>
+                            </div> 
+                            <div className="carousel-item" data-bs-interval="1500">    
+                                <h2 className="chamado2-h2">firmemente</h2>
+                            </div> 
+                            <div className="carousel-item" data-bs-interval="1500">    
+                                <h2 className="chamado2-h2">colaborativamente</h2>
+                            </div>
+                            <div className="carousel-item" data-bs-interval="900000">    
+                                <h2 className="chamado2-h2">juntos.<span className="chamado4-h2"> Com a Wcontec.</span></h2>
+                            </div>
+                        </div>
+                    </div>           
+                    <p></p>
+                    <h4 className="chamado3-h4">A plataforma de gestão financeira e assessoria contábil online.</h4>
                     <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-success btn-lg btn-banner">Cadastre-se</a>
-                    <a href="https://wcontec.osayk.com.br/#/login" target="_blank" className="btn btn-outline-primary btn-lg btn-banner">Acesse a Plataforma</a>
-                </div>                
+                    <a href="https://wcontec.osayk.com.br/#/login" target="_blank" className="btn btn-outline-primary btn-lg btn-banner">Acessar</a>
+                </div>                        
             </div>    
         </div>
      </section>;
