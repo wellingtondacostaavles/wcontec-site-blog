@@ -23,10 +23,10 @@ function Inicio(){
                                 <img src="Images/Notbook-estoque.png" className="d-block w-100" alt="..."/>
                             </div>
                             <div className="carousel-item ">    
-                                <img src="Images/Notbook-drive.png" className="d-block w-100" alt="..."/>
+                                <img src="Images/Notbook-nfs.png" className="d-block w-100" alt="..."/>
                             </div>
                             <div className="carousel-item ">    
-                                <img src="Images/Notbook-nfs.png" className="d-block w-100" alt="..."/>
+                                <img src="Images/Notbook-drive.png" className="d-block w-100" alt="..."/>
                             </div>
                         </div>
                     </div>
