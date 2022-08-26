@@ -1,0 +1,49 @@
+.segundo-h3 {
+    color: #0d6efd;
+  }
+  .terceiro-h3 {
+    color: #07fff0;
+  }
+  .segundo-h6 {
+    color: #8e909b
+  }
+  
+  #contabilidade-eleitoral {
+    background-color: #ececec;
+    color: #050922;
+    padding: 90px 0 90px 12px;
+  }
+  
+  #contabilidade-eleitoral img {
+    width: 100%;
+  }
+  
+  #capa-contabilidade-eleitoral {
+    background-color: #050922;
+    color: #ffffff;
+    padding: 108px 0 102px 0;
+  } 
+  
+  #capa-contabilidade-eleitoral img {
+    width: 100%;
+  }
+  
+  .btn-capa-contabilidade-eleitoral {
+    margin: 6% 3% 6% 0;
+    color: #ffffff;
+    border-radius: 50px;
+  }
+  .btn-corpo-contabilidade-eleitoral {
+    margin: 1% 0 3% 0;
+    border-radius: 50px;
+  }
+  
+  #artigosrelacionados-contabilidade-eleitoral {
+    padding: 60px 0 0 0;
+    background-color: #ffffff;
+  }
+   .btn-contabilidade-eleitoral {
+    margin: 9px 9px 24px 0;
+    border-radius: 50px;
+    min-width: 100px;
+   }

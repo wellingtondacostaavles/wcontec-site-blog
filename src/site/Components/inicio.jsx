@@ -48,7 +48,7 @@ function Inicio(){
                                 <h2 className="chamado2-h2">colaborativamente</h2>
                             </div>
                             <div className="carousel-item" data-bs-interval="33330">    
-                                <h2 className="chamado2-h2">juntos.<span className="chamado4-h2"> Wcontec.</span></h2>
+                                <h2 className="chamado2-h2">juntos.</h2>
                             </div>
                         </div>
                     </div>           

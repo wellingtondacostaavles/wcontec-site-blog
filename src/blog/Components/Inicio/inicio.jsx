@@ -10,6 +10,19 @@ function Inicio(){
                     <div className="carousel-item active" data-bs-interval="3000">
                             <div className="row">
                                 <div className="col-lg-6">
+                                    <img src="/Images/Artigos/Contabilidade-eleitoral/capaprincipal.png" />
+                                </div>                
+                                <div className="col-lg-6">
+                                    <h3>O candidato a cargo político pode contar com uma <span className="terceiro-h3">contabilidade eleitoral online</span></h3>                
+                                    <h6 className="segundo-h6">A prestação de contas precisa ser realizada em obediência à legislação federal, e contar com uma “contabilidade eleitoral online” tornou-se uma excelente opção, modernizando o processo contábil tradicional que se volta à apuração de receitas e despesas realizadas por candidatos e partidos políticos.</h6>
+                                    <Link to="/blog/contabilidade-eleitoral#contabilidade-eleitoral" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</Link>
+                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-contabilidade-eleitoral">Área do Cliente</a>
+                                </div>               
+                            </div>    
+                        </div>
+                    <div className="carousel-item" data-bs-interval="3000">
+                            <div className="row">
+                                <div className="col-lg-6">
                                     <img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
@@ -52,7 +65,7 @@ function Inicio(){
                                     <img src="/Images/Notasfiscais/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
-                                    <h3>Veja se você está obrigado e como <span className="terceiro-h3">emitir nota fiscal</span><span className="terceiro-h3"></span> eletrônica</h3>
+                                    <h3>Veja se você está obrigado e<span className="terceiro-h3"> como emitir nota fiscal</span><span className="terceiro-h3"></span> eletrônica</h3>
                                     <h6 className="segundo-h6">Se você é empreendedor saiba como emitir nota fiscal ao fazer qualquer operação negocial. A obrigação vale para o microempreendedor (ME), empresas de pequeno porte (EPPs) e para os microempreendedores individuais (MEIs), salvo quando estes venderem ou prestarem serviços para pessoa física.</h6>
                                     <Link to="/blog/como-emitir-nota-fiscal#obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-success btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Continue lendo</Link>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Área do Cliente</a>
