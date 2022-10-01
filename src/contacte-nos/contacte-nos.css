@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #050922;
+    font-family: Effra, sans-serif;
+    color: #ffffff;
+  }
+
+#siga-nos {
+    padding-top: 12%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #050922;
+  }
+  
+  #siga-nos img {
+    width: 60%;
+  }
+  
+  .formtext p {
+    color: #8d8d97;
+    font-family: Effra, sans-serif;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .siga {
+    padding: 0 5% 3% 5%;
+  }
+  .siga2 {
+    padding: 0 5% 0 5%;
+  }

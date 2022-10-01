@@ -32,6 +32,7 @@ import Cofinscorretora from './calculadoras/Components/Cofinscorretora/cofinscor
 import Irtrimestral from './calculadoras/Components/IRPJTrimestral/irtrimestral.jsx';
 import Cslltrimestral from './calculadoras/Components/CSLLTrimestral/cslltrimestral.jsx';
 import Metrocubico from './calculadoras/Components/Metrocubico/metrocubico.jsx';
+import Siganos from './contacte-nos/siga-nos.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
 import Descadastramento from './descadastrese/descadastramento.jsx';
 import Certificacaodigital from './parceiros/certificacaodigital.jsx';
@@ -115,6 +116,7 @@ function App(){
       <Route exact path='/calculadoras-irpj-lucro-presumido' component={Irtrimestral} />
       <Route exact path='/calculadoras-csll-lucro-presumido' component={Cslltrimestral} />
       <Route exact path='/calculadoras-metro-cubico' component={Metrocubico} />
+      <Route exact path='/contacte-nos' component={Siganos} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
       <Route exact path='/parceiro-certificacao-digital' component={Certificacaodigital} />
