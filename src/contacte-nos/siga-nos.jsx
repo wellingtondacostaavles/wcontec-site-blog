@@ -32,7 +32,7 @@ function Siganos(){
             </div>
             <div className="container">                              
               <div className="row">
-                  <div className="titulo formtext">
+                  <div className="titulo formtext-siga-nos">
                       <p>©2017 WCONT SERVIÇOS CONTÁBEIS - 30.394.935/0001-34 AV. BARÃO DE VERA CRUZ, 188 D, CRUZ DE REBOUÇAS, IGARASSU - PE, CEP. 53.625-015. EMPRESA DE CONTABILIDADE EM PARCERIA COM A OSAYK PLATAFORMA DE NEGÓCIOS E TECNOLOGIA LTDA - 22.296.308/0001-69. RUA PAULO ASSIS RIBEIRO, 103, BARRA DA TIJUCA, RIO DE JANEIRO, RJ, CEP. 22621-210. OFERECE O DIREITO DE USO VIA WEB (INTERNET) DE PLATAFORMA TECNOLÓGICA FINANCEIRA.</p>
                 </div>
               </div>       

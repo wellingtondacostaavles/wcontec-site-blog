@@ -5,7 +5,7 @@
   }
 
 #siga-nos {
-    padding-top: 12%;
+    padding-top: 27%;
     text-align: center;
     color: #ffffff;
     background-color: #050922;
@@ -15,16 +15,17 @@
     width: 60%;
   }
   
-  .formtext p {
+  .formtext-siga-nos p {
     color: #8d8d97;
     font-family: Effra, sans-serif;
-    font-size: 9px;
+    font-size: 6px;
     text-align: center;
+    padding: 9% 0 0 0;
   }
 
   .siga {
-    padding: 0 5% 3% 5%;
+    padding: 1% 6% 3% 6%;
   }
   .siga2 {
-    padding: 0 5% 0 5%;
+    padding: 0 6% 0 6%;
   }
