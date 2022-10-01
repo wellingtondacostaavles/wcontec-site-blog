@@ -116,7 +116,7 @@ function App(){
       <Route exact path='/calculadoras-irpj-lucro-presumido' component={Irtrimestral} />
       <Route exact path='/calculadoras-csll-lucro-presumido' component={Cslltrimestral} />
       <Route exact path='/calculadoras-metro-cubico' component={Metrocubico} />
-      <Route exact path='/contacte-nos' component={Siganos} />
+      <Route exact path='/siga-nos' component={Siganos} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
       <Route exact path='/parceiro-certificacao-digital' component={Certificacaodigital} />

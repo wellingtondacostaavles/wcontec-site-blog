@@ -27,8 +27,7 @@ function Siganos(){
                       <li className="list-inline-item siga2"><a href="mailto:contato@wcontec.com.br"><i className="fa fa-envelope fa-4x"></i></a></li>
                       <li className="list-inline-item siga2"><a href="https://www.facebook.com/people/Wcont-Servi%C3%A7os-Cont%C3%A1beis/100072384950030/?sk=about" target="_blank"><i className="fa fa-facebook fa-4x"></i></a></li>
                       <li className="list-inline-item siga2"><a href="https://twitter.com/w_contec" target="_blank"><i className="fa fa-twitter fa-4x"></i></a></li>
-                      <li className="list-inline-item"><a href="https://www.youtube.com/channel/UCAS5k1jRgeZqXSnd8W4Jfcg" target="_blank"><i className="fa fa-youtube fa-4x"></i></a></li>
-                     </ul>
+                    </ul>
                 </div>
             </div>
             <div className="container">                              
