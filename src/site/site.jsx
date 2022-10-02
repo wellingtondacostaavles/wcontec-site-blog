@@ -9,10 +9,12 @@ import Cardcalculadoras from './Components/cardcalculadoras';
 import Ultimosartigosblog from './Components/ultimosartigosblog';
 import Parceiros from './Components/parceiros';
 import Contato from './Components/contato';
+import Chamada from './Components/chamadas';
 
 function Site(){
     return <div>
       <Menu/>
+      <Chamada/>
       <Inicio/>
       <Beneficios/>
       <Testemunho/>

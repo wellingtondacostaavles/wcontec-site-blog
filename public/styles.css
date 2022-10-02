@@ -54,6 +54,15 @@ body {
 
 /* BANNER */
 
+#chamada {
+  background-color: #ffffff;
+  padding-bottom: 9%;  
+}
+.btm-chamada {
+  border-radius: 50px;
+  min-width: 150px
+}
+
 #inicio {
   background-color: #050922;
   color: #ffffff;
