@@ -14,7 +14,6 @@ import Chamada from './Components/chamadas';
 function Site(){
     return <div>
       <Menu/>
-      <Chamada/>
       <Inicio/>
       <Beneficios/>
       <Testemunho/>
