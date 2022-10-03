@@ -31,6 +31,9 @@ function Menu(){
               <a className="nav-link" aria-current="page" href="#planos-e-precos">Planos</a>
             </li>
             <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#informativos">Informativo</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#ultimosartigosblog">Blog</a>
             </li>
             <li className="nav-item">

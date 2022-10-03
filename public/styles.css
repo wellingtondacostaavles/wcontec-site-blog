@@ -171,6 +171,22 @@ body {
   height: 18px;
 }
 
+#informativos {
+  background-color: #ffffff;
+  color: #323338;
+  padding: 6% 3% 6% 3%;
+}
+
+#informativos img {
+  width: 60%;
+  padding-top: 1%;
+}
+
+.btn-informativos {
+  border-radius: 50px;
+  margin: 12% 0 0 0;  
+}
+
 #ultimosartigosblog {
   background-color: #ffffff;
   color: #323338;
