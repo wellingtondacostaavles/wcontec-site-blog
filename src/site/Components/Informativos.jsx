@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 
 function Informativos(){
-    return <section id="informativos">      
+    return <section id="informativo">      
          
         <div className="container">
             <div className="row text-center"> 
@@ -19,7 +19,7 @@ function Informativos(){
             <div className="row text-center">    
                 <div className="col-lg-4"></div>
                 <div className="col-lg-4">  
-                    <a href="https://drive.google.com/u/0/uc?id=1ibu8g27zNZdYk4DJTxdLwy0xU68xHNSj&export=download" className="btn btn-outline-danger btn-lg btn-informativos"><i className="far fa-file-pdf"></i> Baixar PDF</a>
+                    <a href="https://drive.google.com/u/0/uc?id=1ibu8g27zNZdYk4DJTxdLwy0xU68xHNSj&export=download" className="btn btn-outline-danger btn-lg btn-informativo"><i className="far fa-file-pdf"></i> Baixar PDF</a>
                 </div>
                 <div className="col-lg-4"></div>                           
                </div>

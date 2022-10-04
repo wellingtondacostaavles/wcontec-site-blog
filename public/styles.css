@@ -171,18 +171,18 @@ body {
   height: 18px;
 }
 
-#informativos {
+#informativo {
   background-color: #ffffff;
   color: #323338;
   padding: 6% 3% 6% 3%;
 }
 
-#informativos img {
+#informativo img {
   width: 60%;
   padding-top: 1%;
 }
 
-.btn-informativos {
+.btn-informativo {
   border-radius: 50px;
   margin: 12% 0 0 0;  
 }

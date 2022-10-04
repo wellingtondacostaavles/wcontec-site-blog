@@ -18,7 +18,7 @@ function Precos(){
                             <h4>BÁSICO</h4>
                         </div>    
                         <div className="card-body">
-                            <p>Indicado para todos os tipos de microempreendedores</p>
+                            <p>Indicado para todos os tipos de microempreendedores a partir de:</p>
                             <p>R$ <span className="h2-preco">39</span>,90<small className="text-muted"> /mês</small></p>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
@@ -32,7 +32,7 @@ function Precos(){
                             <h4>AVANÇADO</h4>
                         </div>
                         <div className="card-body">
-                            <p>Indicado para todas as empresas sem funcionários</p>
+                            <p>Indicado para todas as empresas sem funcionários a partir de:</p>
                             <p>R$ <span className="h2-preco">99</span>,90<small className="text-muted"> /mês</small></p>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-primary btn-artigos">Assinar Agora</a>
@@ -46,7 +46,7 @@ function Precos(){
                             <h4>PREMIUM</h4>
                         </div>
                         <div className="card-body">
-                            <p>Indicado para todas as empresas de pequeno porte</p>
+                            <p>Indicado para todas as empresas de pequeno porte a partir de:</p>
                             <p>R$ <span className="h2-preco">159</span>,90<small className="text-muted"> /mês</small></p>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
