@@ -197,6 +197,21 @@ body {
   width: 100%;
 }
 
+/* artigos em destaque */
+.pronampe {
+  display: none;
+}
+.emitirNFe {
+  display: block;
+}
+.restituicaoIR {
+  display: block;
+}
+.aberturadeempresa {
+  display: block;
+}
+
+
 #card-calculadoras {
   background-color: #ffffff;
   color: #323338;
@@ -231,6 +246,11 @@ body {
   margin: 1% 0 3% 0;
 }
 
+#parceiros {
+  background-color: #ffffff;
+  padding-top: 3%;
+}
+
 #parceiros img {
   width: 100%;
 }
@@ -241,10 +261,6 @@ body {
   padding: 0 27% 0 27%;
 }
 
-#parceiros {
-  background-color: #ffffff;
-  padding-top: 5%;
-}
 .position-parceiros-p {
   position: absolute;
   color: #8d8d97;
@@ -252,9 +268,8 @@ body {
   font-size: 15px;
 }
 
-
 .parceiros-logos {
-  padding: 0 13% 1% 12%;
+  padding: 0 12% 3% 12%;
   background-color: #ffffff;
 }
 
@@ -279,17 +294,46 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #050922;
+  padding-bottom: 1%;
 }
-
 #contato img {
-  width: 48%;
+  width: 51%;
 }
 
-.formtext p {
+#contato .width34 {
+  width: 34%;
+}
+
+#contato .width66 {
+  width: 66%;
+}
+
+.social {
+  padding-bottom: 1%;
+}
+
+.termodeuso p {
   color: #8d8d97;
   font-family: Effra, sans-serif;
-  font-size: 9px;
-  text-align: center;
+  font-size: 12px;
+  text-align: justify;
+}
+.termodeuso h6 {
+  color: #8d8d97;
+  font-family: Effra, sans-serif;
+  font-size: 12px;
+  text-align: justify;
+  font-weight: bold; 
+}
+.termoss {
+  color:#0d6efd;
+  text-align: left;
+}
+
+.btn-termos {
+  background-color: #050922;
+  border-radius: 50px;
+  color: #8d8d97;
 }
 
 .btn-card-cliente {
