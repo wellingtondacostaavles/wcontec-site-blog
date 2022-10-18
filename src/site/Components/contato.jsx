@@ -25,10 +25,8 @@ function Footer(){
             </div>
             <div className="container" id="termos">
               <div className="row termodeuso">
-                <p className="text-center">
-                  <button className="btn-termos" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Termos de Uso e Política de Privacidade - </button>Copyright © 2022 Wcont serviços contábeis. Todos direitos reservados.
-                </p>
-                <div className="collapse" id="collapseExample" data-parent="#termos">
+                  <p className="text-center"><a className="termos-a" data-bs-toggle="collapse" href="#termos-de-uso-e-política-de-privacidade" role="button" aria-expanded="false" aria-controls="collapseExample">Termos de Uso e Política de Privacidade - </a>Copyright © 2022 Wcont serviços contábeis. Todos direitos reservados.</p>
+                  <div className="collapse" id="termos-de-uso-e-política-de-privacidade" data-parent="#termos">
                   <h6><li className="sbAccessibliltyFontSize">Termos de Uso</li></h6>
                   <p>Os direitos de propriedade intelectual presentes neste site, seu conteúdo, aplicativos e marcas pertencem à Wcont Serviços Contabeis Ltda, doravante Wcont. É expressamente vedada a comercialização, reprodução, modificação, publicação ou distribuição, a qualquer título ou forma, da totalidade ou de parte das informações, dos materiais técnicos e demais conteúdos existentes neste site, sem a prévia e expressa autorização da Wcont. As informações, os materiais técnicos e demais conteúdos existentes neste site têm propósito exclusivamente informativo. A Wcont serviços contábeis não se responsabiliza por qualquer prejuízo causado pelo uso dessas informações.</p>
                   <p>Caso o cliente deixe este site através de algum link nele contido e visualize conteúdos não fornecidos pela Wcont, o cliente o fará por sua própria conta e risco. A Wcont não verifica, controla, aprova ou garante a adequação ou a exatidão do conteúdo de links. A Wcont não é responsável por prejuízos, perdas ou danos ocasionados por quaisquer atrasos, defeitos, erros ou omissões que possam existir nos sistemas, serviços, informações ou em outros conteúdos fornecidos por links contidos neste site.</p> 
@@ -128,7 +126,8 @@ function Footer(){
                   <p>9.1. Se Você quiser falar com a Wcont sobre qualquer tipo de ocorrência e/ou pedidos de orientação e/ou curiosidades e/ou sugestões e/ou comentários e/ou críticas sobre os Tratamentos de Dados Pessoais que realizamos, Você pode entrar em contato conosco no seguinte endereço: contato@wcontec.com.br.</p>
                   <p>10. Mudanças na política</p>
                   <p>10.1. Esta Política de Privacidade será revisada e republicada periodicamente, portanto recomendamos que visite este documento frequentemente; as mudanças serão comunicadas individualmente apenas se houver alterações que alterem significativamente os direitos dos titulares à sua privacidade e a proteção de seus dados pessoais.</p>
-                </div>
+                  <p><i className="fa fa-arrow-up"><a className="termos-a" data-bs-toggle="collapse" href="#termos-de-uso-e-política-de-privacidade" role="button" aria-expanded="false" aria-controls="collapseExample"> Voltar</a></i></p>
+                </div>                
               </div> 
             </div>
           </div>

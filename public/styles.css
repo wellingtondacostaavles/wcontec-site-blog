@@ -294,7 +294,6 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #050922;
-  padding-bottom: 1%;
 }
 #contato img {
   width: 51%;
@@ -316,7 +315,7 @@ body {
   color: #8d8d97;
   font-family: Effra, sans-serif;
   font-size: 12px;
-  text-align: justify;
+  text-align: left;
 }
 .termodeuso h6 {
   color: #8d8d97;
@@ -325,15 +324,22 @@ body {
   text-align: justify;
   font-weight: bold; 
 }
-.termoss {
-  color:#0d6efd;
-  text-align: left;
-}
-
 .btn-termos {
   background-color: #050922;
   border-radius: 50px;
   color: #8d8d97;
+}
+.termos-a:link {
+  color: #8d8d97;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: Effra, sans-serif;
+  font-size: 12px;
+}
+.termos-a:hover {
+  color: #aeaeb6;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .btn-card-cliente {
