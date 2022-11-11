@@ -205,9 +205,12 @@ body {
   display: block;
 }
 .restituicaoIR {
-  display: block;
+  display: none;
 }
 .aberturadeempresa {
+  display: block;
+}
+.slu {
   display: block;
 }
 

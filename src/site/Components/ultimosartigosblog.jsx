@@ -53,6 +53,16 @@ function Ultimosartigosblog(){
                             <Link to="/blog/abrir-uma-empresa" className="btn btn-primary btn-artigos">Ler Post</Link>
                         </div>
                     </div>  
+                </div>
+                <div className="col-lg-4 slu">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/Slu/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Entenda a Sociedade Limitada Unipessoal (SLU)</h4>
+                            <p className="card-text">Onde não é preciso ter sócios, não há exigência de valor mínimo para o Capital Social, e o patrimônio do empreendedor não se mistura com o da empresa.</p>
+                            <a href="/blog-sociedade-limitada-unipessoal" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
                 </div>               
             </div>  
         </div>               
