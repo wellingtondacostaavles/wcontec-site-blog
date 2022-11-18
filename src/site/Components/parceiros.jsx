@@ -55,8 +55,17 @@ function Parceiros(){
      <div className="container">
         <div className="row">
              <div className="col-lg-12">
-                <a href="https://bit.ly/3pOcj5d" target="_blank"><img src="/Images/Parceiros/Vargas-banner.png"/></a>
-            </div>
+                <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active" data-bs-interval="3000">
+                            <a href="https://bit.ly/3pOcj5d" target="_blank"><img src="/Images/Parceiros/Vargas-banner-Lado-B-laranja.png"/></a>
+                        </div>                        
+                        <div className="carousel-item" data-bs-interval="3000">
+                            <a href="http://bit.ly/3UN1KNb" target="_blank"><img src="/Images/Parceiros/Vargas-banner-Lado-A-laranja.png"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
             </div>     
         </div>
     </div>   
