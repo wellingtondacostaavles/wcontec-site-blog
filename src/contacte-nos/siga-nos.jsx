@@ -17,14 +17,14 @@ function Siganos(){
                   <div className="col-lg-4"></div>
                 <div className="siga">   
                     <ul className="list-unstyled list-inline social text-center">
-                      <li className="list-inline-item siga"><a href="https://api.whatsapp.com/send?phone=5581996584830" target="_blank"><i className="fa fa-whatsapp fa-4x"></i></a></li>
+                      <li className="list-inline-item siga"><a href="https://chat.whatsapp.com/Co4DkBgkhrr6XSDiRL3CBP" target="_blank"><i className="fa fa-whatsapp fa-4x"></i></a></li>
                       <li className="list-inline-item siga"><a href="https://t.me/+bLsp1DsfZOo2M2Ix" target="_blank"><i className="fa fa-telegram fa-4x"></i></a></li>
                       <li className="list-inline-item siga"><a href="https://instagram.com/wcontec?r=nametag" target="_blank"><i className="fa fa-instagram fa-4x"></i></a></li>
                     </ul>
                 </div>
                 <div className="siga2">   
                     <ul className="list-unstyled list-inline social text-center">
-                      <li className="list-inline-item siga2"><a href="https://youtube.com/@wcontec2017" target="_blank"><i className="fa fa-youtube fa-4x"></i></a></li>
+                      <li className="list-inline-item siga2"><a href="http://bit.ly/3gkBvyJ" target="_blank"><i className="fa fa-youtube fa-4x"></i></a></li>
                       <li className="list-inline-item siga2"><a href="https://m.facebook.com/profile.php?id=100072384950030" target="_blank"><i className="fa fa-facebook fa-4x"></i></a></li>
                       <li className="list-inline-item siga2"><a href="https://twitter.com/w_contec" target="_blank"><i className="fa fa-twitter fa-4x"></i></a></li>
                     </ul>
