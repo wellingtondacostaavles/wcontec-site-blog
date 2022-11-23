@@ -19,21 +19,19 @@ function RestituicaoIR(){
                                    
                 <div className="container">
                     <div className="row"> 
-                        <h3>Restituição do quinto lote do Imposto de Renda 2022</h3>
+                        <p>Amanhã, dia (23), a partir das 10h, a Receita Federal irá abrir a consulta ao lote residual de restituição do Imposto de Renda de Pessoa Física referente ao mês de novembro. A medida contemplará 556.685 contribuintes entre os grupos prioritários e não prioritários.</p>
                     </div>                    
 
                     <div className="row">
-                    <p>A Receita Federal está pagando o imposto de renda aos contribuintes que fizeram a declaração do Imposto de Renda 2022, e o mesmo ficará disponível durante um ano para que eles possam fazer sua retirada, se não fizerem durante esse prazo terá que ser feito mediante solicitação de formulário eletrônico.</p>
+                    <p>O crédito aos contribuintes será disponibilizado no dia 30 de novembro, totalizando o repasse de R$ 1,2 bilhão. Do total, R$ 607.928.834,99 serão transferidos aos contribuintes com prioridade legal, sendo que 15.889 contribuintes são idosos acima de 80 anos.</p>
+                    <p>Já outros 115.654 são contribuintes com idades entre 60 e 79 anos, 10.306 contribuintes com alguma deficiência física ou mental, ou moléstia grave e 47.774 contribuintes cuja maior fonte de renda seja o magistério. Foram contemplados ainda 367.062 contribuintes não prioritários.</p>
                                                             
                     <div className="col-lg-6">
-                    <p>Clique no botão abaixo e saiba se o seu nome está no quinto lote de restituições do Imposto de Renda 2022</p>
-                    <a href="http://solucoes.receita.fazenda.gov.br/servicos/consrest/atual.app/paginas/mobile/restituicaoMobi.asp" className="btn btn-primary btn-restituicao-IR" target="_blank">Consultar na Receita Federal</a>
-                    <p>Ou se preferir faça a consulta pelo telefone 146. Abaixo as datas estipuladas para cada lote:</p>
-                    <p><li className="sbAccessibliltyFontSize">1º lote: 31 de maio de 2022</li></p>
-                    <p><li className="sbAccessibliltyFontSize">2º lote: em 30 de junho de 2022</li></p>
-                    <p><li className="sbAccessibliltyFontSize">3º lote: em 29 de julho de 2022</li></p>
-                    <p><li className="sbAccessibliltyFontSize">4º lote: em 31 de agosto de 2022</li></p>
-                    <p><li className="sbAccessibliltyFontSize">5º lote: em 30 de setembro de 2022</li></p>
+                    <p>Clique no botão abaixo e saiba se o seu nome está na lista</p>
+                    <a href="https://solucoes.receita.fazenda.gov.br/Servicos/consrest/Atual.app/paginas/index.asp" className="btn btn-primary btn-restituicao-IR" target="_blank">Consultar na Receita Federal</a>
+                    <h3>E se meu nome não estiver na lista?</h3>
+                    <p>Caso os dados estejam corretos, a restituição será feita na conta bancária que o contribuinte assinalou na Declaração do Imposto de Renda, de forma direta ou por indicação da chave PIX. Se o valor não for disponibilizado será possível resgatá-lo em até um ano no Banco do Brasil.</p>
+                    <p>O contribuinte poderá reagendar a disponibilização do crédito de valores pelo site do banco ou entrando em contato com o BB pelos telefones 4004-0001 (capitais), 0800-729-0001 (demais localidades) e 0800-729-0088 (telefone especial exclusivo para pessoas com deficiência auditiva).</p>
                     </div>                
                     <div className="col-lg-6">
                         <center><img src="/Images/DIRPF22/RestituicaoIR/capasecundaria.png"/></center>
@@ -43,7 +41,7 @@ function RestituicaoIR(){
 
             <div className="container">
                 <div className="row">
-                    <p>Se seu nome estiver nesta lista de restituições de Imposto de Renda ou nas próximas, saiba que o crédito bancário sempre estará disponível no final de cada mês na conta fornecida no momento do preenchimento da declaração. Vale ressaltar que a receita libera sempre uns 10 dias antes a consulta com todos os nomes da lista de restituição para aquele determinado lote.</p>                    
+                    <p>Vale ressaltar que se o resgate da restituição não for realizado em um ano, o contribuinte poderá solicitá-lo pelo Portal e-CAC, disponível no site da Receita Federal, entrando no menu "Declarações e Demonstrativos > Meu Imposto de Renda" e clicando no ícone "Solicitar restituição não resgatada na rede bancária".</p>
                 </div>
             </div>              
     </section>

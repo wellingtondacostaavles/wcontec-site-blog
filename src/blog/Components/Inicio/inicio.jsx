@@ -10,6 +10,19 @@ function Inicio(){
                     <div className="carousel-item active" data-bs-interval="3000">
                             <div className="row">
                                 <div className="col-lg-6">
+                                    <img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" />
+                                </div>                
+                                <div className="col-lg-6">
+                                    <h3>Receita Federal disponibiliza consulta ao lote residual do<span className="terceiro-h3"> Imposto de Renda 2022</span></h3>                
+                                    <h6 className="segundo-h6">Saiba como consultar se o seu nome está na lista do lote residual de restituição.</h6>
+                                    <Link to="/blog/restituicao-ir#restituicao-IR" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</Link>
+                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-restituicao-IR">Área do Cliente</a>
+                                </div>               
+                            </div>    
+                        </div>
+                    <div className="carousel-item" data-bs-interval="3000">
+                            <div className="row">
+                                <div className="col-lg-6">
                                     <img src="/Images/Artigos/Contabilidade-eleitoral/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
@@ -20,20 +33,7 @@ function Inicio(){
                                 </div>               
                             </div>    
                         </div>
-                    <div className="carousel-item" data-bs-interval="3000">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" />
-                                </div>                
-                                <div className="col-lg-6">
-                                    <h3>Saiu o quinto lote de restituição do<span className="terceiro-h3"> Imposto de Renda 2022</span></h3>                
-                                    <h6 className="segundo-h6">Saiba como consultar se o seu nome está na lista do quinto lote de restituição, mas não se preocupe, caso não esteja neste, logo teremos as liberações dos próximos, e nós nos comprometemos a avisá-los assim que forem liberados.</h6>
-                                    <Link to="/blog/restituicao-ir#restituicao-IR" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</Link>
-                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-restituicao-IR">Área do Cliente</a>
-                                </div>               
-                            </div>    
-                        </div>    
-                    <div className="carousel-item" data-bs-interval="3000">
+                       <div className="carousel-item" data-bs-interval="3000">
                             <div className="row">
                                 <div className="col-lg-6">
                                     <img src="/Images/Pronampe2022/capaprincipal.png" />

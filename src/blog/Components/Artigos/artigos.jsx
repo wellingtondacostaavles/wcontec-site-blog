@@ -53,9 +53,9 @@ function Artigos(){
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Saiu o terceiro lote de restituição do Imposto de Renda 2022</h4>
-                            <p className="card-text">Saiba como consultar se o seu nome está na lista de restituição, mas não se preocupe, caso não esteja nesse, logo teremos as liberações dos próximos, e nós nos comprometemos a avisá-los assim que forem liberados.</p>
-                            <a href="/blog/restituicao-ir" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <h4 className="card-title">Receita Federal disponibiliza consulta ao lote residual do Imposto de Renda 2022</h4>
+                            <p className="card-text">Saiba como consultar se o seu nome está na lista do lote residual de restituição. Vale ressaltar que se o resgate da restituição não for realizado em um ano, o contribuinte poderá solicitá-lo pelo Portal e-CAC, no site da Receita Federal.</p>
+                            <Link to="/blog/restituicao-ir#restituicao-IR" className="btn btn-primary btn-artigos">Ler Post</Link>
                         </div>
                     </div>  
                 </div>  

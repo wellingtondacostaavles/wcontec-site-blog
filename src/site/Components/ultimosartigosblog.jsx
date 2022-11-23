@@ -18,9 +18,9 @@ function Ultimosartigosblog(){
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Consulte o quinto lote de restituição do IR 2022</h4>
-                            <p className="card-text">Veja se o seu nome está na lista do quinto lote, caso não esteja, logo teremos as liberações dos próximos, avisaremos assim que forem liberados.</p>
-                            <Link to="/blog/restituicao-ir" className="btn btn-primary btn-artigos">Ler Post</Link>
+                            <h4 className="card-title">Receita Federal disponibiliza consulta ao lote residual do IR</h4>
+                            <p className="card-text">Saiba como consultar se o seu nome está na lista do lote residual de restituição. Vale ressaltar que se o resgate da restituição não for realizado em um ano...</p>
+                            <Link to="/blog/restituicao-ir#restituicao-IR" className="btn btn-primary btn-artigos">Ler Post</Link>
                         </div>
                     </div>  
                 </div>
