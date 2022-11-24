@@ -90,7 +90,7 @@ function IRPFsobreAutonomoTrasporteCargas(){
     
     const SituacaoNaoObrigatoriedadedaDIRPF = LucroTributavel
 
-    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o MEI não está obrigado a apresentar a DIRPF'
+    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o motorista autônomo não está obrigado a apresentar a DIRPF'
     const taobrigada = ''
 
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)

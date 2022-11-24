@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
-import './irpfsobreautonomotrasportepassageiro.css';
+import './irpfsobreempregadoclt.css';
 
-function IRPFsobreAutonomoTrasportePassageiro(){  
+function IRPFsobreEmpregadoCLT(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -23,14 +23,6 @@ function IRPFsobreAutonomoTrasportePassageiro(){
         event.preventDefault();
         setNro1(value);        
     };
-    const handleChange2 = (event, value, maskedValue) => {
-        event.preventDefault();
-        setNro2(value);        
-    };
-    const handleChange3 = (event, value, maskedValue) => {
-        event.preventDefault();
-        setNro3(value);        
-    };
     const handleChange4 = (event, value, maskedValue) => {
         event.preventDefault();
         setNro4(value);        
@@ -40,18 +32,10 @@ function IRPFsobreAutonomoTrasportePassageiro(){
         setNro5(value);        
     };
     
-    const [TransportedePassageiros, setNro1] = useState(0);
-    const [Extras, setNro2] = useState(0);
-    const [Promocoes, setNro3] = useState(0);  
+    const [Rendimentos, setNro1] = useState(0);
     const [DeducoesLegais, setNro4] = useState(0);
     const [IRRF, setNro5] = useState(0);
     
-    const [DeducaoQuarentaPorCento, setResultado1] = useState(0);
-    const [operacaoDeducaoQuarentaPorCento, setOperacao1] = useState('Somar');
-
-    const [TransportedePassageirosAposDeducao, setResultado2] = useState(0);
-    const [operacaoTransportedePassageirosAposDeducao, setOperacao2] = useState('Subtrair');
-  
     const [ReceitaBrua, setResultado3] = useState(0);
     const [operacaoReceitaBrua, setOperacao3] = useState('Somar');
 
@@ -71,26 +55,11 @@ function IRPFsobreAutonomoTrasportePassageiro(){
             } else {
             return semTabela
             }
-        }
-       
-    const SituacaodosCalculos = DeducaoQuarentaPorCento
-    
-    const comCalculo = 'Parcela do Faturamento ISENTA na DIRPF'
-    const semCalculo = ''
-
-    const MostrarCalculos = Calculos(SituacaodosCalculos)
-
-        function Calculos(SituacaodosCalculos){
-            if (SituacaodosCalculos > 0.009){
-                return comCalculo
-            } else {
-            return semCalculo
-            }
-        }
+        }     
     
     const SituacaoNaoObrigatoriedadedaDIRPF = LucroTributavel
 
-    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o motorista autônomo não está obrigado a apresentar a DIRPF'
+    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o Empregado regido pela CLT não está obrigado a apresentar a DIRPF'
     const taobrigada = ''
 
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
@@ -217,21 +186,13 @@ function IRPFsobreAutonomoTrasportePassageiro(){
             }
         }
     
-    const calcular1 = () =>{  
-        if (operacaoDeducaoQuarentaPorCento=="Somar")
-        return (parseFloat(TransportedePassageiros) * 0.40);
-    }
-    const calcular2 = () =>{  
-        if (operacaoTransportedePassageirosAposDeducao=="Subtrair")
-        return (parseFloat(TransportedePassageiros) - parseFloat(DeducaoQuarentaPorCento));
-    }
     const calcular3 = () =>{  
         if (operacaoReceitaBrua=="Somar")
-        return (parseFloat(TransportedePassageiros) + parseFloat(Extras) + parseFloat(Promocoes));
+        return (parseFloat(Rendimentos));
     }
     const calcular4 = () =>{  
         if (operacaoLucroTributavel=="Subtrair")
-        return (parseFloat(ReceitaBrua) - parseFloat(DeducaoQuarentaPorCento));
+        return (parseFloat(ReceitaBrua));
     }
     //Desconto Simplificado
     const calcular5 = () =>{  
@@ -252,10 +213,8 @@ function IRPFsobreAutonomoTrasportePassageiro(){
         return (parseFloat(ValorIRDeducoesLegais) - parseFloat(IRRF));
     } 
 
-    useEffect (() =>{setResultado1(calcular1())},[TransportedePassageiros, operacaoDeducaoQuarentaPorCento]);
-    useEffect (() =>{setResultado2(calcular2())},[TransportedePassageiros, DeducaoQuarentaPorCento, operacaoTransportedePassageirosAposDeducao]);
-    useEffect (() =>{setResultado3(calcular3())},[TransportedePassageiros, Extras, Promocoes, operacaoReceitaBrua]);
-    useEffect (() =>{setResultado4(calcular4())},[ReceitaBrua, DeducaoQuarentaPorCento, operacaoLucroTributavel]);
+    useEffect (() =>{setResultado3(calcular3())},[Rendimentos, operacaoReceitaBrua]);
+    useEffect (() =>{setResultado4(calcular4())},[ReceitaBrua, operacaoLucroTributavel]);
     //Desconto Simplificado
     useEffect (() =>{setResultado5(calcular5())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
     useEffect (() =>{setResultado6(calcular6())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
@@ -266,61 +225,42 @@ function IRPFsobreAutonomoTrasportePassageiro(){
         
         return <div>         
         
-        <section id="irpf-sobre-autonomo-trasporte-passageiro">  
+        <section id="irpf-sobre-empregado-clt">  
         <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
-                    <h2>Motorista de transporte de passageiros</h2>
-                    <h4>Trabalhador Autônomo</h4>
-                    <p>Calcule o valor do imposto de renda pessoa física se você é um trabalhador autonômo que transporta passageiros</p>
+                    <h2>Empregado CLT</h2>
+                    <p>Calcule o valor do imposto de renda pessoa física se você é um empregado de uma empresa privada</p>
                 </div>
             </div>
             <div className="container">
-                <div className="row inputs-irpf-sobre-autonomo-trasporte-passageiro">
+                <div className="row inputs-irpf-sobre-empregado-clt">
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="TransportedePassageiros-irpf-sobre-autonomo-trasporte-passageiro">Transp. de Passageiros</label>                
+                            <label htmlFor="pro-labore-irpf-sobre-empregado-clt">Rend. (salários + férias)</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="TransportedePassageiros-irpf-sobre-autonomo-trasporte-passageiro" id="TransportedePassageiros-irpf-sobre-autonomo-trasporte-passageiro" aria-label="Amount (to the nearest dollar)" value={TransportedePassageiros} onChange={handleChange1}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="pro-labore-irpf-sobre-empregado-clt" id="pro-labore-irpf-sobre-empregado-clt" aria-label="Amount (to the nearest dollar)" value={Rendimentos} onChange={handleChange1}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Extras-irpf-sobre-autonomo-trasporte-passageiro">Extras</label>                
+                            <label htmlFor="Deducoeslegais-irpf-sobre-empregado-clt">*Deduções Legais</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Extras-irpf-sobre-autonomo-trasporte-passageiro" id="Extras-irpf-sobre-autonomo-trasporte-passageiro" aria-label="Amount (to the nearest dollar)" value={Extras} onChange={handleChange2}/>
-                            </div>                     
-                        </div>
-                    </div>
-                    <div className="col-sm-3">
-                        <div className="mb-3">
-                            <label htmlFor="Promocoes-irpf-sobre-autonomo-trasporte-passageiro">Promoções</label>                
-                            <div className="input-group mb-3">
-                                <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Promocoes-irpf-sobre-autonomo-trasporte-passageiro" id="Promocoes-irpf-sobre-autonomo-trasporte-passageiro" aria-label="Amount (to the nearest dollar)" value={Promocoes} onChange={handleChange3}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-empregado-clt" id="Deducoeslegais-irpf-sobre-empregado-clt" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Deducoeslegais-irpf-sobre-autonomo-trasporte-passageiro">*Deduções Legais</label>                
+                            <label htmlFor="irrf-irpf-sobre-empregado-clt">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-autonomo-trasporte-passageiro" id="Deducoeslegais-irpf-sobre-autonomo-trasporte-passageiro" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
-                            </div>                     
-                        </div>  
-                    </div>
-                    <div className="col-sm-3">
-                        <div className="mb-3">
-                            <label htmlFor="irrf-irpf-sobre-autonomo-trasporte-passageiro">IRRF</label>                
-                            <div className="input-group mb-3">
-                                <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-autonomo-trasporte-passageiro" id="irrf-irpf-sobre-mei-transporte-passageiro" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-irpf-sobre-empregado-clt" id="irrf-irpf-sobre-empregado-clt" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
                             </div>                     
                         </div>  
                     </div>
@@ -330,32 +270,8 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                 <div className="row text-center">
                 <p><span className="segundo-p">*Saiba quais são as<a href="/blog-deducoes-legais-desconto-simplificado-irpf-22" target="_blank" className="terceiro-a"> Deduções Legais</a></span></p>
                 </div>
-            </div>
-            <div className="container">                
-                <div className="row">
-                    <div className="col-lg-4"></div>
-                    <div className="col-lg-4">
-                    {MostrarCalculos ? <div className="table-irpf-sobre-autonomo-trasporte-passageiro">
-                    <table className="table table table-responsive table-bordered">
-                        <tr>
-                            <th className="width80"></th>
-                            <th className="width20"></th>                    
-                        </tr>
-                    <tbody>
-                        <tr className="">
-                            <th scope="row" className="tabela-p">
-                                <p>Dedução de 40% - <a href="https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/51525535/do1-2018-11-23-decreto-n-9-580-de-22-de-novembro-de-2018-51525026" target="_blank" className="tabela-a">Decreto Federal nº 9.580/2018, art. 39, inciso II.</a></p>
-                            </th>
-                            <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                        </tr> 
-                        </tbody> 
-                    </table>
-                </div> :''}       
-                        </div>
-                    <div className="col-lg-4"></div>                         
-            </div>  
-        </div> 
-        {MostrarTabelas ? <div>
+            </div> 
+            {MostrarTabelas ? <div>
             <div className="container">
                 <div className="row text-center">
                     <div className="titulo-declaraco">
@@ -365,7 +281,7 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                 <div className="row text-center">                 
                     <div className="col-lg-6">
                             <h3>Desconto Simplificado</h3> 
-                            <div className="table-irpf-sobre-autonomo-trasporte-passageiro-declaracoes">
+                            <div className="table-irpf-sobre-empregado-clt">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -378,13 +294,6 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
-                                {MostrarCalculos ?<tr>
-                                    <th scope="row" className="tabela-p">
-                                        <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 24 - Rendimentos bruto, até o máximo de 40%, da prestação de serviços decorrente do transporte de passageiros"</p>
-                                    </th>
-                                    <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>: ''}
                                 {SituacaoIRDescontoSimplificado ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Desconto Simplificado</p>
@@ -421,7 +330,7 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                         </div>
                    <div className="col-lg-6">
                             <h3>Deduções Legais</h3> 
-                            <div className="table-irpf-sobre-autonomo-trasporte-passageiro-declaracoes">
+                            <div className="table-irpf-sobre-empregado-clt">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -434,13 +343,6 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
-                                {MostrarCalculos ?<tr>
-                                    <th scope="row" className="tabela-p">
-                                        <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 24 - Rendimentos bruto, até o máximo de 40%, da prestação de serviços decorrente do transporte de passageiros"</p>
-                                    </th>
-                                    <td className="bi">{[DeducaoQuarentaPorCento].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>: ''}
                                 {SituacaoIRDeducoesLegais ?<tr>
                                     <th scope="row" className="tabela-p">
                                         <p>Deduções Legais</p>
@@ -485,4 +387,4 @@ function IRPFsobreAutonomoTrasportePassageiro(){
       </div> 
     }
   
-  export default IRPFsobreAutonomoTrasportePassageiro;
+  export default IRPFsobreEmpregadoCLT;

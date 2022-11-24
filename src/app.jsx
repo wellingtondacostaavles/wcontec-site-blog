@@ -14,13 +14,15 @@ import EditarPiscorretora from './calculadoras/ComponentsPro/Piscorretora/editar
 import Calculadoras from './calculadoras/calculadoras.jsx';
 import Customensalcomfuncionario from './calculadoras/Components/Customensalcomfuncionario/customensalcomfuncionario.jsx';
 import Customensalcomfuncionarionaooptantedosimplesnacional from './calculadoras/Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional.jsx';
+import IRPFsobreEmpregadoCLT from './calculadoras/Components/IRPFsobreEmpregadoCLT/irpfsobreempregadoclt.jsx';
 import IRPFsobreMeiComercio from './calculadoras/Components/IRPFsobreMeiComercio/irpfsobremeicomercio.jsx';
 import IRPFsobreMeiServico from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservico.jsx';
+import IRPFsobreSocioMedico from './calculadoras/Components/IRPFsobreSocioMedico/irpfsobresociomedico.jsx';
+import IRPFsobreTrabalhadorAutonomoGeral from './calculadoras/Components/IRPFsobreTrabalhadorAutonomoGeral/irpfsobretrabalhadorautonomogeral.jsx';
 import IRPFsobreAutonomoTrasportePassageiro from './calculadoras/Components/IRPFsobreAutonomoTrasportePassageiro/irpfsobreautonomotrasportepassageiro.jsx';
 import IRPFsobreAutonomoTrasporteCargas from './calculadoras/Components/IRPFsobreAutonomoTrasporteCargas/irpfsobreautonomotrasportecargas.jsx';
 import IRPFsobreMeiTransportePassageiro from './calculadoras/Components/IRPFsobreMeiTrasportePassageiro/irpfsobremeitransportepassageiro.jsx';
 import IRPFsobreMeiTransporteCargas from './calculadoras/Components/IRPFsobreMeiTransporteCargas/irpfsobremeitransportecargas.jsx';
-import IRPFsobreSocioMedico from './calculadoras/Components/IRPFsobreSocioMedico/irpfsobresociomedico.jsx';
 import Distribuicaolucrosociosn from './calculadoras/Components/Distribuicaolucrosociosn/distribuicaolucrosociosn.jsx';
 import Descontosimplificado from './calculadoras/Components/Descontosimplificado/descontosimplificado.jsx';
 import Deducoeslegais from './calculadoras/Components/Deducoeslegais/deducoeslegais.jsx';
@@ -97,13 +99,15 @@ function App(){
       <Route exact path='/calculadoras' component={Calculadoras} />
       <Route exact path='/calculadoras-custo-mensal-com-funcionario-optante-simples-nacional' component={Customensalcomfuncionario} />
       <Route exact path='/calculadoras-custo-mensal-com-funcionario-nao-optante-simples-nacional' component={Customensalcomfuncionarionaooptantedosimplesnacional} />
+      <Route exact path='/calculadoras-irpf-sobre-empregado-clt' component={IRPFsobreEmpregadoCLT} />
       <Route exact path='/calculadoras-irpf-mei-comercio' component={IRPFsobreMeiComercio} />
       <Route exact path='/calculadoras-irpf-mei-servico' component={IRPFsobreMeiServico} />      
+      <Route exact path='/calculadoras-irpf-socio-medico' component={IRPFsobreSocioMedico} />
+      <Route exact path='/calculadoras-irpf-sobre-trabalhador-autonomo-geral' component={IRPFsobreTrabalhadorAutonomoGeral} />
       <Route exact path='/calculadoras-irpf-autonomo-transporte-passageiro' component={IRPFsobreAutonomoTrasportePassageiro} />
       <Route exact path='/calculadoras-irpf-autonomo-transporte-cargas' component={IRPFsobreAutonomoTrasporteCargas} />
       <Route exact path='/calculadoras-irpf-mei-transporte-passageiro' component={IRPFsobreMeiTransportePassageiro} />
       <Route exact path='/calculadoras-irpf-mei-transporte-cargas' component={IRPFsobreMeiTransporteCargas} />
-      <Route exact path='/calculadoras-irpf-socio-medico' component={IRPFsobreSocioMedico} />
       <Route exact path='/calculadoras-distribuicao-lucro-socio-simples-nacional' component={Distribuicaolucrosociosn} />
       <Route exact path='/calculadoras-desconto-simplificado' component={Descontosimplificado} />
       <Route exact path='/calculadoras-deducoes-legais' component={Deducoeslegais} />
