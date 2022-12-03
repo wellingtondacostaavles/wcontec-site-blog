@@ -15,6 +15,9 @@ function Siganos(){
                     <img src="/Images/Logo-WCONTEC.P.png"/>
                   </div>
                   <div className="col-lg-4"></div>
+                <div className="siga-nos">
+                  <p>Siga-nos</p>
+                </div>  
                 <div className="siga">   
                     <ul className="list-unstyled list-inline social text-center">
                       <li className="list-inline-item siga"><a href="https://chat.whatsapp.com/Co4DkBgkhrr6XSDiRL3CBP" target="_blank"><i className="fa fa-whatsapp fa-4x"></i></a></li>
