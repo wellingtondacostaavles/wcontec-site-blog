@@ -1,5 +1,6 @@
 import React from 'react';
 import './artigos.css';
+import {Link, Redirect}  from 'react-router-dom';
 
 function Artigos2(){
     return <section id="artigos2">      
@@ -11,8 +12,7 @@ function Artigos2(){
                 </div>
             </div> 
         </div>
-         
-         <div className="container">                
+        <div className="container">                
             <div className="row">
                 <div className="col-lg-6">
                     <div className="card card-artigos">
@@ -23,9 +23,7 @@ function Artigos2(){
                             <a href="/blog-brasileiros-preferem-compras-online" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
-                </div>  
-                            
-                    
+                </div>
                 <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/Comoaproveitaraomaximoo/capaprincipal.png" className="card-img-top" alt="..."/></center>
@@ -51,8 +49,6 @@ function Artigos2(){
                         </div>
                     </div>  
                 </div>  
-                            
-                    
                 <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/Profissionaisautonomosestaoemcrescimento/capaprincipal.png" className="card-img-top" alt="..."/></center>
@@ -78,8 +74,6 @@ function Artigos2(){
                         </div>
                     </div>  
                 </div>  
-                            
-                    
                 <div className="col-lg-6">
                     <div className="card card-artigos">
                         <center><img src="/Images/Inssmudacasexo/capaprincipal.png" className="card-img-top" alt="..."/></center>

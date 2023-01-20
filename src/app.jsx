@@ -29,6 +29,7 @@ import Deducoeslegais from './calculadoras/Components/Deducoeslegais/deducoesleg
 import Pispresumido from './calculadoras/Components/Pispresumido/pispresumido.jsx';
 import Pislucroreal from './calculadoras/Components/Pislucroreal/pislucroreal.jsx';
 import Piscorretora from './calculadoras/Components/Piscorretora/piscorretora.jsx';
+import Cofinspresumido from './calculadoras/Components/Cofinspresumido/cofinspresumido.jsx';
 import Cofinsreal from './calculadoras/Components/Cofinsreal/cofinsreal.jsx';
 import Cofinscorretora from './calculadoras/Components/Cofinscorretora/cofinscorretora.jsx';
 import Irtrimestral from './calculadoras/Components/IRPJTrimestral/irtrimestral.jsx';
@@ -72,7 +73,7 @@ import RestituicaoIR from './blog/Artigos/DIRPF22/RestituicaoIR/restituicaoIR.js
 import Certidoesnegativas from './blog/Artigos/Certidoesnegativas/certidoesnegativas.jsx';
 import Pronampe2022 from './blog/Artigos/Pronampe2022/pronampe2022.jsx';
 import Contabilidadeeleitoral from './blog/Artigos/Contabilidadeeleitoral/contabilidadeeleitoral.jsx';
-import Cofinspresumido from './calculadoras/Components/Cofinspresumido/cofinspresumido.jsx';
+import Aposentadoriaporidade2023 from './blog/Artigos/Previdencia-Social/aposentadoriaporidade2023.jsx';
 
 
 function App(){
@@ -158,6 +159,7 @@ function App(){
       <Route exact path='/blog-certidoes-negativas' component={Certidoesnegativas} />
       <Route exact path='/blog-pronampe-2022-saiba-como-ter-acesso-ao-benefício-e-veja-as-taxas' component={Pronampe2022} />
       <Route exact path='/blog/contabilidade-eleitoral' component={Contabilidadeeleitoral} />
+      <Route exact path='/blog-regras-para-aposentadoria-2023' component={Aposentadoriaporidade2023} />
     </Switch>
 
     </BrowserRouter>;

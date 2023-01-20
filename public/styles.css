@@ -211,6 +211,9 @@ body {
   display: block;
 }
 .slu {
+  display: none;
+}
+.regras-aposentadoria-2023 {
   display: block;
 }
 

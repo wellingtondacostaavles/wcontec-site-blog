@@ -1,0 +1,60 @@
+.segundo-h3 {
+    color: #0d6efd;
+  }
+  .terceiro-h3 {
+    color: #07fff0;
+  }
+  .segundo-h6 {
+    color: #8e909b
+  }
+  
+  #aposentadoria-por-idade-2023 {
+    background-color: #ececec;
+    color: #050922;
+    padding: 90px 0 90px 12px;
+  }
+  
+  #aposentadoria-por-idade-2023 img {
+    width: 90%;
+  }
+  
+  #capa-aposentadoria-por-idade-2023 {
+    background-color: #050922;
+    color: #ffffff;
+    padding: 108px 0 102px 0;
+  }
+  
+  #capa-aposentadoria-por-idade-2023 img {
+    width: 100%;
+  }
+  
+  .btn-capa-aposentadoria-por-idade-2023 {
+    margin: 6% 3% 6% 0;
+    color: #ffffff;
+    border-radius: 50px;
+  }
+  
+  #artigosrelacionados-aposentadoria-por-idade-2023 {
+    padding: 60px 0 0 0;
+    background-color: #ffffff;
+  }
+
+  .creditos {
+    font-size: 12px;
+    padding-top: 60px;
+    color: #8e909b;
+  }
+  
+  .creditos-a:link {
+    color: #38383a;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: Effra, sans-serif;
+    font-size: 12px;
+  }
+  .creditos-a:hover {
+    color: #8a8f8e;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  

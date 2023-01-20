@@ -14,7 +14,17 @@ function Ultimosartigosblog(){
 
         <div className="container">                
             <div className="row">
-            <div className="col-lg-4 restituicaoIR">
+                <div className="col-lg-4 regras-aposentadoria-2023">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/Artigos/Previdencia-Social/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Confira as novas regras para se aposentar em 2023</h4>
+                            <p className="card-text">Se você deseja fazer o seu pedido de aposentadoria neste ano, deve ficar atento às alterações que aconteceram. Clique no botão abaixo e fique por dentro.</p>
+                            <a href="/blog-regras-para-aposentadoria-2023" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
+                <div className="col-lg-4 restituicaoIR">
                     <div className="card card-artigos">
                         <center><img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
@@ -63,7 +73,7 @@ function Ultimosartigosblog(){
                             <a href="/blog-sociedade-limitada-unipessoal" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
-                </div>               
+                </div>                               
             </div>  
         </div>               
     </section>;}
