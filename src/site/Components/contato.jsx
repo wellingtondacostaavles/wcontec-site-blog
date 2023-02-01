@@ -25,7 +25,7 @@ function Footer(){
             </div>
             <div className="container" id="termos">
               <div className="row termodeuso">
-                  <p className="text-center"><a className="termos-a" data-bs-toggle="collapse" href="#termos-de-uso-e-política-de-privacidade" role="button" aria-expanded="false" aria-controls="collapseExample">Termos de Uso e Política de Privacidade - </a>Copyright © 2022 Wcont serviços contábeis. Todos direitos reservados.</p>
+                  <p className="text-center"><a className="termos-a" data-bs-toggle="collapse" href="#termos-de-uso-e-política-de-privacidade" role="button" aria-expanded="false" aria-controls="collapseExample">Termos de Uso e Política de Privacidade - </a>Copyright © 2023 Wcont serviços contábeis. Todos direitos reservados.</p>
                   <div className="collapse" id="termos-de-uso-e-política-de-privacidade" data-parent="#termos">
                   <h6><li className="sbAccessibliltyFontSize">Termos de Uso</li></h6>
                   <p>Os direitos de propriedade intelectual presentes neste site, seu conteúdo, aplicativos e marcas pertencem à Wcont Serviços Contabeis Ltda, doravante Wcont. É expressamente vedada a comercialização, reprodução, modificação, publicação ou distribuição, a qualquer título ou forma, da totalidade ou de parte das informações, dos materiais técnicos e demais conteúdos existentes neste site, sem a prévia e expressa autorização da Wcont. As informações, os materiais técnicos e demais conteúdos existentes neste site têm propósito exclusivamente informativo. A Wcont serviços contábeis não se responsabiliza por qualquer prejuízo causado pelo uso dessas informações.</p>
