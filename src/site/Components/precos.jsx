@@ -84,7 +84,7 @@ function Precos(){
                     <tr>
                         <th scope="row" className="text-start">Contador exclusivo</th>
                         <td className="bi"></td>
-                        <td className="bi"></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
                         <td className="bi"><img src="Images/check.png" /></td>
                     </tr>
                 </tbody>           
