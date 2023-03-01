@@ -13,13 +13,13 @@ function Informativos(){
                 </div>
             <div className="row text-center">    
                 <div>
-                    <img src="Images/Informativos/Fevereiro-23.png" />
+                    <img src="Images/Informativos/Marco-23.png" />
                 </div>
                 </div>
             <div className="row text-center">    
                 <div className="col-lg-4"></div>
                 <div className="col-lg-4">  
-                    <a href="https://bit.ly/3kOMSks" className="btn btn-outline-danger btn-lg btn-informativo"><i className="far fa-file-pdf"></i> Baixar PDF</a>
+                    <a href="https://bit.ly/3J4uOfY" className="btn btn-outline-danger btn-lg btn-informativo"><i className="far fa-file-pdf"></i> Baixar PDF</a>
                 </div>
                 <div className="col-lg-4"></div>                           
                </div>

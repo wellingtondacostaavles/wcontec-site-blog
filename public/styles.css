@@ -352,4 +352,18 @@ body {
   border-radius: 50px;
 }
 
+/* Calculadoras */
+
+.whatsapp-fa:link {
+  color: #46c655;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.whatsapp-fa:hover {
+  color: #46c655;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 
