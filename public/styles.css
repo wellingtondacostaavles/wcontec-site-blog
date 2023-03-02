@@ -198,6 +198,9 @@ body {
 }
 
 /* artigos em destaque */
+.valores-a-receber-bc {
+  display: block;
+}
 .pronampe {
   display: none;
 }
@@ -205,7 +208,7 @@ body {
   display: none;
 }
 .restituicaoIR {
-  display: block;
+  display: none;
 }
 .aberturadeempresa {
   display: block;

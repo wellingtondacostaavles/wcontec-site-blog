@@ -14,6 +14,16 @@ function Ultimosartigosblog(){
 
         <div className="container">                
             <div className="row">
+                <div className="col-lg-4 valores-a-receber-bc">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/Consultasaosistemavaloresareceberbcb/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4>Já estão disponíveis as consultas ao Sistema Valores a Receber</h4>
+                            <p>Através desta consulta você saberá se tem valor a receber ou não, caso tenha, ficará por dentro da data e o período para consultar e solicitar o resgate do saldo existente.</p>
+                            <a href="/blog-consulta-ao-sistema-valores-a-receber-bcb" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
                 <div className="col-lg-4 regras-aposentadoria-2023">
                     <div className="card card-artigos">
                         <center><img src="/Images/Artigos/Previdencia-Social/capaprincipal.png" className="card-img-top" alt="..."/></center>
