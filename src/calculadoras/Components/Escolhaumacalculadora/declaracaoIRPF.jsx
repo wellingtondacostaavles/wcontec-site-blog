@@ -18,11 +18,11 @@ function DeclaracaoIRPF(){
                         <center><Link to="/calculadoras-irpf-sobre-empregado-clt"><img src="/Images/tegs-calculadoras/Tag-empregado-clt.png"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><Link to="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></Link></center>
-                    </div>                    
-                    <div className="col-lg-4 tgs">
                         <center><Link to="/calculadoras-irpf-sobre-trabalhador-autonomo-geral"><img src="/Images/tegs-calculadoras/Tag-autonomo-regra-geral.png"/></Link></center>
-                    </div>             
+                    </div>
+                    <div className="col-lg-4 tgs">
+                         <center><Link to="/calculadoras-irpf-sobre-servidor-ou-empregado-publico"><img src="/Images/tegs-calculadoras/Tag-servidor-ou-empregado-publico.png"/></Link></center>
+                    </div>                                 
                 </div>             
             </div>               
                    
@@ -63,7 +63,7 @@ function DeclaracaoIRPF(){
                          <center><Link to="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></Link></center>
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><Link to="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-aposentado"><img src="/Images/tegs-calculadoras/Tag-aposentado.png"/></Link></center>
                     </div>
                 </div>             
             </div>         
