@@ -24,6 +24,7 @@ import IRPFsobreAutonomoTrasportePassageiro from './calculadoras/Components/IRPF
 import IRPFsobreAutonomoTrasporteCargas from './calculadoras/Components/IRPFsobreAutonomoTrasporteCargas/irpfsobreautonomotrasportecargas.jsx';
 import IRPFsobreMeiTransportePassageiro from './calculadoras/Components/IRPFsobreMeiTrasportePassageiro/irpfsobremeitransportepassageiro.jsx';
 import IRPFsobreMeiTransporteCargas from './calculadoras/Components/IRPFsobreMeiTransporteCargas/irpfsobremeitransportecargas.jsx';
+import IRPFsobreAdvogado from './calculadoras/Components/IRPFsobreAdvogado/irpfsobreadvogado.jsx';
 import IRPFsobreAposentado from './calculadoras/Components/IRPFsobreAposentado/irpfsobreaposentado.jsx';
 import Distribuicaolucrosociosn from './calculadoras/Components/Distribuicaolucrosociosn/distribuicaolucrosociosn.jsx';
 import Descontosimplificado from './calculadoras/Components/Descontosimplificado/descontosimplificado.jsx';
@@ -112,6 +113,7 @@ function App(){
       <Route exact path='/calculadoras-irpf-autonomo-transporte-cargas' component={IRPFsobreAutonomoTrasporteCargas} />
       <Route exact path='/calculadoras-irpf-mei-transporte-passageiro' component={IRPFsobreMeiTransportePassageiro} />
       <Route exact path='/calculadoras-irpf-mei-transporte-cargas' component={IRPFsobreMeiTransporteCargas} />
+      <Route exact path='/calculadoras-irpf-sobre-advogado' component={IRPFsobreAdvogado} />
       <Route exact path='/calculadoras-irpf-aposentado' component={IRPFsobreAposentado} />
       <Route exact path='/calculadoras-distribuicao-lucro-socio-simples-nacional' component={Distribuicaolucrosociosn} />
       <Route exact path='/calculadoras-desconto-simplificado' component={Descontosimplificado} />

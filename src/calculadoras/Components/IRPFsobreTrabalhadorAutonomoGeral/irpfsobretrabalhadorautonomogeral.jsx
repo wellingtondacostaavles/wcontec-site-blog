@@ -230,7 +230,7 @@ function IRPFsobreTrabalhadorAutonomoGeral(){
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
-                    <h2>Trabalhador Autônomo - Regra Geral</h2>
+                    <h2>Trabalhador Autônomo</h2>
                     <p>Calcule o valor do imposto de renda pessoa física se você é um trabalhador autônomo</p>
                 </div>
             </div>

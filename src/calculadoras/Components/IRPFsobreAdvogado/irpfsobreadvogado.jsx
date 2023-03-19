@@ -2,9 +2,9 @@ import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 
-import './irpfsobremeiservico.css';
+import './irpfsobreadvogado.css';
 
-function IRPFsobreMeiServico(){  
+function IRPFsobreAdvogado(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -23,10 +23,6 @@ function IRPFsobreMeiServico(){
         event.preventDefault();
         setNro1(value);        
     };
-    const handleChange2 = (event, value, maskedValue) => {
-        event.preventDefault();
-        setNro2(value);        
-    };
     const handleChange4 = (event, value, maskedValue) => {
         event.preventDefault();
         setNro4(value);        
@@ -36,38 +32,34 @@ function IRPFsobreMeiServico(){
         setNro5(value);        
     };
     
-    const [ReceitadeSevicos, setNro1] = useState(0);
-    const [DespesasdoMEI, setNro2] = useState(0);
+    const [Rendimentos, setNro1] = useState(0);
     const [DeducoesLegais, setNro4] = useState(0);
     const [IRRF, setNro5] = useState(0);
     
-    const [Presucao8, setResultado2] = useState(0);
-    const [operacaoPresucao8, setOperacao2] = useState('Somar');
+    const [ReceitaBrua, setResultado3] = useState(0);
+    const [operacaoReceitaBrua, setOperacao3] = useState('Somar');
 
-    const [LucroIsentoMei, setResultado3] = useState(0);
-    const [operacaoLucroIsentoMei, setOperacao3] = useState('Somar');
+    const [LucroTributavel, setResultado4] = useState(0);
+    const [operacaoLucroTributavel, setOperacao4] = useState('Subtrair');
 
-    const [LucroTributavel, setResultado5] = useState(0);
-    const [operacaoLucroTributavel, setOperacao5] = useState('Subtrair');
-
-    const SituacaodosCalculos = LucroIsentoMei
+    const MostarTabelasCalculos = ReceitaBrua
     
-    const comCalculo = 'Parcela do Faturamento ISENTA na DIRPF'
-    const semCalculo = ''
+    const comTabela = 'Mostrando Tabelas de Calculos'
+    const semTabela = ''
 
-    const MostrarCalculos = Calculos(SituacaodosCalculos)
+    const MostrarTabelas = Tabelas(MostarTabelasCalculos)
 
-        function Calculos(SituacaodosCalculos){
-            if (SituacaodosCalculos > 0.009){
-                return comCalculo
+        function Tabelas(MostarTabelasCalculos){
+            if (MostarTabelasCalculos > 0.009){
+                return comTabela
             } else {
-            return semCalculo
+            return semTabela
             }
-        }
+        }     
     
     const SituacaoNaoObrigatoriedadedaDIRPF = LucroTributavel
 
-    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o MEI não está obrigado a apresentar a DIRPF'
+    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o Empregado regido pela CLT não está obrigado a apresentar a DIRPF'
     const taobrigada = ''
 
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
@@ -81,11 +73,11 @@ function IRPFsobreMeiServico(){
         }
 
     //Desconto Simplificado
-    const [BaseCalculoDescontoSimplificado, setResultado6] = useState(0);
-    const [operacaoBaseCalculoDescontoSimplificado, setOperacao6] = useState('Subtrair'); 
+    const [BaseCalculoDescontoSimplificado, setResultado5] = useState(0);
+    const [operacaoBaseCalculoDescontoSimplificado, setOperacao5] = useState('Subtrair'); 
     
-    const [ResultdoIRDescontoSimplificado, setResultado7] = useState(0); 
-    const [operacaoResultdoIRDescontoSimplificado, setOperacao7] = useState('Subtrair');
+    const [ResultdoIRDescontoSimplificado, setResultado6] = useState(0); 
+    const [operacaoResultdoIRDescontoSimplificado, setOperacao6] = useState('Subtrair');
 
     const BaseCalculoFaixaDescontoSimplificado = BaseCalculoDescontoSimplificado   
 
@@ -145,11 +137,11 @@ function IRPFsobreMeiServico(){
         }  
     
     //Deduções Legais
-    const [BaseCalculoDeducoesLegais, setResultado8] = useState(0);
-    const [operacaoBaseCalculoDeducoesLegais, setOperacao8] = useState('Subtrair');
+    const [BaseCalculoDeducoesLegais, setResultado7] = useState(0);
+    const [operacaoBaseCalculoDeducoesLegais, setOperacao7] = useState('Subtrair');
 
-    const [ResultdoIRDeducoesLegais, setResultado9] = useState(0); 
-    const [operacaoResultdoIRDeducoesLegais, setOperacao9] = useState('Subtrair');
+    const [ResultdoIRDeducoesLegais, setResultado8] = useState(0); 
+    const [operacaoResultdoIRDeducoesLegais, setOperacao8] = useState('Subtrair');
     
     const BaseCalculoFaixaDeducoesLegais = BaseCalculoDeducoesLegais   
 
@@ -194,96 +186,81 @@ function IRPFsobreMeiServico(){
             }
         }
     
-    const calcular2 = () =>{  
-        if (operacaoPresucao8=="Somar")
-        return (parseFloat(ReceitadeSevicos) * 0.32);
-    }
     const calcular3 = () =>{  
-        if (operacaoLucroIsentoMei=="Somar")
-        return (parseFloat(Presucao8));
+        if (operacaoReceitaBrua=="Somar")
+        return (parseFloat(Rendimentos));
     }
-    const calcular5 = () =>{  
+    const calcular4 = () =>{  
         if (operacaoLucroTributavel=="Subtrair")
-        return (parseFloat(ReceitadeSevicos) - parseFloat(DespesasdoMEI) - parseFloat(LucroIsentoMei));
+        return (parseFloat(ReceitaBrua));
     }
     //Desconto Simplificado
-    const calcular6 = () =>{  
+    const calcular5 = () =>{  
         if (operacaoBaseCalculoDescontoSimplificado=="Subtrair")
         return ((parseFloat(LucroTributavel)) - (ValordoDescontoSimplificado));
     }
-    const calcular7 = () =>{  
+    const calcular6 = () =>{  
         if (operacaoResultdoIRDescontoSimplificado=="Subtrair")
         return (parseFloat(ValorIRDescontoSimplificado) - parseFloat(IRRF));
     }
     //Deduções Legais
-    const calcular8 = () =>{  
+    const calcular7 = () =>{  
         if (operacaoBaseCalculoDeducoesLegais=="Subtrair")
         return (parseFloat(LucroTributavel) - parseFloat(DeducoesLegais));
     }
-    const calcular9 = () =>{  
+    const calcular8 = () =>{  
         if (operacaoResultdoIRDeducoesLegais=="Subtrair")
         return (parseFloat(ValorIRDeducoesLegais) - parseFloat(IRRF));
     } 
 
-    useEffect (() =>{setResultado2(calcular2())},[ReceitadeSevicos, operacaoPresucao8]);
-    useEffect (() =>{setResultado3(calcular3())},[Presucao8, operacaoLucroIsentoMei]);
-    useEffect (() =>{setResultado5(calcular5())},[ReceitadeSevicos, DespesasdoMEI, LucroIsentoMei, operacaoLucroTributavel]);
+    useEffect (() =>{setResultado3(calcular3())},[Rendimentos, operacaoReceitaBrua]);
+    useEffect (() =>{setResultado4(calcular4())},[ReceitaBrua, operacaoLucroTributavel]);
     //Desconto Simplificado
-    useEffect (() =>{setResultado6(calcular6())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
-    useEffect (() =>{setResultado7(calcular7())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
+    useEffect (() =>{setResultado5(calcular5())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
+    useEffect (() =>{setResultado6(calcular6())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
     //Deduções Legais
-    useEffect (() =>{setResultado8(calcular8())},[LucroTributavel, DeducoesLegais, operacaoBaseCalculoDeducoesLegais]);
-    useEffect (() =>{setResultado9(calcular9())},[ValorIRDeducoesLegais, IRRF, operacaoResultdoIRDeducoesLegais]);
+    useEffect (() =>{setResultado7(calcular7())},[LucroTributavel, DeducoesLegais, operacaoBaseCalculoDeducoesLegais]);
+    useEffect (() =>{setResultado8(calcular8())},[ValorIRDeducoesLegais, IRRF, operacaoResultdoIRDeducoesLegais]);
       
         
         return <div>         
         
-        <section id="irpf-sobre-mei-servico">  
+        <section id="irpf-sobre-advogado">  
         <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
-                    <h2>Prestador de Serviços</h2>
-                    <h4>Microempreendedor Individual</h4>
-                    <p>Calcule o valor do imposto de renda pessoa física se você é um microempreendedor individual prestador de serviços em geral.</p>
+                    <h2>Advogado</h2>
+                    <p>Calcule o valor do imposto de renda pessoa física se você é um advogado que presta serviços para pessoas físicas e/ou jurídicas</p>
                 </div>
             </div>
             <div className="container">
-                <div className="row inputs-irpf-sobre-mei-servico">
+                <div className="row inputs-irpf-sobre-advogado">
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="ReceitadeServicos-irpf-sobre-mei-servico">Receita de Serviços</label>                
+                            <label htmlFor="pro-labore-irpf-sobre-advogado">Rend. (PJ + PF)</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitadeServiços-irpf-sobre-mei-servico" id="ReceitadeServiços-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={ReceitadeSevicos} onChange={handleChange1}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="pro-labore-irpf-sobre-advogado" id="pro-labore-irpf-sobre-empregado-clt" aria-label="Amount (to the nearest dollar)" value={Rendimentos} onChange={handleChange1}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="DespesasdoMEI-irpf-sobre-mei-servico">*Despesas do MEI</label>                
+                            <label htmlFor="Deducoeslegais-irpf-sobre-advogado">*Deduções Legais</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DespesasdoMEI-irpf-sobre-mei-servico" id="DespesasdoMEI-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={DespesasdoMEI} onChange={handleChange2}/>
-                            </div>                     
-                        </div>
-                    </div>
-                    <div className="col-sm-3">
-                        <div className="mb-3">
-                            <label htmlFor="Deducoeslegais-irpf-sobre-mei-servico">*Deduções Legais</label>                
-                            <div className="input-group mb-3">
-                                <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-mei-servico" id="Deducoeslegais-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-advogado" id="Deducoeslegais-irpf-sobre-empregado-clt" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="irrf-irpf-sobre-mei-servico">IRRF</label>                
+                            <label htmlFor="irrf-irpf-sobre-advogado">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-mei-servico" id="irrf-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-advogado" id="irrf-irpf-sobre-empregado-clt" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
                             </div>                     
                         </div>  
                     </div>
@@ -291,46 +268,21 @@ function IRPFsobreMeiServico(){
             </div>
             <div className="container">
                 <div className="row text-center">
-                <p><span className="segundo-p">*Despesas do MEI (Água, Luz, Telefone, compra de Mercadoria, Aluguel do Espaço).</span></p>
                 <p><span className="segundo-p">*Veja quais são as<a href="/blog-deducoes-legais-desconto-simplificado-irpf-22" target="_blank" className="terceiro-a"> Deduções Legais</a></span></p>
                 <p><span className="segundo-p">Fale com a gente caso não saiba quais foram seus Rendimentos<a href="https://bit.ly/3IWcXYn" target="_blank" className="whatsapp-fa"> <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></span></p>
                 </div>
-            </div>
-            <div className="container">                
-                <div className="row">
-                    <div className="col-lg-4"></div>
-                    <div className="col-lg-4">
-                    {MostrarCalculos ? <div className="table-irpf-sobre-mei-servico">
-                    <table className="table table table-responsive table-bordered">
-                        <tr>
-                            <th className="width80"></th>
-                            <th className="width20"></th>                    
-                        </tr>
-                    <tbody>
-                        <tr>
-                            <th scope="row" className="tabela-p">
-                                <p>Dedução de 32% - <a href="http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="_blank" className="tabela-a">Art. 14, § 1º da LC 123/2006</a>, <a href="http://www.planalto.gov.br/ccivil_03/leis/l9249.htm" target="_blank" className="tabela-a">Art. 15, § 1º, lebra b, III, da Lei 9.249/95.</a></p>
-                            </th>
-                            <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                        </tr>                
-                        </tbody> 
-                    </table>
-                </div> :''}       
-                        </div>
-                    <div className="col-lg-4"></div>                         
-            </div>  
-        </div> 
-        {MostrarCalculos ? <div>
+            </div> 
+            {MostrarTabelas ? <div>
             <div className="container">
                 <div className="row text-center">
                     <div className="titulo-declaraco">
-                        <h1>Como ficará na declaração</h1>
+                        <h1>Como ficaria na declaração</h1>
                     </div>
                 </div>              
                 <div className="row text-center">                 
                     <div className="col-lg-6">
                             <h3>Desconto Simplificado</h3> 
-                            <div className="table-irpf-sobre-mei-servico">
+                            <div className="table-irpf-sobre-advogado">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -342,13 +294,6 @@ function IRPFsobreMeiServico(){
                                         <p>Rendimento Tributável</p>
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" className="tabela-p">
-                                        <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro-labore e alugéis."</p>
-                                        </th>
-                                    <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
                                 {SituacaoIRDescontoSimplificado ?<tr>
                                     <th scope="row" className="tabela-p">
@@ -386,7 +331,7 @@ function IRPFsobreMeiServico(){
                         </div>
                    <div className="col-lg-6">
                             <h3>Deduções Legais</h3> 
-                            <div className="table-irpf-sobre-mei-servico">
+                            <div className="table-irpf-sobre-advogado">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -398,13 +343,6 @@ function IRPFsobreMeiServico(){
                                         <p>Rendimento Tributável</p>
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" className="tabela-p">
-                                        <p>Rendimentos Isentos e Não Tributáveis.</p>
-                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro-labore e alugéis."</p>
-                                        </th>
-                                    <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
                                 {SituacaoIRDeducoesLegais ?<tr>
                                     <th scope="row" className="tabela-p">
@@ -450,4 +388,4 @@ function IRPFsobreMeiServico(){
       </div> 
     }
   
-  export default IRPFsobreMeiServico;
+  export default IRPFsobreAdvogado;
