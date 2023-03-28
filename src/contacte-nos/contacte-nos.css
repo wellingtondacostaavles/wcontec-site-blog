@@ -37,3 +37,10 @@
   .siga2 {
     padding: 0 6% 0 6%;
   }
+
+  .btn-siganos {
+    margin: 6% 0 6% 0;
+    color: #ffffff;
+    border-radius: 50px;
+    min-width: 150px
+  }

@@ -7,19 +7,19 @@ function Beneficios(){
                 <div className="col-lg-4 feature-box">
                     <i className="icon fas fa-heart fa-5x"></i>
                     <h3>Fácil de usar</h3>                    
-                    <p>A Wcontec possui uma interface fácil de usar, não somos robôs, por ela você tem acesso a contadores para te atender quando precisar.</p>
+                    <p>Conte com atendimento personalizado e contadores para ajudar em todas as etapas do negócio. A interface intuitiva torna a gestão empresarial mais eficiente.</p>
                 </div>
 
                 <div className="col-lg-4 feature-box">
                     <i className="icon fas fa-globe-americas fa-5x"></i>
                     <h3>Em qualquer lugar</h3> 
-                    <p>Gerencie sua empresa de forma eficiente, onde quer que você esteja, basta ter acesso a um computador ou notebook com internet.</p>
+                    <p>Aprimore sua gestão empresarial com eficiência e praticidade, independentemente de onde esteja, apenas com um computador ou notebook com acesso à internet.</p>
                 </div>
 
                 <div className="col-lg-4 feature-box">
                     <i className="icon fas fa-desktop fa-5x"></i>
                     <h3>Painel intuitivo</h3>
-                    <p>Controle suas entradas e saídas, emita nota fiscal, gere relatórios, fluxo de caixa, demonstrativos e muito mais de forma simples.</p>
+                    <p>Controle suas entradas e saídas, emita nota fiscal, gere relatórios financeiros, fluxo de caixa detalhado, demonstrativos contábeis e muito mais de forma simples e eficiente.</p>
                 </div>                                         
             </div>
         </div>

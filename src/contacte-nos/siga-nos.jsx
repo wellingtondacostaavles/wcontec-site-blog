@@ -31,6 +31,7 @@ function Siganos(){
                       <li className="list-inline-item siga2"><a href="https://m.facebook.com/profile.php?id=100072384950030" target="_blank"><i className="fa fa-facebook fa-4x"></i></a></li>
                       <li className="list-inline-item siga2"><a href="https://twitter.com/w_contec" target="_blank"><i className="fa fa-twitter fa-4x"></i></a></li>
                     </ul>
+                    <a href="https://bit.ly/42PeFCC" target="_blank" className="btn btn-outline-primary btn-lg btn-siganos">Acessar a Plataforma</a>
                 </div>
             </div>
             <div className="container">                              
