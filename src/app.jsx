@@ -154,11 +154,11 @@ function App(){
       <Route exact path='/blog-brasileiros-preferem-compras-online' component={Brasileirospreferemcomprasonline} />
       <Route exact path='/blog-senado-aprova-tributacao-menor-para-caminhoneiros' component={Senadoaprovatributacaomenorparacaminhoneiros} />
       <Route exact path='/blog-consulta-ao-sistema-valores-a-receber-bcb' component={Consultasaosistemavaloresareceberbcb} />
-      <Route exact path='/blog-novidades-na-declaracao-irpf-22' component={Novidadesnadeclaracaoirpf22} />
-      <Route exact path='/blog-documentosnecessarios-irpf-22' component={Documentosnecessarios} />
-      <Route exact path='/blog-deducoes-legais-desconto-simplificado-irpf-22' component={Deducoeslegaisdescontosimplificado} />
+      <Route exact path='/blog-novidades-na-declaracao-irpf' component={Novidadesnadeclaracaoirpf22} />
+      <Route exact path='/blog-documentosnecessarios-irpf' component={Documentosnecessarios} />
+      <Route exact path='/blog-deducoes-legais-desconto-simplificado-irpf' component={Deducoeslegaisdescontosimplificado} />
       <Route exact path='/blog-microempreendedor-e-trabalhador-informal-tem-direito-a-receber' component={Microempreendedor} />
-      <Route exact path='/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf-22' component={Obrigatoriedade} />
+      <Route exact path='/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf' component={Obrigatoriedade} />
       <Route exact path='/blog/como-emitir-nota-fiscal' component={Obrigatoriedadedeemitirnotafiscal} />
       <Route exact path='/blog-tipos-de-notas-permitidas-para-o-mei' component={Tiposdenotaspermitidasparaomei} />
       <Route exact path='/blog/restituicao-ir' component={RestituicaoIR} />

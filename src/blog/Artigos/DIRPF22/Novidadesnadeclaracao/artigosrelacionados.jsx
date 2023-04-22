@@ -16,22 +16,22 @@ function Artigosrelacionados(){
             <div className="row">              
                 <div className="col-lg-6">
                         <div className="card card-artigos">
-                            <center><img src="/Images/DIRPF22/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                            <center><img src="/Images/DIRPF/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
                             <div className="card-body">
-                                <h4 className="card-title">Documentos necessários para a DIRPF 2022</h4>
+                                <h4 className="card-title">Documentos necessários para a Declaração de Imposto de Renda</h4>
                                 <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
-                                <a href="/blog-documentosnecessarios-irpf-22" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/blog-documentosnecessarios-irpf" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>  
-                    </div>  
-                
-                    <div className="col-lg-6">
+                    </div> 
+
+                <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/Normasparaemissao/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/DIRPF/Obrigatoriedade/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
-                            <h4 className="card-title">Normas para emissão e entrega do Comprovante de Rendimentos 2022</h4>
-                            <p className="card-text">Foram estabelecidas normas sobre o comprovante de rendimentos pagos e de imposto sobre a renda retido na fonte a vigorar a partir de 01.01.2022.</p>
-                            <a href="/blog-normas-para-emissao-e-entrega-do-comprovante-de-rendimentos" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <h4 className="card-title">Descubra se você precisa fazer a declaração do Imposto de Renda</h4>
+                            <p className="card-text">Fique ligado nas mudanças anuais na legislação fiscal para evitar problemas futuros com a Receita Federal e garantir a conformidade com a lei tributária.</p>
+                            <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>

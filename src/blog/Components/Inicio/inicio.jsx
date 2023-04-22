@@ -36,7 +36,7 @@ function Inicio(){
                     <div className="carousel-item" data-bs-interval="3000">
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" />
+                                    <img src="/Images/DIRPF/RestituicaoIR/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
                                     <h3>Receita Federal disponibiliza consulta ao lote residual do<span className="terceiro-h3"> Imposto de Renda 2022</span></h3>                
@@ -99,17 +99,17 @@ function Inicio(){
                             </div>    
                         </div>
                         <div className="carousel-item" data-bs-interval="3000">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <img src="/Images/DIRPF22/Obrigatoriedade/capaprincipal.png" />
-                                </div>                
-                                <div className="col-lg-6">
-                                    <h3>Saiba se você está obrigado a apresentar<span className="terceiro-h3"> declaração do Imposto de Renda</span></h3>                
-                                    <h6 className="segundo-h6">Entramos no último mês do prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2022, mas muita gente ainda não sabe se está obrigado a prestar contas com o leão! É importante se atualizar anualmente, pois todos os anos a Receita Federal faz alterações para adequar o imposto à realidade do país.</h6>
-                                    <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf-22#obrigatoriedade" className="btn btn-success btn-lg btn-capa-obrigatoriedade">Continue lendo</a>
-                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-obrigatoriedade">Área do Cliente</a>
-                                </div>               
-                            </div>    
+                        <div className="row">
+                            <div className="col-lg-6">
+                                <img src="/Images/DIRPF/Obrigatoriedade/capaprincipal.png" />
+                            </div>                
+                            <div className="col-lg-6">
+                                <h3>Descubra se você precisa fazer a<span className="terceiro-h3"> declaração do Imposto de Renda</span></h3>                
+                                <h6 className="segundo-h6">Muitas pessoas ainda desconhecem se estão obrigadas a prestar contas com a Receita Federal durante a época de declaração do Imposto de Renda. É de extrema importância estar atualizado anualmente, uma vez que a Receita Federal realiza alterações anuais para adequar o imposto à realidade econômica do país. Manter-se informado é fundamental para evitar problemas futuros com o fisco.</h6>
+                                <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf#obrigatoriedade" className="btn btn-success btn-lg btn-capa-obrigatoriedade">Continue lendo</a>
+                                <a href="/" className="btn btn-outline-primary btn-lg btn-capa-obrigatoriedade">Área do Cliente</a>
+                            </div>               
+                        </div>    
                         </div>
                         <div className="carousel-item" data-bs-interval="3000">
                             <div className="row">   
@@ -127,12 +127,12 @@ function Inicio(){
                         <div className="carousel-item" data-bs-interval="3000">
                             <div className="row">   
                                 <div className="col-lg-6">
-                                    <img src="/Images/DIRPF22/Deducoeslegaisoudescontosimplificado/capaprincipal.png" />
+                                    <img src="/Images/DIRPF/Deducoeslegaisoudescontosimplificado/capaprincipal.png" />
                                 </div>
                                     <div className="col-lg-6">
                                     <h3><span className="terceiro-h3">Deduções legais</span> ou<span className="terceiro-h3"> desconto simplificado</span> saiba fazer a escolha certa</h3>                
-                                    <h6 className="segundo-h6">Tudo depende do total de despesas dedutíveis que você tem em relação à renda. Com base nessas informações você pode avaliar se é mais vantajoso optar por deduções legais ou desconto simplificado, ou seja, verificar qual pode reduzir o imposto devido ou garantir a restituição.</h6>
-                                    <a href="/blog-deducoes-legais-desconto-simplificado-irpf-22#deducoes-legais-desonto-simplificado" className="btn btn-success btn-lg btn-capa-deducoes-legais-desonto-simplificado">Continue lendo</a>
+                                    <h6 className="segundo-h6">O tipo de dedução mais adequado para a sua declaração do Imposto de Renda dependerá do montante das suas despesas dedutíveis em relação à sua renda. É importante avaliar cuidadosamente essas informações para determinar se é mais vantajoso optar pelas deduções legais ou pelo desconto simplificado. Dessa forma, você poderá verificar qual alternativa é capaz de reduzir o valor do imposto a pagar ou garantir a restituição.</h6>
+                                    <a href="/blog-deducoes-legais-desconto-simplificado-irpf#deducoes-legais-desonto-simplificado" className="btn btn-success btn-lg btn-capa-deducoes-legais-desonto-simplificado">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-deducoes-legais-desonto-simplificado">Área do Cliente</a>
                                 </div> 
                             </div>    
@@ -140,12 +140,12 @@ function Inicio(){
                         <div className="carousel-item" data-bs-interval="3000">
                             <div className="row">   
                                 <div className="col-lg-6">
-                                    <img src="/Images/DIRPF22/Documentosnecessarios/capaprincipal.png" />
+                                    <img src="/Images/DIRPF/Documentosnecessarios/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
-                                    <h3>Veja quais são os<span className="terceiro-h3"> documentos</span> necessários para a <span className="terceiro-h3">DIRPF 2022</span></h3>                
-                                    <h6 className="segundo-h6">Quanto antes você juntar os documentos, mais tempo terá para correr atrás de alguma informação que faltou, e também deverá guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</h6>
-                                    <a href="/blog-documentosnecessarios-irpf-22#documentos-necessarios" className="btn btn-success btn-lg btn-capa-documentos-necessarios">Continue lendo</a>
+                                <h3>Veja quais são os<span className="terceiro-h3"> documentos</span> necessários para a <span className="terceiro-h3">Declaração de Imposto de Renda</span></h3>                
+                                    <h6 className="segundo-h6">É importante juntar todos os documentos necessários para a declaração do Imposto de Renda o quanto antes, pois assim terá mais tempo para buscar alguma informação que possa estar faltando. Além disso, é fundamental guardar esses papéis por no mínimo cinco anos, caso a Receita Federal solicite comprovação das informações declaradas.</h6>
+                                    <a href="/blog-documentosnecessarios-irpf#documentos-necessarios" className="btn btn-success btn-lg btn-capa-documentos-necessarios">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-documentos-necessarios">Área do Cliente</a>
                                 </div> 
                             </div>    
@@ -156,9 +156,9 @@ function Inicio(){
                                     <img src="/Images/Novidadesnadeclaracaoirpf22/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
-                                    <h3>Novidades na<span className="terceiro-h3"> declaração do Imposto de Renda</span> em 2022</h3>                
-                                    <h6 className="segundo-h6">Atenção para o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2022 que começou na última segunda-feira, são várias mudanças, e a que chama mais atenção será o recebimento da restituição ou o pagamento do imposto por meio de Pix.</h6>
-                                    <a href="/blog-novidades-na-declaracao-irpf-22#novidades-na-declaracao-irpf-22" className="btn btn-success btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Continue lendo</a>
+                                <h3>Novidades na<span className="terceiro-h3"> declaração do Imposto de Renda</span> em 2023</h3>                
+                                    <h6 className="segundo-h6">Atenção para o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2023 que começou no dia 15 de março, são várias mudanças.</h6>
+                                    <a href="/blog-novidades-na-declaracao-irpf-23#novidades-na-declaracao-irpf-22" className="btn btn-success btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Área do Cliente</a>
                                 </div> 
                             </div>    
@@ -324,7 +324,7 @@ function Inicio(){
                                     <img src="/Images/Normasparaemissao/capaprincipal.png" />
                                 </div>                                        
                                 <div className="col-lg-6">
-                                    <h3>Normas para emissão e entrega<span className="terceiro-h3"> do Comprovante de Rendimentos 2022</span></h3>                
+                                    <h3>Normas para emissão e entrega<span className="terceiro-h3"> do Comprovante de Rendimentos</span></h3>                
                                     <h6 className="segundo-h6">Por meio da <a href="http://www.normaslegais.com.br/legislacao/instrucao-normativa-rfb-2060-2021.htm" className="segundo-a"> Instrução Normativa RFB 2.060/2021</a> foram estabelecidas normas sobre o comprovante de rendimentos pagos e de imposto sobre a renda retido na fonte a vigorar a partir de 01.01.2022.</h6>
                                     <a href="/blog-normas-para-emissao-e-entrega-do-comprovante-de-rendimentos#normasparaemissaoeentregadocomprovantederendimentos" className="btn btn-success btn-lg btn-inicio-blog">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-inicio-blog">Área do Cliente</a>

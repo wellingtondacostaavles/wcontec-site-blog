@@ -8,7 +8,7 @@ function Capa(){
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" />
+                    <img src="/Images/DIRPF/RestituicaoIR/capaprincipal.png" />
                 </div>                
                 <div className="col-lg-6">
                     <h3>Receita Federal disponibiliza consulta ao lote residual do<span className="terceiro-h3"> Imposto de Renda 2022</span></h3>                

@@ -83,6 +83,56 @@ function Ultimosartigosblog(){
                             <a href="/blog-sociedade-limitada-unipessoal" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
+                </div>
+                <div className="col-lg-4 normas-para-emissão-informe-de-rendimentos-ir">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/Normasparaemissao/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Normas para emissão e entrega do Comprovante de Rendimentos</h4>
+                            <p className="card-text">Foram estabelecidas normas sobre o comprovante de rendimentos pagos e de imposto sobre a renda retido na fonte a vigorar a partir de 01.01.2022.</p>
+                            <a href="/blog-normas-para-emissao-e-entrega-do-comprovante-de-rendimentos" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
+                <div className="col-lg-4 documentos-necessarios-dirpf">
+                    <div className="card card-artigos">
+                            <center><img src="/Images/DIRPF/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                            <div className="card-body">
+                                <h4 className="card-title">Documentos necessários para a Declaração de IR</h4>
+                                <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
+                                <a href="/blog-documentosnecessarios-irpf" className="btn btn-primary btn-artigos">Ler Post</a>
+                            </div>
+                        </div>  
+                </div>
+                <div className="col-lg-4 deducoes-loegais-desconto-simplificado-dirpf">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/DIRPF/Deducoeslegaisoudescontosimplificado/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Deduções legais ou desconto simplificado, saiba qual escolher</h4>
+                            <p className="card-text">Vai depender do total de despesas dedutíveis que você tem em relação à renda. Daí você pode avaliar se é mais vantajoso optar por deduções legais ou desconto simplificado.</p>
+                            <a href="/blog-deducoes-legais-desconto-simplificado-irpf" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
+                <div className="col-lg-4 novidades-na-dirpf">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/Novidadesnadeclaracaoirpf22/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Confira as novidades na declaração do Imposto de Renda 2023</h4>
+                            <p className="card-text">Atenção para o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2023 que começou no dia 15 de março, são várias mudanças.</p>
+                            <a href="/blog-novidades-na-declaracao-irpf" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
+                <div className="col-lg-4 obrigatoriedade-dirpf">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/DIRPF/Obrigatoriedade/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4 className="card-title">Descubra se você precisa fazer a declaração do Imposto de Renda</h4>
+                            <p className="card-text">Fique ligado nas mudanças anuais na legislação fiscal para evitar problemas futuros com a Receita Federal e garantir a conformidade com a lei tributária.</p>
+                            <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf" className="btn btn-primary btn-artigos">Ler Post</a>
+                        </div>
+                    </div>  
                 </div>                               
             </div>  
         </div>               

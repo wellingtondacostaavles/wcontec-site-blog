@@ -199,7 +199,7 @@ body {
 
 /* artigos em destaque */
 .valores-a-receber-bc {
-  display: block;
+  display: none;
 }
 .pronampe {
   display: none;
@@ -217,7 +217,22 @@ body {
   display: none;
 }
 .regras-aposentadoria-2023 {
+  display: none;
+}
+.obrigatoriedade-dirpf {
+  display: none;
+}
+.novidades-na-dirpf {
+  display: none;
+}
+.deducoes-loegais-desconto-simplificado-dirpf {
   display: block;
+}
+.documentos-necessarios-dirpf {
+  display: block;
+}
+.normas-para-emissão-informe-de-rendimentos-ir {
+  display: none;
 }
 
 

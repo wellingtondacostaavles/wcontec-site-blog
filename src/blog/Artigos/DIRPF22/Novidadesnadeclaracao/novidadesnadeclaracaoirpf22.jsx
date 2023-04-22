@@ -20,12 +20,11 @@ function Novidadesnadeclaracaoirpf22(){
                                    
                 <div className="container">
                     <div className="row"> 
-                        <h3>Pix, Auxílio emergencial, Testes de Covid...</h3>
+                        <h3>Novidades na Declaração do Imposto de Renda 2023: pré-preenchida e prioridade na restituição.</h3>
                     </div>                    
 
                     <div className="row">
-                        <p>Foi dada a largada, na última segunda-feira dia 07-03-2022 começou o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2022. Segundo a Receita Federal, a expectativa é que seja recebidas um número próximo ao registrado em 2021, quando superou os 34 milhões de documentos.</p>
-                        <p>Uma mudança, que na verdade voltou a ser como era antes, é que o prazo de entrega da declaração será até 29 de abril. Mesmo com um tempo mais curto, tendo em vista que só se pôde baixar o programa da declaração no dia 07, não no fim de fevereiro por causa da operação padrão dos auditores fiscais da Receita Federal, o programa gerador da declaração no entanto, terá novidades tecnológicas.</p>
+                        <p>A declaração pré-preenchida proporciona uma experiência mais completa do que a simples importação de dados da declaração do ano anterior. Ela permite obter informações atualizadas da base de dados da Receita Federal sobre bens, salários e pagamentos do contribuinte em 2022. Saiba mais sobre essa e outras novidades na declaração do Imposto de Renda deste ano.</p>
                     </div>  
                 </div>       
             
@@ -35,9 +34,9 @@ function Novidadesnadeclaracaoirpf22(){
                     </div> 
                     <div className="row">
                         <div className="col-lg-6">
-                        <p>Pela primeira vez, será possível receber a restituição do imposto de renda por Pix. O sistema instantâneo de pagamentos do Banco Central. De acrodo com a Receita, a ferramenta agilizará o pagamento das restituições nos casos em que houve mudança de conta bancária após a entrega da declaração. Isso porque o correntista pode transferir a chave Pix para conta diferente.</p>
-                        <p>Com isso o Fisco informou que reduzirá o reagendamento de depósitos porque a conta informada na declaração mudou. Mas atenção, a Receita Federal adverte que a novidade só estará disponível para quem tem chave Pix associada ao número do CPF. Neste ano, ainda não será possível informar chaves Pix aleatórias, endereços de e-mail ou números de telefone.</p>
-                        <p>A ordem da fila de pagamento das restituições não mudou, continuará a seguir as prioridades definidas em lei segundo a Receita Federal.</p>
+                        <p>A Receita Federal só permite que o CPF seja utilizado como chave Pix na declaração do Imposto de Renda. A medida é simples, pois a primeira informação solicitada pelo programa é o CPF do contribuinte. Caso haja erro na digitação, a declaração não pode ser concluída.</p>
+                        <p>Para informar a chave Pix na declaração do Imposto de Renda, o contribuinte deve acessar a tela "Início" e, no quadro "Imposto a Pagar", preencher o campo "Informações bancárias". É importante ressaltar que a opção de informar a chave Pix só estará disponível para aqueles que já possuem a chave cadastrada com o CPF.</p>
+                        <p>Caso prefira, é possível informar a chave Pix na hora de entregar a declaração, antes de clicar em "Enviar". No momento de inserir ou confirmar os dados bancários, basta escolher a opção do Pix.</p>
                     </div>
                 
                     <div className="col-lg-6">
@@ -49,28 +48,36 @@ function Novidadesnadeclaracaoirpf22(){
             <div className="container">
                 <div className="row"> 
                     <p>Também será possível usar o Pix para pagar o DARF emitido pelo programa ou pelo aplicativo do Imposto de Renda, com o Código QR (versão avançada do código de barras), facilitando o pagamento.</p>
-                    <h3>Auxílio emergencial</h3>
-                    <p>Dificilmente terá que devolver o auxílio emergencial quem conseguiu um emprego no ano passado . O contribuinte só precisará preencher a declaração e pagar imposto caso a soma dos rendimentos tributáveis tenha ultrapassado R$ 28.559,70 em 2021.</p>  
-                    <p>De acordo com a Receita Federal, a mudança se deu por falta de previsão legal para a declaração deste ano. Em 2021, beneficiários do auxílio emergencial de 2020 que conseguiram emprego e tiveram rendimentos tributáveis acima de R$ 22.847,76 eram obrigados a entregar a declaração do Imposto de Renda e preencher uma Darf para devolver o valor recebido da União. A exigência constava da lei que criou o benefício em 2020.</p>
+                    <h3>Pensão alimentícia vai para Rendimentos Isentos</h3>
+                    <p>A partir deste ano, a pensão alimentícia não é mais um rendimento tributado.</p>  
+                    <p>A mudança na não incidência de imposto sobre valores recebidos por trabalhadores em caso de dispensa sem justa causa segue uma decisão do STF (Supremo Tribunal Federal) de 2022. Essa decisão foi explicada pela professora Alessandra Bichof, coordenadora do curso de Ciências Contábeis da FAE Centro Universitário em Curitiba (PR).</p>
                 </div>
             </div>  
 
             <div className="container">
                 <div className="row"> 
-                    <h3>Declaração pré-preenchida</h3>
-                    <p>Até o ano passado, a declaração pré-preenchida só estava disponível a quem tem certificação digital. A partir de 2022, o recurso foi ampliado a quem tem conta nível prata ou ouro no Portal Gov.br. Recentemente, o centro virtual de atendimento da Receita Federal (e-CAC) elevou o nível de segurança para acessar o e-CAC por meio do login Gov.br.</p>
-                    <p>A declaração pré-preenchida estará disponível a partir de 15 de março. Nesse tipo de declaração, o contribuinte recebe, no portal e-CAC, informações relativas a rendimentos, deduções, bens e direitos e dívidas e ônus reais obtidas por declarações repassadas por empresas, planos de saúde, instituições financeiras e companhias imobiliárias à Receita, cabendo apenas confirmar os dados ou alterar, incluir ou excluir informações necessárias.</p>
-                    <p>Mas atenção! Apesar de dispensar a digitação dos dados, a declaração pré-preenchida exige que o contribuinte confira se as informações estão corretas, comparando com os informes de rendimentos e recibos recolhidos.</p>
+                    <h3>Autorização de acesso à pré-preenchida</h3>
+                    <p>Uma das novidades deste ano é a opção para que outra pessoa possa acessar a declaração pré-preenchida e incluir ou corrigir informações. Essa autorização pode ser feita pelo aplicativo 'Meu Imposto de Renda' ou pela plataforma digital e-CAC.</p>
+                    <p>Essa autorização já existia em 2022. Mas até o ano passado a pessoa ou profissional que preenche a declaração para outros só podia receber uma autorização por vez, e essa autorização só existia para o preenchimento manual.</p>
                 </div>  
             </div>
 
             <div className="container">
                     <div className="row"> 
-                        <h3>Testes de covid</h3>
-                        <p>A Receita esclareceu que a realização de testes de covid-19 poderá ser deduzida da declaração como despesa médica. A possibilidade, no entanto, só vale para os exames realizados em laboratório, com comprovação de pagamento. Testes comprados em farmácia não poderão ser deduzidos, nem se o contribuinte tiver a nota fiscal.</p>
-                        <p>Na ficha “Pagamentos efetuados”, o contribuinte deverá digitar o código “21” (para laboratórios) e “10” (para exames com médicos), inserir o preço e o Cadastro Nacional de Pessoas Jurídicas (CNPJ), no caso de teste em laboratório, ou o CPF do médico, para exame com profissional particular, que consta no recibo.</p>
+                        <h3>"Piso" para investimentos em Bolsa</h3>
+                        <p>Neste ano, os investidores na Bolsa só precisam informar operações na declaração se tiverem negociado mais de R$ 40 mil, ou se tiveram lucro com pelo menos uma venda em 2022.</p>
+                        <p>Embora os investidores na Bolsa só precisem informar suas operações na declaração se tiverem negociado mais de R$ 40 mil ou se tiverem obtido lucro com pelo menos uma venda em 2022, há outras situações que podem exigir a declaração de IRPF 2023. Por exemplo, se o investidor tiver tido rendimentos tributáveis acima de R$ 28.559,70 ou rendimentos isentos de mais de R$ 40, é obrigatório fazer a declaração. É importante estar atento a todas as regras que exigem a declaração, mesmo que a pessoa tenha investido na Bolsa abaixo do limite de R$ 40 mil.</p>
                     </div>
-                </div>              
+                </div>
+
+            <div className="container">
+                    <div className="row"> 
+                        <h3>Criptoativos "puxados" na pré-preenchida</h3>
+                        <p>Em 2023, a declaração pré-preenchida incluirá automaticamente todos os investimentos em criptoativos do contribuinte, com base nas informações fornecidas pelas empresas em seus informes, seguindo as orientações da Instrução Normativa 1.888/2019. Essa funcionalidade irá importar as informações dos investimentos em criptoativos, independentemente do saldo, proporcionando uma maior facilidade e agilidade na declaração.</p>
+                        <p>A mudança implica no fim do limite mínimo anterior de R$ 5.000 que obrigava a informar esses investimentos.</p>
+                        <p>Uma nova funcionalidade presente no IRPF 2023 deve gerar um grande volume de informações adicionais para a Receita. Contudo, é importante ressaltar que podem ocorrer lançamentos equivocados devido a informações incorretas fornecidas pelas exchanges. Por isso, é recomendável que os contribuintes revisem cuidadosamente seus dados pré-preenchidos antes de enviá-los à Receita, conforme orienta José Carlos Fernandes da Fonseca, Supervisor Nacional do Imposto de Renda.</p>
+                    </div>
+                </div>                    
                         
     </section>
     <Artigosrelacionados/>

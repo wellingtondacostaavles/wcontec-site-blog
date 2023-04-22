@@ -34,7 +34,7 @@ function RestituicaoIR(){
                     <p>O contribuinte poderá reagendar a disponibilização do crédito de valores pelo site do banco ou entrando em contato com o BB pelos telefones 4004-0001 (capitais), 0800-729-0001 (demais localidades) e 0800-729-0088 (telefone especial exclusivo para pessoas com deficiência auditiva).</p>
                     </div>                
                     <div className="col-lg-6">
-                        <center><img src="/Images/DIRPF22/RestituicaoIR/capasecundaria.png"/></center>
+                        <center><img src="/Images/DIRPF/RestituicaoIR/capasecundaria.png"/></center>
                     </div>  
                 </div>              
             </div>
