@@ -30,7 +30,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">Confira as novidades na declaração do Imposto de Renda 2023</h4>
                                 <p className="card-text">São várias mudanças, e a que chama mais atenção será o recebimento da restituição ou o pagamento do imposto por meio de Pix, basta a cheve ser o CPF.</p>
-                                <a href="/blog-novidades-na-declaracao-irpf-23" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/blog-novidades-na-declaracao-irpf" className="btn btn-primary btn-artigos">Ler Post</a>
                             </div>
                         </div>
                     </div>

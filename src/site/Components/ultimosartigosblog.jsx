@@ -84,16 +84,6 @@ function Ultimosartigosblog(){
                         </div>
                     </div>  
                 </div>
-                <div className="col-lg-4 normas-para-emissão-informe-de-rendimentos-ir">
-                    <div className="card card-artigos">
-                        <center><img src="/Images/Normasparaemissao/capaprincipal.png" className="card-img-top" alt="..."/></center>
-                        <div className="card-body">
-                            <h4 className="card-title">Normas para emissão e entrega do Comprovante de Rendimentos</h4>
-                            <p className="card-text">Foram estabelecidas normas sobre o comprovante de rendimentos pagos e de imposto sobre a renda retido na fonte a vigorar a partir de 01.01.2022.</p>
-                            <a href="/blog-normas-para-emissao-e-entrega-do-comprovante-de-rendimentos" className="btn btn-primary btn-artigos">Ler Post</a>
-                        </div>
-                    </div>  
-                </div>
                 <div className="col-lg-4 documentos-necessarios-dirpf">
                     <div className="card card-artigos">
                             <center><img src="/Images/DIRPF/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
