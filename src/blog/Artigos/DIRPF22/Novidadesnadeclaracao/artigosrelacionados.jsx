@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './novidadesnadeclaracaoirpf22.css';
+import './novidadesnadeclaracaoirpf.css';
 
 function Artigosrelacionados(){
-    return <section id="artigosrelacionados-novidades-na-declaracao-irpf-22">      
+    return <section id="artigosrelacionados-novidades-na-declaracao-irpf">      
        <div className="container">
             <div className="row text-center">
                 <div className="titulo">

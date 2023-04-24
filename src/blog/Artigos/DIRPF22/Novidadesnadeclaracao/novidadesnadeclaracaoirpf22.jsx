@@ -8,15 +8,15 @@ import Recomendados from '../../../Components/Recomendados/recomendados';
 import Cardareadocliente from '../../../Components/Cardareadoclente/cardareadocliente';
 import Parceiros from '../../../../site/Components/parceiros';
 import Footer from '../../../../site/Components/contato';
-import './novidadesnadeclaracaoirpf22.css';
+import './novidadesnadeclaracaoirpf.css';
 
-function Novidadesnadeclaracaoirpf22(){
+function Novidadesnadeclaracaoirpf(){
     return <div>
       <Navbar/>
       <Capa/>
           
       
-    <section id="novidades-na-declaracao-irpf-22">
+    <section id="novidades-na-declaracao-irpf">
                                    
                 <div className="container">
                     <div className="row"> 
@@ -90,4 +90,4 @@ function Novidadesnadeclaracaoirpf22(){
     </div> 
   }
 
-export default Novidadesnadeclaracaoirpf22;
+export default Novidadesnadeclaracaoirpf;

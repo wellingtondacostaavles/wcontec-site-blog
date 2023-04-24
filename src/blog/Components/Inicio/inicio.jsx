@@ -10,6 +10,58 @@ function Inicio(){
                     <div className="carousel-item active" data-bs-interval="3000">
                             <div className="row">   
                                 <div className="col-lg-6">
+                                    <img src="/Images/DIRPF/Deducoeslegaisoudescontosimplificado/capaprincipal.png" />
+                                </div>
+                                    <div className="col-lg-6">
+                                    <h3><span className="terceiro-h3">Deduções legais</span> ou<span className="terceiro-h3"> desconto simplificado</span> saiba fazer a escolha certa</h3>                
+                                    <h6 className="segundo-h6">O tipo de dedução mais adequado para a sua declaração do Imposto de Renda dependerá do montante das suas despesas dedutíveis em relação à sua renda. É importante avaliar cuidadosamente essas informações para determinar se é mais vantajoso optar pelas deduções legais ou pelo desconto simplificado. Dessa forma, você poderá verificar qual alternativa é capaz de reduzir o valor do imposto a pagar ou garantir a restituição.</h6>
+                                    <a href="/blog-deducoes-legais-desconto-simplificado-irpf#deducoes-legais-desonto-simplificado" className="btn btn-success btn-lg btn-capa-deducoes-legais-desonto-simplificado">Continue lendo</a>
+                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-deducoes-legais-desonto-simplificado">Área do Cliente</a>
+                                </div> 
+                            </div>    
+                        </div>
+                        <div className="carousel-item" data-bs-interval="3000">
+                        <div className="row">
+                            <div className="col-lg-6">
+                                <img src="/Images/DIRPF/Obrigatoriedade/capaprincipal.png" />
+                            </div>                
+                            <div className="col-lg-6">
+                                <h3>Descubra se você precisa fazer a<span className="terceiro-h3"> declaração do Imposto de Renda</span></h3>                
+                                <h6 className="segundo-h6">Muitas pessoas ainda desconhecem se estão obrigadas a prestar contas com a Receita Federal durante a época de declaração do Imposto de Renda. É de extrema importância estar atualizado anualmente, uma vez que a Receita Federal realiza alterações anuais para adequar o imposto à realidade econômica do país. Manter-se informado é fundamental para evitar problemas futuros com o fisco.</h6>
+                                <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf#obrigatoriedade" className="btn btn-success btn-lg btn-capa-obrigatoriedade">Continue lendo</a>
+                                <a href="/" className="btn btn-outline-primary btn-lg btn-capa-obrigatoriedade">Área do Cliente</a>
+                            </div>               
+                        </div>    
+                    </div>
+                    <div className="carousel-item" data-bs-interval="3000">
+                        <div className="row">
+                                <div className="col-lg-6">
+                                    <img src="/Images/Notasfiscais/capaprincipal.png" />
+                                </div>                
+                                <div className="col-lg-6">
+                                    <h3>Veja se você está obrigado e<span className="terceiro-h3"> como emitir nota fiscal</span><span className="terceiro-h3"></span> eletrônica</h3>
+                                    <h6 className="segundo-h6">Se você é empreendedor saiba como emitir nota fiscal ao fazer qualquer operação negocial. A obrigação vale para o microempreendedor (ME), empresas de pequeno porte (EPPs) e para os microempreendedores individuais (MEIs), salvo quando estes venderem ou prestarem serviços para pessoa física.</h6>
+                                    <Link to="/blog/como-emitir-nota-fiscal#obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-success btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Continue lendo</Link>
+                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Área do Cliente</a>
+                                </div>               
+                            </div>    
+                        </div>
+                        <div className="carousel-item" data-bs-interval="3000">
+                            <div className="row">   
+                                <div className="col-lg-6">
+                                    <img src="/Images/DIRPF/Documentosnecessarios/capaprincipal.png" />
+                                </div>                
+                                <div className="col-lg-6">
+                                <h3>Veja quais são os<span className="terceiro-h3"> documentos</span> necessários para a <span className="terceiro-h3">Declaração de Imposto de Renda</span></h3>                
+                                    <h6 className="segundo-h6">É importante juntar todos os documentos necessários para a declaração do Imposto de Renda o quanto antes, pois assim terá mais tempo para buscar alguma informação que possa estar faltando. Além disso, é fundamental guardar esses papéis por no mínimo cinco anos, caso a Receita Federal solicite comprovação das informações declaradas.</h6>
+                                    <a href="/blog-documentosnecessarios-irpf#documentos-necessarios" className="btn btn-success btn-lg btn-capa-documentos-necessarios">Continue lendo</a>
+                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-documentos-necessarios">Área do Cliente</a>
+                                </div> 
+                            </div>    
+                        </div>    
+                    <div className="carousel-item" data-bs-interval="3000">
+                            <div className="row">   
+                                <div className="col-lg-6">
                                     <img src="/Images/Consultasaosistemavaloresareceberbcb/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
@@ -86,32 +138,6 @@ function Inicio(){
                             </div>    
                         </div>
                         <div className="carousel-item" data-bs-interval="3000">
-                        <div className="row">
-                                <div className="col-lg-6">
-                                    <img src="/Images/Notasfiscais/capaprincipal.png" />
-                                </div>                
-                                <div className="col-lg-6">
-                                    <h3>Veja se você está obrigado e<span className="terceiro-h3"> como emitir nota fiscal</span><span className="terceiro-h3"></span> eletrônica</h3>
-                                    <h6 className="segundo-h6">Se você é empreendedor saiba como emitir nota fiscal ao fazer qualquer operação negocial. A obrigação vale para o microempreendedor (ME), empresas de pequeno porte (EPPs) e para os microempreendedores individuais (MEIs), salvo quando estes venderem ou prestarem serviços para pessoa física.</h6>
-                                    <Link to="/blog/como-emitir-nota-fiscal#obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-success btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Continue lendo</Link>
-                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Área do Cliente</a>
-                                </div>               
-                            </div>    
-                        </div>
-                        <div className="carousel-item" data-bs-interval="3000">
-                        <div className="row">
-                            <div className="col-lg-6">
-                                <img src="/Images/DIRPF/Obrigatoriedade/capaprincipal.png" />
-                            </div>                
-                            <div className="col-lg-6">
-                                <h3>Descubra se você precisa fazer a<span className="terceiro-h3"> declaração do Imposto de Renda</span></h3>                
-                                <h6 className="segundo-h6">Muitas pessoas ainda desconhecem se estão obrigadas a prestar contas com a Receita Federal durante a época de declaração do Imposto de Renda. É de extrema importância estar atualizado anualmente, uma vez que a Receita Federal realiza alterações anuais para adequar o imposto à realidade econômica do país. Manter-se informado é fundamental para evitar problemas futuros com o fisco.</h6>
-                                <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf#obrigatoriedade" className="btn btn-success btn-lg btn-capa-obrigatoriedade">Continue lendo</a>
-                                <a href="/" className="btn btn-outline-primary btn-lg btn-capa-obrigatoriedade">Área do Cliente</a>
-                            </div>               
-                        </div>    
-                        </div>
-                        <div className="carousel-item" data-bs-interval="3000">
                             <div className="row">   
                                 <div className="col-lg-6">
                                     <img src="/Images/Microempreendedor/Mircroempreendedorestemareceber/capaprincipal.png" />
@@ -127,38 +153,12 @@ function Inicio(){
                         <div className="carousel-item" data-bs-interval="3000">
                             <div className="row">   
                                 <div className="col-lg-6">
-                                    <img src="/Images/DIRPF/Deducoeslegaisoudescontosimplificado/capaprincipal.png" />
-                                </div>
-                                    <div className="col-lg-6">
-                                    <h3><span className="terceiro-h3">Deduções legais</span> ou<span className="terceiro-h3"> desconto simplificado</span> saiba fazer a escolha certa</h3>                
-                                    <h6 className="segundo-h6">O tipo de dedução mais adequado para a sua declaração do Imposto de Renda dependerá do montante das suas despesas dedutíveis em relação à sua renda. É importante avaliar cuidadosamente essas informações para determinar se é mais vantajoso optar pelas deduções legais ou pelo desconto simplificado. Dessa forma, você poderá verificar qual alternativa é capaz de reduzir o valor do imposto a pagar ou garantir a restituição.</h6>
-                                    <a href="/blog-deducoes-legais-desconto-simplificado-irpf#deducoes-legais-desonto-simplificado" className="btn btn-success btn-lg btn-capa-deducoes-legais-desonto-simplificado">Continue lendo</a>
-                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-deducoes-legais-desonto-simplificado">Área do Cliente</a>
-                                </div> 
-                            </div>    
-                        </div>
-                        <div className="carousel-item" data-bs-interval="3000">
-                            <div className="row">   
-                                <div className="col-lg-6">
-                                    <img src="/Images/DIRPF/Documentosnecessarios/capaprincipal.png" />
-                                </div>                
-                                <div className="col-lg-6">
-                                <h3>Veja quais são os<span className="terceiro-h3"> documentos</span> necessários para a <span className="terceiro-h3">Declaração de Imposto de Renda</span></h3>                
-                                    <h6 className="segundo-h6">É importante juntar todos os documentos necessários para a declaração do Imposto de Renda o quanto antes, pois assim terá mais tempo para buscar alguma informação que possa estar faltando. Além disso, é fundamental guardar esses papéis por no mínimo cinco anos, caso a Receita Federal solicite comprovação das informações declaradas.</h6>
-                                    <a href="/blog-documentosnecessarios-irpf#documentos-necessarios" className="btn btn-success btn-lg btn-capa-documentos-necessarios">Continue lendo</a>
-                                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-documentos-necessarios">Área do Cliente</a>
-                                </div> 
-                            </div>    
-                        </div>
-                        <div className="carousel-item" data-bs-interval="3000">
-                            <div className="row">   
-                                <div className="col-lg-6">
                                     <img src="/Images/Novidadesnadeclaracaoirpf22/capaprincipal.png" />
                                 </div>                
                                 <div className="col-lg-6">
                                 <h3>Novidades na<span className="terceiro-h3"> declaração do Imposto de Renda</span> em 2023</h3>                
                                     <h6 className="segundo-h6">Atenção para o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2023 que começou no dia 15 de março, são várias mudanças.</h6>
-                                    <a href="/blog-novidades-na-declaracao-irpf-23#novidades-na-declaracao-irpf-22" className="btn btn-success btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Continue lendo</a>
+                                    <a href="/blog-novidades-na-declaracao-irpf#novidades-na-declaracao-irpf" className="btn btn-success btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-consulta-ao-sistema-valores-a-receber-bcb">Área do Cliente</a>
                                 </div> 
                             </div>    

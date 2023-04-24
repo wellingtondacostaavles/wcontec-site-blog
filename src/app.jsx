@@ -65,7 +65,7 @@ import Transicaodooperacionalparaoempreendedorismo from './blog/Artigo18/transic
 import Brasileirospreferemcomprasonline from './blog/Artigo19/brasileirospreferemcomprasonline.jsx';
 import Senadoaprovatributacaomenorparacaminhoneiros from './blog/Artigo20/senadoaprovatributacaomenorparacaminhoneiros.jsx';
 import Consultasaosistemavaloresareceberbcb from './blog/Artigo21/consultasaosistemavaloresareceberbcb.jsx';
-import Novidadesnadeclaracaoirpf22 from './blog/Artigos/DIRPF22/Novidadesnadeclaracao/novidadesnadeclaracaoirpf22.jsx';
+import Novidadesnadeclaracaoirpf from './blog/Artigos/DIRPF22/Novidadesnadeclaracao/novidadesnadeclaracaoirpf22.jsx';
 import Documentosnecessarios from './blog/Artigos/DIRPF22/Documentosnecessarios/documentosnecessarios.jsx';
 import Deducoeslegaisdescontosimplificado from './blog/Artigos/DIRPF22/Deducoeslegaisdescontosimplificado/deducoeslegais-descontosimplificado.jsx';
 import Microempreendedor from './blog/Artigos/Microempreendedor/microempreendedor.jsx';
@@ -154,7 +154,7 @@ function App(){
       <Route exact path='/blog-brasileiros-preferem-compras-online' component={Brasileirospreferemcomprasonline} />
       <Route exact path='/blog-senado-aprova-tributacao-menor-para-caminhoneiros' component={Senadoaprovatributacaomenorparacaminhoneiros} />
       <Route exact path='/blog-consulta-ao-sistema-valores-a-receber-bcb' component={Consultasaosistemavaloresareceberbcb} />
-      <Route exact path='/blog-novidades-na-declaracao-irpf' component={Novidadesnadeclaracaoirpf22} />
+      <Route exact path='/blog-novidades-na-declaracao-irpf' component={Novidadesnadeclaracaoirpf} />
       <Route exact path='/blog-documentosnecessarios-irpf' component={Documentosnecessarios} />
       <Route exact path='/blog-deducoes-legais-desconto-simplificado-irpf' component={Deducoeslegaisdescontosimplificado} />
       <Route exact path='/blog-microempreendedor-e-trabalhador-informal-tem-direito-a-receber' component={Microempreendedor} />
