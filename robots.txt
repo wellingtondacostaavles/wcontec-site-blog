@@ -2,13 +2,9 @@ User-agent: *
 Disallow:
 Sitemap: https://www.wcontec.com.br/sitemap.xml
 
-# Descrição do site
-# ====================
-#Com a Wcontec, sua gestão empresarial é simplificada e eficiente. Controle entradas e saídas, emita notas fiscais, gere relatórios e conte com contadores especializados e atendimento personalizado. Soluções integradas para fluxo de caixa, estoque e conformidade com a legislação. Acesse de qualquer lugar!"
-
-#Description: Descrição do meu site.
-
-#contabilidadeonline, contabilidade, gestorfinanceiro, finanças, wcontec, impostoderenda, abrirempresa, jucepe, sebrae, certificadodigital, ecnpj, pja1, calculadora, simulador, plataforma, fiscal, contábil, pessoal, controladoria, legalização, financeiro, tecnologia
-
-Keywords: contabilidadeonline, contabilidade, gestorfinanceiro, finanças, wcontec, impostoderenda, abrirempresa, jucepe, sebrae, certificadodigital, ecnpj, pja1, calculadora, simulador, plataforma, fiscal, contábil, pessoal, controladoria, legalização, financeiro, tecnologia
-=======
+Descrição do site:
+====================
+Com a Wcontec, sua gestão empresarial é simplificada e eficiente. Controle entradas e saídas, emita notas fiscais, gere relatórios e conte com contadores especializados e atendimento personalizado. Soluções integradas para fluxo de caixa, estoque e conformidade com a legislação. Acesse de qualquer lugar!
+Palavras-chave:
+===============
+contabilidadeonline, contabilidade, gestorfinanceiro, finanças, wcontec, impostoderenda, abrirempresa, jucepe, sebrae, certificadodigital, ecnpj, pja1, calculadora, simulador, plataforma, fiscal, contábil, pessoal, controladoria, legalização, financeiro, tecnologia
