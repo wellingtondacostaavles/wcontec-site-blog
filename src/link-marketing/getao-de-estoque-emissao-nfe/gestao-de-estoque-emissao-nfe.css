@@ -12,7 +12,7 @@ h6 {
     color: #ffffff;
 }
 
-body {
+bodyF {
     margin: 0;
     padding: 0;
     background-color: #ececec;
@@ -22,7 +22,7 @@ body {
     color: #050922;
 }
 
-.container {
+.container-gestaoNFE {
     max-width: 600px;
     margin: 0 auto;
     background-color: #ffffff;
@@ -31,7 +31,7 @@ body {
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
 }
 
-.header {
+.header-gestaoNFE {
     background-color: #050922;
     padding: 20px;
     text-align: center;
@@ -41,11 +41,11 @@ body {
     color: #07fff0;
 }
 
-.content {
-    padding: 9px;
+.content-gestaoNFE {
+    padding: 20px;
 }
 
-.content img {
+.content-gestaoNFE img {
     max-width: 100%;
     height: auto;
     display: block;
