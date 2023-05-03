@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .header-gestaoNFE {
     background-color: #050922;
-    padding: 20px;
+    padding: 3%;
     text-align: center;
     color: #ffffff;
   }
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .content-gestaoNFE {
-    margin-top: 50px; /* aumenta o espaçamento entre o header e o vídeo */
+    margin-top: 3%; /* aumenta o espaçamento entre o header e o vídeo */
     text-align: center;
   }
   
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .btn-gestaoNFE {
     border-radius: 50px;
-    margin: 6% 3% 6% 0;
+    margin: 3% 3% 3% 0;
   }
   
   @media only screen and (max-width: 768px) {
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   
     .header-gestaoNFE, .content-gestaoNFE, .footer {
-      padding-top: 0;
+      padding-top: 10px;
     }
   
     .social-media {
@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   .social-media {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 1%;
     background-color: #050922;
     padding: 20px;
     text-align: center;
