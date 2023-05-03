@@ -42,6 +42,7 @@ p {
 
 body {
   background-color: #ececec;
+  margin-top: 0;
 }
 
 /* NAVBAR */
@@ -379,6 +380,12 @@ body {
   color: #46c655;
   background-color: transparent;
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .jumbotron {
+    padding-top: 0;
+  }
 }
 
 
