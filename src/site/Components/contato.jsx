@@ -16,7 +16,7 @@ function Footer(){
                   <ul className="list-unstyled list-inline social text-center">
                       <li className="list-inline-item"><a href="https://t.me/+bLsp1DsfZOo2M2Ix" target="_blank"><i className="fa fa-telegram fa-2x"></i></a></li>
                       <li className="list-inline-item"><a href="https://instagram.com/wcontec?r=nametag" target="_blank"><i className="fa fa-instagram fa-2x"></i></a></li>
-                      <li className="list-inline-item"><a href="mailto:contato@wcontec.com.br"><i className="fa fa-envelope fa-2x"></i></a></li>
+                      <li className="list-inline-item"><a href="https://bit.ly/3VDpN2j" target="_blank"><i className="fas fa-comment fa-2x"></i></a></li>
                       <li className="list-inline-item"><a href="https://youtube.com/@wcontec2017" target="_blank"><i className="fa fa-youtube fa-2x"></i></a></li>
                       <li className="list-inline-item"><a href="https://twitter.com/w_contec" target="_blank"><i className="fa fa-twitter fa-2x"></i></a></li>
                       <li className="list-inline-item"><a href="https://chat.whatsapp.com/Co4DkBgkhrr6XSDiRL3CBP" target="_blank"><i className="fa fa-whatsapp fa-2x"></i></a></li>
