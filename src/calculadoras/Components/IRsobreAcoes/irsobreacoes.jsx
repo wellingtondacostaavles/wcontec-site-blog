@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import DatePicker from "react-datepicker";
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -189,7 +190,8 @@ function Irsobreacoes(){
                 <p></p>
                 <p><span className="terceiro-p">Atenção: Cacluladora em desenvolvimento</span></p>
                 </div>
-            </div>          
+            </div>
+            <Rodapeprodutos/>          
         </section>       
       </div> 
     }

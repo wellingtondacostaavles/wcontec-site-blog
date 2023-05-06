@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './cofinscorretora.css';
 
@@ -148,8 +149,9 @@ function Cofinscorretora(){
                 {SituacaoCOFINS ? <p>Códido do Tributo 7987</p> :''}
                 {SituacaoCOFINS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
-            </div>          
-        </section>       
+            </div>
+            <Rodapeprodutos/>                      
+        </section>              
       </div> 
     }
   

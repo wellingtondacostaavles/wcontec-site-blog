@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './descontosimplificado.css';
 
@@ -166,7 +167,8 @@ function Descontosimplificado(){
                 {SituacaoDesobrigatoriedade ? <p><span className="terceiro-p">Atenção: De acordo com os rendimentos informados, o contribuinte está desobrigado a apresentar a DIRPF.</span></p> :''}
                 {SituacaoIR ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declaração, ou contrate um profissional para te ajudar.</span></p> : ''}
                 </div>
-            </div>          
+            </div>
+            <Rodapeprodutos/>          
         </section>       
       </div> 
     }

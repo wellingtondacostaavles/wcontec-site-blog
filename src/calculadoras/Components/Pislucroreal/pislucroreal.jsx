@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './pislucroreal.css';
 
@@ -393,7 +394,8 @@ function Pislucroreal(){
               <p><span className="segundo-p">Veja quais são as *Receitas não tributáveis e *Operações com direito a crédito na Lei Nº 10.833/2003.</span></p>            
               {SituacaoPIS ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
             </div>
-        </div>          
+        </div>      
+        <Rodapeprodutos/>    
         </section>       
       </div> 
     }

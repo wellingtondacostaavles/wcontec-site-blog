@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './deducoeslegais.css';
 
@@ -165,7 +166,8 @@ function Deducoeslegais(){
                 <p><span className="segundo-p">Saiba quais são as<a href="/blog-deducoes-legais-desconto-simplificado-irpf-22" target="_blank" className="terceiro-a"> Deduções Legais</a></span></p>
                 {SituacaoIR ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora simula quanto seria o valor do imposto, baixe o programa DIRPF no site da Receita Federal e faça sua declração caso seja obrigado, ou contrate um profissional para te ajudar.</span></p> : ''}
                 </div>
-            </div>          
+            </div>
+            <Rodapeprodutos/>          
         </section>       
       </div> 
     }

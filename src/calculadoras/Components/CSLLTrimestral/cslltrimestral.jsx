@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './cslltrimestral.css';
 
@@ -183,7 +184,8 @@ function Cslltrimestral(){
                 {SituacaoCSLL ? <p>Códido do Tributo 2372</p> :''}
                 {SituacaoCSLL ? <p><span className="terceiro-p">Atenção: O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
                 </div>
-            </div>          
+            </div>
+            <Rodapeprodutos/>          
         </section>       
       </div> 
     }

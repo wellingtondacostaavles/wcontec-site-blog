@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 
 import './metrocubico.css';
@@ -105,7 +106,7 @@ function Metrocubico(){
                 {SituacaoResultadoMetroCubico ? <p><span className="terceiro-p">Atenção: O volume estimado na calculadora deverá ser confirmado com o engenheiro responsável pela obra.</span></p> :''}
               </div>
             </div>  
-        
+            <Rodapeprodutos/>
         </section>       
       </div> 
     }

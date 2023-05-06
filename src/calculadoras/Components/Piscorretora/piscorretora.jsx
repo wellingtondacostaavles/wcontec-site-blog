@@ -2,8 +2,7 @@ import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 import {Link, Redirect}  from 'react-router-dom';
-
-
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './piscorretora.css';
 
@@ -161,6 +160,7 @@ function Piscorretora(){
                 {SituacaoPIS ? <p><span className="terceiro-p">Atenção: Base legal para Corretoras de títulos e valores mobiliários - Instrução Normativa RFB nº 1.911/2019. O valor encontrado na calculadora deverá ser confirmado com o contador responsável pela empresa.</span></p> :''}
             </div>
             </div>
+            <Rodapeprodutos/>
          </section>       
       </div> 
     }

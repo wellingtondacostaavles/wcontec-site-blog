@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './irpfsobresociomedico.css';
 
@@ -473,7 +474,7 @@ function IRPFsobreSocioMedico(){
                 </div>       
             </div>       
         </div> :''}  
-
+        <Rodapeprodutos/>
         </section>       
       </div> 
     }

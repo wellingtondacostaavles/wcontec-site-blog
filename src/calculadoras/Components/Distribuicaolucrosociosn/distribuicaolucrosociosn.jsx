@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './distribuicaolucrosociosn.css';
 
@@ -157,7 +158,8 @@ function Distribuicaolucrosociosn(){
                 {SituacaoLucroaSerDistribuido ? <h1>{[LucroaSerDistribuido].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</h1> :''}
                 <p><span className="segundo-p">*IRPJ pagos no Simples Nacional (corresponde ao total pago no ano, podendo ser consultado nos extratos mensais de apuração do imposto).</span></p>
                 </div>
-            </div>          
+            </div>
+            <Rodapeprodutos/>          
         </section>       
       </div> 
     }

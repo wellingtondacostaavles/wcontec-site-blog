@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
+import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './irpfsobreautonomotrasportepassageiro.css';
 
@@ -481,7 +482,7 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                 </div>       
             </div>       
         </div> :''}  
-
+        <Rodapeprodutos/>
         </section>       
       </div> 
     }
