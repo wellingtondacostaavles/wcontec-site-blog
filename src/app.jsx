@@ -42,7 +42,6 @@ import Siganos from './contacte-nos/siga-nos.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
 import Descadastramento from './descadastrese/descadastramento.jsx';
 import Certificacaodigital from './parceiros/certificacaodigital.jsx';
-import Afiliados from './parceiros/afiliados.jsx';
 import GestaoNFE from './link-marketing/getao-de-estoque-emissao-nfe/gestao-de-estoque-emissao-nfe.jsx';
 import Home from './blog/Home/home.jsx';
 import Naosepodeculparcargatributaria from './blog/Artigo/naosepodeculparcargatributaria.jsx';
@@ -132,7 +131,6 @@ function App(){
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
       <Route exact path='/parceiro-certificacao-digital' component={Certificacaodigital} />
-      <Route exact path='/parceiro-afiliado' component={Afiliados} />
       <Route exact path='/gestao-de-estoque-emissao-nfe' component={GestaoNFE} />
       <Route exact path='/blog' component={Home} />
       <Route exact path='/blog-nao-se-pode-culpar-a-cargatributaria' component={Naosepodeculparcargatributaria} />
