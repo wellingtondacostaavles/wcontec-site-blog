@@ -13,8 +13,8 @@ function Capa(){
                 </div>
                 
                 <div className="col-lg-6">
-                    <h3>Emissão de nota fiscal para <span className="terceiro-h3">Microempreendedor Individual</span></h3>                
-                    <h6 className="segundo-h6">O microempreendedor individual está dispensado de emitir nota fiscal para pessoa física, contudo, quando a venda ou serviço for realizado para uma empresa, será necessário emitir a nota fiscal eletrônica conheça os tipos notas permitidas.</h6>
+                    <h3>Tudo o que você precisa saber sobre emissão de <span className="terceiro-h3">nota fiscal para microempreendedores</span></h3>                
+                    <h6 className="segundo-h6">Os microempreendedores individuais estão dispensados de emitir nota fiscal para transações com pessoas físicas. No entanto, quando ocorrer uma venda ou prestação de serviço para uma empresa, é necessário emitir a nota fiscal eletrônica. É importante conhecer os tipos de notas fiscais permitidos nesses casos.</h6>
                     <a href="#tipos-de-notas-permitidas-para-o-mei" className="btn btn-success btn-lg btn-capa-tipos-de-notas-permitidas-para-o-mei">Continue lendo</a>
                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-tipos-de-notas-permitidas-para-o-mei">Área do Cliente</a>
                 </div>               

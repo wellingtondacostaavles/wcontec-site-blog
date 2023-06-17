@@ -33,6 +33,11 @@
     color: #ffffff;
     border-radius: 50px;
   }
+
+  .btn-como-emitir-nota-fiscal {
+    border-radius: 50px;
+    margin: 1% 0 3% 0;  
+  }
   
   #artigosrelacionados-obrigatoriedade-de-emitir-nota-fiscal {
     padding: 60px 0 0 0;
