@@ -50,7 +50,7 @@ function Obrigatoriedadedeemitirnotafiscal(){
             <div className="container">
                 <div className="row">
                     <p>Atenção para o microempreendedor individual (MEI) que está dispensado de emitir nota fiscal para transações com pessoas físicas. No entanto, quando ocorrer uma venda ou prestação de serviço para uma empresa, é necessário emitir a nota fiscal eletrônica. Por isso é importante conhecer os tipos de notas fiscais.</p> 
-                    <p>Não perca tempo! Agora que você conhece os diferentes tipos de nota fiscal e o processo de emissão através de um sistema web, clique no botão abaixo e cadastre-se para emitir NF-e, NFS-e e NFC-e automaticamente a cada venda ou prestação de serviço. É fundamental ressaltar que esse sistema se conecta diretamente com o site da Secretaria da Fazenda (Sefaz) de cada estado e com a prefeitura correspondente durante a emissão da nota fiscal eletrônica. Simplifique suas operações e mantenha-se em dia com suas obrigações fiscais. Cadastre-se agora mesmo e desfrute dos benefícios de uma emissão de nota fiscal ágil e eficiente!</p>
+                    <p>Não perca tempo! Agora que você conhece os diferentes tipos de nota fiscal e o processo de emissão através de um sistema web, clique no botão abaixo e cadastre-se para emitir NF-e, NFS-e e NFC-e automaticamente a cada venda ou prestação de serviço. É fundamental ressaltar que esse sistema se conecta diretamente com o site da Secretaria da Fazenda (Sefaz) de cada estado e com a prefeitura correspondente durante a emissão da nota fiscal eletrônica. Simplifique suas operações e mantenha-se em dia com suas obrigações fiscais.</p>
                 </div>
                 <div className="row">    
                     <div>  
