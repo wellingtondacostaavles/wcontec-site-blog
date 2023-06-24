@@ -60,7 +60,7 @@ function Ultimosartigosblog(){
                         <div className="card-body">
                             <h4 className="card-title">Emitir Nota Fiscal, saiba quem tem essa obrigação.</h4>
                             <p className="card-text">Todo empreendedor deve emitir a nota fiscal. A obrigação vale para os ME, EPP e para os MEIs, salvo se estes venderem ou prestarem serviços para pessoa física.</p>
-                            <Link to="/blog/como-emitir-nota-fiscal" className="btn btn-primary btn-artigos">Ler Post</Link>
+                            <a href="/blog-como-emitir-nota-fiscal" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>
@@ -70,7 +70,7 @@ function Ultimosartigosblog(){
                         <div class="card-body">
                             <h4 className="card-title">Descomplicando o processo de abertura de empresa</h4>
                             <p className="card-text">Saiba o que é preciso fazer para abrir sua microempresa, comerçando com o registro na Junta Comercial do estado ou no Cartório de Registro de Pessoa Jurídica.</p>
-                            <Link to="/blog/abrir-uma-empresa" className="btn btn-primary btn-artigos">Ler Post</Link>
+                            <a href="/blog-abrir-uma-empresa" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>

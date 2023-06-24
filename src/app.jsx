@@ -136,7 +136,7 @@ function App(){
       <Route exact path='/blog-nao-se-pode-culpar-a-cargatributaria' component={Naosepodeculparcargatributaria} />
       <Route exact path='/blog-mei' component={Mei} />  
       <Route exact path='/blog-autonomo' component={Autonomo} />     
-      <Route exact path='/blog/abrir-uma-empresa' component={Abrirempresa} />
+      <Route exact path='/blog-abrir-uma-empresa' component={Abrirempresa} />
       <Route exact path='/blog-simples-nacional' component={Simplesnacional} />
       <Route exact path='/blog-sociedade-limitada-unipessoal' component={Sociedadelimitadaunipessoal} />
       <Route exact path='/blog-empresario-individual' component={Empresarioindividual} />
@@ -159,12 +159,12 @@ function App(){
       <Route exact path='/blog-deducoes-legais-desconto-simplificado-irpf' component={Deducoeslegaisdescontosimplificado} />
       <Route exact path='/blog-microempreendedor-e-trabalhador-informal-tem-direito-a-receber' component={Microempreendedor} />
       <Route exact path='/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf' component={Obrigatoriedade} />
-      <Route exact path='/blog/como-emitir-nota-fiscal' component={Obrigatoriedadedeemitirnotafiscal} />
+      <Route exact path='/blog-como-emitir-nota-fiscal' component={Obrigatoriedadedeemitirnotafiscal} />
       <Route exact path='/blog-tipos-de-notas-permitidas-para-o-mei' component={Tiposdenotaspermitidasparaomei} />
-      <Route exact path='/blog/restituicao-ir' component={RestituicaoIR} />
+      <Route exact path='/blog-restituicao-ir' component={RestituicaoIR} />
       <Route exact path='/blog-certidoes-negativas' component={Certidoesnegativas} />
       <Route exact path='/blog-pronampe-2022-saiba-como-ter-acesso-ao-benefício-e-veja-as-taxas' component={Pronampe2022} />
-      <Route exact path='/blog/contabilidade-eleitoral' component={Contabilidadeeleitoral} />
+      <Route exact path='/blog-contabilidade-eleitoral' component={Contabilidadeeleitoral} />
       <Route exact path='/blog-regras-para-aposentadoria-2023' component={Aposentadoriaporidade2023} />
     </Switch>
 

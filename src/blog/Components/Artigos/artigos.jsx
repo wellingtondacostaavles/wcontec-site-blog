@@ -31,7 +31,7 @@ function Artigos(){
                         <div className="card-body">
                             <h4 className="card-title">Emitir Nota Fiscal, quem tem essa obrigação?</h4>
                             <p className="card-text">Todo empreendedor deve emitir a nota fiscal ao fazer qualquer operação negocial. A obrigação vale para o microempreendedor (ME), empresas de pequeno porte (EPPs) e para os microempreendedores individuais (MEIs).</p>
-                            <Link to="/blog/como-emitir-nota-fiscal" className="btn btn-primary btn-artigos">Ler Post</Link>
+                            <a href="/blog-como-emitir-nota-fiscal" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>  
@@ -51,11 +51,11 @@ function Artigos(){
                 </div> 
                 <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/DIRPF/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Receita Federal disponibiliza consulta ao lote residual do Imposto de Renda 2022</h4>
                             <p className="card-text">Saiba como consultar se o seu nome está na lista do lote residual de restituição. Vale ressaltar que se o resgate da restituição não for realizado em um ano, o contribuinte poderá solicitá-lo pelo Portal e-CAC, no site da Receita Federal.</p>
-                            <Link to="/blog/restituicao-ir#restituicao-IR" className="btn btn-primary btn-artigos">Ler Post</Link>
+                            <Link to="/blog-restituicao-ir#restituicao-IR" className="btn btn-primary btn-artigos">Ler Post</Link>
                         </div>
                     </div>  
                 </div>  

@@ -7,7 +7,7 @@ function Financas(){
             <div className="row">
             <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/DIRPF22/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/DIRPF/RestituicaoIR/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Saiu o primeiro lote de restituição do Imposto de Renda 2022</h4>
                             <p className="card-text">Veja se o seu nome está na lista do primeiro lote de restituição, mas não se preocupe, caso não esteja nesse, logo teremos as liberações dos próximos. Veja o calendário.</p>
@@ -29,7 +29,7 @@ function Financas(){
             <div className="row">    
             <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/DIRPF22/Deducoeslegaisoudescontosimplificado/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/DIRPF/Deducoeslegaisoudescontosimplificado/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Deduções legais ou desconto simplificado, saiba qual escolher</h4>
                             <p className="card-text">Vai depender do total de despesas dedutíveis que você tem em relação à renda. Daí você pode avaliar se é mais vantajoso optar por deduções legais ou desconto simplificado.</p>
@@ -51,7 +51,7 @@ function Financas(){
             <div className="row">    
             <div className="col-lg-6">
                     <div className="card card-artigos">
-                        <center><img src="/Images/DIRPF22/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <center><img src="/Images/DIRPF/Documentosnecessarios/capaprincipal.png" className="card-img-top" alt="..."/></center>
                         <div className="card-body">
                             <h4 className="card-title">Documentos necessários para a Declaração do Imposto de Renda 2022</h4>
                             <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>

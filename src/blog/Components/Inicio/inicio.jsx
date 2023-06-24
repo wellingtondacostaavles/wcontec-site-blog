@@ -41,7 +41,7 @@ function Inicio(){
                                 <div className="col-lg-6">
                                     <h3>Guia prático:<span className="terceiro-h3"> como emitir nota fiscal</span> para comprovação de vendas e prestação de contas<span className="terceiro-h3"></span></h3>
                                     <h6 className="segundo-h6">Se você é empreendedor, é importante conhecer o processo de emissão de nota fiscal em todas as suas operações comerciais. Essa obrigação se aplica tanto aos microempreendedores (ME), empresas de pequeno porte (EPPs) quanto aos microempreendedores individuais (MEIs).</h6>
-                                    <a href="/blog/como-emitir-nota-fiscal#obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-success btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Continue lendo</a>
+                                    <a href="/blog-como-emitir-nota-fiscal#obrigatoriedade-de-emitir-nota-fiscal" className="btn btn-success btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-obrigatoriedade-de-emitir-nota-fiscal">Área do Cliente</a>
                                 </div>               
                             </div>    
@@ -93,7 +93,7 @@ function Inicio(){
                                 <div className="col-lg-6">
                                     <h3>Receita Federal disponibiliza consulta ao lote residual do<span className="terceiro-h3"> Imposto de Renda 2022</span></h3>                
                                     <h6 className="segundo-h6">Saiba como consultar se o seu nome está na lista do lote residual de restituição.</h6>
-                                    <Link to="/blog/restituicao-ir#restituicao-IR" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</Link>
+                                    <a href="/blog-restituicao-ir#restituicao-IR" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-restituicao-IR">Área do Cliente</a>
                                 </div>               
                             </div>    
@@ -106,7 +106,7 @@ function Inicio(){
                                 <div className="col-lg-6">
                                     <h3>O candidato a cargo político pode contar com uma <span className="terceiro-h3">contabilidade eleitoral online</span></h3>                
                                     <h6 className="segundo-h6">A prestação de contas precisa ser realizada em obediência à legislação federal, e contar com uma “contabilidade eleitoral online” tornou-se uma excelente opção, modernizando o processo contábil tradicional que se volta à apuração de receitas e despesas realizadas por candidatos e partidos políticos.</h6>
-                                    <Link to="/blog/contabilidade-eleitoral#contabilidade-eleitoral" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</Link>
+                                    <a href="/blog-contabilidade-eleitoral#contabilidade-eleitoral" className="btn btn-success btn-lg btn-capa-restituicao-IR">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-contabilidade-eleitoral">Área do Cliente</a>
                                 </div>               
                             </div>    
@@ -201,7 +201,7 @@ function Inicio(){
                                     <h3>Saiba como <span className="terceiro-h3">abrir uma empresa</span></h3>               
                                     <h6 className="segundo-h6">Antes de abrir uma empresa é preciso se informar. Faça uma pesquisa antecipada sobre a existência de empresas constituídas com nomes empresariais idênticos ou semelhantes ao nome pesquisado.</h6>
                                     <h6 className="segundo-h6">Essa é uma etapa obrigatória para quem pretende abrir uma empresa, que deve ser preenchida no site da junta comercial...</h6>
-                                    <Link to="/blog/abrir-uma-empresa#abrirempresa" className="btn btn-success btn-lg btn-inicio-blog">Continue lendo</Link>
+                                    <a href="/blog-abrir-uma-empresa#abrirempresa" className="btn btn-success btn-lg btn-inicio-blog">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-inicio-blog">Área do Cliente</a>
                                 </div>   
                             </div>    

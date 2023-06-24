@@ -18,7 +18,7 @@ function Recomendados(){
                         <center><a href="/blog-autonomo"><img src="/Images/Tag-Autonomo.png"/></a></center>                                   
                     </div>
                     <div className="col-lg-4 categorias-tgs">
-                         <center><Link to="/blog/abrir-uma-empresa"><img src="/Images/Tag-Como-Abrir-Empresa.png"/></Link></center>
+                         <center><a href="/blog-abrir-uma-empresa"><img src="/Images/Tag-Como-Abrir-Empresa.png"/></a></center>
                     </div>             
                     <div className="col-lg-4 categorias-tgs">
                         <center><a href="/blog-mei"><img src="/Images/Tag-MEI.png"/></a></center>                                    
