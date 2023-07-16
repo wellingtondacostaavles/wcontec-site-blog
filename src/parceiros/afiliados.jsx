@@ -30,7 +30,7 @@ function Afiliados(){
 
                 <div className="col-lg-4 feature-box">
                     <i className="icon fas fa-chart-pie fa-5x"></i>
-                    <h3>Controlar o estoque com opção de emitir a NF-e</h3> 
+                    <h3>Controlar o estoque com opção de emitir a NF-e ou NFC-e</h3> 
                 </div>
 
                 <div className="col-lg-4 feature-box">

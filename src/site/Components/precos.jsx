@@ -142,13 +142,19 @@ function Precos(){
 
                 <tbody>    
                     <tr>
-                        <th scope="row" className="text-start">Emissor de NFS-e ilimitado</th>
+                        <th scope="row" className="text-start">Emissor de NF-e</th>
                         <td className="bi"><img src="Images/check.png" /></td>
                         <td className="bi"><img src="Images/check.png" /></td>
                         <td className="bi"><img src="Images/check.png" /></td>
                     </tr>
                     <tr>
-                        <th scope="row" className="text-start">Emissor de NF-e</th>
+                        <th scope="row" className="text-start">Emissor de NFC-e</th>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                        <td className="bi"><img src="Images/check.png" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" className="text-start">Emissor de NFS-e</th>
                         <td className="bi"><img src="Images/check.png" /></td>
                         <td className="bi"><img src="Images/check.png" /></td>
                         <td className="bi"><img src="Images/check.png" /></td>
