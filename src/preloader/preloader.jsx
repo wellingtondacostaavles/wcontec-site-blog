@@ -11,18 +11,16 @@ const Preloader = () => {
       setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
     }, 500);
 
-    // Se a página ainda não estiver carregada, adicionamos um ouvinte para o evento `load`.
+    // Adicionamos um ouvinte para o evento `load` do objeto `window`.
     // Quando a página estiver totalmente carregada, chamamos a função `handlePageLoad`.
-    if (!pageLoaded) {
-      window.addEventListener('load', handlePageLoad);
-    }
+    window.addEventListener('load', handlePageLoad);
 
     return () => {
       clearInterval(interval);
       // Removemos o ouvinte do evento `load` quando o componente é desmontado.
       window.removeEventListener('load', handlePageLoad);
     };
-  }, [pageLoaded]);
+  }, []);
 
   // Função para ser executada quando a página estiver totalmente carregada.
   const handlePageLoad = () => {
