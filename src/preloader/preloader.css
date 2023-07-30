@@ -1,0 +1,28 @@
+/* preloader.css */
+
+.preloader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+/* Cores diferentes para o spinner */
+.text-blue {
+  color: #1ca0f3;
+}
+
+.text-orange {
+  color: #f66922;
+}
+
+.text-green {
+  color: #80cc46;
+}
+
