@@ -43,7 +43,7 @@ function Tecnologiadainformacao(){
                         <div class="card-body">
                             <h4 className="card-title">Como a tecnologia ajuda no processo de abertura de empresa</h4>
                             <p className="card-text">Saiba o que é preciso fazer para abrir sua microempresa, comerçando com o registro na Junta Comercial do estado ou no Cartório de Registro de Pessoa Jurídica.</p>
-                            <a href="/blog-abrir-empresa" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-abrir-uma-empresa" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>                      
                 </div>            
