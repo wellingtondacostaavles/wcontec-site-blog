@@ -1,4 +1,5 @@
 import React from 'react';
+import PushMessage from '../PushMessage/pushmessage';
 import Menu from './Components/menu';
 import Chamada from './Components/chamadas';
 import Inicio from './Components/inicio';
@@ -14,6 +15,7 @@ import Contato from './Components/contato';
 
 function Site(){
     return <div>
+      <PushMessage/>
       <Menu/>
       <Inicio/>
       <Beneficios/>
