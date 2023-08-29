@@ -291,14 +291,23 @@ body {
 }
 
 .parceiros-logos {
-  padding: 0 12% 3% 12%;
+  padding: 0 12% 1% 12%;
   background-color: #ffffff;
 }
 
-.coluna1 {
+/* No seu arquivo de estilos CSS */
+.grayscale-image img {
+  filter: grayscale(100%);
+}
+
+
+.primeira-linha {
   margin-top: 6%;
 }
-.coluna2 {
+.linhas-meio {
+  margin-top: 3%;
+}
+.ultima-linha {
   margin-top: 3%;
 }
 
