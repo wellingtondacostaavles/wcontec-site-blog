@@ -41,7 +41,7 @@ const PushMessage = () => {
       {showMessage1 && (
         <div className={`push-message push-message-1 ${showMessage1 ? 'show' : ''}`}>
           <a href="https://bit.ly/3ASk0Nm" target="_blank">
-            <img src="Images/Push/push-certgificado.png" className="push-image" alt="Mensagem Push" />
+            <img src="Images/Push/push-comprar-ou-renovar-serasa.png" className="push-image" alt="Mensagem Push" />
           </a>
           <button
             type="button"
