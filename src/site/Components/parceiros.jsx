@@ -6,15 +6,14 @@ function Parceiros(){
             <div className="container">
                 <div className="row primeira-linha">
                     <div className="col"></div>
-                    <div className="col"></div>
                     <div className="col grayscale-image">
-                        <a href="https://www.instagram.com/arouchagas.supergasbras/" target="_blank">
+                        <a href="https://bit.ly/45QenfI" target="_blank">
                             <img src="/Images/Parceiros/ArouchaGas.png" />
                         </a>
                     </div>
                     <div className="col grayscale-image">
-                        <a href="https://api.whatsapp.com/send?phone=5581988823062" target="_blank">
-                            <img src="/Images/Parceiros/JH.png" />
+                        <a href="https://api.whatsapp.com/send?phone=5581988179652" target="_blank">
+                            <img src="/Images/Parceiros/Sintel.png" />
                         </a>
                     </div>
                     <div className="col grayscale-image">
@@ -22,34 +21,38 @@ function Parceiros(){
                             <img src="/Images/Parceiros/Serasa.png" />
                         </a>
                     </div>
-                    <div className="col grayscale-image">
-                        <a href="https://bit.ly/cadastre-se-na-wcontec" target="_blank">
-                            <img src="/Images/Parceiros/Torne-se-parceiro.png" />
+                    <div className="col-3 grayscale-image">
+                        <a href="#" target="_blank">
+                            <img src="/Images/Parceiros/Pedro-Eurico.png" />
                         </a>
                     </div>
                     <div className="col"></div>
-                    <div className="col"></div>
+                    
                 </div>
                 <div className="row linhas-meio">
-                    <div className="col"></div>                
                     <div className="col grayscale-image">
                         <a href="https://imperio-dos-descartaveis.kyte.site/" target="_blank">
                             <img src="/Images/Parceiros/ImperioDescartaveis.png" />
                         </a>
                     </div>
                     <div className="col grayscale-image">
-                        <a href="https://www.instagram.com/invites/contact/?i=8xi8cgtzehge&utm_content=3egv8nw" target="_blank">
+                        <a href="https://bit.ly/44EOTkq" target="_blank">
                             <img src="/Images/Parceiros/Issoebom.png" />
                         </a>
                     </div>
                     <div className="col-3 grayscale-image">
-                        <a href="https://www.instagram.com/gomesdefigueiredo.adv/#" target="_blank">
+                        <a href="https://bit.ly/3P9LiVA" target="_blank">
                             <img src="/Images/Parceiros/Gomes-Figueredo.png" />
                         </a>
                     </div>
                     <div className="col grayscale-image">
                         <a href="https://api.whatsapp.com/send?phone=5581998753986" target="_blank">
                             <img src="/Images/Parceiros/OGS.png" />
+                        </a>
+                    </div>
+                    <div className="col grayscale-image">
+                        <a href="https://bit.ly/3LbdnuP" target="_blank">
+                            <img src="/Images/Parceiros/Everso.png" />
                         </a>
                     </div>
                     <div className="col"></div>
@@ -62,8 +65,8 @@ function Parceiros(){
                     </a>
                     </div>
                     <div className="col grayscale-image">
-                    <a href="https://api.whatsapp.com/send?phone=5581988179652" target="_blank">
-                        <img src="/Images/Parceiros/Sintel.png" />
+                    <a href="https://api.whatsapp.com/send?phone=5581988823062" target="_blank">
+                        <img src="/Images/Parceiros/JH.png" />
                     </a>
                     </div>
                     <div className="col grayscale-image">
