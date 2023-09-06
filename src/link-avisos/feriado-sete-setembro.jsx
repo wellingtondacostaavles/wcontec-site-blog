@@ -15,10 +15,10 @@ function Feriadosetesetembro(){
 			<h1>Informações importantes sobre os serviços disponíveis</h1>
 		</div>
 		<div className="content-sete-setembro">
-            <h5>O feriado do dia da Independência, comemorado em 7 de Setembro, está chegando e traz algumas mudanças no horário de funcionamento de nossos serviços:</h5>
-            <h6><img src="Images/check.png" />As solicitações de saques realizadas neste dia 06/09 à plataforma, só serão creditadas em sua conta no próximo dia 08/09.</h6>
-            <p>Abraços</p>
-            <p>Equipe Wcontec</p>
+            <h3>O feriado do dia da Independência, comemorado em 7 de Setembro, está chegando e traz algumas mudanças no horário de funcionamento de nossos serviços:</h3>
+            <h4><img src="Images/check.png" />As solicitações de saques realizadas neste dia 06/09 à plataforma, só serão creditadas em sua conta no próximo dia 08/09.</h4>
+            <h5>Abraços</h5>
+            <h5>Equipe Wcontec</h5>
 		</div>
 		<footer className="social-media">
 			<a href="https://www.facebook.com/profile.php?id=100072384950030" target="_blank"><i className="fab fa-facebook-square"></i></a>

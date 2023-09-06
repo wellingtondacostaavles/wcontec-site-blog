@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
+
+    .container-sete-setembro h1 {
+      font-size: 42px;
+    }
     
     .container-sete-setembro img {
     width: 150px;
@@ -32,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ececec;
     }
 
-    .content-sete-setembro p {
+    .content-sete-setembro h5 {
         margin: 3% 0 1% 0;
     }    
     
