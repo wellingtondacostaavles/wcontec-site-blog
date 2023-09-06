@@ -38,6 +38,10 @@ import Cofinscorretora from './calculadoras/Components/Cofinscorretora/cofinscor
 import Irtrimestral from './calculadoras/Components/IRPJTrimestral/irtrimestral.jsx';
 import Cslltrimestral from './calculadoras/Components/CSLLTrimestral/cslltrimestral.jsx';
 import Metrocubico from './calculadoras/Components/Metrocubico/metrocubico.jsx';
+import Banner728x90 from './Banners/banner-728x90.jsx';
+import Banner468x60 from './Banners/banner-468x60.jsx';
+
+
 import Siganos from './contacte-nos/siga-nos.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
 import Descadastramento from './descadastrese/descadastramento.jsx';
@@ -129,6 +133,9 @@ function App(){
       <Route exact path='/calculadoras-irpj-lucro-presumido' component={Irtrimestral} />
       <Route exact path='/calculadoras-csll-lucro-presumido' component={Cslltrimestral} />
       <Route exact path='/calculadoras-metro-cubico' component={Metrocubico} />
+      <Route exact path='/images/Banners/Banner-728x90' component={Banner728x90} />
+      <Route exact path='/images/Banners/Banner-468x60' component={Banner468x60} />
+      
       <Route exact path='/siga-nos' component={Siganos} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
