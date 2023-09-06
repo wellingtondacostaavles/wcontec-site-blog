@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SeuComponente() {
+function Banner() {
   return (
     <div>
       <img src="/images/Banners/Banner-160x600.png" alt="Banner do projeto" />
@@ -13,4 +13,4 @@ function SeuComponente() {
   );
 }
 
-export default SeuComponente;
+export default Banner;
