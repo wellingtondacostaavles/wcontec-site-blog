@@ -48,3 +48,18 @@ h6 {
   margin: 3% 3% 3% 0;
 }
 
+#jh {
+  padding: 3% 6% 8% 6%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#jh img {
+  width: 60%;
+}
+
+.btn-jh {
+  border-radius: 50px;
+  margin: 3% 3% 3% 0;
+}
+
