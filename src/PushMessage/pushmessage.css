@@ -1,4 +1,4 @@
-.push-message-1 {
+.push-message-centro {
   position: fixed;
   top: 50%; /* Centraliza verticalmente */
   left: 50%; /* Centraliza horizontalmente */
@@ -12,7 +12,7 @@
   z-index: 9999; /* Defina um valor alto para ficar acima do conteúdo */
 }
 
-.push-message-2 {
+.push-message-canto-inferior {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -44,7 +44,15 @@
   /* ... outros estilos ... */
 }
 
-.push-image {
+.push-image-banner-1000x1000-servicos {
+  max-width: 72%; /* Define a largura máxima da imagem */
+  height: auto; /* Ajusta automaticamente a altura de acordo com a largura */
+  display: block; /* Garante que a imagem respeite o espaço ocupado */
+  margin: 0 auto; /* Centraliza horizontalmente a imagem */
+  border-radius: 10px; /* Adicione o valor desejado para arredondar as bordas */
+}
+
+.push-image-push-comprar-ou-renovar-serasa {
   max-width: 100%; /* Define a largura máxima da imagem */
   height: auto; /* Ajusta automaticamente a altura de acordo com a largura */
   display: block; /* Garante que a imagem respeite o espaço ocupado */
