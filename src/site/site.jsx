@@ -7,7 +7,6 @@ import Beneficios from './Components/beneficios';
 import Testemunho from './Components/testemunho';
 import Abrirempresagratis from './Components/abrirempresagratis';
 import Precos from './Components/precos';
-import Informativos from './Components/Informativos';
 import Ultimosartigosblog from './Components/ultimosartigosblog';
 import Cardcalculadoras from './Components/cardcalculadoras';
 import Parceiros from './Components/parceiros';
@@ -22,7 +21,6 @@ function Site(){
       <Testemunho/>
       <Abrirempresagratis/>
       <Precos/>
-      <Informativos/>
       <Ultimosartigosblog/>
       <Cardcalculadoras/>
       <Parceiros/>
