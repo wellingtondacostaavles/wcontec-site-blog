@@ -109,6 +109,9 @@ function Parceiros(){
                 <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="3000">
+                            <a href="https://bit.ly/3Pynts7" target="_blank"><img src="/Images/Parceiros/Banner-renda-extra-hotmart.png"/></a>
+                        </div>
+                        <div className="carousel-item" data-bs-interval="3000">
                             <a href="http://bit.ly/3ASk0Nm" target="_blank"><img src="/Images/Parceiros/Portabilidade-certificado-serasa-1.png"/></a>
                         </div>
                         <div className="carousel-item" data-bs-interval="300">

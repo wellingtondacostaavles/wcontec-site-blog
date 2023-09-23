@@ -79,7 +79,6 @@ import Pronampe2022 from './blog/Artigos/Pronampe2022/pronampe2022.jsx';
 import Contabilidadeeleitoral from './blog/Artigos/Contabilidadeeleitoral/contabilidadeeleitoral.jsx';
 import Aposentadoriaporidade2023 from './blog/Artigos/Previdencia-Social/aposentadoriaporidade2023.jsx';
 
-
 function App(){
     const {logado} = useContext(AuthContext);
 
@@ -169,7 +168,6 @@ function App(){
       <Route exact path='/blog-contabilidade-eleitoral' component={Contabilidadeeleitoral} />
       <Route exact path='/blog-regras-para-aposentadoria-2023' component={Aposentadoriaporidade2023} />
     </Switch>
-
     </BrowserRouter>;
   }
 

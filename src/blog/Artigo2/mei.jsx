@@ -40,9 +40,9 @@ function Mei(){
                 <div className="col-lg-6">    
                     <p>O microempreendedor individual terá como despesas apenas o pagamento mensal do Simples Nacional.</p>
                     <h3>Valores</h3>
-                    <p>R$ 56,00 Comércio ou Indústria.</p>
-                    <p>R$ 60,00 Prestação de Serviços.</p>
-                    <p>R$ 61,00 Comércio e Serviços juntos.</p>   
+                    <p>R$ 67,00 Comércio ou Indústria.</p>
+                    <p>R$ 71,00 Prestação de Serviços.</p>
+                    <p>R$ 72,00 Comércio e Serviços juntos.</p>   
                     <h3>Cálculo</h3>
                     <p>O cálculo corresponde a 5% do limite mensal do salário mínimo e mais R$ 1,00 (um real), a título de ICMS, caso seja contribuinte desse imposto e/ou R$ 5,00 (cinco reais), a título de ISS, caso seja contribuinte desse imposto.</p>  
                     <p>O pagamento pode ser feito por meio de débito automático, online ou emissão do Documento de Arrecadação do Simples Nacional (DAS).</p>  
