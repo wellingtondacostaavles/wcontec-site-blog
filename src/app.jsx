@@ -7,6 +7,7 @@ import Site from './site/site.jsx';
 import Login from './app/Login/login.jsx';
 import NovaConta from './app/NovaConta/novaconta.jsx';
 import ResetSenha from './app/ResetSenha/resetsenha.jsx';
+/* Calculadoras */
 import Calculadorasapp from './calculadoras/calculadorasapp.jsx';
 import Piscorretorahome from './calculadoras/ComponentsPro/Piscorretora/piscorretorahome.jsx';
 import PiscorretoraPro from './calculadoras/ComponentsPro/Piscorretora/piscorretora.jsx';
@@ -38,12 +39,7 @@ import Cofinscorretora from './calculadoras/Components/Cofinscorretora/cofinscor
 import Irtrimestral from './calculadoras/Components/IRPJTrimestral/irtrimestral.jsx';
 import Cslltrimestral from './calculadoras/Components/CSLLTrimestral/cslltrimestral.jsx';
 import Metrocubico from './calculadoras/Components/Metrocubico/metrocubico.jsx';
-import Siganos from './contacte-nos/siga-nos.jsx';
-import Descadastrese from './descadastrese/descadastrese.jsx';
-import Descadastramento from './descadastrese/descadastramento.jsx';
-import Certificacaodigital from './parceiros/certificacaodigital.jsx';
-import Feriadosetesetembro from './link-avisos/feriado-sete-setembro.jsx';
-import GestaoNFE from './link-marketing/getao-de-estoque-emissao-nfe/gestao-de-estoque-emissao-nfe.jsx';
+/* Blog */
 import Home from './blog/Home/home.jsx';
 import Naosepodeculparcargatributaria from './blog/Artigo/naosepodeculparcargatributaria.jsx';
 import Mei from './blog/Artigo2/mei.jsx';
@@ -78,6 +74,14 @@ import Certidoesnegativas from './blog/Artigos/Certidoesnegativas/certidoesnegat
 import Pronampe2022 from './blog/Artigos/Pronampe2022/pronampe2022.jsx';
 import Contabilidadeeleitoral from './blog/Artigos/Contabilidadeeleitoral/contabilidadeeleitoral.jsx';
 import Aposentadoriaporidade2023 from './blog/Artigos/Previdencia-Social/aposentadoriaporidade2023.jsx';
+/* Links */
+import Siganos from './contacte-nos/siga-nos.jsx';
+import Descadastrese from './descadastrese/descadastrese.jsx';
+import Descadastramento from './descadastrese/descadastramento.jsx';
+import Certificacaodigital from './parceiros/certificacaodigital.jsx';
+import Feriadosetesetembro from './link-avisos/feriado-sete-setembro.jsx';
+import GestaoNFE from './link-marketing/getao-de-estoque-emissao-nfe/gestao-de-estoque-emissao-nfe.jsx';
+
 
 function App(){
     const {logado} = useContext(AuthContext);
@@ -127,12 +131,6 @@ function App(){
       <Route exact path='/calculadoras-irpj-lucro-presumido' component={Irtrimestral} />
       <Route exact path='/calculadoras-csll-lucro-presumido' component={Cslltrimestral} />
       <Route exact path='/calculadoras-metro-cubico' component={Metrocubico} />
-      <Route exact path='/siga-nos' component={Siganos} />
-      <Route exact path='/descadastrese' component={Descadastrese} />
-      <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
-      <Route exact path='/parceiro-certificacao-digital' component={Certificacaodigital} />
-      <Route exact path='/aviso-de-feriado-sete-setembro' component={Feriadosetesetembro} />
-      <Route exact path='/gestao-de-estoque-emissao-nfe' component={GestaoNFE} />
       <Route exact path='/blog' component={Home} />
       <Route exact path='/blog-nao-se-pode-culpar-a-cargatributaria' component={Naosepodeculparcargatributaria} />
       <Route exact path='/blog-mei' component={Mei} />  
@@ -167,7 +165,14 @@ function App(){
       <Route exact path='/blog-pronampe-2022-saiba-como-ter-acesso-ao-benefício-e-veja-as-taxas' component={Pronampe2022} />
       <Route exact path='/blog-contabilidade-eleitoral' component={Contabilidadeeleitoral} />
       <Route exact path='/blog-regras-para-aposentadoria-2023' component={Aposentadoriaporidade2023} />
+      <Route exact path='/siga-nos' component={Siganos} />
+      <Route exact path='/descadastrese' component={Descadastrese} />
+      <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
+      <Route exact path='/parceiro-certificacao-digital' component={Certificacaodigital} />
+      <Route exact path='/aviso-de-feriado-sete-setembro' component={Feriadosetesetembro} />
+      <Route exact path='/gestao-de-estoque-emissao-nfe' component={GestaoNFE} />
     </Switch>
+
     </BrowserRouter>;
   }
 

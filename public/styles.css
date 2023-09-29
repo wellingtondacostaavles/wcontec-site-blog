@@ -291,7 +291,7 @@ body {
 }
 
 .parceiros-logos {
-  padding: 0 12% 1% 12%;
+  padding: 0 0 1% 0;
   background-color: #ffffff;
 }
 
@@ -301,15 +301,21 @@ body {
 }
 
 
-.primeira-linha {
+.linha4 {
   margin-top: 6%;
+  margin-bottom: 6%;
 }
-.linhas-meio {
+.linha3 {
   margin-top: 3%;
-  margin-left: 9%;
+  margin-bottom: 6%;
 }
-.ultima-linha {
+.linha2{
   margin-top: 3%;
+  margin-bottom: 6%;
+}
+.linha1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .formtext h6 {
