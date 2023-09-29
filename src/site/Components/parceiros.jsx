@@ -6,7 +6,7 @@ function Parceiros(){
             <div className="container">
                 <div className="row linha4">
                     <div className="col-2 grayscale-image">
-                        <a href="#" target="_blank">
+                        <a href="https://bit.ly/3rpN2T8" target="_blank">
                             <img src="/Images/Parceiros/R31.png" />
                         </a>
                     </div>
