@@ -166,7 +166,7 @@ function App(){
       <Route exact path='/blog-pronampe-2022-saiba-como-ter-acesso-ao-benefício-e-veja-as-taxas' component={Pronampe2022} />
       <Route exact path='/blog-contabilidade-eleitoral' component={Contabilidadeeleitoral} />
       <Route exact path='/blog-regras-para-aposentadoria-2023' component={Aposentadoriaporidade2023} />
-      <Route exact path='/blog-efd-reinf-e-as-retencoes-na-fonte' component={Aimportranciadasretencoesnareinf} />
+      <Route exact path='/blog-efd-reinf-e-as-retencoes-na-fonte-guia-essencial-para-empresas/' component={Aimportranciadasretencoesnareinf} />
       <Route exact path='/siga-nos' component={Siganos} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />

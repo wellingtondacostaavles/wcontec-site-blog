@@ -54,8 +54,8 @@ function Inicio(){
                     </div>           
                     <p></p>
                     <h4 className="chamado3-h4">A plataforma de gestão financeira e assessoria contábil online.</h4>
-                    <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-success btn-lg btn-chamado">Cadastre-se</a>
-                    <a href="https://wcontec.osayk.com.br/#/login" target="_blank" className="btn btn-outline-primary btn-lg btn-chamado">Acessar</a>
+                    <a href="https://bit.ly/cadastre-se-na-wcontec" target="_blank" className="btn btn-success btn-lg btn-chamado">Cadastre-se</a>
+                    <a href="https://bit.ly/login-wcontec" target="_blank" className="btn btn-outline-primary btn-lg btn-chamado">Acessar</a>
                 </div>                        
             </div>    
         </div>

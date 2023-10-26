@@ -199,6 +199,9 @@ body {
 }
 
 /* artigos em destaque */
+.a-importrancia-retencoes-reinf {
+  display: block;
+}
 .valores-a-receber-bc {
   display: none;
 }
@@ -227,7 +230,7 @@ body {
   display: none;
 }
 .deducoes-loegais-desconto-simplificado-dirpf {
-  display: block;
+  display: none;
 }
 .documentos-necessarios-dirpf {
   display: none;
