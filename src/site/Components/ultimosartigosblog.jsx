@@ -20,7 +20,7 @@ function Ultimosartigosblog(){
                         <div className="card-body">
                             <h4>Retenções na fonte: Guia EFD-Reinf para Empresas</h4>
                             <p>O entendimento das retenções na EFD-Reinf é essencial para o cumprimento de obrigações fiscais complexas e pode beneficiar sua empresa.</p>
-                            <a href="/blog-efd-reinf-e-as-retencoes-na-fonte-guia-essencial-para-empresas/" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-efd-reinf-e-as-retencoes-na-fonte-guia-essencial-para-empresas" className="btn btn-primary btn-artigos">Ler Post</a>
                         </div>
                     </div>  
                 </div>

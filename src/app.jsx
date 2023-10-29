@@ -80,6 +80,7 @@ import Siganos from './contacte-nos/siga-nos.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
 import Descadastramento from './descadastrese/descadastramento.jsx';
 import Certificacaodigital from './parceiros/certificacaodigital.jsx';
+import Fisconet from './parceiros/Fisconet/fisconet.jsx';
 import Feriadosetesetembro from './link-avisos/feriado-sete-setembro.jsx';
 import GestaoNFE from './link-marketing/getao-de-estoque-emissao-nfe/gestao-de-estoque-emissao-nfe.jsx';
 
@@ -170,6 +171,7 @@ function App(){
       <Route exact path='/siga-nos' component={Siganos} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
+      <Route exact path='/parceiro-fisconet-cursos-online/' component={Fisconet} />
       <Route exact path='/parceiro-certificacao-digital' component={Certificacaodigital} />
       <Route exact path='/aviso-de-feriado-sete-setembro' component={Feriadosetesetembro} />
       <Route exact path='/gestao-de-estoque-emissao-nfe' component={GestaoNFE} />

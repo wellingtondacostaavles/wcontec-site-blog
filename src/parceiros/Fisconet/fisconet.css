@@ -1,0 +1,80 @@
+#fisconet {
+    padding: 3% 6% 3% 6%;
+    text-align: center;
+    background-color: #ffffff;
+}
+  
+#carrossel-fisconet {
+    background-color: #ffffff;
+    padding-top: 9%;
+}
+  
+#carrossel-fisconet img {
+    width: 100%;
+    margin: auto;
+}
+
+#produtos-fisconet {
+    background-color: #ffffff;
+    color: #323338;
+    padding: 9% 3% 6% 3%;
+}
+
+#produtos-fisconet img {
+    width: 90%;
+    margin-bottom: 45px;
+    border-radius: 15%;
+}
+
+.titulo-carrocel-fisconet {
+    padding-top: 6%;
+    font-size: 45px;
+    text-align: center;
+    font-weight:bold;
+}
+  
+.btn-fisconet {
+    margin: 0 0 9% 0;
+}
+
+#contato-fisconet {
+    background-color: #ac151c;
+}
+
+.cnpj-fisconet {
+    padding-top: 3%;
+    color: #ffffff;
+    font-weight:bold;
+}
+
+.endereco-fisconet {
+    padding-top: 1px;
+    color: #ffffff;
+    font-size: 90%;
+    font-weight:bold;
+}
+
+.icon-color {
+    color: #ffffff;
+}
+
+.content-fisconet {
+    margin-top: 3%; /* aumenta o espaçamento entre o header e o vídeo */
+    text-align: center;
+    }
+    
+.content-fisconet iframe {
+width: 100%;
+max-width: 800px; /* define um tamanho máximo para o vídeo */
+height: 400px;
+margin-bottom: 60px;
+}
+
+.zoom-img:hover {
+    transform: scale(1.1); /* Ajuste o valor para o zoom desejado */
+    transition: transform 0.6s ease; /* Adicione uma transição suave */
+}
+
+
+  
+

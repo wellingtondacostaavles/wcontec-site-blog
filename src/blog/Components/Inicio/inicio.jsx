@@ -14,8 +14,8 @@ function Inicio(){
                                 </div>
                                     <div className="col-lg-6">
                                     <h3>EFD-Reinf e as Retenções na Fonte: <span className="terceiro-h3">Um Guia Essencial para Empresas</span></h3>
-                                    <h6 className="segundo-h6">Conforme as obrigações fiscais e contábeis se tornam cada vez mais complexas, aprofundar o conhecimento sobre retenções na fonte, especialmente no contexto da EFD-Reinf, torna-se crucial para empresas de todas as dimensões. A Escrituração Fiscal Digital de Retenções e Outras Informações Fiscais (EFD-Reinf) é um sistema que demanda extrema precisão nas retenções. Neste artigo, abordaremos a importância de compreender as retenções na fonte para o cumprimento das obrigações da EFD-Reinf e como isso pode impactar positivamente o seu empreendimento.</h6>
-                                    <a href="/blog-efd-reinf-e-as-retencoes-na-fonte-guia-essencial-para-empresas/#a-importrancia-das-retencoes-na-reinf" className="btn btn-success btn-lg btn-capa-deducoes-legais-desonto-simplificado">Continue lendo</a>
+                                    <h6 className="segundo-h6">Conforme as obrigações fiscais e contábeis se tornam mais complexas, aprofundar o conhecimento sobre retenções na fonte, especialmente no contexto da EFD-Reinf, é crucial para empresas de todas as dimensões. A EFD-Reinf exige extrema precisão. Abordaremos a importância de compreender as retenções na fonte para cumprir as obrigações e impactar positivamente seu empreendimento.</h6>
+                                    <a href="/blog-efd-reinf-e-as-retencoes-na-fonte-guia-essencial-para-empresas#a-importrancia-das-retencoes-na-reinf" className="btn btn-success btn-lg btn-capa-deducoes-legais-desonto-simplificado">Continue lendo</a>
                                     <a href="/" className="btn btn-outline-primary btn-lg btn-capa-a-importrancia-das-retencoes-na-reinf">Área do Cliente</a>
                                 </div> 
                             </div>    

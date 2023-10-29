@@ -37,6 +37,7 @@ function Parceiros(){
                     </div>                   
                 </div>
 
+                
                 <div className="row linha2">
                     <div className="col-2 grayscale-image">
                         <a href="https://imperio-dos-descartaveis.kyte.site/" target="_blank">
@@ -97,9 +98,9 @@ function Parceiros(){
                     </a>    
                     </div>
                     <div className="col-2 grayscale-image">
-                    <a href="https://go.hotmart.com/H67767543F?ap=305a" target="_blank">
-                        <img src="/Images/Parceiros/Vargas.png" />
-                    </a>
+                        <a href="/parceiro-fisconet-cursos-online" target="_blank">
+                            <img src="/Images/Parceiros/Fisconet.png" />
+                        </a>
                     </div>
                 </div>
             </div>
