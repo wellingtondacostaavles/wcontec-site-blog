@@ -36,11 +36,42 @@ function Parceiros(){
                         </a>
                     </div>                   
                 </div>
-
+                <div className="row linha2">
+                    <div className="col-2 grayscale-image">
+                        <a href="https://www.instagram.com/nebl_planosdesaude/" target="_blank">
+                            <img src="/Images/Parceiros/Nebl-cuida-de-voce.png" />
+                        </a>
+                    </div>
+                    <div className="col-2 grayscale-image">
+                    <a href="https://www.instagram.com/arena_society_erasme_lins/" target="_blank">
+                        <img src="/Images/Parceiros/Arena-Society.png" />
+                    </a>
+                    </div>
+                    <div className="col-2 grayscale-image">
+                    <a href="http://bit.ly/3UN1KNb" target="_blank">
+                        <img src="/Images/Parceiros/Vargas.png" />
+                    </a>
+                    </div>
+                    <div className="col-2 grayscale-image">
+                    <a href="https://www.instagram.com/nisia.vasconcelos/" target="_blank">
+                        <img src="/Images/Parceiros/Nisia-planos-de-saude.png" />
+                    </a>
+                    </div>
+                    <div className="col-2 grayscale-image">
+                    <a href="#">
+                        <img src="/Images/Parceiros/potencia-solucoes.png" />
+                    </a>    
+                    </div>
+                    <div className="col-2 grayscale-image">
+                        <a href="https://api.whatsapp.com/send?phone=5581987165260" target="_blank">
+                            <img src="/Images/Parceiros/Ma-eltrica.png" />
+                        </a>
+                    </div>
+                </div>
                 
                 <div className="row linha2">
                     <div className="col-2 grayscale-image">
-                        <a href="https://imperio-dos-descartaveis.kyte.site/" target="_blank">
+                        <a href="https://www.instagram.com/imperiodosdescartaveisstore/" target="_blank">
                             <img src="/Images/Parceiros/ImperioDescartaveis.png" />
                         </a>
                     </div>
@@ -98,7 +129,7 @@ function Parceiros(){
                     </a>    
                     </div>
                     <div className="col-2 grayscale-image">
-                        <a href="/parceiro-fisconet-cursos-online" target="_blank">
+                        <a href="https://bit.ly/3FzNu4w" target="_blank">
                             <img src="/Images/Parceiros/Fisconet.png" />
                         </a>
                     </div>

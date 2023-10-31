@@ -33,12 +33,6 @@ function Testemunho(){
 
                     
                     <div className="carousel-item" data-bs-interval="15000">
-                        <h3>"Com a plataforma online de gestão financeira e assessoria contábil da Wcontec, tudo se torna mais simplificado. Em um único local, consigo emitir notas fiscais de serviço, gerenciar minhas contas a pagar e receber, e muito mais. Desde que comecei a utilizar esta plataforma, minha produtividade no trabalho aumentou significativamente. Expresso minha gratidão à Wcontec pela parceria e pelo suporte ininterrupto."</h3>
-                        <img src="Images/Testemunhos/EduardoFigueiredo.png" alt="cliente 2"/>
-                        <em>Eduardo Figueiredo - Pernambuco</em>
-                    </div> 
-
-                    <div className="carousel-item" data-bs-interval="15000">
                         <h3>"Estou muito satisfeito em trabalhar com a Wcontec, pois além de me proporcionar um controle financeiro completo da minha empresa, também consigo cadastrar a conta bancária da minha empresa para que a plataforma possa gerar os boletos de cobrança de forma automática e enviar para os nossos clientes. Isso tem me ajudado muito a economizar tempo e a evitar atrasos nos pagamentos."</h3>
                         <img src="Images/Testemunhos/MarcosAurelio.png" alt="cliente 5"/>
                         <em>Marcos Aurelio - Pernambuco</em>
