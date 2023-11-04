@@ -149,6 +149,14 @@ body {
   font-weight: 300;
   color: #050922;
 }
+.h2-preco-trassado {
+  font-size: 45px;
+  font-family: Effra, sans-serif, Arial, sans-serif;
+  font-weight: 300;
+  text-decoration: line-through; /* Para riscar o texto */
+  margin-right: 5px; /* Para ajustar o espaçamento do traço em relação ao texto */
+}
+
 
 .tabela {
   padding-top: 3%;

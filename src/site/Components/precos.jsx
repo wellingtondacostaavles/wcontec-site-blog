@@ -13,13 +13,22 @@ function Precos(){
 
             <div className="row text-center">
                 <div className="col-lg-4">
-                    <div className="card mb-4 rounded-3 shadow-sm">
+                    <div className="card mb-4 rounded-3 shadow-sm zoom-img">
                         <div className="card-header py-3">
                             <h4>BÁSICO</h4>
                         </div>    
                         <div className="card-body">
                             <p>Indicado para todos os tipos de microempreendedores a partir de:</p>
-                            <p>R$ <span className="h2-preco">39</span>,90<small className="text-muted"> /mês</small></p>
+                            <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active" data-bs-interval="600">
+                                        <p><small className="text-muted">R$ <span className="h2-preco-trassado">69</span>,90 /mês</small></p>
+                                    </div>
+                                    <div className="carousel-item" data-bs-interval="6000">
+                                        <p>R$ <span className="h2-preco">39</span>,90<small className="text-muted"> /mês</small></p>
+                                    </div>                                                
+                                </div>
+                            </div>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
                         </div>
@@ -27,13 +36,22 @@ function Precos(){
                 </div>
 
                 <div className="col-lg-4">
-                    <div className="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div className="card mb-4 rounded-3 shadow-sm border-primary zoom-img">
                         <div className="card-header py-3 text-white bg-primary border-primary">
                             <h4>AVANÇADO</h4>
                         </div>
                         <div className="card-body">
                             <p>Indicado para todas as empresas sem funcionários a partir de:</p>
-                            <p>R$ <span className="h2-preco">99</span>,90<small className="text-muted"> /mês</small></p>
+                            <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active" data-bs-interval="600">
+                                        <p><small className="text-muted">R$ <span className="h2-preco-trassado">120</span>,90 /mês</small></p>
+                                    </div>
+                                    <div className="carousel-item" data-bs-interval="6000">
+                                        <p>R$ <span className="h2-preco">99</span>,90<small className="text-muted"> /mês</small></p>
+                                    </div>                                                
+                                </div>
+                            </div>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-primary btn-artigos">Assinar Agora</a>
                         </div>
@@ -41,13 +59,22 @@ function Precos(){
                 </div>
 
                 <div className="col-lg-4">
-                    <div className="card mb-4 rounded-3 shadow-sm">
+                    <div className="card mb-4 rounded-3 shadow-sm zoom-img">
                         <div className="card-header py-3">
                             <h4>PREMIUM</h4>
                         </div>
                         <div className="card-body">
                             <p>Indicado para todas as empresas de pequeno porte a partir de:</p>
-                            <p>R$ <span className="h2-preco">159</span>,90<small className="text-muted"> /mês</small></p>
+                            <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active" data-bs-interval="600">
+                                        <p><small className="text-muted">R$ <span className="h2-preco-trassado">180</span>,90 /mês</small></p>
+                                    </div>
+                                <div className="carousel-item" data-bs-interval="6000">
+                                    <p>R$ <span className="h2-preco">159</span>,90<small className="text-muted"> /mês</small></p>
+                                </div>                                                
+                            </div>
+                        </div>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
                             <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
                         </div>
