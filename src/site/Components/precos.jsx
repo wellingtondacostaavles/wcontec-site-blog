@@ -2,7 +2,7 @@ import React from 'react';
 
 function Precos(){
     return <section id="planos-e-precos">
-        <div className="container">
+        <div className="container-fluid">
 
             <div className="row text-center">
                 <div className="titulo">
@@ -30,7 +30,7 @@ function Precos(){
                                 </div>
                             </div>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
-                            <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
+                            <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos zoom-img">Assinar Agora</a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ function Precos(){
                                 </div>
                             </div>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
-                            <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-primary btn-artigos">Assinar Agora</a>
+                            <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-primary btn-artigos zoom-img">Assinar Agora</a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ function Precos(){
                             </div>
                         </div>
                             <p>O contrato terá vigência de 12 meses renovados automaticamente</p>
-                            <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos">Assinar Agora</a>
+                            <a href="https://wcontec.osayk.com.br/#/cadastro" target="_blank" className="btn btn-lg btn-outline-primary btn-artigos zoom-img">Assinar Agora</a>
                         </div>
                     </div>
                 </div>

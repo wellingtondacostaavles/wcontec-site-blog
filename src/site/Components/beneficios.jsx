@@ -2,7 +2,7 @@ import React from 'react';
 
 function Beneficios(){
     return <section id="beneficios">
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
                 <div className="col-lg-4 feature-box zoom-img">
                     <i className="icon fas fa-heart fa-5x"></i>

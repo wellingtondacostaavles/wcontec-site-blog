@@ -2,7 +2,7 @@ import React from 'react';
 
 function Testemunho(){
     return <section id="testemunho">
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
             <div id="carouselExampleControlsNoTouching" className="carousel carousel-dark  slide" data-bs-ride="carousel">            
                 <div className="carousel-inner">

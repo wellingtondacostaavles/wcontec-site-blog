@@ -15,13 +15,13 @@ function Construcaocivil(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-metro-cubico"><img src="/Images/tegs-calculadoras/Tag-metro-cubico.png"/></Link></center>
+                        <center><Link to="/calculadoras-metro-cubico"><img src="/Images/tegs-calculadoras/Tag-metro-cubico.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></a></center>   
+                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></a></center>
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></a></center>                                    
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></a></center>
                     </div>
                 </div>             
             </div> 

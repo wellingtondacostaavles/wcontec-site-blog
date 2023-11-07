@@ -2,7 +2,7 @@ import React from 'react';
 
 function Abrirempresagratis(){
  return <section id="abrir-empresa-gratis">
-        <div className="container">            
+        <div className="container-fluid">            
                 <div className="row">
                     <div className="titulo">
                         <h1>Abra sua empresa agora de um jeito fácil</h1>           

@@ -51,6 +51,7 @@ body {
   background-color: #050922;
   font-family: Effra, sans-serif;
   color: #ffffff;
+  padding: 1% 8% 1% 8%;
 }
 
 /* BANNER */
@@ -67,7 +68,7 @@ body {
 #inicio {
   background-color: #050922;
   color: #ffffff;
-  padding: 108px 0 102px 0;
+  padding: 108px 8% 102px 8%;
 }
 
 #inicio img {
@@ -86,7 +87,7 @@ body {
 #beneficios {
   background-color: #ececec;
   color: #323338;
-  padding: 12% 6%;
+  padding: 12% 8% 6% 8%;
 }
 
 .feature-box {
@@ -104,7 +105,7 @@ body {
 #testemunho {
   background-color: #ececec;
   color: #323338;
-  padding: 15% 6%;
+  padding: 15% 8% 6% 8%;
   text-align: center;
 }
 
@@ -119,7 +120,7 @@ body {
 #abrir-empresa-gratis {
   background-color: #ffffff;
   color: #323338;
-  padding: 6% 3% 21% 3%;
+  padding: 6% 8% 21% 8%;
 }
 
 #abrir-empresa-gratis img {
@@ -248,7 +249,7 @@ body {
 #card-calculadoras {
   background-color: #ffffff;
   color: #323338;
-  padding: 6% 3% 6% 3%;
+  padding: 6% 8% 6% 8%;
 }
 
 .card-calculadoras {
@@ -302,7 +303,7 @@ body {
 }
 
 .parceiros-logos {
-  padding: 0 0 1% 0;
+  padding: 0 8% 1% 8%;
   background-color: #ffffff;
 }
 

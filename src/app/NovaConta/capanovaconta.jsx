@@ -5,7 +5,7 @@ import './novaconta.css';
 function Capanovaconta(){
     return <section id="capa-novaconta">      
           
-        <div className="container .capa-novaconta">
+        <div className="container-fluid .capa-novaconta">
             <div className="row">
 
                 <div className="col-lg-6">

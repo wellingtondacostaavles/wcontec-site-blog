@@ -17,8 +17,8 @@ function Capa(){
                     <h3><span className="terceiro-h3">Passo a passo de como calcular</span></h3>               
                     <h6 className="segundo-h6">Ás vezes o tempo que temos não é o suficiente para terminarmos alguma tarefa importante, e é nessas ocasiões precisamos estender o expediente.</h6>
                     <h6 className="segundo-h6">Saiba como calcular hora extra, inclusive com adicional noturnos e aos sábados e feriados...</h6>
-                    <a href="#horaextrapassoapassodecomocalcular" className="btn btn-success btn-lg btn-capa-horaextrapassoapassodecomocalcular">Continue lendo</a>
-                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-horaextrapassoapassodecomocalcular">Área do Cliente</a>
+                    <a href="#horaextrapassoapassodecomocalcular" className="btn btn-success btn-lg btn-capa-horaextrapassoapassodecomocalcular zoom-img">Continue lendo</a>
+                    <a href="/" className="btn btn-outline-primary btn-lg btn-capa-horaextrapassoapassodecomocalcular zoom-img">Área do Cliente</a>
                 </div>               
             </div>
         </div>

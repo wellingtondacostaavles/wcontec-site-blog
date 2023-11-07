@@ -16,13 +16,13 @@ function Categorias(){
         <div className="container">                              
             <div className="row">
                 <div className="col-lg-4 categorias-tgs">
-                    <center><a href="/blog#tecnologia-da-informacao"><img src="/Images/tegs-categorias/Tag-Tecnologia-da-Informacao.png"/></a></center>                                                      
+                    <center><a href="/blog#tecnologia-da-informacao"><img src="/Images/tegs-categorias/Tag-Tecnologia-da-Informacao.png" className="zoom-img"/></a></center>
                 </div>
                 <div className="col-lg-4 categorias-tgs">
-                    <center><a href="/blog#recursos-humanos"><img src="/Images/tegs-categorias/Tag-Recursos-Humanos.png"/></a></center>                                                
+                    <center><a href="/blog#recursos-humanos"><img src="/Images/tegs-categorias/Tag-Recursos-Humanos.png" className="zoom-img"/></a></center>
                 </div>
                 <div className="col-lg-4 categorias-tgs">
-                    <center><a href="/blog#empreendedorismo"><img src="/Images/Tag-Empreendedorismo.png"/></a></center>                                                 
+                    <center><a href="/blog#empreendedorismo"><img src="/Images/Tag-Empreendedorismo.png" className="zoom-img"/></a></center>
                 </div>
             </div>             
         </div>    
@@ -30,13 +30,13 @@ function Categorias(){
         <div className="container">                              
             <div className="row">
                 <div className="col-lg-4 categorias-tgs">
-                    <center><a href="/blog#gestao-empresarial"><img src="/Images/Tag-Gestaoempresarial.png"/></a></center> 
+                    <center><a href="/blog#gestao-empresarial"><img src="/Images/Tag-Gestaoempresarial.png" className="zoom-img"/></a></center>
                 </div>
                 <div className="col-lg-4 categorias-tgs">
-                    <center><a href="/blog#financas"><img src="/Images/tegs-categorias/Tag-Gestao-Financeira.png"/></a></center> 
+                    <center><a href="/blog#financas"><img src="/Images/tegs-categorias/Tag-Gestao-Financeira.png" className="zoom-img"/></a></center>
                 </div>
                 <div className="col-lg-4 categorias-tgs">
-                    <center><a href="/blog#tributacao"><img src="/Images/Tag-Tributacao.png"/></a></center> 
+                    <center><a href="/blog#tributacao"><img src="/Images/Tag-Tributacao.png" className="zoom-img"/></a></center>
                 </div>
                 
             </div>             

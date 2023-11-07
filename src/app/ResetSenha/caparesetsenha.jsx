@@ -5,7 +5,7 @@ import './resetsenha.css';
 function Caparesetsenha(){
     return <section id="capa-resetsenha">      
           
-        <div className="container .capa-resetsenha">
+        <div className="container-fluid .capa-resetsenha">
             <div className="row">
 
                 <div className="col-lg-6">

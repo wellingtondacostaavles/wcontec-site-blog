@@ -15,13 +15,13 @@ function DeclaracaoIRPF(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-comerciante-mei.png"/></a></center>                                   
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-comerciante-mei.png" className="zoom-img"/></a></center>                                   
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><a href="#distribuicao-lucro-socio-sn"><img src="/Images/tegs-calculadoras/Tag-lucro-do-Socio-Empresa-Simples-Nacional.png"/></a></center>   
+                         <center><a href="#distribuicao-lucro-socio-sn"><img src="/Images/tegs-calculadoras/Tag-lucro-do-Socio-Empresa-Simples-Nacional.png" className="zoom-img"/></a></center>   
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-autonomo.png"/></a></center>                                    
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-autonomo.png" className="zoom-img"/></a></center>                                    
                     </div>
                 </div>             
             </div>
@@ -29,13 +29,13 @@ function DeclaracaoIRPF(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-autonomo.png"/></a></center>                                   
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-autonomo.png" className="zoom-img"/></a></center>                                   
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-mei.png"/></a></center>   
+                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-mei.png" className="zoom-img"/></a></center>   
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-mei.png"/></a></center>                                    
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-mei.png" className="zoom-img"/></a></center>                                    
                     </div>
                 </div>             
             </div>     

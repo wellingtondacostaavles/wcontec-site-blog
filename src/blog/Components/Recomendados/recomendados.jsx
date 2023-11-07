@@ -15,13 +15,13 @@ function Recomendados(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 categorias-tgs">
-                        <center><a href="/blog-autonomo"><img src="/Images/Tag-Autonomo.png"/></a></center>                                   
+                        <center><a href="/blog-autonomo"><img src="/Images/Tag-Autonomo.png" className="zoom-img"/></a></center>          
                     </div>
                     <div className="col-lg-4 categorias-tgs">
-                         <center><a href="blog-abrir-uma-empresa"><img src="/Images/Tag-Como-Abrir-Empresa.png"/></a></center>
+                         <center><a href="blog-abrir-uma-empresa"><img src="/Images/Tag-Como-Abrir-Empresa.png" className="zoom-img"/></a></center>
                     </div>             
                     <div className="col-lg-4 categorias-tgs">
-                        <center><a href="/blog-mei"><img src="/Images/Tag-MEI.png"/></a></center>                                    
+                        <center><a href="/blog-mei"><img src="/Images/Tag-MEI.png" className="zoom-img"/></a></center>
                     </div>
                 </div>             
             </div> 
@@ -29,13 +29,13 @@ function Recomendados(){
         <div className="container">                              
             <div className="row">
             <   div className="col-lg-4 recomendados-tgs">
-                    <center><a href="/blog-empresario-individual"><img src="/Images/Tag-EI.png"/></a></center>                                                    
+                    <center><a href="/blog-empresario-individual"><img src="/Images/Tag-EI.png" className="zoom-img"/></a></center>
                 </div>
                 <div className="col-lg-4 recomendados-tgs">
-                    <center><a href="/blog-sociedade-limitada-unipessoal"><img src="/Images/Tag-SLU.png"/></a></center>
+                    <center><a href="/blog-sociedade-limitada-unipessoal"><img src="/Images/Tag-SLU.png" className="zoom-img"/></a></center>
                 </div>
                 <div className="col-lg-4 recomendados-tgs">
-                    <center><a href="/blog-eireli"><img src="/Images/Tag-EIRELI.png"/></a></center>                                                      
+                    <center><a href="/blog-eireli"><img src="/Images/Tag-EIRELI.png" className="zoom-img"/></a></center>                            
                 </div>
             </div>             
         </div> 

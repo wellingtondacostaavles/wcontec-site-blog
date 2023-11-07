@@ -5,7 +5,7 @@ import './navbar.css';
 function NavbarCalculadora(){
     return <nav className="navbar fixed-top navbar-expand-md navbar-dark">
 
-    <div className="container">
+    <div className="container-fluid">
             
         <a className="navbar-brand-expand-lg" href="#">
           <img src="/Images/logo-wcontec-calculator.png" alt="" height="54" />

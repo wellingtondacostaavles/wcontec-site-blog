@@ -3,10 +3,10 @@ import React from 'react';
 function Menu(){
     return <nav className="navbar fixed-top navbar-expand-md navbar-dark">
 
-    <div className="container">
+    <div className="container-fluid">
             
         <a className="navbar-brand-expand-lg" href="/#">
-          <img src="Images/logo-plataforma-cont-oline.png" alt="" height="54" />
+          <img src="Images/logo-plataforma-cont-oline.png" className="zoom-img" alt="" height="54" />
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,27 +16,27 @@ function Menu(){
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#inicio">Início</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#inicio">Início</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#beneficios">Benefícios</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#beneficios">Benefícios</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#testemunho">Clientes</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#testemunho">Clientes</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#abrir-empresa-gratis">Abrir Empresa Grátis</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#abrir-empresa-gratis">Abrir Empresa Grátis</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#planos-e-precos">Planos</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#planos-e-precos">Planos</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#ultimosartigosblog">Blog</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#ultimosartigosblog">Blog</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item zoom-img">
               <a className="nav-link" aria-current="page" href="#card-calculadoras">Calculadoras</a>
             </li>            
-            <li className="nav-item">
+            <li className="nav-item zoom-img">
               <a className="nav-link" aria-current="page" href="#contato">Contato</a>
             </li>
           </ul>

@@ -14,16 +14,16 @@ function Footer(){
                   <div className="col-lg-4"></div>
                 <div>   
                   <ul className="list-unstyled list-inline social text-center">
-                      <li className="list-inline-item"><a href="https://t.me/+bLsp1DsfZOo2M2Ix" target="_blank"><i className="fa fa-telegram fa-2x"></i></a></li>
-                      <li className="list-inline-item"><a href="https://instagram.com/wcontec?r=nametag" target="_blank"><i className="fa fa-instagram fa-2x"></i></a></li>
-                      <li className="list-inline-item"><a href="https://bit.ly/3VDpN2j" target="_blank"><i className="fas fa-comment fa-2x"></i></a></li>
-                      <li className="list-inline-item"><a href="https://youtube.com/@wcontec2017" target="_blank"><i className="fa fa-youtube fa-2x"></i></a></li>
-                      <li className="list-inline-item"><a href="https://twitter.com/w_contec" target="_blank"><i className="fa fa-twitter fa-2x"></i></a></li>
-                      <li className="list-inline-item"><a href="https://chat.whatsapp.com/Co4DkBgkhrr6XSDiRL3CBP" target="_blank"><i className="fa fa-whatsapp fa-2x"></i></a></li>
+                      <li className="list-inline-item zoom-img"><a href="https://t.me/+bLsp1DsfZOo2M2Ix" target="_blank"><i className="fa fa-telegram fa-2x"></i></a></li>
+                      <li className="list-inline-item zoom-img"><a href="https://instagram.com/wcontec?r=nametag" target="_blank"><i className="fa fa-instagram fa-2x"></i></a></li>
+                      <li className="list-inline-item zoom-img"><a href="https://bit.ly/3VDpN2j" target="_blank"><i className="fas fa-comment fa-2x"></i></a></li>
+                      <li className="list-inline-item zoom-img"><a href="https://youtube.com/@wcontec2017" target="_blank"><i className="fa fa-youtube fa-2x"></i></a></li>
+                      <li className="list-inline-item zoom-img"><a href="https://twitter.com/w_contec" target="_blank"><i className="fa fa-twitter fa-2x"></i></a></li>
+                      <li className="list-inline-item zoom-img"><a href="https://chat.whatsapp.com/Co4DkBgkhrr6XSDiRL3CBP" target="_blank"><i className="fa fa-whatsapp fa-2x"></i></a></li>
                   </ul>
               </div>
             </div>
-            <div className="container" id="termos">
+            <div className="container-fluid" id="termos">
               <div className="row termodeuso">
                   <p className="text-center"><a className="termos-a" data-bs-toggle="collapse" href="#termos-de-uso-e-política-de-privacidade" role="button" aria-expanded="false" aria-controls="collapseExample">Termos de Uso e Política de Privacidade - </a>Copyright © 2023 Wcont serviços contábeis. Todos direitos reservados.</p>
                   <div className="collapse" id="termos-de-uso-e-política-de-privacidade" data-parent="#termos">

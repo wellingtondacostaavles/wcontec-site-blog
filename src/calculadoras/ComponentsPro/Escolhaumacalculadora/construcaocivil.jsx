@@ -15,7 +15,7 @@ function Construcaocivil(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-metro-cubico.png"/></a></center>                                   
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-metro-cubico.png" className="zoom-img"/></a></center>                                   
                     </div>
                     <div className="col-lg-4 tgs">
                          <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-em-branco.png"/></a></center>   

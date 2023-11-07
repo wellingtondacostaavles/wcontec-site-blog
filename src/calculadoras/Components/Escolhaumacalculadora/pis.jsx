@@ -15,13 +15,13 @@ function Pis(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-pis-presumido"><img src="/Images/tegs-calculadoras/Tag-pis-presumido.png"/></Link></center>
+                        <center><Link to="/calculadoras-pis-presumido"><img src="/Images/tegs-calculadoras/Tag-pis-presumido.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><Link to="/calculadoras-pis-lucro-real"><img src="/Images/tegs-calculadoras/Tag-pis-real.png"/></Link></center>
+                         <center><Link to="/calculadoras-pis-lucro-real"><img src="/Images/tegs-calculadoras/Tag-pis-real.png" className="zoom-img"/></Link></center>
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-pis-corretora"><img src="/Images/tegs-calculadoras/Tag-pis-corretoras.png"/></Link></center>
+                        <center><Link to="/calculadoras-pis-corretora"><img src="/Images/tegs-calculadoras/Tag-pis-corretoras.png" className="zoom-img"/></Link></center>
                     </div>
                 </div>             
             </div> 

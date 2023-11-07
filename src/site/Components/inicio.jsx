@@ -2,7 +2,7 @@ import React from 'react';
 
 function Inicio(){
     return <section id="inicio">
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
                 <div className="col-lg-6">
                     <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -54,8 +54,8 @@ function Inicio(){
                     </div>           
                     <p></p>
                     <h4 className="chamado3-h4">A plataforma de gestão financeira e assessoria contábil online.</h4>
-                    <a href="https://bit.ly/cadastre-se-na-wcontec" target="_blank" className="btn btn-success btn-lg btn-chamado">Cadastre-se</a>
-                    <a href="https://bit.ly/login-wcontec" target="_blank" className="btn btn-outline-primary btn-lg btn-chamado">Acessar</a>
+                    <a href="https://bit.ly/cadastre-se-na-wcontec" target="_blank" className="btn btn-success btn-lg btn-chamado zoom-img">Cadastre-se</a>
+                    <a href="https://bit.ly/login-wcontec" target="_blank" className="btn btn-outline-primary btn-lg btn-chamado zoom-img">Acessar</a>
                 </div>                        
             </div>    
         </div>

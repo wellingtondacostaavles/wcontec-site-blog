@@ -15,10 +15,10 @@ function Calculostrabalhistas(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-custo-mensal-com-funcionario-optante-simples-nacional"><img src="/Images/tegs-calculadoras/Tag-custo-com-funcionário-optante-simples.png"/></Link></center>
+                        <center><Link to="/calculadoras-custo-mensal-com-funcionario-optante-simples-nacional"><img src="/Images/tegs-calculadoras/Tag-custo-com-funcionário-optante-simples.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><Link to="/calculadoras-custo-mensal-com-funcionario-nao-optante-simples-nacional"><img src="/Images/tegs-calculadoras/Tag-custo-com-funcionário-nao-optante-simples.png"/></Link></center>
+                         <center><Link to="/calculadoras-custo-mensal-com-funcionario-nao-optante-simples-nacional"><img src="/Images/tegs-calculadoras/Tag-custo-com-funcionário-nao-optante-simples.png" className="zoom-img"/></Link></center>
                     </div>             
                     <div className="col-lg-4 tgs">
                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></a></center>                                    

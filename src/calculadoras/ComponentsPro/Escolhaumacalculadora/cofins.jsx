@@ -15,13 +15,13 @@ function Cofins(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-cofins-presumido.png"/></a></center>                                   
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-cofins-presumido.png" className="zoom-img"/></a></center>                                   
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-cofins-real.png"/></a></center>   
+                         <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-cofins-real.png" className="zoom-img"/></a></center>   
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-cofins-corretoras.png"/></a></center>                                    
+                        <center><a href="#"><img src="/Images/tegs-calculadoras/Tag-cofins-corretoras.png" className="zoom-img"/></a></center>                                    
                     </div>
                 </div>             
             </div> 

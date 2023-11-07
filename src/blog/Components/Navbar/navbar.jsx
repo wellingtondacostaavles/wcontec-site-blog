@@ -8,7 +8,7 @@ function Navbar(){
     <div className="container">
             
         <a className="navbar-brand-expand-lg" href="/blog">
-          <img src="/Images/logo-wcontec-blog.png" alt="" height="54" />
+          <img src="/Images/logo-wcontec-blog.png" className="zoom-img" alt="" height="54" />
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,19 +18,19 @@ function Navbar(){
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">Início</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#">Início</a>
             </li> 
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#categorias">Categorias</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#categorias">Categorias</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#recomendados">Recomendados</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#recomendados">Recomendados</a>
             </li>
             <li className="nav-item">
-              <Link to="/calculadoras" className="nav-link" aria-current="page">Calculadoras</Link>
+              <Link to="/calculadoras" className="nav-link zoom-img" aria-current="page">Calculadoras</Link>
             </li>   
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#contato">Contato</a>
+              <a className="nav-link zoom-img" aria-current="page" href="#contato">Contato</a>
             </li>         
           </ul>
         </div>    

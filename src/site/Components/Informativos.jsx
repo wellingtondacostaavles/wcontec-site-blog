@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 function Informativos(){
     return <section id="informativo">      
          
-        <div className="container">
+        <div className="container-fluid">
             <div className="row text-center"> 
                     <div className="titulo">
                         <h1>Informativo empresarial</h1>                   

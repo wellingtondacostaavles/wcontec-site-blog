@@ -5,7 +5,7 @@ import './capacalculadora.css';
 function Capacalculadora(){
     return <section id="capa-calculadora">      
           
-        <div className="container .capa-calculadora">
+        <div className="container-fluid .capa-calculadora">
             <div className="row">
 
                 <div className="col-lg-6">
