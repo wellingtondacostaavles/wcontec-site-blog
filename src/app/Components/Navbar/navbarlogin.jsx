@@ -8,7 +8,7 @@ function Navbar(){
     <div className="container-fluid">
             
         <a className="navbar-brand-expand-lg" href="#">
-          <img src="/Images/logo-wcontec-calculator.png" className="zoom-img" alt="" height="54" />
+          <img src="/Images/logo-wcontec-calculator.png" alt="" height="54" />
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -18,13 +18,13 @@ function NavbarCalculadora(){
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link to="/calculadoras" className="nav-link" aria-current="page">Início</Link>
+              <Link to="/calculadoras" className="nav-link zoom-img" aria-current="page">Início</Link>
             </li> 
             <li className="nav-item">
-              <Link to="/blog" className="nav-link" aria-current="page">Blog</Link>
+              <Link to="/blog" className="nav-link zoom-img" aria-current="page">Blog</Link>
             </li>              
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="calculadoras#contato">Contato</a>
+              <a className="nav-link zoom-img" aria-current="page" href="calculadoras#contato">Contato</a>
             </li>         
           </ul>
         </div>    
