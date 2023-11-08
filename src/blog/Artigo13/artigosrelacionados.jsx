@@ -20,7 +20,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">Como fazer a transição do operacional para o empreendedorismo?</h4>
                                 <p className="card-text">Somos focados totalmente no operacional e não conseguimos crescer porque a dificuldade de empreender no segmento que atuamos acaba nos barrando.</p>
-                                <a href="/" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                             </div>
                         </div>  
                     </div>  
@@ -31,7 +31,7 @@ function Artigosrelacionados(){
                         <div className="card-body">
                             <h4 className="card-title">xxxxxxxxxxxxxxxxx</h4>
                             <p className="card-text">Apesar de só poder faturar até R$ 81.000,00 por ano, o MEI tem diversas facilidades como abertura de conta bancária, pedido de empréstimos e emissão de notas fiscais.</p>
-                            <a href="/blog-mei" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-mei" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>  
                 </div>

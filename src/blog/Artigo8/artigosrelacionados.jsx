@@ -20,7 +20,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">Empresário Individual (EI)</h4>
                                 <p className="card-text">Também conhecido como "firma individual", e diferente de MEI é ideal para quem quer exercer em nome próprio uma atividade empresarial, sem a necessidade de um sócio.</p>
-                                <a href="/blog-empresario-individual" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/blog-empresario-individual" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                             </div>
                         </div>  
                     </div> 
@@ -31,7 +31,7 @@ function Artigosrelacionados(){
                         <div className="card-body">
                             <h4 className="card-title">Microeemprendedor Individual (MEI)</h4>
                             <p className="card-text">Apesar de só poder faturar até R$ 81.000,00 por ano, o MEI tem diversas facilidades como abertura de conta bancária, pedido de empréstimos e emissão de notas fiscais.</p>
-                            <a href="/blog-mei" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-mei" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>  
                 </div>
@@ -45,7 +45,7 @@ function Artigosrelacionados(){
                         <div className="card-body">
                             <h4 className="card-title">Empresa Individual de Responsabilidade Limitada (EIRELI)</h4>
                             <p className="card-text">O empresário pode escolher a forma de tributação que melhor adapte a atividade da empresa.</p>
-                            <a href="/blog-eireli" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-eireli" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>  
                 </div>    
@@ -56,7 +56,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">Entenda o que é Sociedade Limitada Unipessoal (SLU)</h4>
                                 <p className="card-text">Onde não é preciso ter sócios e o patrimônio do empreendedor não se mistura com o da empresa.</p>
-                                <a href="/blog-sociedade-limitada-unipessoal" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/blog-sociedade-limitada-unipessoal" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                             </div>
                         </div>  
                     </div>   

@@ -20,7 +20,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">Documentos necessários para a Declaração de Imposto de Renda</h4>
                                 <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
-                                <a href="/blog-documentosnecessarios-irpf" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/blog-documentosnecessarios-irpf" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                             </div>
                         </div>  
                     </div> 
@@ -31,7 +31,7 @@ function Artigosrelacionados(){
                         <div className="card-body">
                             <h4 className="card-title">Descubra se você precisa fazer a declaração do Imposto de Renda</h4>
                             <p className="card-text">Fique ligado nas mudanças anuais na legislação fiscal para evitar problemas futuros com a Receita Federal e garantir a conformidade com a lei tributária.</p>
-                            <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-saiba-se-voce-esta-obrigado-a-apresentar-a-dirpf" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>  
                 </div>

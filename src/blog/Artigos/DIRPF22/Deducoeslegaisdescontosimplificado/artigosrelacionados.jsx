@@ -20,7 +20,7 @@ function Artigosrelacionados(){
                                 <div className="card-body">
                                     <h4 className="card-title">Veja quais são os documentos necessários para a DIRPF</h4>
                                     <p className="card-text">Juntar os documentos e também guardar os papéis por no mínimo cinco anos, caso a Receita Federal peça para você comprovar a veracidade das informações.</p>
-                                    <a href="/blog-documentosnecessarios-irpf" className="btn btn-primary btn-artigos">Ler Post</a>
+                                    <a href="/blog-documentosnecessarios-irpf" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                                 </div>
                             </div>  
                         </div>           
@@ -30,7 +30,7 @@ function Artigosrelacionados(){
                             <div className="card-body">
                                 <h4 className="card-title">Confira as novidades na declaração do Imposto de Renda 2023</h4>
                                 <p className="card-text">Atenção para o prazo de entrega da Declaração do Imposto de Renda Pessoa Física 2023 que começou no dia 15 de março, são várias mudanças.</p>
-                                <a href="/blog-novidades-na-declaracao-irpf" className="btn btn-primary btn-artigos">Ler Post</a>
+                                <a href="/blog-novidades-na-declaracao-irpf" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                             </div>
                         </div>  
                     </div>

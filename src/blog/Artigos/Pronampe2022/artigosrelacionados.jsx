@@ -20,7 +20,7 @@ function Artigosrelacionados(){
                         <div className="card-body">
                             <h4>Já estão disponíveis as consultas ao Sistema Valores a Receber</h4>
                             <p>Através desta consulta você saberá se tem valor a receber ou não, caso tenha, ficará por dentro da data e o período para consultar e solicitar o resgate do saldo existente.</p>
-                            <a href="/blog-consulta-ao-sistema-valores-a-receber-bcb" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-consulta-ao-sistema-valores-a-receber-bcb" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>  
                 </div>
@@ -30,7 +30,7 @@ function Artigosrelacionados(){
                         <div className="card-body">
                             <h4 className="card-title">Entenda o que é um Microeemprendedor Individual (MEI)</h4>
                             <p className="card-text">Apesar de só poder faturar até R$ 81.000,00 por ano, o MEI tem diversas facilidades como abertura de conta bancária, pedido de empréstimos e emissão de notas fiscais.</p>
-                            <a href="/blog-mei" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-mei" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>  
                 </div>   

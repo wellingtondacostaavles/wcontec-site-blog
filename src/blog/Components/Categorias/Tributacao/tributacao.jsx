@@ -11,7 +11,7 @@ function Tributacao(){
                         <div className="card-body">
                             <h4 className="card-title">Menor tributação para Caminhoneiros</h4>
                             <p className="card-text">O Senado aprovou um projeto de lei que muda a tributação de caminhoneiros autônomos inscritos como microempreendedores individuais.</p>
-                            <a href="/blog-senado-aprova-tributacao-menor-para-caminhoneiros" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-senado-aprova-tributacao-menor-para-caminhoneiros" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>  
                 </div>
@@ -21,7 +21,7 @@ function Tributacao(){
                         <div className="card-body">
                             <h4 className="card-title">Não se pode culpar a carga tributária</h4>
                             <p className="card-text">Impostos não quebram empresas, a carga tributária sem duvida é um fator que gera dificuldades a empresários. Gestão empresarial é bem mais que simplesmente...</p>
-                            <a href="/blog-nao-se-pode-culpar-a-cargatributaria" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-nao-se-pode-culpar-a-cargatributaria" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>  
                 </div>
@@ -33,7 +33,7 @@ function Tributacao(){
                         <div className="card-body">
                             <h4 className="card-title">Entenda o Simples Nacional</h4>
                             <p className="card-text">O Simples Nacional é um regime tributário exclusivo para micro e pequenas empresas, criado em 2007  ele e consegue unir vários tributos em um só.</p>
-                            <a href="/blog-simples-nacional" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-simples-nacional" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>  
                 </div>
@@ -43,7 +43,7 @@ function Tributacao(){
                         <div className="card-body">
                             <h4 className="card-title">Aprenda a como calcular a hora extra</h4>
                             <p className="card-text">Os brasileiros estão entre os dez que mais fazem horas extras no mundo. O país está na sétima posição, com cerca de 18 horas trabalhadas a mais.</p>
-                            <a href="/blog-hora-extra-passo-a-passo-de-como-calcular" className="btn btn-primary btn-artigos">Ler Post</a>
+                            <a href="/blog-hora-extra-passo-a-passo-de-como-calcular" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
                         </div>
                     </div>                      
                 </div>            

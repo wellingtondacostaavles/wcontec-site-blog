@@ -29,15 +29,6 @@
   color: #fff; /* Por exemplo, preto */
 }
 
-.close-button-push {
-  position: absolute;
-  top: 15px; /* Ajuste conforme necessário */
-  right: 21px; /* Ajuste conforme necessário */
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .push-message.show {
   display: flex;
   align-items: center;

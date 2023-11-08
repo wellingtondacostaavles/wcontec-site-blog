@@ -22,7 +22,7 @@ function Precos(){
                             <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active" data-bs-interval="600">
-                                        <p><small className="text-muted">R$ <span className="h2-preco-trassado">69</span>,90 /mês</small></p>
+                                        <p><small className="text-muted">R$ <span className="h2-preco-trassado">54</span>,90 /mês</small></p>
                                     </div>
                                     <div className="carousel-item" data-bs-interval="6000">
                                         <p>R$ <span className="h2-preco">39</span>,90<small className="text-muted"> /mês</small></p>
