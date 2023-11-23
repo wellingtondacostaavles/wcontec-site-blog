@@ -208,6 +208,9 @@ body {
 }
 
 /* artigos em destaque */
+.mei-e-a-Importancia-do-contador-na-efd-reinf {
+  display: block;
+}
 .a-importrancia-retencoes-reinf {
   display: block;
 }
@@ -224,7 +227,7 @@ body {
   display: none;
 }
 .aberturadeempresa {
-  display: block;
+  display: none;
 }
 .slu {
   display: none;

@@ -75,6 +75,7 @@ import Pronampe2022 from './blog/Artigos/Pronampe2022/pronampe2022.jsx';
 import Contabilidadeeleitoral from './blog/Artigos/Contabilidadeeleitoral/contabilidadeeleitoral.jsx';
 import Aposentadoriaporidade2023 from './blog/Artigos/Previdencia-Social/aposentadoriaporidade2023.jsx';
 import Aimportranciadasretencoesnareinf from './blog/Artigos/Aimportranciadasretencoesnareinf/aimportranciadasretencoesnareinf.jsx';
+import MEIeaImportanciadoContadornaEradaEFDReinf from './blog/Artigos/Microempreendedor/MEIeaImportanciadoContadornaEradaEFDReinf/meieaImportanciadocontadornaeradaefdreinf.jsx';
 /* Links */
 import Siganos from './contacte-nos/siga-nos.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
@@ -168,6 +169,7 @@ function App(){
       <Route exact path='/blog-contabilidade-eleitoral' component={Contabilidadeeleitoral} />
       <Route exact path='/blog-regras-para-aposentadoria-2023' component={Aposentadoriaporidade2023} />
       <Route exact path='/blog-efd-reinf-e-as-retencoes-na-fonte-guia-essencial-para-empresas/' component={Aimportranciadasretencoesnareinf} />
+      <Route exact path='/blog-mei-e-a-Importancia-do-contador-na-era-da-efd-reinf/' component={MEIeaImportanciadoContadornaEradaEFDReinf} />
       <Route exact path='/siga-nos' component={Siganos} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />

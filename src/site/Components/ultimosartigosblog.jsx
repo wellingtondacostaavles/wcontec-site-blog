@@ -14,6 +14,16 @@ function Ultimosartigosblog(){
 
         <div className="container">                
             <div className="row">
+                <div className="col-lg-4 mei-e-a-Importancia-do-contador-na-efd-reinf">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/Microempreendedor/MeieaImportanciadocontadornaeradaefdreinf/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4>MEI e a importância do contador na era da EFD-Reinf</h4>
+                            <p>Ser um Microempreendedor Individual (MEI) evoluiu significativamente ao longo dos anos, tornando-se uma jornada cada vez mais complexa e intrincada.</p>
+                            <a href="/blog-mei-e-a-Importancia-do-contador-na-era-da-efd-reinf/" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
                 <div className="col-lg-4 a-importrancia-retencoes-reinf">
                     <div className="card card-artigos">
                         <center><img src="/Images/Artigos/Efd-reinf-retencoes/capaprincipal.png" className="card-img-top" alt="..."/></center>

@@ -29,9 +29,7 @@ function Mei(){
             
         <div className="container">
             <div className="row"> 
-                <div className="titulo">
-                    <h3>Qual o custo de ser um MEI?</h3>
-                </div>
+               <h3>Qual o custo de ser um MEI?</h3>
             </div>
         </div>
 
@@ -65,7 +63,6 @@ function Mei(){
                 <p>Conta com cobertura da Previdência Social para você e sua família.</p>
                 <br></br>
                 <br></br>
-                <p>Fonte de informações: SEBRAE</p>             
             </div>                
         </div>      
            

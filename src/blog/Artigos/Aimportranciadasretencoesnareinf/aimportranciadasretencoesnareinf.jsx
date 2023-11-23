@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar/navbar';
 import Capa from './capa';
+import Artigosrelacionados from './artigosrelacionados';
 import Artigos from '../../Components/Artigos/artigos';
 import Categorias from '../../Components/Categorias/categorias';
 import Recomendados from '../../Components/Recomendados/recomendados';
@@ -196,6 +197,7 @@ function Aimportranciadasretencoesnareinf(){
         </div> 
         </div>               
     </section>
+    <Artigosrelacionados/>
     <Artigos/>    
     <Cardareadocliente/>
     <Categorias/>
