@@ -8,6 +8,10 @@ h6 {
   font-family: Effra, sans-serif, Arial, sans-serif, Alliance1;
 }
 
+.hidden-icon {
+  display: none;
+}
+
 .segundo-h1 {
   color: #0d6efd;
 }
