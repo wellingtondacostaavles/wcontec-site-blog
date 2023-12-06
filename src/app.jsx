@@ -27,6 +27,7 @@ import IRPFsobreMeiTransportePassageiro from './calculadoras/Components/IRPFsobr
 import IRPFsobreMeiTransporteCargas from './calculadoras/Components/IRPFsobreMeiTransporteCargas/irpfsobremeitransportecargas.jsx';
 import IRPFsobreAdvogado from './calculadoras/Components/IRPFsobreAdvogado/irpfsobreadvogado.jsx';
 import IRPFsobreAposentado from './calculadoras/Components/IRPFsobreAposentado/irpfsobreaposentado.jsx';
+import Irsobreacoes from './calculadoras/Components/IRsobreAcoes/irsobreacoes.jsx';
 import Distribuicaolucrosociosn from './calculadoras/Components/Distribuicaolucrosociosn/distribuicaolucrosociosn.jsx';
 import Descontosimplificado from './calculadoras/Components/Descontosimplificado/descontosimplificado.jsx';
 import Deducoeslegais from './calculadoras/Components/Deducoeslegais/deducoeslegais.jsx';
