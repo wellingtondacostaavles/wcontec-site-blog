@@ -3,7 +3,7 @@ import Capacalculadora from './Components/Capacalculadora/capacalculadora';
 import Escolhaumacalculadora from './Components/Escolhaumacalculadora/escolhaumacalculadora';
 import Calculostrabalhistas from './Components/Escolhaumacalculadora/calculostrabalhistas';
 import DeclaracaoIRPF from './Components/Escolhaumacalculadora/declaracaoIRPF';
-import Irsobreacoes from './Components/IRsobreAcoes/irsobreacoes';
+import Irsobreacoes from './Components/IRsobrebolsa/irsobreacoes';
 import Tributos from './Components/Escolhaumacalculadora/tributos';
 import Pis from './Components/Escolhaumacalculadora/pis';
 import Cofins from './Components/Escolhaumacalculadora/cofins';

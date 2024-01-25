@@ -5,7 +5,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
-import './irsobreacoes.css';
+import './irsobrebolsa.css';
 
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 

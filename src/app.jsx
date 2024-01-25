@@ -27,7 +27,8 @@ import IRPFsobreMeiTransportePassageiro from './calculadoras/Components/IRPFsobr
 import IRPFsobreMeiTransporteCargas from './calculadoras/Components/IRPFsobreMeiTransporteCargas/irpfsobremeitransportecargas.jsx';
 import IRPFsobreAdvogado from './calculadoras/Components/IRPFsobreAdvogado/irpfsobreadvogado.jsx';
 import IRPFsobreAposentado from './calculadoras/Components/IRPFsobreAposentado/irpfsobreaposentado.jsx';
-import Irsobreacoes from './calculadoras/Components/IRsobreAcoes/irsobreacoes.jsx';
+import Irsobreacoes from './calculadoras/Components/IRsobrebolsa/irsobreacoes.jsx';
+import IRdaytrader from './calculadoras/Components/IRsobrebolsa/irsobredaytrader.jsx';
 import Distribuicaolucrosociosn from './calculadoras/Components/Distribuicaolucrosociosn/distribuicaolucrosociosn.jsx';
 import Descontosimplificado from './calculadoras/Components/Descontosimplificado/descontosimplificado.jsx';
 import Deducoeslegais from './calculadoras/Components/Deducoeslegais/deducoeslegais.jsx';
@@ -77,6 +78,7 @@ import Contabilidadeeleitoral from './blog/Artigos/Contabilidadeeleitoral/contab
 import Aposentadoriaporidade2023 from './blog/Artigos/Previdencia-Social/aposentadoriaporidade2023.jsx';
 import Aimportranciadasretencoesnareinf from './blog/Artigos/Aimportranciadasretencoesnareinf/aimportranciadasretencoesnareinf.jsx';
 import MEIeaImportanciadoContadornaEradaEFDReinf from './blog/Artigos/Microempreendedor/MEIeaImportanciadoContadornaEradaEFDReinf/meieaImportanciadocontadornaeradaefdreinf.jsx';
+import NovostributosemudancasnadeclaracaoemDCTFWebapartirdeJaneirode2024 from './blog/Artigos/NovostributosemudancasnadeclaracaoemDCTFWebapartirdeJaneirode2024/novostributosemudancasnadeclaracaoemDCTFWebapartirdeJaneirode2024.jsx';
 /* Links */
 import Siganos from './contacte-nos/siga-nos.jsx';
 import Descadastrese from './descadastrese/descadastrese.jsx';
@@ -123,6 +125,7 @@ function App(){
       <Route exact path='/calculadoras-irpf-mei-transporte-cargas' component={IRPFsobreMeiTransporteCargas} />
       <Route exact path='/calculadoras-irpf-sobre-advogado' component={IRPFsobreAdvogado} />
       <Route exact path='/calculadoras-irpf-aposentado' component={IRPFsobreAposentado} />
+      <Route exact path='/calculadoras-day-trader' component={IRdaytrader} />      
       <Route exact path='/calculadoras-distribuicao-lucro-socio-simples-nacional' component={Distribuicaolucrosociosn} />
       <Route exact path='/calculadoras-desconto-simplificado' component={Descontosimplificado} />
       <Route exact path='/calculadoras-deducoes-legais' component={Deducoeslegais} />
@@ -171,6 +174,7 @@ function App(){
       <Route exact path='/blog-regras-para-aposentadoria-2023' component={Aposentadoriaporidade2023} />
       <Route exact path='/blog-efd-reinf-e-as-retencoes-na-fonte-guia-essencial-para-empresas/' component={Aimportranciadasretencoesnareinf} />
       <Route exact path='/blog-mei-e-a-Importancia-do-contador-na-era-da-efd-reinf/' component={MEIeaImportanciadoContadornaEradaEFDReinf} />
+      <Route exact path='/blog-novos-tributos-e-mudancas-na-declaracao-em-DCTFWeb-a-partir-de-Janeiro-de-2024/' component={NovostributosemudancasnadeclaracaoemDCTFWebapartirdeJaneirode2024} />
       <Route exact path='/siga-nos' component={Siganos} />
       <Route exact path='/descadastrese' component={Descadastrese} />
       <Route exact path='/descadastramento-realizado-com-sucesso' component={Descadastramento} />
