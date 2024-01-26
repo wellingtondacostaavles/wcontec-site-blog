@@ -8,7 +8,7 @@ function Capa(){
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <img src="/Images/Artigos/Previdencia-Social/capaprincipal.png" />
+                    <img src="/Images/Artigos/NovostributosemudancasnadeclaracaoemDCTFWebapartirdeJaneirode2024/capaprincipal.png" />
                 </div>                
                 <div className="col-lg-6">
                     <h3>Novos Tributos e Mudanças na Declaração em DCTFWeb<span className="terceiro-h3"> a partir de Janeiro de 2024</span><span className="terceiro-h3"></span></h3>

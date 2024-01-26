@@ -14,6 +14,16 @@ function Ultimosartigosblog(){
 
         <div className="container">                
             <div className="row">
+                <div className="col-lg-4 Novos-tributos-na-DCTFWeb-2024">
+                    <div className="card card-artigos">
+                        <center><img src="/Images/Artigos/NovostributosemudancasnadeclaracaoemDCTFWebapartirdeJaneirode2024/capaprincipal.png" className="card-img-top" alt="..."/></center>
+                        <div className="card-body">
+                            <h4>Novos Tributos e Mudanças DCTFWeb Janeiro 2024</h4>
+                            <p>A partir de janeiro de 2024, haverá mudanças na declaração de tributos na DCTFWeb, incluindo novos tributos. Atenção às alterações anunciadas pela Receita Federal.</p>
+                            <a href="/blog-novos-tributos-e-mudancas-na-declaracao-em-DCTFWeb-a-partir-de-Janeiro-de-2024/" className="btn btn-primary btn-artigos zoom-img">Ler Post</a>
+                        </div>
+                    </div>  
+                </div>
                 <div className="col-lg-4 mei-e-a-Importancia-do-contador-na-efd-reinf">
                     <div className="card card-artigos">
                         <center><img src="/Images/Microempreendedor/MeieaImportanciadocontadornaeradaefdreinf/capaprincipal.png" className="card-img-top" alt="..."/></center>

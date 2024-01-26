@@ -35,7 +35,7 @@ function NovostributosemudancasnadeclaracaoemDCTFWebapartirdeJaneirode2024(){
                         <ol className="sbAccessibliltyFontSize" start="2"><li>A DCTF (PGD), referente ao PA dezembro de 2023, deve ser transmitida até o 15º dia útil.</li></ol>
                     </div>
                     <div className="col-lg-6">
-                        <center><img src="/Images/Artigos/Previdencia-Social/capasecundaria.png"/></center>
+                        <center><img src="/Images/Artigos/NovostributosemudancasnadeclaracaoemDCTFWebapartirdeJaneirode2024/capasecundaria.png"/></center>
                     </div>
                 </div>    
             </div>
