@@ -20,13 +20,19 @@ class LinkDownloadPlanilhasAuxiliares extends React.Component {
     // Redirecionar para o site principal após um atraso
     setTimeout(() => {
       window.location.replace('https://www.wcontec.com.br/');
-    }, 1000);
+    }, 6000);
   }
 
   render() {
     return (
       <div>
-        <p>Baixando Planilhas Auxiliares...</p>
+        <p>
+          Baixando Planilhas de Cálculos... <br />
+          Se o download não iniciar automaticamente, clique aqui: {' '}
+          <a href="https://drive.google.com/u/0/uc?id=1XsI5zvzjK7lkVPz1qPnouhHwCljdYxZJ&export=download" download="planilha-de-calculos-auxiliares.zip">
+            Baixar Agora!
+          </a>
+        </p>
       </div>
     );
   }

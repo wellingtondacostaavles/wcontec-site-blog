@@ -7,7 +7,7 @@ extends React.Component {
     const link = document.createElement('a');
     link.href = 'https://drive.google.com/u/0/uc?id=1MTVlr5Ok8sUkdE4rpvDpCQezbDB0Pian&export=download';
     link.target = '_blank';
-    link.download = 'declaracao-do-simples-nacional-para-nao-sofrer-retencoes-na-fonte.zip';
+    link.download = 'modelo-declaracao-do-simples-nacional-para-nao-sofrer-retencoes-na-fonte.doc';
 
     // Adicionar o link ao documento
     document.body.appendChild(link);
@@ -21,16 +21,23 @@ extends React.Component {
     // Redirecionar para o site principal após um atraso
     setTimeout(() => {
       window.location.replace('https://www.wcontec.com.br/');
-    }, 1000);
+    }, 6000);
   }
 
   render() {
     return (
       <div>
-        <p>Baixando Modelo de Declaração do Simples Nacional para não Sofrer Retencoes na Fonte...</p>
+        <p>
+          Baixando Modelo de declaracão do Simples Nacional para nao Sofrer Retencoes na fonte... <br />
+          Se o download não iniciar automaticamente, clique aqui: {' '}
+          <a href="https://drive.google.com/u/0/uc?id=1MTVlr5Ok8sUkdE4rpvDpCQezbDB0Pian&export=download" download="modelo-de-declaracão-do-Simples-Nacional-para-nao-Sofrer-Retencoes-na-fonte.doc">
+            Baixar Agora!
+          </a>
+        </p>
       </div>
     );
   }
 }
+
 
 export default LinkDownloadDeclaracaoSNparaNaoSofrerRetencoes;

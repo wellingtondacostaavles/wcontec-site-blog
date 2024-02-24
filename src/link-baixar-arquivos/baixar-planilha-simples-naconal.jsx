@@ -20,13 +20,19 @@ class LinkDownloadPlanilhaSimplesNacional extends React.Component {
     // Redirecionar para o site principal após um atraso
     setTimeout(() => {
       window.location.replace('https://www.wcontec.com.br/');
-    }, 1000);
+    }, 6000);
   }
 
   render() {
     return (
       <div>
-        <p>Baixando Planilhas de Cálculo do Simples Nacional...</p>
+        <p>
+          Baixando Planilhas de Cálculo do Simples Nacional... <br />
+          Se o download não iniciar automaticamente, clique aqui: {' '}
+          <a href="https://drive.google.com/u/0/uc?id=1qWOGtzeOh4mVWAUWdklqkDyX9-j6IFPF&export=download" download="planilha-simples-nacional.zip">
+            Baixar Agora!
+          </a>
+        </p>
       </div>
     );
   }
