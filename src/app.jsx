@@ -87,6 +87,9 @@ import Certificacaodigital from './parceiros/certificacaodigital.jsx';
 import Fisconet from './parceiros/Fisconet/fisconet.jsx';
 import Avisoferiado from './link-avisos/aviso-feriado.jsx';
 import GestaoNFE from './link-marketing/getao-de-estoque-emissao-nfe/gestao-de-estoque-emissao-nfe.jsx';
+import LinkDownloadPlanilhaSimplesNacional from './link-baixar-arquivos/baixar-planilha-simples-naconal.jsx';
+import LinkDownloadPlanilhasAuxiliares from './link-baixar-arquivos/baixar-planilha-planilhas-auxiliares.jsx';
+import LinkDownloadDeclaracaoSNparaNaoSofrerRetencoes from './link-baixar-arquivos/baixar-declaracao-sn-para-nao-sofrer-retencoes.jsx';
 
 
 function App(){
@@ -182,6 +185,9 @@ function App(){
       <Route exact path='/parceiro-certificacao-digital' component={Certificacaodigital} />
       <Route exact path='/aviso-de-feriado' component={Avisoferiado} />
       <Route exact path='/gestao-de-estoque-emissao-nfe' component={GestaoNFE} />
+      <Route exact path='/download-planilha-simples-nacional' component={LinkDownloadPlanilhaSimplesNacional} />
+      <Route exact path='/download-planilha-auxiliares' component={LinkDownloadPlanilhasAuxiliares} />
+      <Route exact path='/download-declaracao-sn-para-nao-sofrer-retencoes' component={LinkDownloadDeclaracaoSNparaNaoSofrerRetencoes} />
     </Switch>
 
     </BrowserRouter>;
