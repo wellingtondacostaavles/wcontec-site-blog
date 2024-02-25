@@ -1,4 +1,5 @@
 import React from 'react';
+import './link-baixar-arquivos.css';
 
 class LinkDownloadDeclaracaoSNparaNaoSofrerRetencoes extends React.Component {
   constructor(props) {
@@ -45,14 +46,14 @@ class LinkDownloadDeclaracaoSNparaNaoSofrerRetencoes extends React.Component {
   render() {
     return (
       <div>
-        <p>
-          Baixando Modelo de Declaracão do Simples Nacional para não sofrer retenções na fonte... <br />
-          Se o download não iniciar automaticamente, clique aqui: {' '}
-          <a href="https://drive.google.com/u/0/uc?id=1MTVlr5Ok8sUkdE4rpvDpCQezbDB0Pian&export=download" download="modelo-de-declaracao-do-Simples-Nacional-para-nao-Sofrer-Retencoes-na-fonte.doc">
-            Baixar Agora!
-          </a>
-        </p>
-        <p>Redirecionando para o site principal em {this.state.countdown} segundos...</p>
+        <section id="modelo-de-declaracao-do-simples-nacional-para-nao-sofrer-retencoes-na-fonte">
+          <div className="container-unico">
+            <p>Baixando...</p>
+            <p>Se o download não iniciar automaticamente, clique no botão abaixo: </p>
+            <p>{' '}<a href="https://drive.google.com/u/0/uc?id=1MTVlr5Ok8sUkdE4rpvDpCQezbDB0Pian&export=download" className="btn btn-outline-primary btn-lg btn-baixar-agora" download="modelo-de-declaracao-do-Simples-Nacional-para-nao-Sofrer-Retencoes-na-fonte.doc"><i className="fa fa-download"></i> Baixar Agora</a></p>
+            <p>Redirecionando para Wcontec em {this.state.countdown} segundos...</p>
+          </div>
+        </section>
       </div>
     );
   }

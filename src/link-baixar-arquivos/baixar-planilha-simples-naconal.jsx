@@ -1,4 +1,5 @@
 import React from 'react';
+import './link-baixar-arquivos.css';
 
 class LinkDownloadPlanilhaSimplesNacional extends React.Component {
   constructor(props) {
@@ -45,14 +46,14 @@ class LinkDownloadPlanilhaSimplesNacional extends React.Component {
   render() {
     return (
       <div>
-        <p>
-          Baixando Planilhas de Cálculo do Simples Nacional... <br />
-          Se o download não iniciar automaticamente, clique aqui: {' '}
-          <a href="https://drive.google.com/u/0/uc?id=1qWOGtzeOh4mVWAUWdklqkDyX9-j6IFPF&export=download" download="planilha-simples-nacional.zip">
-            Baixar Agora!
-          </a>
-        </p>
-        <p>Redirecionando para o site principal em {this.state.countdown} segundos...</p>
+        <section id="planilha-simples-nacional">
+          <div className="container-unico">
+            <p>Baixando...</p>
+            <p>Se o download não iniciar automaticamente, clique no botão abaixo: </p>
+            <p>{' '}<a href="https://drive.google.com/u/0/uc?id=1qWOGtzeOh4mVWAUWdklqkDyX9-j6IFPF&export=download" className="btn btn-outline-primary btn-lg btn-baixar-agora" download="planilha-simples-nacional.zip"><i className="fa fa-download"></i> Baixar Agora</a></p>
+            <p>Redirecionando para Wcontec em {this.state.countdown} segundos...</p>
+          </div>
+        </section>
       </div>
     );
   }
