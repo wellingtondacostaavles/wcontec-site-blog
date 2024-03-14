@@ -15,7 +15,7 @@ function DeclaracaoIRPF(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-irpf-sobre-empregado-clt"><img src="/Images/tegs-calculadoras/Tag-empregado-clt.png" className="zoom-img"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-sobre-empregado-clt-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-empregado-clt.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
                         <center><Link to="/calculadoras-irpf-sobre-trabalhador-autonomo-geral"><img src="/Images/tegs-calculadoras/Tag-autonomo-regra-geral.png" className="zoom-img"/></Link></center>
@@ -77,7 +77,7 @@ function DeclaracaoIRPF(){
                     <center><Link to="/calculadoras-irpf-socio-medico"><img src="/Images/tegs-calculadoras/Tag-medico-proprietario-de-empresa-ou-firma-individual.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-irpf-aposentado"><img src="/Images/tegs-calculadoras/Tag-aposentado.png" className="zoom-img"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-aposentado-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-aposentado.png" className="zoom-img"/></Link></center>
                     </div>                                 
                 </div>             
             </div>                     

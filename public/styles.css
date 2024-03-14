@@ -213,14 +213,14 @@ body {
 
 /* artigos em destaque */
 .Novos-tributos-na-DCTFWeb-2024 {
-  display: block;
+  display: none;
 }
 
 .mei-e-a-Importancia-do-contador-na-efd-reinf {
-  display: none;
+  display: block;
 }
 .a-importrancia-retencoes-reinf {
-  display: block;
+  display: none;
 }
 .valores-a-receber-bc {
   display: none;
@@ -235,7 +235,7 @@ body {
   display: none;
 }
 .aberturadeempresa {
-  display: none;
+  display: block;
 }
 .slu {
   display: none;

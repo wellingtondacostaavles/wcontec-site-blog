@@ -15,7 +15,11 @@ import EditarPiscorretora from './calculadoras/ComponentsPro/Piscorretora/editar
 import Calculadoras from './calculadoras/calculadoras.jsx';
 import Customensalcomfuncionario from './calculadoras/Components/Customensalcomfuncionario/customensalcomfuncionario.jsx';
 import Customensalcomfuncionarionaooptantedosimplesnacional from './calculadoras/Components/Customensalcomfuncionarionaooptantedosimples/customensalcomfuncionarionaooptantedosimplesnacional.jsx';
+import IrpfsobreempregadocltEscolhaoAnodaDeclaracao from './calculadoras/Components/IRPFsobreEmpregadoCLT/irpfsobreempregadocltEscolhaoAnodaDeclaracao.jsx';
 import IRPFsobreEmpregadoCLT from './calculadoras/Components/IRPFsobreEmpregadoCLT/irpfsobreempregadoclt.jsx';
+import IrpfsobreempregadocltApartirdoExercicio2024AnoCalendariode2023 from './calculadoras/Components/IRPFsobreEmpregadoCLT/irpfsobreempregadocltApartirdoExercicio2024AnoCalendariode2023.jsx';
+import IrpfsobreempregadocltApartirdoExercicio2025AnoCalendariode2024 from './calculadoras/Components/IRPFsobreEmpregadoCLT/irpfsobreempregadocltApartirdoExercicio2025AnoCalendariode2024.jsx';
+import IrpfsobreempregadocltApartirdoExercicio2026AnoCalendariode2025 from './calculadoras/Components/IRPFsobreEmpregadoCLT/irpfsobreempregadocltApartirdoExercicio2026AnoCalendariode2025.jsx';
 import IRPFsobreServidorouEmpregadoPublico from './calculadoras/Components/IRPFsobreServidorouEmpregadoPublico/irpfsobreservidorouempregadopublico.jsx';
 import IRPFsobreMeiComercio from './calculadoras/Components/IRPFsobreMeiComercio/irpfsobremeicomercio.jsx';
 import IRPFsobreMeiServico from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservico.jsx';
@@ -26,7 +30,11 @@ import IRPFsobreAutonomoTrasporteCargas from './calculadoras/Components/IRPFsobr
 import IRPFsobreMeiTransportePassageiro from './calculadoras/Components/IRPFsobreMeiTrasportePassageiro/irpfsobremeitransportepassageiro.jsx';
 import IRPFsobreMeiTransporteCargas from './calculadoras/Components/IRPFsobreMeiTransporteCargas/irpfsobremeitransportecargas.jsx';
 import IRPFsobreAdvogado from './calculadoras/Components/IRPFsobreAdvogado/irpfsobreadvogado.jsx';
+import irpfsobreaposentadoEscolhaoAnodaDeclaracao from './calculadoras/Components/IRPFsobreAposentado/irpfsobreaposentadoEscolhaoAnodaDeclaracao.jsx';
 import IRPFsobreAposentado from './calculadoras/Components/IRPFsobreAposentado/irpfsobreaposentado.jsx';
+import IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023 from './calculadoras/Components/IRPFsobreAposentado/irpfsobreaposentadoApartirdoExercicio2024AnoCalendáriode2023.jsx';
+import IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024 from './calculadoras/Components/IRPFsobreAposentado/irpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024.jsx';
+import IrpfsobreaposentadoApartirdoExercicio2026AnoCalendariode2025 from './calculadoras/Components/IRPFsobreAposentado/irpfsobreaposentadoApartirdoExercicio2026AnoCalendariode2025.jsx';
 import Irsobreacoes from './calculadoras/Components/IRsobrebolsa/irsobreacoes.jsx';
 import IRdaytrader from './calculadoras/Components/IRsobrebolsa/irsobredaytrader.jsx';
 import Distribuicaolucrosociosn from './calculadoras/Components/Distribuicaolucrosociosn/distribuicaolucrosociosn.jsx';
@@ -116,7 +124,11 @@ function App(){
       <Route exact path='/calculadoras' component={Calculadoras} />
       <Route exact path='/calculadoras-custo-mensal-com-funcionario-optante-simples-nacional' component={Customensalcomfuncionario} />
       <Route exact path='/calculadoras-custo-mensal-com-funcionario-nao-optante-simples-nacional' component={Customensalcomfuncionarionaooptantedosimplesnacional} />
-      <Route exact path='/calculadoras-irpf-sobre-empregado-clt' component={IRPFsobreEmpregadoCLT} />
+      <Route exact path='/calculadoras-irpf-sobre-empregado-clt-escolha-o-ano-da-declaracao' component={IrpfsobreempregadocltEscolhaoAnodaDeclaracao} />
+      <Route exact path='/calculadoras-irpf-sobre-empregado-clt-do-exercicio-2017-ano-calendario-2016-ate-exercicio-2023-ano-calendario-2022' component={IRPFsobreEmpregadoCLT} />
+      <Route exact path='/calculadoras-irpf-sobre-empregado-clt-no-exercicio-de-2024-ano-calendario-de-2023' component={IrpfsobreempregadocltApartirdoExercicio2024AnoCalendariode2023} />
+      <Route exact path='/calculadoras-irpf-sobre-empregado-clt-no-exercicio-de-2025-ano-calendario-de-2024' component={IrpfsobreempregadocltApartirdoExercicio2025AnoCalendariode2024} />
+      <Route exact path='/calculadoras-irpf-sobre-empregado-clt-no-exercicio-de-2026-ano-calendario-de-2025' component={IrpfsobreempregadocltApartirdoExercicio2026AnoCalendariode2025} />
       <Route exact path='/calculadoras-irpf-sobre-servidor-ou-empregado-publico' component={IRPFsobreServidorouEmpregadoPublico} />
       <Route exact path='/calculadoras-irpf-mei-comercio' component={IRPFsobreMeiComercio} />
       <Route exact path='/calculadoras-irpf-mei-servico' component={IRPFsobreMeiServico} />      
@@ -127,7 +139,11 @@ function App(){
       <Route exact path='/calculadoras-irpf-mei-transporte-passageiro' component={IRPFsobreMeiTransportePassageiro} />
       <Route exact path='/calculadoras-irpf-mei-transporte-cargas' component={IRPFsobreMeiTransporteCargas} />
       <Route exact path='/calculadoras-irpf-sobre-advogado' component={IRPFsobreAdvogado} />
-      <Route exact path='/calculadoras-irpf-aposentado' component={IRPFsobreAposentado} />
+      <Route exact path='/calculadoras-irpf-aposentado-escolha-o-ano-da-declaracao' component={irpfsobreaposentadoEscolhaoAnodaDeclaracao} />
+      <Route exact path='/calculadoras-irpf-aposentado-do-exercicio-2017-ano-calendario-2016-ate-exercicio-2023-ano-calendario-2022' component={IRPFsobreAposentado} />
+      <Route exact path='/calculadoras-irpf-aposentado-no-exercicio-de-2024-ano-calendario-de-2023' component={IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023} />
+      <Route exact path='/calculadoras-Irpf-aposentado-no-exercicio-de-2025-ano-calendario-de-2024' component={IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024} />
+      <Route exact path='/calculadoras-Irpf-aposentado-no-exercicio-de-2026-ano-calendario-de-2025' component={IrpfsobreaposentadoApartirdoExercicio2026AnoCalendariode2025} />
       <Route exact path='/calculadoras-day-trader' component={IRdaytrader} />      
       <Route exact path='/calculadoras-distribuicao-lucro-socio-simples-nacional' component={Distribuicaolucrosociosn} />
       <Route exact path='/calculadoras-desconto-simplificado' component={Descontosimplificado} />

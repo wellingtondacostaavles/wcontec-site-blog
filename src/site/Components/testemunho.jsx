@@ -8,11 +8,11 @@ function Testemunho(){
                 <div className="carousel-inner">
                     
                     <div className="carousel-item active" data-bs-interval="15000">
-                        <h3>"No começo, eu confesso que estava um pouco apreensiva em relação à plataforma da Wcontec. Mas para minha alegria, descobri que operá-la é muito fácil e intuitivo. Estou encantada com a praticidade que a plataforma proporciona, permitindo que eu me comunique facilmente com meu contador sempre que preciso. Agradeço à Wcontec por disponibilizar uma ferramenta tão eficiente e por oferecer um suporte de qualidade aos seus clientes."</h3>
-                        <img src="Images/Testemunhos/Emmanuele.png" alt="cliente 3"/>
-                        <em>Emmanuele Rufino - Bananeiras/PB</em>
+                        <h3>"Como usuária da Wcontec, uma das coisas que mais me impressionou foi a eficiência do gerenciamento de e-mails. Tudo é feito automaticamente, o que torna o envio de cobranças para meus clientes extremamente fácil e rápido. Além disso, a plataforma oferece diversas outras funcionalidades que têm facilitado bastante a minha rotina de trabalho. Estou muito satisfeita com a parceria e recomendo a Wcontec a todos que buscam soluções inteligentes para seus negócios."</h3>
+                        <img src="Images/Testemunhos/fabianaolimpio.png" alt="cliente 4"/>
+                        <em>Fabiana Olimpio - Itamaracá/PE</em>
                     </div>
-
+                    
                     <div className="carousel-item" data-bs-interval="15000">
                         <h3>"Com a plataforma de gestão financeira e assessoria contábil online da Wcontec, tudo fica mais fácil. Em um único lugar, posso emitir notas fiscais de venda e serviço, controlar minhas contas a pagar e receber, e muito mais. Desde que comecei a usar a plataforma, meu trabalho ficou mais ágil e eficiente. Só tenho a agradecer à Wcontec pela parceria e pelo suporte constante."</h3>
                         <img src="Images/Testemunhos/EduardoFigueiredo.png" alt="cliente 2"/>
@@ -20,15 +20,15 @@ function Testemunho(){
                     </div>
 
                     <div className="carousel-item" data-bs-interval="15000">
-                        <h3>"Como usuária da Wcontec, uma das coisas que mais me impressionou foi a eficiência do gerenciamento de e-mails. Tudo é feito automaticamente, o que torna o envio de cobranças para meus clientes extremamente fácil e rápido. Além disso, a plataforma oferece diversas outras funcionalidades que têm facilitado bastante a minha rotina de trabalho. Estou muito satisfeita com a parceria e recomendo a Wcontec a todos que buscam soluções inteligentes para seus negócios."</h3>
-                        <img src="Images/Testemunhos/fabianaolimpio.png" alt="cliente 4"/>
-                        <em>Fabiana Olimpio - Itamaracá/PE</em>
-                    </div> 
-
-                    <div className="carousel-item" data-bs-interval="15000">
                         <h3>"Estou muito satisfeito com a plataforma de gestão empresarial da Wcontec. Ela me proporciona uma visão clara e detalhada dos dados financeiros da minha empresa, permitindo que eu tome decisões mais assertivas e eficientes. Além disso, a plataforma facilitou bastante a minha relação com o meu contador, pois agora posso acessar todos os arquivos e documentos necessários através do drive, sem precisar ficar ligando ou enviando e-mails. Agradeço à Wcontec por disponibilizar uma ferramenta tão completa e eficiente para a gestão do meu negócio."</h3>
                         <img src="Images/Testemunhos/josehelenilson.png" alt="cliente 1"/>
                         <em>José Helenilson - Pombos/PE</em>
+                    </div>
+
+                    <div className="carousel-item" data-bs-interval="15000">
+                        <h3>"No começo, eu confesso que estava um pouco apreensiva em relação à plataforma da Wcontec. Mas para minha alegria, descobri que operá-la é muito fácil e intuitivo. Estou encantada com a praticidade que a plataforma proporciona, permitindo que eu me comunique facilmente com meu contador sempre que preciso. Agradeço à Wcontec por disponibilizar uma ferramenta tão eficiente e por oferecer um suporte de qualidade aos seus clientes."</h3>
+                        <img src="Images/Testemunhos/Emmanuele.png" alt="cliente 3"/>
+                        <em>Emmanuele Rufino - Bananeiras/PB</em>
                     </div>
 
                     <div className="carousel-item" data-bs-interval="15000">
