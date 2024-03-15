@@ -217,10 +217,10 @@ body {
 }
 
 .mei-e-a-Importancia-do-contador-na-efd-reinf {
-  display: block;
+  display: none;
 }
 .a-importrancia-retencoes-reinf {
-  display: none;
+  display: block;
 }
 .valores-a-receber-bc {
   display: none;
