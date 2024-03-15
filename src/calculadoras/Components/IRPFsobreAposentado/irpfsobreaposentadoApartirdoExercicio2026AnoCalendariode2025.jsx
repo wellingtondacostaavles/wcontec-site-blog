@@ -86,7 +86,7 @@ function IrpfsobreaposentadoApartirdoExercicio2026AnoCalendariode2025(){
     const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 2033.28
     const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4577.27
     const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7953.21
-    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10752.02          
+    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10752.02
     
     const ValorIRDescontoSimplificado = ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado)
     
@@ -150,7 +150,7 @@ function IrpfsobreaposentadoApartirdoExercicio2026AnoCalendariode2025(){
     const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 2033.28
     const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4577.27
     const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7953.21
-    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10752.02          
+    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10752.02
     
     const ValorIRDeducoesLegais = ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais)
     

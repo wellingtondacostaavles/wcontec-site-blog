@@ -3,9 +3,9 @@ import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
-import './irpfsobreaposentado.css';
+import './irpfsobremeiservico.css';
 
-function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){  
+function IrpfsobremeiservicoApartirdoExercicio2025AnoCalendáriode2024(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -24,6 +24,10 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
         event.preventDefault();
         setNro1(value);        
     };
+    const handleChange2 = (event, value, maskedValue) => {
+        event.preventDefault();
+        setNro2(value);        
+    };
     const handleChange4 = (event, value, maskedValue) => {
         event.preventDefault();
         setNro4(value);        
@@ -33,34 +37,38 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
         setNro5(value);        
     };
     
-    const [Rendimentos, setNro1] = useState(0);
+    const [ReceitadeSevicos, setNro1] = useState(0);
+    const [DespesasdoMEI, setNro2] = useState(0);
     const [DeducoesLegais, setNro4] = useState(0);
     const [IRRF, setNro5] = useState(0);
     
-    const [ReceitaBrua, setResultado3] = useState(0);
-    const [operacaoReceitaBrua, setOperacao3] = useState('Somar');
+    const [Presucao8, setResultado2] = useState(0);
+    const [operacaoPresucao8, setOperacao2] = useState('Somar');
 
-    const [LucroTributavel, setResultado4] = useState(0);
-    const [operacaoLucroTributavel, setOperacao4] = useState('Subtrair');
+    const [LucroIsentoMei, setResultado3] = useState(0);
+    const [operacaoLucroIsentoMei, setOperacao3] = useState('Somar');
 
-    const MostarTabelasCalculos = ReceitaBrua
+    const [LucroTributavel, setResultado5] = useState(0);
+    const [operacaoLucroTributavel, setOperacao5] = useState('Subtrair');
+
+    const SituacaodosCalculos = LucroIsentoMei
     
-    const comTabela = 'Mostrando Tabelas de Calculos'
-    const semTabela = ''
+    const comCalculo = 'Parcela do Faturamento ISENTA na DIRPF'
+    const semCalculo = ''
 
-    const MostrarTabelas = Tabelas(MostarTabelasCalculos)
+    const MostrarCalculos = Calculos(SituacaodosCalculos)
 
-        function Tabelas(MostarTabelasCalculos){
-            if (MostarTabelasCalculos > 0.009){
-                return comTabela
+        function Calculos(SituacaodosCalculos){
+            if (SituacaodosCalculos > 0.009){
+                return comCalculo
             } else {
-            return semTabela
+            return semCalculo
             }
-        }     
+        }
     
     const SituacaoNaoObrigatoriedadedaDIRPF = LucroTributavel
 
-    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o trabalhador autônomo não está obrigado a apresentar a DIRPF'
+    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o MEI não está obrigado a apresentar a DIRPF'
     const taobrigada = ''
 
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
@@ -74,24 +82,24 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
         }
 
     //Desconto Simplificado
-    const [BaseCalculoDescontoSimplificado, setResultado5] = useState(0);
-    const [operacaoBaseCalculoDescontoSimplificado, setOperacao5] = useState('Subtrair'); 
+    const [BaseCalculoDescontoSimplificado, setResultado6] = useState(0);
+    const [operacaoBaseCalculoDescontoSimplificado, setOperacao6] = useState('Subtrair'); 
     
-    const [ResultdoIRDescontoSimplificado, setResultado6] = useState(0); 
-    const [operacaoResultdoIRDescontoSimplificado, setOperacao6] = useState('Subtrair');
+    const [ResultdoIRDescontoSimplificado, setResultado7] = useState(0); 
+    const [operacaoResultdoIRDescontoSimplificado, setOperacao7] = useState('Subtrair');
 
     const BaseCalculoFaixaDescontoSimplificado = BaseCalculoDescontoSimplificado   
 
     const faixa1DescontoSimplificado = 0
-    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 2022.24
-    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4566.23
-    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7942.17
-    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10740.98
+    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 1838.39
+    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4382.38
+    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7758.32
+    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10557.13          
     
     const ValorIRDescontoSimplificado = ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado)
     
         function ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado){            
-                if (BaseCalculoFaixaDescontoSimplificado <= 26963.20) {
+                if (BaseCalculoFaixaDescontoSimplificado <= 24511.92) {
                     return faixa1DescontoSimplificado
                 } else if (BaseCalculoFaixaDescontoSimplificado <= 33919.80) {
                     return faixa2DescontoSimplificado
@@ -138,24 +146,24 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
         }  
     
     //Deduções Legais
-    const [BaseCalculoDeducoesLegais, setResultado7] = useState(0);
-    const [operacaoBaseCalculoDeducoesLegais, setOperacao7] = useState('Subtrair');
+    const [BaseCalculoDeducoesLegais, setResultado8] = useState(0);
+    const [operacaoBaseCalculoDeducoesLegais, setOperacao8] = useState('Subtrair');
 
-    const [ResultdoIRDeducoesLegais, setResultado8] = useState(0); 
-    const [operacaoResultdoIRDeducoesLegais, setOperacao8] = useState('Subtrair');
+    const [ResultdoIRDeducoesLegais, setResultado9] = useState(0); 
+    const [operacaoResultdoIRDeducoesLegais, setOperacao9] = useState('Subtrair');
     
     const BaseCalculoFaixaDeducoesLegais = BaseCalculoDeducoesLegais   
 
     const faixa1 = 0
-    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 2022.24
-    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4566.23
-    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7942.17
-    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10740.98
+    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 1838.39
+    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4382.38
+    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7758.32
+    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10557.13
     
     const ValorIRDeducoesLegais = ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais)
     
         function ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais){            
-                if (BaseCalculoFaixaDeducoesLegais <= 26963.20) {
+                if (BaseCalculoFaixaDeducoesLegais <= 24511.92) {
                     return faixa1
                 } else if (BaseCalculoFaixaDeducoesLegais <= 33919.80) {
                     return faixa2
@@ -187,81 +195,96 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
             }
         }
     
-    const calcular3 = () =>{  
-        if (operacaoReceitaBrua=="Somar")
-        return (parseFloat(Rendimentos));
+    const calcular2 = () =>{  
+        if (operacaoPresucao8=="Somar")
+        return (parseFloat(ReceitadeSevicos) * 0.32);
     }
-    const calcular4 = () =>{  
+    const calcular3 = () =>{  
+        if (operacaoLucroIsentoMei=="Somar")
+        return (parseFloat(Presucao8));
+    }
+    const calcular5 = () =>{  
         if (operacaoLucroTributavel=="Subtrair")
-        return (parseFloat(ReceitaBrua));
+        return (parseFloat(ReceitadeSevicos) - parseFloat(DespesasdoMEI) - parseFloat(LucroIsentoMei));
     }
     //Desconto Simplificado
-    const calcular5 = () =>{  
+    const calcular6 = () =>{  
         if (operacaoBaseCalculoDescontoSimplificado=="Subtrair")
         return ((parseFloat(LucroTributavel)) - (ValordoDescontoSimplificado));
     }
-    const calcular6 = () =>{  
+    const calcular7 = () =>{  
         if (operacaoResultdoIRDescontoSimplificado=="Subtrair")
         return (parseFloat(ValorIRDescontoSimplificado) - parseFloat(IRRF));
     }
     //Deduções Legais
-    const calcular7 = () =>{  
+    const calcular8 = () =>{  
         if (operacaoBaseCalculoDeducoesLegais=="Subtrair")
         return (parseFloat(LucroTributavel) - parseFloat(DeducoesLegais));
     }
-    const calcular8 = () =>{  
+    const calcular9 = () =>{  
         if (operacaoResultdoIRDeducoesLegais=="Subtrair")
         return (parseFloat(ValorIRDeducoesLegais) - parseFloat(IRRF));
     } 
 
-    useEffect (() =>{setResultado3(calcular3())},[Rendimentos, operacaoReceitaBrua]);
-    useEffect (() =>{setResultado4(calcular4())},[ReceitaBrua, operacaoLucroTributavel]);
+    useEffect (() =>{setResultado2(calcular2())},[ReceitadeSevicos, operacaoPresucao8]);
+    useEffect (() =>{setResultado3(calcular3())},[Presucao8, operacaoLucroIsentoMei]);
+    useEffect (() =>{setResultado5(calcular5())},[ReceitadeSevicos, DespesasdoMEI, LucroIsentoMei, operacaoLucroTributavel]);
     //Desconto Simplificado
-    useEffect (() =>{setResultado5(calcular5())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
-    useEffect (() =>{setResultado6(calcular6())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
+    useEffect (() =>{setResultado6(calcular6())},[LucroTributavel, operacaoBaseCalculoDescontoSimplificado]);
+    useEffect (() =>{setResultado7(calcular7())},[ValorIRDescontoSimplificado, IRRF, operacaoResultdoIRDescontoSimplificado]);
     //Deduções Legais
-    useEffect (() =>{setResultado7(calcular7())},[LucroTributavel, DeducoesLegais, operacaoBaseCalculoDeducoesLegais]);
-    useEffect (() =>{setResultado8(calcular8())},[ValorIRDeducoesLegais, IRRF, operacaoResultdoIRDeducoesLegais]);
+    useEffect (() =>{setResultado8(calcular8())},[LucroTributavel, DeducoesLegais, operacaoBaseCalculoDeducoesLegais]);
+    useEffect (() =>{setResultado9(calcular9())},[ValorIRDeducoesLegais, IRRF, operacaoResultdoIRDeducoesLegais]);
       
         
         return <div>         
         
-        <section id="Irpf-sobre-aposentado-Apartir-do-Exercicio-2025-Ano-Calendario-de-2024">  
+        <section id="irpf-sobre-mei-servico-Apartir-do-Exercicio-2025-Ano-Calendario-de-2024">  
         <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
-                    <h2>Aposentado</h2>
-                    <h4>No exercício de 2025 (ano-calendário de 2024).</h4>
+                    <h2>Prestador de Serviços</h2>
+                    <h4>Microempreendedor Individual</h4>
+                    <h4>No exercício de 2024 (ano-calendário de 2023).</h4>
                 </div>
             </div>
             <div className="container">
-                <div className="row inputs-Irpf-sobre-aposentado-Apartir-do-Exercicio-2025-Ano-Calendario-de-2024">
+                <div className="row inputs-irpf-sobre-mei-servico-Apartir-do-Exercicio-2025-Ano-Calendario-de-2024">
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="pro-labore-irpf-sobre-aposentado">Rendimentos Recebidos</label>                
+                            <label htmlFor="ReceitadeServicos-irpf-sobre-mei-servico">Receita de Serviços</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="pro-labore-irpf-sobre-trabalhador-autonomo-geral" id="pro-labore-irpf-sobre-trabalhador-autonomo-geral" aria-label="Amount (to the nearest dollar)" value={Rendimentos} onChange={handleChange1}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="ReceitadeServiços-irpf-sobre-mei-servico" id="ReceitadeServiços-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={ReceitadeSevicos} onChange={handleChange1}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Deducoeslegais-irpf-sobre-aposentado">*Deduções Legais</label>                
+                            <label htmlFor="DespesasdoMEI-irpf-sobre-mei-servico">*Despesas do MEI</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-trabalhador-autonomo-geral" id="Deducoeslegais-irpf-sobre-trabalhador-autonomo-geral" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="DespesasdoMEI-irpf-sobre-mei-servico" id="DespesasdoMEI-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={DespesasdoMEI} onChange={handleChange2}/>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div className="col-sm-3">
+                        <div className="mb-3">
+                            <label htmlFor="Deducoeslegais-irpf-sobre-mei-servico">*Deduções Legais</label>                
+                            <div className="input-group mb-3">
+                                <span className="input-group-text inputs">R$</span>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-mei-servico" id="Deducoeslegais-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="irrf-irpf-sobre-aposentado">IRRF</label>                
+                            <label htmlFor="irrf-irpf-sobre-mei-servico">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-irpf-sobre-trabalhador-autonomo-geral" id="irrf-irpf-sobre-trabalhador-autonomo-geral" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-mei-servico" id="irrf-irpf-sobre-mei-servico" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
                             </div>                     
                         </div>  
                     </div>
@@ -269,21 +292,46 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
             </div>
             <div className="container">
                 <div className="row text-center">
+                <p><span className="segundo-p">*Despesas do MEI (Água, Luz, Telefone, compra de Mercadoria, Aluguel do Espaço).</span></p>
                 <p><span className="segundo-p">*Veja quais são as<a href="/blog-deducoes-legais-desconto-simplificado-irpf" target="_blank" className="terceiro-a"> Deduções Legais</a></span></p>
                 <p><span className="segundo-p">Fale com a gente caso não saiba quais foram seus Rendimentos<a href="https://bit.ly/3IWcXYn" target="_blank" className="whatsapp-fa"> <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></span></p>
                 </div>
-            </div> 
-            {MostrarTabelas ? <div>
+            </div>
+            <div className="container">                
+                <div className="row">
+                    <div className="col-lg-4"></div>
+                    <div className="col-lg-4">
+                    {MostrarCalculos ? <div className="table-irpf-sobre-mei-servico">
+                    <table className="table table table-responsive table-bordered">
+                        <tr>
+                            <th className="width80"></th>
+                            <th className="width20"></th>                    
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <th scope="row" className="tabela-p">
+                                <p>Dedução de 32% - <a href="http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="_blank" className="tabela-a">Art. 14, § 1º da LC 123/2006</a>, <a href="http://www.planalto.gov.br/ccivil_03/leis/l9249.htm" target="_blank" className="tabela-a">Art. 15, § 1º, lebra b, III, da Lei 9.249/95.</a></p>
+                            </th>
+                            <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                        </tr>                
+                        </tbody> 
+                    </table>
+                </div> :''}       
+                        </div>
+                    <div className="col-lg-4"></div>                         
+            </div>  
+        </div> 
+        {MostrarCalculos ? <div>
             <div className="container">
                 <div className="row text-center">
                     <div className="titulo-declaraco">
-                        <h1>Como ficaria na declaração</h1>
+                        <h1>Como ficará na declaração</h1>
                     </div>
                 </div>              
                 <div className="row text-center">                 
                     <div className="col-lg-6">
                             <h3>Desconto Simplificado</h3> 
-                            <div className="table-irpf-sobre-aposentado">
+                            <div className="table-irpf-sobre-mei-servico">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -295,6 +343,13 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
                                         <p>Rendimento Tributável</p>
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" className="tabela-p">
+                                        <p>Rendimentos Isentos e Não Tributáveis.</p>
+                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro-labore e alugéis."</p>
+                                        </th>
+                                    <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
                                 {SituacaoIRDescontoSimplificado ?<tr>
                                     <th scope="row" className="tabela-p">
@@ -332,7 +387,7 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
                         </div>
                    <div className="col-lg-6">
                             <h3>Deduções Legais</h3> 
-                            <div className="table-irpf-sobre-aposentado">
+                            <div className="table-irpf-sobre-mei-servico">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -344,6 +399,13 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
                                         <p>Rendimento Tributável</p>
                                     </th>
                                     <td className="bi">{[LucroTributavel].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" className="tabela-p">
+                                        <p>Rendimentos Isentos e Não Tributáveis.</p>
+                                        <p>"Ficha 13 - Rendimentos de sócio ou titular de microempresa ou empresa de pequeno porte optante do Simples Nacional, exceto pro-labore e alugéis."</p>
+                                        </th>
+                                    <td className="bi">{[LucroIsentoMei].toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</td>
                                 </tr>
                                 {SituacaoIRDeducoesLegais ?<tr>
                                     <th scope="row" className="tabela-p">
@@ -389,4 +451,4 @@ function IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024(){
       </div> 
     }
   
-  export default IrpfsobreaposentadoApartirdoExercicio2025AnoCalendariode2024;
+  export default IrpfsobremeiservicoApartirdoExercicio2025AnoCalendáriode2024;

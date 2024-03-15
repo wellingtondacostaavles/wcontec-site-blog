@@ -246,7 +246,7 @@ function IRPFsobreMeiServico(){
                     <h1>DIRPF</h1>
                     <h2>Prestador de Serviços</h2>
                     <h4>Microempreendedor Individual</h4>
-                    <p>Calcule o valor do imposto de renda pessoa física se você é um microempreendedor individual prestador de serviços em geral.</p>
+                    <h4>Do exercício 2017 (ano-calendário 2016) até exercício 2023 (ano-calendário 2022)</h4>
                 </div>
             </div>
             <div className="container">

@@ -23,6 +23,10 @@ import IrpfsobreempregadocltApartirdoExercicio2026AnoCalendariode2025 from './ca
 import IRPFsobreServidorouEmpregadoPublico from './calculadoras/Components/IRPFsobreServidorouEmpregadoPublico/irpfsobreservidorouempregadopublico.jsx';
 import IRPFsobreMeiComercio from './calculadoras/Components/IRPFsobreMeiComercio/irpfsobremeicomercio.jsx';
 import IRPFsobreMeiServico from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservico.jsx';
+import IrpfsobremeiservicoEscolhaoAnodaDeclaracao from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservicoEscolhaoAnodaDeclaracao.jsx';
+import IrpfsobremeiservicoApartirdoExercicio2024AnoCalendáriode2023 from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservicoApartirdoExercicio2024AnoCalendáriode2023.jsx';
+import IrpfsobremeiservicoApartirdoExercicio2025AnoCalendáriode2024 from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservicoApartirdoExercicio2025AnoCalendáriode2024.jsx';
+import IrpfsobremeiservicoApartirdoExercicio2026AnoCalendáriode2025 from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservicoApartirdoExercicio2026AnoCalendáriode2025.jsx';
 import IRPFsobreSocioMedico from './calculadoras/Components/IRPFsobreSocioMedico/irpfsobresociomedico.jsx';
 import IRPFsobreTrabalhadorAutonomoGeral from './calculadoras/Components/IRPFsobreTrabalhadorAutonomoGeral/irpfsobretrabalhadorautonomogeral.jsx';
 import IRPFsobreAutonomoTrasportePassageiro from './calculadoras/Components/IRPFsobreAutonomoTrasportePassageiro/irpfsobreautonomotrasportepassageiro.jsx';
@@ -131,7 +135,11 @@ function App(){
       <Route exact path='/calculadoras-irpf-sobre-empregado-clt-no-exercicio-de-2026-ano-calendario-de-2025' component={IrpfsobreempregadocltApartirdoExercicio2026AnoCalendariode2025} />
       <Route exact path='/calculadoras-irpf-sobre-servidor-ou-empregado-publico' component={IRPFsobreServidorouEmpregadoPublico} />
       <Route exact path='/calculadoras-irpf-mei-comercio' component={IRPFsobreMeiComercio} />
-      <Route exact path='/calculadoras-irpf-mei-servico' component={IRPFsobreMeiServico} />      
+      <Route exact path='/calculadoras-irpf-mei-servico-escolha-o-ano-da-declaracao' component={IrpfsobremeiservicoEscolhaoAnodaDeclaracao} />      
+      <Route exact path='/calculadoras-irpf-mei-servico-do-exercicio-2017-ano-calendario-2016-ate-exercicio-2023-ano-calendario-2022' component={IRPFsobreMeiServico} />
+      <Route exact path='/calculadoras-irpf-mei-servico-no-exercicio-de-2024-ano-calendario-de-2023' component={IrpfsobremeiservicoApartirdoExercicio2024AnoCalendáriode2023} />
+      <Route exact path='/calculadoras-irpf-mei-servico-no-exercicio-de-2025-ano-calendario-de-2024' component={IrpfsobremeiservicoApartirdoExercicio2025AnoCalendáriode2024} />
+      <Route exact path='/calculadoras-irpf-mei-servico-no-exercicio-de-2026-ano-calendario-de-2025' component={IrpfsobremeiservicoApartirdoExercicio2026AnoCalendáriode2025} />
       <Route exact path='/calculadoras-irpf-socio-medico' component={IRPFsobreSocioMedico} />
       <Route exact path='/calculadoras-irpf-sobre-trabalhador-autonomo-geral' component={IRPFsobreTrabalhadorAutonomoGeral} />
       <Route exact path='/calculadoras-irpf-autonomo-transporte-passageiro' component={IRPFsobreAutonomoTrasportePassageiro} />
