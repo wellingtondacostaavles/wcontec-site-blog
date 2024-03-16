@@ -246,7 +246,7 @@ function IrpfsobremeiservicoApartirdoExercicio2026AnoCalendáriode2025(){
                     <h1>DIRPF</h1>
                     <h2>Prestador de Serviços</h2>
                     <h4>Microempreendedor Individual</h4>
-                    <h4>No exercício de 2026 (ano-calendário de 2025).</h4>
+                    <h4>A partir do exercício de 2026 (ano-calendário de 2025).</h4>
                 </div>
             </div>
             <div className="container">

@@ -232,7 +232,7 @@ function IRPFsobreAdvogado(){
                 <div className="titulo">
                     <h1>DIRPF</h1>
                     <h2>Advogado</h2>
-                    <p>Calcule o valor do imposto de renda pessoa física se você é um advogado que presta serviços para pessoas físicas e/ou jurídicas</p>
+                    <h4>Do exercício 2017 (ano-calendário 2016) até exercício 2023 (ano-calendário 2022)</h4>
                 </div>
             </div>
             <div className="container">

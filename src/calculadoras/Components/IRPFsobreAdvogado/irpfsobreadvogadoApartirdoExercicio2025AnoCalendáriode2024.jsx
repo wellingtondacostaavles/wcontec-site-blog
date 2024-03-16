@@ -3,9 +3,9 @@ import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
-import './irpfsobreaposentado.css';
+import './irpfsobreadvogado.css';
 
-function IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023(){  
+function IrpfsobreadvogadoApartirdoExercicio2025AnoCalendariode2024(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -60,7 +60,7 @@ function IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023(){
     
     const SituacaoNaoObrigatoriedadedaDIRPF = LucroTributavel
 
-    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o trabalhador autônomo não está obrigado a apresentar a DIRPF'
+    const naotaobrigada = 'Observação: Com base no valor do Rendimento Tributável encontrato, o Empregado regido pela CLT não está obrigado a apresentar a DIRPF'
     const taobrigada = ''
 
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
@@ -83,15 +83,15 @@ function IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023(){
     const BaseCalculoFaixaDescontoSimplificado = BaseCalculoDescontoSimplificado   
 
     const faixa1DescontoSimplificado = 0
-    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 1838.39
-    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4382.38
-    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7758.32
-    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10557.13
+    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 2022.24
+    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4566.23
+    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7942.17
+    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10740.98
     
     const ValorIRDescontoSimplificado = ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado)
     
         function ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado){            
-                if (BaseCalculoFaixaDescontoSimplificado <= 24511.92) {
+                if (BaseCalculoFaixaDescontoSimplificado <= 26963.20) {
                     return faixa1DescontoSimplificado
                 } else if (BaseCalculoFaixaDescontoSimplificado <= 33919.80) {
                     return faixa2DescontoSimplificado
@@ -147,15 +147,15 @@ function IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023(){
     const BaseCalculoFaixaDeducoesLegais = BaseCalculoDeducoesLegais   
 
     const faixa1 = 0
-    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 1838.39
-    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4382.38
-    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7758.32
-    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10557.13
+    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 2022.24
+    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4566.23
+    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7942.17
+    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10740.98
     
     const ValorIRDeducoesLegais = ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais)
     
         function ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais){            
-                if (BaseCalculoFaixaDeducoesLegais <= 24511.92) {
+                if (BaseCalculoFaixaDeducoesLegais <= 26963.20) {
                     return faixa1
                 } else if (BaseCalculoFaixaDeducoesLegais <= 33919.80) {
                     return faixa2
@@ -226,42 +226,42 @@ function IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023(){
         
         return <div>         
         
-        <section id="irpf-sobre-aposentado-Apartir-do-Exercicio-2024-Ano-Calendario-de-2023">  
+        <section id="irpf-sobre-advogado-Apartir-do-Exercicio-2025-Ano-Calendario-de-2024">  
         <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
-                    <h2>Aposentado</h2>
-                    <h4>No exercício de 2024 (ano-calendário de 2023).</h4>
+                    <h2>Advogado</h2>
+                    <h4>No exercício de 2025 (ano-calendário de 2024).</h4>
                 </div>
             </div>
             <div className="container">
-                <div className="row inputs-irpf-sobre-aposentado-Apartir-do-Exercicio-2024-Ano-Calendario-de-2023">
+                <div className="row inputs-irpf-sobre-advogado-Apartir-do-Exercicio-2025-Ano-Calendario-de-2024">
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="pro-labore-irpf-sobre-aposentado">Rendimentos Recebidos</label>                
+                            <label htmlFor="pro-labore-irpf-sobre-advogado">Rend. (PJ + PF)</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="pro-labore-irpf-sobre-trabalhador-autonomo-geral" id="pro-labore-irpf-sobre-trabalhador-autonomo-geral" aria-label="Amount (to the nearest dollar)" value={Rendimentos} onChange={handleChange1}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="pro-labore-irpf-sobre-advogado" id="pro-labore-irpf-sobre-empregado-clt" aria-label="Amount (to the nearest dollar)" value={Rendimentos} onChange={handleChange1}/>
                             </div>                     
                         </div>
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="Deducoeslegais-irpf-sobre-aposentado">*Deduções Legais</label>                
+                            <label htmlFor="Deducoeslegais-irpf-sobre-advogado">*Deduções Legais</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-trabalhador-autonomo-geral" id="Deducoeslegais-irpf-sobre-trabalhador-autonomo-geral" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="Deducoeslegais-irpf-sobre-advogado" id="Deducoeslegais-irpf-sobre-empregado-clt" aria-label="Amount (to the nearest dollar)" value={DeducoesLegais} onChange={handleChange4}/>
                             </div>                     
                         </div>  
                     </div>
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="irrf-irpf-sobre-aposentado">IRRF</label>                
+                            <label htmlFor="irrf-irpf-sobre-advogado">IRRF</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
-                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-irpf-sobre-trabalhador-autonomo-geral" id="irrf-irpf-sobre-trabalhador-autonomo-geral" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
+                                <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="irrf-irpf-sobre-advogado" id="irrf-irpf-sobre-empregado-clt" aria-label="Amount (to the nearest dollar)" value={IRRF} onChange={handleChange5}/>
                             </div>                     
                         </div>  
                     </div>
@@ -283,7 +283,7 @@ function IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023(){
                 <div className="row text-center">                 
                     <div className="col-lg-6">
                             <h3>Desconto Simplificado</h3> 
-                            <div className="table-irpf-sobre-aposentado">
+                            <div className="table-irpf-sobre-advogado">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -332,7 +332,7 @@ function IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023(){
                         </div>
                    <div className="col-lg-6">
                             <h3>Deduções Legais</h3> 
-                            <div className="table-irpf-sobre-aposentado">
+                            <div className="table-irpf-sobre-advogado">
                             <table className="table table-responsive table-bordered">
                                 <tr>
                                     <th className="width80"></th>
@@ -389,5 +389,4 @@ function IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023(){
       </div> 
     }
   
-  export default IrpfsobreaposentadoApartirdoExercicio2024AnoCalendariode2023;
-
+  export default IrpfsobreadvogadoApartirdoExercicio2025AnoCalendariode2024;

@@ -63,7 +63,7 @@ function DeclaracaoIRPF(){
                         <center><Link to="/calculadoras-irpf-mei-transporte-cargas"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-mei.png" className="zoom-img"/></Link></center>
                     </div>             
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-irpf-sobre-advogado"><img src="/Images/tegs-calculadoras/Tag-advogado.png" className="zoom-img"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-advogado-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-advogado.png" className="zoom-img"/></Link></center>
                     </div>
                 </div>             
             </div>
