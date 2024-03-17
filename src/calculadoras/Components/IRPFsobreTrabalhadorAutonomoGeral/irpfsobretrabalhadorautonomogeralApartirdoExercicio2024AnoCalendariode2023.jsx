@@ -5,7 +5,7 @@ import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './irpfsobretrabalhadorautonomogeral.css';
 
-function IRPFsobreTrabalhadorAutonomoGeral(){  
+function IrpfsobretrabalhadorautonomogeralApartirdoExercicio2024AnoCalendariode2023(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -66,7 +66,7 @@ function IRPFsobreTrabalhadorAutonomoGeral(){
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
 
         function SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF){
-            if (SituacaoNaoObrigatoriedadedaDIRPF <= 28559.70) {
+            if (SituacaoNaoObrigatoriedadedaDIRPF <= 30639.90) {
                 return naotaobrigada
             } else {
             return taobrigada
@@ -83,15 +83,15 @@ function IRPFsobreTrabalhadorAutonomoGeral(){
     const BaseCalculoFaixaDescontoSimplificado = BaseCalculoDescontoSimplificado   
 
     const faixa1DescontoSimplificado = 0
-    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 1713.58
-    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4257.57
-    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7633.51
-    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10432.32          
+    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 1838.39
+    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4382.38
+    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7758.32
+    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10557.13
     
     const ValorIRDescontoSimplificado = ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado)
     
         function ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado){            
-                if (BaseCalculoFaixaDescontoSimplificado <= 22847.76) {
+                if (BaseCalculoFaixaDescontoSimplificado <= 24511.92) {
                     return faixa1DescontoSimplificado
                 } else if (BaseCalculoFaixaDescontoSimplificado <= 33919.80) {
                     return faixa2DescontoSimplificado
@@ -147,15 +147,15 @@ function IRPFsobreTrabalhadorAutonomoGeral(){
     const BaseCalculoFaixaDeducoesLegais = BaseCalculoDeducoesLegais   
 
     const faixa1 = 0
-    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 1713.58
-    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4257.57
-    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7633.51
-    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10432.32          
+    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 1838.39
+    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4382.38
+    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7758.32
+    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10557.13
     
     const ValorIRDeducoesLegais = ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais)
     
         function ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais){            
-                if (BaseCalculoFaixaDeducoesLegais <= 22847.76) {
+                if (BaseCalculoFaixaDeducoesLegais <= 24511.92) {
                     return faixa1
                 } else if (BaseCalculoFaixaDeducoesLegais <= 33919.80) {
                     return faixa2
@@ -226,17 +226,17 @@ function IRPFsobreTrabalhadorAutonomoGeral(){
         
         return <div>         
         
-        <section id="irpf-sobre-trabalhador-autonomo-geral">  
+        <section id="irpf-sobre-trabalhador-autonomo-geral-Apartir-do-Exercicio-2024-Ano-Calendario-de-2023">  
         <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
                     <h2>Trabalhador Autônomo em Geral</h2>
-                    <h4>Do exercício 2017 (ano-calendário 2016) até exercício 2023 (ano-calendário 2022)</h4>
+                    <h4>No exercício de 2024 (ano-calendário de 2023).</h4>
                 </div>
             </div>
             <div className="container">
-                <div className="row inputs-irpf-sobre-trabalhador-autonomo-geral">
+                <div className="row inputs-irpf-sobre-trabalhador-autonomo-geral-Apartir-do-Exercicio-2024-Ano-Calendario-de-2023">
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
@@ -389,4 +389,4 @@ function IRPFsobreTrabalhadorAutonomoGeral(){
       </div> 
     }
   
-  export default IRPFsobreTrabalhadorAutonomoGeral;
+  export default IrpfsobretrabalhadorautonomogeralApartirdoExercicio2024AnoCalendariode2023;
