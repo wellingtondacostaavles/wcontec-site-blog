@@ -5,7 +5,7 @@ import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './irpfsobremeitransportecargas.css';
 
-function IRPFsobreMeiTransporteCargas(){  
+function IrpfsobremeitransportecargasApartirdoExercicio2025AnoCalendariode2024(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -100,7 +100,7 @@ function IRPFsobreMeiTransporteCargas(){
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
 
         function SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF){
-            if (SituacaoNaoObrigatoriedadedaDIRPF <= 28559.70) {
+            if (SituacaoNaoObrigatoriedadedaDIRPF <= 30639.90) {
                 return naotaobrigada
             } else {
             return taobrigada
@@ -117,15 +117,15 @@ function IRPFsobreMeiTransporteCargas(){
     const BaseCalculoFaixaDescontoSimplificado = BaseCalculoDescontoSimplificado   
 
     const faixa1DescontoSimplificado = 0
-    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 1713.58
-    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4257.57
-    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7633.51
-    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10432.32          
+    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 2022.24
+    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4566.23
+    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7942.17
+    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10740.98
     
     const ValorIRDescontoSimplificado = ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado)
     
         function ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado){            
-                if (BaseCalculoFaixaDescontoSimplificado <= 22847.76) {
+                if (BaseCalculoFaixaDescontoSimplificado <= 26963.20) {
                     return faixa1DescontoSimplificado
                 } else if (BaseCalculoFaixaDescontoSimplificado <= 33919.80) {
                     return faixa2DescontoSimplificado
@@ -181,15 +181,15 @@ function IRPFsobreMeiTransporteCargas(){
     const BaseCalculoFaixaDeducoesLegais = BaseCalculoDeducoesLegais   
 
     const faixa1 = 0
-    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 1713.58
-    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4257.57
-    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7633.51
-    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10432.32          
+    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 2022.24
+    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4566.23
+    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7942.17
+    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10740.98
     
     const ValorIRDeducoesLegais = ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais)
     
         function ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais){            
-                if (BaseCalculoFaixaDeducoesLegais <= 22847.76) {
+                if (BaseCalculoFaixaDeducoesLegais <= 26963.20) {
                     return faixa1
                 } else if (BaseCalculoFaixaDeducoesLegais <= 33919.80) {
                     return faixa2
@@ -275,14 +275,14 @@ function IRPFsobreMeiTransporteCargas(){
         
         return <div>         
         
-        <section id="irpf-sobre-mei-transporte-cargas">  
+        <section id="irpf-sobre-mei-transporte-cargas">
         <NavbarCalculadora/>
         <div className="row text-center">
                 <div className="titulo">
                     <h1>DIRPF</h1>
                     <h2>Motorista de transporte de cargas</h2>
                     <h4>Microempreendedor Individual</h4>
-                    <h4>Do exercício 2017 (ano-calendário 2016) até exercício 2023 (ano-calendário 2022)</h4>
+                    <h4>No exercício de 2025 (ano-calendário de 2024).</h4>
                 </div>
             </div>
             <div className="container">
@@ -290,7 +290,7 @@ function IRPFsobreMeiTransporteCargas(){
                     
                     <div className="col-sm-3">
                         <div className="mb-3">
-                            <label htmlFor="TransportedeCargas-irpf-sobre-mei-transporte-cargas">Transp. de Cargas</label>                
+                            <label htmlFor="TransportedeCargas-">Transp. de Cargas</label>                
                             <div className="input-group mb-3">
                                 <span className="input-group-text inputs">R$</span>
                                 <CurrencyInputWcontec currency="BRL" config={currencyConfig} className="form-control inputs" name="TransportedeCargas-irpf-sobre-mei-transporte-cargas" id="TransportedePassageiros-irpf-sobre-mei-transporte-passageiro-" aria-label="Amount (to the nearest dollar)" value={TransportedeCargas} onChange={handleChange1}/>
@@ -515,4 +515,4 @@ function IRPFsobreMeiTransporteCargas(){
       </div> 
     }
   
-  export default IRPFsobreMeiTransporteCargas;
+  export default IrpfsobremeitransportecargasApartirdoExercicio2025AnoCalendariode2024;

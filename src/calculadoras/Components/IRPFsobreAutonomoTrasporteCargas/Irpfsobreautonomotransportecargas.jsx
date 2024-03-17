@@ -3,9 +3,9 @@ import CurrencyInputWcontec from '../Props/MaskCurrency/currencyInputWcontec';
 import NavbarCalculadora from '../Navbar/navbarcalculadora';
 import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
-import './irpfsobreautonomotrasportecargas.css';
+import './irpfsobreautonomotransportecargas.css';
 
-function IRPFsobreAutonomoTrasporteCargas(){  
+function IRPFsobreAutonomoTransporteCargas(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -274,7 +274,7 @@ function IRPFsobreAutonomoTrasporteCargas(){
                     <h1>DIRPF</h1>
                     <h2>Motorista de transporte de cargas</h2>
                     <h4>Trabalhador Autônomo</h4>
-                    <p>Calcule o valor do imposto de renda pessoa física se você é um trabalhador autonômo que transporta cargas</p>
+                    <h4>Do exercício 2017 (ano-calendário 2016) até exercício 2023 (ano-calendário 2022)</h4>
                 </div>
             </div>
             <div className="container">
@@ -487,4 +487,4 @@ function IRPFsobreAutonomoTrasporteCargas(){
       </div> 
     }
   
-  export default IRPFsobreAutonomoTrasporteCargas;
+  export default IRPFsobreAutonomoTransporteCargas;

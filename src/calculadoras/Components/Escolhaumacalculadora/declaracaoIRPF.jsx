@@ -49,7 +49,7 @@ function DeclaracaoIRPF(){
                         <center><Link to="/calculadoras-irpf-autonomo-transporte-passageiro"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-autonomo.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-irpf-autonomo-transporte-cargas"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-autonomo.png" className="zoom-img"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-autonomo-transporte-cargas-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-autonomo.png" className="zoom-img"/></Link></center>
                     </div>             
                 </div>             
             </div>
@@ -60,7 +60,7 @@ function DeclaracaoIRPF(){
                         <center><Link to="/calculadoras-irpf-mei-transporte-passageiro"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-mei.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-irpf-mei-transporte-cargas"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-mei.png" className="zoom-img"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-mei-transporte-cargas-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-mei.png" className="zoom-img"/></Link></center>
                     </div>             
                     <div className="col-lg-4 tgs">
                         <center><Link to="/calculadoras-irpf-advogado-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-advogado.png" className="zoom-img"/></Link></center>
