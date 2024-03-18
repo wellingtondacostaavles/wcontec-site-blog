@@ -23,7 +23,7 @@ const PushMessage = () => {
     }, 60000); // 60 segundos
 
     const timeout2 = setTimeout(() => {
-      setShowMessage2(true);
+      setShowMessage2(false);
     }, 90000); // 90 segundos
 
     const timeout3 = setTimeout(() => {

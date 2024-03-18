@@ -91,7 +91,7 @@ function Parceiros(){
                         </a>
                     </div>
                     <div className="col-2 grayscale-image zoom-img">
-                        <a href="http://bit.ly/3ASk0Nm" target="_blank">
+                        <a href="#">
                             <img src="/Images/Parceiros/Serasa.png" />
                         </a>
                     </div>
@@ -149,34 +149,7 @@ function Parceiros(){
                     <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="3000">
                             <a href="https://bit.ly/3Pynts7" target="_blank"><img src="/Images/Parceiros/Banner-renda-extra-hotmart.png" className="zoom-img"/></a>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="3000">
-                            <a href="http://bit.ly/3ASk0Nm" target="_blank"><img src="/Images/Parceiros/Portabilidade-certificado-serasa-1.png" className="zoom-img"/></a>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="300">
-                            <a href="http://bit.ly/3ASk0Nm" target="_blank"><img src="/Images/Parceiros/Portabilidade-certificado-serasa-2.png" className="zoom-img"/></a>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="15">
-                            <a href="http://bit.ly/3ASk0Nm" target="_blank"><img src="/Images/Parceiros/Portabilidade-certificado-serasa-3.png" className="zoom-img"/></a>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="300">
-                            <a href="http://bit.ly/3ASk0Nm" target="_blank"><img src="/Images/Parceiros/Portabilidade-certificado-serasa-2.png" className="zoom-img"/></a>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="15">
-                            <a href="http://bit.ly/3ASk0Nm" target="_blank"><img src="/Images/Parceiros/Portabilidade-certificado-serasa-3.png" className="zoom-img"/></a>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="300">
-                            <a href="http://bit.ly/3ASk0Nm" target="_blank"><img src="/Images/Parceiros/Portabilidade-certificado-serasa-2.png" className="zoom-img"/></a>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="15">
-                            <a href="http://bit.ly/3ASk0Nm" target="_blank"><img src="/Images/Parceiros/Portabilidade-certificado-serasa-3.png" className="zoom-img"/></a>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="300">
-                            <a href="http://bit.ly/3ASk0Nm" target="_blank"><img src="/Images/Parceiros/Portabilidade-certificado-serasa-2.png" className="zoom-img"/></a>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="3000">
-                            <a href="https://bit.ly/45y1Bmp" target="_blank"><img src="/Images/Parceiros/torne-se-revendedor-serasa.png" className="zoom-img"/></a>
-                        </div>
+                        </div>                       
                         <div className="carousel-item" data-bs-interval="3000">
                             <a href="https://bit.ly/3pOcj5d" target="_blank"><img src="/Images/Parceiros/Vargas-banner-Lado-B.png" className="zoom-img"/></a>
                         </div>                        

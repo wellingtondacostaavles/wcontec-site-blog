@@ -5,7 +5,7 @@ import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './irpfsobreservidorouempregadopublico.css';
 
-function IRPFsobreServidorouEmpregadoPublico(){  
+function IrpfsobreservidorouempregadopublicoApartirdoExercicio2025AnoCalendariode2024(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -66,7 +66,7 @@ function IRPFsobreServidorouEmpregadoPublico(){
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
 
         function SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF){
-            if (SituacaoNaoObrigatoriedadedaDIRPF <= 28559.70) {
+            if (SituacaoNaoObrigatoriedadedaDIRPF <= 30639.90) {
                 return naotaobrigada
             } else {
             return taobrigada
@@ -83,15 +83,15 @@ function IRPFsobreServidorouEmpregadoPublico(){
     const BaseCalculoFaixaDescontoSimplificado = BaseCalculoDescontoSimplificado   
 
     const faixa1DescontoSimplificado = 0
-    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 1713.58
-    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4257.57
-    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7633.51
-    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10432.32          
+    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 2022.24
+    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4566.23
+    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7942.17
+    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10740.98
     
     const ValorIRDescontoSimplificado = ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado)
     
         function ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado){            
-                if (BaseCalculoFaixaDescontoSimplificado <= 22847.76) {
+                if (BaseCalculoFaixaDescontoSimplificado <= 26963.20) {
                     return faixa1DescontoSimplificado
                 } else if (BaseCalculoFaixaDescontoSimplificado <= 33919.80) {
                     return faixa2DescontoSimplificado
@@ -147,15 +147,15 @@ function IRPFsobreServidorouEmpregadoPublico(){
     const BaseCalculoFaixaDeducoesLegais = BaseCalculoDeducoesLegais   
 
     const faixa1 = 0
-    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 1713.58
-    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4257.57
-    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7633.51
-    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10432.32          
+    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 2022.24
+    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4566.23
+    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7942.17
+    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10740.98
     
     const ValorIRDeducoesLegais = ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais)
     
         function ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais){            
-                if (BaseCalculoFaixaDeducoesLegais <= 22847.76) {
+                if (BaseCalculoFaixaDeducoesLegais <= 26963.20) {
                     return faixa1
                 } else if (BaseCalculoFaixaDeducoesLegais <= 33919.80) {
                     return faixa2
@@ -232,7 +232,7 @@ function IRPFsobreServidorouEmpregadoPublico(){
                 <div className="titulo">
                     <h1>DIRPF</h1>
                     <h2>Servidor ou empregado público</h2>
-                    <h4>Do exercício 2017 (ano-calendário 2016) até exercício 2023 (ano-calendário 2022)</h4>
+                    <h4>No exercício de 2025 (ano-calendário de 2024).</h4>
                 </div>
             </div>
             <div className="container">
@@ -389,4 +389,4 @@ function IRPFsobreServidorouEmpregadoPublico(){
       </div> 
     }
   
-  export default IRPFsobreServidorouEmpregadoPublico;
+  export default IrpfsobreservidorouempregadopublicoApartirdoExercicio2025AnoCalendariode2024;

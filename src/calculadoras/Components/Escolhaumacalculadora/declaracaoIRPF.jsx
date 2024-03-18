@@ -21,7 +21,7 @@ function DeclaracaoIRPF(){
                         <center><Link to="/calculadoras-irpf-sobre-trabalhador-autonomo-geral-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-autonomo-regra-geral.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                         <center><Link to="/calculadoras-irpf-sobre-servidor-ou-empregado-publico"><img src="/Images/tegs-calculadoras/Tag-servidor-ou-empregado-publico.png" className="zoom-img"/></Link></center>
+                         <center><Link to="/calculadoras-irpf-servidor-ou-empregado-publico-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-servidor-ou-empregado-publico.png" className="zoom-img"/></Link></center>
                     </div>                                 
                 </div>             
             </div>               
@@ -46,7 +46,7 @@ function DeclaracaoIRPF(){
                         <center><Link to="#"><img src="/Images/tegs-calculadoras/Tag-atualizando-calculadora.png"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-irpf-autonomo-transporte-passageiro"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-autonomo.png" className="zoom-img"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-autonomo-transporte-passageiro-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-passageiros-autonomo.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
                         <center><Link to="/calculadoras-irpf-autonomo-transporte-cargas-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-motorista-transporte-cargas-autonomo.png" className="zoom-img"/></Link></center>

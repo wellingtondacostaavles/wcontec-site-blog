@@ -274,7 +274,7 @@ function IRPFsobreAutonomoTrasportePassageiro(){
                     <h1>DIRPF</h1>
                     <h2>Motorista de transporte de passageiros</h2>
                     <h4>Trabalhador Autônomo</h4>
-                    <p>Calcule o valor do imposto de renda pessoa física se você é um trabalhador autonômo que transporta passageiros</p>
+                    <h4>Do exercício 2017 (ano-calendário 2016) até exercício 2023 (ano-calendário 2022)</h4>
                 </div>
             </div>
             <div className="container">
