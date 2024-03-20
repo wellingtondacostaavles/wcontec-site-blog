@@ -5,7 +5,7 @@ import Rodapeprodutos from '../../../site/Components/rodapeprodutos';
 
 import './irpfsobremeicomercio.css';
 
-function IRPFsobreMeiComercio(){  
+function IrpfsobremeicomercioApartirdoExercicio2024AnoCalendariode2023(){  
     
     const currencyConfig = {
         locale: "pt-BR",
@@ -74,7 +74,7 @@ function IRPFsobreMeiComercio(){
     const MostrarSituacaoNaoObrigatoriedadedaDIRPF = SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF)
 
         function SituacaodaNaoObrigatoriedadedaDIRPF(SituacaoNaoObrigatoriedadedaDIRPF){
-            if (SituacaoNaoObrigatoriedadedaDIRPF <= 28559.70) {
+            if (SituacaoNaoObrigatoriedadedaDIRPF <= 30639.90) {
                 return naotaobrigada
             } else {
             return taobrigada
@@ -91,15 +91,15 @@ function IRPFsobreMeiComercio(){
     const BaseCalculoFaixaDescontoSimplificado = BaseCalculoDescontoSimplificado   
 
     const faixa1DescontoSimplificado = 0
-    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 1713.58
-    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4257.57
-    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7633.51
-    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10432.32          
-    
+    const faixa2DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 7.5 / 100) - 1838.39
+    const faixa3DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 0.15) - 4382.38
+    const faixa4DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 22.5 / 100) - 7758.32
+    const faixa5DescontoSimplificado = (BaseCalculoFaixaDescontoSimplificado * 27.5 / 100) - 10557.13
+
     const ValorIRDescontoSimplificado = ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado)
     
         function ValorDeducaoDescontoSimplificado(BaseCalculoFaixaDescontoSimplificado){            
-                if (BaseCalculoFaixaDescontoSimplificado <= 22847.76) {
+                if (BaseCalculoFaixaDescontoSimplificado <= 24511.92) {
                     return faixa1DescontoSimplificado
                 } else if (BaseCalculoFaixaDescontoSimplificado <= 33919.80) {
                     return faixa2DescontoSimplificado
@@ -155,15 +155,15 @@ function IRPFsobreMeiComercio(){
     const BaseCalculoFaixaDeducoesLegais = BaseCalculoDeducoesLegais   
 
     const faixa1 = 0
-    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 1713.58
-    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4257.57
-    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7633.51
-    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10432.32          
+    const faixa2 = (BaseCalculoFaixaDeducoesLegais * 7.5 / 100) - 1838.39
+    const faixa3 = (BaseCalculoFaixaDeducoesLegais * 0.15) - 4382.38
+    const faixa4 = (BaseCalculoFaixaDeducoesLegais * 22.5 / 100) - 7758.32
+    const faixa5 = (BaseCalculoFaixaDeducoesLegais * 27.5 / 100) - 10557.13
     
     const ValorIRDeducoesLegais = ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais)
     
         function ValorDeducaoDeducoesLegais(BaseCalculoFaixaDeducoesLegais){            
-                if (BaseCalculoFaixaDeducoesLegais <= 22847.76) {
+                if (BaseCalculoFaixaDeducoesLegais <= 24511.92) {
                     return faixa1
                 } else if (BaseCalculoFaixaDeducoesLegais <= 33919.80) {
                     return faixa2
@@ -246,7 +246,7 @@ function IRPFsobreMeiComercio(){
                     <h1>DIRPF</h1>
                     <h2>Comerciante</h2>
                     <h4>Microempreendedor Individual</h4>
-                    <h4>Do exercício 2017 (ano-calendário 2016) até exercício 2023 (ano-calendário 2022)</h4>
+                    <h4>No exercício de 2024 (ano-calendário de 2023).</h4>
                 </div>
             </div>
             <div className="container">
@@ -452,4 +452,4 @@ function IRPFsobreMeiComercio(){
       </div> 
     }
   
-  export default IRPFsobreMeiComercio;
+  export default IrpfsobremeicomercioApartirdoExercicio2024AnoCalendariode2023;

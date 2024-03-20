@@ -29,7 +29,7 @@ function DeclaracaoIRPF(){
         <div className="container">                              
                 <div className="row">
                     <div className="col-lg-4 tgs">
-                        <center><Link to="/calculadoras-irpf-mei-comercio"><img src="/Images/tegs-calculadoras/Tag-comerciante-mei.png" className="zoom-img"/></Link></center>
+                        <center><Link to="/calculadoras-irpf-mei-comercio-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-comerciante-mei.png" className="zoom-img"/></Link></center>
                     </div>
                     <div className="col-lg-4 tgs">
                         <center><Link to="/calculadoras-irpf-mei-servico-escolha-o-ano-da-declaracao"><img src="/Images/tegs-calculadoras/Tag-servico-mei.png" className="zoom-img"/></Link></center>

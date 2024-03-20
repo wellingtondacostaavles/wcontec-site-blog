@@ -25,7 +25,11 @@ import IRPFsobreServidorouEmpregadoPublico from './calculadoras/Components/IRPFs
 import IrpfsobreservidorouempregadopublicoApartirdoExercicio2024AnoCalendariode2023 from './calculadoras/Components/IRPFsobreServidorouEmpregadoPublico/irpfsobreservidorouempregadopublicoApartirdoExercicio2024AnoCalendariode2023.jsx';
 import IrpfsobreservidorouempregadopublicoApartirdoExercicio2025AnoCalendariode2024 from './calculadoras/Components/IRPFsobreServidorouEmpregadoPublico/irpfsobreservidorouempregadopublicoApartirdoExercicio2025AnoCalendariode2024.jsx';
 import IrpfsobreservidorouempregadopublicoApartirdoExercicio2026AnoCalendariode2025 from './calculadoras/Components/IRPFsobreServidorouEmpregadoPublico/irpfsobreservidorouempregadopublicoApartirdoExercicio2026AnoCalendariode2025.jsx';
+import IrpfsobremeicomercioEscolhaoAnodaDeclaracao from './calculadoras/Components/IRPFsobreMeiComercio/irpfsobremeicomercioEscolhaoAnodaDeclaracao.jsx';
 import IRPFsobreMeiComercio from './calculadoras/Components/IRPFsobreMeiComercio/irpfsobremeicomercio.jsx';
+import IrpfsobremeicomercioApartirdoExercicio2024AnoCalendariode2023 from './calculadoras/Components/IRPFsobreMeiComercio/irpfsobremeicomercioApartirdoExercicio2024AnoCalendariode2023.jsx';
+import IrpfsobremeicomercioApartirdoExercicio2025AnoCalendariode2024 from './calculadoras/Components/IRPFsobreMeiComercio/irpfsobremeicomercioApartirdoExercicio2025AnoCalendariode2024..jsx';
+import IrpfsobremeicomercioApartirdoExercicio2026AnoCalendariode2025 from './calculadoras/Components/IRPFsobreMeiComercio/irpfsobremeicomercioApartirdoExercicio2026AnoCalendariode2025.jsx';
 import IRPFsobreMeiServico from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservico.jsx';
 import IrpfsobremeiservicoEscolhaoAnodaDeclaracao from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservicoEscolhaoAnodaDeclaracao.jsx';
 import IrpfsobremeiservicoApartirdoExercicio2024AnoCalendáriode2023 from './calculadoras/Components/IRPFsobreMeiServico/irpfsobremeiservicoApartirdoExercicio2024AnoCalendáriode2023.jsx';
@@ -162,7 +166,11 @@ function App(){
       <Route exact path='/calculadoras-irpf-servidor-ou-empregado-publico-no-exercicio-de-2024-ano-calendario-de-2023' component={IrpfsobreservidorouempregadopublicoApartirdoExercicio2024AnoCalendariode2023} />
       <Route exact path='/calculadoras-irpf-servidor-ou-empregado-publico-no-exercicio-de-2025-ano-calendario-de-2024' component={IrpfsobreservidorouempregadopublicoApartirdoExercicio2025AnoCalendariode2024} />
       <Route exact path='/calculadoras-irpf-servidor-ou-empregado-publico-no-exercicio-de-2026-ano-calendario-de-2025' component={IrpfsobreservidorouempregadopublicoApartirdoExercicio2026AnoCalendariode2025} />
-      <Route exact path='/calculadoras-irpf-mei-comercio' component={IRPFsobreMeiComercio} />
+      <Route exact path='/calculadoras-irpf-mei-comercio-escolha-o-ano-da-declaracao' component={IrpfsobremeicomercioEscolhaoAnodaDeclaracao} />      
+      <Route exact path='/calculadoras-irpf-mei-comercio-do-exercicio-2017-ano-calendario-2016-ate-exercicio-2023-ano-calendario-2022' component={IRPFsobreMeiComercio} />
+      <Route exact path='/calculadoras-irpf-mei-comercio-no-exercicio-de-2024-ano-calendario-de-2023' component={IrpfsobremeicomercioApartirdoExercicio2024AnoCalendariode2023} />
+      <Route exact path='/calculadoras-irpf-mei-comercio-no-exercicio-de-2025-ano-calendario-de-2024' component={IrpfsobremeicomercioApartirdoExercicio2025AnoCalendariode2024} />
+      <Route exact path='/calculadoras-irpf-mei-comercio-no-exercicio-de-2026-ano-calendario-de-2025' component={IrpfsobremeicomercioApartirdoExercicio2026AnoCalendariode2025} />
       <Route exact path='/calculadoras-irpf-mei-servico-escolha-o-ano-da-declaracao' component={IrpfsobremeiservicoEscolhaoAnodaDeclaracao} />      
       <Route exact path='/calculadoras-irpf-mei-servico-do-exercicio-2017-ano-calendario-2016-ate-exercicio-2023-ano-calendario-2022' component={IRPFsobreMeiServico} />
       <Route exact path='/calculadoras-irpf-mei-servico-no-exercicio-de-2024-ano-calendario-de-2023' component={IrpfsobremeiservicoApartirdoExercicio2024AnoCalendáriode2023} />
