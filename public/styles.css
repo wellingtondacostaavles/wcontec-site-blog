@@ -51,6 +51,11 @@ body {
 
 /* NAVBAR */
 
+.navbar-transparente {
+  background-color: transparent !important;
+  backdrop-filter: blur(15px); /* Opcional: adicionar um efeito de desfoque ao fundo */
+}
+
 .navbar {
   background-color: #050922;
   font-family: Effra, sans-serif;
@@ -72,11 +77,15 @@ body {
 #inicio {
   background-color: #050922;
   color: #ffffff;
-  padding: 108px 8% 102px 8%;
+  padding: 18px 8% 102px 8%;
 }
 
 #inicio img {
   width: 100%;
+}
+
+.inicio {
+  margin-bottom: 60px; /* ou qualquer valor desejado para o espaço */
 }
 
 .btn-banner {
@@ -474,4 +483,29 @@ body {
 .zoom-img:hover {
   transform: scale(1.1); /* Ajuste o valor para o zoom desejado */
   transition: transform 0.6s ease; /* Adicione uma transição suave */
+}
+
+/* Video o body */
+
+/* styles.css */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-background .content {
+  position: relative;
+  z-index: 1;
+  /* Adicione mais estilos conforme necessário para posicionar o conteúdo */
 }

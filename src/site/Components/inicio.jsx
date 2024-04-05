@@ -1,8 +1,11 @@
 import React from 'react';
+import VideoBackground from './videoBackground';
 
 function Inicio(){
     return <section id="inicio">
         <div className="container-fluid">
+        <VideoBackground/>
+        <div className="inicio"></div>
             <div className="row">
                 <div className="col-lg-6">
                     <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">

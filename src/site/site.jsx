@@ -13,19 +13,24 @@ import Parceiros from './Components/parceiros';
 import Contato from './Components/contato';
 
 function Site(){
-    return <div>
-      <PushMessage/>
-      <Menu/>
-      <Inicio/>
-      <Beneficios/>
-      <Testemunho/>
-      <Abrirempresagratis/>
-      <Precos/>
-      <Ultimosartigosblog/>
-      <Cardcalculadoras/>
-      <Parceiros/>
-      <Contato/>
-    </div>;
-  }
+    return (
+        <div>
+            
+                <div className="content">
+                    <PushMessage/>
+                    <Menu/>
+                    <Inicio/>
+                    <Beneficios/>
+                    <Testemunho/>
+                    <Abrirempresagratis/>
+                    <Precos/>
+                    <Ultimosartigosblog/>
+                    <Cardcalculadoras/>
+                    <Parceiros/>
+                    <Contato/>
+                </div>
+        </div>
+    );
+}
 
 export default Site;

@@ -20,15 +20,15 @@ const PushMessage = () => {
   useEffect(() => {
     const timeout1 = setTimeout(() => {
       setShowMessage1(true);
-    }, 60000); // 60 segundos
+    }, 120000); // 120 segundos
 
     const timeout2 = setTimeout(() => {
       setShowMessage2(false);
-    }, 90000); // 90 segundos
+    }, 180000); // 180 segundos
 
     const timeout3 = setTimeout(() => {
       setShowMessage2(false);
-    }, 100000); // 100 segundos (tempo para o segundo push desaparecer)
+    }, 1200000); // 1200 segundos (tempo para o segundo push desaparecer)
 
     document.addEventListener('mousedown', handleClickOutside);
 
