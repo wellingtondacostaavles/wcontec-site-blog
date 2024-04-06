@@ -8,9 +8,9 @@ function VideoBackground({ children }) {
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/ZNqnw_1trjs"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
             ></iframe>
             {children}
         </div>
@@ -18,4 +18,6 @@ function VideoBackground({ children }) {
 }
 
 export default VideoBackground;
+
+
 
